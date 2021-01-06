@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './Table';","map":{"version":3,"sources":["/Users/benhowarth/Desktop/iPatchNext/components/Table/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,SAAxB","sourcesContent":["export { default } from './Table';\n"]},"metadata":{},"sourceType":"module"}
