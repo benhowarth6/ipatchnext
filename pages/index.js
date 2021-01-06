@@ -31,7 +31,7 @@ export default function Home() {
             </p>
             <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
-                <a href="findrepair.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+              <a href="/iphoneRepair" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                   Repair my device
                 </a>
               </div>
@@ -59,38 +59,8 @@ export default function Home() {
           </div>
         
           <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              About
-            </a>
-          </div>
-        
-          <div className="px-5 py-2">
             <a href="/iphoneRepair" className="text-base text-gray-500 hover:text-gray-900">
               iPhone Repair
-            </a>
-          </div>
-        
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              Mac Repair
-            </a>
-          </div>
-        
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              iPad Repair
-            </a>
-          </div>
-        
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              Watch Repair
-            </a>
-          </div>
-
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              iPod Repair
             </a>
           </div>
         

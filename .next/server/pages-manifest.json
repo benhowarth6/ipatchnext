@@ -2,8 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/iphoneRepair": "pages/iphoneRepair.js",
-  "/cart": "pages/cart.js",
-  "/": "pages/index.js",
-  "/products/[productId]": "pages/products/[productId].js"
+  "/products/12-pro-max": "pages/products/12-pro-max.js",
+  "/iphoneRepair": "pages/iphoneRepair.js"
 }

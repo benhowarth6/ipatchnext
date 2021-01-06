@@ -1,23 +1,44 @@
 [
   {
     "id": "price_1I6ZL8HJW2ya8e0nbsqMkzzc",
-    "title": "iPhone 12 Pro Max - OLED Display Assembly",
+    "title": "OLED Display Assembly",
     "description": "Cracked the screen on your iPhone? You'll need a full display assembly.",
     "image": "/images/devices/iphone/12-pro-max.jpg",
     "price": 349.00
   },
   {
     "id": "price_1I6ZL8HJW2ya8e0nzMiwFaf6",
-    "title": "iPhone 12 Pro Max - Battery",
+    "title": "Battery",
     "description": "Is your battery no longer lasting a full day? You may need a replacement.",
     "image": "/images/devices/iphone/12-pro-max.jpg",
     "price": 85.00
   },
   {
-    "id": "price_1I6ZL8HJW2ya8e0nmP7PdAfQ",
-    "title": "iPhone 12 Pro Max - Lightning Connector",
+    "id": "price_1I6dSMHJW2ya8e0nBzzWVjrG",
+    "title": "Rear Casing & Gass",
     "description": "If your iPhone won't charge you may need a lightning charging new port.",
     "image": "/images/devices/iphone/12-pro-max.jpg",
-    "price": 95.00
+    "price": 299.00
+},
+{
+  "id": "price_1I6ZL8HJW2ya8e0nmP7PdAfQ",
+  "title": "Lightning Charging Port",
+  "description": "If your iPhone won't charge you may need a lightning charging new port.",
+  "image": "/images/devices/iphone/12-pro-max.jpg",
+  "price": 95.00
+},
+{
+    "id": "price_1I6dT0HJW2ya8e0nMEAhI35w",
+    "title": "Speakers",
+    "description": "Are you struggling to hear from one of your speakers?",
+    "image": "/images/devices/iphone/12-pro-max.jpg",
+    "price": 85.00
+  },
+  {
+    "id": "price_1I6dTEHJW2ya8e0n8YS55WmD",
+    "title": "Rear Camera",
+    "description": "Do your photo's look blury, or is one of your camera unit's not working?",
+    "image": "/images/devices/iphone/12-pro-max.jpg",
+    "price": 150.00
   }
 ]

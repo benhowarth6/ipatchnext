@@ -76,25 +76,45 @@ export default function Home() {
   });
 
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
         <title>Cart - iPatch</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
+        <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
+          <div className="max-w-xl">
+          <h2 className="text-4xl font-extrabold sm:text-5xl sm:tracking-tight lg:text-6xl">Your Booking</h2>
+      <p className="mt-5 text-xl">Let's see what we'll be fixing.</p>
+          </div>
+          <div className="mt-10 w-full max-w-xs lg:mt-0">
+            <div className="mt-1.5 relative">
+            <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onClick={checkout}>
+            Check Out
+          </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <main className="">
 
-        <h1 className={styles.title}>
-          <FaShoppingCart /> Let's see what we're repairing
-        </h1>
+      <div className="bg-gray-100 py-6">
+    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      
+  <div className="flex flex-col">
+    <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+        <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"></div>
 
         <Table className={styles.table} data={data} columns={columns} />
 
-        <p className={styles.checkout}>
-          <button className={styles.button} onClick={checkout}>
-            Check Out
-          </button>
-        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
       </main>
 
       <footer className="bg-white">
@@ -108,41 +128,10 @@ export default function Home() {
           </div>
         
           <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              About
-            </a>
-          </div>
-        
-          <div className="px-5 py-2">
             <a href="/iphoneRepair" className="text-base text-gray-500 hover:text-gray-900">
               iPhone Repair
             </a>
           </div>
-        
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              Mac Repair
-            </a>
-          </div>
-        
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              iPad Repair
-            </a>
-          </div>
-        
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              Watch Repair
-            </a>
-          </div>
-
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              iPod Repair
-            </a>
-          </div>
-        
       </nav>
       <p className="mt-8 text-center text-base text-gray-400">
         © 2021 iPatch All rights reserved.
