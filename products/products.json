@@ -1,23 +1,23 @@
 [
   {
-    "id": "price_abcd0001",
-    "title": "Space Jelly Tshirt",
-    "description": "Bring Cosmo the space Jellyfish to your wardrobe with this high quality tshirt.",
-    "image": "/images/spacejelly-tshirt.jpg",
-    "price": 20.00
+    "id": "price_1I6ZL8HJW2ya8e0nbsqMkzzc",
+    "title": "iPhone 12 Pro Max - OLED Display Assembly",
+    "description": "Cracked the screen on your iPhone? You'll need a full display assembly.",
+    "image": "/images/devices/iphone/12-pro-max.jpg",
+    "price": 349.00
   },
   {
-    "id": "price_abcd0002",
-    "title": "Space Jelly Stickers",
-    "description": "Add some flare to your laptop with a sticker of Cosmo the Space Jellyfish.",
-    "image": "/images/spacejelly-stickers.jpg",
-    "price": 10.00
+    "id": "price_1I6ZL8HJW2ya8e0nzMiwFaf6",
+    "title": "iPhone 12 Pro Max - Battery",
+    "description": "Is your battery no longer lasting a full day? You may need a replacement.",
+    "image": "/images/devices/iphone/12-pro-max.jpg",
+    "price": 85.00
   },
   {
-    "id": "price_abcd0003",
-    "title": "Space Jelly Combo",
-    "description": "Show your love for Cosmo with a tshirt and sticker combo pack!",
-    "image": "/images/spacejelly-combo.jpg",
-    "price": 25.00
+    "id": "price_1I6ZL8HJW2ya8e0nmP7PdAfQ",
+    "title": "iPhone 12 Pro Max - Lightning Connector",
+    "description": "If your iPhone won't charge you may need a lightning charging new port.",
+    "image": "/images/devices/iphone/12-pro-max.jpg",
+    "price": 95.00
   }
 ]
