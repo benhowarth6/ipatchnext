@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Transition from "../Transition";
+import Transition from "./Transition";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

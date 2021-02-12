@@ -1,12 +1,14 @@
 import "tailwindcss/tailwind.css";
 
-import Nav from '../components/Nav';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Nav />
+      <Navbar />
       <Component {...pageProps} />
+      <Footer />
       </>
   );
 }

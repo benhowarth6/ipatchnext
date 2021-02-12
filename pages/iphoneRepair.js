@@ -1,7 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Link from 'next/link';
-
-import products from '../products/products.json';
+import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
 
@@ -38,8 +38,14 @@ export default function Home() {
     </div>
     <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
       <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-        <div className="flex-shrink-0">
-          <img className="h-60 w-full object-cover" src="/images/devices/iphone/12-pro-max.jpg" alt />
+        <div className="flex-shrink-0 bg-white">
+          <Image
+                src="/iphone/12-pro-max.jpg"
+                alt="Picture of the author"
+                className="h-60 w-full object-cover"
+                width={1000}
+                height={750}
+                />
         </div>
         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
           <div className="flex-1">
@@ -56,81 +62,84 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* Header section with select menu
       <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-        <div className="flex-shrink-0">
-          <img className="h-60 w-full object-cover" src="/images/devices/iphone/12-pro.jpg" alt />
+        <div className="flex-shrink-0 bg-white">
+          <Image
+                src="/iphone/12-pro.jpg"
+                alt="Picture of the author"
+                className="h-60 w-full object-cover"
+                width={1000}
+                height={750}
+                />
         </div>
         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
           <div className="flex-1">
             <div className="text-center">
-              <a href="#" className="block mt-2">
+            <Link href={`/products/12-pro`}>
                 <p className="text-xl font-semibold text-gray-900">
                   iPhone 12 Pro Repairs
                 </p>
-              </a><a href="#" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</a>
+              </Link>
+              <Link href="/products/12-pro">
+              <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-        <div className="flex-shrink-0">
-          <img className="h-60 w-full object-cover" src="/images/devices/iphone/12.jpg" alt />
+        <div className="flex-shrink-0 bg-white">
+          <Image
+                src="/iphone/12.jpg"
+                alt="Picture of the author"
+                className="h-60 w-full object-cover"
+                width={1000}
+                height={750}
+                />
         </div>
         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
           <div className="flex-1">
             <div className="text-center">
-              <a href="#" className="block mt-2">
+            <Link href={`/products/12`}>
                 <p className="text-xl font-semibold text-gray-900">
                   iPhone 12 Repairs
                 </p>
-              </a><a href="#" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</a>
+              </Link>
+              <Link href="/products/12">
+              <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-        <div className="flex-shrink-0">
-          <img className="h-60 w-full object-cover" src="/images/devices/iphone/12-mini.jpg" alt />
+        <div className="flex-shrink-0 bg-white">
+          <Image
+                src="/iphone/12-mini.jpg"
+                alt="Picture of the author"
+                className="h-60 w-full object-cover"
+                width={1000}
+                height={750}
+                />
         </div>
         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
           <div className="flex-1">
             <div className="text-center">
-              <a href="#" className="block mt-2">
+            <Link href={`/products/12-mini`}>
                 <p className="text-xl font-semibold text-gray-900">
                   iPhone 12 Mini Repairs
                 </p>
-              </a><a href="#" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</a>
+              </Link>
+              <Link href="/products/12-pro-max">
+              <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-    */}
     </div>
   </div>
 </div>
-
-      <footer className="bg-white">
-    <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-      <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-        
-          <div className="px-5 py-2">
-            <a href="/" className="text-base text-gray-500 hover:text-gray-900">
-              Home
-            </a>
-          </div>
-        
-          <div className="px-5 py-2">
-            <a href="/iphoneRepair" className="text-base text-gray-500 hover:text-gray-900">
-              iPhone Repair
-            </a>
-          </div>
-      </nav>
-      <p className="mt-8 text-center text-base text-gray-400">
-        © 2021 iPatch All rights reserved.
-      </p>
-    </div>
-  </footer>
-    </div>
+</div>
   )
 }
