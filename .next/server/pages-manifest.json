@@ -2,8 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/iphoneRepair": "pages/iphoneRepair.js",
-  "/products/12-pro-max": "pages/products/12-pro-max.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+  "/": "pages/index.js"
 }

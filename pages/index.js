@@ -1,23 +1,14 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Link from 'next/link';
-
-
-import { useCart } from '../hooks/use-cart.js';
-
-import products from '../products/products.json';
+import Image from 'next/image';
 
 export default function Home() {
-
-  const { addToCart } = useCart();
-
   return (
     <div>
       <Head>
         <title>iPatch</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      
 
       <main>
           {/* Hero section */}
@@ -26,7 +17,13 @@ export default function Home() {
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
               <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
                 <div className="absolute inset-0">
-                  <img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1566728595333-75a1d7cae961?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=5250&q=80" alt="People working on laptops" />
+                <Image
+                src="/images/header.jpg"
+                alt="Picture of the author"
+                className="h-full w-full object-cover"
+                width={2000}
+                height={2000}
+                />
                   <div className="absolute inset-0 bg-gradient-to-r bg-gradient-to-r from-gray-100 to-gray-200" style={{mixBlendMode: 'multiply'}} />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -114,6 +111,7 @@ export default function Home() {
                       <footer className="mt-3">
                         <div className="flex items-center space-x-3">
                           <div className="flex-shrink-0">
+                            
                             <img className="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" />
                           </div>
                           <div className="text-base font-medium text-gray-700">
