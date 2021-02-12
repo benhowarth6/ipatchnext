@@ -24,7 +24,7 @@ export default function Home() {
                 width={2000}
                 height={2000}
                 />
-                  <div className="absolute inset-0 bg-gradient-to-r bg-gradient-to-r from-gray-100 to-gray-200" style={{mixBlendMode: 'multiply'}} />
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200" style={{mixBlendMode: 'multiply'}} />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
@@ -111,8 +111,7 @@ export default function Home() {
                       <footer className="mt-3">
                         <div className="flex items-center space-x-3">
                           <div className="flex-shrink-0">
-                            
-                            <img className="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" />
+                        
                           </div>
                           <div className="text-base font-medium text-gray-700">
                             Marcia Hill, Digital Marketing Manager
@@ -124,7 +123,13 @@ export default function Home() {
                 </div>
                 <div className="mt-12 sm:mt-16 lg:mt-0">
                   <div className="pl-4 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                    <img className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg" alt="Inbox user interface" />
+                  <Image
+                src="/images/hero1.jpg"
+                alt="Picture of the author"
+                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                width={2560}
+                height={1536}
+                />
                   </div>
                 </div>
               </div>
@@ -157,14 +162,21 @@ export default function Home() {
                 </div>
                 <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
                   <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                    <img className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg" alt="Customer profile user interface" />
+                  <Image
+                src="/images/hero2.jpg"
+                alt="Picture of the author"
+                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                width={2560}
+                height={1536}
+                />
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
           {/* Gradient Feature Section */}
-          <div className="bg-gradient-to-r bg-gradient-to-r from-gray-100 to-gray-200">
+          <div className="bg-gradient-to-r from-gray-100 to-gray-200">
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
               <h2 className="text-3xl font-extrabold text-black tracking-tight">
                 Inbox support built for efficiency

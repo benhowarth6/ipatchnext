@@ -1,5 +1,3 @@
-/* Copyright 2020 the Deno authors. All rights reserved. MIT license. */
-
 import React, { useState } from "react";
 import Link from "next/link";
 import Transition from "../Transition";
@@ -67,7 +65,7 @@ const Header = () => {
             </a>
           </Link>
         </div>
-        <div class="justify-between">
+        <div className="justify-between">
         <div className="-mr-2 flex items-center lg:hidden">
           <button
             type="button"
