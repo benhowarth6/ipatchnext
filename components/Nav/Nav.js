@@ -1,47 +1,192 @@
-import Link from 'next/link';
-import React from "react";
-import ReactDOM from "react-dom";
-import { FaShoppingCart } from 'react-icons/fa';
+/* Copyright 2020 the Deno authors. All rights reserved. MIT license. */
 
-import styles from './Nav.module.css';
+import React, { useState } from "react";
+import Link from "next/link";
+import Transition from "../Transition";
 
-import { useCart } from '../../hooks/use-cart.js';
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-const Nav = () => {
-  const { subtotal } = useCart();
   return (
-    <header className="text-gray-600 body-font">
-  <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <span className="ml-3 text-xl">iPatchNext</span>
-      <span className="inline-flex items-center ml-1 px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800">
-        Beta
-    </span>
-    </a>
-    <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-      <a href="/" className="mr-5 hover:text-gray-900">Home</a>
-      {/* 
-      <a href="/" className="mr-5 hover:text-gray-900">About</a>
-      */}
-      <a href="/iphoneRepair" className="mr-5 hover:text-gray-900">iPhone Repair</a>
-      {/* 
-      <a className="mr-5 hover:text-gray-900">Mac Repair</a>
-      <a className="mr-5 hover:text-gray-900">iPad Repair</a>
-      <a className="mr-5 hover:text-gray-900">Watch Repair</a>
-      <a className="mr-5 hover:text-gray-900">iPod Repair</a>
-      <a className="mr-5 hover:text-gray-900">Contact</a>
-      */}
-    </nav>
-    <a href="/cart" className="flex-shrink-0 rounded-full p-1 text-gray-700 hover:text-gray-900 focus:outline-none focus:bg-light-blue-900 focus:ring-2 focus:ring-offset-2 focus:ring-offset-light-blue-900 focus:ring-white">
-                <svg className="h-6 w-6" data-todo-x-description="Heroicon name: bell" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+    <div className="relative py-6 z-10">
+      <nav
+        className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8"
+      >
+        <Link href="/">
+          <a className="flex items-center">
+            <div className="flex flex-col justify-center">
+              <div className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
+                iPatch
+              </div>
+                <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
+                </div>
+            </div>
+          </a>
+        </Link>
+
+        <div className="hidden lg:flex md:ml-10 items-end">
+          <Link href="/">
+            <a className="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              Home
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              About
+            </a>
+          </Link>
+          <Link href="/iphoneRepair">
+            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              iPhone Repair
+            </a>
+          </Link>
+          <a
+            href="https://doc.deno.land/builtin/stable"
+            className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+          >
+            iPad Repair
+          </a>
+          <Link href="/std">
+            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              Mac Repair
+            </a>
+          </Link>
+          <Link href="/x">
+            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              Watch Repair
+            </a>
+          </Link>
+          <Link href="/x">
+            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              iPod Repair
+            </a>
+          </Link>
+          <Link href="/x">
+            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              Contact
+            </a>
+          </Link>
+        </div>
+        <div class="justify-between">
+        <div className="-mr-2 flex items-center lg:hidden">
+          <button
+            type="button"
+            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+            onClick={() => setMenuOpen(true)}
+          >
+            <svg
+              className="h-6 w-6"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <title>Menu | iPatch</title>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
             </svg>
-        </a>
-  </div>
-</header>
+          </button>
+        </div>
+        </div>
+      </nav>
 
-    
-  )
-}
+      <Transition
+        show={menuOpen}
+        enter="duration-150 ease-out"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="duration-100 ease-in"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden">
+          <div className="rounded-lg shadow-md">
+            <div className="rounded-lg bg-white shadow-xs overflow-hidden">
+              <div className="px-5 pt-4 flex items-center justify-between">
+                <Link href="/">
+                  <a className="flex items-center">
+                    <div className="flex flex-col justify-center">
+                      <div className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
+                        iPatch
+                      </div>
+                        <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
+                        </div>
+                    </div>
+                  </a>
+                </Link>{" "}
+                <div className="-mr-2">
+                  <button
+                    type="button"
+                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    <svg
+                      className="h-6 w-6"
+                      stroke="currentColor"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="px-2 pt-4 pb-3">
+                <Link href="/#installation">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    Home
+                  </a>
+                </Link>
+                <Link href="/manual">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    About
+                  </a>
+                </Link>
+                <Link href="/posts">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    iPhone Repair
+                  </a>
+                </Link>
+                <Link href="/posts">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    iPad Repair
+                  </a>
+                </Link>
+                <Link href="/posts">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    Mac Repair
+                  </a>
+                </Link>
+                <Link href="/posts">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    Watch Repair
+                  </a>
+                </Link>
+                <Link href="/posts">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    iPod Repair
+                  </a>
+                </Link>
+                <Link href="/posts">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    Contact
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </div>
+  );
+};
 
-export default Nav;
+export default Header;
