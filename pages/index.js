@@ -1,14 +1,15 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>iPatch</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <NextSeo
+      title="iPatchNext"
+      description="iPatch Next.JS TailWind UI tests."
+    />
 
       <main>
           {/* Hero section */}

@@ -1,14 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link';
-import styles from '../styles/Home.module.css'
-
-import { useCart } from '../hooks/use-cart.js';
 
 import products from '../products/products.json';
 
 export default function Home() {
-
-  const { addToCart } = useCart();
 
   return (
     <div className="">
