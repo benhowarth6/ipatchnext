@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 
-import { useToasts } from "react-toast-notifications";
 import { useCart } from '../../hooks/use-cart.js';
 
 import commonproducts from '../../products/12-pro-max-common.json';
@@ -11,7 +10,6 @@ import products from '../../products/12-pro-max.json';
 export default function Home() {
 
   const { addToCart } = useCart();
-  const { addToast } = useToasts();
 
   return (
     <div className="">
@@ -115,11 +113,9 @@ export default function Home() {
                             
                           </ul>
                           <div className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900">
-                          <a onClick={() => addToast("Added repair to booking", { appearance: 'success', autoDismiss: true,})}>
                           <button onClick={() => addToCart({ id })}>
                     Book Repair
                   </button>
-                  </a>
                             </div>
                         </div>
                       </div>
@@ -160,11 +156,9 @@ export default function Home() {
             <span className="text-4xl font-extrabold text-gray-900">&pound;{ price }</span>
           </p>
           <div className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-              <a onClick={() => addToast("Added repair to booking", { appearance: 'success', autoDismiss: true,})}>
                           <button onClick={()=> addToCart({ id })}>
                     Book Repair
                   </button>
-                  </a>
             </div>
         </div>
         <div className="pt-6 pb-8 px-6">
