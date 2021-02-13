@@ -19,13 +19,14 @@ function Home() {
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
               <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
                 <div className="absolute inset-0">
+                <div className="h-full w-full object-cover">
                 <Image
                 src="/index/header.jpg"
-                alt="Picture of the author"
-                className="h-full w-full object-cover"
+                alt="Index Hero"
                 width={3000}
-                height={1500}
+                height={2000}
                 />
+                </div>
                   <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200" style={{mixBlendMode: 'multiply'}} />
                 </div>
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -128,7 +129,6 @@ function Home() {
                   <Image
                 src="/index/hero1.jpg"
                 alt="Picture of the author"
-                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 width={2560}
                 height={1536}
                 />

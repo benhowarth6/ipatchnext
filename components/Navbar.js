@@ -39,27 +39,27 @@ const Header = () => {
             </a>
           </Link>
           <a
-            href="https://doc.deno.land/builtin/stable"
+            href="/ipadRepair"
             className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
           >
             iPad Repair
           </a>
-          <Link href="/std">
+          <Link href="/macRepair">
             <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               Mac Repair
             </a>
           </Link>
-          <Link href="/x">
+          <Link href="/watchRepair">
             <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               Watch Repair
             </a>
           </Link>
-          <Link href="/x">
+          <Link href="/ipodRepair">
             <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               iPod Repair
             </a>
           </Link>
-          <Link href="/x">
+          <Link href="/contact">
             <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               Contact
             </a>
@@ -138,42 +138,42 @@ const Header = () => {
                 </div>
               </div>
               <div className="px-2 pt-4 pb-3">
-                <Link href="/#installation">
+                <Link href="/">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Home
                   </a>
                 </Link>
-                <Link href="/manual">
+                <Link href="/about">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     About
                   </a>
                 </Link>
-                <Link href="/posts">
+                <Link href="/iphoneRepair">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPhone Repair
                   </a>
                 </Link>
-                <Link href="/posts">
+                <Link href="/ipadRepair">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPad Repair
                   </a>
                 </Link>
-                <Link href="/posts">
+                <Link href="/macRepair">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Mac Repair
                   </a>
                 </Link>
-                <Link href="/posts">
+                <Link href="/watchRepair">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Watch Repair
                   </a>
                 </Link>
-                <Link href="/posts">
+                <Link href="/iPodRepair">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPod Repair
                   </a>
                 </Link>
-                <Link href="/posts">
+                <Link href="/Contact">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Contact
                   </a>

@@ -6,14 +6,13 @@ import { NextSeo } from 'next-seo';
 export default function Home() {
 
   return (
-    <div className="">
-      <Head>
-        <title>iPatch - iPhone Repair</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div class="bg-gray-800">
-
-      
+    <div>
+      <NextSeo
+      title="iPatchNext - iPhone Repair"
+      description="iPatch Next.JS TailWind UI tests."
+    />
+     
+  <div class="bg-gray-800">     
   <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
   <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
     <div className="max-w-xl">
