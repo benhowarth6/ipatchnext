@@ -33,11 +33,6 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/iphoneRepair.js"
-    ],
-    "/watchRepair": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/watchRepair.js"
     ]
   },
   "ampFirstPages": []

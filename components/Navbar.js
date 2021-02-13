@@ -168,12 +168,12 @@ const Header = () => {
                     Watch Repair
                   </a>
                 </Link>
-                <Link href="/iPodRepair">
+                <Link href="/ipodRepair">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPod Repair
                   </a>
                 </Link>
-                <Link href="/Contact">
+                <Link href="/contact">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Contact
                   </a>
