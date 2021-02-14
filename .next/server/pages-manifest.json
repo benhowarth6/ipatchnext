@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/ipadRepair": "pages/ipadRepair.js",
+  "/": "pages/index.js",
   "/iphoneRepair": "pages/iphoneRepair.js",
-  "/ipadRepair": "pages/ipadRepair.js"
+  "/macRepair": "pages/macRepair.js"
 }

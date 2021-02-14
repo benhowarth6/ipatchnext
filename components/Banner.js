@@ -8,10 +8,10 @@ const Banner = () => {
   <div className="pr-16 sm:text-center sm:px-16">
     <p className="font-medium text-white">
       <span className="md:hidden">
-        Beta build 2 - Do not use for quoting customers.
+        Beta Build 2
       </span>
       <span className="hidden md:inline">
-        Beta build 2 - Do not use for quoting customers.
+        Beta Build 2
       </span>
     </p>
   </div>

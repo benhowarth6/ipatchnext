@@ -3,6 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 function Home() {
   return (
 
@@ -11,6 +14,7 @@ function Home() {
       title="iPatchNext"
       description="iPatch Next.JS TailWind UI tests."
     />
+    <Header />
 
       <main>
           {/* Hero section */}
@@ -21,6 +25,7 @@ function Home() {
                 <div className="absolute inset-0">
                 <div className="h-full w-full object-cover">
                 <Image
+                priority="true"
                 src="/index/header.jpg"
                 alt="Index Hero"
                 width={3000}
@@ -364,6 +369,7 @@ function Home() {
             </div>
           </div>
         </main>
+        <Footer />
     </div>
   )
 }
