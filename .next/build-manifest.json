@@ -29,10 +29,40 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/iphone/12-pro-max": [
+    "/about": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/iphone/12-pro-max.js"
+      "static/chunks/pages/about.js"
+    ],
+    "/ipadRepair": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/ipadRepair.js"
+    ],
+    "/iphoneRepair": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/iphoneRepair.js"
+    ],
+    "/ipodRepair": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/ipodRepair.js"
+    ],
+    "/macRepair": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/macRepair.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/next/dist/pages/_error.js"
+    ],
+    "/watchRepair": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/watchRepair.js"
     ]
   },
   "ampFirstPages": []

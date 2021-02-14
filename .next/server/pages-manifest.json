@@ -3,5 +3,11 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/iphone/12-pro-max": "pages/iphone/12-pro-max.js"
+  "/iphoneRepair": "pages/iphoneRepair.js",
+  "/ipadRepair": "pages/ipadRepair.js",
+  "/about": "pages/about.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/macRepair": "pages/macRepair.js",
+  "/watchRepair": "pages/watchRepair.js",
+  "/ipodRepair": "pages/ipodRepair.js"
 }
