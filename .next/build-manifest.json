@@ -29,20 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/ipadRepair": [
+    "/iphone/12-pro-max": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/ipadRepair.js"
-    ],
-    "/iphoneRepair": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/iphoneRepair.js"
-    ],
-    "/macRepair": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/macRepair.js"
+      "static/chunks/pages/iphone/12-pro-max.js"
     ]
   },
   "ampFirstPages": []
