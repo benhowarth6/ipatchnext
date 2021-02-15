@@ -36,7 +36,7 @@ export async function getStaticProps(context) {
 <FormiumForm
           data={form}
           onSubmit={async (values) => {
-            // Send form values to Formium
+            // Send form values to Formium Dashboard
             await formium.submitForm('book-repair', values);
             alert('Success');
           }}
