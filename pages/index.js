@@ -11,7 +11,7 @@ function Home() {
 
     <div>
       <NextSeo
-      title="iPatch NextJS"
+      title="iPatchNext"
       description="iPatch Next.JS TailWind UI tests."
     />
     <Header />
