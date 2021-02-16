@@ -330,10 +330,10 @@ export default function Home() {
       <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
         <div className="relative">
           <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-            Transfer funds world-wide
+            A match made at the factory
           </h3>
           <p className="mt-3 text-lg text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit.
+            Your display is paired to certain features on your iPhone such as True-Tone, Auto-Brightness and Touch Settings.
           </p>
 
           <dl className="mt-10 space-y-10">
