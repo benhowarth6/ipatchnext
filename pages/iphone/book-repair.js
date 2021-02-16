@@ -26,8 +26,27 @@ export default function Home() {
             <input
               type="text"
               name="name"
+              rules="required|max:255"
             />
           </div>
+
+          <div>
+            <label htmlFor="name">Contact Number</label>
+            <input
+              type="text"
+              name="contactNumber"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="name">Email Address</label>
+            <input
+              type="text"
+              name="email"
+              rules="required|max:255"
+            />
+          </div>
+
           <div>
             <button type="submit">Submit</button>
           </div>
