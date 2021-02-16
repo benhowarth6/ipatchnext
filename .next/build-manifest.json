@@ -24,6 +24,11 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+    "/iphone/12-pro-max": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/iphone/12-pro-max.js"
+    ],
     "/iphone/book-repair": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
