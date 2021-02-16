@@ -80,21 +80,21 @@ export default function Home() {
       <div className="border-t border-gray-200"></div>
     </div>
   </div>
-
   <div className="shadow overflow-hidden sm:rounded-md">
             <div className="px-4 py-5 bg-white sm:p-6">
               <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Device Type</label>
                   <select id="device_type" name="device_type" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                    <option>iPhone</option>
-                    <option>iPad</option>
-                    <option>Mac</option>
-                    <option>Watch</option>
-                    <option>iPod</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="ipad">iPad</option>
+                    <option value="mac">Mac</option>
+                    <option value="watch">Watch</option>
+                    <option value="ipod">iPod</option>
                   </select>
                 </div>
-
+                
+                <div kw-show="fields.iphone === 'show'">
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Device Model</label>
                   <select id="device_model" name="device_model" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -104,6 +104,20 @@ export default function Home() {
                     <option>iPhone 12 Mini</option>
                     <option>iPhone 11 Pro Max</option>
                   </select>
+                </div>
+                </div>
+
+                <div kw-show="fields.ipad === 'show'">
+                <div className="col-span-6 sm:col-span-3">
+                  <label htmlFor="country" className="block text-sm font-medium text-gray-700">Device Model</label>
+                  <select id="device_model" name="device_model" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option>iPad Pro 12.9-inch 4th Generation</option>
+                    <option>iPad Pro 12.9-inch 3rd Generation</option>
+                    <option>iPad Pro 12.9-inch 2nd Generation</option>
+                    <option>iPad Pro 12.9-inch 1st Generation</option>
+                    <option>iPad Pro 11-inch 2nd Generation</option>
+                  </select>
+                </div>
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
