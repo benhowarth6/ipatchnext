@@ -46,8 +46,8 @@ function Home() {
                       <a href="#" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-700 bg-white hover:bg-blue-50 sm:px-8">
                         Get started
                       </a>
-                      <a href="#" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 bg-opacity-100 hover:bg-blue-700 sm:px-8">
-                        Contact Us
+                      <a href="iphone/book-repair" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 bg-opacity-100 hover:bg-blue-700 sm:px-8">
+                        Book repair
                       </a>
                     </div>
                   </div>
