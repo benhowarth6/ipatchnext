@@ -22,7 +22,7 @@ export default function Home() {
     <Header />
      
     <div className="bg-gray-100">
-    <div className="py-12 sm:py-16 lg:py-20">
+    <div className="py-12 sm:py-6 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
@@ -36,19 +36,19 @@ export default function Home() {
     </div>      
     <div className="bg-gray-100">
     <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <form className="kwes-form"
+    action="https://kwes.io/api/foreign/forms/N52Hhfi6oCrKkb3FaKU6">
     <div className="mt-10 sm:mt-0">
     <div className="md:grid md:grid-cols-3 md:gap-6">
       <div className="md:col-span-1">
         <div className="px-4 sm:px-0">
-          <h3 className="text-lg font-medium leading-6 text-gray-900">Your Information</h3>
+          <h3 className="text-lg font-medium leading-6 text-gray-900">Your Details</h3>
           <p className="mt-1 text-sm text-gray-600">
-            Use a permanent address where you can receive mail.
+            We'll use this email to send your confirmation.
           </p>
         </div>
       </div>
       <div className="mt-5 md:mt-0 md:col-span-2">
-        <form className="kwes-form"
-          action="https://kwes.io/api/foreign/forms/N52Hhfi6oCrKkb3FaKU6">
           <div className="shadow overflow-hidden sm:rounded-md">
             <div className="px-4 py-5 bg-white sm:p-6">
               <div className="grid grid-cols-6 gap-6">
@@ -74,12 +74,26 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </div>
+          </div>
+          </div>
           
           <div className="hidden sm:block" aria-hidden="true">
     <div className="py-5">
       <div className="border-t border-gray-200"></div>
     </div>
   </div>
+  <div className="mt-10 sm:mt-0">
+    <div className="md:grid md:grid-cols-3 md:gap-6">
+      <div className="md:col-span-1">
+        <div className="px-4 sm:px-0">
+          <h3 className="text-lg font-medium leading-6 text-gray-900">Device Details</h3>
+          <p className="mt-1 text-sm text-gray-600">
+            Please enter the details for the device you'd like repairing.
+          </p>
+        </div>
+      </div>
+      <div className="mt-5 md:mt-0 md:col-span-2">
   <div className="shadow overflow-hidden sm:rounded-md">
             <div className="px-4 py-5 bg-white sm:p-6">
               <div className="grid grid-cols-6 gap-6">
@@ -104,6 +118,8 @@ export default function Home() {
                     <option>iPhone 11 Pro Max</option>
                   </select>
                 </div>
+                </div>
+                {/*
                 <div kw-show="fields.device_type === 'ipad'">
                   <label htmlFor="ipad_model" className="block text-sm font-medium text-gray-700">Device Model</label>
                   <select id="ipad_model" name="ipad_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -117,11 +133,11 @@ export default function Home() {
                 <div kw-show="fields.device_type === 'mac'">
                   <label htmlFor="mac_model" className="block text-sm font-medium text-gray-700">Device Model</label>
                   <select id="mac_model" name="ipad_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                    <option>MacBook</option>
-                    <option>MacBook Air</option>
-                    <option>MacBook Pro</option>
-                    <option>iMac</option>
-                    <option>Mac Mini</option>
+                    <option value="macbook">MacBook</option>
+                    <option value="macbook-air">MacBook Air</option>
+                    <option value="macbook-pro">MacBook Pro</option>
+                    <option value="imac">iMac</option>
+                    <option value="mac-mini">Mac Mini</option>
                   </select>
                 </div>
                 <div kw-show="fields.device_type === 'watch'">
@@ -144,7 +160,22 @@ export default function Home() {
                   </select>
                 </div>
                 </div>
-
+                <div kw-show="fields.mac_model === 'macbook'">
+                  <label htmlFor="macbook_model" className="block text-sm font-medium text-gray-700">Device Model</label>
+                  <select id="macbook_model" name="macbook_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option>MacBook 2017</option>
+                    <option>MacBook 2016</option>
+                    <option>MacBook 2015</option>
+                  </select>
+                </div>
+                <div kw-show="fields.mac_model === 'macbook-air'">
+                  <label htmlFor="macbook_air_model" className="block text-sm font-medium text-gray-700">Device Model</label>
+                  <select id="macbook_air_model" name="macbook_air_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option>MacBook Air 11-inch</option>
+                    <option>MacBook Air 13-inch</option>
+                  </select>
+                </div>
+                */}  
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="repair_type" className="block text-sm font-medium text-gray-700">Repair Type</label>
                   <select id="repair_type" name="repair_type" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -156,8 +187,29 @@ export default function Home() {
                   </select>
                 </div>
 
+                <div className="col-span-6 sm:col-span-3">
+      <div className="rounded-md bg-blue-50 p-4">
+    <div className="flex">
+      <div className="flex-shrink-0">
+        <svg className="h-5 w-5 text-blue-400" data-todo-x-description="Heroicon name: solid/information-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"></path>
+</svg>
+      </div>
+      <div className="ml-3 flex-1 md:flex md:justify-between">
+        <p className="text-sm text-blue-700">
+          These fields will be conditional once we upgrade our kwes plan.
+        </p>
+      </div>
+    </div>
+    </div>
+
+      </div>
+
               </div>
             </div>
+          </div>
+          </div>
+          </div>
           </div>
 
           <div className="hidden sm:block" aria-hidden="true">
@@ -165,8 +217,18 @@ export default function Home() {
       <div className="border-t border-gray-200"></div>
     </div>
   </div>
-
-<div className="shadow overflow-hidden sm:rounded-md">
+  <div className="mt-10 sm:mt-0">
+    <div className="md:grid md:grid-cols-3 md:gap-6">
+      <div className="md:col-span-1">
+        <div className="px-4 sm:px-0">
+          <h3 className="text-lg font-medium leading-6 text-gray-900">Appointment Details</h3>
+          <p className="mt-1 text-sm text-gray-600">
+            Choose a location, date and time for your appointment.
+          </p>
+        </div>
+      </div>
+      <div className="mt-5 md:mt-0 md:col-span-2">
+<div className="shadow overflow-visible sm:rounded-md">
             <div className="px-4 py-5 bg-white sm:p-6">
               <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
@@ -182,7 +244,7 @@ export default function Home() {
                   <div className="kw-datepicker-wrapper">
                     <input
                     type="text"
-                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md overflow-visible"
                     name="date"
                     data-kw-type="datepicker"
                     data-kw-rules="required"
@@ -209,16 +271,15 @@ export default function Home() {
                 Save
               </button>
             </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  </div>
-  
-
-              </div>
-              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </form>
+            </div>
+            </div>
+            </div>
+              <Footer />
               </div>
     );
   }
