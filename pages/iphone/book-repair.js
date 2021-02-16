@@ -54,22 +54,22 @@ export default function Home() {
               <div className="grid grid-cols-6 gap-6">
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">First name</label>
-                  <input type="text" name="first_name" id="first_name" autocomplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">Last name</label>
-                  <input type="text" name="last_name" id="last_name" autocomplete="family-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div className="col-span-6 sm:col-span-4">
                   <label htmlFor="email_address" className="block text-sm font-medium text-gray-700">Email address</label>
-                  <input type="text" name="email_address" id="email_address" autocomplete="email" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="email_address" id="email_address" autoComplete="email" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div className="col-span-6 sm:col-span-4">
                   <label htmlFor="contact_number" className="block text-sm font-medium text-gray-700">Contact Number</label>
-                  <input type="tel" name="contact_number" id="contact_number" autocomplete="email" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="tel" name="contact_number" id="contact_number" autoComplete="email" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
               </div>
             </div>
@@ -84,8 +84,8 @@ export default function Home() {
             <div className="px-4 py-5 bg-white sm:p-6">
               <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
-                  <label htmlFor="country" className="block text-sm font-medium text-gray-700">Device Type</label>
-                  <select id="device_type" name="device_type" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <label htmlFor="devjce_type" className="block text-sm font-medium text-gray-700">Device Type</label>
+                  <select id="device_type" name="device_type" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option value="iphone">iPhone</option>
                     <option value="ipad">iPad</option>
                     <option value="mac">Mac</option>
@@ -93,11 +93,10 @@ export default function Home() {
                     <option value="ipod">iPod</option>
                   </select>
                 </div>
-                
-                <div kw-show="fields.device_type === 'iphone'">
                 <div className="col-span-6 sm:col-span-3">
-                  <label htmlFor="country" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="iphone_model" name="iphone_model" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <div kw-show="fields.device_type === 'iphone'">
+                  <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Model</label>
+                  <select id="iphone_model" name="iphone_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>iPhone 12 Pro Max</option>
                     <option>iPhone 12 Pro</option>
                     <option>iPhone 12</option>
@@ -105,12 +104,9 @@ export default function Home() {
                     <option>iPhone 11 Pro Max</option>
                   </select>
                 </div>
-                </div>
-
                 <div kw-show="fields.device_type === 'ipad'">
-                <div className="col-span-6 sm:col-span-3">
-                  <label htmlFor="country" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="ipad_model" name="ipad_model" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <label htmlFor="ipad_model" className="block text-sm font-medium text-gray-700">Device Model</label>
+                  <select id="ipad_model" name="ipad_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>iPad Pro 12.9-inch 4th Generation</option>
                     <option>iPad Pro 12.9-inch 3rd Generation</option>
                     <option>iPad Pro 12.9-inch 2nd Generation</option>
@@ -118,11 +114,40 @@ export default function Home() {
                     <option>iPad Pro 11-inch 2nd Generation</option>
                   </select>
                 </div>
+                <div kw-show="fields.device_type === 'mac'">
+                  <label htmlFor="mac_model" className="block text-sm font-medium text-gray-700">Device Model</label>
+                  <select id="mac_model" name="ipad_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option>MacBook</option>
+                    <option>MacBook Air</option>
+                    <option>MacBook Pro</option>
+                    <option>iMac</option>
+                    <option>Mac Mini</option>
+                  </select>
+                </div>
+                <div kw-show="fields.device_type === 'watch'">
+                  <label htmlFor="watch_model" className="block text-sm font-medium text-gray-700">Device Model</label>
+                  <select id="watch_model" name="watch_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option>Watch Series 6</option>
+                    <option>Watch Series 5</option>
+                    <option>Watch Series 4</option>
+                    <option>Watch Series 3</option>
+                    <option>Watch Series 2</option>
+                    <option>Watch Series 1</option>
+                  </select>
+                </div>
+                <div kw-show="fields.device_type === 'ipod'">
+                  <label htmlFor="ipod_model" className="block text-sm font-medium text-gray-700">Device Model</label>
+                  <select id="ipod_model" name="ipod_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option>iPod Touch</option>
+                    <option>iPod Classic</option>
+                    <option>iPod Nano</option>
+                  </select>
+                </div>
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
-                  <label htmlFor="country" className="block text-sm font-medium text-gray-700">Repair Type</label>
-                  <select id="repair_type" name="repair_type" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <label htmlFor="repair_type" className="block text-sm font-medium text-gray-700">Repair Type</label>
+                  <select id="repair_type" name="repair_type" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>Screen</option>
                     <option>Battery</option>
                     <option>Charging Port</option>
@@ -146,7 +171,7 @@ export default function Home() {
               <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Appointment Location</label>
-                  <select id="appointment_location" name="appointment_location" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="appointment_location" name="appointment_location" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>Trinity Leeds</option>
                     <option>Kirkstall Morrisons</option>
                   </select>
@@ -155,20 +180,20 @@ export default function Home() {
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Appointment Date</label>
                   <div className="kw-datepicker-wrapper">
-          <label htmlFor="date">Date</label>
-          <input
-            type="text"
-            name="date"
-            data-kw-type="datepicker"
-            data-kw-rules="required"
-            autoComplete="off"
-          />
-        </div>
+                    <input
+                    type="text"
+                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    name="date"
+                    data-kw-type="datepicker"
+                    data-kw-rules="required"
+                    autoComplete="off"
+                    />
+                </div>
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Appointment Time</label>
-                  <select id="appointment_time" name="appointment_time" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="appointment_time" name="appointment_time" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>09:00-10:00</option>
                     <option>10:00-11:00</option>
                     <option>11:00-12:00</option>
