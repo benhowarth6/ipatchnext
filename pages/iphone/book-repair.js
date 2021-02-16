@@ -97,7 +97,7 @@ export default function Home() {
                 <div kw-show="fields.device_type === 'iphone'">
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="device_model" name="device_model" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="iphone_model" name="iphone_model" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>iPhone 12 Pro Max</option>
                     <option>iPhone 12 Pro</option>
                     <option>iPhone 12</option>
@@ -110,7 +110,7 @@ export default function Home() {
                 <div kw-show="fields.device_type === 'ipad'">
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="device_model" name="device_model" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="ipad_model" name="ipad_model" autocomplete="country" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>iPad Pro 12.9-inch 4th Generation</option>
                     <option>iPad Pro 12.9-inch 3rd Generation</option>
                     <option>iPad Pro 12.9-inch 2nd Generation</option>
