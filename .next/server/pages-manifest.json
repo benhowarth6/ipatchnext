@@ -2,8 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/iphone/book-repair": "pages/iphone/book-repair.js",
   "/": "pages/index.js",
-  "/iphone/12-pro-max": "pages/iphone/12-pro-max.js",
-  "/iphoneRepair": "pages/iphoneRepair.js"
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
 }
