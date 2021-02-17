@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <div>
       <NextSeo
-      title="iPatchNext - iPhone 12 Pro Max Repair"
+      title="iPatchNext - Book Repair"
       description="iPatch Next.JS TailWind UI tests."
     />
     <Header />

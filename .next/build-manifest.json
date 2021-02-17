@@ -38,6 +38,11 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/iphone/book-repair.js"
+    ],
+    "/iphoneRepair": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/iphoneRepair.js"
     ]
   },
   "ampFirstPages": []
