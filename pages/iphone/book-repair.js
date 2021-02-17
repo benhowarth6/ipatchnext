@@ -54,17 +54,17 @@ export default function Home() {
               <div className="grid grid-cols-6 gap-6">
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">First name</label>
-                  <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="first_name" id="first_name" autoComplete="given-name" rules="required|max:255" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">Last name</label>
-                  <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="last_name" id="last_name" autoComplete="family-name" rules="required|max:255" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div className="col-span-6 sm:col-span-4">
                   <label htmlFor="email_address" className="block text-sm font-medium text-gray-700">Email address</label>
-                  <input type="text" name="email_address" id="email_address" autoComplete="email" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="email_address" id="email_address" autoComplete="email" rules="required|max:255" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div className="col-span-6 sm:col-span-4">
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="devjce_type" className="block text-sm font-medium text-gray-700">Device Type</label>
-                  <select id="device_type" name="device_type" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="device_type" name="device_type" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option value="iphone">iPhone</option>
                     <option value="ipad">iPad</option>
                     <option value="mac">Mac</option>
@@ -109,7 +109,7 @@ export default function Home() {
                 </div>
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="iphone_model" name="iphone_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="iphone_model" name="iphone_model" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>iPhone 12 Pro Max</option>
                     <option>iPhone 12 Pro</option>
                     <option>iPhone 12</option>
@@ -120,7 +120,7 @@ export default function Home() {
                 {/*
                 <div kw-show="fields.device_type === 'ipad'">
                   <label htmlFor="ipad_model" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="ipad_model" name="ipad_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="ipad_model" name="ipad_model" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>iPad Pro 12.9-inch 4th Generation</option>
                     <option>iPad Pro 12.9-inch 3rd Generation</option>
                     <option>iPad Pro 12.9-inch 2nd Generation</option>
@@ -130,7 +130,7 @@ export default function Home() {
                 </div>
                 <div kw-show="fields.device_type === 'mac'">
                   <label htmlFor="mac_model" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="mac_model" name="ipad_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="mac_model" name="ipad_model" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option value="macbook">MacBook</option>
                     <option value="macbook-air">MacBook Air</option>
                     <option value="macbook-pro">MacBook Pro</option>
@@ -140,7 +140,7 @@ export default function Home() {
                 </div>
                 <div kw-show="fields.device_type === 'watch'">
                   <label htmlFor="watch_model" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="watch_model" name="watch_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="watch_model" name="watch_model" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>Watch Series 6</option>
                     <option>Watch Series 5</option>
                     <option>Watch Series 4</option>
@@ -151,7 +151,7 @@ export default function Home() {
                 </div>
                 <div kw-show="fields.device_type === 'ipod'">
                   <label htmlFor="ipod_model" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="ipod_model" name="ipod_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="ipod_model" name="ipod_model" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>iPod Touch</option>
                     <option>iPod Classic</option>
                     <option>iPod Nano</option>
@@ -160,7 +160,7 @@ export default function Home() {
                 </div>
                 <div kw-show="fields.mac_model === 'macbook'">
                   <label htmlFor="macbook_model" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="macbook_model" name="macbook_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="macbook_model" name="macbook_model" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>MacBook 2017</option>
                     <option>MacBook 2016</option>
                     <option>MacBook 2015</option>
@@ -168,7 +168,7 @@ export default function Home() {
                 </div>
                 <div kw-show="fields.mac_model === 'macbook-air'">
                   <label htmlFor="macbook_air_model" className="block text-sm font-medium text-gray-700">Device Model</label>
-                  <select id="macbook_air_model" name="macbook_air_model" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="macbook_air_model" name="macbook_air_model" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>MacBook Air 11-inch</option>
                     <option>MacBook Air 13-inch</option>
                   </select>
@@ -176,7 +176,7 @@ export default function Home() {
                 */}  
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="repair_type" className="block text-sm font-medium text-gray-700">Repair Type</label>
-                  <select id="repair_type" name="repair_type" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="repair_type" name="repair_type" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>Screen</option>
                     <option>Battery</option>
                     <option>Charging Port</option>
@@ -231,7 +231,7 @@ export default function Home() {
               <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Appointment Location</label>
-                  <select id="appointment_location" name="appointment_location" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="appointment_location" name="appointment_location" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>Trinity Leeds</option>
                     <option>Kirkstall Morrisons</option>
                   </select>
@@ -253,7 +253,7 @@ export default function Home() {
 
                 <div className="col-span-6 sm:col-span-3">
                   <label htmlFor="country" className="block text-sm font-medium text-gray-700">Appointment Time</label>
-                  <select id="appointment_time" name="appointment_time" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <select id="appointment_time" name="appointment_time" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                     <option>09:00-10:00</option>
                     <option>10:00-11:00</option>
                     <option>11:00-12:00</option>
@@ -266,7 +266,7 @@ export default function Home() {
             </div>
             <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
               <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Save
+                Book
               </button>
             </div>
             </div>
