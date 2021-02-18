@@ -111,11 +111,11 @@ export default function Home() {
                 <div kw-show="fields.device_type === 'iphone'">
                   <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Model</label>
                   <select id="iphone_model" name="iphone_model" rules="required" className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                    <option>iPhone 12 Pro Max</option>
-                    <option>iPhone 12 Pro</option>
-                    <option value="12" selected>iPhone 12</option>
-                    <option>iPhone 12 Mini</option>
-                    <option>iPhone 11 Pro Max</option>
+                    <option value="12-pro-max">iPhone 12 Pro Max</option>
+                    <option value="12-pro">iPhone 12 Pro</option>
+                    <option value="12">iPhone 12</option>
+                    <option value="12-mini">iPhone 12 Mini</option>
+                    <option value="11-pro-max">iPhone 11 Pro Max</option>
                   </select>
                 </div>
                 <div kw-show="fields.device_type === 'ipad'">
