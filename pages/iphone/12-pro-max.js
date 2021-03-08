@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 
@@ -8,6 +9,8 @@ import Footer from '../../components/Footer';
 
 export default function Home() {
 
+  const router = useRouter()
+  const { id } = router.query
   return (
     <div>
       <NextSeo
@@ -113,9 +116,9 @@ export default function Home() {
               </p>
               <div className="mt-6">
                 <div className="rounded-md shadow">
-                  <a href="book-repair?device_type=mac" className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900">
+                <a href="book-repair?model=12 Pro Max&repair=screen" className="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
-                  </a>
+                    </a>
                 </div>
               </div>
               <div className="mt-4 text-sm">
@@ -144,7 +147,9 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£85</span>
               </p>
-              <a href="book-repair" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Book Repair</a>
+              <a href="book-repair?model=12 Pro Max&repair=battery" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                    </a>
             </div>
             <div className="pt-6 pb-8 px-6">
               <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
@@ -189,7 +194,9 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£85</span>
               </p>
-              <a href="book-repair" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Book Repair</a>
+              <a href="book-repair?model=12 Pro Max&repair=charging-port" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                    </a>
             </div>
             <div className="pt-6 pb-8 px-6">
               <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
@@ -234,7 +241,9 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£150</span>
               </p>
-              <a href="book-repair" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Book Repair</a>
+              <a href="book-repair?model=12 Pro Max&repair=rear-camera" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                    </a>
             </div>
             <div className="pt-6 pb-8 px-6">
               <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
@@ -279,7 +288,9 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£299</span>
               </p>
-              <a href="book-repair" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Book Repair</a>
+              <a href="book-repair?model=12 Pro Max&repair=rear-case" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                    </a>
             </div>
             <div className="pt-6 pb-8 px-6">
               <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>

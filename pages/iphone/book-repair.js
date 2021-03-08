@@ -4,11 +4,16 @@ import Image from "next/image";
 import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
 import kwesforms from "kwesforms";
+import { useRouter } from 'next/router'
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 export default function Home() {
+  const router = useRouter()
+  const {model} = router.query
+  const {repair} = router.query
+
   useEffect(() => {
     kwesforms.init();
   }, []);
@@ -26,7 +31,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
-                Book an iPhone Repair
+                Book an iPhone {model} Repair
               </h2>
               <p className="mt-4 text-xl text-gray-600">
                 Use this form to book a device in for repair with us.
@@ -163,15 +168,17 @@ export default function Home() {
                                 name="iphone_model"
                                 rules="required"
                                 className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                defaultValue={model}
+                                value={model}
                               >
-                                <option disabled selected value> -- Select your iPhone -- </option>
-                                <option value="12-pro-max">iPhone 12 Pro Max</option>
+                                <option disabled value> -- Select your iPhone -- </option>
+                                <option value="12 Pro Max">iPhone 12 Pro Max</option>
                                 <option value="12-pro">iPhone 12 Pro</option>
                                 <option value="12">iPhone 12</option>
                                 <option value="12-mini">iPhone 12 Mini</option>
                                 <option value="se-2">iPhone SE (2nd Generation)</option>
                                 <option value="11-pro-max">iPhone 11 Pro Max</option>
-                                <option value="11-pro">iPhone 11 Pro</option>
+                                <option value="11 Pro">iPhone 11 Pro</option>
                                 <option value="11">iPhone 11</option>
                                 <option value="xs-max">iPhone XS Max</option>
                                 <option value="xs">iPhone XS</option>
@@ -193,441 +200,41 @@ export default function Home() {
                                 <option value="4">iPhone 4</option>
                               </select>
                           </div>
-
-
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '12-pro-max'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="12-pro-max-colour"
-                                name="12-pro-max-colour"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          <div className="col-span-6 sm:col-span-3">
+                              <label
+                                htmlFor="device_model"
+                                className="block text-sm font-medium text-gray-700"
                               >
-                                <option value="gray">Graphite (Gray)</option>
-                                <option value="silver">Silver (White)</option>
-                                <option value="gold">Gold</option>
-                                <option value="blue">Pacific Blue</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '12-pro'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
+                                Required Repair
+                              </label>
                               <select
-                                id="12-pro-colour"
-                                name="12-pro-colour"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Graphite (Gray)</option>
-                                <option value="silver">Silver (White)</option>
-                                <option value="gold">Gold</option>
-                                <option value="blue">Pacific Blue</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '12'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="12-colour"
-                                name="12-colour"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="white">White</option>
-                                <option value="black">Black</option>
-                                <option value="blue">Blue</option>
-                                <option value="green">Green</option>
-                                <option value="red">Red</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '12-mini'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="12-mini-colour"
-                                name="12-mini-colour"
+                                id="required_repair"
+                                name="required_repair"
                                 rules="required"
                                 className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                defaultValue={repair}
+                                value={repair}
                               >
-                                <option value="white">White</option>
-                                <option value="black">Black</option>
-                                <option value="blue">Blue</option>
-                                <option value="green">Green</option>
-                                <option value="red">Red</option>
+                                <option disabled value> -- Select your Repair -- </option>
+                                <option value="screen">Screen Replacement</option>
+                                <option value="rear-case">Rear Casing Replacement</option>
+                                <option value="battery">Battery</option>
+                                <option value="charging-port">Charging Port</option>
+                                <option value="microphone">Microphone</option>
+                                <option value="front-camera">Front Camera</option>
+                                <option value="rear-camera">Rear Camera</option>
+                                <option value="earpiece">Earpiece Speaker</option>
+                                <option value="loudspeaker">Loudspeaker</option>
+                                <option value="liquid-damage">Liquid Damage</option>
+                                <option value="not-sure">I'm not sure</option>
                               </select>
                           </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === 'se-2'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="se-2-colour"
-                                name="se-2-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="white">White</option>
-                                <option value="black">Black</option>
-                                <option value="red">Red</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '11-pro-max'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="11-pro-max-colour"
-                                name="11-pro-max-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="green">Midnight Green</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '11-pro'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="11-pro-colour"
-                                name="11-pro-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="green">Midnight Green</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '11'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="11-colour"
-                                name="11-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="black">Black</option>
-                                <option value="white">White</option>
-                                <option value="green">Green</option>
-                                <option value="yellow">Yellow</option>
-                                <option value="yellow">Purple</option>
-                                <option value="yellow">Red</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === 'xs-max'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="xs-max-colour"
-                                name="xs-max-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === 'xs'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="xs-colour"
-                                name="xs-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === 'xr'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="xr-colour"
-                                name="xr-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="black">Black</option>
-                                <option value="white">White</option>
-                                <option value="blue">Blue</option>
-                                <option value="yellow">Yellow</option>
-                                <option value="coral">Coral</option>
-                                <option value="red">Red</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === 'x'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="x-colour"
-                                name="x-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '8-plus'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="8-plus-colour"
-                                name="8-plus-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="red">Red</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '8'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="8-colour"
-                                name="8-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="red">Red</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '7-plus'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="7-plus-colour"
-                                name="7-plus-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="black">Black</option>
-                                <option value="jetblack">Jet Black</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="rosegold">Rose Gold</option>
-                                <option value="red">Red</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '7'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="7-colour"
-                                name="7-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="black">Black</option>
-                                <option value="jetblack">Jet Black</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="rosegold">Rose Gold</option>
-                                <option value="red">Red</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '6s-plus'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="6s-plus-colour"
-                                name="6s-plus-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="rosegold">Rose Gold</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '6s'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="6s-colour"
-                                name="6s-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="rosegold">Rose Gold</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === 'se-1'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="se-1-colour"
-                                name="se-1-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                                <option value="rosegold">Rose Gold</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '6-plus'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="6-plus-colour"
-                                name="6-plus-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '6'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="6-colour"
-                                name="6-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '5s'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="5s-colour"
-                                name="5s-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="gray">Space Gray</option>
-                                <option value="silver">Silver</option>
-                                <option value="gold">Gold</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '5c'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="5c-colour"
-                                name="5c-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="white">White</option>
-                                <option value="pink">Pink</option>
-                                <option value="yellow">Yellow</option>
-                                <option value="blue">Blue</option>
-                                <option value="green">Green</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '5'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="5-colour"
-                                name="5-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="black">Black</option>
-                                <option value="white">White</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '4s'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="4s-colour"
-                                name="4s-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="black">Black</option>
-                                <option value="white">White</option>
-                              </select>
-                          </div>
-                          <div className="col-span-6 sm:col-span-3" kw-show="fields.iphone_model === '4'">
-                              <label htmlFor="device_model" className="block text-sm font-medium text-gray-700">Device Colour</label>
-                              <select
-                                id="4-colour"
-                                name="4-colour"
-                                rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                              >
-                                <option value="black">Black</option>
-                                <option value="white">White</option>
-                              </select>
-                          </div>
-
-
-
-                          <fieldset kw-show="fields.iphone_model === '12-pro-max'" data-kw-group className="col-span-6 sm:col-span-3">
-                          <label htmlFor="12-pro-max-repairs" className="block text-sm font-medium text-gray-700">Required Repairs</label>
-                <div className="mt-4 space-y-4">
-                  <div className="flex items-start">
-                    <div className="flex items-center h-5">
-                    <input type="checkbox" name="12-pro-max-repairs" value="DisplayAssembly" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label htmlFor="screen" className="font-medium text-gray-700">Display Assembly</label>
-                      <p className="text-gray-500">£349</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex items-center h-5">
-                    <input type="checkbox" name="12-pro-max-repairs" value="Battery" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label htmlFor="housing" className="font-medium text-gray-700">Rear Housing</label>
-                      <p className="text-gray-500">£349</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex items-center h-5">
-                    <input type="checkbox" name="12-pro-max-repairs" value="ChargingPort" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label htmlFor="comments" className="font-medium text-gray-700">Charging Port</label>
-                      <p className="text-gray-500">£85</p>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset kw-show="fields.iphone_model === '12-pro'" data-kw-group className="col-span-6 sm:col-span-3">
-                          <label htmlFor="12-pro-repairs" className="block text-sm font-medium text-gray-700">Required Repairs</label>
-                <div className="mt-4 space-y-4">
-                  <div className="flex items-start">
-                    <div className="flex items-center h-5">
-                    <input type="checkbox" name="12-pro-repairs" value="DisplayAssembly" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label htmlFor="screen" className="font-medium text-gray-700">Display Assembly</label>
-                      <p className="text-gray-500">£649</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex items-center h-5">
-                    <input type="checkbox" name="12-pro-repairs" value="Battery" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label htmlFor="housing" className="font-medium text-gray-700">Rear Housing</label>
-                      <p className="text-gray-500">£349</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex items-center h-5">
-                    <input type="checkbox" name="12-pro-repairs" value="ChargingPort" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                    </div>
-                    <div className="ml-3 text-sm">
-                      <label htmlFor="comments" className="font-medium text-gray-700">Charging Port</label>
-                      <p className="text-gray-500">£85</p>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
 
               <div className="hidden sm:block" aria-hidden="true">
                 <div className="py-5">

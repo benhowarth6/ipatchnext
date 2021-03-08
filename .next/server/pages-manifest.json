@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/iphone/book-repair": "pages/iphone/book-repair.js",
-  "/iphone/12-pro-max": "pages/iphone/12-pro-max.js"
+  "/iphone/12-pro-max": "pages/iphone/12-pro-max.js",
+  "/iphone/book-repair": "pages/iphone/book-repair.js"
 }
