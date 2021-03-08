@@ -13,6 +13,7 @@ export default function Home() {
   const router = useRouter()
   const {model} = router.query
   const {repair} = router.query
+  const {price} = router.query
 
   useEffect(() => {
     kwesforms.init();
@@ -223,8 +224,10 @@ export default function Home() {
                                 <option value="microphone">Microphone</option>
                                 <option value="front-camera">Front Camera</option>
                                 <option value="rear-camera">Rear Camera</option>
+                                <option value="camera-lens">Rear Lens</option>
                                 <option value="earpiece">Earpiece Speaker</option>
                                 <option value="loudspeaker">Loudspeaker</option>
+                                <option value="button-fault">Button Fault</option>
                                 <option value="liquid-damage">Liquid Damage</option>
                                 <option value="not-sure">I'm not sure</option>
                               </select>

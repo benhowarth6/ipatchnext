@@ -116,7 +116,7 @@ export default function Home() {
               </p>
               <div className="mt-6">
                 <div className="rounded-md shadow">
-                <a href="book-repair?model=12 Pro Max&repair=screen" className="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                <a href="book-repair?model=12 Pro Max&repair=screen&price=349" className="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
                 </div>
