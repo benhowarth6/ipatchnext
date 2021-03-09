@@ -1,0 +1,152 @@
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import { NextSeo } from 'next-seo';
+
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+export default function Home() {
+
+  return (
+    <div>
+      <NextSeo
+      title="iPatchNext - Paired Component Warnings"
+      description="iPatch Next.JS TailWind UI tests."
+    />
+    <Header />
+     
+  <div class="bg-gray-800">     
+  <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
+  <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
+    <div className="max-w-xl">
+      <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Paired Component Warnings</h2>
+      <p className="mt-5 text-xl text-gray-200">Learn more about the warnings that may appear after a paired component is changed.</p>
+    </div>
+  </div>
+</div>
+</div>
+<div className="bg-white overflow-hidden">
+    <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen"></div>
+      <div className="mx-auto text-base max-w-prose lg:max-w-none">
+        <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Display</h2>
+        <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Screen Warnings</h3>
+      </div>
+      <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div className="relative lg:row-start-1 lg:col-start-2">
+          <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+            <figure>
+              <div className="ml-20 aspect-w-12 aspect-h-7 lg:aspect-none">
+              <Image
+                src="/iphone/display-warning.jpg"
+                className="rounded-lg shadow-lg object-cover object-center"
+                alt="iPhone Privacy"
+                width={350}
+                height={510}
+                />
+              </div>
+            </figure>
+          </div>
+        </div>
+        <div className="mt-8 lg:mt-0">
+          <div className="text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">Starting with iOS 13.1 and iPhone 11 models (the 11, Pro, and Pro Max), your phone will report if it has a third-party screen: “Unable to verify this iPhone has a genuine Apple display.” It starts as a persistent message on your lock screen, 
+            lasting for four days. After that, the warning lodges itself in the Settings for 15 days, and then in Settings > General > About after that. It’s also added to your “device information,” so that Apple staff can see it.</p>
+          </div>
+          <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">This warning, similar to the recent addition of battery warnings, happens even if you swap a genuine Apple screen from one phone to another. To avoid the warning, you have to have a genuine Apple display installed by a certified Apple technician, 
+            independent or otherwise. The warning doesn’t seem to affect operation—other than the loss of True Tone, which occurs with any display swap not performed by Apple or using specialty chip programming tools. </p>
+          </div>
+          <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">We’ve tested this with genuine parts on iPhone 11 models. The warnings were not present in iOS 13.0 or the beta for iOS 13.1, but they show up when you change out screens with the final version of 13.1 installed. We used screens from the same models of iPhone 11, 
+            just days old, but without the software verification tools available to Apple-certified technicians, our units had warnings about a “genuine Apple display.” </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="bg-white overflow-hidden">
+    <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen"></div>
+      <div className="mx-auto text-base max-w-prose lg:max-w-none">
+        <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Battery</h2>
+        <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Battery Warnings</h3>
+      </div>
+      <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div className="relative lg:row-start-1 lg:col-start-2">
+          <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+            <figure>
+              <div className="ml-20 aspect-w-12 aspect-h-7 lg:aspect-none">
+              <Image
+                src="/iphone/battery-warning.jpg"
+                className="rounded-lg shadow-lg object-cover object-center"
+                alt="iPhone Privacy"
+                width={350}
+                height={510}
+                />
+              </div>
+            </figure>
+          </div>
+        </div>
+        <div className="mt-8 lg:mt-0">
+          <div className="text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">Starting with iOS 12 and iPhone XR/S models (the XR, XS, and XS Max), your phone will report if it has a third-party battery: “Unable to verify this iPhone has a genuine Apple battery.” It starts as a persistent message on your lock screen, 
+            lasting for four days. After that, the warning lodges itself in the Settings for 15 days, and then in Settings > General > About after that. It’s also added to your “device information,” so that Apple staff can see it.</p>
+          </div>
+          <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">This warning, similar to the display warnings, happens even if you swap a genuine Apple battery from one phone to another. To avoid the warning, you have to have a genuine Apple battery installed by a certified Apple technician, 
+            independent or otherwise. The warning doesn’t seem to affect operation—other than the loss of the Battery Health feature, however the true capacity and health can still be read externally. </p>
+          </div>
+          <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">We’ve tested this with genuine parts on iPhone XR/S models. We used batteries from the same models of iPhone XR/S, 
+            just days old, but without the software verification tools available to Apple-certified technicians, our units had warnings about a “genuine Apple Battery.” </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="bg-white overflow-hidden">
+    <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen"></div>
+      <div className="mx-auto text-base max-w-prose lg:max-w-none">
+        <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Camera</h2>
+        <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Camera Warnings</h3>
+      </div>
+      <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div className="relative lg:row-start-1 lg:col-start-2">
+          <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+            <figure>
+              <div className="ml-20 aspect-w-12 aspect-h-7 lg:aspect-none">
+              <Image
+                src="/iphone/battery-warning.jpg"
+                className="rounded-lg shadow-lg object-cover object-center"
+                alt="iPhone Privacy"
+                width={350}
+                height={510}
+                />
+              </div>
+            </figure>
+          </div>
+        </div>
+        <div className="mt-8 lg:mt-0">
+          <div className="text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">Starting with iOS 12 and iPhone XR/S models (the XR, XS, and XS Max), your phone will report if it has a third-party battery: “Unable to verify this iPhone has a genuine Apple battery.” It starts as a persistent message on your lock screen, 
+            lasting for four days. After that, the warning lodges itself in the Settings for 15 days, and then in Settings > General > About after that. It’s also added to your “device information,” so that Apple staff can see it.</p>
+          </div>
+          <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">This warning, similar to the display warnings, happens even if you swap a genuine Apple battery from one phone to another. To avoid the warning, you have to have a genuine Apple battery installed by a certified Apple technician, 
+            independent or otherwise. The warning doesn’t seem to affect operation—other than the loss of the Battery Health feature, however the true capacity and health can still be read externally. </p>
+          </div>
+          <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
+            <p className="text-lg text-gray-500">We’ve tested this with genuine parts on iPhone XR/S models. We used batteries from the same models of iPhone XR/S, 
+            just days old, but without the software verification tools available to Apple-certified technicians, our units had warnings about a “genuine Apple Battery.” </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<Footer />
+</div>
+  )
+}
