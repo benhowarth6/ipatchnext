@@ -560,54 +560,54 @@ export default function Home() {
             
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                     <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/globe-alt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-</svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
                   </div>
                 </div>
                 <div className="ml-4">
                   <dt className="text-lg leading-6 font-medium text-gray-900">
-                    Competitive exchange rates
+                    True-Tone Pairing
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                    Your iPhone display includes special calibration codes for the True-Tone feature. We pair these codes with your replacement display to ensure this features works as intended.
                   </dd>
                 </div>
               </div>
             
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                     <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
-</svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
                   </div>
                 </div>
                 <div className="ml-4">
                   <dt className="text-lg leading-6 font-medium text-gray-900">
-                    No hidden fees
+                    Auto-Brigtness Coding
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                    Just like the True-Tone feature, your iPhone display inludes calibration codes for Auto-Brightness. We also pair these codes with your new display to ensure this crucial feature works correctly.
                   </dd>
                 </div>
               </div>
             
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                     <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/lightning-bolt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-</svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                  </svg>
                   </div>
                 </div>
                 <div className="ml-4">
                   <dt className="text-lg leading-6 font-medium text-gray-900">
-                    Transfers are instant
+                    Touch Calibration
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                    Lastly your iPhone display also includes calibratin data for touch. We pair the correct manufacture of display with your original and then pair this code to ensure correct and accurate touch response.
                   </dd>
                 </div>
               </div>
@@ -616,7 +616,15 @@ export default function Home() {
         </div>
 
         <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
-          <img className="relative mx-auto" width="490" src="https://tailwindui.com/img/features/feature-example-1.png" alt=""></img>
+        <div className="relative mx-auto">
+        <Image
+                src="/iphone/true-tone.jpg"
+                alt="iPhone True Tone Pairing"
+                width={490}
+                height={570}
+                
+                />
+          </div>
         </div>
       </div>
 
@@ -624,46 +632,46 @@ export default function Home() {
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="lg:col-start-2">
             <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-              Always in the loop
+              Safe & Secure
             </h3>
             <p className="mt-3 text-lg text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
+              You can leave your device with us trusting it's in safe hands. We don't even require your passcode for the vast majority of our repairs, so your data stays private.
             </p>
 
             <dl className="mt-10 space-y-10">
               
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                       <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/annotation" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
-</svg>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                      </svg>
                     </div>
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Mobile notifications
+                      No passcode? No problem
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                      We can carry out nearly all iPhone repairs without your passcode. Should we require it to test certain features, you are more than welcome to enter the code yourself to carry out any tests.
                     </dd>
                   </div>
                 </div>
               
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                       <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/mail" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-</svg>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
                     </div>
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Reminder emails
+                      Your data stays safe
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                      We never access, save or copy any personal information that's saved on your device, should you require data backing up for a transfer this information will be encrypted and deleted once complete.
                     </dd>
                   </div>
                 </div>
@@ -672,7 +680,14 @@ export default function Home() {
           </div>
 
           <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-            <img className="relative mx-auto" width="490" src="https://tailwindui.com/img/features/feature-example-2.png" alt=""></img>
+          <div className="relative mx-auto">
+          <Image
+                src="/iphone/safe-secure.jpg"
+                alt="iPhone Privacy"
+                width={490}
+                height={570}
+                />
+          </div>
           </div>
         </div>
       </div>
