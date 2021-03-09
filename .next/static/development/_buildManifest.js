@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = {__rewrites:[],"/":["static\u002Fchunks\u002Fpages\u002Findex.js"],"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],"/iphone/12-pro-max":["static\u002Fchunks\u002Fpages\u002Fiphone\u002F12-pro-max.js"],sortedPages:["\u002F","\u002F_app","\u002F_error","\u002Fiphone\u002F12-pro-max"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
