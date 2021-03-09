@@ -29,38 +29,38 @@ const Header = () => {
             </a>
           </Link>
           <Link href="/about">
-            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               About
             </a>
           </Link>
           <Link href="/iphoneRepair">
-            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               iPhone Repair
             </a>
           </Link>
           <a
             href="/ipadRepair"
-            className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+            className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
           >
             iPad Repair
           </a>
           <Link href="/macRepair">
-            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               Mac Repair
             </a>
           </Link>
           <Link href="/watchRepair">
-            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               Watch Repair
             </a>
           </Link>
           <Link href="/ipodRepair">
-            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               iPod Repair
             </a>
           </Link>
           <Link href="/contact">
-            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               Contact
             </a>
           </Link>

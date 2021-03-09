@@ -95,15 +95,15 @@ export default function Contact() {
         <form className="kwes-form grid grid-cols-1 gap-y-6" action="https://kwes.io/api/foreign/forms/UKMa3kUlLUdrsbxQm2eu">
             <div>
               <label htmlFor="full_name" className="sr-only">Full name</label>
-              <input type="text" name="full_name" id="full_name" autocomplete="name" rules="required|max:255" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Full name" />
+              <input type="text" name="full_name" id="full_name" autoComplete="name" rules="required|max:255" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Full name" />
             </div>
             <div>
               <label htmlFor="email" className="sr-only">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" rules="required|max:255" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Email" />
+              <input id="email" name="email" type="email" autoComplete="email" rules="required|max:255" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Email" />
             </div>
             <div>
               <label htmlFor="phone" className="sr-only">Phone</label>
-              <input type="text" name="phone" id="phone" autocomplete="tel" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Phone" />
+              <input type="text" name="phone" id="phone" autoComplete="tel" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" placeholder="Phone" />
             </div>
             <div>
               <label htmlFor="message" className="sr-only">Message</label>

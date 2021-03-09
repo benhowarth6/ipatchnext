@@ -40,6 +40,9 @@ export default function Home() {
             <div className="flex-1 bg-white px-6 py-8 lg:p-12">
               <h3 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
                 Screen Replacement
+                <span className="inline-flex lg:ml-2 items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+                Paired
+                </span>
               </h3>
               <p className="mt-6 text-base text-gray-500">
                 If the glass on the front of your iPhone is cracked, you'll require a full screen replacement as all of the layers are laminated together.
@@ -189,7 +192,11 @@ export default function Home() {
         
           <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
             <div className="p-6">
-              <h2 className="text-lg leading-6 font-medium text-gray-900">Battery</h2>
+              <h2 className="text-lg leading-6 font-medium text-gray-900">Battery
+              <span className="inline-flex ml-2 items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+                Paired
+                </span>
+                </h2>
               <p className="mt-4 text-sm text-gray-500">A new battery to restore your device to 100%.</p>
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£85</span>
@@ -283,7 +290,11 @@ export default function Home() {
         
           <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
             <div className="p-6">
-              <h2 className="text-lg leading-6 font-medium text-gray-900">Rear Camera</h2>
+              <h2 className="text-lg leading-6 font-medium text-gray-900">Rear Camera
+              <span className="inline-flex ml-2 items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+                Paired
+                </span>
+                </h2>
               <p className="mt-4 text-sm text-gray-500">A new rear camera if one of yours is damaged.</p>
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£150</span>
@@ -693,6 +704,44 @@ export default function Home() {
       </div>
     </div>
   </div>
+    
+    <div className="fixed bottom-0 inset-x-0 pb-2 sm:pb-5">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="p-2 rounded-lg bg-yellow-500 shadow-lg sm:p-3">
+          <div className="flex items-center justify-between flex-wrap">
+            <div className="w-0 flex-1 flex items-center">
+              <span className="flex p-2 rounded-lg bg-yellow-800">
+                <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/speakerphone" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+</svg>
+              </span>
+              <p className="ml-3 font-medium text-white">
+                <span className="block font-semibold">
+                  Warning
+                </span>
+                <span className="block">
+                  This iPhone has paired components, you will recieve warnings post repair.
+                </span>
+              </p>
+            </div>
+            <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
+              <a href="/" className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-indigo-50">
+                Learn more
+              </a>
+            </div>
+            <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
+              <button type="button" className="-mr-1 flex p-2 rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-white">
+                <span className="sr-only">Dismiss</span>
+                <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+  </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <Footer />
 </div>
   )

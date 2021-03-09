@@ -67,7 +67,7 @@ const Hero = () => {
           <div className="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
             <div className="w-full rounded-md lg:h-full lg:w-auto lg:max-w-none">
             <Image
-                priority="true"
+                priority
                 src="/index/hero.jpg"
                 alt="Index Hero"
                 layout="fill"
