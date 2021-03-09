@@ -22,222 +22,77 @@ function Home() {
           {/* Hero section */}
           <Hero />
 
-          <div className="py-12 bg-white">
+    <div className="pt-12 pb-16 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="lg:text-center">
-        <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Services</h2>
+        <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Service Options</h2>
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          A better way to send money
+          A better way to repair
         </p>
         <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+        We’re here to help should you ever need us. We aim to make our process as simple as possible, while using the best available parts. No matter your option, you’ll get a quick turnaround. 
         </p>
       </div>
 
       <div className="mt-10">
-        <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-          
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/globe-alt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-</svg>
-                </div>
-              </div>
-              <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Competitive exchange rates
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-                </dd>
-              </div>
+        <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
+
+          <div>
+            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+
+              <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/globe-alt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
             </div>
-          
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
-</svg>
-                </div>
-              </div>
-              <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  No hidden fees
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-                </dd>
-              </div>
+            <div className="mt-5">
+              <dt className="text-lg leading-6 font-medium text-gray-900">
+                Walk-in Repair
+              </dt>
+              <dd className="mt-2 text-base text-gray-500">
+                We don’t require appointments at our Trinity Leeds store, so you can pop down anytime without an appointment for a quick repair.
+              </dd>
             </div>
-          
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/lightning-bolt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-</svg>
-                </div>
-              </div>
-              <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Transfers are instant
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-                </dd>
-              </div>
+          </div>
+        
+          <div>
+            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+              <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+
             </div>
-          
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/annotation" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
-</svg>
-                </div>
-              </div>
-              <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Mobile notifications
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-                </dd>
-              </div>
+            <div className="mt-5">
+              <dt className="text-lg leading-6 font-medium text-gray-900">
+                Book an Appointment
+              </dt>
+              <dd className="mt-2 text-base text-gray-500">
+                Feel free to book a repair ahead of time for either of our stores. This helps to ensure part availability for a quicker service turnaround.
+              </dd>
             </div>
-          
-        </dl>
-      </div>
+          </div>
+        
+          <div>
+            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+              <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/lightning-bolt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            </div>
+            <div className="mt-5">
+              <dt className="text-lg leading-6 font-medium text-gray-900">
+                Mail-in Repair
+              </dt>
+              <dd className="mt-2 text-base text-gray-500">
+                We also offer mail-in repairs for all devices, we aim to have all repairs completed and dispatched within 24 hours of receiving them. 
+              </dd>
+            </div>
+          </div>
+        
+      </dl>
     </div>
+  </div>
   </div>
 
-            <div className="relative bg-white py-16 sm:py-24 lg:py-32">
-    <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-      <h2 className="text-base font-semibold tracking-wider text-blue-600 uppercase">Our Services</h2>
-      <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-        Everything you need to restore your device
-      </p>
-      <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-        We offer a wide range of repairs on nearly every Apple product. 
-      </p>
-      <div className="mt-12">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          
-            <div className="pt-6">
-              <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                <div className="-mt-6">
-                  <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
-                      <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/cloud-upload" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-</svg>
-                    </span>
-                  </div>
-                  <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">iPhone Repairs</h3>
-                  <p className="mt-5 text-base text-gray-500">
-                    From broken screens to bad batteries and everything in between, we fix it all.
-                  </p>
-                </div>
-              </div>
-            </div>
-          
-            <div className="pt-6">
-              <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                <div className="-mt-6">
-                  <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
-                      <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/lock-closed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-</svg>
-                    </span>
-                  </div>
-                  <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">iPad Repairs</h3>
-                  <p className="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          
-            <div className="pt-6">
-              <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                <div className="-mt-6">
-                  <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
-                      <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/refresh" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-</svg>
-                    </span>
-                  </div>
-                  <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Mac Repairs</h3>
-                  <p className="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          
-            <div className="pt-6">
-              <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                <div className="-mt-6">
-                  <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
-                      <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/shield-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-                    </span>
-                  </div>
-                  <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Watch Repairs</h3>
-                  <p className="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          
-            <div className="pt-6">
-              <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                <div className="-mt-6">
-                  <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
-                      <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/cog" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-</svg>
-                    </span>
-                  </div>
-                  <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">iPod Repairs</h3>
-                  <p className="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          
-            <div className="pt-6">
-              <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                <div className="-mt-6">
-                  <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
-                      <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/server" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-</svg>
-                    </span>
-                  </div>
-                  <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">Other Services</h3>
-                  <p className="mt-5 text-base text-gray-500">
-                    Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
 
           {/* Logo Cloud */}
           <div className="bg-gray-100">
@@ -274,19 +129,22 @@ function Home() {
                     <div>
                       <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600">
                         <svg className="h-6 w-6 text-white" x-description="Heroicon name: outline/inbox" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                       </span>
                     </div>
                     <div className="mt-6">
                       <h2 className="text-3xl font-extrabold tracking-tight text-black">
-                        Stay on top of customer support
+                      We’re obsessed with quality
                       </h2>
                       <p className="mt-4 text-lg text-gray-500">
-                        Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.
+                      We thoroughly check and test the fit, finish and functionality of all of our repairs. We’ll work until your device meets our rigorous standards and is fully repaired.
+                      </p>
+                      <p className="mt-4 text-lg text-gray-500">
+                      In the unlikely event this isn’t possible we’ll return your device and you won’t have to pay any fees.
                       </p>
                       <div className="mt-6">
-                        <a href="#" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:rom-blue-600 hover:to-blue-700">
+                        <a href="bookRepair" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:rom-blue-600 hover:to-blue-700">
                           Get started
                         </a>
                       </div>
@@ -296,7 +154,8 @@ function Home() {
                     <blockquote>
                       <div>
                         <p className="text-base text-gray-500">
-                          “Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut.”
+                          “
+                          Fantastic service from iPatch who repaired my iPad’s screen and then some. The repair was completed swiftly and my iPad is as good as new. ”
                         </p>
                       </div>
                       <footer className="mt-3">
@@ -305,7 +164,7 @@ function Home() {
                         
                           </div>
                           <div className="text-base font-medium text-gray-700">
-                            Marcia Hill, Digital Marketing Manager
+                            Matty Firth, iPatch Customer
                           </div>
                         </div>
                       </footer>
@@ -331,19 +190,19 @@ function Home() {
                     <div>
                       <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600">
                         <svg className="h-6 w-6 text-white" x-description="Heroicon name: outline/sparkles" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </span>
                     </div>
                     <div className="mt-6">
                       <h2 className="text-3xl font-extrabold tracking-tight text-black">
-                        Better understand your customers
+                      But that doesn't slow us down
                       </h2>
                       <p className="mt-4 text-lg text-gray-500">
-                        Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.
+                      Our obsession with quality doesn’t slow us down. We offer most iPhone repairs in under 30 minutes, iPads in under 2 hours and Macs within 24 hours. This of course depends on part availability, but we keep a large number of spare parts in stock. 
                       </p>
                       <div className="mt-6">
-                        <a href="#" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:rom-blue-600 hover:to-blue-700">
+                        <a href="bookRepair" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:rom-blue-600 hover:to-blue-700">
                           Get started
                         </a>
                       </div>
@@ -365,170 +224,45 @@ function Home() {
               </div>
             </div>
           </div>
-          {/* Gradient Feature Section */}
-          <div className="bg-gradient-to-r from-gray-100 to-gray-200">
-            <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
-              <h2 className="text-3xl font-extrabold text-black tracking-tight">
-                Inbox support built for efficiency
-              </h2>
-              <p className="mt-4 max-w-3xl text-lg text-gray-700">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
-              </p>
-              <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
-                <div>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <svg className="h-6 w-6 text-blue-600" x-description="Heroicon name: outline/inbox" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-black">Unlimited Inboxes</h3>
-                    <p className="mt-2 text-base text-black">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <svg className="h-6 w-6 text-blue-600" x-description="Heroicon name: outline/users" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-black">Manage Team Members</h3>
-                    <p className="mt-2 text-base text-black">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <svg className="h-6 w-6 text-blue-600" x-description="Heroicon name: outline/trash" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-black">Spam Report</h3>
-                    <p className="mt-2 text-base text-black">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <svg className="h-6 w-6 text-blue-600" x-description="Heroicon name: outline/pencil-alt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-black">Compose in Markdown</h3>
-                    <p className="mt-2 text-base text-black">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <svg className="h-6 w-6 text-blue-600" x-description="Heroicon name: outline/document-report" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-black">Team Reporting</h3>
-                    <p className="mt-2 text-base text-black">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <svg className="h-6 w-6 text-blue-600" x-description="Heroicon name: outline/reply" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-black">Saved Replies</h3>
-                    <p className="mt-2 text-base text-black">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <svg className="h-6 w-6 text-blue-600" x-description="Heroicon name: outline/chat-alt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-black">Email Commenting</h3>
-                    <p className="mt-2 text-base text-black">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <svg className="h-6 w-6 text-blue-600" x-description="Heroicon name: outline/heart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-black">Connect with Customers</h3>
-                    <p className="mt-2 text-base text-black">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           {/* Stats section */}
           <div className="relative bg-gray-900">
-            <div className="h-80 absolute bottom-0 xl:inset-0 xl:h-auto xl:grid xl:grid-cols-2">
-              <div className="h-full xl:relative xl:col-start-2">
-                <img className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0" src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100" alt="People working on laptops" />
-                <div aria-hidden="true" className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r" />
-              </div>
+          <div className="h-80 absolute bottom-0 xl:inset-0 xl:h-auto xl:grid xl:grid-cols-2">
+          <div className="h-full xl:relative xl:col-start-2">
+            <div className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0">
+            <Image
+                src="/index/stats.jpg"
+                alt="iPhone being repaired"
+                width={2700}
+                height={1800}
+                />
             </div>
+            <div aria-hidden="true" className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"></div>
+          </div>
+        </div>
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
               <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
                 <h2 className="text-sm font-semibold tracking-wide uppercase">
-                  <span className="bg-gradient-to-r from-purple-300 to-blue-300 bg-clip-text text-transparent">Valuable Metrics</span>
+                  <span className="bg-gradient-to-r from-gray-200 to-blue-300 bg-clip-text text-transparent">Metrics</span>
                 </h2>
-                <p className="mt-3 text-3xl font-extrabold text-white">Get actionable data that will help grow your business</p>
-                <p className="mt-5 text-lg text-gray-300">Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus quis at.</p>
+                <p className="mt-3 text-3xl font-extrabold text-white">We've been doing this for a while now</p>
+                <p className="mt-5 text-lg text-gray-300">After trading for more than a decade, we’ve come to know the repair of Apple devices back to front, inside out, and upside down.</p>
                 <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
                   <p>
-                    <span className="block text-2xl font-bold text-white">8K+</span>
-                    <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Companies</span> use laoreet amet lacus nibh integer quis.</span>
+                    <span className="block text-2xl font-bold text-white">250K+</span>
+                    <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Device's repaired</span></span>
                   </p>
                   <p>
-                    <span className="block text-2xl font-bold text-white">25K+</span>
-                    <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Countries around the globe</span> lacus nibh integer quis.</span>
+                    <span className="block text-2xl font-bold text-white">5/5</span>
+                    <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Average rating</span></span>
                   </p>
                   <p>
-                    <span className="block text-2xl font-bold text-white">98%</span>
-                    <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Customer satisfaction</span> laoreet amet lacus nibh integer quis.</span>
+                    <span className="block text-2xl font-bold text-white">5/5</span>
+                    <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Customer satisfaction</span></span>
                   </p>
                   <p>
-                    <span className="block text-2xl font-bold text-white">12M+</span>
-                    <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Issues resolved</span> lacus nibh integer quis.</span>
+                    <span className="block text-2xl font-bold text-white">14+</span>
+                    <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Years experience</span></span>
                   </p>
                 </div>
               </div>

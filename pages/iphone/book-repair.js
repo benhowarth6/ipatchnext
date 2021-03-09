@@ -174,7 +174,7 @@ export default function Home() {
                               >
                                 <option disabled value> -- Select your iPhone -- </option>
                                 <option value="12 Pro Max">iPhone 12 Pro Max</option>
-                                <option value="12-pro">iPhone 12 Pro</option>
+                                <option value="12 Pro">iPhone 12 Pro</option>
                                 <option value="12">iPhone 12</option>
                                 <option value="12-mini">iPhone 12 Mini</option>
                                 <option value="se-2">iPhone SE (2nd Generation)</option>
