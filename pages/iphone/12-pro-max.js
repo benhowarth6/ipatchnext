@@ -46,7 +46,7 @@ export default function Home() {
               </p>
               <div className="mt-8">
                 <div className="flex items-center">
-                  <h4 className="flex-shrink-0 pr-4 bg-white text-sm tracking-wider font-semibold uppercase text-indigo-600">
+                  <h4 className="flex-shrink-0 pr-4 bg-white text-sm tracking-wider font-semibold uppercase text-blue-600">
                     What's included
                   </h4>
                   <div className="flex-1 border-t-2 border-gray-200"></div>
@@ -122,7 +122,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-4 text-sm">
-                <a href="/" className="font-medium text-gray-900">
+                <a href="/contact" className="font-medium text-gray-900">
                   Contact us about this repair
                 </a>
               </div>
@@ -139,6 +139,53 @@ export default function Home() {
       <p className="mt-4 text-xl text-gray-600 sm:text-center">Here's all the repairs we offer for iPhone 12 Pro Max.</p>
       </div>
       <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
+
+      <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+            <div className="p-6">
+              <h2 className="text-lg leading-6 font-medium text-gray-900">Rear Glass Casing</h2>
+              <p className="mt-4 text-sm text-gray-500">A new housing and frame to replace a cracked back.</p>
+              <p className="mt-8">
+                <span className="text-4xl font-extrabold text-gray-900">£299</span>
+              </p>
+              <a href="book-repair?model=12 Pro Max&repair=rear-case" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                    </a>
+            </div>
+            <div className="pt-6 pb-8 px-6">
+              <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
+              <ul className="mt-6 space-y-4">
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Rear Housing including rear glass.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Device Dust and Water Seal.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Repaired in under 20 minutes.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
         
           <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
             <div className="p-6">
@@ -280,15 +327,15 @@ export default function Home() {
               </ul>
             </div>
           </div>
-        
+
           <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
             <div className="p-6">
-              <h2 className="text-lg leading-6 font-medium text-gray-900">Rear Glass Casing</h2>
-              <p className="mt-4 text-sm text-gray-500">A new housing and frame to replace a cracked back.</p>
+              <h2 className="text-lg leading-6 font-medium text-gray-900">Rear Camera Lens</h2>
+              <p className="mt-4 text-sm text-gray-500">A new replacement camera lens if one of yours is damaged.</p>
               <p className="mt-8">
-                <span className="text-4xl font-extrabold text-gray-900">£299</span>
+                <span className="text-4xl font-extrabold text-gray-900">£95</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=rear-case" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="book-repair?model=12 Pro Max&repair=camera-lens" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -300,7 +347,148 @@ export default function Home() {
                     <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
 </svg>
-                    <span className="text-sm text-gray-500">Rear Housing including rear glass.</span>
+                    <span className="text-sm text-gray-500">Rear Camera Lens.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Device Dust and Water Seal.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Repaired in under 20 minutes.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+            <div className="p-6">
+              <h2 className="text-lg leading-6 font-medium text-gray-900">Earpiece Speaker</h2>
+              <p className="mt-4 text-sm text-gray-500">A replacement speaker if you cannot hear on phone calls.</p>
+              <p className="mt-8">
+                <span className="text-4xl font-extrabold text-gray-900">£95</span>
+              </p>
+              <a href="book-repair?model=12 Pro Max&repair=earpiece" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                    </a>
+            </div>
+            <div className="pt-6 pb-8 px-6">
+              <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
+              <ul className="mt-6 space-y-4">
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">New Earpiece Speaker.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Device Dust and Water Seal.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Repaired in under 20 minutes.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+            <div className="p-6">
+              <h2 className="text-lg leading-6 font-medium text-gray-900">Loudspeaker</h2>
+              <p className="mt-4 text-sm text-gray-500">A replacement loudspeaker if you cannot hear any audio.</p>
+              <p className="mt-8">
+                <span className="text-4xl font-extrabold text-gray-900">£95</span>
+              </p>
+              <a href="book-repair?model=12 Pro Max&repair=loudspeaker" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                    </a>
+            </div>
+            <div className="pt-6 pb-8 px-6">
+              <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
+              <ul className="mt-6 space-y-4">
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">New Earpiece Speaker.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Device Dust and Water Seal.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Repaired in under 20 minutes.</span>
+                  </li>
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+            <div className="p-6">
+              <h2 className="text-lg leading-6 font-medium text-gray-900">Button Fault</h2>
+              <p className="mt-4 text-sm text-gray-500">A replacement button flex if one of yours isn't working.</p>
+              <p className="mt-8">
+                <span className="text-4xl font-extrabold text-gray-900">£95</span>
+              </p>
+              <a href="book-repair?model=12 Pro Max&repair=button-fault" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                    </a>
+            </div>
+            <div className="pt-6 pb-8 px-6">
+              <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
+              <ul className="mt-6 space-y-4">
+                
+                  <li className="flex space-x-3">
+                    <svg className="flex-shrink-0 h-5 w-5 text-green-500" data-todo-x-description="Heroicon name: solid/check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+</svg>
+                    <span className="text-sm text-gray-500">New Button Flex.</span>
                   </li>
                 
                   <li className="flex space-x-3">
@@ -329,8 +517,29 @@ export default function Home() {
           </div>
         
       </div>
+      <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
+      <div className="bg-gray-100 rounded-lg shadow-sm divide-y divide-gray-200">
+            <div className="p-6">
+              <h2 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-white text-gray-800">Not sure?</h2>
+              <p className="mt-4 text-lg text-gray-600">Book your device in with us for an inspection instead and we'll diagnose the device for you. <span className="font-semibold text-gray-900">We don't charge any inspection fees</span>.</p>
+              <a href="book-repair?model=12 Pro Max&repair=not-sure" className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                Book an Inspection
+              </a>
+              </div>
+             </div>
+            <div className="bg-blue-500 rounded-lg shadow-sm divide-y divide-gray-200">
+            <div className="p-6">
+              <h2 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-blue-400 text-white">Liquid Damage?</h2>
+              <p className="mt-4 text-lg text-white">Book your device in with us for a liquid damage inspection and we'll diagnose the device for you. <span className="font-semibold text-white">We don't charge any inspection fees</span>.</p>
+              <a href="book-repair?model=12 Pro Max&repair=liquid-damage" className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                Book an Inspection
+              </a>
+            </div>
+            </div>
+            </div>
+      </div>
     </div>
-  </div>
+    
   <div className="py-16 bg-gray-100 overflow-hidden lg:py-24">
     <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
       <div className="relative">
