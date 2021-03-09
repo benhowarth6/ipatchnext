@@ -29,10 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/iphone/12-pro-max": [
+    "/iphoneRepair": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/iphone/12-pro-max.js"
+      "static/chunks/pages/iphoneRepair.js"
     ]
   },
   "ampFirstPages": []

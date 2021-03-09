@@ -3,5 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/iphone/12-pro-max": "pages/iphone/12-pro-max.js"
+  "/iphoneRepair": "pages/iphoneRepair.js"
 }
