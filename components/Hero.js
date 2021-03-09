@@ -70,8 +70,7 @@ const Hero = () => {
                 priority="true"
                 src="/index/hero.jpg"
                 alt="Index Hero"
-                width={2102}
-                height={1401}
+                layout="fill"
                 />
             </div>
           </div>
