@@ -40,7 +40,7 @@ export default function Home() {
             <div className="flex-1 bg-white px-6 py-8 lg:p-12">
               <h3 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
                 Screen Replacement
-                <span className="inline-flex lg:ml-2 items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+                <span className="inline-flex ml-2 items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
                 Paired
                 </span>
               </h3>
