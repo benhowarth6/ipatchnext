@@ -153,7 +153,7 @@ export default function Home() {
           </div>
         </div>
         <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-          <img className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="iphone/identify-iphone.jpg" alt="App screenshot" />
+          <img className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="iphone/identify-iphone.jpg" alt="App screenshot" />
         </div>
       </div>
       </div>
