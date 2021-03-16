@@ -172,9 +172,11 @@ export default function Home() {
       </div>
       <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
         <div className="relative z-10">
-          <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
-            <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-            <ul>
+          <div className="prose whitespace-pre-line text-gray-500 mx-auto lg:max-w-none">
+            <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
+              
+            </p>
+            <ul className="list-disc">
               <li>Quis elit egestas venenatis mattis dignissim.</li>
               <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
               <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
