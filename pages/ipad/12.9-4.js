@@ -453,7 +453,7 @@ export default function Home() {
     <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
       <div className="relative">
       <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl sm:text-center">A Better Way To Repair</h2>
-      <p className="mt-4 text-xl text-gray-600 sm:text-center">Why repair your iPhone 12 Pro Max with iPatch?</p>
+      <p className="mt-4 text-xl text-gray-600 sm:text-center">Why repair your iPad Pro 12.9-inch with iPatch?</p>
       </div>
 
       <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
@@ -527,7 +527,7 @@ export default function Home() {
         <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
         <div className="relative mx-auto">
         <Image
-                src="/iphone/true-tone.jpg"
+                src="/ipad/true-tone.jpg"
                 alt="iPhone True Tone Pairing"
                 width={490}
                 height={570}
@@ -591,7 +591,7 @@ export default function Home() {
           <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
           <div className="relative mx-auto">
           <Image
-                src="/iphone/safe-secure.jpg"
+                src="/ipad/apple-pencil.jpg"
                 alt="iPhone Privacy"
                 width={490}
                 height={570}
