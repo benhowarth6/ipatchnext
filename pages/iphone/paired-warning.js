@@ -26,12 +26,14 @@ export default function Home() {
   </div>
 </div>
 </div>
+
 <div className="bg-white overflow-hidden">
     <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
       <div className="hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen"></div>
       <div className="mx-auto text-base max-w-prose lg:max-w-none">
         <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Display</h2>
         <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Screen Warnings</h3>
+        <div className="min-w-0 flex-1 py-1 text-sm text-gray-500 sm:py-3"><span className="font-medium text-gray-900">Applies to the following models:</span> iPhone 11, iPhone 12</div>
       </div>
       <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
         <div className="relative lg:row-start-1 lg:col-start-2">
@@ -72,6 +74,7 @@ export default function Home() {
       <div className="mx-auto text-base max-w-prose lg:max-w-none">
         <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Battery</h2>
         <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Battery Warnings</h3>
+        <div className="min-w-0 flex-1 py-1 text-sm text-gray-500 sm:py-3"><span className="font-medium text-gray-900">Applies to the following models:</span> iPhone XR, iPhone XS, iPhone 11, iPhone 12</div>
       </div>
       <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
         <div className="relative lg:row-start-1 lg:col-start-2">
@@ -112,6 +115,7 @@ export default function Home() {
       <div className="mx-auto text-base max-w-prose lg:max-w-none">
         <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Camera</h2>
         <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Camera Warnings</h3>
+        <div className="min-w-0 flex-1 py-1 text-sm text-gray-500 sm:py-3"><span className="font-medium text-gray-900">Applies to the following models:</span> iPhone 12</div>
       </div>
       <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
         <div className="relative lg:row-start-1 lg:col-start-2">

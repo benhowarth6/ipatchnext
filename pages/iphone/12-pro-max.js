@@ -6,6 +6,7 @@ import { NextSeo } from 'next-seo';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Modal from '../../components/Modal';
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
       description="iPatch Next.JS TailWind UI tests."
     />
     <Header />
+    <Modal />
      
     <div className="bg-gray-100">
     <div className="pt-12 sm:pt-16 lg:pt-20">
@@ -725,7 +727,7 @@ export default function Home() {
               </p>
             </div>
             <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-              <a href="paired-warning" className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-indigo-50">
+              <a href="paired-warning" className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-blue-50">
                 Learn more
               </a>
             </div>
