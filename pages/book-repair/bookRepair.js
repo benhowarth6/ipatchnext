@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 export default function Home() {
 
@@ -15,7 +15,7 @@ export default function Home() {
       description="iPatch Next.JS TailWind UI tests."
     />
     <Header />
-    <div class="bg-gray-800">     
+    <div className="bg-gray-800">     
   <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
   <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
     <div className="max-w-xl">
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <div className="mt-8">
           <h3 className="text-lg font-medium">
-            <a href="/iphone/book-repair" className="focus:outline-none">
+            <a href="iphone/booking-type" className="focus:outline-none">
               {/* Extend touch target to entire panel */}
               <span className="absolute inset-0" aria-hidden="true"></span>
               iPhone Repair

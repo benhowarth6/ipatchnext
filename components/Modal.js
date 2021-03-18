@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { Transition } from '@headlessui/react'
 
+
 export default function Home() {
   let [isOpen, setIsOpen] = useState(false)
   function toggle() {
@@ -72,7 +73,7 @@ export default function Home() {
               </div>
         <div className="py-5 px-5 sm:mt-6 sm:grid sm:grid-cols-2 sm:gap-3 sm:grid-flow-row-dense">
           <button 
-            onClick={toggle}
+            href="drop-off?model=12 Pro Max&repair=screen&price=349"
             type="button"
             className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:col-start-2 sm:text-sm">
             Drop off repair

@@ -3,15 +3,15 @@ import Link from 'next/link';
 import { useRouter } from 'next/router'
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
+import React, { useRef, useState } from 'react'
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Modal from '../../components/Modal';
 
 export default function Home() {
-
   const router = useRouter()
   const { id } = router.query
+
   return (
     <div>
       <NextSeo
@@ -19,7 +19,6 @@ export default function Home() {
       description="iPatch Next.JS TailWind UI tests."
     />
     <Header />
-    <Modal />
      
     <div className="bg-gray-100">
     <div className="pt-12 sm:pt-16 lg:pt-20">
@@ -121,7 +120,7 @@ export default function Home() {
               </p>
               <div className="mt-6">
                 <div className="rounded-md shadow">
-                <a href="book-repair?model=12 Pro Max&repair=screen&price=349" className="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                <a href="booking-type?model=12 Pro Max&repair=screen" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
                 </div>
@@ -152,7 +151,7 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£299</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=rear-case" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="booking-type?model=12 Pro Max&repair=rear-case" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -203,7 +202,7 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£85</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=battery" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="booking-type?model=12 Pro Max&repair=battery" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -250,7 +249,7 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£85</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=charging-port" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="booking-type?model=12 Pro Max&repair=charging-port" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -301,7 +300,7 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£150</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=rear-camera" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="booking-type?model=12 Pro Max&repair=rear-camera" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -348,7 +347,7 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£95</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=camera-lens" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="booking-type?model=12 Pro Max&repair=camera-lens" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -395,7 +394,7 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£95</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=earpiece" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="booking-type?model=12 Pro Max&repair=earpiece" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -442,7 +441,7 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£95</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=loudspeaker" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="booking-type?model=12 Pro Max&repair=loudspeaker" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -489,7 +488,7 @@ export default function Home() {
               <p className="mt-8">
                 <span className="text-4xl font-extrabold text-gray-900">£95</span>
               </p>
-              <a href="book-repair?model=12 Pro Max&repair=button-fault" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+              <a href="booking-type?model=12 Pro Max&repair=button-fault" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                     Book Repair
                     </a>
             </div>
@@ -535,7 +534,7 @@ export default function Home() {
             <div className="p-6">
               <h2 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-white text-gray-800">Not sure?</h2>
               <p className="mt-4 text-lg text-gray-600">Book your device in with us for an inspection instead and we'll diagnose the device for you. <span className="font-semibold text-gray-900">We don't charge any inspection fees</span>.</p>
-              <a href="book-repair?model=12 Pro Max&repair=not-sure" className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+              <a href="booking-type?model=12 Pro Max&repair=not-sure" className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 Book an Inspection
               </a>
               </div>
@@ -544,7 +543,7 @@ export default function Home() {
             <div className="p-6">
               <h2 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-blue-400 text-white">Liquid Damage?</h2>
               <p className="mt-4 text-lg text-white">Book your device in with us for a liquid damage inspection and we'll diagnose the device for you. <span className="font-semibold text-white">We don't charge any inspection fees</span>.</p>
-              <a href="book-repair?model=12 Pro Max&repair=liquid-damage" className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+              <a href="booking-type?model=12 Pro Max&repair=liquid-damage" className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 Book an Inspection
               </a>
             </div>
