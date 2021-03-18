@@ -36,6 +36,11 @@ function Home() {
           latitude: '53.79670330561009',
           longitude: '-1.546093615066775',
         }}
+        images={[
+          'https://trinityleeds.com/sites/trinity_leeds/files/styles/shop_logo/public/images/shops/logos/ipatch_logo.jpg?itok=2ySH6_6d',
+          'https://trinityleeds.com/sites/trinity_leeds/files/styles/whats_on_scaled_combo/public/images/content/iptach1.png?itok=pOB2SV6A',
+          'https://trinityleeds.com/sites/trinity_leeds/files/styles/shop_gallery_full/public/images/shops/gallery/ipatch_web.jpg?itok=gv7nKLuB',
+        ]}
         openingHours={[
           {
             opens: '09:00',
