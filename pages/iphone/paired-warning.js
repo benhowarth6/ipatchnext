@@ -39,10 +39,10 @@ export default function Home() {
         <div className="relative lg:row-start-1 lg:col-start-2">
           <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
             <figure>
-              <div className="ml-20 aspect-w-12 aspect-h-7 lg:aspect-none">
+              <div className="py-6 px-16 aspect-w-12 aspect-h-7 lg:aspect-none mx-auto">
               <Image
                 src="/iphone/display-warning.jpg"
-                className="rounded-lg shadow-lg object-cover object-center"
+                className="rounded-lg shadow-lg object-cover object-center mx-auto"
                 alt="iPhone Privacy"
                 width={350}
                 height={510}
@@ -78,12 +78,12 @@ export default function Home() {
       </div>
       <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
         <div className="relative lg:row-start-1 lg:col-start-2">
-          <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+        <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
             <figure>
-              <div className="ml-20 aspect-w-12 aspect-h-7 lg:aspect-none">
+              <div className="py-6 px-16 aspect-w-12 aspect-h-7 lg:aspect-none mx-auto">
               <Image
                 src="/iphone/battery-warning.jpg"
-                className="rounded-lg shadow-lg object-cover object-center"
+                className="rounded-lg shadow-lg object-cover object-center mx-auto"
                 alt="iPhone Privacy"
                 width={350}
                 height={510}
@@ -119,12 +119,12 @@ export default function Home() {
       </div>
       <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
         <div className="relative lg:row-start-1 lg:col-start-2">
-          <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+        <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
             <figure>
-              <div className="ml-20 aspect-w-12 aspect-h-7 lg:aspect-none">
+              <div className="py-6 px-16 aspect-w-12 aspect-h-7 lg:aspect-none mx-auto">
               <Image
                 src="/iphone/battery-warning.jpg"
-                className="rounded-lg shadow-lg object-cover object-center"
+                className="rounded-lg shadow-lg object-cover object-center mx-auto"
                 alt="iPhone Privacy"
                 width={350}
                 height={510}
