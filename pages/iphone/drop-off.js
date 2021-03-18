@@ -228,7 +228,7 @@ export default function Home() {
                                 <option value="not-sure">I'm not sure</option>
                               </select>
                           </div>
-                          <div className="sm:col-span-6">
+                          <div className="col-span-6 sm:col-span-6">
                             <div className="flex justify-between">
                               <label htmlFor="how_can_we_help" className="block text-sm font-medium text-gray-700">Notes</label>
                               <span id="how_can_we_help_description" className="text-sm text-gray-500">Max. 500 characters</span>
