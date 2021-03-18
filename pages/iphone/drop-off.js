@@ -37,7 +37,7 @@ export default function Home() {
   </div>
 
         <div className="bg-gray-100">
-          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:pb-14 lg:px-8">
             <form
               className="kwes-form"
               action="https://kwes.io/api/foreign/forms/N52Hhfi6oCrKkb3FaKU6"
@@ -71,7 +71,7 @@ export default function Home() {
                               id="first_name"
                               autoComplete="given-name"
                               rules="required|max:255"
-                              className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                             />
                           </div>
 
@@ -88,7 +88,7 @@ export default function Home() {
                               id="last_name"
                               autoComplete="family-name"
                               rules="required|max:255"
-                              className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                             />
                           </div>
 
@@ -105,7 +105,7 @@ export default function Home() {
                               id="email_address"
                               autoComplete="email"
                               rules="required|max:255"
-                              className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                             />
                           </div>
 
@@ -121,7 +121,7 @@ export default function Home() {
                               name="contact_number"
                               id="contact_number"
                               autoComplete="tel"
-                              className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                             />
                           </div>
                         </div>
@@ -164,7 +164,7 @@ export default function Home() {
                                 id="iphone_model"
                                 name="iphone_model"
                                 rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                 defaultValue={model}
                                 value={model}
                               >
@@ -208,7 +208,7 @@ export default function Home() {
                                 id="required_repair"
                                 name="required_repair"
                                 rules="required"
-                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                 defaultValue={repair}
                                 value={repair}
                               >
@@ -234,7 +234,7 @@ export default function Home() {
                               <span id="how_can_we_help_description" className="text-sm text-gray-500">Max. 500 characters</span>
                           </div>
                           <div className="mt-1">
-                            <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"></textarea>
+                            <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" className="block w-full shadow-sm sm:text-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"></textarea>
                           </div>
                          </div>
                         </div>
@@ -276,7 +276,7 @@ export default function Home() {
                               id="appointment_location"
                               name="appointment_location"
                               rules="required"
-                              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             >
                               <option>Trinity Leeds</option>
                               <option>Kirkstall Morrisons</option>
@@ -293,7 +293,7 @@ export default function Home() {
                             <div className="kw-datepicker-wrapper">
                               <input
                                 type="text"
-                                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md overflow-visible"
+                                className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md overflow-visible"
                                 name="date"
                                 data-kw-type="datepicker"
                                 data-kw-rules="required"
@@ -313,7 +313,7 @@ export default function Home() {
                               id="appointment_time"
                               name="appointment_time"
                               rules="required"
-                              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             >
                               <option>09:00-10:00</option>
                               <option>10:00-11:00</option>
@@ -335,7 +335,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="px-4 py-3 text-right sm:px-6">
-              <button type="submit" className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <button type="submit" className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 Submit
               </button>
               </div>

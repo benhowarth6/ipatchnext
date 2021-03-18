@@ -38,7 +38,7 @@ export default ({ handleChange, handleSubmit, post }) => {
                         id="first_name"
                         autoComplete="given-name"
                         rules="required|max:255"
-                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
 
@@ -57,7 +57,7 @@ export default ({ handleChange, handleSubmit, post }) => {
                         id="last_name"
                         autoComplete="family-name"
                         rules="required|max:255"
-                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
 
@@ -76,7 +76,7 @@ export default ({ handleChange, handleSubmit, post }) => {
                         id="email_address"
                         autoComplete="email"
                         rules="required|max:255"
-                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
 
@@ -94,7 +94,7 @@ export default ({ handleChange, handleSubmit, post }) => {
                         name="contact_number"
                         id="contact_number"
                         autoComplete="tel"
-                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                   </div>

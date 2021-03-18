@@ -1,9 +1,9 @@
 // pages/404.js
 export default function Custom404() {
     return (
-    <div className="min-h-screen bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
+    <div className="min-h-screen bg-gradient-to-r from-blue-200 via-red-200 to-yellow-100">
   <div className="min-h-screen md:min-h-full ...">
-  <div className="bg-cover bg-center bg-gradient-to-r min-h-full from-indigo-200 via-red-200 to-yellow-100">
+  <div className="bg-cover bg-center bg-gradient-to-r min-h-full from-blue-200 via-red-200 to-yellow-100">
   <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
       <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
         <div>

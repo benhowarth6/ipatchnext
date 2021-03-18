@@ -17,7 +17,7 @@ const Hero = () => {
                 Hi, we're iPatch.
               </h1>
               <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
-                We make repair <span className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent">easy.</span>
+                We make repair <span className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-blue-500 bg-clip-text text-transparent">easy.</span>
               </h1>
               <p className="mt-6 text-xl text-gray-500">
                 We offer same day, quality repairs for iPhones, iPads, MacBooks and more.
