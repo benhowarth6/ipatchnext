@@ -15,9 +15,9 @@ function Home() {
 
     <div>
       <NextSeo
-      title="iPatch - Apple Device Repairs"
-      description="Apple device repairs including iPhone, iPad, Apple Watch, MacBook's & iPods. Based in Trinity Leeds, open 7 days a week."
-    />
+        title="iPatch - Apple Device Repairs"
+        description="Apple device repairs including iPhone, iPad, Apple Watch, MacBook's & iPods. Based in Trinity Leeds, open 7 days a week."
+      />
       <LocalBusinessJsonLd
         type="Store"
         id="http://ipatchrepairs.com"
@@ -64,7 +64,7 @@ function Home() {
             validThrough: '2022-01-01',
           },
         ]}
-        />
+      />
       <Header />
       <Hero />
 
