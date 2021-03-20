@@ -75,18 +75,15 @@ function Home() {
               <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Service Options</h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 A better way to repair
-        </p>
+                </p>
               <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
                 We’re here to help should you ever need us. We aim to make our process as simple as possible, while using the best available parts. No matter your option, you’ll get a quick turnaround.
-        </p>
+              </p>
             </div>
-
             <div className="mt-10">
               <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
-
                 <div>
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-
                     <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/globe-alt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -95,30 +92,27 @@ function Home() {
                   <div className="mt-5">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
                       Walk-in Repair
-              </dt>
+                      </dt>
                     <dd className="mt-2 text-base text-gray-500">
                       We don’t require appointments at our Trinity Leeds store, so you can pop down anytime without an appointment for a quick repair.
-              </dd>
+                    </dd>
                   </div>
                 </div>
-
                 <div>
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                     <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-
                   </div>
                   <div className="mt-5">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
                       Book an Appointment
-              </dt>
+                    </dt>
                     <dd className="mt-2 text-base text-gray-500">
                       Feel free to book a repair ahead of time for either of our stores. This helps to ensure part availability for a quicker service turnaround.
-              </dd>
+                    </dd>
                   </div>
                 </div>
-
                 <div>
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                     <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/lightning-bolt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -128,43 +122,42 @@ function Home() {
                   <div className="mt-5">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
                       Mail-in Repair
-              </dt>
+                    </dt>
                     <dd className="mt-2 text-base text-gray-500">
                       We also offer mail-in repairs for all devices, we aim to have all repairs completed and dispatched within 24 hours of receiving them.
-              </dd>
+                    </dd>
                   </div>
                 </div>
-
               </dl>
             </div>
           </div>
         </div>
 
-        <div className="relative bg-white">
-          <div className="lg:absolute lg:inset-0">
-            <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
-              <img className="h-56 w-full object-cover lg:absolute lg:h-full" src="https://images.unsplash.com/photo-1544281679-e669cb87ea50?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=5250&q=80" alt="" />
-            </div>
+        <div className="relative bg-gray-800">
+          <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+            <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=60&amp;blend=6366F1&amp;sat=-100&amp;blend-mode=multiply" alt="" />
+
           </div>
-          <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
-            <div className="lg:col-start-2 lg:pl-8">
-              <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
-                <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase">Work with us</h2>
-                <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Our Process</h3>
-                <p className="mt-8 text-lg text-gray-500">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
-                <div className="mt-5 prose prose-blue text-gray-500 space-y-4">
-                  <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-                  <p>Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.</p>
-                  <p>Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem arcu, metus, egestas netus cursus. In.</p>
-                  <ul>
-                    <li>Quis elit egestas venenatis mattis dignissim.</li>
-                    <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-                    <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-                  </ul>
-                  <p>Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
-                  <h3>How we’re different</h3>
-                  <p>Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.</p>
-                  <p>Mauris ullamcorper imperdiet nec egestas mi quis quam ante vulputate. Vel faucibus adipiscing lacus, eget. Nunc fermentum id tellus donec. Ut metus odio sit sit varius non nunc orci. Eu, mi neque, ornare suspendisse amet, nibh. Facilisi volutpat lectus id sapien dis mauris rhoncus. Est rhoncus, interdum imperdiet ac eros, diam mauris, tortor. Risus id sit molestie magna.</p>
+          <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+            <div className="md:ml-auto md:w-1/2 md:pl-10">
+              <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">
+                What we offer
+                </h2>
+              <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
+                We’re here to help
+              </p>
+              <p className="mt-3 text-lg text-gray-300">
+                Exclusively Apple device repairs with under an hour turn around, original components and a 90 day warranty. Open every day of the week with no appointment necessary.
+              </p>
+              <div className="mt-8">
+                <div className="inline-flex rounded-md shadow">
+                  <a href="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                    Visit the help center
+              <svg className="-mr-1 ml-3 h-5 w-5 text-gray-400" data-todo-x-description="Heroicon name: solid/external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -196,7 +189,6 @@ function Home() {
             </div>
           </div>
         </div>
-
 
         {/* Alternating Feature Sections */}
         <div className="relative pt-16 pb-32 lg:overflow-hidden">
@@ -262,6 +254,7 @@ function Home() {
               </div>
             </div>
           </div>
+
           <div className="mt-24">
             <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
               <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
@@ -297,7 +290,6 @@ function Home() {
                     width={2560}
                     height={1536}
                   />
-
                 </div>
               </div>
             </div>
@@ -347,9 +339,7 @@ function Home() {
             </div>
           </div>
         </div>
-
         <Contact />
-
       </main>
       <Footer />
     </div>

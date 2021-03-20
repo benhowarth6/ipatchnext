@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Home() {
 
@@ -41,7 +41,7 @@ export default function Home() {
               />
               <div className="mt-8">
                 <h3 className="text-lg font-medium">
-                  <a href="iphone/booking-type" className="focus:outline-none">
+                  <a href="iphone/book-repair/booking-type" className="focus:outline-none">
                     {/* Extend touch target to entire panel */}
                     <span className="absolute inset-0" aria-hidden="true"></span>
               iPhone Repair
@@ -125,7 +125,7 @@ export default function Home() {
                   <a href="/" className="focus:outline-none">
                     {/* Extend touch target to entire panel */}
                     <span className="absolute inset-0" aria-hidden="true"></span>
-              Apple Watch Repair
+                  Apple Watch Repair
             </a>
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">

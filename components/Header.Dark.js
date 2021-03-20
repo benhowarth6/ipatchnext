@@ -16,8 +16,8 @@ const Header = () => {
               <div className="font-bold text-gray-900 dark:text-white leading-tight text-2xl sm:text-3xl tracking-tight">
                 iPatch
               </div>
-                <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
-                </div>
+              <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
+              </div>
             </div>
           </a>
         </Link>
@@ -71,28 +71,28 @@ const Header = () => {
           </Link>
         </div>
         <div className="justify-between">
-        <div className="-mr-2 flex items-center lg:hidden">
-          <button
-            type="button"
-            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-            onClick={() => setMenuOpen(true)}
-          >
-            <svg
-              className="h-6 w-6"
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
+          <div className="-mr-2 flex items-center lg:hidden">
+            <button
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+              onClick={() => setMenuOpen(true)}
             >
-              <title>Menu | iPatch</title>
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />
-            </svg>
-          </button>
-        </div>
+              <svg
+                className="h-6 w-6"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <title>Menu | iPatch</title>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -115,8 +115,8 @@ const Header = () => {
                       <div className="font-bold text-gray-900 dark:text-white leading-tight text-2xl sm:text-3xl tracking-tight">
                         iPatch
                       </div>
-                        <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
-                        </div>
+                      <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
+                      </div>
                     </div>
                   </a>
                 </Link>{" "}
