@@ -93,10 +93,10 @@ export default function Home() {
                           </div>
                           <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                             <div>
-                            <span className="md:hidden">
+                            <span className="lg:hidden">
                                 <p className="text-sm font-medium text-black hover:text-blue-500 truncate">Mid 2010</p>
                               </span>
-                              <span className="hidden md:inline">
+                              <span className="hidden lg:inline">
                                 <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Mid 2010)</p>
                               </span>
                               <p className="mt-2 flex items-center text-sm">
@@ -132,10 +132,10 @@ export default function Home() {
                           </div>
                           <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                             <div>
-                            <span className="md:hidden">
+                            <span className="lg:hidden">
                                 <p className="text-sm font-medium text-black hover:text-blue-500 truncate">Early 2011</p>
                               </span>
-                              <span className="hidden md:inline">
+                              <span className="hidden lg:inline">
                                 <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Early 2011)</p>
                               </span>
                               <p className="mt-2 flex items-center text-sm">
@@ -171,10 +171,10 @@ export default function Home() {
                           </div>
                           <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                             <div>
-                            <span className="md:hidden">
+                            <span className="lg:hidden">
                                 <p className="text-sm font-medium text-black hover:text-blue-500 truncate">Late 2011</p>
                               </span>
-                              <span className="hidden md:inline">
+                              <span className="hidden lg:inline">
                                 <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Late 2011)</p>
                               </span>
                               <p className="mt-2 flex items-center text-sm">
@@ -210,10 +210,10 @@ export default function Home() {
                           </div>
                           <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                             <div>
-                              <span className="md:hidden">
+                              <span className="lg:hidden">
                                 <p className="text-sm font-medium text-black hover:text-blue-500 truncate">Mid 2012</p>
                               </span>
-                              <span className="hidden md:inline">
+                              <span className="hidden lg:inline">
                                 <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Mid 2012)</p>
                               </span>
                               <p className="mt-2 flex items-center text-sm">
