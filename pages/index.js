@@ -263,7 +263,7 @@ function Home() {
                 <div className="relative mx-auto">
                   <Image
                     src="/index/cracked-screen.jpg"
-                    alt="iPhone True Tone Pairing"
+                    alt="iPhone Screen Replacement"
                     width={490}
                     height={570}
 
@@ -347,7 +347,7 @@ function Home() {
                   <div className="relative mx-auto">
                     <Image
                       src="/index/battery.jpg"
-                      alt="iPhone Privacy"
+                      alt="iPhone Battery Replacement"
                       width={490}
                       height={570}
                     />
@@ -410,7 +410,7 @@ function Home() {
                 <div className="relative mx-auto">
                   <Image
                     src="/index/safe-secure.jpg"
-                    alt="iPhone True Tone Pairing"
+                    alt="iPhone Privacy"
                     width={490}
                     height={570}
 
@@ -463,7 +463,7 @@ function Home() {
                   <div className="max-h-12">
                   <Image
                     src="/index/jpimedia.jpg"
-                    alt="iPhone True Tone Pairing"
+                    alt="JPI Media Logo"
                     width={150}
                     height={75}
                   />
@@ -473,7 +473,7 @@ function Home() {
                 <div className="max-h-12">
                   <Image
                     src="/index/leeds-uni.jpg"
-                    alt="iPhone True Tone Pairing"
+                    alt="Leeds University Logo"
                     width={150}
                     height={75}
                   />
@@ -483,7 +483,7 @@ function Home() {
                 <div className="max-h-12">
                   <Image
                     src="/index/canal-river-trust.jpg"
-                    alt="iPhone True Tone Pairing"
+                    alt="Canal River Trust Logo"
                     width={150}
                     height={75}
                   />
@@ -493,7 +493,7 @@ function Home() {
                 <div className="max-h-12">
                   <Image
                     src="/index/lupton-fawcett.jpg"
-                    alt="iPhone True Tone Pairing"
+                    alt="Lupton Fawcett Logo"
                     width={150}
                     height={75}
                   />
@@ -503,7 +503,7 @@ function Home() {
                 <div className="max-h-12">
                   <Image
                     src="/index/gsal.jpg"
-                    alt="iPhone True Tone Pairing"
+                    alt="Grammar School of Leeds Logo"
                     width={150}
                     height={75}
                   />
@@ -513,7 +513,7 @@ function Home() {
                 <div className="max-h-12">
                   <Image
                     src="/index/leeds-beckett.jpg"
-                    alt="iPhone True Tone Pairing"
+                    alt="Leeds Beckett University Logo"
                     width={150}
                     height={75}
                   />

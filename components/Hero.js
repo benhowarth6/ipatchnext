@@ -60,7 +60,7 @@ const Hero = () => {
             <Image
               priority
               src="/index/header.jpg"
-              alt="Index Hero"
+              alt="Index Hero Image"
               layout="responsive"
               width={2102}
               height={1401}
