@@ -21,6 +21,23 @@ export default function Home() {
       <Header />
 
       <div className="bg-gray-100">
+      <div className="relative bg-yellow-500">
+    <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+      <div className="pr-16 sm:text-center sm:px-16">
+        <p className="font-medium text-white">
+          <span className="md:hidden">
+            This iPhone has paired components
+          </span>
+          <span className="hidden md:inline">
+            Warning! This iPhone has paired components, you may recieve warnings post repair.
+          </span>
+          <span className="block sm:ml-2 sm:inline-block">
+            <a href="paired-warning" className="text-white font-bold underline"> Learn more <span aria-hidden="true">→</span></a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
         <div className="pt-12 sm:pt-16 lg:pt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
@@ -700,43 +717,6 @@ export default function Home() {
                     height={570}
                   />
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="fixed bottom-0 inset-x-0 pb-2 sm:pb-5">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div className="p-2 rounded-lg bg-yellow-500 shadow-lg sm:p-3">
-            <div className="flex items-center justify-between flex-wrap">
-              <div className="w-0 flex-1 flex items-center">
-                <span className="flex p-2 rounded-lg bg-yellow-800">
-                  <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/speakerphone" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                  </svg>
-                </span>
-                <p className="ml-3 font-medium text-white">
-                  <span className="block font-semibold">
-                    Warning
-                </span>
-                  <span className="block">
-                    This iPhone has paired components, you may recieve warnings post repair.
-                </span>
-                </p>
-              </div>
-              <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-                <a href="paired-warning" className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-blue-50">
-                  Learn more
-              </a>
-              </div>
-              <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
-                <button type="button" className="-mr-1 flex p-2 rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-white">
-                  <span className="sr-only">Dismiss</span>
-                  <svg className="h-6 w-6 text-white" data-todo-x-description="Heroicon name: outline/x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
-                </button>
               </div>
             </div>
           </div>

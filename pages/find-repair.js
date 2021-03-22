@@ -53,7 +53,7 @@ export default function Home() {
                   </div>
                   <div>
                     <a href="iphoneRepair" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                      View Repairs
+                      View
               </a>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function Home() {
                   </div>
                   <div>
                     <a href="ipadRepair" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                      View Repairs
+                      View
               </a>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function Home() {
                   </div>
                   <div>
                     <a href="macRepair" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                      View Repairs
+                      View
               </a>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export default function Home() {
                   </div>
                   <div>
                     <a href="watchRepair" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                      View Repairs
+                      View
               </a>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function Home() {
                   </div>
                   <div>
                     <a href="iPodRepair" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                      View Repairs
+                      View
                     </a>
                   </div>
                 </div>
