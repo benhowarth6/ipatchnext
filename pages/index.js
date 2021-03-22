@@ -422,6 +422,19 @@ function Home() {
           </div>
         </div>
 
+        <div className="bg-blue-600">
+    <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+        <span className="block">Ready to repair?</span>
+        <span className="block">Get your device booked in today.</span>
+      </h2>
+      <p className="mt-4 text-lg leading-6 text-gray-200">Book your device in with us to ensure part availability on your chosen day.</p>
+      <a href="bookRepair" className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
+        Book a Repair
+      </a>
+    </div>
+  </div>
+
         <div className="bg-white">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
             <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
@@ -430,7 +443,7 @@ function Home() {
                   Trusted by a number of companies
           </h2>
                 <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                  We offer volume discounts on repairs for businesses, get in touch to find out how we can help support you.
+                  We offer a number of services for businesses to help maintain your inventory of devices. We offer bulk discounts and even collection and drop off's. Contact us to find out how we can help you.
           </p>
                 <div className="mt-8 sm:flex">
                   <div className="rounded-md shadow">
@@ -447,22 +460,64 @@ function Home() {
               </div>
               <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
                 <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img className="max-h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Workcation" />
+                  <div className="max-h-12">
+                  <Image
+                    src="/index/jpimedia.jpg"
+                    alt="iPhone True Tone Pairing"
+                    width={150}
+                    height={75}
+                  />
+                  </div>
                 </div>
                 <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img className="max-h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+                <div className="max-h-12">
+                  <Image
+                    src="/index/leeds-uni.jpg"
+                    alt="iPhone True Tone Pairing"
+                    width={150}
+                    height={75}
+                  />
+                  </div>
                 </div>
                 <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img className="max-h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+                <div className="max-h-12">
+                  <Image
+                    src="/index/canal-river-trust.jpg"
+                    alt="iPhone True Tone Pairing"
+                    width={150}
+                    height={75}
+                  />
+                  </div>
                 </div>
                 <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img className="max-h-12" src="https://tailwindui.com/img/logos/laravel-logo-gray-400.svg" alt="Laravel" />
+                <div className="max-h-12">
+                  <Image
+                    src="/index/lupton-fawcett.jpg"
+                    alt="iPhone True Tone Pairing"
+                    width={150}
+                    height={75}
+                  />
+                  </div>
                 </div>
                 <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img className="max-h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
+                <div className="max-h-12">
+                  <Image
+                    src="/index/gsal.jpg"
+                    alt="iPhone True Tone Pairing"
+                    width={150}
+                    height={75}
+                  />
+                  </div>
                 </div>
                 <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <img className="max-h-12" src="https://tailwindui.com/img/logos/statamic-logo-gray-400.svg" alt="Statamic" />
+                <div className="max-h-12">
+                  <Image
+                    src="/index/leeds-beckett.jpg"
+                    alt="iPhone True Tone Pairing"
+                    width={150}
+                    height={75}
+                  />
+                  </div>
                 </div>
               </div>
             </div>
