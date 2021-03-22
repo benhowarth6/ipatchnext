@@ -165,13 +165,13 @@ export default function Home() {
                             name="iphone_model"
                             rules="required"
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                            defaultValue={repair}
+                            defaultValue={model}
                           >
                             <option disabled value> -- Select your iPhone -- </option>
                             <option value="12 Pro Max">iPhone 12 Pro Max</option>
                             <option value="12 Pro">iPhone 12 Pro</option>
                             <option value="12">iPhone 12</option>
-                            <option value="12-mini">iPhone 12 Mini</option>
+                            <option value="12 Mini">iPhone 12 Mini</option>
                             <option value="se-2">iPhone SE (2nd Generation)</option>
                             <option value="11-pro-max">iPhone 11 Pro Max</option>
                             <option value="11 Pro">iPhone 11 Pro</option>

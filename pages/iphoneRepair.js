@@ -42,21 +42,25 @@ export default function Home() {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Image
-                  src="/iphone/12-pro-max.jpg"
-                  alt="Picture of the author"
-                  className="h-60 w-full object-cover"
-                  width={1000}
-                  height={750}
-                />
+                <Link href={`/iphone/12-pro-max`}>
+                  <a>
+                    <Image
+                      src="/iphone/12-pro-max.jpg"
+                      alt="Picture of the author"
+                      className="h-60 w-full object-cover"
+                      width={1000}
+                      height={750}
+                    />
+                  </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`/iphone/12-pro-max`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPhone 12 Pro Max
-                </p>
+                </a>
                     </Link>
                     <Link href="/iphone/12-pro-max">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
@@ -67,6 +71,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={`/iphone/12-pro`}>
+                <a>
                 <Image
                   src="/iphone/12-pro.jpg"
                   alt="Picture of the author"
@@ -74,14 +80,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`/iphone/12-pro`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPhone 12 Pro
-                </p>
+                </a>
                     </Link>
                     <Link href="/iphone/12-pro">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
@@ -92,6 +100,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={`/iphone/12`}>
+                <a>
                 <Image
                   src="/iphone/12.jpg"
                   alt="Picture of the author"
@@ -99,14 +109,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`/iphone/12`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPhone 12
-                </p>
+                </a>
                     </Link>
                     <Link href="/iphone/12">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
@@ -117,6 +129,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={`/iphone/12-mini`}>
+                <a>
                 <Image
                   src="/iphone/12-mini.jpg"
                   alt="Picture of the author"
@@ -124,16 +138,18 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`/iphone/12-mini`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPhone 12 Mini
-                </p>
+                </a>
                     </Link>
-                    <Link href="/iphone/12-pro-mini">
+                    <Link href="/iphone/12-mini">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
                     </Link>
                   </div>
