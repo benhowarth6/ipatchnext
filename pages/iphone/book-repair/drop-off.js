@@ -260,7 +260,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="mt-5 md:mt-0 md:col-span-2">
-                  <div className="shadow overflow-hidden sm:rounded-md">
+                  <div className="shadow overflow-visible sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
                         <div className="col-span-6 sm:col-span-3">
@@ -288,10 +288,10 @@ export default function Home() {
                           >
                             Appointment Date
                             </label>
-                          <div className="kw-datepicker-wrapper">
+                          <div className="kw-datepicker-wrapper overflow-visible">
                             <input
                               type="text"
-                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md overflow-visible"
+                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                               name="date"
                               data-kw-type="datepicker"
                               data-kw-rules="required"
