@@ -156,6 +156,122 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 bg-white">
+              <Link href={`/iphone/11-pro-max`}>
+                <a>
+                <Image
+                  src="/iphone/11-pro-max.jpg"
+                  alt="Picture of the author"
+                  className="h-60 w-full object-cover"
+                  width={1000}
+                  height={750}
+                />
+                </a>
+                </Link>
+              </div>
+              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                <div className="flex-1">
+                  <div className="text-center">
+                    <Link href={`/iphone/11-pro-max`}>
+                      <a className="text-xl font-semibold text-gray-900">
+                        iPhone 11 Pro Max
+                </a>
+                    </Link>
+                    <Link href="/iphone/11-pro-max">
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 bg-white">
+              <Link href={`/iphone/11-pro`}>
+                <a>
+                <Image
+                  src="/iphone/11-pro.jpg"
+                  alt="Picture of the author"
+                  className="h-60 w-full object-cover"
+                  width={1000}
+                  height={750}
+                />
+                </a>
+                </Link>
+              </div>
+              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                <div className="flex-1">
+                  <div className="text-center">
+                    <Link href={`/iphone/11-pro`}>
+                      <a className="text-xl font-semibold text-gray-900">
+                        iPhone 11 Pro
+                </a>
+                    </Link>
+                    <Link href="/iphone/11-pro">
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 bg-white">
+              <Link href={`/iphone/11`}>
+                <a>
+                <Image
+                  src="/iphone/11.jpg"
+                  alt="Picture of the author"
+                  className="h-60 w-full object-cover"
+                  width={1000}
+                  height={750}
+                />
+                </a>
+                </Link>
+              </div>
+              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                <div className="flex-1">
+                  <div className="text-center">
+                    <Link href={`/iphone/11`}>
+                      <a className="text-xl font-semibold text-gray-900">
+                        iPhone 11
+                </a>
+                    </Link>
+                    <Link href="/iphone/11">
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-shrink-0 bg-white">
+              <Link href={`/iphone/xs-max`}>
+                <a>
+                <Image
+                  src="/iphone/xs-max.jpg"
+                  alt="Picture of the author"
+                  className="h-60 w-full object-cover"
+                  width={1000}
+                  height={750}
+                />
+                </a>
+                </Link>
+              </div>
+              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                <div className="flex-1">
+                  <div className="text-center">
+                    <Link href={`/iphone/xs-max`}>
+                      <a className="text-xl font-semibold text-gray-900">
+                        iPhone XS Max
+                </a>
+                    </Link>
+                    <Link href="/iphone/xs-max">
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
