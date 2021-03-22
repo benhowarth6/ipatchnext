@@ -187,7 +187,7 @@ function Home() {
                 A little more about us
         </p>
               <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                We’re here to help should you ever need us. We aim to make our process as simple as possible, while using the best available parts. No matter your option, you’ll get a quick turnaround.
+                Find out about how we work and the common services we offer.
         </p>
             </div>
 
