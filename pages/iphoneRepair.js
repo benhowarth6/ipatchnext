@@ -55,7 +55,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={`/iphone/12-pro-max`}>
                       <p className="text-xl font-semibold text-gray-900">
-                        iPhone 12 Pro Max Repairs
+                        iPhone 12 Pro Max
                 </p>
                     </Link>
                     <Link href="/iphone/12-pro-max">
@@ -80,7 +80,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={`/iphone/12-pro`}>
                       <p className="text-xl font-semibold text-gray-900">
-                        iPhone 12 Pro Repairs
+                        iPhone 12 Pro
                 </p>
                     </Link>
                     <Link href="/iphone/12-pro">
@@ -105,7 +105,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={`/iphone/12`}>
                       <p className="text-xl font-semibold text-gray-900">
-                        iPhone 12 Repairs
+                        iPhone 12
                 </p>
                     </Link>
                     <Link href="/iphone/12">
@@ -130,7 +130,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={`/iphone/12-mini`}>
                       <p className="text-xl font-semibold text-gray-900">
-                        iPhone 12 Mini Repairs
+                        iPhone 12 Mini
                 </p>
                     </Link>
                     <Link href="/iphone/12-pro-mini">
