@@ -197,7 +197,7 @@ function Home() {
                   Screen Replacements
           </h3>
                 <p className="mt-3 text-lg text-gray-500">
-                  We offer screen replacements on a number of Apple devices, including iPhone's, iPad's, Mac's and more.
+                  We offer screen replacements on all Apple devices, including iPhone's, iPad's, Mac's and more.
           </p>
 
                 <dl className="mt-10 space-y-10">
