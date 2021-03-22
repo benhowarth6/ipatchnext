@@ -196,12 +196,7 @@ export default function Home() {
             <div className="max-w-md mx-auto lg:max-w-5xl">
               <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
                 <div className="flex-1">
-                  <div>
-                    <h3 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-white text-gray-800">
-                      *
-                </h3>
-                  </div>
-                  <div className="mt-4 text-lg text-gray-600">Same day repairs and returns depend on part availability, you may <span className="font-semibold text-gray-900">contact us</span> to ensure your part is in stock. </div>
+                  <div className="mt-4 text-lg text-gray-600">*Same day repairs and returns depend on part availability, you may <span className="font-semibold text-gray-900">contact us</span> to ensure your part is in stock. </div>
                 </div>
               </div>
             </div>
