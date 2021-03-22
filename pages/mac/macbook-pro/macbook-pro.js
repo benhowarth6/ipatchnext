@@ -93,7 +93,12 @@ export default function Home() {
                           </div>
                           <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                             <div>
-                              <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Mid 2010)</p>
+                            <span className="md:hidden">
+                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">Mid 2010</p>
+                              </span>
+                              <span className="hidden md:inline">
+                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Mid 2010)</p>
+                              </span>
                               <p className="mt-2 flex items-center text-sm">
                                 <svg className="flex-shrink-0 mr-1.5 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -105,7 +110,7 @@ export default function Home() {
                         </div>
                         <div>
                           <a href="#" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                            View Repairs
+                            View
                     </a>
                         </div>
                       </div>
@@ -117,7 +122,7 @@ export default function Home() {
                       <div className="flex items-center px-4 py-4 sm:px-6">
                         <div className="min-w-0 flex-1 flex items-center">
                           <div className="flex-shrink-0">
-                          <Image
+                            <Image
                               src="/devices/a1278.png"
                               className="inline-block h-16 w-16"
                               alt="Book a MacBook Pro Early 2011 Repair"
@@ -127,7 +132,12 @@ export default function Home() {
                           </div>
                           <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                             <div>
-                              <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Early 2011)</p>
+                            <span className="md:hidden">
+                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">Early 2011</p>
+                              </span>
+                              <span className="hidden md:inline">
+                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Early 2011)</p>
+                              </span>
                               <p className="mt-2 flex items-center text-sm">
                                 <svg className="flex-shrink-0 mr-1.5 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -139,7 +149,7 @@ export default function Home() {
                         </div>
                         <div>
                           <a href="#" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                            View Repairs
+                            View
                     </a>
                         </div>
                       </div>
@@ -151,7 +161,7 @@ export default function Home() {
                       <div className="flex items-center px-4 py-4 sm:px-6">
                         <div className="min-w-0 flex-1 flex items-center">
                           <div className="flex-shrink-0">
-                          <Image
+                            <Image
                               src="/devices/a1278.png"
                               className="inline-block h-16 w-16"
                               alt="Book a MacBook Pro Late 2011 Repair"
@@ -161,7 +171,12 @@ export default function Home() {
                           </div>
                           <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                             <div>
-                              <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Late 2011)</p>
+                            <span className="md:hidden">
+                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">Late 2011</p>
+                              </span>
+                              <span className="hidden md:inline">
+                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Late 2011)</p>
+                              </span>
                               <p className="mt-2 flex items-center text-sm">
                                 <svg className="flex-shrink-0 mr-1.5 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -173,7 +188,7 @@ export default function Home() {
                         </div>
                         <div>
                           <a href="#" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                            View Repairs
+                            View
                     </a>
                         </div>
                       </div>
@@ -185,7 +200,7 @@ export default function Home() {
                       <div className="flex items-center px-4 py-4 sm:px-6">
                         <div className="min-w-0 flex-1 flex items-center">
                           <div className="flex-shrink-0">
-                          <Image
+                            <Image
                               src="/devices/a1278.png"
                               className="inline-block h-16 w-16"
                               alt="Book a MacBook Pro Mid 2012 Repair"
@@ -195,7 +210,12 @@ export default function Home() {
                           </div>
                           <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                             <div>
-                              <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Mid 2012)</p>
+                              <span className="md:hidden">
+                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">Mid 2012</p>
+                              </span>
+                              <span className="hidden md:inline">
+                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">MacBook Pro 13-inch (Mid 2012)</p>
+                              </span>
                               <p className="mt-2 flex items-center text-sm">
                                 <svg className="flex-shrink-0 mr-1.5 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -207,7 +227,7 @@ export default function Home() {
                         </div>
                         <div>
                           <a href="#" className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                            View Repairs
+                            View
                     </a>
                         </div>
                       </div>
