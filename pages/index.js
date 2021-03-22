@@ -413,7 +413,6 @@ function Home() {
                     alt="iPhone Privacy"
                     width={490}
                     height={570}
-
                   />
                 </div>
               </div>
