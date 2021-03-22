@@ -140,209 +140,330 @@ function Home() {
           </div>
         </div>
 
-        <div className="relative bg-white">
-          <div className="lg:absolute lg:inset-0">
-            <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
-              <img className="h-56 w-full object-cover lg:absolute lg:h-full" src="https://images.unsplash.com/photo-1544281679-e669cb87ea50?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=5250&q=80" alt="" />
+        <div className="bg-blue-600">
+          <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+                Expert advice and free diagnostics
+        </h2>
+              <p className="mt-3 text-xl text-gray-200 sm:mt-4">
+                From a team who work solely with apple products, with over 15 years experience.
+        </p>
             </div>
-          </div>
-          <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
-            <div className="lg:col-start-2 lg:pl-8">
-              <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
-                <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase">Work with us</h2>
-                <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Our Process</h3>
-                <p className="mt-8 text-lg text-gray-500">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
-                <div className="mt-5 prose prose-blue text-gray-500 space-y-4">
-                  <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-                  <p>Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.</p>
-                  <p>Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem arcu, metus, egestas netus cursus. In.</p>
-                  <ul>
-                    <li>Quis elit egestas venenatis mattis dignissim.</li>
-                    <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-                    <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-                  </ul>
-                  <p>Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
-                  <h3>How we’re different</h3>
-                  <p>Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.</p>
-                  <p>Mauris ullamcorper imperdiet nec egestas mi quis quam ante vulputate. Vel faucibus adipiscing lacus, eget. Nunc fermentum id tellus donec. Ut metus odio sit sit varius non nunc orci. Eu, mi neque, ornare suspendisse amet, nibh. Facilisi volutpat lectus id sapien dis mauris rhoncus. Est rhoncus, interdum imperdiet ac eros, diam mauris, tortor. Risus id sit molestie magna.</p>
-                </div>
+            <dl className="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
+              <div className="flex flex-col">
+                <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-200">
+                  Years experience
+          </dt>
+                <dd className="order-1 text-5xl font-extrabold text-white">
+                  15+
+          </dd>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Logo Cloud */}
-        <div className="bg-gray-100">
-          <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
-              Trusted by over 5 very average small businesses
-              </p>
-            <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+              <div className="flex flex-col mt-10 sm:mt-0">
+                <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-200">
+                  Average ratings
+          </dt>
+                <dd className="order-1 text-5xl font-extrabold text-white">
+                  5/5
+          </dd>
               </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+              <div className="flex flex-col mt-10 sm:mt-0">
+                <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-200">
+                  Device's repaired
+          </dt>
+                <dd className="order-1 text-5xl font-extrabold text-white">
+                  300K+
+          </dd>
               </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
-              </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Transistor" />
-              </div>
-              <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
-              </div>
-            </div>
+            </dl>
           </div>
         </div>
 
+        <div className="py-16 bg-gray-100 overflow-hidden lg:py-24">
+          <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+            <div className="lg:text-center">
+              <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">What we offer</h2>
+              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                A little more about us
+        </p>
+              <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                We’re here to help should you ever need us. We aim to make our process as simple as possible, while using the best available parts. No matter your option, you’ll get a quick turnaround.
+        </p>
+            </div>
 
-        {/* Alternating Feature Sections */}
-        <div className="relative pt-16 pb-32 lg:overflow-hidden">
-          <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100" />
-          <div className="relative">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-              <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-                <div>
-                  <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600">
-                      <svg className="h-6 w-6 text-white" x-description="Heroicon name: outline/inbox" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-black">
-                      We’re obsessed with quality
-                      </h2>
-                    <p className="mt-4 text-lg text-gray-500">
-                      We thoroughly check and test the fit, finish and functionality of all of our repairs. We’ll work until your device meets our rigorous standards and is fully repaired.
-                      </p>
-                    <p className="mt-4 text-lg text-gray-500">
-                      In the unlikely event this isn’t possible we’ll return your device and you won’t have to pay any fees.
-                      </p>
-                    <div className="mt-6">
-                      <a href="bookRepair" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:rom-blue-600 hover:to-blue-700">
-                        Get started
-                        </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-8 border-t border-gray-200 pt-6">
-                  <blockquote>
-                    <div>
-                      <p className="text-base text-gray-500">
-                        “
-                        Fantastic service from iPatch who repaired my iPad’s screen and then some. The repair was completed swiftly and my iPad is as good as new. ”
-                        </p>
-                    </div>
-                    <footer className="mt-3">
-                      <div className="flex items-center space-x-3">
-                        <div className="flex-shrink-0">
+            <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+              <div className="relative">
+                <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                  Screen Replacements
+          </h3>
+                <p className="mt-3 text-lg text-gray-500">
+                  We offer screen replacements on a number of Apple devices, including iPhone's, iPad's, Mac's and more.
+          </p>
 
-                        </div>
-                        <div className="text-base font-medium text-gray-700">
-                          Matty Firth, iPatch Customer
-                          </div>
+                <dl className="mt-10 space-y-10">
+
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                        <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/globe-alt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                        </svg>
                       </div>
-                    </footer>
-                  </blockquote>
-                </div>
-              </div>
-              <div className="mt-12 sm:mt-16 lg:mt-0">
-                <div className="pl-4 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                  <Image
-                    src="/index/hero1.jpg"
-                    alt="Picture of the author"
-                    width={2560}
-                    height={1536}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-24">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-              <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
-                <div>
-                  <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600">
-                      <svg className="h-6 w-6 text-white" x-description="Heroicon name: outline/sparkles" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-black">
-                      But that doesn't slow us down
-                      </h2>
-                    <p className="mt-4 text-lg text-gray-500">
-                      Our obsession with quality doesn’t slow us down. We offer most iPhone repairs in under 30 minutes, iPads in under 2 hours and Macs within 24 hours. This of course depends on part availability, but we keep a large number of spare parts in stock.
-                      </p>
-                    <div className="mt-6">
-                      <a href="bookRepair" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:rom-blue-600 hover:to-blue-700">
-                        Get started
-                        </a>
+                    </div>
+                    <div className="ml-4">
+                      <dt className="text-lg leading-6 font-medium text-gray-900">
+                        Coded Screens
+                  </dt>
+                      <dd className="mt-2 text-base text-gray-500">
+                        Using original, coded displays means your device’s True Tone, auto brightness and Face ID functions are retained.
+                  </dd>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-                <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                  <Image
-                    src="/index/hero2.jpg"
-                    alt="Picture of the author"
-                    className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                    width={2560}
-                    height={1536}
-                  />
 
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                        <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/scale" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <dt className="text-lg leading-6 font-medium text-gray-900">
+                        Genuine Components
+                  </dt>
+                      <dd className="mt-2 text-base text-gray-500">
+                        Genuine parts also mean that there won’t be any issues with the touch response and they are less likely to break after an impact than the copy versions.
+                  </dd>
+                    </div>
+                  </div>
+
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                        <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/lightning-bolt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <dt className="text-lg leading-6 font-medium text-gray-900">
+                        Warranty
+                  </dt>
+                      <dd className="mt-2 text-base text-gray-500">
+                        And just in case you do have any issues with your device, we offer a 90-day warranty against any part defects or workmanship.
+                  </dd>
+                    </div>
+                  </div>
+
+                </dl>
+              </div>
+
+              <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+                <div className="relative mx-auto">
+                  <Image
+                    src="/index/cracked-screen.jpg"
+                    alt="iPhone True Tone Pairing"
+                    width={490}
+                    height={570}
+
+                  />
                 </div>
               </div>
             </div>
+
+            <div className="relative mt-12 sm:mt-16 lg:mt-24">
+              <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div className="lg:col-start-2">
+                  <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                    Batteries
+            </h3>
+                  <p className="mt-3 text-lg text-gray-500">
+                    Batteries are a complex technology, and a number of variables contribute to battery performance and related iPhone performance. All rechargeable batteries are consumables and have a limited lifespan – eventually their capacity and performance decline so that they need to be replaced.
+
+            </p>
+
+                  <dl className="mt-10 space-y-10">
+
+                    <div className="flex">
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                          <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/annotation" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 9a2 2 0 10-4 0v5a2 2 0 01-2 2h6m-6-4h4m8 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="ml-4">
+                        <dt className="text-lg leading-6 font-medium text-gray-900">
+                          Free Diagnostics
+                    </dt>
+                        <dd className="mt-2 text-base text-gray-500">
+                          We can carry out charge tests against your battery to see if it's offering peak performance or if it requires a replacement. We can do this on the spot with no appointment needed.
+                    </dd>
+                      </div>
+                    </div>
+
+                    <div className="flex">
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                          <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/mail" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="ml-4">
+                        <dt className="text-lg leading-6 font-medium text-gray-900">
+                          Quick Replacements
+                    </dt>
+                        <dd className="mt-2 text-base text-gray-500">
+                          We keep batteries in stock for all iPhones, most iPad's and some other devices. This means we can replace most batteries on the spot within around 15 minutes.
+                    </dd>
+                      </div>
+                    </div>
+
+                    <div className="flex">
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                          <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/lightning-bolt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="ml-4">
+                        <dt className="text-lg leading-6 font-medium text-gray-900">
+                          Warranty
+                  </dt>
+                        <dd className="mt-2 text-base text-gray-500">
+                          And just in case you do have any issues with your new battery, we offer a 90-day warranty against any part defects or workmanship.
+                  </dd>
+                      </div>
+                    </div>
+
+
+                  </dl>
+                </div>
+
+                <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+                  <div className="relative mx-auto">
+                    <Image
+                      src="/index/battery.jpg"
+                      alt="iPhone Privacy"
+                      width={490}
+                      height={570}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+              <div className="relative">
+                <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
+                  Privacy
+          </h3>
+                <p className="mt-3 text-lg text-gray-500">
+                  You can leave your device with us trusting it's in safe hands. We don't even require your passcode for the vast majority of our repairs, so your data stays private.
+          </p>
+
+                <dl className="mt-10 space-y-10">
+
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                        <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/annotation" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <dt className="text-lg leading-6 font-medium text-gray-900">
+                        No passcode? No problem
+                    </dt>
+                      <dd className="mt-2 text-base text-gray-500">
+                        We can carry out nearly all iPhone repairs without your passcode. Should we require it to test certain features, you are more than welcome to enter the code yourself to carry out any tests.
+                    </dd>
+                    </div>
+                  </div>
+
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                        <svg className="h-6 w-6" data-todo-x-description="Heroicon name: outline/mail" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <dt className="text-lg leading-6 font-medium text-gray-900">
+                        Your data stays safe
+                    </dt>
+                      <dd className="mt-2 text-base text-gray-500">
+                        We never access, save or copy any personal information that's saved on your device, should you require data backing up for a transfer this information will be encrypted and deleted once complete.
+                    </dd>
+                    </div>
+                  </div>
+
+                </dl>
+              </div>
+
+              <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+                <div className="relative mx-auto">
+                  <Image
+                    src="/index/safe-secure.jpg"
+                    alt="iPhone True Tone Pairing"
+                    width={490}
+                    height={570}
+
+                  />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        {/* Stats section */}
-        <div className="relative bg-gray-900">
-          <div className="h-80 absolute bottom-0 xl:inset-0 xl:h-auto xl:grid xl:grid-cols-2">
-            <div className="h-full xl:relative xl:col-start-2">
-              <div className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0">
-                <Image
-                  src="/index/stats.jpg"
-                  alt="iPhone being repaired"
-                  width={2700}
-                  height={1800}
-                />
-                <div aria-hidden="true" className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"></div>
+        <div className="bg-white">
+          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+              <div>
+                <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                  Trusted by a number of companies
+          </h2>
+                <p className="mt-3 max-w-3xl text-lg text-gray-500">
+                  We offer volume discounts on repairs for businesses, get in touch to find out how we can help support you.
+          </p>
+                <div className="mt-8 sm:flex">
+                  <div className="rounded-md shadow">
+                    <a href="/" className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                      Create Account
+              </a>
+                  </div>
+                  <div className="mt-3 sm:mt-0 sm:ml-3">
+                    <a href="/" className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200">
+                      Contact Us
+              </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
-            <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-              <h2 className="text-sm font-semibold tracking-wide uppercase">
-                <span className="bg-gradient-to-r from-gray-200 to-blue-300 bg-clip-text text-transparent">Metrics</span>
-              </h2>
-              <p className="mt-3 text-3xl font-extrabold text-white">We've been doing this for a while now</p>
-              <p className="mt-5 text-lg text-gray-300">After trading for more than a decade, we’ve come to know the repair of Apple devices back to front, inside out, and upside down.</p>
-              <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
-                <p>
-                  <span className="block text-2xl font-bold text-white">250K+</span>
-                  <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Device's repaired</span></span>
-                </p>
-                <p>
-                  <span className="block text-2xl font-bold text-white">5/5</span>
-                  <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Average rating</span></span>
-                </p>
-                <p>
-                  <span className="block text-2xl font-bold text-white">5/5</span>
-                  <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Customer satisfaction</span></span>
-                </p>
-                <p>
-                  <span className="block text-2xl font-bold text-white">14+</span>
-                  <span className="mt-1 block text-base text-gray-300"><span className="font-medium text-white">Years experience</span></span>
-                </p>
+              <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+                  <img className="max-h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Workcation" />
+                </div>
+                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+                  <img className="max-h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+                </div>
+                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+                  <img className="max-h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+                </div>
+                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+                  <img className="max-h-12" src="https://tailwindui.com/img/logos/laravel-logo-gray-400.svg" alt="Laravel" />
+                </div>
+                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+                  <img className="max-h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
+                </div>
+                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+                  <img className="max-h-12" src="https://tailwindui.com/img/logos/statamic-logo-gray-400.svg" alt="Statamic" />
+                </div>
               </div>
             </div>
           </div>
