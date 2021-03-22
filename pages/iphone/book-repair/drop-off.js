@@ -263,23 +263,6 @@ export default function Home() {
                   <div className="shadow overflow-visible sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
-                        <div className="col-span-6 sm:col-span-3">
-                          <label
-                            htmlFor="country"
-                            className="block text-sm font-medium text-gray-700"
-                          >
-                            Appointment Location
-                            </label>
-                          <select
-                            id="appointment_location"
-                            name="appointment_location"
-                            rules="required"
-                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                          >
-                            <option>Trinity Leeds</option>
-                            <option>Kirkstall Morrisons</option>
-                          </select>
-                        </div>
 
                         <div className="col-span-6 sm:col-span-3">
                           <label
@@ -318,6 +301,24 @@ export default function Home() {
                             <option>11:00-12:00</option>
                             <option>12:00-13:00</option>
                             <option>13:00-14:00</option>
+                          </select>
+                        </div>
+
+                        <div className="col-span-6 sm:col-span-3">
+                          <label
+                            htmlFor="country"
+                            className="block text-sm font-medium text-gray-700"
+                          >
+                            Appointment Location
+                            </label>
+                          <select
+                            id="appointment_location"
+                            name="appointment_location"
+                            rules="required"
+                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          >
+                            <option>Trinity Leeds</option>
+                            <option>Kirkstall Morrisons</option>
                           </select>
                         </div>
                       </div>
