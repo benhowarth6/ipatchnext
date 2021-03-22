@@ -135,7 +135,7 @@ export default function Home() {
               </p>
                   <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
                     <span>
-                      &#163;349
+                      £349
                 </span>
                   </div>
                   <p className="mt-4 text-sm">
@@ -174,7 +174,7 @@ export default function Home() {
                 <h2 className="text-lg leading-6 font-medium text-gray-900">Rear Glass Casing</h2>
                 <p className="mt-4 text-sm text-gray-500">A new housing and frame to replace a cracked back.</p>
                 <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">&#163;299</span>
+                  <span className="text-4xl font-extrabold text-gray-900">£299</span>
                 </p>
                 <a href="book-repair/booking-type?model=12 Pro Max&repair=rear-case" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                   Book Repair
@@ -233,7 +233,7 @@ export default function Home() {
                 </li>
                 <p className="mt-4 text-sm text-gray-500">A new battery to restore your device to 100%.</p>
                 <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">&#163;85</span>
+                  <span className="text-4xl font-extrabold text-gray-900">£85</span>
                 </p>
                 <a href="book-repair/booking-type?model=12 Pro Max&repair=battery" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                   Book Repair
@@ -280,7 +280,7 @@ export default function Home() {
                 <h2 className="text-lg leading-6 font-medium text-gray-900">Charging Port</h2>
                 <p className="mt-4 text-sm text-gray-500">A new charging port to restore device charging.</p>
                 <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">&#163;85</span>
+                  <span className="text-4xl font-extrabold text-gray-900">£85</span>
                 </p>
                 <a href="book-repair/booking-type?model=12 Pro Max&repair=charging-port" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                   Book Repair
@@ -339,7 +339,7 @@ export default function Home() {
                 </li>
                 <p className="mt-4 text-sm text-gray-500">A new rear camera if one of yours is damaged.</p>
                 <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">&#163;150</span>
+                  <span className="text-4xl font-extrabold text-gray-900">£150</span>
                 </p>
                 <a href="book-repair/booking-type?model=12 Pro Max&repair=rear-camera" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                   Book Repair
@@ -386,7 +386,7 @@ export default function Home() {
                 <h2 className="text-lg leading-6 font-medium text-gray-900">Rear Camera Lens</h2>
                 <p className="mt-4 text-sm text-gray-500">A new replacement camera lens if one of yours is damaged.</p>
                 <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">&#163;95</span>
+                  <span className="text-4xl font-extrabold text-gray-900">£95</span>
                 </p>
                 <a href="book-repair/booking-type?model=12 Pro Max&repair=camera-lens" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                   Book Repair
@@ -433,7 +433,7 @@ export default function Home() {
                 <h2 className="text-lg leading-6 font-medium text-gray-900">Earpiece Speaker</h2>
                 <p className="mt-4 text-sm text-gray-500">A replacement speaker if you cannot hear on phone calls.</p>
                 <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">&#163;95</span>
+                  <span className="text-4xl font-extrabold text-gray-900">£95</span>
                 </p>
                 <a href="book-repair/booking-type?model=12 Pro Max&repair=earpiece" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                   Book Repair
@@ -480,7 +480,7 @@ export default function Home() {
                 <h2 className="text-lg leading-6 font-medium text-gray-900">Loudspeaker</h2>
                 <p className="mt-4 text-sm text-gray-500">A replacement loudspeaker if you cannot hear any audio.</p>
                 <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">&#163;95</span>
+                  <span className="text-4xl font-extrabold text-gray-900">£95</span>
                 </p>
                 <a href="book-repair/booking-type?model=12 Pro Max&repair=loudspeaker" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                   Book Repair
@@ -527,7 +527,7 @@ export default function Home() {
                 <h2 className="text-lg leading-6 font-medium text-gray-900">Button Fault</h2>
                 <p className="mt-4 text-sm text-gray-500">A replacement button flex if one of yours isn't working.</p>
                 <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">&#163;95</span>
+                  <span className="text-4xl font-extrabold text-gray-900">£95</span>
                 </p>
                 <a href="book-repair/booking-type?model=12 Pro Max&repair=button-fault" className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                   Book Repair

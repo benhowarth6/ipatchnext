@@ -149,7 +149,7 @@ export default function Home() {
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                   <span className="block">Not sure which Mac you have?</span>
                 </h2>
-                <p className="mt-4 text-lg leading-6 text-gray-800">If your Mac powers on, choose Apple menu  &#62; About This Mac.</p>
+                <p className="mt-4 text-lg leading-6 text-gray-800">If your Mac powers on, choose Apple menu  > About This Mac.</p>
               </div>
             </div>
             <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">

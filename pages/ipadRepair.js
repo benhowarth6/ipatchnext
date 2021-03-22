@@ -149,7 +149,7 @@ export default function Home() {
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
                   <span className="block">Not sure which iPad you have?</span>
                 </h2>
-                <p className="mt-4 text-lg leading-6 text-gray-800">If you’re using iPadOS or iOS 12.2 or later, go to Settings &#62; General &#62; About &#62; Model Name.</p>
+                <p className="mt-4 text-lg leading-6 text-gray-800">If you’re using iPadOS or iOS 12.2 or later, go to Settings > General > About > Model Name.</p>
               </div>
             </div>
             <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">

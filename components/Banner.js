@@ -8,10 +8,10 @@ const Banner = () => {
         <div className="pr-16 sm:text-center sm:px-16">
           <p className="font-medium text-white">
             <span className="md:hidden">
-              Beta Build
+              Beta
       </span>
             <span className="hidden md:inline">
-              Beta Build
+              Beta
       </span>
           </p>
         </div>
