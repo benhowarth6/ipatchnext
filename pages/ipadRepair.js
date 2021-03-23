@@ -53,7 +53,7 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href="ipad/12.9-4">
+                    <Link href="ipad/pro-12-4">
                       <p className="text-xl font-semibold text-gray-900">
                         iPad Pro 12.9-inch Repairs
                 </p>
