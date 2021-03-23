@@ -53,7 +53,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        Watch Series 6 Repairs
+                        Watch Series 6
                 </p>
                     </Link>
                     <Link href="">
@@ -78,7 +78,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        Watch SE Repairs
+                        Watch SE
                 </p>
                     </Link>
                     <Link href="">
@@ -103,7 +103,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        Watch Series 5 Repairs
+                        Watch Series 5
                 </p>
                     </Link>
                     <Link href="">
@@ -128,7 +128,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        Watch Series 4 Repairs
+                        Watch Series 4
                 </p>
                     </Link>
                     <Link href="">

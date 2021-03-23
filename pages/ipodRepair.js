@@ -57,7 +57,7 @@ export default function Home() {
                 </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
                     </Link>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export default function Home() {
                 </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
                     </Link>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ export default function Home() {
                 </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
                     </Link>
                   </div>
                 </div>

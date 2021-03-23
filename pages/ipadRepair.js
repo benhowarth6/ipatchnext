@@ -53,7 +53,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href="ipad/pro-12-4">
                       <p className="text-xl font-semibold text-gray-900">
-                        iPad Pro 12.9-inch Repairs
+                        iPad Pro 12.9-inch
                 </p>
                     </Link>
                     <Link href="ipad/12.9-4">
@@ -78,7 +78,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        iPad Pro 11-inch Repairs
+                        iPad Pro 11-inch
                 </p>
                     </Link>
                     <Link href="">
@@ -103,7 +103,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        iPad Air 4 Repairs
+                        iPad Air 4
                 </p>
                     </Link>
                     <Link href="">
@@ -128,7 +128,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        iPad 8 Repairs
+                        iPad 8
                 </p>
                     </Link>
                     <Link href="">

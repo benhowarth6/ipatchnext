@@ -53,11 +53,11 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        MacBook Repairs
+                        MacBook
                 </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
                     </Link>
                   </div>
                 </div>
@@ -78,11 +78,11 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        MacBook Air Repairs
+                        MacBook Air
                 </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
                     </Link>
                   </div>
                 </div>
@@ -103,11 +103,11 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={`/mac/macbook-pro/macbook-pro`}>
                       <p className="text-xl font-semibold text-gray-900">
-                        MacBook Pro Repairs
+                        MacBook Pro
                 </p>
                     </Link>
                     <Link href={`/mac/macbook-pro/macbook-pro`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
                     </Link>
                   </div>
                 </div>
@@ -128,11 +128,11 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
-                        iMac Repairs
+                        iMac
                 </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
                     </Link>
                   </div>
                 </div>
