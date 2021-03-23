@@ -274,23 +274,22 @@ export default function Header() {
                           </div>
                           <Menu.Item>
                             {({ active }) => (
-                              <div className="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                                <div className="flow-root w-full">
-                                  <a
-                                    href="https://contact.jpvalery.me/photography"
-                                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900"
-                                  >
-                                    <Image
-                                      src="/icons/iphone.jpg"
-                                      className="inline-block h-14 w-14"
-                                      alt="Book an iPhone Repair"
-                                      width={28}
-                                      height={28}
-                                    />
-                                    <span className="ml-3">
-                                      Looking for a different iPhone?
-                                  </span>
-                                  </a>
+                              <div className="px-5 py-5 bg-gray-50 sm:px-8">
+                                <div>
+                                  <ul>
+                                    <li className="text-base truncate">
+                                      <Link href="iphoneRepair">
+                                        <a className="font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
+                                          Looking for a different iPhone?
+                                      </a>
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="mt-5 text-sm">
+                                  <Link href="iphoneRepair">
+                                    <a className="font-medium text-blue-600 hover:text-blue-500 transition ease-in-out duration-150"> View all models <span aria-hidden="true">→</span></a>
+                                  </Link>
                                 </div>
                               </div>
                             )}
