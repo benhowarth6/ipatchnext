@@ -108,9 +108,9 @@ const Hero = () => {
         <div className="relative w-full h-64 sm:h-72 md:h-96 hidden lg:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <div className="absolute inset-0 w-full h-full pt-0 md:pt-24 xl:pt-0 object-cover">
             <Image
-              priority
               src="/index/header.jpg"
               alt="Index Hero Image"
+              priority
               layout="responsive"
               width={2102}
               height={1401}
