@@ -1412,7 +1412,7 @@ export default function Home() {
                 <div className="relative mx-auto">
                   <Image
                     src="/iphone/safe-secure.jpg"
-                    alt="iPhone Privacy"
+                    alt="iPatch Privacy"
                     width={490}
                     height={570}
                   />

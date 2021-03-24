@@ -47,7 +47,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/12-pro-max.jpg"
-                      alt="Picture of the author"
+                      alt="iPhone 12 Pro Max Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -78,7 +78,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/12-pro.jpg"
-                      alt="Picture of the author"
+                      alt="iPhone 12 Pro Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -109,7 +109,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/12.jpg"
-                      alt="Picture of the author"
+                      alt="iPhone 12 Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -140,7 +140,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/12-mini.jpg"
-                      alt="Picture of the author"
+                      alt="iPhone 12 Mini Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -171,7 +171,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/11-pro-max.jpg"
-                      alt="Picture of the author"
+                      alt="iPhone 11 Pro Max Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -202,7 +202,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/11-pro.jpg"
-                      alt="Picture of the author"
+                      alt="iPhone 11 Pro Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -233,7 +233,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/11.jpg"
-                      alt="Picture of the author"
+                      alt="iPhone 11 Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -264,7 +264,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/xs-max.jpg"
-                      alt="Picture of the author"
+                      alt="iPhone XS Max Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -306,11 +306,14 @@ export default function Home() {
               </div>
             </div>
             <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-              <img
-                className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-                src="iphone/identify-iphone.jpg"
-                alt="App screenshot"
-              />
+              <div className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20">
+                <Image
+                  src="/iphone/identify-iphone.jpg"
+                  alt="Identify your iPhone model"
+                  width={1360}
+                  height={1000}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -647,11 +650,6 @@ export default function Home() {
               <footer className="mt-8">
                 <div className="flex">
                   <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                    <img
-                      className="h-12 w-12 rounded-full"
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                      alt=""
-                    />
                   </div>
                   <div className="ml-4">
                     <div className="text-base font-medium text-white">
@@ -688,11 +686,6 @@ export default function Home() {
               <footer className="mt-8">
                 <div className="flex">
                   <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                    <img
-                      className="h-12 w-12 rounded-full"
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                      alt=""
-                    />
                   </div>
                   <div className="ml-4">
                     <div className="text-base font-medium text-white">

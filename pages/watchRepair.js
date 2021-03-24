@@ -45,7 +45,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/watch/series-6.jpg"
-                  alt="Picture of the author"
+                  alt="Apple Watch Series 6 Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -72,7 +72,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/watch/se.jpg"
-                  alt="Picture of the author"
+                  alt="Apple Watch SE Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/watch/series-5.jpg"
-                  alt="Picture of the author"
+                  alt="Apple Watch Series 5 Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -126,7 +126,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/watch/series-4.jpg"
-                  alt="Picture of the author"
+                  alt="Apple Watch Series 4 Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}

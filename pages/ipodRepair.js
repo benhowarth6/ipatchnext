@@ -45,7 +45,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/ipod/nano.jpg"
-                  alt="Picture of the author"
+                  alt="iPod Nano Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -72,7 +72,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/ipod/touch.jpg"
-                  alt="Picture of the author"
+                  alt="iPod Touch Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/ipod/classic.jpg"
-                  alt="Picture of the author"
+                  alt="iPod Classic Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}

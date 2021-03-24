@@ -162,12 +162,16 @@ export default function Home() {
                   </p>
                   <div className="mt-6">
                     <div className="rounded-md shadow">
-                      <a
-                        href="book-repair?model=12 Pro Max&repair=screen&price=349"
-                        className="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                    <Link
+                        href={{
+                          pathname: "book-repair/booking-type",
+                          query: { model: "Pro 12-4", repair: "screen" },
+                        }}
                       >
-                        Book Repair
-                      </a>
+                        <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                          Book Repair
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="mt-4 text-sm">
@@ -207,12 +211,16 @@ export default function Home() {
                     £185
                   </span>
                 </p>
-                <a
-                  href="book-repair?model=12 Pro Max&repair=battery"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "Pro 12-4", repair: "battery" },
+                  }}
                 >
-                  Book Repair
-                </a>
+                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
@@ -313,12 +321,16 @@ export default function Home() {
                     £185
                   </span>
                 </p>
-                <a
-                  href="book-repair?model=12 Pro Max&repair=charging-port"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "Pro 12-4", repair: "charging-port" },
+                  }}
                 >
-                  Book Repair
-                </a>
+                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
@@ -419,12 +431,16 @@ export default function Home() {
                     £150
                   </span>
                 </p>
-                <a
-                  href="book-repair?model=12 Pro Max&repair=rear-camera"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "Pro 12-4", repair: "rear-camera" },
+                  }}
                 >
-                  Book Repair
-                </a>
+                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
@@ -525,12 +541,16 @@ export default function Home() {
                     £95
                   </span>
                 </p>
-                <a
-                  href="book-repair?model=12 Pro Max&repair=camera-lens"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "Pro 12-4", repair: "camera-lens" },
+                  }}
                 >
-                  Book Repair
-                </a>
+                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
@@ -631,12 +651,16 @@ export default function Home() {
                     £95
                   </span>
                 </p>
-                <a
-                  href="book-repair?model=12 Pro Max&repair=loudspeaker"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "Pro 12-4", repair: "loudspeaker" },
+                  }}
                 >
-                  Book Repair
-                </a>
+                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
@@ -737,12 +761,16 @@ export default function Home() {
                     £95
                   </span>
                 </p>
-                <a
-                  href="book-repair?model=12 Pro Max&repair=button-fault"
-                  className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "Pro 12-4", repair: "button-fault" },
+                  }}
                 >
-                  Book Repair
-                </a>
+                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                  </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
@@ -844,12 +872,16 @@ export default function Home() {
                   </span>
                   .
                 </p>
-                <a
-                  href="book-repair?model=12 Pro Max&repair=not-sure"
-                  className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "Pro 12-4", repair: "not-sure" },
+                  }}
                 >
-                  Book an Inspection
-                </a>
+                  <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                    Book an Inspection
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="bg-blue-500 rounded-lg shadow-sm divide-y divide-gray-200">
@@ -865,12 +897,16 @@ export default function Home() {
                   </span>
                   .
                 </p>
-                <a
-                  href="book-repair?model=12 Pro Max&repair=liquid-damage"
-                  className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "Pro 12-4", repair: "liquid-damage" },
+                  }}
                 >
-                  Book an Inspection
-                </a>
+                  <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                    Book an Inspection
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1007,7 +1043,7 @@ export default function Home() {
               <div className="relative mx-auto">
                 <Image
                   src="/ipad/true-tone.jpg"
-                  alt="iPhone True Tone Pairing"
+                  alt="iPad True Tone Pairing"
                   width={490}
                   height={570}
                 />
@@ -1102,7 +1138,7 @@ export default function Home() {
                 <div className="relative mx-auto">
                   <Image
                     src="/ipad/apple-pencil.jpg"
-                    alt="iPhone Privacy"
+                    alt="iPatch Privacy"
                     width={490}
                     height={570}
                   />

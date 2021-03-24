@@ -56,7 +56,7 @@ export default function Home() {
                     <Image
                       src="/iphone/display-warning.jpg"
                       className="rounded-lg shadow-lg object-cover object-center mx-auto"
-                      alt="iPhone Privacy"
+                      alt="iPhone Dispaly Warning"
                       width={350}
                       height={510}
                     />
@@ -129,7 +129,7 @@ export default function Home() {
                     <Image
                       src="/iphone/battery-warning.jpg"
                       className="rounded-lg shadow-lg object-cover object-center mx-auto"
-                      alt="iPhone Privacy"
+                      alt="iPhone Battery Warning"
                       width={350}
                       height={510}
                     />
@@ -199,7 +199,7 @@ export default function Home() {
                     <Image
                       src="/iphone/camera-warning.jpg"
                       className="rounded-lg shadow-lg object-cover object-center mx-auto"
-                      alt="iPhone Privacy"
+                      alt="iPhone Camera Warning"
                       width={350}
                       height={510}
                     />

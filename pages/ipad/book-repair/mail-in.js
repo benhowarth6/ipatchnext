@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Book Repair - Drop Off"
+        title="iPatchNext - Book Repair - Mail In"
         description="iPatch Next.JS TailWind UI tests."
       />
       <Header />
@@ -31,11 +31,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
           <div className="max-w-xl">
             <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-              Drop Off Repair
+              Mail In Repair
             </h2>
             <p className="mt-5 text-xl text-gray-400">
-              Use this form to book your iPhone {model} in with us for a
-              drop-off repair.
+              Use this form to book your iPad in with us for a mail-in repair.
             </p>
           </div>
         </div>
@@ -163,53 +162,55 @@ export default function Home() {
                             htmlFor="device_model"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            iPhone Model
+                            iPad Model
                           </label>
                           <select
-                            id="iphone_model"
-                            name="iphone_model"
+                            id="ipad_model"
+                            name="ipad_model"
                             rules="required"
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             defaultValue={model}
                           >
                             <option disabled value>
                               {" "}
-                              -- Select your iPhone --{" "}
+                              -- Select your iPad --{" "}
                             </option>
-                            <option value="12 Pro Max">
-                              iPhone 12 Pro Max
+                            <option value="Pro 12-4">
+                              iPad Pro 12.9-inch (4th Generation)
                             </option>
-                            <option value="12 Pro">iPhone 12 Pro</option>
-                            <option value="12">iPhone 12</option>
-                            <option value="12 Mini">iPhone 12 Mini</option>
-                            <option value="se-2">
-                              iPhone SE (2nd Generation)
+                            <option value="Pro 12-3">
+                              iPad Pro 12.9-inch (3rd Generation)
                             </option>
-                            <option value="11-pro-max">
-                              iPhone 11 Pro Max
+                            <option value="Pro 12-2">
+                              iPad Pro 12.9-inch (2nd Generation)
                             </option>
-                            <option value="11 Pro">iPhone 11 Pro</option>
-                            <option value="11">iPhone 11</option>
-                            <option value="xs-max">iPhone XS Max</option>
-                            <option value="xs">iPhone XS</option>
-                            <option value="xr">iPhone XR</option>
-                            <option value="x">iPhone X</option>
-                            <option value="8-plus">iPhone 8 Plus</option>
-                            <option value="8">iPhone 8</option>
-                            <option value="7-plus">iPhone 7 Plus</option>
-                            <option value="7">iPhone 7</option>
-                            <option value="6s-plus">iPhone 6S Plus</option>
-                            <option value="6s">iPhone 6S</option>
-                            <option value="se-1">
-                              iPhone SE (1st Generation)
+                            <option value="Pro 12-1">
+                              iPad Pro 12.9-inch (1st Generation)
                             </option>
-                            <option value="6-plus">iPhone 6 Plus</option>
-                            <option value="6">iPhone 6</option>
-                            <option value="5s">iPhone 5S</option>
-                            <option value="5c">iPhone 5C</option>
-                            <option value="5">iPhone 5</option>
-                            <option value="4s">iPhone 4S</option>
-                            <option value="4">iPhone 4</option>
+                            <option value="Pro 11-2">
+                              iPad Pro 11-inch (2nd Generation)
+                            </option>
+                            <option value="Pro 11-1">
+                              iPad Pro 11-inch (1st Generation)
+                            </option>
+                            <option value="Pro 10">iPad Pro 10.5-inch</option>
+                            <option value="Pro 9">iPad Pro 9.7-inch</option>
+                            <option value="Air 4">iPad Air 4</option>
+                            <option value="Air 3">iPad Air 3</option>
+                            <option value="Air 4">iPad Air 2</option>
+                            <option value="Air 4">iPad Air 1</option>
+                            <option value="8">iPad 8</option>
+                            <option value="7">iPad 7</option>
+                            <option value="6">iPad 6</option>
+                            <option value="5">iPad 5</option>
+                            <option value="4">iPad 4</option>
+                            <option value="3">iPad 3</option>
+                            <option value="2">iPad 2</option>
+                            <option value="Mini 5">iPad Mini 5</option>
+                            <option value="Mini 4">iPad Mini 4</option>
+                            <option value="Mini 3">iPad Mini 3</option>
+                            <option value="Mini 2">iPad Mini 2</option>
+                            <option value="Mini 1">iPad Mini 1</option>
                           </select>
                         </div>
                         <div className="col-span-6 sm:col-span-3">
@@ -231,9 +232,10 @@ export default function Home() {
                               -- Select your Repair --{" "}
                             </option>
                             <option value="screen">Screen Replacement</option>
-                            <option value="rear-case">
-                              Rear Casing Replacement
+                            <option value="digitiser">
+                              Digitiser Replacement
                             </option>
+                            <option value="lcd">LCD Replacement</option>
                             <option value="battery">Battery</option>
                             <option value="charging-port">Charging Port</option>
                             <option value="microphone">Microphone</option>
@@ -242,7 +244,6 @@ export default function Home() {
                             <option value="camera-lens">
                               Rear Camera Lens
                             </option>
-                            <option value="earpiece">Earpiece Speaker</option>
                             <option value="loudspeaker">Loudspeaker</option>
                             <option value="button-fault">Button Fault</option>
                             <option value="liquid-damage">Liquid Damage</option>
@@ -291,87 +292,97 @@ export default function Home() {
                 <div className="md:col-span-1">
                   <div className="px-4 sm:px-0">
                     <h3 className="text-lg font-medium leading-6 text-gray-900">
-                      Appointment Details
+                      Postage Details
                     </h3>
                     <p className="mt-1 text-sm text-gray-600">
-                      Choose a location, date and time for your appointment.
+                      Enter your return address details.
                     </p>
                   </div>
                 </div>
                 <div className="mt-5 md:mt-0 md:col-span-2">
-                  <div className="shadow overflow-visible sm:rounded-md">
+                  <div className="shadow overflow-hidden sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
                         <div className="col-span-6 sm:col-span-3">
                           <label
-                            htmlFor="country"
+                            htmlFor="address_line_1"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            Appointment Date
+                            Address Line 1
                           </label>
-                          <div className="kw-datepicker-wrapper overflow-visible">
-                            <input
-                              type="text"
-                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                              name="date"
-                              data-kw-type="datepicker"
-                              data-kw-rules="required"
-                              autoComplete="off"
-                            />
-                          </div>
+                          <input
+                            type="text"
+                            name="address_line_1"
+                            id="address_line_1"
+                            autoComplete="address-line"
+                            rules="required"
+                            className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
                         </div>
 
                         <div className="col-span-6 sm:col-span-3">
                           <label
-                            htmlFor="country"
+                            htmlFor="address_line_2"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            Appointment Time
+                            Address Line 2
                           </label>
-                          <select
-                            id="appointment_time"
-                            name="appointment_time"
-                            rules="required"
-                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                            defaultValue="default"
-                          >
-                            <option disabled value="default">
-                              {" "}
-                              -- Select your time --{" "}
-                            </option>
-                            <option>09:30-10:00</option>
-                            <option>10:00-10:30</option>
-                            <option>10:30-11:00</option>
-                            <option>11:00-11:30</option>
-                            <option>11:30-12:00</option>
-                            <option>12:00-12:30</option>
-                            <option>12:30-13:00</option>
-                            <option>13:00-13:30</option>
-                            <option>13:30-14:00</option>
-                            <option>14:00-14:30</option>
-                            <option>14:30-15:00</option>
-                            <option>15:00-15:30</option>
-                            <option>15:30-16:00</option>
-                            <option>16:00-16:30</option>
-                          </select>
+                          <input
+                            type="text"
+                            name="address_line_2"
+                            id="address_line_2"
+                            autoComplete="address-line"
+                            className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
                         </div>
 
                         <div className="col-span-6 sm:col-span-3">
                           <label
-                            htmlFor="country"
+                            htmlFor="city"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            Appointment Location
+                            Town/City
                           </label>
-                          <select
-                            id="appointment_location"
-                            name="appointment_location"
+                          <input
+                            type="text"
+                            name="city"
+                            id="city"
+                            autoComplete="city"
                             rules="required"
-                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                            className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
+                        </div>
+
+                        <div className="col-span-6 sm:col-span-3">
+                          <label
+                            htmlFor="county"
+                            className="block text-sm font-medium text-gray-700"
                           >
-                            <option>Trinity Leeds</option>
-                            <option>Kirkstall Morrisons</option>
-                          </select>
+                            County
+                          </label>
+                          <input
+                            type="text"
+                            name="county"
+                            id="county"
+                            autoComplete="county"
+                            className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
+                        </div>
+
+                        <div className="col-span-6 sm:col-span-3">
+                          <label
+                            htmlFor="post_code"
+                            className="block text-sm font-medium text-gray-700"
+                          >
+                            Postcode
+                          </label>
+                          <input
+                            type="text"
+                            name="postccode"
+                            id="postcode"
+                            autoComplete="postcode"
+                            className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                          />
                         </div>
                       </div>
                     </div>

@@ -75,7 +75,7 @@ export default function Home() {
                         <Image
                           src="/devices/ipad.png"
                           className="h-16 w-16"
-                          alt="Book an iPhone Repair"
+                          alt="Book an iPad Repair"
                           width={56}
                           height={56}
                         />
@@ -109,7 +109,7 @@ export default function Home() {
                         <Image
                           src="/devices/mac.png"
                           className="h-16 w-16"
-                          alt="Book an iPhone Repair"
+                          alt="Book a Mac Repair"
                           width={56}
                           height={56}
                         />
@@ -143,7 +143,7 @@ export default function Home() {
                         <Image
                           src="/devices/watch.png"
                           className="h-16 w-16"
-                          alt="Book an iPhone Repair"
+                          alt="Book an Apple Watch Repair"
                           width={56}
                           height={56}
                         />
@@ -180,7 +180,7 @@ export default function Home() {
                         <Image
                           src="/devices/ipod.png"
                           className="h-16 w-16"
-                          alt="Book an iPhone Repair"
+                          alt="Book an iPod Repair"
                           width={64}
                           height={64}
                         />

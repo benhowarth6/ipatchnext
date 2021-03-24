@@ -45,7 +45,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/ipad/12.9-4.jpg"
-                  alt="Picture of the author"
+                  alt="iPad Pro 12.9-inch Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -72,7 +72,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/ipad/11-2.jpg"
-                  alt="Picture of the author"
+                  alt="iPad Pro 11-inch Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/ipad/air-4.jpg"
-                  alt="Picture of the author"
+                  alt="iPad Pro Air 4 Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -126,7 +126,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/ipad/8.jpg"
-                  alt="Picture of the author"
+                  alt="iPad 8 Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -165,11 +165,14 @@ export default function Home() {
               </div>
             </div>
             <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-              <img
-                className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-                src="ipad/identify-ipad.jpg"
-                alt="App screenshot"
-              />
+              <div className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20">
+                <Image
+                  src="/ipad/identify-ipad.jpg"
+                  alt="Identify your iPad model"
+                  width={1360}
+                  height={1000}
+                />
+              </div>
             </div>
           </div>
         </div>

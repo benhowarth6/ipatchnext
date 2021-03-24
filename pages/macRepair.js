@@ -45,7 +45,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/mac/macbook.jpg"
-                  alt="Picture of the author"
+                  alt="MacBook Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -72,7 +72,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/mac/macbook-air.jpg"
-                  alt="Picture of the author"
+                  alt="MacBook Air Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/mac/macbook-pro.jpg"
-                  alt="Picture of the author"
+                  alt="MacBook Pro Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -126,7 +126,7 @@ export default function Home() {
               <div className="flex-shrink-0 bg-white">
                 <Image
                   src="/mac/imac.jpg"
-                  alt="Picture of the author"
+                  alt="iMac Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
@@ -164,11 +164,14 @@ export default function Home() {
               </div>
             </div>
             <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-              <img
-                className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-                src="mac/identify-mac.jpg"
-                alt="App screenshot"
-              />
+            <div className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20">
+                <Image
+                  src="/mac/identify-mac.jpg"
+                  alt="Identify your Mac model"
+                  width={1360}
+                  height={1000}
+                />
+                </div>
             </div>
           </div>
         </div>

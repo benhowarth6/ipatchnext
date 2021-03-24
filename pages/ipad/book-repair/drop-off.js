@@ -34,8 +34,7 @@ export default function Home() {
               Drop Off Repair
             </h2>
             <p className="mt-5 text-xl text-gray-400">
-              Use this form to book your iPhone {model} in with us for a
-              drop-off repair.
+              Use this form to book your iPad in with us for a drop-off repair.
             </p>
           </div>
         </div>
@@ -163,53 +162,55 @@ export default function Home() {
                             htmlFor="device_model"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            iPhone Model
+                            iPad Model
                           </label>
                           <select
-                            id="iphone_model"
-                            name="iphone_model"
+                            id="ipad_model"
+                            name="ipad_model"
                             rules="required"
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             defaultValue={model}
                           >
                             <option disabled value>
                               {" "}
-                              -- Select your iPhone --{" "}
+                              -- Select your iPad --{" "}
                             </option>
-                            <option value="12 Pro Max">
-                              iPhone 12 Pro Max
+                            <option value="Pro 12-4">
+                              iPad Pro 12.9-inch (4th Generation)
                             </option>
-                            <option value="12 Pro">iPhone 12 Pro</option>
-                            <option value="12">iPhone 12</option>
-                            <option value="12 Mini">iPhone 12 Mini</option>
-                            <option value="se-2">
-                              iPhone SE (2nd Generation)
+                            <option value="Pro 12-3">
+                              iPad Pro 12.9-inch (3rd Generation)
                             </option>
-                            <option value="11-pro-max">
-                              iPhone 11 Pro Max
+                            <option value="Pro 12-2">
+                              iPad Pro 12.9-inch (2nd Generation)
                             </option>
-                            <option value="11 Pro">iPhone 11 Pro</option>
-                            <option value="11">iPhone 11</option>
-                            <option value="xs-max">iPhone XS Max</option>
-                            <option value="xs">iPhone XS</option>
-                            <option value="xr">iPhone XR</option>
-                            <option value="x">iPhone X</option>
-                            <option value="8-plus">iPhone 8 Plus</option>
-                            <option value="8">iPhone 8</option>
-                            <option value="7-plus">iPhone 7 Plus</option>
-                            <option value="7">iPhone 7</option>
-                            <option value="6s-plus">iPhone 6S Plus</option>
-                            <option value="6s">iPhone 6S</option>
-                            <option value="se-1">
-                              iPhone SE (1st Generation)
+                            <option value="Pro 12-1">
+                              iPad Pro 12.9-inch (1st Generation)
                             </option>
-                            <option value="6-plus">iPhone 6 Plus</option>
-                            <option value="6">iPhone 6</option>
-                            <option value="5s">iPhone 5S</option>
-                            <option value="5c">iPhone 5C</option>
-                            <option value="5">iPhone 5</option>
-                            <option value="4s">iPhone 4S</option>
-                            <option value="4">iPhone 4</option>
+                            <option value="Pro 11-2">
+                              iPad Pro 11-inch (2nd Generation)
+                            </option>
+                            <option value="Pro 11-1">
+                              iPad Pro 11-inch (1st Generation)
+                            </option>
+                            <option value="Pro 10">iPad Pro 10.5-inch</option>
+                            <option value="Pro 9">iPad Pro 9.7-inch</option>
+                            <option value="Air 4">iPad Air 4</option>
+                            <option value="Air 3">iPad Air 3</option>
+                            <option value="Air 4">iPad Air 2</option>
+                            <option value="Air 4">iPad Air 1</option>
+                            <option value="8">iPad 8</option>
+                            <option value="7">iPad 7</option>
+                            <option value="6">iPad 6</option>
+                            <option value="5">iPad 5</option>
+                            <option value="4">iPad 4</option>
+                            <option value="3">iPad 3</option>
+                            <option value="2">iPad 2</option>
+                            <option value="Mini 5">iPad Mini 5</option>
+                            <option value="Mini 4">iPad Mini 4</option>
+                            <option value="Mini 3">iPad Mini 3</option>
+                            <option value="Mini 2">iPad Mini 2</option>
+                            <option value="Mini 1">iPad Mini 1</option>
                           </select>
                         </div>
                         <div className="col-span-6 sm:col-span-3">
@@ -231,9 +232,10 @@ export default function Home() {
                               -- Select your Repair --{" "}
                             </option>
                             <option value="screen">Screen Replacement</option>
-                            <option value="rear-case">
-                              Rear Casing Replacement
+                            <option value="digitiser">
+                              Digitiser Replacement
                             </option>
+                            <option value="lcd">LCD Replacement</option>
                             <option value="battery">Battery</option>
                             <option value="charging-port">Charging Port</option>
                             <option value="microphone">Microphone</option>
@@ -242,7 +244,6 @@ export default function Home() {
                             <option value="camera-lens">
                               Rear Camera Lens
                             </option>
-                            <option value="earpiece">Earpiece Speaker</option>
                             <option value="loudspeaker">Loudspeaker</option>
                             <option value="button-fault">Button Fault</option>
                             <option value="liquid-damage">Liquid Damage</option>

@@ -236,7 +236,7 @@ export default function Home() {
               <Image
                 src="/icons/other.jpg"
                 className="inline-block h-14 w-14 rounded-md"
-                alt="Book an something else in for repair"
+                alt="Book something else in for repair"
                 width={56}
                 height={56}
               />
