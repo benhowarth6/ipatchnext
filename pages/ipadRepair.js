@@ -56,7 +56,7 @@ export default function Home() {
                         iPad Pro 12.9-inch
                 </p>
                     </Link>
-                    <Link href="ipad/12.9-4">
+                    <Link href="ipad/pro-12-4">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Repairs</button>
                     </Link>
                   </div>

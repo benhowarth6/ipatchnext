@@ -1,4 +1,5 @@
-// pages/404.js
+import Link from "next/link";
+
 export default function Custom404() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-200 via-red-200 to-yellow-100">
@@ -16,7 +17,7 @@ export default function Custom404() {
                       We haven't quite finished this page just yet...
               </h1>
                     <p className="mt-6 text-xl text-gray-500">
-                      Click <a href="/" className="font-semibold text-black">here</a> to go home.
+                      Click <Link href="/"><a className="font-semibold text-black">here</a></Link> to go home.
               </p>
                   </div>
                 </div>

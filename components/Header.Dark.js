@@ -38,12 +38,13 @@ const Header = () => {
               iPhone Repair
             </a>
           </Link>
+          <Link href="/ipadRepair">
           <a
-            href="/ipadRepair"
             className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out"
           >
             iPad Repair
           </a>
+          </Link>
           <Link href="/macRepair">
             <a className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out">
               Mac Repair

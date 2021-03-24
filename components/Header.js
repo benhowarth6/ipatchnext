@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { Transition } from '@headlessui/react'
+import { Transition } from "@headlessui/react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="relative py-6 z-10">
-      <nav
-        className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8"
-      >
+      <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
         <Link href="/">
           <a className="flex items-center">
             <div className="flex flex-col justify-center">
               <div className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
                 iPatch
               </div>
-              <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
-              </div>
+              <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight"></div>
             </div>
           </a>
         </Link>
@@ -38,12 +35,11 @@ const Header = () => {
               iPhone Repair
             </a>
           </Link>
-          <a
-            href="/ipadRepair"
-            className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-          >
-            iPad Repair
-          </a>
+          <Link href="/ipadRepair">
+            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              iPad Repair
+            </a>
+          </Link>
           <Link href="/macRepair">
             <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               Mac Repair
@@ -110,8 +106,7 @@ const Header = () => {
                       <div className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
                         iPatch
                       </div>
-                      <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
-                      </div>
+                      <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight"></div>
                     </div>
                   </a>
                 </Link>{" "}

@@ -44,10 +44,10 @@ export default function Home() {
               <div>
                 <div className="sm:hidden">
                   <label htmlFor="tabs" className="sr-only">Select a tab</label>
-                  <select id="tabs" name="tabs" className="block w-full focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
-                    <option selected="">13-inch</option>
-                    <option>15-inch</option>
-                    <option>16-inch</option>
+                  <select id="tabs" name="tabs" className="block w-full focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md" defaultValue="13">
+                    <option value="13">13-inch</option>
+                    <option value="15">15-inch</option>
+                    <option value="16">16-inch</option>
                   </select>
                 </div>
                 <div className="hidden sm:block">
