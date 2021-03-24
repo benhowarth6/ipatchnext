@@ -7,17 +7,14 @@ const Header = () => {
 
   return (
     <div className="relative py-6 z-10 bg-white dark:bg-gray-800">
-      <nav
-        className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8"
-      >
+      <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
         <Link href="/">
           <a className="flex items-center">
             <div className="flex flex-col justify-center">
               <div className="font-bold text-gray-900 dark:text-white leading-tight text-2xl sm:text-3xl tracking-tight">
                 iPatch
               </div>
-              <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
-              </div>
+              <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight"></div>
             </div>
           </a>
         </Link>
@@ -39,11 +36,9 @@ const Header = () => {
             </a>
           </Link>
           <Link href="/ipadRepair">
-          <a
-            className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out"
-          >
-            iPad Repair
-          </a>
+            <a className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out">
+              iPad Repair
+            </a>
           </Link>
           <Link href="/macRepair">
             <a className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out">
@@ -116,8 +111,7 @@ const Header = () => {
                       <div className="font-bold text-gray-900 dark:text-white leading-tight text-2xl sm:text-3xl tracking-tight">
                         iPatch
                       </div>
-                      <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight">
-                      </div>
+                      <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight"></div>
                     </div>
                   </a>
                 </Link>{" "}

@@ -12,13 +12,17 @@ export default function Custom404() {
                   <div className="mt-6 sm:max-w-xl">
                     <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
                       Woah!
-              </h1>
+                    </h1>
                     <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
                       We haven't quite finished this page just yet...
-              </h1>
+                    </h1>
                     <p className="mt-6 text-xl text-gray-500">
-                      Click <Link href="/"><a className="font-semibold text-black">here</a></Link> to go home.
-              </p>
+                      Click{" "}
+                      <Link href="/">
+                        <a className="font-semibold text-black">here</a>
+                      </Link>{" "}
+                      to go home.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -27,5 +31,5 @@ export default function Custom404() {
         </div>
       </div>
     </div>
-  )
+  );
 }

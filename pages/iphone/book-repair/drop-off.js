@@ -4,16 +4,16 @@ import Image from "next/image";
 import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
 import kwesforms from "kwesforms";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 
 export default function Home() {
-  const router = useRouter()
-  const { model } = router.query
-  const { repair } = router.query
-  const { price } = router.query
+  const router = useRouter();
+  const { model } = router.query;
+  const { repair } = router.query;
+  const { price } = router.query;
 
   useEffect(() => {
     kwesforms.init();
@@ -30,8 +30,13 @@ export default function Home() {
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
           <div className="max-w-xl">
-            <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Drop Off Repair</h2>
-            <p className="mt-5 text-xl text-gray-400">Use this form to book your iPhone {model} in with us for a drop-off repair.</p>
+            <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+              Drop Off Repair
+            </h2>
+            <p className="mt-5 text-xl text-gray-400">
+              Use this form to book your iPhone {model} in with us for a
+              drop-off repair.
+            </p>
           </div>
         </div>
       </div>
@@ -48,10 +53,10 @@ export default function Home() {
                   <div className="px-4 sm:px-0">
                     <h3 className="text-lg font-medium leading-6 text-gray-900">
                       Your Details
-                      </h3>
+                    </h3>
                     <p className="mt-1 text-sm text-gray-600">
                       We'll use this email to send your confirmation.
-                      </p>
+                    </p>
                   </div>
                 </div>
                 <div className="mt-5 md:mt-0 md:col-span-2">
@@ -64,7 +69,7 @@ export default function Home() {
                             className="block text-sm font-medium text-gray-700"
                           >
                             First name
-                            </label>
+                          </label>
                           <input
                             type="text"
                             name="first_name"
@@ -81,7 +86,7 @@ export default function Home() {
                             className="block text-sm font-medium text-gray-700"
                           >
                             Last name
-                            </label>
+                          </label>
                           <input
                             type="text"
                             name="last_name"
@@ -98,7 +103,7 @@ export default function Home() {
                             className="block text-sm font-medium text-gray-700"
                           >
                             Email address
-                            </label>
+                          </label>
                           <input
                             type="text"
                             name="email_address"
@@ -115,7 +120,7 @@ export default function Home() {
                             className="block text-sm font-medium text-gray-700"
                           >
                             Contact Number
-                            </label>
+                          </label>
                           <input
                             type="tel"
                             name="contact_number"
@@ -142,11 +147,11 @@ export default function Home() {
                   <div className="px-4 sm:px-0">
                     <h3 className="text-lg font-medium leading-6 text-gray-900">
                       Device Details
-                      </h3>
+                    </h3>
                     <p className="mt-1 text-sm text-gray-600">
                       Please enter the details for the device you'd like
                       repairing.
-                      </p>
+                    </p>
                   </div>
                 </div>
                 <div className="mt-5 md:mt-0 md:col-span-2">
@@ -159,7 +164,7 @@ export default function Home() {
                             className="block text-sm font-medium text-gray-700"
                           >
                             iPhone Model
-                              </label>
+                          </label>
                           <select
                             id="iphone_model"
                             name="iphone_model"
@@ -167,13 +172,22 @@ export default function Home() {
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             defaultValue={model}
                           >
-                            <option disabled value> -- Select your iPhone -- </option>
-                            <option value="12 Pro Max">iPhone 12 Pro Max</option>
+                            <option disabled value>
+                              {" "}
+                              -- Select your iPhone --{" "}
+                            </option>
+                            <option value="12 Pro Max">
+                              iPhone 12 Pro Max
+                            </option>
                             <option value="12 Pro">iPhone 12 Pro</option>
                             <option value="12">iPhone 12</option>
                             <option value="12 Mini">iPhone 12 Mini</option>
-                            <option value="se-2">iPhone SE (2nd Generation)</option>
-                            <option value="11-pro-max">iPhone 11 Pro Max</option>
+                            <option value="se-2">
+                              iPhone SE (2nd Generation)
+                            </option>
+                            <option value="11-pro-max">
+                              iPhone 11 Pro Max
+                            </option>
                             <option value="11 Pro">iPhone 11 Pro</option>
                             <option value="11">iPhone 11</option>
                             <option value="xs-max">iPhone XS Max</option>
@@ -186,7 +200,9 @@ export default function Home() {
                             <option value="7">iPhone 7</option>
                             <option value="6s-plus">iPhone 6S Plus</option>
                             <option value="6s">iPhone 6S</option>
-                            <option value="se-1">iPhone SE (1st Generation)</option>
+                            <option value="se-1">
+                              iPhone SE (1st Generation)
+                            </option>
                             <option value="6-plus">iPhone 6 Plus</option>
                             <option value="6">iPhone 6</option>
                             <option value="5s">iPhone 5S</option>
@@ -202,7 +218,7 @@ export default function Home() {
                             className="block text-sm font-medium text-gray-700"
                           >
                             Required Repair
-                              </label>
+                          </label>
                           <select
                             id="required_repair"
                             name="required_repair"
@@ -210,15 +226,22 @@ export default function Home() {
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             defaultValue={repair}
                           >
-                            <option disabled value> -- Select your Repair -- </option>
+                            <option disabled value>
+                              {" "}
+                              -- Select your Repair --{" "}
+                            </option>
                             <option value="screen">Screen Replacement</option>
-                            <option value="rear-case">Rear Casing Replacement</option>
+                            <option value="rear-case">
+                              Rear Casing Replacement
+                            </option>
                             <option value="battery">Battery</option>
                             <option value="charging-port">Charging Port</option>
                             <option value="microphone">Microphone</option>
                             <option value="front-camera">Front Camera</option>
                             <option value="rear-camera">Rear Camera</option>
-                            <option value="camera-lens">Rear Camera Lens</option>
+                            <option value="camera-lens">
+                              Rear Camera Lens
+                            </option>
                             <option value="earpiece">Earpiece Speaker</option>
                             <option value="loudspeaker">Loudspeaker</option>
                             <option value="button-fault">Button Fault</option>
@@ -228,11 +251,27 @@ export default function Home() {
                         </div>
                         <div className="col-span-6 sm:col-span-6">
                           <div className="flex justify-between">
-                            <label htmlFor="how_can_we_help" className="block text-sm font-medium text-gray-700">Notes</label>
-                            <span id="how_can_we_help_description" className="text-sm text-gray-500">Max. 500 characters</span>
+                            <label
+                              htmlFor="how_can_we_help"
+                              className="block text-sm font-medium text-gray-700"
+                            >
+                              Notes
+                            </label>
+                            <span
+                              id="how_can_we_help_description"
+                              className="text-sm text-gray-500"
+                            >
+                              Max. 500 characters
+                            </span>
                           </div>
                           <div className="mt-1">
-                            <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" className="block w-full shadow-sm sm:text-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"></textarea>
+                            <textarea
+                              id="how_can_we_help"
+                              name="how_can_we_help"
+                              aria-describedby="how_can_we_help_description"
+                              rows="4"
+                              className="block w-full shadow-sm sm:text-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+                            ></textarea>
                           </div>
                         </div>
                       </div>
@@ -253,24 +292,23 @@ export default function Home() {
                   <div className="px-4 sm:px-0">
                     <h3 className="text-lg font-medium leading-6 text-gray-900">
                       Appointment Details
-                      </h3>
+                    </h3>
                     <p className="mt-1 text-sm text-gray-600">
                       Choose a location, date and time for your appointment.
-                      </p>
+                    </p>
                   </div>
                 </div>
                 <div className="mt-5 md:mt-0 md:col-span-2">
                   <div className="shadow overflow-visible sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
-
                         <div className="col-span-6 sm:col-span-3">
                           <label
                             htmlFor="country"
                             className="block text-sm font-medium text-gray-700"
                           >
                             Appointment Date
-                            </label>
+                          </label>
                           <div className="kw-datepicker-wrapper overflow-visible">
                             <input
                               type="text"
@@ -289,7 +327,7 @@ export default function Home() {
                             className="block text-sm font-medium text-gray-700"
                           >
                             Appointment Time
-                            </label>
+                          </label>
                           <select
                             id="appointment_time"
                             name="appointment_time"
@@ -310,7 +348,7 @@ export default function Home() {
                             className="block text-sm font-medium text-gray-700"
                           >
                             Appointment Location
-                            </label>
+                          </label>
                           <select
                             id="appointment_location"
                             name="appointment_location"
@@ -334,9 +372,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="px-4 py-3 text-right sm:px-6">
-                <button type="submit" className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <button
+                  type="submit"
+                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                >
                   Submit
-              </button>
+                </button>
               </div>
             </div>
           </form>
@@ -346,4 +387,3 @@ export default function Home() {
     </div>
   );
 }
-

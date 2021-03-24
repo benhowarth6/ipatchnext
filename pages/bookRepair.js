@@ -43,16 +43,14 @@ export default function Home() {
               <div className="mt-8">
                 <h3 className="text-lg font-medium">
                   <Link href="iphone/book-repair/booking-type">
-                  <a
-                    className="focus:outline-none"
-                  >
-                    {/* Extend touch target to entire panel */}
-                    <span
-                      className="absolute inset-0"
-                      aria-hidden="true"
-                    ></span>
-                    iPhone Repair
-                  </a>
+                    <a className="focus:outline-none">
+                      {/* Extend touch target to entire panel */}
+                      <span
+                        className="absolute inset-0"
+                        aria-hidden="true"
+                      ></span>
+                      iPhone Repair
+                    </a>
                   </Link>
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
@@ -84,15 +82,15 @@ export default function Home() {
               />
               <div className="mt-8">
                 <h3 className="text-lg font-medium">
-                <Link href="ipad/book-repair/booking-type">
-                  <a className="focus:outline-none">
-                    {/* Extend touch target to entire panel */}
-                    <span
-                      className="absolute inset-0"
-                      aria-hidden="true"
-                    ></span>
-                    iPad Repair
-                  </a>
+                  <Link href="ipad/book-repair/booking-type">
+                    <a className="focus:outline-none">
+                      {/* Extend touch target to entire panel */}
+                      <span
+                        className="absolute inset-0"
+                        aria-hidden="true"
+                      ></span>
+                      iPad Repair
+                    </a>
                   </Link>
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
@@ -124,15 +122,15 @@ export default function Home() {
               />
               <div className="mt-8">
                 <h3 className="text-lg font-medium">
-                <Link href="mac/book-repair/booking-type">
-                  <a className="focus:outline-none">
-                    {/* Extend touch target to entire panel */}
-                    <span
-                      className="absolute inset-0"
-                      aria-hidden="true"
-                    ></span>
-                    Mac Repair
-                  </a>
+                  <Link href="mac/book-repair/booking-type">
+                    <a className="focus:outline-none">
+                      {/* Extend touch target to entire panel */}
+                      <span
+                        className="absolute inset-0"
+                        aria-hidden="true"
+                      ></span>
+                      Mac Repair
+                    </a>
                   </Link>
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
@@ -164,15 +162,15 @@ export default function Home() {
               />
               <div className="mt-8">
                 <h3 className="text-lg font-medium">
-                <Link href="watch/book-repair/booking-type">
-                  <a className="focus:outline-none">
-                    {/* Extend touch target to entire panel */}
-                    <span
-                      className="absolute inset-0"
-                      aria-hidden="true"
-                    ></span>
-                    Apple Watch Repair
-                  </a>
+                  <Link href="watch/book-repair/booking-type">
+                    <a className="focus:outline-none">
+                      {/* Extend touch target to entire panel */}
+                      <span
+                        className="absolute inset-0"
+                        aria-hidden="true"
+                      ></span>
+                      Apple Watch Repair
+                    </a>
                   </Link>
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
@@ -204,15 +202,15 @@ export default function Home() {
               />
               <div className="mt-8">
                 <h3 className="text-lg font-medium">
-                <Link href="ipod/book-repair/booking-type">
-                  <a className="focus:outline-none">
-                    {/* Extend touch target to entire panel */}
-                    <span
-                      className="absolute inset-0"
-                      aria-hidden="true"
-                    ></span>
-                    iPod Repair
-                  </a>
+                  <Link href="ipod/book-repair/booking-type">
+                    <a className="focus:outline-none">
+                      {/* Extend touch target to entire panel */}
+                      <span
+                        className="absolute inset-0"
+                        aria-hidden="true"
+                      ></span>
+                      iPod Repair
+                    </a>
                   </Link>
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
@@ -244,15 +242,15 @@ export default function Home() {
               />
               <div className="mt-8">
                 <h3 className="text-lg font-medium">
-                <Link href="other/book-repair/booking-type">
-                  <a className="focus:outline-none">
-                    {/* Extend touch target to entire panel */}
-                    <span
-                      className="absolute inset-0"
-                      aria-hidden="true"
-                    ></span>
-                    Other
-                  </a>
+                  <Link href="other/book-repair/booking-type">
+                    <a className="focus:outline-none">
+                      {/* Extend touch target to entire panel */}
+                      <span
+                        className="absolute inset-0"
+                        aria-hidden="true"
+                      ></span>
+                      Other
+                    </a>
                   </Link>
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">

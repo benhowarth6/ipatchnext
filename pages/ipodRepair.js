@@ -1,13 +1,12 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
-import { NextSeo } from 'next-seo';
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import { NextSeo } from "next-seo";
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
-
   return (
     <div>
       <NextSeo
@@ -20,8 +19,12 @@ export default function Home() {
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
           <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
             <div className="max-w-xl">
-              <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">iPod Repairs</h2>
-              <p className="mt-5 text-xl text-gray-200">From broken screens to bad batteries, we fix it all.</p>
+              <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+                iPod Repairs
+              </h2>
+              <p className="mt-5 text-xl text-gray-200">
+                From broken screens to bad batteries, we fix it all.
+              </p>
             </div>
           </div>
         </div>
@@ -32,10 +35,10 @@ export default function Home() {
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
               Select your iPod
-      </h2>
+            </h2>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
               Click on your iPod model below to view repairs.
-      </p>
+            </p>
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -54,10 +57,12 @@ export default function Home() {
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
                         iPod Nano
-                </p>
+                      </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                        View Models
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -79,10 +84,12 @@ export default function Home() {
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
                         iPod Touch
-                </p>
+                      </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                        View Models
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -104,10 +111,12 @@ export default function Home() {
                     <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
                         iPod Classic
-                </p>
+                      </p>
                     </Link>
                     <Link href="">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">View Models</button>
+                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                        View Models
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -118,5 +127,5 @@ export default function Home() {
       </div>
       <Footer />
     </div>
-  )
+  );
 }
