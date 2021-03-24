@@ -178,36 +178,31 @@ export default function Home() {
                             <option value="12 Pro Max">
                               iPhone 12 Pro Max
                             </option>
+                            <option value="12 Pro Max">iPhone 12 Pro Max</option>
                             <option value="12 Pro">iPhone 12 Pro</option>
                             <option value="12">iPhone 12</option>
                             <option value="12 Mini">iPhone 12 Mini</option>
-                            <option value="se-2">
-                              iPhone SE (2nd Generation)
-                            </option>
-                            <option value="11-pro-max">
-                              iPhone 11 Pro Max
-                            </option>
+                            <option value="SE 2">iPhone SE (2nd Generation)</option>
+                            <option value="11 Pro Max">iPhone 11 Pro Max</option>
                             <option value="11 Pro">iPhone 11 Pro</option>
                             <option value="11">iPhone 11</option>
-                            <option value="xs-max">iPhone XS Max</option>
-                            <option value="xs">iPhone XS</option>
-                            <option value="xr">iPhone XR</option>
-                            <option value="x">iPhone X</option>
-                            <option value="8-plus">iPhone 8 Plus</option>
+                            <option value="XS Max">iPhone XS Max</option>
+                            <option value="XS">iPhone XS</option>
+                            <option value="XR">iPhone XR</option>
+                            <option value="X">iPhone X</option>
+                            <option value="8 Plus">iPhone 8 Plus</option>
                             <option value="8">iPhone 8</option>
-                            <option value="7-plus">iPhone 7 Plus</option>
+                            <option value="7 Plus">iPhone 7 Plus</option>
                             <option value="7">iPhone 7</option>
-                            <option value="6s-plus">iPhone 6S Plus</option>
-                            <option value="6s">iPhone 6S</option>
-                            <option value="se-1">
-                              iPhone SE (1st Generation)
-                            </option>
-                            <option value="6-plus">iPhone 6 Plus</option>
+                            <option value="6S Plus">iPhone 6S Plus</option>
+                            <option value="6S">iPhone 6S</option>
+                            <option value="SE">iPhone SE (1st Generation)</option>
+                            <option value="6 Plus">iPhone 6 Plus</option>
                             <option value="6">iPhone 6</option>
-                            <option value="5s">iPhone 5S</option>
-                            <option value="5c">iPhone 5C</option>
+                            <option value="5S">iPhone 5S</option>
+                            <option value="5C">iPhone 5C</option>
                             <option value="5">iPhone 5</option>
-                            <option value="4s">iPhone 4S</option>
+                            <option value="4S">iPhone 4S</option>
                             <option value="4">iPhone 4</option>
                           </select>
                         </div>

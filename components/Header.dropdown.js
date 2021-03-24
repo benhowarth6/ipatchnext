@@ -220,7 +220,7 @@ export default function Header() {
 
                               <Menu.Item>
                                 {({ active }) => (
-                                  <Link href="/iphone/se-2020">
+                                  <Link href="/iphone/se-2">
                                     <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                                       <p className="inline-flex text-base font-medium text-gray-900">
                                         iPhone SE 2020

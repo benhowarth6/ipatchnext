@@ -183,7 +183,7 @@ export default function Home() {
                     One, simple price
                   </p>
                   <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
-                    <span>£249</span>
+                    <span>£299</span>
                   </div>
                   <p className="mt-4 text-sm">
                     <Link href="">
@@ -627,7 +627,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Triple-Rear Camera Module.
+                      Dual-Rear Camera Module.
                     </span>
                   </li>
 
@@ -702,7 +702,7 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £85
                   </span>
                 </p>
                 <Link
@@ -812,7 +812,7 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £85
                   </span>
                 </p>
                 <Link
@@ -922,7 +922,7 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £85
                   </span>
                 </p>
                 <Link
@@ -1032,7 +1032,7 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £85
                   </span>
                 </p>
                 <Link
