@@ -1264,19 +1264,19 @@ export default function Home() {
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
-                  <span className="block">Not sure which iPad you have?</span>
+                  <span className="block">Not sure which iPhone you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If you’re using iPadOS or iOS 12.2 or later, go to Settings >
-                  General > About > Model Name.
+                  If you’re using iOS 12.2 or later, go to Settings > General >
+                  About > Model Name.
                 </p>
               </div>
             </div>
             <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
               <div className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20">
                 <Image
-                  src="/ipad/identify-ipad.jpg"
-                  alt="Identify your iPad model"
+                  src="/iphone/identify-iphone.jpg"
+                  alt="Identify your iPhone model"
                   width={1360}
                   height={1000}
                 />
