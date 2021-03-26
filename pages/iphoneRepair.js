@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 hidden lg:grid">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
@@ -666,7 +666,7 @@ export default function Home() {
                 <Link href={`/iphone/se-1`}>
                   <a>
                     <Image
-                      src="/iphone/se-1.jpg"
+                      src="/iphone/se.jpg"
                       alt="iPhone SE Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -806,6 +806,477 @@ export default function Home() {
                 <Image
                   src="/iphone/identify-iphone.jpg"
                   alt="Identify your iPhone model"
+                  width={1360}
+                  height={1000}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-50 pt-16 pb-20 lg:pt-24 lg:pb-28 lg:px-8 md:hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center">
+            <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+              Select your iPhone
+            </h2>
+            <p className="py-4 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+              Click on your iPhone model below to view repairs.
+            </p>
+          </div>
+        </div>
+        <div className="max-w-2xl mx-auto sm:px-6 pt-12">
+          <ul className="space-y-3" data-todo-x-max="1">
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/12-pro-max`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/12-pro-max-256.png"
+                        alt="iPhone 12 Pro Max Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone 12 Pro Max
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/12-pro`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/12-pro-256.png"
+                        alt="iPhone 12 Pro Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone 12 Pro
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/12`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/12-256.png"
+                        alt="iPhone 12 Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone 12
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/12-mini`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/12-mini-256.png"
+                        alt="iPhone 12 Mini Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone 12 Mini
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/11-pro-max`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/11-pro-max-256.png"
+                        alt="iPhone 11 Pro Max Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone 11 Pro Max
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/11-pro`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/11-pro-256.png"
+                        alt="iPhone 11 Pro Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone 11 Pro
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/11`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/11-256.png"
+                        alt="iPhone 11 Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone 11
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/xs-max`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/xs-max-256.png"
+                        alt="iPhone XS Max Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone XS Max
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/xs`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/xs-256.png"
+                        alt="iPhone XS Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone XS
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+            <Link href={`/iphone/xr`}>
+              <a className="block ">
+                <div className="flex items-center sm:px-6">
+                  <div className="min-w-0 flex-1 flex items-center">
+                    <div className="flex-shrink-0">
+                      <Image
+                        src="/iphone/xr-256.png"
+                        alt="iPhone XR Repairs"
+                        className="h-60 w-full object-cover"
+                        width={128}
+                        height={128}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                      <div>
+                        <p className="font-medium text-lg truncate">
+                          iPhone XR
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <svg
+                      className="h-5 w-5 text-gray-400"
+                      data-todo-x-description="Heroicon name: solid/chevron-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="max-w-7xl mx-auto py-16">
+          <div className="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+            <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+              <div className="lg:self-center">
+                <h2 className="text-3xl font-extrabold sm:text-4xl">
+                  <span className="block">Not sure which iPad you have?</span>
+                </h2>
+                <p className="mt-4 text-lg leading-6 text-gray-800">
+                  If you’re using iPadOS or iOS 12.2 or later, go to Settings >
+                  General > About > Model Name.
+                </p>
+              </div>
+            </div>
+            <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+              <div className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20">
+                <Image
+                  src="/ipad/identify-ipad.jpg"
+                  alt="Identify your iPad model"
                   width={1360}
                   height={1000}
                 />
