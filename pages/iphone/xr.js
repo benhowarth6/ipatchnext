@@ -573,7 +573,7 @@ export default function Home() {
                   </div>
                 </li>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new rear camera if one of yours is damaged.
+                  A new rear camera if yours is damaged.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
@@ -683,7 +683,7 @@ export default function Home() {
                   Rear Camera Lens
                 </h2>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new replacement camera lens if one of yours is damaged.
+                  A new replacement camera lens if yours is damaged.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">

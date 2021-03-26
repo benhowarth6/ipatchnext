@@ -539,12 +539,126 @@ export default function Home() {
                 <li className="flex items-center space-x-3">
                   <div className="min-w-0 flex-0">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">
+                      Front Camera
+                    </h2>
+                  </div>
+                </li>
+                <p className="mt-4 text-sm text-gray-500">
+                  A new front camera if yours isn't working.
+                </p>
+                <p className="mt-8">
+                  <span className="text-4xl font-extrabold text-gray-900">
+                    £65
+                  </span>
+                </p>
+                <Link
+                  href={{
+                    pathname: "book-repair/booking-type",
+                    query: { model: "8 Plus", repair: "rear-camera" },
+                  }}
+                >
+                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                    Book Repair
+                  </a>
+                </Link>
+              </div>
+              <div className="pt-6 pb-8 px-6">
+                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
+                  What's included
+                </h3>
+                <ul className="mt-6 space-y-4">
+                  <li className="flex space-x-3">
+                    <svg
+                      className="flex-shrink-0 h-5 w-5 text-green-500"
+                      data-todo-x-description="Heroicon name: solid/check"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    <span className="text-sm text-gray-500">
+                      Proximity Flex Cable.
+                    </span>
+                  </li>
+
+                  <li className="flex space-x-3">
+                    <svg
+                      className="flex-shrink-0 h-5 w-5 text-green-500"
+                      data-todo-x-description="Heroicon name: solid/check"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    <span className="text-sm text-gray-500">
+                      Device Dust and Water Seal.
+                    </span>
+                  </li>
+
+                  <li className="flex space-x-3">
+                    <svg
+                      className="flex-shrink-0 h-5 w-5 text-green-500"
+                      data-todo-x-description="Heroicon name: solid/check"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    <span className="text-sm text-gray-500">
+                      Repaired in under 20 minutes.
+                    </span>
+                  </li>
+
+                  <li className="flex space-x-3">
+                    <svg
+                      className="flex-shrink-0 h-5 w-5 text-green-500"
+                      data-todo-x-description="Heroicon name: solid/check"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+              <div className="p-6">
+                <li className="flex items-center space-x-3">
+                  <div className="min-w-0 flex-0">
+                    <h2 className="text-lg leading-6 font-medium text-gray-900">
                       Rear Camera
                     </h2>
                   </div>
                 </li>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new rear camera if one of yours is damaged.
+                  A new rear camera if yours is damaged.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
@@ -654,7 +768,7 @@ export default function Home() {
                   Rear Camera Lens
                 </h2>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new replacement camera lens if one of yours is damaged.
+                  A new replacement camera lens if yours is damaged.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">

@@ -388,7 +388,7 @@ export default function Home() {
                   <a>
                     <Image
                       src="/iphone/se-2.jpg"
-                      alt="iPhone SE 2020 Repairs"
+                      alt="iPhone SE 2 Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -401,7 +401,7 @@ export default function Home() {
                   <div className="text-center">
                     <Link href={`/iphone/se-2`}>
                       <a className="text-xl font-semibold text-gray-900">
-                        iPhone SE 2020
+                        iPhone SE 2
                       </a>
                     </Link>
                     <Link href="/iphone/se-2">
