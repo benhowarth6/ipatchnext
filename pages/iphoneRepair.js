@@ -833,18 +833,18 @@ export default function Home() {
               <a className="block ">
                 <div className="flex items-center sm:px-6">
                   <div className="min-w-0 flex-1 flex items-center">
-                    <div className="flex-shrink-0">
+                    <div className="hidden sm:flex-shrink-0">
                       <Image
                         src="/iphone/12-pro-max-256.png"
                         alt="iPhone 12 Pro Max Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-lg xs:text-xs truncate">
                           iPhone 12 Pro Max
                         </p>
                       </div>
