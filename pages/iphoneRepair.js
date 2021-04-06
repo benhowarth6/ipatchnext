@@ -844,7 +844,7 @@ export default function Home() {
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-sm xs:text-lg truncate">
+                        <p className="font-medium text-base xs:text-lg truncate">
                           iPhone 12 Pro Max
                         </p>
                       </div>
@@ -880,14 +880,14 @@ export default function Home() {
                       <Image
                         src="/iphone/12-pro-256.png"
                         alt="iPhone 12 Pro Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-base xs:text-lg truncate">
                           iPhone 12 Pro
                         </p>
                       </div>
