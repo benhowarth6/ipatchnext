@@ -5,14 +5,14 @@ import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { Menu, Transition } from "@headlessui/react";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPad Repair"
+        title="iPatchNext - iPad Pro Repairs"
         description="iPatch Next.JS TailWind UI tests."
       />
       <Header />
@@ -22,7 +22,7 @@ export default function Home() {
           <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
             <div className="max-w-xl">
               <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-                iPad Repairs
+                iPad Pro Repairs
               </h2>
               <p className="mt-5 text-xl text-gray-200">
                 From broken screens to bad batteries, we fix it all.
@@ -56,12 +56,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`/ipad/ipad-pro`}>
+                    <Link href={``}>
                       <p className="text-xl font-semibold text-gray-900">
                         iPad Pro
                       </p>
                     </Link>
-                    <Link href="/ipad/ipad-pro">
+                    <Link href="">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Models
                       </button>
@@ -194,7 +194,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto sm:px-6 pt-12">
           <ul className="space-y-3" data-todo-x-max="1">
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-            <Link href={`/ipad/ipad-pro`}>
+            <Link href={`/ipad/pro-12-4`}>
               <a className="block ">
                 <div className="flex items-center sm:px-6">
                   <div className="min-w-0 flex-1 flex items-center">
