@@ -837,14 +837,14 @@ export default function Home() {
                       <Image
                         src="/iphone/12-pro-max-256.png"
                         alt="iPhone 12 Pro Max Repairs"
-                        className="h-32 xs:h-16 w-full object-cover"
+                        className="h-32 w-full object-cover"
                         width={96}
                         height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-base xs:text-lg truncate">
+                        <p className="font-medium text-base sm:text-lg truncate">
                           iPhone 12 Pro Max
                         </p>
                       </div>
@@ -887,7 +887,7 @@ export default function Home() {
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-base xs:text-lg truncate">
+                        <p className="font-medium text-base sm:text-lg truncate">
                           iPhone 12 Pro
                         </p>
                       </div>
@@ -923,14 +923,14 @@ export default function Home() {
                       <Image
                         src="/iphone/12-256.png"
                         alt="iPhone 12 Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 12
                         </p>
                       </div>
@@ -966,14 +966,14 @@ export default function Home() {
                       <Image
                         src="/iphone/12-mini-256.png"
                         alt="iPhone 12 Mini Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 12 Mini
                         </p>
                       </div>
@@ -1009,14 +1009,14 @@ export default function Home() {
                       <Image
                         src="/iphone/11-pro-max-256.png"
                         alt="iPhone 11 Pro Max Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 11 Pro Max
                         </p>
                       </div>
@@ -1052,14 +1052,14 @@ export default function Home() {
                       <Image
                         src="/iphone/11-pro-256.png"
                         alt="iPhone 11 Pro Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 11 Pro
                         </p>
                       </div>
@@ -1095,14 +1095,14 @@ export default function Home() {
                       <Image
                         src="/iphone/11-256.png"
                         alt="iPhone 11 Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 11
                         </p>
                       </div>
@@ -1138,14 +1138,14 @@ export default function Home() {
                       <Image
                         src="/iphone/xs-max-256.png"
                         alt="iPhone XS Max Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone XS Max
                         </p>
                       </div>
@@ -1181,14 +1181,14 @@ export default function Home() {
                       <Image
                         src="/iphone/xs-256.png"
                         alt="iPhone XS Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone XS
                         </p>
                       </div>
@@ -1224,14 +1224,14 @@ export default function Home() {
                       <Image
                         src="/iphone/xr-256.png"
                         alt="iPhone XR Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone XR
                         </p>
                       </div>
@@ -1267,14 +1267,14 @@ export default function Home() {
                       <Image
                         src="/iphone/x-256.png"
                         alt="iPhone X Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone X
                         </p>
                       </div>
@@ -1310,14 +1310,14 @@ export default function Home() {
                       <Image
                         src="/iphone/se-2-256.png"
                         alt="iPhone SE 2 Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone SE 2
                         </p>
                       </div>
@@ -1353,14 +1353,14 @@ export default function Home() {
                       <Image
                         src="/iphone/8-plus-256.png"
                         alt="iPhone 8 Plus Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 8 Plus
                         </p>
                       </div>
@@ -1396,14 +1396,14 @@ export default function Home() {
                       <Image
                         src="/iphone/8-256.png"
                         alt="iPhone 8 Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 8
                         </p>
                       </div>
@@ -1439,14 +1439,14 @@ export default function Home() {
                       <Image
                         src="/iphone/7-plus-256.png"
                         alt="iPhone 7 Plus Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 7 Plus
                         </p>
                       </div>
@@ -1482,14 +1482,14 @@ export default function Home() {
                       <Image
                         src="/iphone/7-256.png"
                         alt="iPhone 7 Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 7
                         </p>
                       </div>
@@ -1525,14 +1525,14 @@ export default function Home() {
                       <Image
                         src="/iphone/6s-plus-256.png"
                         alt="iPhone 6S Plus Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 6S Plus
                         </p>
                       </div>
@@ -1568,14 +1568,14 @@ export default function Home() {
                       <Image
                         src="/iphone/6s-256.png"
                         alt="iPhone 6S Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 6S
                         </p>
                       </div>
@@ -1611,14 +1611,14 @@ export default function Home() {
                       <Image
                         src="/iphone/6-plus-256.png"
                         alt="iPhone 6 Plus Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 6 Plus
                         </p>
                       </div>
@@ -1654,14 +1654,14 @@ export default function Home() {
                       <Image
                         src="/iphone/6-256.png"
                         alt="iPhone 6 Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 6
                         </p>
                       </div>
@@ -1697,14 +1697,14 @@ export default function Home() {
                       <Image
                         src="/iphone/se-256.png"
                         alt="iPhone SE Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone SE
                         </p>
                       </div>
@@ -1740,14 +1740,14 @@ export default function Home() {
                       <Image
                         src="/iphone/5s-256.png"
                         alt="iPhone 5S Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 5S
                         </p>
                       </div>
@@ -1783,14 +1783,14 @@ export default function Home() {
                       <Image
                         src="/iphone/5c-256.png"
                         alt="iPhone 5C Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 5C
                         </p>
                       </div>
@@ -1826,14 +1826,14 @@ export default function Home() {
                       <Image
                         src="/iphone/5-256.png"
                         alt="iPhone 5 Repairs"
-                        className="h-60 w-full object-cover"
-                        width={128}
-                        height={128}
+                        className="h-32 w-full object-cover"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="font-medium text-lg truncate">
+                        <p className="font-medium text-md xs:text-lg">
                           iPhone 5
                         </p>
                       </div>
