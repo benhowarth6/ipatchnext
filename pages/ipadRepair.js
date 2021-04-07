@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 hidden lg:grid">
+      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 hidden sm:grid">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
@@ -73,8 +73,8 @@ export default function Home() {
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
                 <Image
-                  src="/ipad/11-2.jpg"
-                  alt="iPad Pro 11-inch Repairs"
+                  src="/ipad/air-4.jpg"
+                  alt="iPad Air Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
                   height={750}
