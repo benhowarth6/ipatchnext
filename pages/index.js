@@ -7,7 +7,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
-import Modal from "../components/Modal";
 
 function Home() {
   return (
@@ -67,7 +66,7 @@ function Home() {
       <Hero />
 
       <main>
-        <div className="relative bg-white py-16 sm:py-24 lg:py-32">
+        <div className="relative bg-white pb-16">
           <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <h2 className="text-base font-semibold tracking-wider text-blue-600 uppercase">
               Our Service Options

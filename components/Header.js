@@ -1,9 +1,27 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Transition } from "@headlessui/react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const ActiveLink = ({ children, href, className }) => {
+    const router = useRouter();
+    return (
+      <Link href={href}>
+        <a
+          className={`${
+            router.pathname === href
+              ? "text-gray-900 border-gray-800"
+              : "text-gray-500 hover:text-gray-700"
+          } ${className} ml-8 font-medium transition duration-150 ease-in-out`}
+        >
+          {children}
+        </a>
+      </Link>
+    );
+  };
 
   return (
     <div className="relative py-6 z-10">
@@ -20,46 +38,30 @@ const Header = () => {
         </Link>
 
         <div className="hidden lg:flex md:ml-10 items-end">
-          <Link href="/">
-            <a className="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+          <ActiveLink href="/">
               Home
-            </a>
-          </Link>
-          <Link href="/about">
-            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+          </ActiveLink>
+          <ActiveLink href="/about">
               About
-            </a>
-          </Link>
-          <Link href="/iphoneRepair">
-            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+          </ActiveLink>
+          <ActiveLink href="/iphoneRepair">
               iPhone Repair
-            </a>
-          </Link>
-          <Link href="/ipadRepair">
-            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+          </ActiveLink>
+          <ActiveLink href="/ipadRepair">
               iPad Repair
-            </a>
-          </Link>
-          <Link href="/macRepair">
-            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+          </ActiveLink>
+          <ActiveLink href="/macRepair">
               Mac Repair
-            </a>
-          </Link>
-          <Link href="/watchRepair">
-            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+          </ActiveLink>
+          <ActiveLink href="/watchRepair">
               Watch Repair
-            </a>
-          </Link>
-          <Link href="/ipodRepair">
-            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+          </ActiveLink>
+          <ActiveLink href="/ipodRepair">
               iPod Repair
-            </a>
-          </Link>
-          <Link href="/contact">
-            <a className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+          </ActiveLink>
+          <ActiveLink href="/contact">
               Contact
-            </a>
-          </Link>
+          </ActiveLink>
         </div>
         <div className="justify-between">
           <div className="-mr-2 flex items-center lg:hidden">
