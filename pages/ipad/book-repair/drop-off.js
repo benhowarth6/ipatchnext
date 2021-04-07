@@ -44,7 +44,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:pb-14 lg:px-8">
           <form
             className="kwes-form"
-            action="https://kwes.io/api/foreign/forms/N52Hhfi6oCrKkb3FaKU6"
+            action="https://kwes.io/api/foreign/forms/uzvOI9IBAzqlrgC0Oit8"
           >
             <div className="mt-10 sm:mt-0">
               <div className="md:grid md:grid-cols-3 md:gap-6">

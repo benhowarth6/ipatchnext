@@ -55,129 +55,6 @@ export default function Home() {
                         className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-blue-100 text-blue-600"
                         id="tier-standard"
                       >
-                        Mail-In
-                      </h3>
-                    </div>
-                    <p className="mt-5 text-lg text-gray-500">
-                      Choose this option if you'd like to post your device to us
-                      for a repair.
-                    </p>
-                  </div>
-                  <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
-                    <ul className="space-y-4">
-                      <li className="flex items-start">
-                        <div className="flex-shrink-0">
-                          <svg
-                            className="h-6 w-6 text-green-500"
-                            data-todo-x-description="Heroicon name: outline/check"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 13l4 4L19 7"
-                            ></path>
-                          </svg>
-                        </div>
-                        <p className="ml-3 text-base text-gray-700">
-                          Same day return dispatch*
-                        </p>
-                      </li>
-
-                      <li className="flex items-start">
-                        <div className="flex-shrink-0">
-                          <svg
-                            className="h-6 w-6 text-green-500"
-                            data-todo-x-description="Heroicon name: outline/check"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 13l4 4L19 7"
-                            ></path>
-                          </svg>
-                        </div>
-                        <p className="ml-3 text-base text-gray-700">
-                          Fully insured return postage from £7.50
-                        </p>
-                      </li>
-
-                      <li className="flex items-start">
-                        <div className="flex-shrink-0">
-                          <svg
-                            className="h-6 w-6 text-green-500"
-                            data-todo-x-description="Heroicon name: outline/check"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 13l4 4L19 7"
-                            ></path>
-                          </svg>
-                        </div>
-                        <p className="ml-3 text-base text-gray-700">
-                          No inspection fees
-                        </p>
-                      </li>
-
-                      <li className="flex items-start">
-                        <div className="flex-shrink-0">
-                          <svg
-                            className="h-6 w-6 text-green-500"
-                            data-todo-x-description="Heroicon name: outline/check"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 13l4 4L19 7"
-                            ></path>
-                          </svg>
-                        </div>
-                        <p className="ml-3 text-base text-gray-700">
-                          Card, Bank Transfer or Paypal payments only
-                        </p>
-                      </li>
-                    </ul>
-                    <div className="rounded-md shadow">
-                      <Link href={`mail-in?model=${model}&repair=${repair}`}>
-                        <a className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900">
-                          Continue Booking
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                  <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
-                    <div>
-                      <h3
-                        className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-blue-100 text-blue-600"
-                        id="tier-standard"
-                      >
                         Drop-Off
                       </h3>
                     </div>
@@ -286,6 +163,128 @@ export default function Home() {
                     </ul>
                     <div className="rounded-md shadow">
                       <Link href={`drop-off?model=${model}&repair=${repair}`}>
+                        <a className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900">
+                          Continue Booking
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                  <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                    <div>
+                      <h3
+                        className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-blue-100 text-blue-600"
+                        id="tier-standard"
+                      >
+                        Mail-In
+                      </h3>
+                    </div>
+                    <p className="mt-5 text-lg text-gray-500">
+                      Choose this option if you'd like to post your device to us
+                      for a repair.
+                    </p>
+                  </div>
+                  <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
+                    <ul className="space-y-4">
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0">
+                          <svg
+                            className="h-6 w-6 text-green-500"
+                            data-todo-x-description="Heroicon name: outline/check"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p className="ml-3 text-base text-gray-700">
+                          Same day return dispatch*
+                        </p>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0">
+                          <svg
+                            className="h-6 w-6 text-green-500"
+                            data-todo-x-description="Heroicon name: outline/check"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p className="ml-3 text-base text-gray-700">
+                          Fully insured return postage from £7.50
+                        </p>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0">
+                          <svg
+                            className="h-6 w-6 text-green-500"
+                            data-todo-x-description="Heroicon name: outline/check"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p className="ml-3 text-base text-gray-700">
+                          No inspection fees
+                        </p>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0">
+                          <svg
+                            className="h-6 w-6 text-green-500"
+                            data-todo-x-description="Heroicon name: outline/check"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        <p className="ml-3 text-base text-gray-700">
+                          Card, Bank Transfer or Paypal payments only
+                        </p>
+                      </li>
+                    </ul>
+                    <div className="rounded-md shadow">
+                      <Link href={`mail-in?model=${model}&repair=${repair}`}>
                         <a className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900">
                           Continue Booking
                         </a>
