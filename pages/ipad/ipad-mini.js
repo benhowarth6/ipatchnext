@@ -170,7 +170,7 @@ export default function Home() {
                         iPad Mini 1
                       </p>
                     </Link>
-                    <Link href="ipad-mini-2">
+                    <Link href="ipad-mini-1">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
