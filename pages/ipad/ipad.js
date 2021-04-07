@@ -278,7 +278,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto sm:px-6 pt-6">
           <ul className="space-y-3" data-todo-x-max="1">
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/8`}>
+              <Link href={`ipad-8`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -321,7 +321,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/7`}>
+              <Link href={`ipad-7`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -364,7 +364,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/6`}>
+              <Link href={`ipad-6`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -407,7 +407,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/5`}>
+              <Link href={`ipad-5`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -450,7 +450,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/4`}>
+              <Link href={`ipad-4`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -493,7 +493,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/3`}>
+              <Link href={`ipad-3`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -536,7 +536,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/2`}>
+              <Link href={`ipad-2`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
