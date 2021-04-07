@@ -1258,7 +1258,7 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Auto-Brigtness Coding
+                      Auto-Brightness Coding
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
                       Just like the True-Tone feature, your iPhone display

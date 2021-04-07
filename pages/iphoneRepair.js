@@ -1892,17 +1892,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold text-gray-900">
-              All-in-one platform
+              Included as standard
             </h2>
             <p className="mt-4 text-lg text-gray-500">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla nec.
+              We offer high quality iPhone repairs as standard, we don't do tiers or low quality parts.
             </p>
           </div>
           <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
             <div className="flex">
               <svg
-                className="flex-shrink-0 h-6 w-6 text-green-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-500"
                 data-todo-x-description="Heroicon name: outline/check"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -1919,18 +1918,17 @@ export default function Home() {
               </svg>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Invite team members
+                  Original Parts
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse
-                  est, molestie blandit quis ac. Lacus.
+                  Where possible we only use original iPhone components, this ensures your device functions as normal after repair. 
                 </dd>
               </div>
             </div>
 
             <div className="flex">
               <svg
-                className="flex-shrink-0 h-6 w-6 text-green-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-500"
                 data-todo-x-description="Heroicon name: outline/check"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -1947,18 +1945,17 @@ export default function Home() {
               </svg>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Notifications
+                  Seals
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Ornare donec rhoncus vitae nisl velit, neque, mauris dictum
-                  duis. Nibh urna non parturient.
+                Should your iPhone require a replacement frame seal, we’ll replace this anytime we open your device. 
                 </dd>
               </div>
             </div>
 
             <div className="flex">
               <svg
-                className="flex-shrink-0 h-6 w-6 text-green-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-500"
                 data-todo-x-description="Heroicon name: outline/check"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -1975,18 +1972,18 @@ export default function Home() {
               </svg>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
-                  List view
+                  Health Check
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Etiam cras augue ornare pretium sit malesuada morbi orci,
-                  venenatis. Dictum lacus.
+                We can check functions, features and ensure everything is running smoothly. 
+                Should we find any issues we can advise you on repair options.
                 </dd>
               </div>
             </div>
 
             <div className="flex">
               <svg
-                className="flex-shrink-0 h-6 w-6 text-green-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-500"
                 data-todo-x-description="Heroicon name: outline/check"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -2003,123 +2000,10 @@ export default function Home() {
               </svg>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Boards
+                  Warranty
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Interdum quam pulvinar turpis tortor, egestas quis diam amet,
-                  natoque. Mauris sagittis.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-green-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Keyboard shortcuts
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate
-                  mollis nec. In at risus odio.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-green-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Reporting
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Magna a vel sagittis aliquam eu amet. Et lorem auctor quam
-                  nunc odio. Sed bibendum.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-green-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Calendars
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Sed mi, dapibus turpis orci posuere integer. A porta viverra
-                  posuere adipiscing turpis.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-green-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Mobile app
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id
-                  dignissim tristique proin sed.
+                We offer a 90 day warranty on all our repairs, this covers any issues with the replacement parts or workmanship. 
                 </dd>
               </div>
             </div>
@@ -2148,44 +2032,63 @@ export default function Home() {
               <dl className="space-y-12">
                 <div>
                   <dt className="text-lg leading-6 font-medium text-gray-900">
-                    How do you make holy water?
+                    How do I get my iPhone Repaired?
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    You boil the hell out of it. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Quas cupiditate laboriosam
-                    fugiat.
+                  Choose the repair your device requires and the best booking option for you. 
+                  We accept both drop off and mail in repairs, so wether your local or not we can still offer you our services. 
+                  If you aren’t sure which repair your iPhone requires, please get in touch and we’ll do our best to help. 
                   </dd>
                 </div>
 
                 <div>
                   <dt className="text-lg leading-6 font-medium text-gray-900">
-                    What's the best thing about Switzerland?
+                    How much does it cost?
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    I don't know, but the flag is a big plus. Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Quas cupiditate
-                    laboriosam fugiat.
+                  The cost for your repair will depend on the type of repair and the model of iPhone. 
+                  We list nearly all repair costs for the the iPhones we offer service on. Should you not be able to find your repair listed, please get in touch and we’ll be able to advise further. 
+                  For liquid damage devices, or no power devices we wouldn’t be able to provide a repair quote until after an inspection. 
                   </dd>
                 </div>
 
                 <div>
                   <dt className="text-lg leading-6 font-medium text-gray-900">
-                    What do you call someone with no body and no nose?
+                    How long will it take?
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Nobody knows. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    We understand how important iPhones have become, so we aim to complete all repairs in the same day, usually the same hour. 
+                    A drop off repair for your iPhone is the quickest way to get your device repaired, and we usually complete nearly all iPhone repairs in under 30 minutes. 
+                    Should you want to mail in instead, we aim to repair and dispatch the device back to you within the same day.
                   </dd>
                 </div>
 
                 <div>
                   <dt className="text-lg leading-6 font-medium text-gray-900">
-                    Why do you never see elephants hiding in trees?
+                    What to expect?
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Because they're so good at it. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Quas cupiditate laboriosam
-                    fugiat.
+                    We offer a wide range of repairs for all iPhone models, however should a repair not be possible on your device you can collect your iPhone with no fee or 
+                    just the return postage fee if you’ve mailed in. Although we don’t routinely erase any device during repair, we do recommend you take a backup of your data before having your device repaired. 
+                  </dd>
+                </div>
+
+                <div>
+                  <dt className="text-lg leading-6 font-medium text-gray-900">
+                    Screen Replacements
+                  </dt>
+                  <dd className="mt-2 text-base text-gray-500">
+                  iPhone screen replacements are our most common repair, we can repair most screens within around 20 minutes. We aim to keep all models of display in stock so you can pop into our Leeds store for a quick replacement without an appointment. 
+                  </dd>
+                </div>
+
+                <div>
+                  <dt className="text-lg leading-6 font-medium text-gray-900">
+                    Battery Replacements
+                  </dt>
+                  <dd className="mt-2 text-base text-gray-500">
+                  iPhone batteries have a limited life span, this is usually around 1000 full charges. If your battery no longer gets you through the day we can offer a quick replacement, usually within 15 minutes. 
+                  We keep nearly all batteries in stock, so you can stop by for a quick replacement at our Leeds store. 
                   </dd>
                 </div>
               </dl>

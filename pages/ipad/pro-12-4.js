@@ -930,8 +930,7 @@ export default function Home() {
                 A match made at the factory
               </h3>
               <p className="mt-3 text-lg text-gray-500">
-                Your display is paired to certain features on your iPhone such
-                as True-Tone, Auto-Brightness and Touch Settings.
+                Your iPad display includes a number of important features, such as True-Tone and Apple Pencil support.
               </p>
 
               <dl className="mt-10 space-y-10">
@@ -961,7 +960,7 @@ export default function Home() {
                       True-Tone Pairing
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Your iPhone display includes special calibration codes for
+                      Your iPad display includes special calibration codes for
                       the True-Tone feature. We pair these codes with your
                       replacement display to ensure this features works as
                       intended.
@@ -992,7 +991,7 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Auto-Brigtness Coding
+                      Auto-Brightness Coding
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
                       Just like the True-Tone feature, your iPhone display
