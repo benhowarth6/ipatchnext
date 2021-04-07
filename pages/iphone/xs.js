@@ -288,7 +288,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -327,7 +327,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -613,7 +613,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Dual-Rear Camera Module.
+                      Dual-Rear Camera Module
                     </span>
                   </li>
 
@@ -633,7 +633,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -672,7 +672,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -723,7 +723,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Rear Camera Lens.
+                      Rear Camera Lens
                     </span>
                   </li>
 
@@ -743,7 +743,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -782,7 +782,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -833,7 +833,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Earpiece Speaker.
+                      New Earpiece Speaker
                     </span>
                   </li>
 
@@ -853,7 +853,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -892,7 +892,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -943,7 +943,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Earpiece Speaker.
+                      New Earpiece Speaker
                     </span>
                   </li>
 
@@ -963,7 +963,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -1002,7 +1002,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -1053,7 +1053,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Button Flex.
+                      New Button Flex
                     </span>
                   </li>
 
@@ -1073,7 +1073,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -1112,7 +1112,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>

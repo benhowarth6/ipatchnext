@@ -151,7 +151,7 @@ export default function Home() {
                     One, simple price
                   </p>
                   <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
-                    <span>£520</span>
+                    <span>£519</span>
                   </div>
                   <p className="mt-4 text-sm">
                     <Link href="">
@@ -283,7 +283,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes
+                      Repaired in under 2 hours
                     </span>
                   </li>
 
@@ -393,7 +393,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes
+                      Repaired in under 2 hours
                     </span>
                   </li>
 
@@ -463,7 +463,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Dual-Rear Camera Module.
+                      Dual-Rear Camera Module
                     </span>
                   </li>
 
@@ -483,7 +483,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -503,7 +503,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 2 hours
                     </span>
                   </li>
 
@@ -522,7 +522,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -573,7 +573,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Rear Camera Lens.
+                      Rear Camera Lens
                     </span>
                   </li>
 
@@ -593,7 +593,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -613,7 +613,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 2 hours
                     </span>
                   </li>
 
@@ -632,7 +632,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -683,7 +683,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Earpiece Speaker.
+                      New Earpiece Speaker
                     </span>
                   </li>
 
@@ -703,7 +703,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -723,7 +723,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 2 hours
                     </span>
                   </li>
 
@@ -742,7 +742,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -793,7 +793,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Button Flex.
+                      New Button Flex
                     </span>
                   </li>
 
@@ -813,7 +813,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal.
+                      Device Dust and Water Seal
                     </span>
                   </li>
 
@@ -833,7 +833,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 2 hours
                     </span>
                   </li>
 
@@ -852,7 +852,7 @@ export default function Home() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-sm text-gray-500">Deep Clean.</span>
+                    <span className="text-sm text-gray-500">Deep Clean</span>
                   </li>
                 </ul>
               </div>
@@ -957,13 +957,12 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      True-Tone Pairing
+                      Original Components
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Your iPad display includes special calibration codes for
-                      the True-Tone feature. We pair these codes with your
-                      replacement display to ensure this features works as
-                      intended.
+                      We only use original iPad components where at all possible, 
+                      this ensures your iPad works as expected after any repairs and 
+                      no loss of functionality such as Apple Pencil. 
                     </dd>
                   </div>
                 </div>
@@ -991,13 +990,12 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Auto-Brightness Coding
+                      Expertly Sealed
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Just like the True-Tone feature, your iPhone display
-                      inludes calibration codes for Auto-Brightness. We also
-                      pair these codes with your new display to ensure this
-                      crucial feature works correctly.
+                      Through our many years experience we’ve developed an advanced sealing process. 
+                      Should your iPad require any alignment we can straighten and reform your frame and 
+                      ensure your screen sits flush in the rear frame.
                     </dd>
                   </div>
                 </div>
@@ -1025,13 +1023,12 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Touch Calibration
+                      Same Day Turnaround
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Lastly your iPhone display also includes calibratin data
-                      for touch. We pair the correct manufacture of display with
-                      your original and then pair this code to ensure correct
-                      and accurate touch response.
+                      We offer same day turnaround on the majority of our iPad repairs, 
+                      depending on part availability. Most repairs including screens and 
+                      batteries are usually completed within around 1-2 hours.
                     </dd>
                   </div>
                 </div>
@@ -1089,7 +1086,7 @@ export default function Home() {
                         No passcode? No problem
                       </dt>
                       <dd className="mt-2 text-base text-gray-500">
-                        We can carry out nearly all iPhone repairs without your
+                        We can carry out nearly all iPad repairs without your
                         passcode. Should we require it to test certain features,
                         you are more than welcome to enter the code yourself to
                         carry out any tests.

@@ -197,8 +197,8 @@ export default function Home() {
                             <option value="Pro 9">iPad Pro 9.7-inch</option>
                             <option value="Air 4">iPad Air 4</option>
                             <option value="Air 3">iPad Air 3</option>
-                            <option value="Air 4">iPad Air 2</option>
-                            <option value="Air 4">iPad Air 1</option>
+                            <option value="Air 2">iPad Air 2</option>
+                            <option value="Air 1">iPad Air 1</option>
                             <option value="8">iPad 8</option>
                             <option value="7">iPad 7</option>
                             <option value="6">iPad 6</option>
@@ -238,6 +238,7 @@ export default function Home() {
                             <option value="lcd">LCD Replacement</option>
                             <option value="battery">Battery</option>
                             <option value="charging-port">Charging Port</option>
+                            <option value="headphone-jack">Headphone Jack</option>
                             <option value="microphone">Microphone</option>
                             <option value="front-camera">Front Camera</option>
                             <option value="rear-camera">Rear Camera</option>

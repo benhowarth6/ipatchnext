@@ -2132,7 +2132,7 @@ export default function Home() {
                   This was the third time I have used them. As before, a very
                   fast and efficient service, phone restored to full service.”
                 </p>
-                <p class="mt-4">
+                <p className="mt-4">
                   “These guys know what they are doing and are so helpful.”
                 </p>
               </div>

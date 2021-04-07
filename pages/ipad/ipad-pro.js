@@ -127,7 +127,7 @@ export default function Home() {
                         12.9-inch 2nd Generation
                       </p>
                     </Link>
-                    <Link href="pro-12-3">
+                    <Link href="pro-12-2">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -149,12 +149,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`pro-12-3`}>
+                    <Link href={`pro-12-1`}>
                       <p className="text-xl font-semibold text-gray-900">
                         12.9-inch 1st Generation
                       </p>
                     </Link>
-                    <Link href="pro-12-3">
+                    <Link href="pro-12-1">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -258,12 +258,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`pro-11-2`}>
+                    <Link href={`pro-10`}>
                       <p className="text-xl font-semibold text-gray-900">
                         10.5-inch
                       </p>
                     </Link>
-                    <Link href="pro-11-2">
+                    <Link href="pro-10">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -302,7 +302,7 @@ export default function Home() {
             </div>
 
         </div>
-        <div className="max-w-7xl mx-auto py-16">
+        <div className="max-w-7xl mx-auto pt-16">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center">
@@ -723,12 +723,12 @@ export default function Home() {
 
           </ul>
         </div>
-        <div className="max-w-7xl mx-auto py-16">
+        <div className="max-w-7xl mx-auto pt-16">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
-                  <span className="block">Not sure which iPad you have?</span>
+                  <span className="block">Not sure which iPad Pro you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
                   If you’re using iPadOS or iOS 12.2 or later, go to Settings >
