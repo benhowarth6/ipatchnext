@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Custom404() {
   return (
-    <div className="min-h-screen sm:min-h-full">
+    <div className="min-h-full sm:min-h-full">
       <div className="relative -mt-6 z-10">
       <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
         <Link href="/">
@@ -28,9 +28,12 @@ export default function Custom404() {
           priority
         />
         <div className="pt-8 overflow-hidden sm:pt-12 relative lg:py-48">
-          <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
+          <div className="mx-auto max-w-md px-4 sm:max-w-full sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
             <div>
               <div className="mt-20">
+              <h1 className="text-9xl font-black text-white tracking-tight sm:text-7xl">
+                    404
+                    </h1>
                 <div className="mt-6 sm:max-w-xl">
                   <h1 className="text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
                     Hello, is it me you're looking for?
