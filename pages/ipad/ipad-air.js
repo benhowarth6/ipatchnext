@@ -46,6 +46,8 @@ export default function Home() {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={`air-4`}>
+                <a>
                 <Image
                   src="/ipad/air-4.jpg"
                   alt="iPad Air 4th Generation Repairs"
@@ -53,14 +55,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`air-4`}>
-                      <p className="text-xl font-semibold text-gray-900">
-                        Air 4
-                      </p>
+                      <a className="text-xl font-semibold text-gray-900">
+                        iPad Air 4
+                      </a>
                     </Link>
                     <Link href="air-4">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -73,6 +77,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={`air-3`}>
+                <a>
                 <Image
                   src="/ipad/air-3.jpg"
                   alt="iPad Air 3rd Generation Repairs"
@@ -80,14 +86,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`air-3`}>
-                      <p className="text-xl font-semibold text-gray-900">
-                        Air 3
-                      </p>
+                      <a className="text-xl font-semibold text-gray-900">
+                        iPad Air 3
+                      </a>
                     </Link>
                     <Link href="air-3">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -100,6 +108,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={`air-2`}>
+                <a>
                 <Image
                   src="/ipad/air-2.jpg"
                   alt="iPad Air 2nd Generation Repairs"
@@ -107,14 +117,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`air-2`}>
-                      <p className="text-xl font-semibold text-gray-900">
-                        Air 2
-                      </p>
+                      <a className="text-xl font-semibold text-gray-900">
+                        iPad Air 2
+                      </a>
                     </Link>
                     <Link href="air-2">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -127,6 +139,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={`air-1`}>
+                <a>
                 <Image
                   src="/ipad/air-1.jpg"
                   alt="iPad Air 1st Generation Repairs"
@@ -134,14 +148,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`air-1`}>
-                      <p className="text-xl font-semibold text-gray-900">
-                        Air 1
-                      </p>
+                      <a className="text-xl font-semibold text-gray-900">
+                        iPad Air 1
+                      </a>
                     </Link>
                     <Link href="air-1">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -160,7 +176,7 @@ export default function Home() {
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
-                  <span className="block">Not sure which iPad you have?</span>
+                  <span className="block">Not sure which iPad Air you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
                   If you’re using iPadOS or iOS 12.2 or later, go to Settings >
@@ -213,7 +229,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            Air 4
+                          iPad Air 4
                         </p>
                         </div>
                       </div>
@@ -256,7 +272,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            Air 3
+                          iPad Air 3
                         </p>
                         </div>
                       </div>
@@ -299,7 +315,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            Air 2
+                          iPad Air 2
                         </p>
                         </div>
                       </div>
@@ -342,7 +358,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            Air 1
+                            iPad Air 1
                         </p>
                         </div>
                       </div>

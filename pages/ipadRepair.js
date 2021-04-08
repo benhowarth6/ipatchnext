@@ -43,23 +43,27 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Image
-                  src="/ipad/12.9-4.jpg"
-                  alt="iPad Repairs"
-                  className="h-60 w-full object-cover"
-                  width={1000}
-                  height={750}
-                />
+                <Link href={`/ipad/ipad-pro`}>
+                  <a>
+                    <Image
+                      src="/ipad/12.9-4.jpg"
+                      alt="iPad Repairs"
+                      className="h-60 w-full object-cover"
+                      width={1000}
+                      height={750}
+                    />
+                  </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`/ipad/ipad-pro`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad Pro
-                      </p>
+                      </a>
                     </Link>
                     <Link href="/ipad/ipad-pro">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -72,21 +76,25 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Image
-                  src="/ipad/air-4.jpg"
-                  alt="iPad Air Repairs"
-                  className="h-60 w-full object-cover"
-                  width={1000}
-                  height={750}
-                />
+                <Link href={`/ipad/ipad-air`}>
+                  <a>
+                    <Image
+                      src="/ipad/air-4.jpg"
+                      alt="iPad Air Repairs"
+                      className="h-60 w-full object-cover"
+                      width={1000}
+                      height={750}
+                    />
+                  </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`/ipad/ipad-air`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad Air
-                      </p>
+                      </a>
                     </Link>
                     <Link href="/ipad/ipad-air">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -99,21 +107,25 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Image
-                  src="/ipad/8.jpg"
-                  alt="iPad Repairs"
-                  className="h-60 w-full object-cover"
-                  width={1000}
-                  height={750}
-                />
+                <Link href={`/ipad/ipad`}>
+                  <a>
+                    <Image
+                      src="/ipad/8.jpg"
+                      alt="iPad Repairs"
+                      className="h-60 w-full object-cover"
+                      width={1000}
+                      height={750}
+                    />
+                  </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`/ipad/ipad`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad
-                      </p>
+                      </a>
                     </Link>
                     <Link href="/ipad/ipad">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -126,21 +138,25 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Image
-                  src="/ipad/mini-5.jpg"
-                  alt="iPad Mini Repairs"
-                  className="h-60 w-full object-cover"
-                  width={1000}
-                  height={750}
-                />
+                <Link href={`/ipad/ipad-mini`}>
+                  <a>
+                    <Image
+                      src="/ipad/mini-5.jpg"
+                      alt="iPad Mini Repairs"
+                      className="h-60 w-full object-cover"
+                      width={1000}
+                      height={750}
+                    />
+                  </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`/ipad/ipad-mini`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad Mini
-                      </p>
+                      </a>
                     </Link>
                     <Link href="/ipad/ipad-mini">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -194,177 +210,176 @@ export default function Home() {
         <div className="max-w-2xl mx-auto sm:px-6 pt-12">
           <ul className="space-y-3" data-todo-x-max="1">
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-            <Link href={`/ipad/ipad-pro`}>
-              <a className="block ">
-                <div className="flex items-center sm:px-6">
-                  <div className="min-w-0 flex-1 flex items-center">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src="/devices/ipad-pro-12-4-256.png"
-                        alt="iPad Pro Repairs"
-                        className="h-32 w-full object-cover"
-                        width={96}
-                        height={96}
-                      />
-                    </div>
-                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                      <div>
-                        <p className="font-medium text-base sm:text-lg">
-                          iPad Pro Models
-                        </p>
+              <Link href={`/ipad/ipad-pro`}>
+                <a className="block ">
+                  <div className="flex items-center sm:px-6">
+                    <div className="min-w-0 flex-1 flex items-center">
+                      <div className="flex-shrink-0">
+                        <Image
+                          src="/devices/ipad-pro-12-4-256.png"
+                          alt="iPad Pro Repairs"
+                          className="h-32 w-full object-cover"
+                          width={96}
+                          height={96}
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                        <div>
+                          <p className="font-medium text-base sm:text-lg">
+                            iPad Pro Models
+                          </p>
+                        </div>
                       </div>
                     </div>
+                    <div>
+                      <svg
+                        className="h-5 w-5 text-gray-400"
+                        data-todo-x-description="Heroicon name: solid/chevron-right"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
-                  <div>
-                    <svg
-                      className="h-5 w-5 text-gray-400"
-                      data-todo-x-description="Heroicon name: solid/chevron-right"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </a>
+                </a>
               </Link>
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-            <Link href={`/ipad/ipad-air`}>
-              <a className="block ">
-                <div className="flex items-center sm:px-6">
-                  <div className="min-w-0 flex-1 flex items-center">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src="/devices/ipad-air-4-256.png"
-                        alt="iPad Air Repairs"
-                        className="h-32 w-full object-cover"
-                        width={96}
-                        height={96}
-                      />
-                    </div>
-                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                      <div>
-                        <p className="font-medium text-base sm:text-lg">
-                          iPad Air Models
-                        </p>
+              <Link href={`/ipad/ipad-air`}>
+                <a className="block ">
+                  <div className="flex items-center sm:px-6">
+                    <div className="min-w-0 flex-1 flex items-center">
+                      <div className="flex-shrink-0">
+                        <Image
+                          src="/devices/ipad-air-4-256.png"
+                          alt="iPad Air Repairs"
+                          className="h-32 w-full object-cover"
+                          width={96}
+                          height={96}
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                        <div>
+                          <p className="font-medium text-base sm:text-lg">
+                            iPad Air Models
+                          </p>
+                        </div>
                       </div>
                     </div>
+                    <div>
+                      <svg
+                        className="h-5 w-5 text-gray-400"
+                        data-todo-x-description="Heroicon name: solid/chevron-right"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
-                  <div>
-                    <svg
-                      className="h-5 w-5 text-gray-400"
-                      data-todo-x-description="Heroicon name: solid/chevron-right"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </a>
+                </a>
               </Link>
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-            <Link href={`/ipad/ipad`}>
-              <a className="block ">
-                <div className="flex items-center sm:px-6">
-                  <div className="min-w-0 flex-1 flex items-center">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src="/devices/ipad-8-256.png"
-                        alt="iPad Repairs"
-                        className="h-32 w-full object-cover"
-                        width={96}
-                        height={96}
-                      />
-                    </div>
-                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                      <div>
-                        <p className="font-medium text-base sm:text-lg">
-                          iPad Models
-                        </p>
+              <Link href={`/ipad/ipad`}>
+                <a className="block ">
+                  <div className="flex items-center sm:px-6">
+                    <div className="min-w-0 flex-1 flex items-center">
+                      <div className="flex-shrink-0">
+                        <Image
+                          src="/devices/ipad-8-256.png"
+                          alt="iPad Repairs"
+                          className="h-32 w-full object-cover"
+                          width={96}
+                          height={96}
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                        <div>
+                          <p className="font-medium text-base sm:text-lg">
+                            iPad Models
+                          </p>
+                        </div>
                       </div>
                     </div>
+                    <div>
+                      <svg
+                        className="h-5 w-5 text-gray-400"
+                        data-todo-x-description="Heroicon name: solid/chevron-right"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
-                  <div>
-                    <svg
-                      className="h-5 w-5 text-gray-400"
-                      data-todo-x-description="Heroicon name: solid/chevron-right"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </a>
+                </a>
               </Link>
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-            <Link href={`/ipad/ipad-mini`}>
-              <a className="block ">
-                <div className="flex items-center sm:px-6">
-                  <div className="min-w-0 flex-1 flex items-center">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src="/devices/ipad-mini-5-256.png"
-                        alt="iPad Mini Repairs"
-                        className="h-32 w-full object-cover"
-                        width={96}
-                        height={96}
-                      />
-                    </div>
-                    <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                      <div>
-                        <p className="font-medium text-base sm:text-lg">
-                          iPad Mini Models
-                        </p>
+              <Link href={`/ipad/ipad-mini`}>
+                <a className="block ">
+                  <div className="flex items-center sm:px-6">
+                    <div className="min-w-0 flex-1 flex items-center">
+                      <div className="flex-shrink-0">
+                        <Image
+                          src="/devices/ipad-mini-5-256.png"
+                          alt="iPad Mini Repairs"
+                          className="h-32 w-full object-cover"
+                          width={96}
+                          height={96}
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                        <div>
+                          <p className="font-medium text-base sm:text-lg">
+                            iPad Mini Models
+                          </p>
+                        </div>
                       </div>
                     </div>
+                    <div>
+                      <svg
+                        className="h-5 w-5 text-gray-400"
+                        data-todo-x-description="Heroicon name: solid/chevron-right"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
-                  <div>
-                    <svg
-                      className="h-5 w-5 text-gray-400"
-                      data-todo-x-description="Heroicon name: solid/chevron-right"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </a>
+                </a>
               </Link>
             </li>
-
           </ul>
         </div>
         <div className="max-w-7xl mx-auto pt-16">
@@ -400,8 +415,8 @@ export default function Home() {
               Included as standard
             </h2>
             <p className="mt-4 text-lg text-gray-500">
-              We offer high quality iPad repairs as standard, we don't do
-              tiers or low quality parts.
+              We offer high quality iPad repairs as standard, we don't do tiers
+              or low quality parts.
             </p>
           </div>
           <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
@@ -573,13 +588,13 @@ export default function Home() {
                     How long will it take?
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    We understand how important iPad's have become, so we aim
-                    to complete all repairs in the same day, usually the same
-                    hour. A drop off repair for your iPad is the quickest way
-                    to get your device repaired, and we usually complete nearly
-                    all iPad repairs in under 30 minutes. Should you want to
-                    mail in instead, we aim to repair and dispatch the device
-                    back to you within the same day.
+                    We understand how important iPad's have become, so we aim to
+                    complete all repairs in the same day, usually the same hour.
+                    A drop off repair for your iPad is the quickest way to get
+                    your device repaired, and we usually complete nearly all
+                    iPad repairs in under 30 minutes. Should you want to mail in
+                    instead, we aim to repair and dispatch the device back to
+                    you within the same day.
                   </dd>
                 </div>
 
@@ -590,10 +605,10 @@ export default function Home() {
                   <dd className="mt-2 text-base text-gray-500">
                     We offer a wide range of repairs for all iPad models,
                     however should a repair not be possible on your device you
-                    can collect your iPad with no fee or just the return
-                    postage fee if you’ve mailed in. Although we don’t routinely
-                    erase any device during repair, we do recommend you take a
-                    backup of your data before having your device repaired.
+                    can collect your iPad with no fee or just the return postage
+                    fee if you’ve mailed in. Although we don’t routinely erase
+                    any device during repair, we do recommend you take a backup
+                    of your data before having your device repaired.
                   </dd>
                 </div>
 
@@ -602,10 +617,10 @@ export default function Home() {
                     Screen Replacements
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    iPad screen replacements are our most common repair, we
-                    can repair most screens within around 1-2 hours. We aim to
-                    keep all models of display in stock so you can pop into our
-                    Leeds store for a quick replacement without an appointment.
+                    iPad screen replacements are our most common repair, we can
+                    repair most screens within around 1-2 hours. We aim to keep
+                    all models of display in stock so you can pop into our Leeds
+                    store for a quick replacement without an appointment.
                   </dd>
                 </div>
 
@@ -653,7 +668,7 @@ export default function Home() {
                   </div>
                   <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                     <div className="text-base font-medium text-gray-900">
-                    Matty Firth
+                      Matty Firth
                     </div>
 
                     <svg

@@ -46,6 +46,8 @@ export default function Home() {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={`ipad-8`}>
+                <a>
                 <Image
                   src="/ipad/8.jpg"
                   alt="iPad 8th Generation Repairs"
@@ -53,14 +55,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`ipad-8`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad 8
-                      </p>
+                      </a>
                     </Link>
                     <Link href="ipad-8">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -73,6 +77,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+                <Link href={'ipad-7'}>
+                <a>
                 <Image
                   src="/ipad/7.jpg"
                   alt="iPad 7th Generation Repairs"
@@ -80,14 +86,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`ipad-7`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad 7
-                      </p>
+                      </a>
                     </Link>
                     <Link href="ipad-7">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -100,6 +108,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+                <Link href={'ipad-6'}>
+                  <a>
                 <Image
                   src="/ipad/6.jpg"
                   alt="iPad 6th Generation Repairs"
@@ -107,14 +117,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`ipad-6`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad 6
-                      </p>
+                      </a>
                     </Link>
                     <Link href="ipad-6">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -127,6 +139,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+                <Link href={'ipad-5'}>
+                  <a>
                 <Image
                   src="/ipad/5.jpg"
                   alt="iPad 5th Generation Repairs"
@@ -134,14 +148,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`ipad-5`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad 5
-                      </p>
+                      </a>
                     </Link>
                     <Link href="ipad-5">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -154,6 +170,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+                <Link href={'ipad-4'}>
+                  <a>
                 <Image
                   src="/ipad/4.jpg"
                   alt="iPad 4th Generation Repairs"
@@ -161,14 +179,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`ipad-4`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad 4
-                      </p>
+                      </a>
                     </Link>
                     <Link href="ipad-4">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -181,6 +201,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+                <Link href={'ipad-3'}>
+                  <a>
                 <Image
                   src="/ipad/3.jpg"
                   alt="iPad 3rd Generation Repairs"
@@ -188,14 +210,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`ipad-3`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad 3
-                      </p>
+                      </a>
                     </Link>
                     <Link href="ipad-3">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -208,6 +232,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
+              <Link href={'ipad-2'}>
+                  <a>
                 <Image
                   src="/ipad/2.jpg"
                   alt="iPad 2nd Generation Repairs"
@@ -215,14 +241,16 @@ export default function Home() {
                   width={1000}
                   height={750}
                 />
+                </a>
+                </Link>
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
                     <Link href={`ipad-2`}>
-                      <p className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900">
                         iPad 2
-                      </p>
+                      </a>
                     </Link>
                     <Link href="ipad-2">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">

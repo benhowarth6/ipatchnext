@@ -41,305 +41,38 @@ export default function Home() {
               Choose your size of MacBook Pro to see available repairs.
             </p>
           </div>
-          <div className="bg-gray-50 px-4 sm:px-6 lg:px-8 py-12">
-            <div className="max-w-3xl mx-auto">
-              <div>
-                <div className="sm:hidden">
-                  <label htmlFor="tabs" className="sr-only">
-                    Select a tab
-                  </label>
-                  <select
-                    id="tabs"
-                    name="tabs"
-                    className="block w-full focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
-                    defaultValue="13"
-                  >
-                    <option value="13">13-inch</option>
-                    <option value="15">15-inch</option>
-                    <option value="16">16-inch</option>
-                  </select>
-                </div>
-                <div className="hidden sm:block">
-                  <nav
-                    className="relative z-0 rounded-lg shadow flex divide-x divide-gray-200"
-                    aria-label="Tabs"
-                  >
-                    <a
-                      href="/"
-                      aria-current="page"
-                      className="text-gray-900 rounded-l-lg  group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-sm font-medium text-center hover:bg-gray-50 focus:z-10"
-                    >
-                      <span>13-inch</span>
-                      <span
-                        aria-hidden="true"
-                        className="bg-blue-500 absolute inset-x-0 bottom-0 h-0.5"
-                      ></span>
-                    </a>
 
-                    <a
-                      href="/"
-                      aria-current="false"
-                      className="text-gray-500 hover:text-gray-700   group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-sm font-medium text-center hover:bg-gray-50 focus:z-10"
-                    >
-                      <span>15-inch</span>
-                      <span
-                        aria-hidden="true"
-                        className="bg-transparent absolute inset-x-0 bottom-0 h-0.5"
-                      ></span>
-                    </a>
-
-                    <a
-                      href="/"
-                      aria-current="false"
-                      className="text-gray-500 hover:text-gray-700   group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-sm font-medium text-center hover:bg-gray-50 focus:z-10"
-                    >
-                      <span>16-inch</span>
-                      <span
-                        aria-hidden="true"
-                        className="bg-transparent absolute inset-x-0 bottom-0 h-0.5"
-                      ></span>
-                    </a>
-                  </nav>
-                </div>
+          <div className="px-4 pt-12 max-w-7xl mx-auto sm:px-6">
+            <div className="pb-5 border-b border-gray-200">
+              <div className="-ml-2 -mt-2 flex flex-wrap items-baseline">
+                <h3 className="ml-2 mt-2 text-lg leading-6 font-medium text-gray-900">
+                  12.9-inch Models
+                </h3>
+                <p className="ml-2 mt-1 text-sm text-gray-500 truncate">in iPad Pro</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-gray-50 py-6">
-            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-              <div className="bg-white shadow overflow-hidden sm:rounded-md">
-                <ul className="divide-y divide-gray-200">
-                  <li>
-                    <a href="#" className="block hover:bg-gray-50">
-                      <div className="flex items-center px-4 py-4 sm:px-6">
-                        <div className="min-w-0 flex-1 flex items-center">
-                          <div className="flex-shrink-0">
-                            <Image
-                              src="/devices/a1278.png"
-                              className="inline-block h-16 w-16"
-                              alt="Book a MacBook Pro Mid 2010 Repair"
-                              width={64}
-                              height={64}
-                            />
-                          </div>
-                          <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                            <div>
-                              <span className="lg:hidden">
-                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">
-                                  Mid 2010
-                                </p>
-                              </span>
-                              <span className="hidden lg:inline">
-                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">
-                                  MacBook Pro 13-inch (Mid 2010)
-                                </p>
-                              </span>
-                              <p className="mt-2 flex items-center text-sm">
-                                <svg
-                                  className="flex-shrink-0 mr-1.5 h-5 w-5"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                  />
-                                </svg>
-                                <span className="truncate">Model: A1278</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <a
-                            href="#"
-                            className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                          >
-                            View
-                          </a>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+    <div className="max-w-2xl mx-auto sm:px-6 py-8">
+      
+  <ul className="space-y-3" data-todo-x-max="1">
+    
+      <li className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+        <x-placeholder className="block border-2 border-dashed border-gray-300 rounded bg-white h-16 w-full text-gray-200">
+      </x-placeholder></li>
+    
+      <li className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+        <x-placeholder className="block border-2 border-dashed border-gray-300 rounded bg-white h-16 w-full text-gray-200">
+      </x-placeholder></li>
+    
+      <li className="bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+        <x-placeholder className="block border-2 border-dashed border-gray-300 rounded bg-white h-16 w-full text-gray-200">
+      </x-placeholder></li>
+    
+  </ul>
 
-                  <li>
-                    <a href="#" className="block hover:bg-gray-50">
-                      <div className="flex items-center px-4 py-4 sm:px-6">
-                        <div className="min-w-0 flex-1 flex items-center">
-                          <div className="flex-shrink-0">
-                            <Image
-                              src="/devices/a1278.png"
-                              className="inline-block h-16 w-16"
-                              alt="Book a MacBook Pro Early 2011 Repair"
-                              width={64}
-                              height={64}
-                            />
-                          </div>
-                          <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                            <div>
-                              <span className="lg:hidden">
-                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">
-                                  Early 2011
-                                </p>
-                              </span>
-                              <span className="hidden lg:inline">
-                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">
-                                  MacBook Pro 13-inch (Early 2011)
-                                </p>
-                              </span>
-                              <p className="mt-2 flex items-center text-sm">
-                                <svg
-                                  className="flex-shrink-0 mr-1.5 h-5 w-5"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                  />
-                                </svg>
-                                <span className="truncate">Model: A1278</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <a
-                            href="#"
-                            className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                          >
-                            View
-                          </a>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+    </div>
 
-                  <li>
-                    <a href="#" className="block hover:bg-gray-50">
-                      <div className="flex items-center px-4 py-4 sm:px-6">
-                        <div className="min-w-0 flex-1 flex items-center">
-                          <div className="flex-shrink-0">
-                            <Image
-                              src="/devices/a1278.png"
-                              className="inline-block h-16 w-16"
-                              alt="Book a MacBook Pro Late 2011 Repair"
-                              width={64}
-                              height={64}
-                            />
-                          </div>
-                          <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                            <div>
-                              <span className="lg:hidden">
-                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">
-                                  Late 2011
-                                </p>
-                              </span>
-                              <span className="hidden lg:inline">
-                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">
-                                  MacBook Pro 13-inch (Late 2011)
-                                </p>
-                              </span>
-                              <p className="mt-2 flex items-center text-sm">
-                                <svg
-                                  className="flex-shrink-0 mr-1.5 h-5 w-5"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                  />
-                                </svg>
-                                <span className="truncate">Model: A1278</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <a
-                            href="#"
-                            className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                          >
-                            View
-                          </a>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="block hover:bg-gray-50">
-                      <div className="flex items-center px-4 py-4 sm:px-6">
-                        <div className="min-w-0 flex-1 flex items-center">
-                          <div className="flex-shrink-0">
-                            <Image
-                              src="/devices/a1278.png"
-                              className="inline-block h-16 w-16"
-                              alt="Book a MacBook Pro Mid 2012 Repair"
-                              width={64}
-                              height={64}
-                            />
-                          </div>
-                          <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                            <div>
-                              <span className="lg:hidden">
-                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">
-                                  Mid 2012
-                                </p>
-                              </span>
-                              <span className="hidden lg:inline">
-                                <p className="text-sm font-medium text-black hover:text-blue-500 truncate">
-                                  MacBook Pro 13-inch (Mid 2012)
-                                </p>
-                              </span>
-                              <p className="mt-2 flex items-center text-sm">
-                                <svg
-                                  className="flex-shrink-0 mr-1.5 h-5 w-5"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                  />
-                                </svg>
-                                <span className="truncate">Model: A1278</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <a
-                            href="#"
-                            className="block w-full px-6 bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-                          >
-                            View
-                          </a>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
         <div className="max-w-7xl mx-auto pt-16">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
