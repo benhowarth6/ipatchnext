@@ -340,7 +340,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/watch-series-6-256.png"
+                          src="/watch/watch-series-6-256.png"
                           alt="Apple Watch Series 6 Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -383,7 +383,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/watch-series-se-256.png"
+                          src="/watch/watch-series-se-256.png"
                           alt="Apple Watch SE Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -426,7 +426,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/watch-series-5-256.png"
+                          src="/watch/watch-series-5-256.png"
                           alt="Apple Watch Series 5 Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -469,7 +469,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/watch-series-4-256.png"
+                          src="/watch/watch-series-4-256.png"
                           alt="Apple Watch Series 4 Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -512,7 +512,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/watch-series-3-256.png"
+                          src="/watch/watch-series-3-256.png"
                           alt="Apple Watch Series 3 Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -555,7 +555,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/watch-series-2-256.png"
+                          src="/watch/watch-series-2-256.png"
                           alt="Apple Watch Series 2 Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -598,7 +598,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/watch-series-1-256.png"
+                          src="/watch/watch-series-1-256.png"
                           alt="Apple Watch Series 1 Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -641,7 +641,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/watch-series-0-256.png"
+                          src="/watch/watch-series-0-256.png"
                           alt="Apple Watch 1st Generation Repairs"
                           className="h-32 w-full object-cover"
                           width={96}

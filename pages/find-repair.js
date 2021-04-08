@@ -48,7 +48,7 @@ export default function Home() {
                 <Link href={`iphoneRepair`}>
                   <a>
                     <Image
-                      src="/devices/iphone.jpg"
+                      src="/devices/iphones.jpg"
                       alt="iPhone Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -79,7 +79,7 @@ export default function Home() {
               <Link href={`ipadRepair`}>
                   <a>
                     <Image
-                      src="/devices/ipad.jpg"
+                      src="/devices/ipads.jpg"
                       alt="iPad Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -110,7 +110,7 @@ export default function Home() {
               <Link href={`macRepair`}>
                   <a>
                     <Image
-                      src="/devices/mac.jpg"
+                      src="/devices/macs.jpg"
                       alt="Mac Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -141,7 +141,7 @@ export default function Home() {
                 <Link href={`watchRepair`}>
                   <a>
                     <Image
-                      src="/devices/watch.jpg"
+                      src="/devices/watches.jpg"
                       alt="Apple Watch Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -172,7 +172,7 @@ export default function Home() {
                 <Link href={`ipodRepair`}>
                   <a>
                     <Image
-                      src="/devices/ipod.jpg"
+                      src="/devices/ipods.jpg"
                       alt="iPod Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}

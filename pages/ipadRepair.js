@@ -48,7 +48,7 @@ export default function Home() {
                 <Link href={`/ipad/ipad-pro`}>
                   <a>
                     <Image
-                      src="/ipad/12.9-4.jpg"
+                      src="/ipad/ipad-pro-12.9-4.jpg"
                       alt="iPad Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -79,7 +79,7 @@ export default function Home() {
                 <Link href={`/ipad/ipad-air`}>
                   <a>
                     <Image
-                      src="/ipad/air-4.jpg"
+                      src="/ipad/ipad-air-4.jpg"
                       alt="iPad Air Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -110,7 +110,7 @@ export default function Home() {
                 <Link href={`/ipad/ipad`}>
                   <a>
                     <Image
-                      src="/ipad/8.jpg"
+                      src="/ipad/ipad-8.jpg"
                       alt="iPad Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -141,7 +141,7 @@ export default function Home() {
                 <Link href={`/ipad/ipad-mini`}>
                   <a>
                     <Image
-                      src="/ipad/mini-5.jpg"
+                      src="/ipad/ipad-mini-5.jpg"
                       alt="iPad Mini Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
@@ -216,7 +216,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-pro-12-4-256.png"
+                          src="/ipad/ipad-pro-12-4-256.png"
                           alt="iPad Pro Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -259,7 +259,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-air-4-256.png"
+                          src="/ipad/ipad-air-4-256.png"
                           alt="iPad Air Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -302,7 +302,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-8-256.png"
+                          src="/ipad/ipad-8-256.png"
                           alt="iPad Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -345,7 +345,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-mini-5-256.png"
+                          src="/ipad/ipad-mini-5-256.png"
                           alt="iPad Mini Repairs"
                           className="h-32 w-full object-cover"
                           width={96}

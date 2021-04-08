@@ -49,7 +49,7 @@ export default function Home() {
               <Link href={`ipad-mini-5`}>
                 <a>
                 <Image
-                  src="/ipad/mini-5.jpg"
+                  src="/ipad/ipad-mini-5.jpg"
                   alt="iPad Mini 5th Generation Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
@@ -80,7 +80,7 @@ export default function Home() {
               <Link href={`ipad-mini-4`}>
                 <a>
                 <Image
-                  src="/ipad/mini-4.jpg"
+                  src="/ipad/ipad-mini-4.jpg"
                   alt="iPad Mini 4th Generation Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
@@ -111,7 +111,7 @@ export default function Home() {
               <Link href={`ipad-mini-3`}>
                 <a>
                 <Image
-                  src="/ipad/mini-3.jpg"
+                  src="/ipad/ipad-mini-3.jpg"
                   alt="iPad Mini 3rd Generation Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
@@ -142,7 +142,7 @@ export default function Home() {
               <Link href={`ipad-mini-2`}>
                 <a>
                 <Image
-                  src="/ipad/mini-2.jpg"
+                  src="/ipad/ipad-mini-2.jpg"
                   alt="iPad Mini 2nd Generation Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
@@ -173,7 +173,7 @@ export default function Home() {
               <Link href={`ipad-mini-1`}>
                 <a>
                 <Image
-                  src="/ipad/mini-1.jpg"
+                  src="/ipad/ipad-mini-1.jpg"
                   alt="iPad Mini 1st Generation Repairs"
                   className="h-60 w-full object-cover"
                   width={1000}
@@ -250,7 +250,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-mini-5-256.png"
+                          src="/ipad/ipad-mini-5-256.png"
                           alt="iPad Mini 5th Generation Repair"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -293,7 +293,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-mini-4-256.png"
+                          src="/ipad/ipad-mini-4-256.png"
                           alt="iPad Mini 4th Generation Repair"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -336,7 +336,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-mini-3-256.png"
+                          src="/ipad/ipad-mini-3-256.png"
                           alt="iPad Mini 3rd Generation Repair"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -379,7 +379,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-mini-2-256.png"
+                          src="/ipad/ipad-mini-2-256.png"
                           alt="iPad Mini 2nd Generation Repair"
                           className="h-32 w-full object-cover"
                           width={96}
@@ -422,7 +422,7 @@ export default function Home() {
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/devices/ipad-mini-1-256.png"
+                          src="/ipad/ipad-mini-1-256.png"
                           alt="iPad Mini 1st Generation Repair"
                           className="h-32 w-full object-cover"
                           width={96}
