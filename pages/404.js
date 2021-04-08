@@ -12,7 +12,6 @@ export default function Custom404() {
               <div className="font-bold text-white leading-tight text-2xl sm:text-3xl tracking-tight">
                 iPatch
               </div>
-              <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight"></div>
             </div>
           </a>
         </Link>
@@ -35,7 +34,7 @@ export default function Custom404() {
                     404
                     </h1>
                 <div className="mt-6 sm:max-w-xl">
-                  <h1 className="text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
+                  <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
                     Hello, is it me you're looking for?
                     </h1>
                     <Link href="/">
