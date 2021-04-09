@@ -23,7 +23,6 @@ export default function Custom404() {
           src="/404.jpg"
           layout="fill"
           objectFit="cover"
-          quality={100}
           priority
         />
         <div className="pt-8 overflow-hidden sm:pt-12 relative lg:py-48">
