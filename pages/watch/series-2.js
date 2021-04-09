@@ -293,7 +293,7 @@ export default function Home() {
                               <span className="mt-2 mr-2 text-4xl font-medium">
                                 £
                               </span>
-                              <span className="font-extrabold">179</span>
+                              <span className="font-extrabold">169</span>
                             </span>
                           </div>
                         </div>
