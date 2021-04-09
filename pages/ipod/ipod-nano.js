@@ -237,24 +237,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-              Select your iPad Model
+              Select your iPod Nano Model
             </h2>
             <p className="py-4 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-              Click on your iPad model below to view repairs.
+              Click on your iPod Nano below to view repairs.
             </p>
           </div>
         </div>
         <div className="max-w-2xl mx-auto sm:px-6 pt-12">
           <ul className="space-y-3" data-todo-x-max="1">
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/ipad-pro`}>
+              <Link href={`/nano/nano-7`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/ipad/ipad-pro-12-4-256.png"
-                          alt="iPad Pro Repairs"
+                          src="/ipod/ipod-nano-7-256.png"
+                          alt="iPod Nano 7th Generation Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -263,7 +263,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            iPad Pro Models
+                            iPod Nano 7
                           </p>
                         </div>
                       </div>
@@ -290,14 +290,14 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/ipad-air`}>
+              <Link href={`/nano/nano-6`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/ipad/ipad-air-4-256.png"
-                          alt="iPad Air Repairs"
+                          src="/ipod/ipod-nano-6-256.png"
+                          alt="iPod Nano 6th Generation Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -306,7 +306,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            iPad Air Models
+                            iPod Nano 6
                           </p>
                         </div>
                       </div>
@@ -333,14 +333,14 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/ipad`}>
+              <Link href={`/nano/nano-5`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/ipad/ipad-8-256.png"
-                          alt="iPod Nano Repairs"
+                          src="/ipod/ipod-nano-5-256.png"
+                          alt="iPod Nano 5th Generation Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -349,7 +349,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            iPad Models
+                            iPod Nano 5
                           </p>
                         </div>
                       </div>
@@ -376,14 +376,14 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/ipad-mini`}>
+              <Link href={`/nano/nano-4`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/ipad/ipad-mini-5-256.png"
-                          alt="iPad Mini Repairs"
+                          src="/ipod/ipod-nano-4-256.png"
+                          alt="iPod Nano 4th Generation Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -392,7 +392,93 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            iPad Mini Models
+                            iPod Nano 4
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <svg
+                        className="h-5 w-5 text-gray-400"
+                        data-todo-x-description="Heroicon name: solid/chevron-right"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <Link href={`/nano/nano-3`}>
+                <a className="block ">
+                  <div className="flex items-center sm:px-6">
+                    <div className="min-w-0 flex-1 flex items-center">
+                      <div className="flex-shrink-0">
+                        <Image
+                          src="/ipod/ipod-nano-3-256.png"
+                          alt="iPod Nano 3rd Generation Repairs"
+                          className="h-32 w-full object-cover"
+                          width={96}
+                          height={96}
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                        <div>
+                          <p className="font-medium text-base sm:text-lg">
+                            iPod Nano 3
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <svg
+                        className="h-5 w-5 text-gray-400"
+                        data-todo-x-description="Heroicon name: solid/chevron-right"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            </li>
+
+            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <Link href={`/nano/nano-2`}>
+                <a className="block ">
+                  <div className="flex items-center sm:px-6">
+                    <div className="min-w-0 flex-1 flex items-center">
+                      <div className="flex-shrink-0">
+                        <Image
+                          src="/ipod/ipod-nano-2-256.png"
+                          alt="iPod Nano 2nd Generation Repairs"
+                          className="h-32 w-full object-cover"
+                          width={96}
+                          height={96}
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                        <div>
+                          <p className="font-medium text-base sm:text-lg">
+                            iPod Nano 2
                           </p>
                         </div>
                       </div>
@@ -427,7 +513,7 @@ export default function Home() {
               Included as standard
             </h2>
             <p className="mt-4 text-lg text-gray-500">
-              We offer high quality iPad repairs as standard, we don't do tiers
+              We offer high quality iPod repairs as standard, we don't do tiers
               or low quality parts.
             </p>
           </div>
@@ -454,7 +540,7 @@ export default function Home() {
                   Original Parts
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Where possible we only use original iPad components, this
+                  Where possible we only use original iPod components, this
                   ensures your device functions as normal after repair.
                 </dd>
               </div>
@@ -479,11 +565,11 @@ export default function Home() {
               </svg>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Seals
+                  Data
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  Should your iPad require a replacement frame seal, we’ll
-                  replace this anytime we open your device.
+                  For the vast majority of our iPod repairs, no data or music loss is to be expected. 
+                  So you can carry on listening on your way home.
                 </dd>
               </div>
             </div>
@@ -554,14 +640,12 @@ export default function Home() {
             <blockquote className="mt-10">
               <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
                 <p>
-                  “Fantastic service from iPatch who repaired my iPad’s screen
-                  and then some. The repair was completed swiftly and my iPad is
-                  as good as new.”
+                  “I dealt with Andy, nice guy, quick response. Good range of
+                  stock. I needed an iPod 3rd Generation screen replacement,
+                  couldn't find anywhere else for a good price. I'm not local so
+                  Andy posted it to me.”
                 </p>
-                <p className="mt-4">
-                  “Very much recommend iPatch to anyone as a more affordable
-                  alternate to Apple that delivers the same quality service.”
-                </p>
+                <p className="mt-4">“Recommend the business!”</p>
               </div>
               <footer className="mt-8">
                 <div className="md:flex md:items-center md:justify-center">
@@ -574,7 +658,7 @@ export default function Home() {
                   </div>
                   <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                     <div className="text-base font-medium text-gray-900">
-                      Matty Firth
+                      Ben Waite
                     </div>
 
                     <svg
@@ -586,7 +670,7 @@ export default function Home() {
                     </svg>
 
                     <div className="text-base font-medium text-gray-500">
-                      TrustPilot
+                      Google
                     </div>
                   </div>
                 </div>
