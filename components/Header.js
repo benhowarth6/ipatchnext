@@ -37,7 +37,7 @@ const Header = () => {
           </a>
         </Link>
 
-        <div className="hidden lg:flex md:ml-10 items-end">
+        <div className="hidden lg:flex md:ml-4 xl:ml-10 items-end">
           <ActiveLink href="/">
               Home
           </ActiveLink>
