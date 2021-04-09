@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Apple Watch Series 6 Repair"
+        title="iPatchNext - Apple Watch Series 2 Repair"
         description="iPatch Next.JS TailWind UI tests."
       />
       <Header />
@@ -23,11 +23,11 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
-                Apple Watch Series 6 Repair
+                Apple Watch Series 2 Repair
               </h2>
               <p className="mt-4 text-xl text-gray-600">
                 We offer a comprehensive set of repairs for the Apple Watch
-                Series 6. Including screen replacements, batteries and much
+                Series 2. Including screen replacements, batteries and much
                 more.
               </p>
             </div>
@@ -139,7 +139,7 @@ export default function Home() {
                             <Link
                               href={{
                                 pathname: "book-repair/booking-type",
-                                query: { model: "Series 6", repair: "battery" },
+                                query: { model: "Series 2", repair: "battery" },
                               }}
                             >
                               <a
@@ -167,14 +167,14 @@ export default function Home() {
                           className="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
                           id="tier-growth"
                         >
-                          Screen Replacement (40mm)
+                          Screen Replacement (38mm)
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
                             <span className="mt-2 mr-2 text-4xl font-medium">
                               £
                             </span>
-                            <span className="font-extrabold">209</span>
+                            <span className="font-extrabold">169</span>
                           </span>
                         </div>
                       </div>
@@ -201,7 +201,7 @@ export default function Home() {
                             </svg>
                           </div>
                           <p className="ml-3 text-base font-medium text-gray-500">
-                            40mm OLED Display Assembly
+                            38mm OLED Display Assembly
                           </p>
                         </li>
 
@@ -262,12 +262,12 @@ export default function Home() {
                         <Link
                               href={{
                                 pathname: "book-repair/booking-type",
-                                query: { model: "Series 6", repair: "40mm-screen" },
+                                query: { model: "Series 2", repair: "38mm-screen" },
                               }}
                             >
                           <a
                             className="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-700"
-                            aria-describedby="40mm-screen"
+                            aria-describedby="38mm-screen"
                           >
                             Book Repair
                           </a>
@@ -284,16 +284,16 @@ export default function Home() {
                         <div>
                           <h3
                             className="text-center text-2xl font-medium text-gray-900"
-                            id="44mm-screen"
+                            id="42mm-screen"
                           >
-                            Screen Replacement (44mm)
+                            Screen Replacement (42mm)
                           </h3>
                           <div className="mt-4 flex items-center justify-center">
                             <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
                               <span className="mt-2 mr-2 text-4xl font-medium">
                                 £
                               </span>
-                              <span className="font-extrabold">229</span>
+                              <span className="font-extrabold">179</span>
                             </span>
                           </div>
                         </div>
@@ -320,7 +320,7 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              44mm OLED Display Assembly
+                              42mm OLED Display Assembly
                             </p>
                           </li>
 
@@ -377,7 +377,7 @@ export default function Home() {
                           <Link
                               href={{
                                 pathname: "book-repair/booking-type",
-                                query: { model: "Series 6", repair: "44mm-screen" },
+                                query: { model: "Series 2", repair: "42mm-screen" },
                               }}
                             >
                             <a
@@ -411,7 +411,7 @@ export default function Home() {
                     <Link
                       href={{
                         pathname: "book-repair/booking-type",
-                        query: { model: "Series 6", repair: "not-sure" },
+                        query: { model: "Series 2", repair: "not-sure" },
                       }}
                     >
                       <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
@@ -436,7 +436,7 @@ export default function Home() {
                     <Link
                       href={{
                         pathname: "book-repair/booking-type",
-                        query: { model: "Series 6", repair: "liquid-damage" },
+                        query: { model: "Series 2", repair: "liquid-damage" },
                       }}
                     >
                       <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">

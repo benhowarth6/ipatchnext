@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Apple Watch Series 6 Repair"
+        title="iPatchNext - Apple Watch SE Repair"
         description="iPatch Next.JS TailWind UI tests."
       />
       <Header />
@@ -23,11 +23,11 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
-                Apple Watch Series 6 Repair
+                Apple Watch SE Repair
               </h2>
               <p className="mt-4 text-xl text-gray-600">
                 We offer a comprehensive set of repairs for the Apple Watch
-                Series 6. Including screen replacements, batteries and much
+                Series SE. Including screen replacements, batteries and much
                 more.
               </p>
             </div>
@@ -139,7 +139,7 @@ export default function Home() {
                             <Link
                               href={{
                                 pathname: "book-repair/booking-type",
-                                query: { model: "Series 6", repair: "battery" },
+                                query: { model: "Series SE", repair: "battery" },
                               }}
                             >
                               <a
@@ -174,7 +174,7 @@ export default function Home() {
                             <span className="mt-2 mr-2 text-4xl font-medium">
                               £
                             </span>
-                            <span className="font-extrabold">209</span>
+                            <span className="font-extrabold">179</span>
                           </span>
                         </div>
                       </div>
@@ -262,7 +262,7 @@ export default function Home() {
                         <Link
                               href={{
                                 pathname: "book-repair/booking-type",
-                                query: { model: "Series 6", repair: "40mm-screen" },
+                                query: { model: "Series SE", repair: "40mm-screen" },
                               }}
                             >
                           <a
@@ -293,7 +293,7 @@ export default function Home() {
                               <span className="mt-2 mr-2 text-4xl font-medium">
                                 £
                               </span>
-                              <span className="font-extrabold">229</span>
+                              <span className="font-extrabold">199</span>
                             </span>
                           </div>
                         </div>
@@ -377,7 +377,7 @@ export default function Home() {
                           <Link
                               href={{
                                 pathname: "book-repair/booking-type",
-                                query: { model: "Series 6", repair: "44mm-screen" },
+                                query: { model: "Series SE", repair: "44mm-screen" },
                               }}
                             >
                             <a
@@ -411,7 +411,7 @@ export default function Home() {
                     <Link
                       href={{
                         pathname: "book-repair/booking-type",
-                        query: { model: "Series 6", repair: "not-sure" },
+                        query: { model: "Series SE", repair: "not-sure" },
                       }}
                     >
                       <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
@@ -436,7 +436,7 @@ export default function Home() {
                     <Link
                       href={{
                         pathname: "book-repair/booking-type",
-                        query: { model: "Series 6", repair: "liquid-damage" },
+                        query: { model: "Series SE", repair: "liquid-damage" },
                       }}
                     >
                       <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
