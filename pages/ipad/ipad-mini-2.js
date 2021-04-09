@@ -1349,7 +1349,7 @@ export default function Home() {
               <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
                 <div className="relative mx-auto">
                   <Image
-                    src="/ipad/apple-pencil.jpg"
+                    src="/ipad/safe-secure.jpg"
                     alt="iPatch Privacy"
                     width={490}
                     height={570}

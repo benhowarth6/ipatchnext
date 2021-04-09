@@ -45,7 +45,7 @@ export default function Home() {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
               <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/touch/touch-7`}>
+                <Link href={`touch/touch-7`}>
                   <a>
                     <Image
                       src="/ipod/ipod-touch-7.jpg"
@@ -60,12 +60,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`/touch/touch-7`}>
+                  <Link href={`touch/touch-7`}>
                       <a className="text-xl font-semibold text-gray-900">
                         iPod Touch 7
                       </a>
                     </Link>
-                    <Link href={`/touch/touch-7`}>
+                    <Link href={`touch/touch-7`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/touch/touch-6`}>
+                <Link href={`touch/touch-6`}>
                   <a>
                     <Image
                       src="/ipod/ipod-touch-6.jpg"
@@ -91,12 +91,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`/touch/touch-6`}>
+                  <Link href={`touch/touch-6`}>
                       <a className="text-xl font-semibold text-gray-900">
                         iPod Touch 6
                       </a>
                     </Link>
-                    <Link href={`/touch/touch-6`}>
+                    <Link href={`touch/touch-6`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/touch/touch-5`}>
+                <Link href={`touch/touch-5`}>
                   <a>
                     <Image
                       src="/ipod/ipod-touch-5.jpg"
@@ -122,12 +122,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`/touch/touch-5`}>
+                  <Link href={`touch/touch-5`}>
                       <a className="text-xl font-semibold text-gray-900">
                         iPod Touch 5
                       </a>
                     </Link>
-                    <Link href={`/touch/touch-5`}>
+                    <Link href={`touch/touch-5`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/touch/touch-4`}>
+                <Link href={`touch/touch-4`}>
                   <a>
                     <Image
                       src="/ipod/ipod-touch-4.jpg"
@@ -153,12 +153,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`/touch/touch-4`}>
+                  <Link href={`touch/touch-4`}>
                       <a className="text-xl font-semibold text-gray-900">
                         iPod Touch 4
                       </a>
                     </Link>
-                    <Link href={`/touch/touch-4`}>
+                    <Link href={`touch/touch-4`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -169,7 +169,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/touch/touch-3`}>
+                <Link href={`touch/touch-3`}>
                   <a>
                     <Image
                       src="/ipod/ipod-touch-3.jpg"
@@ -184,12 +184,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`/touch/touch-3`}>
+                  <Link href={`touch/touch-3`}>
                       <a className="text-xl font-semibold text-gray-900">
                         iPod Touch 3
                       </a>
                     </Link>
-                    <Link href={`/touch/touch-3`}>
+                    <Link href={`touch/touch-3`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -200,7 +200,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/touch/touch-2`}>
+                <Link href={`touch/touch-2`}>
                   <a>
                     <Image
                       src="/ipod/ipod-touch-2.jpg"
@@ -215,12 +215,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`/touch/touch-2`}>
+                  <Link href={`touch/touch-2`}>
                       <a className="text-xl font-semibold text-gray-900">
                         iPod Touch 2
                       </a>
                     </Link>
-                    <Link href={`/touch/touch-2`}>
+                    <Link href={`touch/touch-2`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -247,7 +247,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto sm:px-6 pt-12">
           <ul className="space-y-3" data-todo-x-max="1">
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/touch/touch-7`}>
+              <Link href={`touch/touch-7`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -290,7 +290,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/touch/touch-6`}>
+              <Link href={`touch/touch-6`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -333,7 +333,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/touch/touch-5`}>
+              <Link href={`touch/touch-5`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -376,7 +376,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/touch/touch-4`}>
+              <Link href={`touch/touch-4`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -419,7 +419,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/touch/touch-3`}>
+              <Link href={`touch/touch-3`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -462,7 +462,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/touch/touch-2`}>
+              <Link href={`touch/touch-2`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">

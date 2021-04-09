@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 
 export default function Home() {
   const router = useRouter();
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPad 6 Repair"
+        title="iPatchNext - iPod Nano 7th Generation Repair"
         description="iPatch Next.JS TailWind UI tests."
       />
       <Header />
@@ -23,11 +23,11 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
-                iPad 6 Repair
+                iPod Nano 7th Generation Repair
               </h2>
               <p className="mt-4 text-xl text-gray-600">
-                We offer a comprehensive set of repairs for the sixth
-                generation iPad. Including screen replacements,
+                We offer a comprehensive set of repairs for the seventh
+                generation iPod Nano. Including screen replacements,
                 batteries and much more.
               </p>
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
                     One, simple price
                   </p>
                   <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
-                    <span>£149</span>
+                    <span>£59</span>
                   </div>
                   <p className="mt-4 text-sm">
                     <Link href="">
@@ -161,7 +161,7 @@ export default function Home() {
                     <Link
                         href={{
                           pathname: "book-repair/booking-type",
-                          query: { model: "6", repair: "digitiser" },
+                          query: { model: "2", repair: "digitiser" },
                         }}
                       >
                         <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -190,27 +190,27 @@ export default function Home() {
               Other Repairs
             </h2>
             <p className="mt-4 text-xl text-gray-600 sm:text-center">
-              Here's all the repairs we offer for iPad 6.
+              Here's all the repairs we offer for iPod Nano 7th Generation.
             </p>
           </div>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
           <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Retina LCD
+                   LCD
                 </h2>
                 <p className="mt-4 text-sm text-gray-500">
                  If the display behind your glass is damaged, you'll require a new LCD.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £149
+                    £59
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "lcd" },
+                    query: { model: "2", repair: "lcd" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -239,7 +239,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Retina LCD
+                      New LCD
                     </span>
                   </li>
 
@@ -314,13 +314,13 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £65
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "battery" },
+                    query: { model: "2", repair: "battery" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -424,13 +424,13 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £65
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "charging-port" },
+                    query: { model: "2", repair: "charging-port" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -534,13 +534,13 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £65
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "headphone-jack" },
+                    query: { model: "2", repair: "headphone-jack" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -644,13 +644,13 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £65
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "rear-camera" },
+                    query: { model: "2", repair: "rear-camera" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -754,13 +754,13 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £65
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "rear-camera" },
+                    query: { model: "2", repair: "rear-camera" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -864,13 +864,13 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £65
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "loudspeaker" },
+                    query: { model: "2", repair: "loudspeaker" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -974,13 +974,13 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £95
+                    £65
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "button-fault" },
+                    query: { model: "2", repair: "button-fault" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -1091,7 +1091,7 @@ export default function Home() {
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "not-sure" },
+                    query: { model: "2", repair: "not-sure" },
                   }}
                 >
                   <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
@@ -1116,7 +1116,7 @@ export default function Home() {
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "liquid-damage" },
+                    query: { model: "2", repair: "liquid-damage" },
                   }}
                 >
                   <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
@@ -1136,7 +1136,7 @@ export default function Home() {
               A Better Way To Repair
             </h2>
             <p className="mt-4 text-xl text-gray-600 sm:text-center">
-              Why repair your iPad 6 with iPatch?
+              Why repair your iPod Nano 7th Generation with iPatch?
             </p>
           </div>
 
