@@ -1,5 +1,9 @@
 module.exports = {
-    images: {
-      domains: ['unsplash.com'],
-    },
-  }
+  future: {
+    webpack5: true,
+    strictPostcssConfiguration: true
+  },
+  images: {
+    domains: ['unsplash.com'],
+  },
+}
