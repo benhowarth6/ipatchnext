@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-import Header from "../../../../components/Header";
-import Footer from "../../../../components/Footer";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 
 export default function Home() {
   return (
