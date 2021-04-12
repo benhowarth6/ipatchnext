@@ -541,7 +541,7 @@ export default function Home() {
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "Air 2", repair: "rear-camera" },
+                    query: { model: "Air 2", repair: "front-camera" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">

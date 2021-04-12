@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 
 export default function Home() {
   const router = useRouter();
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPad Air 1 Repair"
+        title="iPatchNext - iPod Nano 2nd Generation Repair"
         description="iPatch Next.JS TailWind UI tests."
       />
       <Header />
@@ -23,12 +23,12 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
-                iPad Air 1 Repair
+                iPod Nano 2nd Generation Repair
               </h2>
               <p className="mt-4 text-xl text-gray-600">
-                We offer a comprehensive set of repairs for the first
-                generation iPad Air. Including screen replacements,
-                batteries and much more.
+                We offer a comprehensive set of repairs for the seccond generation 
+                iPod Nano. Including screen replacements, batteries
+                and much more.
               </p>
             </div>
           </div>
@@ -40,11 +40,10 @@ export default function Home() {
               <div className="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
                 <div className="flex-1 bg-white px-6 py-8 lg:p-12">
                   <h3 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
-                    Glass Replacement
+                    LCD Replacement
                   </h3>
                   <p className="mt-6 text-base text-gray-500">
-                    If the glass on the front of your iPad is cracked,
-                    you'll require a new glass digitiser. 
+                  If the LCD behind the glass is damaged, you'll require a replacement.
                   </p>
                   <div className="mt-8">
                     <div className="flex items-center">
@@ -72,7 +71,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="ml-3 text-sm text-gray-700">
-                          Glass Digitiser
+                          LCD Display
                         </p>
                       </li>
 
@@ -116,7 +115,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="ml-3 text-sm text-gray-700">
-                          Repaired in under 2 hours
+                          Repaired in under 1 hour
                         </p>
                       </li>
 
@@ -147,7 +146,7 @@ export default function Home() {
                     One, simple price
                   </p>
                   <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
-                    <span>£99</span>
+                    <span>£25</span>
                   </div>
                   <p className="mt-4 text-sm">
                     <Link href="">
@@ -161,7 +160,7 @@ export default function Home() {
                     <Link
                         href={{
                           pathname: "book-repair/booking-type",
-                          query: { model: "Air 1", repair: "digitiser" },
+                          query: { model: "Nano 2", repair: "lcd" },
                         }}
                       >
                         <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -190,137 +189,27 @@ export default function Home() {
               Other Repairs
             </h2>
             <p className="mt-4 text-xl text-gray-600 sm:text-center">
-              Here's all the repairs we offer for iPad Air 1.
+              Here's all the repairs we offer for iPod Nano 2nd Generation.
             </p>
           </div>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
-          <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Retina LCD
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                 If the display behind your glass is damaged, you'll require a new LCD.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £99
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "lcd" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      New Retina LCD
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
             <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
                   Battery
                 </h2>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new battery to restore your device to 100%.
+                A new battery to restore your device to 100%.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £85
+                    £25
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "battery" },
+                    query: { model: "Nano 2", repair: "battery" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -349,7 +238,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New 0 Cycle Battery
+                    New 0 Cycle Battery
                     </span>
                   </li>
 
@@ -389,7 +278,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -413,24 +302,23 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-
             <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Lightning Charging Port
+                  Click Wheel
                 </h2>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new charging port to restore device charging.
+                A new click wheel if yours isn't responding.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £85
+                    £25
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "charging-port" },
+                    query: { model: "Nano 2", repair: "click-wheel" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -459,7 +347,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Lightning Port
+                    New Click Wheel
                     </span>
                   </li>
 
@@ -499,7 +387,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -523,24 +411,23 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-
             <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
                   Headphone Jack
                 </h2>
                 <p className="mt-4 text-sm text-gray-500">
-                    A new headphone jack to restore audio output.
+                A new headphone jack to restore audio output.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £85
+                    £25
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "headphone-jack" },
+                    query: { model: "Nano 2", repair: "headphone-jack" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -569,7 +456,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Headphone Jack
+                    New Headphone Jack
                     </span>
                   </li>
 
@@ -609,447 +496,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Front Camera
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                  A new front camera if yours is damaged.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £85
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "front-camera" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Front Camera Module
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Rear Camera
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                  A new rear camera if yours is damaged.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £85
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "rear-camera" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Rear Camera Module
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Loudspeaker
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                  A replacement loudspeaker if you cannot hear any audio.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £85
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "loudspeaker" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      New Earpiece Speaker
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Button Fault
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                  A replacement button flex if one of yours isn't working.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £85
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "button-fault" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      New Button Flex
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -1091,7 +538,7 @@ export default function Home() {
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "not-sure" },
+                    query: { model: "Nano 2", repair: "not-sure" },
                   }}
                 >
                   <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
@@ -1116,7 +563,7 @@ export default function Home() {
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "Air 1", repair: "liquid-damage" },
+                    query: { model: "Nano 2", repair: "liquid-damage" },
                   }}
                 >
                   <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
@@ -1136,7 +583,7 @@ export default function Home() {
               A Better Way To Repair
             </h2>
             <p className="mt-4 text-xl text-gray-600 sm:text-center">
-              Why repair your iPad Air 1 with iPatch?
+              Why repair your iPod Nano 2nd Generation with iPatch?
             </p>
           </div>
 
@@ -1146,7 +593,7 @@ export default function Home() {
                 A match made at the factory
               </h3>
               <p className="mt-3 text-lg text-gray-500">
-                Your iPad display includes a number of important features, such as True-Tone and Apple Pencil support.
+                We aim to repair your iPod to the same standard it left the factory.
               </p>
 
               <dl className="mt-10 space-y-10">
@@ -1176,9 +623,9 @@ export default function Home() {
                       Original Components
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      We only use original iPad components where at all possible, 
-                      this ensures your iPad works as expected after any repairs and 
-                      no loss of functionality such as Apple Pencil. 
+                      We only use original iPad components where at all
+                      possible, this ensures your iPod works as expected after
+                      any repairs and no loss of functionality.
                     </dd>
                   </div>
                 </div>
@@ -1209,8 +656,9 @@ export default function Home() {
                       Expertly Sealed
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Through our many years experience we’ve developed an advanced sealing process. 
-                      Should your iPad require any alignment we can straighten and reform your frame and 
+                      Through our many years experience we’ve developed an
+                      advanced sealing process. Should your iPod require any
+                      alignment we can straighten and reform your frame and
                       ensure your screen sits flush in the rear frame.
                     </dd>
                   </div>
@@ -1242,9 +690,10 @@ export default function Home() {
                       Same Day Turnaround
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      We offer same day turnaround on the majority of our iPad repairs, 
-                      depending on part availability. Most repairs including screens and 
-                      batteries are usually completed within around 1-2 hours.
+                      We offer same day turnaround on the majority of our iPod
+                      repairs, depending on part availability. Most repairs
+                      including screens and batteries are usually completed
+                      within around 1 hour.
                     </dd>
                   </div>
                 </div>
@@ -1254,8 +703,8 @@ export default function Home() {
             <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
               <div className="relative mx-auto">
                 <Image
-                  src="/ipad/true-tone.jpg"
-                  alt="iPad True Tone Pairing"
+                  src="/ipod/why-ipod.jpg"
+                  alt="iPod Repair Features"
                   width={490}
                   height={570}
                 />
@@ -1302,7 +751,7 @@ export default function Home() {
                         No passcode? No problem
                       </dt>
                       <dd className="mt-2 text-base text-gray-500">
-                        We can carry out nearly all iPad repairs without your
+                        We can carry out nearly all iPod repairs without your
                         passcode. Should we require it to test certain features,
                         you are more than welcome to enter the code yourself to
                         carry out any tests.
@@ -1349,7 +798,7 @@ export default function Home() {
               <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
                 <div className="relative mx-auto">
                   <Image
-                    src="/ipad/safe-secure.jpg"
+                    src="/ipod/safe-secure.jpg"
                     alt="iPatch Privacy"
                     width={490}
                     height={570}

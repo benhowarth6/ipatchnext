@@ -27,6 +27,8 @@ export default function Contact() {
                       Trinity Leeds
                     </h3>
                     <p>201 Albion Street, LS1 5AR</p>
+                    <p className="mt-3">Monday - Sat: 9am - 5pm</p>
+                    <p>Sunday 11am - 5pm</p>
                   </dd>
                 </div>
                 <div className="mt-6">
@@ -82,6 +84,9 @@ export default function Contact() {
                       Kirkstall Morrisons
                     </h3>
                     <p>1 Savins Mill Way, LS5 3AU</p>
+                    <p className="mt-3">Monday: Closed</p>
+                    <p>Tuesday - Saturday: 10am - 4pm</p>
+                    <p>Sunday: Closed</p>
                   </dd>
                 </div>
                 <div className="mt-6">
