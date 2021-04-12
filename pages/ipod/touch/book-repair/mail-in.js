@@ -34,7 +34,7 @@ export default function Home() {
               Mail In Repair
             </h2>
             <p className="mt-5 text-xl text-gray-400">
-            Use this form to book your iPod Nano in with us for a mail-in repair.
+            Use this form to book your iPod Touch in with us for a mail-in repair.
             </p>
           </div>
         </div>
@@ -45,6 +45,7 @@ export default function Home() {
           <form
             className="kwes-form"
             action="https://kwes.io/api/foreign/forms/KBj17YhikaRPNBtNtuAC"
+            redirect="success"
           >
             <div className="mt-10 sm:mt-0">
               <div className="md:grid md:grid-cols-3 md:gap-6">
@@ -162,7 +163,7 @@ export default function Home() {
                             htmlFor="device_model"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            iPod Nano Model
+                            iPod Touch Model
                           </label>
                           <select
                             id="ipod_touch_model"

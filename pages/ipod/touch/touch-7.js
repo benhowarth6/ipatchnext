@@ -122,7 +122,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="ml-3 text-sm text-gray-700">
-                          Repaired in under 20 minutes
+                          Repaired in under 1 hour
                         </p>
                       </li>
 
@@ -289,7 +289,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -363,7 +363,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Proximity Flex Cable.
+                      Proximity Flex Cable
                     </span>
                   </li>
 
@@ -403,7 +403,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -517,7 +517,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -627,7 +627,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -714,7 +714,7 @@ export default function Home() {
               A Better Way To Repair
             </h2>
             <p className="mt-4 text-xl text-gray-600 sm:text-center">
-              Why repair your iPod Nano 6th Generation with iPatch?
+              Why repair your iPod Touch 6th Generation with iPatch?
             </p>
           </div>
 

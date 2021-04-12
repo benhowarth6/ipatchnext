@@ -278,7 +278,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -388,7 +388,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 1 hour
                     </span>
                   </li>
 

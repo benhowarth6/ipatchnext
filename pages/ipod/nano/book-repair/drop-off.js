@@ -46,6 +46,7 @@ export default function Home() {
           <form
             className="kwes-form"
             action="https://kwes.io/api/foreign/forms/zfQP70dHijoBHX6IQAYq"
+            redirect="success"
           >
             <div className="mt-10 sm:mt-0">
               <div className="md:grid md:grid-cols-3 md:gap-6">

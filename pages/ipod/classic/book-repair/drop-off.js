@@ -6,8 +6,8 @@ import React, { useEffect } from "react";
 import kwesforms from "kwesforms";
 import { useRouter } from "next/router";
 
-import Header from "../../../components/Header";
-import Footer from "../../../components/Footer";
+import Header from "../../../../components/Header";
+import Footer from "../../../../components/Footer";
 
 export default function Home() {
   const router = useRouter();
@@ -34,8 +34,8 @@ export default function Home() {
               Drop Off Repair
             </h2>
             <p className="mt-5 text-xl text-gray-400">
-              Use this form to book your Apple Watch in with us for a
-              drop-off repair.
+              Use this form to book your iPod Classic in with us for a drop-off
+              repair.
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:pb-14 lg:px-8">
           <form
             className="kwes-form"
-            action="https://kwes.io/api/foreign/forms/eUj2YnwIkJcErtVbCY5W"
+            action="https://kwes.io/api/foreign/forms/5XMjebFQ7vp3d8QENo8b"
             redirect="success"
           >
             <div className="mt-10 sm:mt-0">
@@ -164,27 +164,31 @@ export default function Home() {
                             htmlFor="device_model"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            iPhone Model
+                            iPod Classic Model
                           </label>
                           <select
-                            id="watch_model"
-                            name="watch_model"
+                            id="ipod_classic_model"
+                            name="ipod_classic_model"
                             rules="required"
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             defaultValue={model}
                           >
                             <option disabled value>
                               {" "}
-                              -- Select your Watch --{" "}
+                              -- Select your iPod Classic --{" "}
                             </option>
-                            <option value="Series 6">Watch Series 6</option>
-                            <option value="Series SE">Watch SE</option>
-                            <option value="Series 5">Watch Series 5</option>
-                            <option value="Series 4">Watch Series 4</option>
-                            <option value="Series 3">Watch Series 3</option>
-                            <option value="Series 2">Watch Series 2</option>
-                            <option value="Series 1">Watch Series 1</option>
-                            <option value="Series 0">Watch 1st Generation</option>
+                            <option value="Classic 6">
+                              iPod Classic 6th Generation
+                            </option>
+                            <option value="Video 5">
+                              iPod Classic 5th Generation
+                            </option>
+                            <option value="Classic 4">
+                              iPod Classic 4th Generation
+                            </option>
+                            <option value="Classic 3">
+                              iPod Classic 3rd Generation
+                            </option>
                           </select>
                         </div>
                         <div className="col-span-6 sm:col-span-3">
@@ -205,11 +209,21 @@ export default function Home() {
                               {" "}
                               -- Select your Repair --{" "}
                             </option>
-                            <option value="38mm-screen">Screen Replacement - 38mm</option>
-                            <option value="40mm-screen">Screen Replacement - 40mm</option>
-                            <option value="42mm-screen">Screen Replacement - 42mm</option>
-                            <option value="44mm-screen">Screen Replacement - 44mm</option>
+                            <option value="lcd">LCD Replacement</option>
                             <option value="battery">Battery</option>
+                            <option value="headphone-jack">Headphone Jack</option>
+                            <option value="click-wheel">Click Wheel</option>
+                            <option value="button-fault">Button Fault</option>
+                            <option value="logic-board">Logic Board</option>
+                            <option value="120-ssd">120GB SSD Upgrade</option>
+                            <option value="240-ssd">240GB SSD Upgrade</option>
+                            <option value="500-ssd">500GB SSD Upgrade</option>
+                            <option value="10-hdd">10GB HDD</option>
+                            <option value="15-hdd">15gb HDD</option>
+                            <option value="20-hdd">20GB HDD</option>
+                            <option value="30-hdd">30GB HDD</option>
+                            <option value="40-hdd">40GB HDD</option>
+                            <option value="60-hdd">60GB HDD</option>
                             <option value="liquid-damage">Liquid Damage</option>
                             <option value="not-sure">I'm not sure</option>
                           </select>

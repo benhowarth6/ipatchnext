@@ -583,7 +583,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Proximity Flex Cable.
+                      Proximity Flex Cable
                     </span>
                   </li>
 

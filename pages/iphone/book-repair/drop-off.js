@@ -34,7 +34,7 @@ export default function Home() {
               Drop Off Repair
             </h2>
             <p className="mt-5 text-xl text-gray-400">
-              Use this form to book your iPhone {model} in with us for a
+              Use this form to book your iPhone in with us for a
               drop-off repair.
             </p>
           </div>
@@ -46,6 +46,7 @@ export default function Home() {
           <form
             className="kwes-form"
             action="https://kwes.io/api/foreign/forms/TcsXfdLMGlVDulobBqQJ"
+            redirect="success"
           >
             <div className="mt-10 sm:mt-0">
               <div className="md:grid md:grid-cols-3 md:gap-6">
