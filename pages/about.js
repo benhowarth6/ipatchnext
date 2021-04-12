@@ -42,7 +42,7 @@ export default function Home() {
                 <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                   Device's Repaired
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-blue-600">
+                <dd className="order-1 text-5xl font-extrabold text-blue-500">
                   300K+
                 </dd>
               </div>
@@ -50,7 +50,7 @@ export default function Home() {
                 <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                   Years Experience
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-blue-600">
+                <dd className="order-1 text-5xl font-extrabold text-blue-500">
                   14
                 </dd>
               </div>
@@ -58,7 +58,7 @@ export default function Home() {
                 <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                   Device's Repaired Daily
                 </dt>
-                <dd className="order-1 text-5xl font-extrabold text-blue-600">
+                <dd className="order-1 text-5xl font-extrabold text-blue-500">
                   30+
                 </dd>
               </div>
