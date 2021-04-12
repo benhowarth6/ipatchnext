@@ -12,22 +12,16 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Apple Watch Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Apple Watch Screen and Battery Replacements in Leeds - iPatch"
+        description="We replace Apple Watch screens and batteries. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 
-      <div className="bg-gray-800">
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
-          <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
-            <div className="max-w-xl">
-              <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-                Apple Watch Repairs
-              </h2>
-              <p className="mt-5 text-xl text-gray-200">
-                From broken screens to bad batteries, we fix it all.
-              </p>
-            </div>
+      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Apple Watch Repairs</p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a screen and battery replacements for all Series of Apple Watch. </p>
           </div>
         </div>
       </div>
@@ -986,7 +980,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-blue-600">
+      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             <span className="block">Ready to fix your Watch?</span>

@@ -438,7 +438,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="bg-blue-500 rounded-lg shadow-sm divide-y divide-gray-200">
+            <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-blue-400 text-white">
                   Liquid Damage?
@@ -490,7 +490,7 @@ export default function Home() {
               <dl className="mt-10 space-y-10">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         data-todo-x-description="Heroicon name: outline/globe-alt"
@@ -523,7 +523,7 @@ export default function Home() {
 
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         data-todo-x-description="Heroicon name: outline/scale"
@@ -557,7 +557,7 @@ export default function Home() {
 
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                       <svg
                         className="h-6 w-6"
                         data-todo-x-description="Heroicon name: outline/lightning-bolt"
@@ -618,7 +618,7 @@ export default function Home() {
                 <dl className="mt-10 space-y-10">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           data-todo-x-description="Heroicon name: outline/annotation"
@@ -652,7 +652,7 @@ export default function Home() {
 
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           data-todo-x-description="Heroicon name: outline/mail"

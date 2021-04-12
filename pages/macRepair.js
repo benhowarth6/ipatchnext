@@ -12,22 +12,16 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Mac Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Mac Screen, Battery and Other Repairs in Leeds - iPatch"
+        description="We repair Mac screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 
-      <div className="bg-gray-800">
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
-          <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
-            <div className="max-w-xl">
-              <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-                Mac Repairs
-              </h2>
-              <p className="mt-5 text-xl text-gray-200">
-                From broken screens to sticky keyboards, we fix it all.
-              </p>
-            </div>
+      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Mac Repairs</p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of Mac repairs including screens, batteries, upgrades and more for nearly all models. </p>
           </div>
         </div>
       </div>
@@ -45,7 +39,7 @@ export default function Home() {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/mac/macbook`}>
+                <Link href={`/mac/macbook/macbook-repairs`}>
                   <a>
                     <Image
                       src="/mac/macbook.jpg"
@@ -60,14 +54,14 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`/mac/macbook`}>
+                    <Link href={`/mac/macbook/macbook-repairs`}>
                       <a className="text-xl font-semibold text-gray-900">
                         MacBook
                       </a>
                     </Link>
-                    <Link href="/mac/macbook">
+                    <Link href="/mac/macbook/macbook-repairs">
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Models
+                        View Repairs
                       </button>
                     </Link>
                   </div>
@@ -688,7 +682,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-blue-600">
+      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             <span className="block">Ready to fix your Mac?</span>

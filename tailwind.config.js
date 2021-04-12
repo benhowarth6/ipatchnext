@@ -23,7 +23,6 @@ module.exports = {
       blue: colors.blue,
       lightBlue: colors.lightBlue,
       yellow: colors.yellow,
-      red: colors.red,
     }
   },
   variants: {

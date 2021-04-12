@@ -27,25 +27,18 @@ export default function Home() {
       />
       <Header />
 
-      <div className="bg-gray-900">
+      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="pt-12 sm:pt-16 lg:pt-24">
-          <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto space-y-2 lg:max-w-none">
-              <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
-                Booking
-              </h2>
-              <p className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-                Choose your booking type
-              </p>
-              <p className="text-xl text-gray-300">
-                We offer mail in and drop off repair options.
-              </p>
-            </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Choose your booking type</p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer drop off and mail in repairs, both with a quick turnaround time. </p>
+          </div>
           </div>
         </div>
         <div className="mt-8 pb-12 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
           <div className="relative">
-            <div className="absolute inset-0 h-3/4 bg-gray-900"></div>
+            <div className="absolute inset-0 h-3/4 bg-gradient-to-r from-blue-500 to-blue-600"></div>
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
                 <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">

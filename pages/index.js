@@ -12,14 +12,14 @@ function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatch - Apple Device Repairs"
-        description="Apple device repairs including iPhone, iPad, Apple Watch, MacBook's & iPods. Based in Trinity Leeds, open 7 days a week."
+        title="iPhone, MacBook, iPad and Watch Repairs in Leeds - iPatch"
+        description="We repair iPhones, MacBooks, iPad's and More. We offer screens replacements, batteries, charging ports and even liquid damage repairs. Nearly all repairs are completed the same day and include a 90 day warranty."
       />
       <LocalBusinessJsonLd
         type="Store"
         id="http://ipatchrepairs.com"
-        name="iPatch - iPhone, iPad, Watch & Mac Repairs Leeds"
-        description="Dave's latest department store in San Jose, now open"
+        name="iPhone, MacBook, iPad and Watch Repairs in Leeds - iPatch"
+        description="We repair iPhones, MacBooks, iPad's and More. We offer screens replacements, batteries, charging ports and even liquid damage repairs."
         url="http://ipatchrepairs.com/contact/trinity-leeds"
         telephone="+4401132469388"
         address={{
@@ -85,7 +85,7 @@ function Home() {
                   <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center p-3 text-white bg-blue-500 rounded-md shadow-lg">
+                        <span className="inline-flex items-center justify-center p-3 text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-md shadow-lg">
                           <svg
                             className="h-6 w-6"
                             data-todo-x-description="Heroicon name: outline/globe-alt"
@@ -126,7 +126,7 @@ function Home() {
                   <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center p-3 text-white bg-blue-500 rounded-md shadow-lg">
+                        <span className="inline-flex items-center justify-center p-3 text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-md shadow-lg">
                           <svg
                             className="h-6 w-6"
                             data-todo-x-description="Heroicon name: outline/scale"
@@ -161,7 +161,7 @@ function Home() {
                   <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center p-3 text-white bg-blue-500 rounded-md shadow-lg">
+                        <span className="inline-flex items-center justify-center p-3 text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-md shadow-lg">
                           <svg
                             className="h-6 w-6"
                             data-todo-x-description="Heroicon name: outline/lightning-bolt"
@@ -196,7 +196,7 @@ function Home() {
           </div>
         </div>
         ;
-        <div className="bg-blue-600">
+        <div className="bg-gradient-to-r from-blue-500 to-blue-600">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
@@ -262,7 +262,7 @@ function Home() {
                 <dl className="mt-10 space-y-10">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           data-todo-x-description="Heroicon name: outline/globe-alt"
@@ -295,7 +295,7 @@ function Home() {
 
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           data-todo-x-description="Heroicon name: outline/scale"
@@ -328,7 +328,7 @@ function Home() {
 
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           data-todo-x-description="Heroicon name: outline/lightning-bolt"
@@ -391,7 +391,7 @@ function Home() {
                   <dl className="mt-10 space-y-10">
                     <div className="flex">
                       <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                           <svg
                             className="h-6 w-6"
                             data-todo-x-description="Heroicon name: outline/annotation"
@@ -425,7 +425,7 @@ function Home() {
 
                     <div className="flex">
                       <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                           <svg
                             className="h-6 w-6"
                             data-todo-x-description="Heroicon name: outline/mail"
@@ -459,7 +459,7 @@ function Home() {
 
                     <div className="flex">
                       <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                           <svg
                             className="h-6 w-6"
                             data-todo-x-description="Heroicon name: outline/lightning-bolt"
@@ -519,7 +519,7 @@ function Home() {
                 <dl className="mt-10 space-y-10">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           data-todo-x-description="Heroicon name: outline/annotation"
@@ -553,7 +553,7 @@ function Home() {
 
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
                         <svg
                           className="h-6 w-6"
                           data-todo-x-description="Heroicon name: outline/mail"
@@ -600,7 +600,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-blue-600">
+        <div className="bg-gradient-to-r from-blue-500 to-blue-600">
           <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               <span className="block">Ready to repair?</span>
@@ -633,20 +633,15 @@ function Home() {
                 </p>
                 <div className="mt-8 sm:flex">
                   <div className="rounded-md shadow">
+                    <Link href="/contact">
                     <a
-                      href="/"
-                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
                     >
-                      Create Account
+                      Contact us
                     </a>
+                    </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <a
-                      href="contact"
-                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200"
-                    >
-                      Contact Us
-                    </a>
                   </div>
                 </div>
               </div>

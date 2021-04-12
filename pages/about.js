@@ -10,22 +10,16 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - About"
+        title="About Us - iPhone, Mac, iPad Repairs in Leeds - iPatch"
         description="iPatch Next.JS TailWind UI tests."
       />
       <Header />
 
-      <div className="bg-gray-800">
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl">
-          <div className="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center">
-            <div className="max-w-xl">
-              <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-                About us
-              </h2>
-              <p className="mt-5 text-xl text-gray-200">
-                Learn more about who we are and how we work.
-              </p>
-            </div>
+      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">About Us</p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">Learn a little bit more about iPatch, our history and our four person team with a combined 40 years experience in the repair industry. </p>
           </div>
         </div>
       </div>
@@ -107,7 +101,7 @@ export default function Home() {
             <li>
               <div className="space-y-4">
                 <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80" alt="" />
+                  <img className="object-cover shadow-lg rounded-lg" src="http://ipatchipods.co.uk/img/andy.jpg" alt="" />
                 </div>
 
                 <div className="space-y-2">
@@ -122,7 +116,7 @@ export default function Home() {
             <li>
               <div className="space-y-4">
                 <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80" alt="" />
+                  <img className="object-cover shadow-lg rounded-lg" src="http://ipatchipods.co.uk/img/chris.jpg" alt="" />
                 </div>
 
                 <div className="space-y-2">
@@ -137,7 +131,7 @@ export default function Home() {
             <li>
               <div className="space-y-4">
                 <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80" alt="" />
+                  <img className="object-cover shadow-lg rounded-lg" src="http://ipatchipods.co.uk/img/ben.jpg" alt="" />
                 </div>
 
                 <div className="space-y-2">
@@ -152,7 +146,7 @@ export default function Home() {
             <li>
               <div className="space-y-4">
                 <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80" alt="" />
+                  <img className="object-cover shadow-lg rounded-lg" src="http://ipatchipods.co.uk/img/james.jpg" alt="" />
                 </div>
 
                 <div className="space-y-2">
