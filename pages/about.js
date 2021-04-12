@@ -38,7 +38,7 @@ export default function Home() {
         </h2>
       </div>
     </div>
-    <div className="mt-10 pb-12 bg-white sm:pb-16">
+    <div className="mt-10 pb-12 bg-gray-50 sm:pb-16">
       <div className="relative">
         <div className="absolute inset-0 h-1/2 bg-gray-50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,7 +75,7 @@ export default function Home() {
     </div>
   </div>
     
-    <div className="relative py-16 bg-white overflow-hidden">
+    <div className="relative py-16 bg-gray-50 overflow-hidden">
     <div className="relative px-4 sm:px-6 lg:px-8">
       <div className="text-lg max-w-prose mx-auto">
         <h1>
