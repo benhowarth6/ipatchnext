@@ -48,9 +48,7 @@ export default function Home() {
                     </div>
                   </li>
                   <p className="mt-6 text-base text-gray-500">
-                    If the glass on the front of your iPhone is cracked, you'll
-                    require a full screen replacement as all of the layers are
-                    laminated together.
+                    If any part of your MacBook display is damaged you'll require a replacement display assembly. 
                   </p>
                   <div className="mt-8">
                     <div className="flex items-center">
@@ -78,7 +76,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="ml-3 text-sm text-gray-700">
-                        LCD Display
+                        Retina LCD Display Assembly
                         </p>
                       </li>
 
@@ -100,7 +98,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="ml-3 text-sm text-gray-700">
-                          Device Dust and Water Seal
+                          Full Device Diagnostic
                         </p>
                       </li>
 
@@ -122,7 +120,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="ml-3 text-sm text-gray-700">
-                          Repaired in under 20 minutes
+                          Repaired in under 45 minutes
                         </p>
                       </li>
 
@@ -150,10 +148,10 @@ export default function Home() {
                 </div>
                 <div className="py-8 px-6 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
                   <p className="text-lg leading-6 font-medium text-gray-900">
-                    One, simple price
+                    From
                   </p>
                   <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
-                    <span>£69</span>
+                    <span>£450</span>
                   </div>
                   <p className="mt-4 text-sm">
                     <Link href="">
@@ -167,7 +165,7 @@ export default function Home() {
                       <Link
                         href={{
                           pathname: "book-repair/booking-type",
-                          query: { model: "6", repair: "screen" },
+                          query: { model: "macbook", repair: "screen" },
                         }}
                       >
                         <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -215,13 +213,13 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £45
+                    £225
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "battery" },
+                    query: { model: "macbook", repair: "battery" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -270,7 +268,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
+                    Full Device Diagnostic
                     </span>
                   </li>
 
@@ -290,7 +288,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -318,20 +316,20 @@ export default function Home() {
             <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Charging Port
+                  USB-C Charging Port
                 </h2>
                 <p className="mt-4 text-sm text-gray-500">
                   A new charging port to restore device charging.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £45
+                    £150
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "charging-port" },
+                    query: { model: "macbook", repair: "charging-port" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -360,7 +358,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Lightning Port
+                      New USB-C Charing Port
                     </span>
                   </li>
 
@@ -380,7 +378,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
+                      Full Device Diagnostic
                     </span>
                   </li>
 
@@ -400,7 +398,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes
+                      Repaired in under 45 minutes
                     </span>
                   </li>
 
@@ -430,22 +428,25 @@ export default function Home() {
                 <li className="flex items-center space-x-3">
                   <div className="min-w-0 flex-0">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">
-                      Front Camera
+                      Top Casing (Keyboard)
                     </h2>
                   </div>
                 </li>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new front camera if yours isn't working.
+                  A new top casing including keyboard if yours is damaged.
                 </p>
                 <p className="mt-8">
+                <span className="text-lg leading-6 font-medium text-gray-900 mr-2">
+                    From
+                  </span>
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £45
+                    £450
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "front-camera" },
+                    query: { model: "macbook", repair: "top-case" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -474,7 +475,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Proximity Flex Cable
+                      New Top Casing
                     </span>
                   </li>
 
@@ -494,7 +495,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
+                    Full Device Diagnostic
                     </span>
                   </li>
 
@@ -514,7 +515,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 1 hour
                     </span>
                   </li>
 
@@ -544,22 +545,22 @@ export default function Home() {
                 <li className="flex items-center space-x-3">
                   <div className="min-w-0 flex-0">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">
-                      Rear Camera
+                      Trackpad
                     </h2>
                   </div>
                 </li>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new rear camera if yours is damaged.
+                  A new trackpad if yours isn't responding.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £45
+                    £175
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "rear-camera" },
+                    query: { model: "macbook", repair: "trackpad" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -588,7 +589,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Rear Camera Module
+                      New Trackpad
                     </span>
                   </li>
 
@@ -608,7 +609,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
+                    Full Device Diagnostic
                     </span>
                   </li>
 
@@ -628,447 +629,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Rear Camera Lens
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                  A new replacement camera lens if yours is damaged.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £45
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "camera-lens" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Rear Camera Lens
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Earpiece Speaker
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                  A replacement speaker if you cannot hear on phone calls.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £45
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "earpiece" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      New Earpiece Speaker
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Loudspeaker
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                  A replacement loudspeaker if you cannot hear any audio.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £45
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "loudspeaker" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      New Earpiece Speaker
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">Deep Clean</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
-              <div className="p-6">
-                <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Button Fault
-                </h2>
-                <p className="mt-4 text-sm text-gray-500">
-                  A replacement button flex if one of yours isn't working.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-extrabold text-gray-900">
-                    £45
-                  </span>
-                </p>
-                <Link
-                  href={{
-                    pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "button-fault" },
-                  }}
-                >
-                  <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                    Book Repair
-                  </a>
-                </Link>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs font-medium text-gray-900 tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul className="mt-6 space-y-4">
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      New Button Flex
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Device Dust and Water Seal
-                    </span>
-                  </li>
-
-                  <li className="flex space-x-3">
-                    <svg
-                      className="flex-shrink-0 h-5 w-5 text-green-500"
-                      data-todo-x-description="Heroicon name: solid/check"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    <span className="text-sm text-gray-500">
-                      Repaired in under 20 minutes.
+                      Repaired in under 30 minutes
                     </span>
                   </li>
 
@@ -1110,7 +671,7 @@ export default function Home() {
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "not-sure" },
+                    query: { model: "macbook", repair: "not-sure" },
                   }}
                 >
                   <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
@@ -1135,7 +696,7 @@ export default function Home() {
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "6", repair: "liquid-damage" },
+                    query: { model: "macbook", repair: "liquid-damage" },
                   }}
                 >
                   <a className="mt-8 flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">

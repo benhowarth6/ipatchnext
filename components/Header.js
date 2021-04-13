@@ -13,9 +13,9 @@ const Header = () => {
         <a
           className={`${
             router.pathname === href
-              ? "text-gray-900 border-gray-800"
-              : "text-gray-500 hover:text-gray-700"
-          } ${className} ml-8 font-medium transition duration-150 ease-in-out`}
+              ? "bg-gray-100 text-gray-900 rounded-md py-2 px-3 inline-flex items-center"
+              : "text-gray-900 hover:bg-gray-50 hover:text-gray-900 rounded-md py-2 px-3 inline-flex items-center"
+          } ${className} font-medium text-sm xl:text-base transition duration-150 ease-in-out`}
         >
           {children}
         </a>
@@ -32,12 +32,11 @@ const Header = () => {
               <div className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
                 iPatch
               </div>
-              <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight"></div>
             </div>
           </a>
         </Link>
 
-        <div className="hidden lg:flex md:ml-4 xl:ml-10 items-end">
+        <div className="hidden space-x-4 lg:py-2 lg:flex xl:space-x-8">
           <ActiveLink href="/">
               Home
           </ActiveLink>
