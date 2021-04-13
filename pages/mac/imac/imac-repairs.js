@@ -12,16 +12,16 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="MacBook Pro Screen, Battery and Other Repairs in Leeds - iPatch"
-        description="We repair MacBook Pro screens, batteries, keyboards and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iMac Screen, SSD and Other Repairs in Leeds - iPatch"
+        description="We repair iMac screens, ssd's, power supplies and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 
       <div className="bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">MacBook Pro Repairs</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of MacBook Pro repairs including screens, batteries, charging ports and more for all models. </p>
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">iMac Repairs</p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of iMac repairs including screens, batteries, charging ports and more for all models. </p>
           </div>
         </div>
       </div>
@@ -30,10 +30,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-              Select your MacBook Pro
+              Select your iMac
             </h2>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-              Click on your MacBook Pro model below to view repairs.
+              Click on your iMac model below to view repairs.
             </p>
           </div>
 
@@ -41,10 +41,10 @@ export default function Home() {
             <div className="pb-5 border-b border-gray-200">
               <div className="-ml-2 -mt-2 flex flex-wrap items-baseline">
                 <h3 className="ml-2 mt-2 text-lg leading-6 font-medium text-gray-900">
-                  13-inch Models
+                  21.5-inch Models
                 </h3>
                 <p className="ml-2 mt-1 text-sm text-gray-500 truncate">
-                  in MacBook Pro
+                  in iMac
                 </p>
               </div>
             </div>
@@ -53,11 +53,11 @@ export default function Home() {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`macbook-pro-13-unibody`}>
+                <Link href={`imac-21`}>
                   <a>
                     <Image
-                      src="/mac/macbook-pro-13-unibody.jpg"
-                      alt="MacBook Pro 13-inch Unibody Repairs"
+                      src="/mac/imac-21.jpg"
+                      alt="iMac 21.5-inch Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -68,12 +68,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`macbook-pro-13-unibody`}>
+                  <Link href={`imac-21`}>
                       <a className="text-xl font-semibold text-gray-900">
-                        13-inch Unibody
+                        21.5-inch
                       </a>
                     </Link>
-                    <Link href={`macbook-pro-13-unibody`}>
+                    <Link href={`imac-21`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -84,11 +84,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`macbook-pro-13-retina`}>
+                <Link href={`imac-21-thin`}>
                   <a>
                     <Image
-                      src="/mac/macbook-pro-13-retina.jpg"
-                      alt="MacBook Pro 13-inch Retina Repairs"
+                      src="/mac/imac-21-thin.jpg"
+                      alt="iMac 21.5-inch Thin Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -99,12 +99,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`macbook-pro-13-retina`}>
+                  <Link href={`imac-21-thin`}>
                       <a className="text-xl font-semibold text-gray-900">
-                        13-inch Retina
+                        21.5-inch Thin
                       </a>
                     </Link>
-                    <Link href={`macbook-pro-13-retina`}>
+                    <Link href={`imac-21-thin`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -115,11 +115,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`macbook-pro-13-usb-c`}>
+                <Link href={`imac-21-4k`}>
                   <a>
                     <Image
-                      src="/mac/macbook-pro-13-usb-c.jpg"
-                      alt="MacBook Pro 13-inch USB-C Repairs"
+                      src="/mac/imac-21-4k.jpg"
+                      alt="iMac 21.5-inch 4K Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -130,12 +130,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`macbook-pro-13-usb-c`}>
+                  <Link href={`imac-21-4k`}>
                       <a className="text-xl font-semibold text-gray-900">
-                        13-inch USB-C
+                        21.5-inch 4K
                       </a>
                     </Link>
-                    <Link href={`macbook-pro-13-usb-c`}>
+                    <Link href={`imac-21-4k`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -150,10 +150,10 @@ export default function Home() {
             <div className="pb-5 border-b border-gray-200">
               <div className="-ml-2 -mt-2 flex flex-wrap items-baseline">
                 <h3 className="ml-2 mt-2 text-lg leading-6 font-medium text-gray-900">
-                  15-inch Models
+                  27-inch Models
                 </h3>
                 <p className="ml-2 mt-1 text-sm text-gray-500 truncate">
-                  in MacBook Pro
+                  in iMac
                 </p>
               </div>
             </div>
@@ -162,11 +162,11 @@ export default function Home() {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`macbook-pro-15-unibody`}>
+                <Link href={`imac-27`}>
                   <a>
                     <Image
-                      src="/mac/macbook-pro-15-unibody.jpg"
-                      alt="MacBook Pro 15-inch Unibody Repairs"
+                      src="/mac/imac-27.jpg"
+                      alt="iMac 27-inch Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -177,12 +177,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`macbook-pro-15-unibody`}>
+                  <Link href={`imac-27`}>
                       <a className="text-xl font-semibold text-gray-900">
-                        15-inch Unibody
+                        27-inch
                       </a>
                     </Link>
-                    <Link href={`macbook-pro-15-unibody`}>
+                    <Link href={`imac-27`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -193,11 +193,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`macbook-pro-15-retina`}>
+                <Link href={`imac-27-thin`}>
                   <a>
                     <Image
-                      src="/mac/macbook-pro-15-retina.jpg"
-                      alt="MacBook Pro 15-inch Retina Repairs"
+                      src="/mac/imac-27-thin.jpg"
+                      alt="iMac 27-inch Thin Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -208,12 +208,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`macbook-pro-15-retina`}>
+                  <Link href={`imac-27-thin`}>
                       <a className="text-xl font-semibold text-gray-900">
-                        15-inch Retina
+                        27-inch Thin
                       </a>
                     </Link>
-                    <Link href={`macbook-pro-15-retina`}>
+                    <Link href={`imac-27-thin`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -224,11 +224,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`macbook-pro-15-usb-c`}>
+                <Link href={`imac-27-5k`}>
                   <a>
                     <Image
-                      src="/mac/macbook-pro-15-usb-c.jpg"
-                      alt="MacBook Pro 15-inch USB-C Repairs"
+                      src="/mac/imac-27-5k.jpg"
+                      alt="iMac 27-inch 5k Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -239,12 +239,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`macbook-pro-15-usb-c`}>
+                  <Link href={`imac-27-5k`}>
                       <a className="text-xl font-semibold text-gray-900">
-                        15-inch USB-C
+                        27-inch 5k
                       </a>
                     </Link>
-                    <Link href={`macbook-pro-15-usb-c`}>
+                    <Link href={`imac-27-5k`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -262,7 +262,7 @@ export default function Home() {
                   Other Models
                 </h3>
                 <p className="ml-2 mt-1 text-sm text-gray-500 truncate">
-                  in MacBook Pro
+                  in iMac
                 </p>
               </div>
             </div>
@@ -271,11 +271,11 @@ export default function Home() {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
           <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`macbook-pro-16`}>
+                <Link href={`imac-pro`}>
                   <a>
                     <Image
-                      src="/mac/macbook-pro-16.jpg"
-                      alt="MacBook Pro 16-inch Repairs"
+                      src="/mac/imac-pro.jpg"
+                      alt="iMac Pro Repairs"
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
@@ -286,12 +286,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`macbook-pro-16`}>
+                  <Link href={`imac-pro`}>
                       <a className="text-xl font-semibold text-gray-900">
-                        16-inch
+                        iMac Pro
                       </a>
                     </Link>
-                    <Link href={`macbook-pro-16`}>
+                    <Link href={`imac-pro`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -307,7 +307,7 @@ export default function Home() {
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
-                  <span className="block">Not sure which MacBook Pro you have?</span>
+                  <span className="block">Not sure which iMac you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
                   If your Mac powers on, choose Apple menu  > About This Mac.
@@ -332,10 +332,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-              Select your MacBook Pro Model
+              Select your iMac Model
             </h2>
             <p className="py-4 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-              Click on your MacBook Pro model below to view repairs.
+              Click on your iMac model below to view repairs.
             </p>
           </div>
         </div>
@@ -344,10 +344,10 @@ export default function Home() {
           <div className="pb-5 border-b border-gray-200">
             <div className="-ml-2 -mt-2 flex flex-wrap items-baseline">
               <h3 className="ml-2 mt-2 text-lg leading-6 font-medium text-gray-900">
-                13-inch Models
+                21.5-inch Models
               </h3>
               <p className="ml-2 mt-1 text-sm text-gray-500 truncate">
-                in MacBook Pro
+                in iMac
               </p>
             </div>
           </div>
@@ -356,14 +356,14 @@ export default function Home() {
         <div className="max-w-2xl mx-auto sm:px-6 pt-6">
           <ul className="space-y-3" data-todo-x-max="1">
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`macbook-pro-13-unibody`}>
+              <Link href={`imac-21`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/macbook-pro-13-unibody-256.png"
-                          alt="MacBook Pro 13-inch Unibody Repairs"
+                          src="/mac/imac-21-256.png"
+                          alt="iMac 21.5-inch Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -372,7 +372,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            13-inch Unibody
+                            21.5-inch Repairs
                           </p>
                         </div>
                       </div>
@@ -399,14 +399,14 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`macbook-pro-13-retina`}>
+              <Link href={`imac-21-thin`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/macbook-pro-13-retina-256.png"
-                          alt="MacBook Pro 13-inch Retina Repairs"
+                          src="/mac/imac-21-thin-256.png"
+                          alt="iMac 21.5-inch thin Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -415,7 +415,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            13-inch Retina
+                            21.5-inch Thin
                           </p>
                         </div>
                       </div>
@@ -442,14 +442,14 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`macbook-pro-13-usb-c`}>
+              <Link href={`imac-21-4k`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/macbook-pro-13-usb-c-256.png"
-                          alt="MacBook Pro 13-inch USB-C Repairs"
+                          src="/mac/imac-21-4k-256.png"
+                          alt="iMac 21.5-inch 4K Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -458,7 +458,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            13-inch USB-C
+                            21.5-inch 4K
                           </p>
                         </div>
                       </div>
@@ -488,24 +488,24 @@ export default function Home() {
               <div className="pb-5 border-b border-gray-200">
                 <div className="-ml-2 -mt-2 flex flex-wrap items-baseline">
                   <h3 className="ml-2 mt-2 text-lg leading-6 font-medium text-gray-900">
-                    15-inch Models
+                    27-inch Models
                   </h3>
                   <p className="ml-2 mt-1 text-sm text-gray-500 truncate">
-                    in MacBook Pro
+                    in iMac
                   </p>
                 </div>
               </div>
             </div>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`macbook-pro-15-unibody`}>
+              <Link href={`imac-27`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/macbook-pro-15-unibody-256.png"
-                          alt="MacBook Pro 15-inch Unibody Repairs"
+                          src="/mac/imac-27-256.png"
+                          alt="iMac 27-inch Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -514,7 +514,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            15-inch Unibody
+                            27-inch Repairs
                           </p>
                         </div>
                       </div>
@@ -541,14 +541,14 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`macbook-pro-15-retina`}>
+              <Link href={`imac-27-thin`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/macbook-pro-15-retina-256.png"
-                          alt="MacBook Pro 15-inch Retina Repairs"
+                          src="/mac/imac-27-thin-256.png"
+                          alt="iMac 27-inch thin Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -557,7 +557,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            15-inch Retina
+                            27-inch Thin
                           </p>
                         </div>
                       </div>
@@ -584,14 +584,14 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`macbook-pro-15-usb-c`}>
+              <Link href={`imac-27-5k`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/macbook-pro-15-usb-c-256.png"
-                          alt="MacBook Pro 15-inch USB-C Repairs"
+                          src="/mac/imac-27-5k-256.png"
+                          alt="iMac 27-inch 5K Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -600,7 +600,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            15-inch USB-C
+                            27-inch 5K
                           </p>
                         </div>
                       </div>
@@ -633,21 +633,21 @@ export default function Home() {
                     Other Models
                   </h3>
                   <p className="ml-2 mt-1 text-sm text-gray-500 truncate">
-                    in MacBook Pro
+                    in iMac
                   </p>
                 </div>
               </div>
             </div>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`macbook-pro-16`}>
+              <Link href={`imac-pro`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/macbook-pro-16-256.png"
-                          alt="MacBook Pro 16-inch Repairs"
+                          src="/mac/imac-pro-256.png"
+                          alt="iMac 16-inch Repairs"
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -656,7 +656,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            16-inch
+                            iMac Pro
                           </p>
                         </div>
                       </div>
@@ -688,7 +688,7 @@ export default function Home() {
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <h2 className="text-3xl font-extrabold sm:text-4xl">
-                  <span className="block">Not sure which MacBook Pro you have?</span>
+                  <span className="block">Not sure which iMac you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
                   If your Mac powers on, choose Apple menu  > About This Mac.

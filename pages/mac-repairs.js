@@ -132,7 +132,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/mac/imac`}>
+              <Link href={`/mac/imac/imac-repairs`}>
                   <a>
                     <Image
                       src="/mac/imac.jpg"
@@ -147,12 +147,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`/mac/imac`}>
+                  <Link href={`/mac/imac/imac-repairs`}>
                       <a className="text-xl font-semibold text-gray-900">
                         iMac
                       </a>
                     </Link>
-                    <Link href={`/mac/imac`}>
+                    <Link href={`/mac/imac/imac-repairs`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Models
                       </button>
@@ -332,7 +332,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/mac/imac`}>
+              <Link href={`/mac/imac/imac-repairs`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
