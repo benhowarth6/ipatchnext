@@ -723,11 +723,11 @@ export default function Home() {
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
               <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                A match made at the factory
+                We look after you Mac like it's our own
               </h3>
               <p className="mt-3 text-lg text-gray-500">
-                Your display is paired to certain features on your iPhone such
-                as True-Tone, Auto-Brightness and Touch Settings.
+                Your Mac includes a number of important features, we only use original parts where possible 
+                to ensure no loss of functionality.
               </p>
 
               <dl className="mt-10 space-y-10">
@@ -754,13 +754,12 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      True-Tone Pairing
+                      Full Diagnostics
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Your iPhone display includes special calibration codes for
-                      the True-Tone feature. We pair these codes with your
-                      replacement display to ensure this features works as
-                      intended.
+                      We fully check and diagnose every component within your Mac to
+                      ensure it's performing it's best, and to make sure we don't 
+                      miss any potential issues the device may have. 
                     </dd>
                   </div>
                 </div>
@@ -788,13 +787,12 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Auto-Brightness Coding
+                      Deep Clean
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Just like the True-Tone feature, your iPhone display
-                      inludes calibration codes for Auto-Brightness. We also
-                      pair these codes with your new display to ensure this
-                      crucial feature works correctly.
+                      Overtime your Mac may gather dust and other debris internally.
+                      We make sure to thoroughly clean every machine we open to ensure 
+                      optimal cooling and ensure longevity of thermal sensitive components.
                     </dd>
                   </div>
                 </div>
@@ -822,14 +820,12 @@ export default function Home() {
                   </div>
                   <div className="ml-4">
                     <dt className="text-lg leading-6 font-medium text-gray-900">
-                      Touch Calibration
+                      Original Parts & Assembly
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      Lastly your iPhone display also includes calibratin data
-                      for touch. We pair the correct manufacture of display with
-                      your original and then pair this code to ensure correct
-                      and accurate touch response.
-                    </dd>
+                      Lastly, we only use original parts where at all possible and we 
+                      ensure your Mac is assembled to the original specification.  
+                      </dd>
                   </div>
                 </div>
               </dl>
@@ -838,7 +834,7 @@ export default function Home() {
             <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
               <div className="relative mx-auto">
                 <Image
-                  src="/iphone/true-tone.jpg"
+                  src="/mac/macbook-feature.jpg"
                   alt="iPhone True Tone Pairing"
                   width={490}
                   height={570}
@@ -854,8 +850,8 @@ export default function Home() {
                   Safe & Secure
                 </h3>
                 <p className="mt-3 text-lg text-gray-500">
-                  You can leave your device with us trusting it's in safe hands.
-                  We don't even require your passcode for the vast majority of
+                  You can leave your Mac with us trusting it's in safe hands.
+                  We don't even require your password for the vast majority of
                   our repairs, so your data stays private.
                 </p>
 
@@ -883,11 +879,11 @@ export default function Home() {
                     </div>
                     <div className="ml-4">
                       <dt className="text-lg leading-6 font-medium text-gray-900">
-                        No passcode? No problem
+                        No password? No problem
                       </dt>
                       <dd className="mt-2 text-base text-gray-500">
-                        We can carry out nearly all iPhone repairs without your
-                        passcode. Should we require it to test certain features,
+                        We can carry out nearly all Mac repairs without your
+                        passeord. Should we require it to test certain features,
                         you are more than welcome to enter the code yourself to
                         carry out any tests.
                       </dd>
@@ -921,7 +917,7 @@ export default function Home() {
                       </dt>
                       <dd className="mt-2 text-base text-gray-500">
                         We never access, save or copy any personal information
-                        that's saved on your device, should you require data
+                        that's saved on your Mac, should you require data
                         backing up for a transfer this information will be
                         encrypted and deleted once complete.
                       </dd>
@@ -933,7 +929,7 @@ export default function Home() {
               <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
                 <div className="relative mx-auto">
                   <Image
-                    src="/iphone/safe-secure.jpg"
+                    src="/mac/mac-privacy.jpg"
                     alt="iPatch Privacy"
                     width={490}
                     height={570}

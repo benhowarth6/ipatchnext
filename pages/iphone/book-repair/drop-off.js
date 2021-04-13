@@ -327,20 +327,20 @@ export default function Home() {
                               {" "}
                               -- Select your time --{" "}
                             </option>
-                            <option>09:30-10:00</option>
-                            <option>10:00-10:30</option>
-                            <option>10:30-11:00</option>
-                            <option>11:00-11:30</option>
-                            <option>11:30-12:00</option>
-                            <option>12:00-12:30</option>
-                            <option>12:30-13:00</option>
-                            <option>13:00-13:30</option>
-                            <option>13:30-14:00</option>
-                            <option>14:00-14:30</option>
-                            <option>14:30-15:00</option>
-                            <option>15:00-15:30</option>
-                            <option>15:30-16:00</option>
-                            <option>16:00-16:30</option>
+                            <option>09:30 - 10:00</option>
+                            <option>10:00 - 10:30</option>
+                            <option>10:30 - 11:00</option>
+                            <option>11:00 - 11:30</option>
+                            <option>11:30 - 12:00</option>
+                            <option>12:00 - 12:30</option>
+                            <option>12:30 - 13:00</option>
+                            <option>13:00 - 13:30</option>
+                            <option>13:30 - 14:00</option>
+                            <option>14:00 - 14:30</option>
+                            <option>14:30 - 15:00</option>
+                            <option>15:00 - 15:30</option>
+                            <option>15:30 - 16:00</option>
+                            <option>16:00 - 16:30</option>
                           </select>
                         </div>
 
