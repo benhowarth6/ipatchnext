@@ -85,7 +85,7 @@ const Footer = () => {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="/iphoneRepair">
+                    <Link href="/iphone-repairs">
                       <a className="text-base text-gray-300 hover:text-white">
                         iPhone Repairs
                       </a>
@@ -93,7 +93,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="/ipadRepair">
+                    <Link href="/ipad-repairs">
                       <a className="text-base text-gray-300 hover:text-white">
                         iPad Repairs
                       </a>
@@ -101,7 +101,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="/macRepair">
+                    <Link href="/mac-repairs">
                       <a className="text-base text-gray-300 hover:text-white">
                         Mac Repairs
                       </a>
@@ -109,7 +109,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="/watchRepair">
+                    <Link href="/watch-repairs">
                       <a className="text-base text-gray-300 hover:text-white">
                         Watch Repairs
                       </a>
@@ -117,7 +117,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="/ipodRepair">
+                    <Link href="/ipod-repairs">
                       <a className="text-base text-gray-300 hover:text-white">
                         iPod Repairs
                       </a>
@@ -187,7 +187,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="/bookRepair">
+                    <Link href="/book-repair">
                       <a className="text-base text-gray-300 hover:text-white">
                         Book a repair
                       </a>

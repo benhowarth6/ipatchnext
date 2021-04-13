@@ -70,7 +70,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/mac/macbook-air`}>
+                <Link href={`/mac/macbook-air/macbook-air-repairs`}>
                   <a>
                     <Image
                       src="/mac/macbook-air.jpg"
@@ -85,12 +85,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`/mac/macbook-air`}>
+                    <Link href={`/mac/macbook-air/macbook-air-repairs`}>
                       <a className="text-xl font-semibold text-gray-900">
                         MacBook Air
                       </a>
                     </Link>
-                    <Link href={`/mac/macbook-air`}>
+                    <Link href={`/mac/macbook-air/macbook-air-repairs`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Models
                       </button>
@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
-                <Link href={`/mac/macbook-pro`}>
+                <Link href={`/mac/macbook-pro/macbook-pro-repairs`}>
                   <a>
                     <Image
                       src="/mac/macbook-pro.jpg"
@@ -116,12 +116,12 @@ export default function Home() {
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`/mac/macbook-pro`}>
+                  <Link href={`/mac/macbook-pro/macbook-pro-repairs`}>
                       <a className="text-xl font-semibold text-gray-900">
                         MacBook Pro
                       </a>
                     </Link>
-                    <Link href={`/mac/macbook-pro`}>
+                    <Link href={`/mac/macbook-pro/macbook-pro-repairs`}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Models
                       </button>
@@ -219,7 +219,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            MacBook Models
+                            MacBook
                           </p>
                         </div>
                       </div>
@@ -246,7 +246,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/mac/macbook-air`}>
+              <Link href={`/mac/macbook-air/macbook-air-repairs`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -262,7 +262,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            MacBook Air Models
+                            MacBook Air
                           </p>
                         </div>
                       </div>
@@ -289,7 +289,7 @@ export default function Home() {
             </li>
 
             <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/mac/macbook-pro`}>
+            <Link href={`/mac/macbook-pro/macbook-pro-repairs`}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
@@ -305,7 +305,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            MacBook Pro Models
+                            MacBook Pro
                           </p>
                         </div>
                       </div>
@@ -348,7 +348,7 @@ export default function Home() {
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
                           <p className="font-medium text-base sm:text-lg">
-                            iMac Models
+                            iMac
                           </p>
                         </div>
                       </div>
@@ -693,7 +693,7 @@ export default function Home() {
             chosen day.
           </p>
           <a
-            href="bookRepair"
+            href="book-repair"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
           >
             Book a Repair

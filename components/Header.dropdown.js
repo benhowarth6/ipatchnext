@@ -260,7 +260,7 @@ export default function Header() {
                                   <div>
                                     <ul className="mt-4 space-y-4">
                                       <li className="text-base truncate">
-                                        <Link href="/iphoneRepair">
+                                        <Link href="/iphone-repairs">
                                           <a className="font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150">
                                             Looking for a different iPhone?
                                           </a>
@@ -269,7 +269,7 @@ export default function Header() {
                                     </ul>
                                   </div>
                                   <div className="mt-5 text-sm">
-                                    <Link href="/iphoneRepair">
+                                    <Link href="/iphone-repairs">
                                       <a className="font-medium text-blue-600 hover:text-indigo-500 transition ease-in-out duration-150">
                                         {" "}
                                         View all models{" "}
@@ -726,7 +726,7 @@ export default function Header() {
                             </a>
                           </Link>
 
-                          <Link href="/iphoneRepair">
+                          <Link href="/iphone-repairs">
                             <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                               <span className="inline-flex ml-3 text-base font-medium text-gray-900">
                                 iPhone Repairs
@@ -734,7 +734,7 @@ export default function Header() {
                             </a>
                           </Link>
 
-                          <Link href="/ipadRepair">
+                          <Link href="/ipad-repairs">
                             <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                               <span className="inline-flex ml-3 text-base font-medium text-gray-900">
                                 iPad Repairs
@@ -742,7 +742,7 @@ export default function Header() {
                             </a>
                           </Link>
 
-                          <Link href="/macRepair">
+                          <Link href="/mac-repairs">
                             <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                               <span className="inline-flex ml-3 text-base font-medium text-gray-900">
                                 Mac Repairs
@@ -750,7 +750,7 @@ export default function Header() {
                             </a>
                           </Link>
 
-                          <Link href="/watchRepair">
+                          <Link href="/watch-repairs">
                             <a className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                               <span className="inline-flex ml-3 text-base font-medium text-gray-900">
                                 Apple Watch Repairs

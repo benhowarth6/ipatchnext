@@ -30,27 +30,27 @@ const Header = () => {
               About
             </a>
           </Link>
-          <Link href="/iphoneRepair">
+          <Link href="/iphone-repairs">
             <a className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out">
               iPhone Repair
             </a>
           </Link>
-          <Link href="/ipadRepair">
+          <Link href="/ipad-repairs">
             <a className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out">
               iPad Repair
             </a>
           </Link>
-          <Link href="/macRepair">
+          <Link href="/mac-repairs">
             <a className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out">
               Mac Repair
             </a>
           </Link>
-          <Link href="/watchRepair">
+          <Link href="/watch-repairs">
             <a className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out">
               Watch Repair
             </a>
           </Link>
-          <Link href="/ipodRepair">
+          <Link href="/ipod-repairs">
             <a className="ml-10 font-medium text-gray-900 dark:text-white dark:hover:text-gray-300 hover:text-gray-900 transition duration-150 ease-in-out">
               iPod Repair
             </a>
@@ -148,27 +148,27 @@ const Header = () => {
                     About
                   </a>
                 </Link>
-                <Link href="/iphoneRepair">
+                <Link href="/iphone-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 focus:outline-none focus:text-gray-900 focus:dark:text-gray-300 dark:focus:bg-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPhone Repair
                   </a>
                 </Link>
-                <Link href="/ipadRepair">
+                <Link href="/ipad-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 focus:outline-none focus:text-gray-900 focus:dark:text-gray-300 dark:focus:bg-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPad Repair
                   </a>
                 </Link>
-                <Link href="/macRepair">
+                <Link href="/mac-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 focus:outline-none focus:text-gray-900 focus:dark:text-gray-300 dark:focus:bg-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Mac Repair
                   </a>
                 </Link>
-                <Link href="/watchRepair">
+                <Link href="/watch-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 focus:outline-none focus:text-gray-900 focus:dark:text-gray-300 dark:focus:bg-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Watch Repair
                   </a>
                 </Link>
-                <Link href="/ipodRepair">
+                <Link href="/ipod-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-900 focus:outline-none focus:text-gray-900 focus:dark:text-gray-300 dark:focus:bg-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPod Repair
                   </a>

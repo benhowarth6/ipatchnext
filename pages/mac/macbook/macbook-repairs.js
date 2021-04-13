@@ -16,7 +16,7 @@ export default function Home() {
     <div>
       <NextSeo
         title="MacBook (Retina, 12-inch) Repairs in Leeds - iPatch"
-        description="iPatch Next.JS TailWind UI tests."
+        description="We repair MacBook screens, batteries, keyboards and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

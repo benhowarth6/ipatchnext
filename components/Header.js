@@ -43,19 +43,19 @@ const Header = () => {
           <ActiveLink href="/about">
               About
           </ActiveLink>
-          <ActiveLink href="/iphoneRepair">
+          <ActiveLink href="/iphone-repairs">
               iPhone Repair
           </ActiveLink>
-          <ActiveLink href="/ipadRepair">
+          <ActiveLink href="/ipad-repairs">
               iPad Repair
           </ActiveLink>
-          <ActiveLink href="/macRepair">
+          <ActiveLink href="/mac-repairs">
               Mac Repair
           </ActiveLink>
-          <ActiveLink href="/watchRepair">
+          <ActiveLink href="/watch-repairs">
               Watch Repair
           </ActiveLink>
-          <ActiveLink href="/ipodRepair">
+          <ActiveLink href="/ipod-repairs">
               iPod Repair
           </ActiveLink>
           <ActiveLink href="/contact">
@@ -144,27 +144,27 @@ const Header = () => {
                     About
                   </a>
                 </Link>
-                <Link href="/iphoneRepair">
+                <Link href="/iphone-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPhone Repair
                   </a>
                 </Link>
-                <Link href="/ipadRepair">
+                <Link href="/ipad-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPad Repair
                   </a>
                 </Link>
-                <Link href="/macRepair">
+                <Link href="/mac-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Mac Repair
                   </a>
                 </Link>
-                <Link href="/watchRepair">
+                <Link href="/watch-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Watch Repair
                   </a>
                 </Link>
-                <Link href="/ipodRepair">
+                <Link href="/ipod-repairs">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     iPod Repair
                   </a>
