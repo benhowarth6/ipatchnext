@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Custom404() {
   return (
     <div className="min-h-full sm:min-h-full">
-      <div className="relative -mt-6 z-10">
+      <div className="relative mt-6 z-10">
       <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
         <Link href="/">
           <a className="flex items-center">
