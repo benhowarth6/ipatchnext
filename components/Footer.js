@@ -193,22 +193,6 @@ const Footer = () => {
                       </a>
                     </Link>
                   </li>
-
-                  <li>
-                    <Link href="">
-                      <a className="text-base text-gray-300 hover:text-white">
-                        Business Accounts
-                      </a>
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="">
-                      <a className="text-base text-gray-300 hover:text-white">
-                        Partners
-                      </a>
-                    </Link>
-                  </li>
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
