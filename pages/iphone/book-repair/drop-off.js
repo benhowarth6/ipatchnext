@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Book Repair - Drop Off"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Book a Drop-Off iPhone Repair in Leeds - iPatch"
+        description="Book your iPhone in with us for a drop-off repair at one of our Leeds stores using this form."
       />
       <Header />
 

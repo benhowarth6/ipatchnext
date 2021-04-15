@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPod Nano 4th Generation Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="iPod Nano 4th Generation Screen Replacement & Other Repairs in Leeds - iPatch"
+        description="We repair iPod Nano 4th Generation screens and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

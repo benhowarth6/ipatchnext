@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPod Touch Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="iPod Touch Screen, Battery and Other Repairs in Leeds - iPatch"
+        description="We repair iPod Touch screens, batteries, headphone jacks and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

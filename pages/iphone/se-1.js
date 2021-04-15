@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPhone SE Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="iPhone SE Screen Replacement & Other Repairs in Leeds - iPatch"
+        description="We repair iPhone SE screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Booking Confirmed"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Apple Watch Repair Booking Confirmed - iPatch"
+        description="Find out what to do once you've booked your Apple Watch in for repair with us."
       />
       <Header />
 

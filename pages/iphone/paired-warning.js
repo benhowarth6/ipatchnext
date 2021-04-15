@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Paired Component Warnings"
-        description="iPatch Next.JS TailWind UI tests."
+        title="iPhone Paired Component Warnings - iPatch"
+        description="Learn more about the warnings that may appear after a paired component inside your iPhone has been changed. These warnings appear on iPhone XR and upwards."
       />
       <Header />
 

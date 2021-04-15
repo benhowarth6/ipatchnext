@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPhone X Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="iPhone X Screen Replacement & Other Repairs in Leeds - iPatch"
+        description="We repair iPhone X screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 
@@ -28,7 +28,8 @@ export default function Home() {
                 iPhone X Repair
               </h2>
               <p className="mt-4 text-xl text-gray-600">
-                We offer a comprehensive set of repairs for the iPhone X. Including screen replacements, batteries and much more.
+                We offer a comprehensive set of repairs for the iPhone X.
+                Including screen replacements, batteries and much more.
               </p>
             </div>
           </div>

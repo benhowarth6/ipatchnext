@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Apple Watch Series 2 Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Apple Watch Series 2 Screen Replacement & Battery Repairs in Leeds - iPatch"
+        description="We repair Apple Watch Series 2 screens and batteries. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

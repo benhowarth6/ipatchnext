@@ -164,7 +164,7 @@ export default function Home() {
                     <div className="rounded-md shadow">
                       <Link
                         href={{
-                          pathname: "book-repair/booking-type",
+                           pathname: "/mac/book-macbook-repair/booking-type",
                           query: { model: "macbook", repair: "screen" },
                         }}
                       >
@@ -218,7 +218,7 @@ export default function Home() {
                 </p>
                 <Link
                   href={{
-                    pathname: "book-repair/booking-type",
+                     pathname: "/mac/book-macbook-repair/booking-type",
                     query: { model: "macbook", repair: "battery" },
                   }}
                 >
@@ -328,7 +328,7 @@ export default function Home() {
                 </p>
                 <Link
                   href={{
-                    pathname: "book-repair/booking-type",
+                     pathname: "/mac/book-macbook-repair/booking-type",
                     query: { model: "macbook", repair: "charging-port" },
                   }}
                 >
@@ -358,7 +358,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New USB-C Charing Port
+                      New USB-C Charging Port
                     </span>
                   </li>
 
@@ -445,7 +445,7 @@ export default function Home() {
                 </p>
                 <Link
                   href={{
-                    pathname: "book-repair/booking-type",
+                     pathname: "/mac/book-macbook-repair/booking-type",
                     query: { model: "macbook", repair: "top-case" },
                   }}
                 >
@@ -559,7 +559,7 @@ export default function Home() {
                 </p>
                 <Link
                   href={{
-                    pathname: "book-repair/booking-type",
+                     pathname: "/mac/book-macbook-repair/booking-type",
                     query: { model: "macbook", repair: "trackpad" },
                   }}
                 >
@@ -670,7 +670,7 @@ export default function Home() {
                 </p>
                 <Link
                   href={{
-                    pathname: "book-repair/booking-type",
+                     pathname: "/mac/book-macbook-repair/booking-type",
                     query: { model: "macbook", repair: "not-sure" },
                   }}
                 >
@@ -695,7 +695,7 @@ export default function Home() {
                 </p>
                 <Link
                   href={{
-                    pathname: "book-repair/booking-type",
+                     pathname: "/mac/book-macbook-repair/booking-type",
                     query: { model: "macbook", repair: "liquid-damage" },
                   }}
                 >
@@ -835,7 +835,7 @@ export default function Home() {
               <div className="relative mx-auto">
                 <Image
                   src="/mac/macbook-feature.jpg"
-                  alt="iPhone True Tone Pairing"
+                  alt="Mac Repair Features"
                   width={490}
                   height={570}
                 />

@@ -14,9 +14,9 @@ export default function Home() {
 
   return (
     <div>
-      <NextSeo
-        title="iPatchNext - iPod Classic 3rd Generation Repair"
-        description="iPatch Next.JS TailWind UI tests."
+     <NextSeo
+        title="iPod Classic 3rd Generation Hard Drive Replacement & Other Repairs in Leeds - iPatch"
+        description="We repair iPod Classic 3rd Generation hard drives, batteries, headphone jacks and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

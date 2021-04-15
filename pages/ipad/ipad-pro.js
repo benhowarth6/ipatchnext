@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPad Pro Repairs"
-        description="iPatch Next.JS TailWind UI tests."
+        title="iPad Pro Screen, Battery and Other Repairs in Leeds - iPatch"
+        description="We repair iPad Pro screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

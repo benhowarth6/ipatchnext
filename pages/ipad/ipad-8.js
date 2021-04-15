@@ -12,9 +12,9 @@ export default function Home() {
   const { id } = router.query;
   return (
     <div>
-      <NextSeo
-        title="iPatchNext - iPad 8 Repair"
-        description="iPatch Next.JS TailWind UI tests."
+     <NextSeo
+        title="iPad 8 Screen Replacement & Other Repairs in Leeds - iPatch"
+        description="We repair iPad 8 screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

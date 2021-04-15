@@ -80,7 +80,7 @@ const Hero = () => {
                   </span>{" "}
                   by over{" "}
                   <span className="font-medium text-blue-600">
-                    500 customers
+                    200 customers
                   </span>
                 </div>
               </div>

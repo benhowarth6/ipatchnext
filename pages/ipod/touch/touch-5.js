@@ -15,11 +15,10 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPod Touch 5th Generation Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="iPod Touch 5th Generation Screen Replacement & Other Repairs in Leeds - iPatch"
+        description="We repair iPod Touch 5th Generation screens, batteries, headphone jacks and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
-
       <div className="bg-gray-100">
         <div className="pt-12 sm:pt-16 lg:pt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

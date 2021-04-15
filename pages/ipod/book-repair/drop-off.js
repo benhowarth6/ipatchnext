@@ -22,10 +22,11 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Book Repair - Drop Off"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Book a Drop-Off iPod Repair in Leeds - iPatch"
+        description="Book your iPod in with us for a drop-off repair at one of our Leeds stores using this form."
       />
       <Header />
+
 
       <div className="bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
@@ -40,7 +41,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:pb-14 lg:px-8">
           <form
             className="kwes-form"
-            action="https://kwes.io/api/foreign/forms/uzvOI9IBAzqlrgC0Oit8"
+            action="https://kwes.io/api/foreign/forms/ukoTwmOAKVWWEbJuCWAH"
+            redirect="success"
           >
             <div className="mt-10 sm:mt-0">
               <div className="md:grid md:grid-cols-3 md:gap-6">
@@ -158,55 +160,64 @@ export default function Home() {
                             htmlFor="device_model"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            iPad Model
+                            iPod Model
                           </label>
                           <select
-                            id="ipad_model"
-                            name="ipad_model"
+                            id="ipod_model"
+                            name="ipod_model"
                             rules="required"
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             defaultValue={model}
                           >
                             <option disabled value>
                               {" "}
-                              -- Select your iPad --{" "}
+                              -- Select your iPod --{" "}
                             </option>
-                            <option value="Pro 12-4">
-                              iPad Pro 12.9-inch (4th Generation)
+                            <option value="Touch 7">
+                              iPod Touch 7th Generation
                             </option>
-                            <option value="Pro 12-3">
-                              iPad Pro 12.9-inch (3rd Generation)
+                            <option value="Touch 6">
+                              iPod Touch 6th Generation
                             </option>
-                            <option value="Pro 12-2">
-                              iPad Pro 12.9-inch (2nd Generation)
+                            <option value="Touch 5">
+                              iPod Touch 5th Generation
                             </option>
-                            <option value="Pro 12-1">
-                              iPad Pro 12.9-inch (1st Generation)
+                            <option value="Touch 4">
+                              iPod Touch 4th Generation
                             </option>
-                            <option value="Pro 11-2">
-                              iPad Pro 11-inch (2nd Generation)
+                            <option value="Touch 3">
+                              iPod Touch 3rd Generation
                             </option>
-                            <option value="Pro 11-1">
-                              iPad Pro 11-inch (1st Generation)
+                            <option value="Touch 2">
+                              iPod Touch 2nd Generation
                             </option>
-                            <option value="Pro 10">iPad Pro 10.5-inch</option>
-                            <option value="Pro 9">iPad Pro 9.7-inch</option>
-                            <option value="Air 4">iPad Air 4</option>
-                            <option value="Air 3">iPad Air 3</option>
-                            <option value="Air 2">iPad Air 2</option>
-                            <option value="Air 1">iPad Air 1</option>
-                            <option value="8">iPad 8</option>
-                            <option value="7">iPad 7</option>
-                            <option value="6">iPad 6</option>
-                            <option value="5">iPad 5</option>
-                            <option value="4">iPad 4</option>
-                            <option value="3">iPad 3</option>
-                            <option value="2">iPad 2</option>
-                            <option value="Mini 5">iPad Mini 5</option>
-                            <option value="Mini 4">iPad Mini 4</option>
-                            <option value="Mini 3">iPad Mini 3</option>
-                            <option value="Mini 2">iPad Mini 2</option>
-                            <option value="Mini 1">iPad Mini 1</option>
+                            <option value="Classic 6">
+                              iPod Classic 6th Generation
+                            </option>
+                            <option value="Video 5">
+                              iPod Classic 5th Generation
+                            </option>
+                            <option value="Classic 4">
+                              iPod Classic 4th Generation
+                            </option>
+                            <option value="Classic 3">
+                              iPod Classic 3rd Generation
+                            </option>
+                            <option value="Nano 6">
+                              iPod Nano 6th Generation
+                            </option>
+                            <option value="Nano 5">
+                              iPod Nano 5th Generation
+                            </option>
+                            <option value="Nano 4">
+                              iPod Nano 4th Generation
+                            </option>
+                            <option value="Nano 3">
+                              iPod Nano 3rd Generation
+                            </option>
+                            <option value="Nano 2">
+                              iPod Nano 2nd Generation
+                            </option>
                           </select>
                         </div>
                         <div className="col-span-6 sm:col-span-3">
@@ -228,21 +239,24 @@ export default function Home() {
                               -- Select your Repair --{" "}
                             </option>
                             <option value="screen">Screen Replacement</option>
-                            <option value="digitiser">
-                              Digitiser Replacement
-                            </option>
+                            <option value="glass">Glass Replacement</option>
                             <option value="lcd">LCD Replacement</option>
                             <option value="battery">Battery</option>
-                            <option value="charging-port">Charging Port</option>
                             <option value="headphone-jack">Headphone Jack</option>
-                            <option value="microphone">Microphone</option>
                             <option value="front-camera">Front Camera</option>
                             <option value="rear-camera">Rear Camera</option>
-                            <option value="camera-lens">
-                              Rear Camera Lens
-                            </option>
-                            <option value="loudspeaker">Loudspeaker</option>
                             <option value="button-fault">Button Fault</option>
+                            <option value="click-wheel">Click Wheel</option>
+                            <option value="logic-board">Logic Board</option>
+                            <option value="120-ssd">120GB SSD Upgrade</option>
+                            <option value="240-ssd">240GB SSD Upgrade</option>
+                            <option value="500-ssd">500GB SSD Upgrade</option>
+                            <option value="10-hdd">10GB HDD</option>
+                            <option value="15-hdd">15GB HDD</option>
+                            <option value="20-hdd">20GB HDD</option>
+                            <option value="30-hdd">30GB HDD</option>
+                            <option value="40-hdd">40GB HDD</option>
+                            <option value="60-hdd">60GB HDD</option>
                             <option value="liquid-damage">Liquid Damage</option>
                             <option value="not-sure">I'm not sure</option>
                           </select>

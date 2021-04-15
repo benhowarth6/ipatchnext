@@ -22,10 +22,11 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Book Repair - Drop Off"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Book a Drop-Off iPod Classic Repair in Leeds - iPatch"
+        description="Book your iPod Classic in with us for a drop-off repair at one of our Leeds stores using this form."
       />
       <Header />
+
 
       <div className="bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
@@ -206,7 +207,7 @@ export default function Home() {
                             </option>
                             <option value="lcd">LCD Replacement</option>
                             <option value="battery">Battery</option>
-                            <option value="headphone-jack">Headphone Jack</option>
+                             <option value="headphone-jack">Headphone Jack</option>
                             <option value="click-wheel">Click Wheel</option>
                             <option value="button-fault">Button Fault</option>
                             <option value="logic-board">Logic Board</option>
@@ -214,7 +215,7 @@ export default function Home() {
                             <option value="240-ssd">240GB SSD Upgrade</option>
                             <option value="500-ssd">500GB SSD Upgrade</option>
                             <option value="10-hdd">10GB HDD</option>
-                            <option value="15-hdd">15gb HDD</option>
+                            <option value="15-hdd">15GB HDD</option>
                             <option value="20-hdd">20GB HDD</option>
                             <option value="30-hdd">30GB HDD</option>
                             <option value="40-hdd">40GB HDD</option>

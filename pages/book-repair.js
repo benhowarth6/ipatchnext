@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - iPhone Repair"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Book a Repair with us - iPatch"
+        description="Choose which device you need repairing. We accept both mail in and drop off repairs."
       />
       <Header />
 

@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPatchNext - Book Repair - Mail In"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Book a Mail-In Apple Watch Repair - iPatch"
+        description="Book your Apple Watch in with us for a mail-in repair to post your device to us from anywhere in the world."
       />
       <Header />
 
@@ -159,7 +159,7 @@ export default function Home() {
                             htmlFor="device_model"
                             className="block text-sm font-medium text-gray-700"
                           >
-                            iPhone Model
+                            Apple Watch Model
                           </label>
                           <select
                             id="watch_model"

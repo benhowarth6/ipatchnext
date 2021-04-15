@@ -149,7 +149,7 @@ export default function Home() {
               <div className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20">
                 <Image
                   src="/mac/identify-mac.jpg"
-                  alt="Identify your Mac model"
+                  alt="Identify your MacBook Air model"
                   width={1360}
                   height={1000}
                 />
@@ -319,7 +319,7 @@ export default function Home() {
               <div className="transform translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20">
                 <Image
                   src="/mac/identify-mac.jpg"
-                  alt="Identify your Mac model"
+                  alt="Identify your MacBook Air model"
                   width={1360}
                   height={1000}
                 />
