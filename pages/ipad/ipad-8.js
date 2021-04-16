@@ -147,7 +147,7 @@ export default function Home() {
                     One, simple price
                   </p>
                   <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
-                    <span>£169?</span>
+                    <span>£169</span>
                   </div>
                   <p className="mt-4 text-sm">
                     <Link href="">
@@ -204,7 +204,7 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £189?
+                    £189
                   </span>
                 </p>
                 <Link
