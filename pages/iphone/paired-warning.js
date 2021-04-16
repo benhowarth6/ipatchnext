@@ -203,10 +203,10 @@ export default function Home() {
             <div className="mt-8 lg:mt-0">
               <div className="text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
-                  Starting with iOS 12 and iPhone XR/S models (the XR, XS, and
-                  XS Max), your phone will report if it has a third-party
-                  battery: “Unable to verify this iPhone has a genuine Apple
-                  battery.” It starts as a persistent message on your lock
+                  Starting with iOS 14 and iPhone 12 models (the 12, 12 Pro, and
+                  12 Mini), your phone will report if it has a third-party
+                  Camera: “Unable to verify this iPhone has a genuine Apple
+                  Camera.” It starts as a persistent message on your lock
                   screen, lasting for four days. After that, the warning lodges
                   itself in the Settings for 15 days, and then in Settings >
                   General > About after that. It’s also added to your “device
@@ -216,21 +216,19 @@ export default function Home() {
               <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
                   This warning, similar to the display warnings, happens even if
-                  you swap a genuine Apple battery from one phone to another. To
-                  avoid the warning, you have to have a genuine Apple battery
+                  you swap a genuine Apple Camera from one phone to another. To
+                  avoid the warning, you have to have a genuine Apple Camera
                   installed by a certified Apple technician, independent or
-                  otherwise. The warning doesn’t seem to affect operation—other
-                  than the loss of the Battery Health feature, however the true
-                  capacity and health can still be read externally. 
+                  otherwise. The warning doesn’t seem to affect operation in any way.
                 </p>
               </div>
               <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
-                  We’ve tested this with genuine parts on iPhone XR/S models. We
-                  used batteries from the same models of iPhone XR/S, just days
+                  We’ve tested this with genuine parts on iPhone 12 models. We
+                  used batteries from the same models of iPhone 12, just days
                   old, but without the software verification tools available to
                   Apple-certified technicians, our units had warnings about a
-                  “genuine Apple Battery.” 
+                  “genuine Apple Camera.” 
                 </p>
               </div>
             </div>
