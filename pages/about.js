@@ -100,8 +100,13 @@ export default function Home() {
           
             <li>
               <div className="space-y-4">
-                <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="http://ipatchipods.co.uk/img/andy.jpg" alt="" />
+              <div className="aspect-w-3 aspect-h-2">
+                <Image
+                    className="object-cover shadow-lg rounded-lg"
+                    src="/people/andy.jpg"
+                    alt="Andrew-Brinkley-Smith"
+                    layout="fill"
+                  />
                 </div>
 
                 <div className="space-y-2">
@@ -114,9 +119,14 @@ export default function Home() {
             </li>
           
             <li>
-              <div className="space-y-4">
-                <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="http://ipatchipods.co.uk/img/chris.jpg" alt="" />
+            <div className="space-y-4">
+              <div className="aspect-w-3 aspect-h-2">
+                <Image
+                    className="object-cover shadow-lg rounded-lg"
+                    src="/people/chris.jpg"
+                    alt="Chris Broadley"
+                    layout="fill"
+                  />
                 </div>
 
                 <div className="space-y-2">
@@ -129,9 +139,14 @@ export default function Home() {
             </li>
           
             <li>
-              <div className="space-y-4">
-                <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="http://ipatchipods.co.uk/img/ben.jpg" alt="" />
+            <div className="space-y-4">
+              <div className="aspect-w-3 aspect-h-2">
+                <Image
+                    className="object-cover shadow-lg rounded-lg"
+                    src="/people/ben.jpg"
+                    alt="Ben Howarth"
+                    layout="fill"
+                  />
                 </div>
 
                 <div className="space-y-2">
@@ -144,9 +159,14 @@ export default function Home() {
             </li>
           
             <li>
-              <div className="space-y-4">
-                <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="http://ipatchipods.co.uk/img/james.jpg" alt="" />
+            <div className="space-y-4">
+              <div className="aspect-w-3 aspect-h-2">
+                <Image
+                    className="object-cover shadow-lg rounded-lg"
+                    src="/people/james.jpg"
+                    alt="James Brinkley"
+                    layout="fill"
+                  />
                 </div>
 
                 <div className="space-y-2">
@@ -159,9 +179,14 @@ export default function Home() {
             </li>
           
             <li>
-              <div className="space-y-4">
-                <div className="aspect-w-3 aspect-h-2">
-                  <img className="object-cover shadow-lg rounded-lg" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=8&amp;w=1024&amp;h=1024&amp;q=80" alt="" />
+            <div className="space-y-4">
+              <div className="aspect-w-3 aspect-h-2">
+                <Image
+                    className="object-cover shadow-lg rounded-lg"
+                    src="/people/millie.jpg"
+                    alt="Millie Brinkley-Smith"
+                    layout="fill"
+                  />
                 </div>
 
                 <div className="space-y-2">
