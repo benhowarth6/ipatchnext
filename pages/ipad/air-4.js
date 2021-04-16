@@ -150,13 +150,6 @@ export default function Home() {
                   <div className="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
                     <span>£319</span>
                   </div>
-                  <p className="mt-4 text-sm">
-                    <Link href="">
-                    <a className="font-medium text-gray-500 underline">
-                      Learn about our price policy
-                    </a>
-                    </Link>
-                  </p>
                   <div className="mt-6">
                     <div className="rounded-md shadow">
                     <Link
