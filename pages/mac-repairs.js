@@ -462,7 +462,7 @@ export default function Home() {
                   Health Checks
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  We throughly diagnose every area of your Mac both before,
+                  We thoroughly diagnose every part of your Mac both before,
                   during and post repair to ensure we’ve identified all issues.
                 </dd>
               </div>
