@@ -30,8 +30,12 @@ export default function Home() {
       <div className="bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Drop-off iPad Repair</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">Use this form to book your iPad in with us for a drop-off repair.</p>
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+              Drop-off iPad Repair
+            </p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">
+              Use this form to book your iPad in with us for a drop-off repair.
+            </p>
           </div>
         </div>
       </div>
@@ -234,7 +238,9 @@ export default function Home() {
                             <option value="lcd">LCD Replacement</option>
                             <option value="battery">Battery</option>
                             <option value="charging-port">Charging Port</option>
-                            <option value="headphone-jack">Headphone Jack</option>
+                            <option value="headphone-jack">
+                              Headphone Jack
+                            </option>
                             <option value="microphone">Microphone</option>
                             <option value="front-camera">Front Camera</option>
                             <option value="rear-camera">Rear Camera</option>
@@ -295,11 +301,61 @@ export default function Home() {
                       Choose a location, date and time for your appointment.
                     </p>
                   </div>
+                  <div className="rounded-md bg-yellow-50 mt-4 p-4">
+                    <div className="flex">
+                      <div className="flex-shrink-0">
+                        <svg
+                          className="h-5 w-5 text-yellow-400"
+                          data-todo-x-description="Heroicon name: solid/exclamation"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div className="ml-3">
+                        <h3 className="text-sm font-medium text-yellow-800">
+                          Please note
+                        </h3>
+                        <div className="mt-2 text-sm text-yellow-700">
+                          <p>
+                            We only offer appointments at Kirkstall Morrisons on Tuesday-Saturday. Please don't book in for a Sunday or Monday.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="mt-5 md:mt-0 md:col-span-2">
                   <div className="shadow overflow-visible sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
                       <div className="grid grid-cols-6 gap-6">
+                        <div className="col-span-6 sm:col-span-3">
+                          <label
+                            htmlFor="country"
+                            className="block text-sm font-medium text-gray-700"
+                          >
+                            Appointment Location
+                          </label>
+                          <select
+                            id="appointment_location"
+                            name="appointment_location"
+                            rules="required"
+                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          >
+                            <option value="trinity">Trinity Leeds</option>
+                            <option value="kirkstall">
+                              Kirkstall Morrisons
+                            </option>
+                          </select>
+                        </div>
+
                         <div className="col-span-6 sm:col-span-3">
                           <label
                             htmlFor="country"
@@ -320,56 +376,71 @@ export default function Home() {
                         </div>
 
                         <div className="col-span-6 sm:col-span-3">
-                          <label
-                            htmlFor="country"
-                            className="block text-sm font-medium text-gray-700"
-                          >
-                            Appointment Time
-                          </label>
-                          <select
-                            id="appointment_time"
-                            name="appointment_time"
-                            rules="required"
-                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                            defaultValue="default"
-                          >
-                            <option disabled value="default">
-                              {" "}
-                              -- Select your time --{" "}
-                            </option>
-                            <option>09:30-10:00</option>
-                            <option>10:00-10:30</option>
-                            <option>10:30-11:00</option>
-                            <option>11:00-11:30</option>
-                            <option>11:30-12:00</option>
-                            <option>12:00-12:30</option>
-                            <option>12:30-13:00</option>
-                            <option>13:00-13:30</option>
-                            <option>13:30-14:00</option>
-                            <option>14:00-14:30</option>
-                            <option>14:30-15:00</option>
-                            <option>15:00-15:30</option>
-                            <option>15:30-16:00</option>
-                            <option>16:00-16:30</option>
-                          </select>
-                        </div>
-
-                        <div className="col-span-6 sm:col-span-3">
-                          <label
-                            htmlFor="country"
-                            className="block text-sm font-medium text-gray-700"
-                          >
-                            Appointment Location
-                          </label>
-                          <select
-                            id="appointment_location"
-                            name="appointment_location"
-                            rules="required"
-                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                          >
-                            <option>Trinity Leeds</option>
-                            <option>Kirkstall Morrisons</option>
-                          </select>
+                          <div kw-show="fields.appointment_location === 'trinity'">
+                            <label
+                              htmlFor="appointment_time"
+                              className="block text-sm font-medium text-gray-700"
+                            >
+                              Appointment Time
+                            </label>
+                            <select
+                              id="appointment_time"
+                              name="appointment_time"
+                              rules="required"
+                              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                              defaultValue="default"
+                            >
+                              <option disabled value="default">
+                                {" "}
+                                -- Select your time --{" "}
+                              </option>
+                              <option>09:30-10:00</option>
+                              <option>10:00-10:30</option>
+                              <option>10:30-11:00</option>
+                              <option>11:00-11:30</option>
+                              <option>11:30-12:00</option>
+                              <option>12:00-12:30</option>
+                              <option>12:30-13:00</option>
+                              <option>13:00-13:30</option>
+                              <option>13:30-14:00</option>
+                              <option>14:00-14:30</option>
+                              <option>14:30-15:00</option>
+                              <option>15:00-15:30</option>
+                              <option>15:30-16:00</option>
+                              <option>16:00-16:30</option>
+                            </select>
+                          </div>
+                          <div kw-show="fields.appointment_location === 'kirkstall'">
+                            <label
+                              htmlFor="kirkstall_appointment_time"
+                              className="block text-sm font-medium text-gray-700"
+                            >
+                              Appointment Time
+                            </label>
+                            <select
+                              id="kirkstall_appointment_time"
+                              name="kirkstall_appointment_time"
+                              rules="required"
+                              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                              defaultValue="default"
+                            >
+                              <option disabled value="default">
+                                {" "}
+                                -- Select your time --{" "}
+                              </option>
+                              <option>10:30-11:00</option>
+                              <option>11:00-11:30</option>
+                              <option>11:30-12:00</option>
+                              <option>12:00-12:30</option>
+                              <option>12:30-13:00</option>
+                              <option>13:00-13:30</option>
+                              <option>13:30-14:00</option>
+                              <option>14:00-14:30</option>
+                              <option>14:30-15:00</option>
+                              <option>15:00-15:30</option>
+                              <option>15:30-16:00</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                     </div>
