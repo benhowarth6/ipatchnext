@@ -116,7 +116,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="ml-3 text-sm text-gray-700">
-                          Repaired in under 2 hours
+                          Repaired in under 2 hours*
                         </p>
                       </li>
 
@@ -272,7 +272,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 2 hours*
                     </span>
                   </li>
 
@@ -382,7 +382,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 2 hours*
                     </span>
                   </li>
 
@@ -492,7 +492,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 2 hours*
                     </span>
                   </li>
 
@@ -602,7 +602,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 2 hours*
                     </span>
                   </li>
 
@@ -712,7 +712,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 2 hours*
                     </span>
                   </li>
 
@@ -822,7 +822,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 2 hours*
                     </span>
                   </li>
 
@@ -892,7 +892,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Earpiece Speaker
+                      New Loudspeaker
                     </span>
                   </li>
 
@@ -932,7 +932,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 2 hours*
                     </span>
                   </li>
 
@@ -1042,7 +1042,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 2 hours
+                      Repaired in under 2 hours*
                     </span>
                   </li>
 
@@ -1067,7 +1067,25 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
+          <div className="mt-6 relative max-w-full mx-auto lg:mt-5">
+            <div className="max-w-md mx-auto lg:max-w-full">
+              <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+                <div className="flex-1">
+                  <div className="mt-4 text-base text-gray-600">
+                    *Same day repairs depend on part availability,
+                    please{" "}
+                    <Link href="/contact">
+                    <a className="font-semibold text-gray-900">
+                      contact us{" "}
+                    </a>
+                    </Link>
+                    to ensure your part is in stock if you require a same day repair.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 space-y-4 sm:mt-6 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
             <div className="bg-gray-100 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-white text-gray-800">
