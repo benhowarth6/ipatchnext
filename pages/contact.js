@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <NextSeo
         title="Contact Us - iPatch Trinity Leeds & Kirkstall Morisons"
-        description="We repair iPad screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        description="We repair screens, batteries, charging ports and more on a range of Apple Products. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
       <Header />
 

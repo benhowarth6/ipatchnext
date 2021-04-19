@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <NextSeo
         title="About Us - iPhone, Mac, iPad Repairs in Leeds - iPatch"
-        description="iPatch Next.JS TailWind UI tests."
+        description="Find out more about iPatch and how we work. We repair screens, batteries, charging ports and more on a range of Apple Products."
       />
       <Header />
 
