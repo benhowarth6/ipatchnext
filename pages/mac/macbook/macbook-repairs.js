@@ -120,7 +120,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="ml-3 text-sm text-gray-700">
-                          Repaired in under 45 minutes**
+                          Repaired in under 45 minutes*
                         </p>
                       </li>
 
@@ -281,7 +281,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 1 hour**
+                      Repaired in under 1 hour*
                     </span>
                   </li>
 
@@ -391,7 +391,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 45 minutes**
+                      Repaired in under 45 minutes*
                     </span>
                   </li>
 
@@ -508,7 +508,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 1 hour**
+                      Repaired in under 1 hour*
                     </span>
                   </li>
 
@@ -622,7 +622,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 30 minutes**
+                      Repaired in under 30 minutes*
                     </span>
                   </li>
 
