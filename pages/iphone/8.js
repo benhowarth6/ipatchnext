@@ -317,7 +317,7 @@ export default function Home() {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £55
+                    £45
                   </span>
                 </p>
                 <Link
