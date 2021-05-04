@@ -410,7 +410,7 @@ export default function Home() {
             <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
-                  Lightning Charging Port
+                  30-Pin Charging Port
                 </h2>
                 <p className="mt-4 text-sm text-gray-500">
                   A new charging port to restore device charging.
@@ -452,7 +452,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="text-sm text-gray-500">
-                      New Lightning Port
+                      New 30-Pin Charging Port
                     </span>
                   </li>
 
