@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TextLoop from "react-text-loop";
 import Image from "next/image";
 
 const Hero = () => {
@@ -9,7 +10,16 @@ const Hero = () => {
         <div className="mx-auto max-w-7xl w-full pt-16 pb-20 lg:py-48 lg:text-left">
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-              <span className="block xl:inline">Broken something?</span>
+              <span className="block xl:inline">Broken your</span>
+              <h2>
+                <TextLoop>
+                    <span>iPhone?</span>
+                    <span>iPad?</span>
+                    <span>Mac?</span>
+                    <span>Watch?</span>
+                    <span>iPod?</span>
+                </TextLoop>
+            </h2>
               {/* space */}
               <span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-600">
                 You're in the right place
