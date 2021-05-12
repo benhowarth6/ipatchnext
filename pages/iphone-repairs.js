@@ -18,8 +18,8 @@ export default function Home() {
       <div className="bg-gradient-to-r from-blue-500 to-blue-600">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">iPhone Repairs</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of iPhone repairs including screens, batteries, charging ports and more for nearly all models. </p>
+            <h1 className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">iPhone Repairs</h1>
+            <h2 className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of iPhone repairs including screens, batteries, charging ports and more for nearly all models. </h2>
           </div>
         </div>
       </div>
@@ -1881,6 +1881,43 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="bg-white">
+  <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-extrabold text-gray-900 text-center">
+      Everything needed for a perfect repair
+    </h2>
+    <div className="mt-12">
+      <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3">
+        <div>
+          <dt className="text-lg leading-6 font-medium text-gray-900">
+            iPhone Screen Repair
+          </dt>
+          <dd className="mt-2 text-base text-gray-500">
+            I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+          </dd>
+        </div>
+        <div>
+          <dt className="text-lg leading-6 font-medium text-gray-900">
+            iPhone Screen Repair
+          </dt>
+          <dd className="mt-2 text-base text-gray-500">
+            I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+          </dd>
+        </div>
+        <div>
+          <dt className="text-lg leading-6 font-medium text-gray-900">
+            iPhone Screen Repair
+          </dt>
+          <dd className="mt-2 text-base text-gray-500">
+            I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
 
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
