@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
-import kwesforms from "kwesforms";
+import kwesforms from 'kwesforms';
 import { useRouter } from "next/router";
 
 import Header from "../../../components/Header";
