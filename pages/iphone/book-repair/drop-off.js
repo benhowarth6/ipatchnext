@@ -347,16 +347,9 @@ export default function Home() {
                           >
                             Appointment Date
                           </label>
-                          <div className="kw-datepicker-wrapper overflow-visible">
-                            <input
-                              type="text"
-                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                              name="date"
-                              data-kw-type="datepicker"
-                              data-kw-rules="required"
-                              autoComplete="off"
-                            />
-                          </div>
+                          <div className="kw-datepicker-wrapper">
+    <input type="datepicker" name="date" />
+</div>
                         </div>
 
                         <div className="col-span-6 sm:col-span-3">
