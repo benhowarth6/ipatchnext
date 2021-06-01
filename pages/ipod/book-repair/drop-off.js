@@ -3,14 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import React, { useEffect, useState } from "react";
-import DatePicker from "react-datepicker";
 import kwesforms from "kwesforms";
 import { useRouter } from "next/router";
 
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
-
-import "react-datepicker/dist/react-datepicker.css";
 
 export default function Home() {
   const router = useRouter();
@@ -370,21 +367,21 @@ export default function Home() {
 
                         <div className="col-span-6 sm:col-span-3">
                           <label
-                            htmlFor="country"
+                            htmlFor="appointmentdate"
                             className="block text-sm font-medium text-gray-700"
                           >
                             Appointment Date
                           </label>
-                          <DatePicker 
-                              calendarStartDay={1}
-                              selected={startDate}
-                              onChange={(date) => setStartDate(date)}
-                              dateFormat="dd/MM/yyyy"
-                              name="date" 
-                              type="text" 
-                              autoComplete="off" 
-                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" 
-                              />
+                          <div className="kw-datepicker-wrapper overflow-visible">
+                            <input
+                              type="text"
+                              className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                              name="date"
+                              data-kw-type="datepicker"
+                              data-kw-rules="required"
+                              autoComplete="off"
+                            />
+                          </div>
                         </div>
 
                         <div className="col-span-6 sm:col-span-3">
