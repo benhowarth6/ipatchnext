@@ -172,18 +172,15 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-x-8">
+          <div className="mt-24 space-y-12 lg:space-y-0 sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-x-8">
             <div className="relative p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">
                   Rear Glass Casing
                 </h3>
-                <p className="absolute top-0 py-1.5 px-4 bg-yellow-100 rounded-full text-xs font-semibold uppercase tracking-wide text-yellow-800 transform -translate-y-1/2">
-                  Paired
-                </p>
                 <p className="mt-4 flex items-baseline text-gray-900">
                   <span className="text-5xl font-extrabold tracking-tight">
-                    £299
+                    £399
                   </span>
                 </p>
                 <p className="mt-6 text-gray-500">
@@ -229,6 +226,64 @@ export default function Home() {
                 </a>
               </Link>
             </div>
+
+            <div className="relative p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Battery
+                </h3>
+                <p className="absolute top-0 py-1.5 px-4 bg-yellow-100 rounded-full text-xs font-semibold uppercase tracking-wide text-yellow-800 transform -translate-y-1/2">
+                  Paired
+                </p>
+                <p className="mt-4 flex items-baseline text-gray-900">
+                  <span className="text-5xl font-extrabold tracking-tight">
+                    £85
+                  </span>
+                </p>
+                <p className="mt-6 text-gray-500">
+                A new battery to restore your device to 100%.
+                </p>
+
+                {/* Feature list */}
+                <ul role="list" className="mt-6 space-y-4">
+                  <li className="flex space-x-3">
+                    <CheckIcon className="h-5 w-5 text-green-500"></CheckIcon>
+                    <span className="ml-3 text-sm text-gray-500">
+                      Rear Housing including rear glass
+                    </span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <CheckIcon className="h-5 w-5 text-green-500"></CheckIcon>
+                    <span className="ml-3 text-sm text-gray-500">
+                      Device Dust and Water Seal
+                    </span>
+                  </li>
+                  <li className="flex">
+                    <CheckIcon className="h-5 w-5 text-green-500"></CheckIcon>
+                    <span className="ml-3 text-sm text-gray-500">
+                      Repaired in under 2 hours*
+                    </span>
+                  </li>
+                  <li className="flex">
+                    <CheckIcon className="h-5 w-5 text-green-500"></CheckIcon>
+                    <span className="ml-3 text-sm text-gray-500">
+                      Deep Clean
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <Link
+                href={{
+                  pathname: "book-repair/booking-type",
+                  query: { model: "12 Pro Max", repair: "rear-case" },
+                }}
+              >
+                <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                  Book Repair
+                </a>
+              </Link>
+            </div>
+
           </div>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
             <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
