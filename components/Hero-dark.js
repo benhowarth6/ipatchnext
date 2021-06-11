@@ -27,8 +27,8 @@ const Hero = () => {
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                     Same day, quality repairs for iPhones, iPad's, Mac's & More.
-                    We're located in Trinity Leeds and you can visit us anytime
-                    without making a booking.
+                    We have stores in Trinity Leeds and Kirkstall and you can visit us anytime
+                    with or without a booking.
                   </p>
                   <div className="mt-10 sm:mt-12">
                     <div className="sm:max-w-xl sm:mx-auto lg:mx-0">
