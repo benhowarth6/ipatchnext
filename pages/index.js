@@ -7,7 +7,7 @@ import { LocationMarkerIcon, CalendarIcon, MailIcon, QrcodeIcon, BadgeCheckIcon,
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import Hero from "../components/Hero-simple";
+import Hero from "../components/Hero-il";
 
 function Home() {
   return (
