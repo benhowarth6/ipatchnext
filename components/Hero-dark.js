@@ -1,8 +1,5 @@
 import Link from "next/link";
 import TextLoop from "react-text-loop";
-import Image from "next/image";
-
-import { StarIcon } from "@heroicons/react/solid";
 
 const Hero = () => {
   return (
