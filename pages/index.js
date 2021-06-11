@@ -17,8 +17,8 @@ function Home() {
         description="We repair iPhones, MacBooks, iPad's and More. We offer screens replacements, batteries, charging ports and even liquid damage repairs. Nearly all repairs are completed the same day and include a 90 day warranty."
         openGraph={{
           url: 'https://www.ipatchrepairs.co.uk',
-          title: 'Open Graph Title',
-          description: 'Open Graph Description',
+          title: 'iPatch Repairs - Leeds',
+          description: 'iPhone, iPad, Mac, Watch and more repairs in Leeds.',
           images: [
             {
               url: 'https://www.ipatchrepairs.co.uk/social.jpg',
