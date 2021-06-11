@@ -24,7 +24,7 @@ const Hero = () => {
                         <span>iPod?</span>
                       </TextLoop>
                     </span>
-                    <span className="block text-indigo-400">
+                    <span className="block text-blue-400">
                       You're in the right place
                     </span>
                   </h1>
@@ -46,7 +46,7 @@ const Hero = () => {
                           </div>
                           <div className="rounded-md shadow">
                             <Link href="/book-repair">
-                              <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 md:py-4 md:text-lg md:px-10">
+                              <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 md:py-4 md:text-lg md:px-10">
                                 Book a repair
                               </a>
                             </Link>
