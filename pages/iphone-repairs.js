@@ -2,11 +2,62 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+import { CheckIcon } from "@heroicons/react/outline";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 import iphoneModels from '../data/iphone/iphoneModels.json';
+
+const features = [
+  {
+    name: 'Quality parts',
+    description: 'We only use the best available parts, to ensure maximum compatibility and no issues.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Fast repairs',
+    description: 'The majority of our iPhone repairs are completed in under 1 hour, most are even quicker.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'No inspection fees',
+    description: 'We dont charge any fees to inspect your device and proivide a quotation for a repair.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Experience',
+    description: 'We have a combined 40 years experience in the repair of iPhones.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Board repairs',
+    description: 'We offer a variety of iPhone logic board repairs, should your device have a more serious issue.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Liquid damage',
+    description: 'If your iPhone has liquid damage, something something fix.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Data recovery',
+    description: 'If your device isnt powering on, we can attempt data recovery using a number of methods.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Warranty',
+    description: 'We warranty all of our repairs against defects or workmanship.',
+    icon: CheckIcon,
+  },
+]
+const metrics = [
+  { id: 1, stat: '8K+', emphasis: 'Screen repairs', rest: 'completed.' },
+  { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
+  { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
+  { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
+]
 
 export default function Home() {
   return (
@@ -145,20 +196,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                      <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                     </div>
                   </div>
                 </a>
@@ -195,41 +233,76 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white">
-  <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-extrabold text-gray-900 text-center">
-      Everything needed for a perfect repair
-    </h2>
-    <div className="mt-12">
-      <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3">
-        <div>
-          <dt className="text-lg leading-6 font-medium text-gray-900">
-            iPhone Screen Repair
-          </dt>
-          <dd className="mt-2 text-base text-gray-500">
-            I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-          </dd>
+      {/* Gradient Feature Section */}
+      <div className="bg-gradient-to-b from-blue-500 to-blue-600">
+          <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+            <h2 className="text-3xl font-extrabold text-white tracking-tight">Everything needed for a great iPhone repair</h2>
+            <p className="mt-4 max-w-3xl text-lg text-blue-200">
+              Our aim is to repair your device to the highest standard, using the best available parts and retaining all of your devices original features. 
+            </p>
+            <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+              {features.map((feature) => (
+                <div key={feature.name}>
+                  <div>
+                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
+                      <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                    </span>
+                  </div>
+                  <div className="mt-6">
+                    <h3 className="text-lg font-medium text-white">{feature.name}</h3>
+                    <p className="mt-2 text-base text-blue-200">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <div>
-          <dt className="text-lg leading-6 font-medium text-gray-900">
-            iPhone Screen Repair
-          </dt>
-          <dd className="mt-2 text-base text-gray-500">
-            I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-          </dd>
+
+        {/* Stats section */}
+        <div className="relative bg-gray-900">
+          <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
+            <div className="h-full w-full xl:grid xl:grid-cols-2">
+              <div className="h-full xl:relative xl:col-start-2">
+                <img
+                  className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+                  src="https://images.unsplash.com/photo-1581244249923-172ef5029576?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                  alt="People working on laptops"
+                />
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
+            <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+              <h2 className="text-sm font-semibold tracking-wide uppercase">
+                <span className="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">
+                  Valuable Metrics
+                </span>
+              </h2>
+              <p className="mt-3 text-3xl font-extrabold text-white">
+                Get actionable data that will help grow your business
+              </p>
+              <p className="mt-5 text-lg text-gray-300">
+                Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
+                feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet
+                lacus nibh integer quis. Eu vulputate diam sit tellus quis at.
+              </p>
+              <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+                {metrics.map((item) => (
+                  <p key={item.id}>
+                    <span className="block text-2xl font-bold text-white">{item.stat}</span>
+                    <span className="mt-1 block text-base text-gray-300">
+                      <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
+                    </span>
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <dt className="text-lg leading-6 font-medium text-gray-900">
-            iPhone Screen Repair
-          </dt>
-          <dd className="mt-2 text-base text-gray-500">
-            I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
 
 
       <div className="bg-white">
@@ -245,22 +318,7 @@ export default function Home() {
           </div>
           <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
             <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
+            <CheckIcon className="flex-shrink-0 h-6 w-6 text-blue-500"></CheckIcon>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
                   Original Parts
@@ -273,22 +331,7 @@ export default function Home() {
             </div>
 
             <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
+              <CheckIcon className="flex-shrink-0 h-6 w-6 text-blue-500"></CheckIcon>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
                   Seals
@@ -301,22 +344,7 @@ export default function Home() {
             </div>
 
             <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
+              <CheckIcon className="flex-shrink-0 h-6 w-6 text-blue-500"></CheckIcon>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
                   Health Check
@@ -330,22 +358,7 @@ export default function Home() {
             </div>
 
             <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
+              <CheckIcon className="flex-shrink-0 h-6 w-6 text-blue-500"></CheckIcon>
               <div className="ml-3">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
                   Warranty
