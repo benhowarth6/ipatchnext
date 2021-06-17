@@ -258,51 +258,65 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Stats section */}
-        <div className="relative bg-gray-900">
-          <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
-            <div className="h-full w-full xl:grid xl:grid-cols-2">
-              <div className="h-full xl:relative xl:col-start-2">
-                <img
-                  className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                  src="https://images.unsplash.com/photo-1581244249923-172ef5029576?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                  alt="People working on laptops"
-                />
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
-            <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-              <h2 className="text-sm font-semibold tracking-wide uppercase">
-                <span className="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">
-                  Valuable Metrics
-                </span>
-              </h2>
-              <p className="mt-3 text-3xl font-extrabold text-white">
-                Get actionable data that will help grow your business
+        <div className="relative bg-white">
+      <div className="lg:absolute lg:inset-0">
+        <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
+          <img
+            className="h-56 w-full object-cover lg:absolute lg:h-full"
+            src="https://images.unsplash.com/photo-1610034499386-e70758847b99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
+        <div className="lg:col-start-2 lg:pl-8">
+          <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
+            <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase">Work with us</h2>
+            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Our Process
+            </h3>
+            <p className="mt-8 text-lg text-gray-500">
+                We’ve been repairing iPhone’s for over 13 years now, and during that time we’ve learnt a lot about how the device’s work, 
+                the common issues each model have and the best repair methods. 
+            </p>
+            <div className="mt-5 prose prose-blue text-gray-500">
+              <p>
+                Starting with the most common type of iPhone repair. Screen replacements make up the majority of our repairs, to date we’ve 
+                completed well over 50k. We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the best available 
+                quality parts to ensure no loss of functionality such as True-Tone and auto-brightness. 
               </p>
-              <p className="mt-5 text-lg text-gray-300">
-                Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
-                feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet
-                lacus nibh integer quis. Eu vulputate diam sit tellus quis at.
+              <p>
+                Next up is battery replacements, again we’ve completed well over 50k of these. As such we’ve learnt how to read iPhone battery data 
+                and analytics to determine if a battery does require a replacement or if there is another issue causing excessive drain. As with our 
+                screen replacements, we only use the best available battery cells to ensure your replacement performs perfectly. 
               </p>
-              <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
-                {metrics.map((item) => (
-                  <p key={item.id}>
-                    <span className="block text-2xl font-bold text-white">{item.stat}</span>
-                    <span className="mt-1 block text-base text-gray-300">
-                      <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
-                    </span>
-                  </p>
-                ))}
-              </div>
+              <p>
+              Through or many years of experience we’ve been able to extend our offering of iPhone repair services to include the following:
+              </p>
+              <ul>
+                <li>Liquid damage repairs, include full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing. </li>
+                <li>Logic board repairs, including free diagnosis and quotations and a quick turnaround. </li>
+                <li>Data recovery for damaged beyond repair devices and software issues.</li>
+              </ul>
+              <p>
+                These services have allowed us to offer a far wider range of repairs, so no matter your issue we’re able to offer a solution. 
+              </p>
+              <h3>How we’re different</h3>
+              <p>
+                As mentioned earlier, we’ve now been repairing iPhones for quite some time. During this we’ve always been committed to using the very best 
+                available components paired with the best workmanship. This means we aren’t always the cheapest option available, but we feel we do offer 
+                the best available third party repair option for Apple products. 
+              </p>
+              <p>
+                We don’t offer different tiers or grades of parts, only the best available quality, every time. This ensures your device performs just as it 
+                did before the repair with no loss of functionality or performance. We also ensure device’s are disassembled and reassembled according to spec. 
+                We don’t leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance. 
+              </p>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
 
       <div className="bg-white">
@@ -508,7 +522,7 @@ export default function Home() {
                     </div>
 
                     <svg
-                      className="hidden md:block mx-1 h-5 w-5 text-indigo-600"
+                      className="hidden md:block mx-1 h-5 w-5 text-blue-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -538,7 +552,7 @@ export default function Home() {
           </p>
           <a
             href="book-repair"
-            className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
+            className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 sm:w-auto"
           >
             Book a Repair
           </a>
