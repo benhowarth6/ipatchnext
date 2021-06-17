@@ -82,9 +82,9 @@ export default function Home() {
           </div>
 
       <div className="mt-12 relative bg-gray-800 rounded-md">
-      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+      <div className="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-l-md"
           src="https://images.unsplash.com/photo-1595392029731-a6a252df1fd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
           alt=""
         />
@@ -110,9 +110,9 @@ export default function Home() {
     </div>
 
     <div className="mt-12 relative bg-gray-800 rounded-md">
-      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+    <div className="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-l-md"
           src="https://images.unsplash.com/photo-1585790051609-09928c362a42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3689&q=80"
           alt=""
         />
@@ -138,9 +138,9 @@ export default function Home() {
     </div>
 
     <div className="mt-12 relative bg-gray-800 rounded-md">
-      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+    <div className="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-l-md"
           src="https://images.unsplash.com/photo-1522040806052-b0aa2b039f00?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2520&q=80"
           alt=""
         />
@@ -166,9 +166,9 @@ export default function Home() {
     </div>
 
     <div className="mt-12 relative bg-gray-800 rounded-md">
-      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+    <div className="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-l-md"
           src="https://images.unsplash.com/photo-1620838106329-38480e765006?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4279&q=80"
           alt=""
         />
@@ -194,9 +194,9 @@ export default function Home() {
     </div>
 
     <div className="mt-12 relative bg-gray-800 rounded-md">
-      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+    <div className="h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-l-md"
           src="https://images.unsplash.com/photo-1590232670695-17fe0b35f454?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4912&q=80"
           alt=""
         />
