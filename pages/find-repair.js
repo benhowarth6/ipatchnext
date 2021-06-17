@@ -96,7 +96,7 @@ export default function Home() {
             From broken screens to new batteries and everything in between. If you have a broken iPhone we likely have a repair for your issue.
           </p>
           <div className="mt-8">
-            <div className="inline-flex rounded-md shadow">
+            <div className="inline-flex shadow">
             <Link href={"iphone-repairs"}>
                 <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
@@ -123,7 +123,7 @@ export default function Home() {
             From broken screens to new batteries and everything in between. If you have a broken iPad we likely have a repair for your issue.
           </p>
           <div className="mt-8">
-            <div className="inline-flex rounded-md shadow">
+            <div className="inline-flex shadow">
             <Link href={"ipad-repairs"}>
                 <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
@@ -150,7 +150,7 @@ export default function Home() {
             From broken screens to new batteries and everything in between. If you have a broken Mac we likely have a repair for your issue.
           </p>
           <div className="mt-8">
-            <div className="inline-flex rounded-md shadow">
+            <div className="inline-flex shadow">
             <Link href={"mac-repairs"}>
                 <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
@@ -177,7 +177,7 @@ export default function Home() {
             From broken screens to new batteries and everything in between. If you have a broken Watch we likely have a repair for your issue.
           </p>
           <div className="mt-8">
-            <div className="inline-flex rounded-md shadow">
+            <div className="inline-flex shadow">
             <Link href={"watch-repairs"}>
                 <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
@@ -204,7 +204,7 @@ export default function Home() {
             From broken screens to new batteries and everything in between. If you have a broken iPod we likely have a repair for your issue.
           </p>
           <div className="mt-8">
-            <div className="inline-flex rounded-md shadow">
+            <div className="inline-flex shadow">
                 <Link href={"ipod-repairs"}>
                 <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
