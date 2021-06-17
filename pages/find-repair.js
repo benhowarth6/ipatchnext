@@ -97,12 +97,11 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
-              >
+            <Link href={"iphone-repairs"}>
+                <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
-              </a>
+                </a>
+                </Link>
             </div>
           </div>
         </div>
@@ -125,12 +124,11 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
-              >
+            <Link href={"ipad-repairs"}>
+                <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
-              </a>
+                </a>
+                </Link>
             </div>
           </div>
         </div>
@@ -153,12 +151,11 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
-              >
+            <Link href={"mac-repairs"}>
+                <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
-              </a>
+                </a>
+                </Link>
             </div>
           </div>
         </div>
@@ -181,12 +178,11 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
-              >
+            <Link href={"watch-repairs"}>
+                <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
-              </a>
+                </a>
+                </Link>
             </div>
           </div>
         </div>
@@ -209,12 +205,11 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
-              >
+                <Link href={"ipod-repairs"}>
+                <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                 View models
-              </a>
+                </a>
+                </Link>
             </div>
           </div>
         </div>

@@ -109,7 +109,7 @@ export default function Home() {
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`/iphone/12-pro-max`}>
+                    <Link href={ link }>
                       <a className="text-xl font-semibold text-gray-900">
                       { model }
                       </a>
