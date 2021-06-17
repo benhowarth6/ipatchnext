@@ -271,7 +271,7 @@ export default function Home() {
       <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
         <div className="lg:col-start-2 lg:pl-8">
           <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
-            <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase">Work with us</h2>
+            <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase">Repair with us</h2>
             <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Our Process
             </h3>
@@ -319,73 +319,67 @@ export default function Home() {
     </div>
 
 
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Included as standard
-            </h2>
-            <p className="mt-4 text-lg text-gray-500">
-              We offer high quality iPhone repairs as standard, we don't do
-              tiers or low quality parts.
+    <div className="py-16 xl:py-36 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+      <div className="max-w-max lg:max-w-7xl mx-auto">
+        <div className="relative z-10 mb-8 md:mb-2 md:px-6">
+          <div className="text-base max-w-prose lg:max-w-none">
+            <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase">Transactions</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              A better way to repair
             </p>
           </div>
-          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-            <div className="flex">
-            <CheckIcon className="flex-shrink-0 h-6 w-6 text-blue-500"></CheckIcon>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Original Parts
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Where possible we only use original iPhone components, this
-                  ensures your device functions as normal after repair.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <CheckIcon className="flex-shrink-0 h-6 w-6 text-blue-500"></CheckIcon>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Seals
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Should your iPhone require a replacement frame seal, we’ll
-                  replace this anytime we open your device.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <CheckIcon className="flex-shrink-0 h-6 w-6 text-blue-500"></CheckIcon>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Health Check
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We can check functions, features and ensure everything is
-                  running smoothly. Should we find any issues we can advise you
-                  on repair options.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <CheckIcon className="flex-shrink-0 h-6 w-6 text-blue-500"></CheckIcon>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Warranty
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We offer a 90 day warranty on all our repairs, this covers any
-                  issues with the replacement parts or workmanship.
-                </dd>
-              </div>
-            </div>
-          </dl>
         </div>
+          <div className="relative md:bg-white md:p-6">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-6">
+              <div className="prose prose-blue prose-lg text-gray-500 lg:max-w-none">
+                <p>
+                  Ultrices ultricies a in odio consequat egestas rutrum. Ut vitae aliquam in ipsum. Duis nullam placerat
+                  cursus risus ultrices nisi, vitae tellus in. Qui non fugiat aut minus aut rerum. Perspiciatis iusto
+                  mollitia iste minima soluta id.
+                </p>
+                <p>
+                  Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
+                  eget. Est augue <a href="#">maecenas</a> risus nulla ultrices congue nunc tortor. Eu leo risus porta
+                  integer suspendisse sed sit ligula elit.
+                </p>
+                <ol>
+                  <li>Integer varius imperdiet sed interdum felis cras in nec nunc.</li>
+                  <li>Quam malesuada odio ut sit egestas. Elementum at porta vitae.</li>
+                </ol>
+                <p>
+                  Amet, eu nulla id molestie quis tortor. Auctor erat justo, sed pellentesque scelerisque interdum
+                  blandit lectus. Nec viverra amet ac facilisis vestibulum. Vestibulum purus nibh ac ultricies congue.
+                </p>
+              </div>
+              <div className="mt-6 prose prose-blue prose-lg text-gray-500 lg:mt-0">
+                <p>
+                  Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
+                  eget. Est augue maecenas risus nulla ultrices congue nunc tortor.
+                </p>
+                <p>
+                  Eu leo risus porta integer suspendisse sed sit ligula elit. Elit egestas lacinia sagittis pellentesque
+                  neque dignissim vulputate sodales. Diam sed mauris felis risus, ultricies mauris netus tincidunt.
+                  Mauris sit eu ac tellus nibh non eget sed accumsan. Viverra ac sed venenatis pulvinar elit. Cras diam
+                  quis tincidunt lectus. Non mi vitae, scelerisque felis nisi, netus amet nisl.
+                </p>
+                <p>
+                  Eu eu mauris bibendum scelerisque adipiscing et. Justo, elementum consectetur morbi eros, posuere
+                  ipsum tortor. Eget cursus massa sed velit feugiat sed ut. Faucibus eros mauris morbi aliquam nullam.
+                  Scelerisque elementum sit magna ullamcorper dignissim pretium.
+                </p>
+              </div>
+            </div>
+            <div className="mt-8 inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+              >
+                Contact us
+              </a>
+            </div>
+          </div>
       </div>
+    </div>
 
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">

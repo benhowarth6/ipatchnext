@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 hidden sm:grid">
+      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
@@ -36,6 +36,147 @@ export default function Home() {
               Click on your device model below to view repairs.
             </p>
           </div>
+
+      <div className="mt-12 relative bg-gray-800 rounded-md">
+      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img
+          className="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1595392029731-a6a252df1fd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+          alt=""
+        />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:ml-auto md:w-1/2 md:pl-10">
+          <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">iPhone Repairs</p>
+          <p className="mt-3 text-lg text-gray-300">
+            From broken screens to new batteries and everything in between. If you have a broken iPhone we likely have a repair for your issue.
+          </p>
+          <div className="mt-8">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+              >
+                View models
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="mt-12 relative bg-gray-800 rounded-md">
+      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img
+          className="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1585790051609-09928c362a42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3689&q=80"
+          alt=""
+        />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:ml-auto md:w-1/2 md:pl-10">
+          <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">iPad Repairs</p>
+          <p className="mt-3 text-lg text-gray-300">
+            From broken screens to new batteries and everything in between. If you have a broken iPad we likely have a repair for your issue.
+          </p>
+          <div className="mt-8">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+              >
+                View models
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="mt-12 relative bg-gray-800 rounded-md">
+      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img
+          className="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1522040806052-b0aa2b039f00?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2520&q=80"
+          alt=""
+        />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:ml-auto md:w-1/2 md:pl-10">
+          <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">Mac Repairs</p>
+          <p className="mt-3 text-lg text-gray-300">
+            From broken screens to new batteries and everything in between. If you have a broken Mac we likely have a repair for your issue.
+          </p>
+          <div className="mt-8">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+              >
+                View models
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="mt-12 relative bg-gray-800 rounded-md">
+      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img
+          className="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1620838106329-38480e765006?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4279&q=80"
+          alt=""
+        />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:ml-auto md:w-1/2 md:pl-10">
+          <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">Watch Repairs</p>
+          <p className="mt-3 text-lg text-gray-300">
+            From broken screens to new batteries and everything in between. If you have a broken Watch we likely have a repair for your issue.
+          </p>
+          <div className="mt-8">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+              >
+                View models
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="mt-12 relative bg-gray-800 rounded-md">
+      <div className="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img
+          className="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1590232670695-17fe0b35f454?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4912&q=80"
+          alt=""
+        />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:ml-auto md:w-1/2 md:pl-10">
+          <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">iPod Repairs</p>
+          <p className="mt-3 text-lg text-gray-300">
+            From broken screens to new batteries and everything in between. If you have a broken iPod we likely have a repair for your issue.
+          </p>
+          <div className="mt-8">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+              >
+                View models
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        {/* 
           <div className="mt-12 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-5 lg:max-w-none">
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
@@ -55,7 +196,7 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="text-center">
                   <Link href={`iphone-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900 line-clamp-6">
                         iPhone Repairs
                       </a>
                     </Link>
@@ -84,9 +225,9 @@ export default function Home() {
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
-                  <div className="text-center">
+                  <div className="text-center line-clamp-3">
                     <Link href={`ipad-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900 line-clamp-6">
                         iPad Repairs
                       </a>
                     </Link>
@@ -193,6 +334,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+        */}
         </div>
       </div>
 
@@ -424,7 +566,9 @@ export default function Home() {
             </li>
           </ul>
         </div>
+        */}
       </div>
+        
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
