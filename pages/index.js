@@ -160,7 +160,7 @@ function Home() {
           </div>
         </div>
         ;
-        <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+        <div className="bg-gray-800">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
@@ -444,7 +444,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+        <div className="bg-gray-800">
           <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               <span className="block">Ready to repair?</span>
