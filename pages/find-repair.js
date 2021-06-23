@@ -610,10 +610,10 @@ export default function Home() {
       */}
         
       {/* Gradient Feature Section */}
-      <div className="bg-gradient-to-b from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
           <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-white tracking-tight">Everything needed for a great repair</h2>
-            <p className="mt-4 max-w-3xl text-lg text-blue-200">
+            <h2 className="text-3xl font-extrabold text-white tracking-tight">Everything needed for a great iPhone repair</h2>
+            <p className="mt-4 max-w-3xl text-lg text-gray-200">
               Our aim is to repair your device to the highest standard, using the best available parts and retaining all of your devices original features. 
             </p>
             <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
@@ -626,14 +626,14 @@ export default function Home() {
                   </div>
                   <div className="mt-6">
                     <h3 className="text-lg font-medium text-white">{feature.name}</h3>
-                    <p className="mt-2 text-base text-blue-200">{feature.description}</p>
+                    <p className="mt-2 text-base text-gray-200">{feature.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
-
+        
       <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">

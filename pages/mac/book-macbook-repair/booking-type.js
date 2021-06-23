@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
-import kwesforms from "kwesforms";
 import { useRouter } from "next/router";
 
 import Header from "../../../components/Header";
@@ -14,11 +13,7 @@ export default function Home() {
   const { model } = router.query;
   const { repair } = router.query;
   const { price } = router.query;
-
-  useEffect(() => {
-    kwesforms.init();
-  }, []);
-
+  
   return (
     <div>
       <NextSeo
