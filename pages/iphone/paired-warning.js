@@ -225,7 +225,7 @@ export default function Home() {
               <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
                   We’ve tested this with genuine parts on iPhone 12 models. We
-                  used batteries from the same models of iPhone 12, just days
+                  used cameras from the same models of iPhone 12, just days
                   old, but without the software verification tools available to
                   Apple-certified technicians, our units had warnings about a
                   “genuine Apple Camera.” 

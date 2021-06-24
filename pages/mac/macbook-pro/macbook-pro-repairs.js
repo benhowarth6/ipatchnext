@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import { Menu, Transition } from "@headlessui/react";
 
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";

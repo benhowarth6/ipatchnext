@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import { Menu, Transition } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/outline";
 
 import Header from "../components/Header";

@@ -3,10 +3,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import { Menu, Transition } from "@headlessui/react";
+import { ChevronRightIcon } from "@heroicons/react/solid";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+
+import ipadProModels from "../../data/ipad/ipadProModels.json";
 
 export default function Home() {
   return (
@@ -51,29 +53,30 @@ export default function Home() {
           </div>
 
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`pro-12-4`}>
-                  <a>
+            {ipadProModels.filter(ipadProModels => ipadProModels.size == 12).map(filterediPadProModel=> (
+              <div key={filterediPadProModel.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0 bg-white">
+                <Link href={filterediPadProModel.link}>
+                <a>
                     <Image
-                      src="/ipad/ipad-pro-12.9-4.jpg"
-                      alt="iPad Pro 12.9-inch 4th Generation Repairs"
+                      src={filterediPadProModel.image}
+                      alt={filterediPadProModel.alt}
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
                     />
                   </a>
                 </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`pro-12-4`}>
+                    <Link href={filterediPadProModel.link}>
                       <a className="text-xl font-semibold text-gray-900">
-                        12.9-inch 4th Generation
+                      {filterediPadProModel.model}
                       </a>
                     </Link>
-                    <Link href="pro-12-4">
+                    <Link href={filterediPadProModel.link}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -81,101 +84,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`pro-12-3`}>
-                  <a>
-                    <Image
-                      src="/ipad/ipad-pro-12.9-3.jpg"
-                      alt="iPad Pro 12.9-inch 3rd Generation Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
               </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`pro-12-3`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        12.9-inch 3rd Generation
-                      </a>
-                    </Link>
-                    <Link href="pro-12-3">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`pro-12-2`}>
-                  <a>
-                    <Image
-                      src="/ipad/ipad-pro-12.9-2.jpg"
-                      alt="iPad Pro 12.9-inch 2nd Generation Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`pro-12-2`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        12.9-inch 2nd Generation
-                      </a>
-                    </Link>
-                    <Link href="pro-12-2">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`pro-12-1`}>
-                  <a>
-                    <Image
-                      src="/ipad/ipad-pro-12.9-1.jpg"
-                      alt="iPad Pro 12.9-inch 1st Generation Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`pro-12-1`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        12.9-inch 1st Generation
-                      </a>
-                    </Link>
-                    <Link href="pro-12-1">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
+      
 
           <div className="px-4 pt-12 max-w-7xl mx-auto sm:px-6">
             <div className="pb-5 border-b border-gray-200">
@@ -191,29 +103,30 @@ export default function Home() {
           </div>
 
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`pro-11-2`}>
-                  <a>
+            {ipadProModels.filter(ipadProModels => ipadProModels.size == 11).map(filterediPadProModel=> (
+              <div key={filterediPadProModel.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0 bg-white">
+                <Link href={filterediPadProModel.link}>
+                <a>
                     <Image
-                      src="/ipad/ipad-pro-11-2.jpg"
-                      alt="iPad Pro 11-inch 2nd Generation Repairs"
+                      src={filterediPadProModel.image}
+                      alt={filterediPadProModel.alt}
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
                     />
                   </a>
                 </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`pro-11-2`}>
+                    <Link href={filterediPadProModel.link}>
                       <a className="text-xl font-semibold text-gray-900">
-                        11-inch 2nd Generation
+                      {filterediPadProModel.model}
                       </a>
                     </Link>
-                    <Link href="pro-11-2">
+                    <Link href={filterediPadProModel.link}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -221,38 +134,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`pro-11-1`}>
-                  <a>
-                    <Image
-                      src="/ipad/ipad-pro-11-1.jpg"
-                      alt="iPad Pro 11-inch 1st Generation Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
               </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`pro-11-1`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        11-inch 1st Generation
-                      </a>
-                    </Link>
-                    <Link href="pro-11-1">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="px-4 pt-12 max-w-7xl mx-auto sm:px-6">
@@ -269,29 +152,30 @@ export default function Home() {
           </div>
 
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`pro-10`}>
-                  <a>
+            {ipadProModels.filter(ipadProModels => ipadProModels.size < 11).map(filterediPadProModel=> (
+              <div key={filterediPadProModel.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0 bg-white">
+                <Link href={filterediPadProModel.link}>
+                <a>
                     <Image
-                      src="/ipad/ipad-pro-10.jpg"
-                      alt="iPad Pro 10.5-inch Repairs"
+                      src={filterediPadProModel.image}
+                      alt={filterediPadProModel.alt}
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
                     />
                   </a>
                 </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                    <Link href={`pro-10`}>
+                    <Link href={filterediPadProModel.link}>
                       <a className="text-xl font-semibold text-gray-900">
-                        10.5-inch
+                      {filterediPadProModel.model}
                       </a>
                     </Link>
-                    <Link href="pro-10">
+                    <Link href={filterediPadProModel.link}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -299,40 +183,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`pro-9`}>
-                  <a>
-                    <Image
-                      src="/ipad/ipad-pro-9.jpg"
-                      alt="iPad Pro 9.7-inch Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
               </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`pro-9`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        9.7-inch
-                      </a>
-                    </Link>
-                    <Link href="pro-9">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
+
         <div className="max-w-7xl mx-auto pt-16">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
@@ -387,58 +242,17 @@ export default function Home() {
 
         <div className="max-w-2xl mx-auto sm:px-6 pt-6">
           <ul className="space-y-3" data-todo-x-max="1">
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/pro-12-4`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/ipad/ipad-pro-12-4-256.png"
-                          alt="iPad Pro 12.9-inch 4th Generation Repair"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            12.9-inch 4th Generation
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/pro-12-3`}>
+          {ipadProModels.filter(ipadProModels => ipadProModels.size == 12).map(filterediPadProModel=> (
+            <li key={filterediPadProModel.id} className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <Link href={filterediPadProModel.link}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/ipad/ipad-pro-12-3-256.png"
-                          alt="iPad Pro 12.9-inch 3rd Generation Repair"
+                          src={ filterediPadProModel.mobileimage }
+                          alt={ filterediPadProModel.alt }
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -446,118 +260,20 @@ export default function Home() {
                       </div>
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            12.9-inch 3rd Generation
+                          <p className="font-medium text-base sm:text-lg truncate">
+                            { filterediPadProModel.model }
                           </p>
                         </div>
                       </div>
                     </div>
                     <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                      <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                     </div>
                   </div>
                 </a>
               </Link>
             </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/pro-12-2`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/ipad/ipad-pro-12-2-256.png"
-                          alt="iPad Pro 12.9-inch 2nd Generation Repair"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            12.9-inch 2nd Generation
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/pro-12-1`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/ipad/ipad-pro-12-1-256.png"
-                          alt="iPad Pro 12.9-inch 1st Generation Repair"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            12.9-inch 1st Generation
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+          ))}
 
             <div className="px-4 pt-12 pb-4 max-w-7xl mx-auto sm:px-6">
               <div className="pb-5 border-b border-gray-200">
@@ -572,15 +288,16 @@ export default function Home() {
               </div>
             </div>
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/pro-11-2`}>
+            {ipadProModels.filter(ipadProModels => ipadProModels.size == 11).map(filterediPadProModel=> (
+            <li key={filterediPadProModel.id} className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <Link href={filterediPadProModel.link}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/ipad/ipad-pro-11-2-256.png"
-                          alt="iPad Pro 11-inch 2nd Generation Repair"
+                          src={ filterediPadProModel.mobileimage }
+                          alt={ filterediPadProModel.alt }
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -588,75 +305,20 @@ export default function Home() {
                       </div>
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            11-inch 2nd Generation
+                          <p className="font-medium text-base sm:text-lg truncate">
+                            { filterediPadProModel.model }
                           </p>
                         </div>
                       </div>
                     </div>
                     <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                      <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                     </div>
                   </div>
                 </a>
               </Link>
             </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/pro-11-1`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/ipad/ipad-pro-11-1-256.png"
-                          alt="iPad Pro 11-inch 1st Generation Repair"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            11-inch 1st Generation
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+          ))}
 
             <div className="px-4 pt-12 pb-4 max-w-7xl mx-auto sm:px-6">
               <div className="pb-5 border-b border-gray-200">
@@ -671,15 +333,16 @@ export default function Home() {
               </div>
             </div>
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/pro-10`}>
+            {ipadProModels.filter(ipadProModels => ipadProModels.size < 11).map(filterediPadProModel=> (
+            <li key={filterediPadProModel.id} className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <Link href={filterediPadProModel.link}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/ipad/ipad-pro-10-256.png"
-                          alt="iPad Pro 10.5-inch Repair"
+                          src={ filterediPadProModel.mobileimage }
+                          alt={ filterediPadProModel.alt }
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -687,77 +350,23 @@ export default function Home() {
                       </div>
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            10.5-inch
+                          <p className="font-medium text-base sm:text-lg truncate">
+                            { filterediPadProModel.model }
                           </p>
                         </div>
                       </div>
                     </div>
                     <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                      <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                     </div>
                   </div>
                 </a>
               </Link>
             </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/ipad/pro-9`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/ipad/ipad-pro-9-256.png"
-                          alt="iPad Pro 9.7-inch Repair"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            9.7-inch
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+          ))}
           </ul>
         </div>
+
         <div className="max-w-7xl mx-auto pt-16">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
