@@ -159,7 +159,7 @@ function Home() {
             </div>
           </div>
         </div>
-        ;
+
         <div className="bg-gray-800">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="max-w-4xl mx-auto text-center">
@@ -478,11 +478,11 @@ function Home() {
                 <div className="mt-8 sm:flex">
                   <div className="rounded-md shadow">
                     <Link href="/contact">
-                    <a
-                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
-                    >
-                      Contact us
-                    </a>
+                      <a
+                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
+                      >
+                        Contact us
+                      </a>
                     </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">

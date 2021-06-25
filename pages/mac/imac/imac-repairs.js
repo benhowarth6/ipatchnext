@@ -3,9 +3,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import { ChevronRightIcon } from "@heroicons/react/solid";
 
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
+
+import imacModels from "../../../data/mac/imacModels.json";
 
 export default function Home() {
   return (
@@ -50,29 +53,30 @@ export default function Home() {
           </div>
 
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`imac-21`}>
-                  <a>
+            {imacModels.filter(imacModels => imacModels.size == 21).map(filteredimacModel=> (
+              <div key={filteredimacModel.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0 bg-white">
+                <Link href={filteredimacModel.link}>
+                <a>
                     <Image
-                      src="/mac/imac-21.jpg"
-                      alt="iMac 21.5-inch Repairs"
+                      src={filteredimacModel.image}
+                      alt={filteredimacModel.alt}
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
                     />
                   </a>
                 </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`imac-21`}>
+                    <Link href={filteredimacModel.link}>
                       <a className="text-xl font-semibold text-gray-900">
-                        21.5-inch
+                      {filteredimacModel.model}
                       </a>
                     </Link>
-                    <Link href={`imac-21`}>
+                    <Link href={filteredimacModel.link}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -80,69 +84,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`imac-21-thin`}>
-                  <a>
-                    <Image
-                      src="/mac/imac-21-thin.jpg"
-                      alt="iMac 21.5-inch Thin Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
               </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                  <Link href={`imac-21-thin`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        21.5-inch Thin
-                      </a>
-                    </Link>
-                    <Link href={`imac-21-thin`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`imac-21-4k`}>
-                  <a>
-                    <Image
-                      src="/mac/imac-21-4k.jpg"
-                      alt="iMac 21.5-inch 4K Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                  <Link href={`imac-21-4k`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        21.5-inch 4K
-                      </a>
-                    </Link>
-                    <Link href={`imac-21-4k`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="px-4 pt-12 max-w-7xl mx-auto sm:px-6">
@@ -159,29 +102,30 @@ export default function Home() {
           </div>
 
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`imac-27`}>
-                  <a>
+            {imacModels.filter(imacModels => imacModels.size == 27).map(filteredimacModel=> (
+              <div key={filteredimacModel.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0 bg-white">
+                <Link href={filteredimacModel.link}>
+                <a>
                     <Image
-                      src="/mac/imac-27.jpg"
-                      alt="iMac 27-inch Repairs"
+                      src={filteredimacModel.image}
+                      alt={filteredimacModel.alt}
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
                     />
                   </a>
                 </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`imac-27`}>
+                    <Link href={filteredimacModel.link}>
                       <a className="text-xl font-semibold text-gray-900">
-                        27-inch
+                      {filteredimacModel.model}
                       </a>
                     </Link>
-                    <Link href={`imac-27`}>
+                    <Link href={filteredimacModel.link}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -189,69 +133,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`imac-27-thin`}>
-                  <a>
-                    <Image
-                      src="/mac/imac-27-thin.jpg"
-                      alt="iMac 27-inch Thin Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
               </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                  <Link href={`imac-27-thin`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        27-inch Thin
-                      </a>
-                    </Link>
-                    <Link href={`imac-27-thin`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`imac-27-5k`}>
-                  <a>
-                    <Image
-                      src="/mac/imac-27-5k.jpg"
-                      alt="iMac 27-inch 5k Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                  <Link href={`imac-27-5k`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        27-inch 5k
-                      </a>
-                    </Link>
-                    <Link href={`imac-27-5k`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="px-4 pt-12 max-w-7xl mx-auto sm:px-6">
@@ -268,29 +151,30 @@ export default function Home() {
           </div>
 
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-          <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`imac-pro`}>
-                  <a>
+            {imacModels.filter(imacModels => imacModels.size == "pro").map(filteredimacModel=> (
+              <div key={filteredimacModel.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0 bg-white">
+                <Link href={filteredimacModel.link}>
+                <a>
                     <Image
-                      src="/mac/imac-pro.jpg"
-                      alt="iMac Pro Repairs"
+                      src={filteredimacModel.image}
+                      alt={filteredimacModel.alt}
                       className="h-60 w-full object-cover"
                       width={1000}
                       height={750}
                     />
                   </a>
                 </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="text-center">
-                  <Link href={`imac-pro`}>
+                    <Link href={filteredimacModel.link}>
                       <a className="text-xl font-semibold text-gray-900">
-                        iMac Pro
+                      {filteredimacModel.model}
                       </a>
                     </Link>
-                    <Link href={`imac-pro`}>
+                    <Link href={filteredimacModel.link}>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
                         View Repairs
                       </button>
@@ -298,7 +182,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
+            ))}
           </div>
         </div>
         <div className="max-w-7xl mx-auto pt-16">
@@ -309,7 +194,7 @@ export default function Home() {
                   <span className="block">Not sure which iMac you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If your Mac powers on, choose Apple menu  > About This Mac.
+                  If your Mac powers on, choose Apple menu  &gt; About This Mac.
                 </p>
               </div>
             </div>
@@ -354,58 +239,17 @@ export default function Home() {
 
         <div className="max-w-2xl mx-auto sm:px-6 pt-6">
           <ul className="space-y-3" data-todo-x-max="1">
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`imac-21`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/mac/imac-21-256.png"
-                          alt="iMac 21.5-inch Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            21.5-inch Repairs
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`imac-21-thin`}>
+            {imacModels.filter(imacModels => imacModels.size == 21).map(filteredimacModel=> (
+            <li key={filteredimacModel.id} className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <Link href={filteredimacModel.link}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/imac-21-thin-256.png"
-                          alt="iMac 21.5-inch thin Repairs"
+                          src={ filteredimacModel.mobileimage }
+                          alt={ filteredimacModel.alt }
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -413,75 +257,20 @@ export default function Home() {
                       </div>
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            21.5-inch Thin
+                          <p className="font-medium text-base sm:text-lg truncate">
+                            { filteredimacModel.model }
                           </p>
                         </div>
                       </div>
                     </div>
                     <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                      <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                     </div>
                   </div>
                 </a>
               </Link>
             </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`imac-21-4k`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/mac/imac-21-4k-256.png"
-                          alt="iMac 21.5-inch 4K Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            21.5-inch 4K
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+          ))}
 
             <div className="px-4 pt-12 pb-4 max-w-7xl mx-auto sm:px-6">
               <div className="pb-5 border-b border-gray-200">
@@ -496,15 +285,16 @@ export default function Home() {
               </div>
             </div>
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`imac-27`}>
+            {imacModels.filter(imacModels => imacModels.size == 27).map(filteredimacModel=> (
+            <li key={filteredimacModel.id} className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <Link href={filteredimacModel.link}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/imac-27-256.png"
-                          alt="iMac 27-inch Repairs"
+                          src={ filteredimacModel.mobileimage }
+                          alt={ filteredimacModel.alt }
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -512,118 +302,20 @@ export default function Home() {
                       </div>
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            27-inch Repairs
+                          <p className="font-medium text-base sm:text-lg truncate">
+                            { filteredimacModel.model }
                           </p>
                         </div>
                       </div>
                     </div>
                     <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                      <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                     </div>
                   </div>
                 </a>
               </Link>
             </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`imac-27-thin`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/mac/imac-27-thin-256.png"
-                          alt="iMac 27-inch thin Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            27-inch Thin
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`imac-27-5k`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/mac/imac-27-5k-256.png"
-                          alt="iMac 27-inch 5K Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            27-inch 5K
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+          ))}
 
             <div className="px-4 pt-12 pb-4 max-w-7xl mx-auto sm:px-6">
               <div className="pb-5 border-b border-gray-200">
@@ -638,15 +330,16 @@ export default function Home() {
               </div>
             </div>
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`imac-pro`}>
+            {imacModels.filter(imacModels => imacModels.size == "pro").map(filteredimacModel=> (
+            <li key={filteredimacModel.id} className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+              <Link href={filteredimacModel.link}>
                 <a className="block ">
                   <div className="flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 flex items-center">
                       <div className="flex-shrink-0">
                         <Image
-                          src="/mac/imac-pro-256.png"
-                          alt="iMac 16-inch Repairs"
+                          src={ filteredimacModel.mobileimage }
+                          alt={ filteredimacModel.alt }
                           className="h-32 w-full object-cover"
                           width={96}
                           height={96}
@@ -654,32 +347,21 @@ export default function Home() {
                       </div>
                       <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                         <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            iMac Pro
+                          <p className="font-medium text-base sm:text-lg truncate">
+                            { filteredimacModel.model }
                           </p>
                         </div>
                       </div>
                     </div>
                     <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                      <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                     </div>
                   </div>
                 </a>
               </Link>
             </li>
+          ))}
+
           </ul>
         </div>
         <div className="max-w-7xl mx-auto pt-16">
@@ -690,7 +372,7 @@ export default function Home() {
                   <span className="block">Not sure which iMac you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If your Mac powers on, choose Apple menu  > About This Mac.
+                  If your Mac powers on, choose Apple menu  &gt; About This Mac.
                 </p>
               </div>
             </div>

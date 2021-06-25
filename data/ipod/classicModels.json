@@ -1,0 +1,35 @@
+[
+       {
+        "id": "1",
+        "model": "iPod Classic 6",
+        "image": "/ipod/ipod-classic-6.jpg",
+        "mobileimage": "/ipod/ipod-classic-6-256.png",
+        "link": "classic/classic-6",
+        "alt": "iPod Classic 6th Generation Repairs"
+       },
+       {
+        "id": "2",
+        "model": "iPod Classic 5",
+        "image": "/ipod/ipod-classic-5.jpg",
+        "mobileimage": "/ipod/ipod-classic-5-256.png",
+        "link": "classic/classic-5",
+        "alt": "iPod Classic 5th Generation Repairs"
+       },
+       {
+        "id": "3",
+        "model": "iPod Classic 4",
+        "image": "/ipod/ipod-classic-4.jpg",
+        "mobileimage": "/ipod/ipod-classic-4-256.png",
+        "link": "classic/classic-4",
+        "alt": "iPod Classic 4th Generation Repairs"
+       },
+       {
+        "id": "4",
+        "model": "iPod Classic 3",
+        "image": "/ipod/ipod-classic-3.jpg",
+        "mobileimage": "/ipod/ipod-classic-3-256.png",
+        "link": "classic/classic-3",
+        "alt": "iPod Classic 3rd Generation Repairs"
+       }
+     ]
+  

@@ -88,8 +88,8 @@ export default function Home() {
                   <span className="block">Not sure which iPad Air you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If you’re using iPadOS or iOS 12.2 or later, go to Settings >
-                  General > About > Model Name.
+                  If you’re using iPadOS or iOS 12.2 or later, go to Settings &gt;
+                  General &gt; About &gt; Model Name.
                 </p>
               </div>
             </div>
@@ -167,8 +167,8 @@ export default function Home() {
                   <span className="block">Not sure which iPad Air you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If you’re using iPadOS or iOS 12.2 or later, go to Settings >
-                  General > About > Model Name.
+                  If you’re using iPadOS or iOS 12.2 or later, go to Settings &gt;
+                  General &gt; About &gt; Model Name.
                 </p>
               </div>
             </div>

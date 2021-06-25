@@ -66,7 +66,7 @@ export default function Home() {
                   display.” It starts as a persistent message on your lock
                   screen, lasting for four days. After that, the warning lodges
                   itself in the Settings for 15 days, and then in Settings >
-                  General > About after that. It’s also added to your “device
+                  General &gt; About after that. It’s also added to your “device
                   information,” so that Apple staff can see it.
                 </p>
               </div>
@@ -139,7 +139,7 @@ export default function Home() {
                   battery.” It starts as a persistent message on your lock
                   screen, lasting for four days. After that, the warning lodges
                   itself in the Settings for 15 days, and then in Settings >
-                  General > About after that. It’s also added to your “device
+                  General &gt; About after that. It’s also added to your “device
                   information,” so that Apple staff can see it.
                 </p>
               </div>
@@ -209,7 +209,7 @@ export default function Home() {
                   Camera.” It starts as a persistent message on your lock
                   screen, lasting for four days. After that, the warning lodges
                   itself in the Settings for 15 days, and then in Settings >
-                  General > About after that. It’s also added to your “device
+                  General &gt; About after that. It’s also added to your “device
                   information,” so that Apple staff can see it.
                 </p>
               </div>

@@ -69,7 +69,7 @@ export default function Home() {
                     </Link>
                     <Link href={ link }>
                       <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
+                        View Models
                       </button>
                     </Link>
                   </div>
@@ -89,8 +89,8 @@ export default function Home() {
                   <span className="block">Not sure which iPad you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If you’re using iPadOS or iOS 12.2 or later, go to Settings >
-                  General > About > Model Name.
+                  If you’re using iPadOS or iOS 12.2 or later, go to Settings &gt;
+                  General &gt; About &gt; Model Name.
                 </p>
               </div>
             </div>
@@ -168,8 +168,8 @@ export default function Home() {
                   <span className="block">Not sure which iPad you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If you’re using iPadOS or iOS 12.2 or later, go to Settings >
-                  General > About > Model Name.
+                  If you’re using iPadOS or iOS 12.2 or later, go to Settings &gt;
+                  General &gt; About &gt; Model Name.
                 </p>
               </div>
             </div>

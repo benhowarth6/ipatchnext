@@ -3,9 +3,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import { ChevronRightIcon } from "@heroicons/react/solid";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
+import watchModels from '../data/watch/watchModels.json';
 
 export default function Home() {
   return (
@@ -35,257 +38,48 @@ export default function Home() {
               Click on your Watch model below to view repairs.
             </p>
           </div>
+
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-6`}>
-                  <a>
-                    <Image
-                      src="/watch/series-6.jpg"
-                      alt="Watch Series 6 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-6`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 6
+
+            {watchModels.map(watchModels => {
+              const { id, model, image, alt, link } = watchModels;
+              return (
+                <div key={id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                  <div className="flex-shrink-0 bg-white">
+                    <Link href={link}>
+                      <a>
+                        <Image
+                          src={image}
+                          alt={alt}
+                          className="h-60 w-full object-cover"
+                          width={1000}
+                          height={750}
+                        />
                       </a>
                     </Link>
-                    <Link href={`/watch/series-6`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
+                  </div>
+                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div className="flex-1">
+                      <div className="text-center">
+                        <Link href={link}>
+                          <a className="text-xl font-semibold text-gray-900">
+                            {model}
+                          </a>
+                        </Link>
+                        <Link href={link}>
+                          <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                            View Repairs
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-se`}>
-                  <a>
-                    <Image
-                      src="/watch/series-se.jpg"
-                      alt="Watch SE Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-se`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch SE
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-se`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-5`}>
-                  <a>
-                    <Image
-                      src="/watch/series-5.jpg"
-                      alt="Watch Series 5 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-5`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 5
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-5`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-4`}>
-                  <a>
-                    <Image
-                      src="/watch/series-4.jpg"
-                      alt="Watch Series 4 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-4`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 4
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-4`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-3`}>
-                  <a>
-                    <Image
-                      src="/watch/series-3.jpg"
-                      alt="Watch Series 3 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-3`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 3
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-3`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-2`}>
-                  <a>
-                    <Image
-                      src="/watch/series-2.jpg"
-                      alt="Watch Series 2 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-2`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 2
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-2`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-1`}>
-                  <a>
-                    <Image
-                      src="/watch/series-1.jpg"
-                      alt="Watch Series 1 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-1`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 1
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-1`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-0`}>
-                  <a>
-                    <Image
-                      src="/watch/series-0.jpg"
-                      alt="Watch 1st Generation Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-0`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch 1st Generation
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-0`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+              )
+            })}
           </div>
         </div>
+
         <div className="max-w-7xl mx-auto pt-16">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
@@ -326,349 +120,42 @@ export default function Home() {
         </div>
         <div className="max-w-2xl mx-auto sm:px-6 pt-12">
           <ul className="space-y-3" data-todo-x-max="1">
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-6`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-6-256.png"
-                          alt="Apple Watch Series 6 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 6
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-se`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-se-256.png"
-                          alt="Apple Watch SE Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch SE
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+            {watchModels.map(watchModels => {
+              const { id, model, mobileimage, alt, link } = watchModels;
+              return (
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-5`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-5-256.png"
-                          alt="Apple Watch Series 5 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                <li key={id} className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+                  <Link href={link}>
+                    <a className="block ">
+                      <div className="flex items-center sm:px-6">
+                        <div className="min-w-0 flex-1 flex items-center">
+                          <div className="flex-shrink-0">
+                            <Image
+                              src={mobileimage}
+                              alt={alt}
+                              className="h-32 w-full object-cover"
+                              width={96}
+                              height={96}
+                            />
+                          </div>
+                          <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                            <div>
+                              <p className="font-medium text-base sm:text-lg truncate">
+                                {model}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                         <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 5
-                          </p>
+                          <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                         </div>
                       </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-4`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-4-256.png"
-                          alt="Apple Watch Series 4 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 4
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-3`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-3-256.png"
-                          alt="Apple Watch Series 3 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 3
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-2`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-2-256.png"
-                          alt="Apple Watch Series 2 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 2
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-1`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-1-256.png"
-                          alt="Apple Watch Series 1 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 1
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-0`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-0-256.png"
-                          alt="Apple Watch 1st Generation Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch 1st Generation
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+                    </a>
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
         <div className="max-w-7xl mx-auto pt-16">

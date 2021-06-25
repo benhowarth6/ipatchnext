@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "model": "MacBook Air 11-inch",
+        "image": "/mac/macbook-air-11.jpg",
+        "mobileimage": "/mac/macbook-air-11-256.png",
+        "link": "macbook-air-11",
+        "alt": "MacBook Air 11-inch Repairs"
+       },
+       {
+        "id": "2",
+        "model": "MacBook Air 13-inch",
+        "image": "/mac/macbook-air-13.jpg",
+        "mobileimage": "/mac/macbook-air-13-256.png",
+        "link": "macbook-air-13",
+        "alt": "MacBook Air 13-inch Repairs"
+       },
+       {
+        "id": "3",
+        "model": "MacBook Air Retina",
+        "image": "/mac/macbook-air-13-retina.jpg",
+        "mobileimage": "/mac/macbook-air-13-retina-256.png",
+        "link": "macbook-air-13-retina",
+        "alt": "MacBook Air Retina Repairs"
+       }
+     ]
+  
