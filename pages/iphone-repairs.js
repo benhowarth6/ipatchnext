@@ -38,7 +38,7 @@ const features = [
   },
   {
     name: 'Liquid damage',
-    description: 'If your iPhone has liquid damage, something something fix.',
+    description: 'If your iPhone has liquid damage, we offer a thorough cleaning service to restore your device.',
     icon: CheckIcon,
   },
   {
@@ -48,15 +48,9 @@ const features = [
   },
   {
     name: 'Warranty',
-    description: 'We warranty all of our repairs against defects or workmanship.',
+    description: 'We warranty all of our repairs against defects or workmanship for 90 days.',
     icon: CheckIcon,
   },
-]
-const metrics = [
-  { id: 1, stat: '8K+', emphasis: 'Screen repairs', rest: 'completed.' },
-  { id: 2, stat: '25K+', emphasis: 'Batteries', rest: 'changed.' },
-  { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
-  { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
 ]
 
 export default function Home() {
@@ -276,26 +270,24 @@ export default function Home() {
                 Our Process
               </h3>
               <p className="mt-8 text-lg text-gray-500">
-                We’ve been repairing iPhone’s for over 13 years now, and during that time we’ve learnt a lot about how the device’s work,
+                We've been repairing iPhone's in Leeds for over 13 years now, and during that time we've learnt a lot about how the device's work, 
                 the common issues each model have and the best repair methods.
               </p>
               <div className="mt-5 prose prose-blue text-gray-500">
                 <p>
-                  Starting with the most common type of iPhone repair. Screen replacements make up the majority of our repairs, to date we’ve
-                  completed well over 50k. We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the best available
-                  quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.
+                Starting with the most common type of iPhone repair. Screen replacements make up the majority of our repairs, to date we've completed well over 30k. 
+                We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the best available quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.
                 </p>
                 <p>
-                  Next up is battery replacements, again we’ve completed well over 50k of these. As such we’ve learnt how to read iPhone battery data
-                  and analytics to determine if a battery does require a replacement or if there is another issue causing excessive drain. As with our
-                  screen replacements, we only use the best available battery cells to ensure your replacement performs perfectly.
+                Next up is battery replacements, again we've completed well over 50k of these. As such we've learnt how to read iPhone battery data and analytics to determine if a battery does require a replacement 
+                or if there is another issue causing excessive drain. As with our screen replacements, we only use the best available battery cells to ensure your replacement performs perfectly.
                 </p>
                 <p>
-                  Through or many years of experience we’ve been able to extend our offering of iPhone repair services to include the following:
+                Through or many years of experience we've been able to extend our offering of iPhone repair services to include the following:
                 </p>
                 <ul>
-                  <li>Liquid damage repairs, include full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing. </li>
-                  <li>Logic board repairs, including free diagnosis and quotations and a quick turnaround. </li>
+                  <li>Liquid damage repairs, include full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing.</li>
+                  <li>Logic board repairs, including free diagnosis and quotations and a quick turnaround.</li>
                   <li>Data recovery for damaged beyond repair devices and software issues.</li>
                 </ul>
                 <p>
@@ -303,14 +295,13 @@ export default function Home() {
                 </p>
                 <h3>How we’re different</h3>
                 <p>
-                  As mentioned earlier, we’ve now been repairing iPhones for quite some time. During this we’ve always been committed to using the very best
-                  available components paired with the best workmanship. This means we aren’t always the cheapest option available, but we feel we do offer
-                  the best available third party repair option for Apple products.
+                As mentioned earlier, we've now been repairing iPhones for quite some time. During this we've always been committed to using the very best available components paired with the best workmanship. 
+                This means we aren't always the cheapest option available, but we feel we do offer the best available third party repair option for Apple products.
                 </p>
                 <p>
-                  We don’t offer different tiers or grades of parts, only the best available quality, every time. This ensures your device performs just as it
-                  did before the repair with no loss of functionality or performance. We also ensure device’s are disassembled and reassembled according to spec.
-                  We don’t leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance.
+                We don't offer different tiers or grades of parts, only the best available quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance.
+                We also ensure device's are disassembled and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
+                We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance.
                 </p>
               </div>
             </div>
@@ -390,16 +381,14 @@ export default function Home() {
                 <p>
                   Here at iPatch we choose to replace not only the rear glass but the entire frame as well. Yes it is a bit more time consuming and certainly more of an expensive option but the results leave you with an iPhone looking like it did fresh out the box.
                 </p>
-                <h3>How we helped</h3>
                 <p>
-                  Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
-                  Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa,
-                  lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.
+                Another example is cheaper screen repairs which often don't use original IC's and LCD's. This means you typically loose the features which are coded to the screen such as True-Tone and auto-brightness. 
+                We ensure your new display is a quality part which supports these features and means no loss of functionality. 
                 </p>
                 <p>
-                  Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                  pellentesque. Blandit amet, sed aenean erat arcu morbi.
-                </p>
+                  We aim to offer the best available third party repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault, 
+                  we're sure we'll have a solution that you'll be happy with.
+                  </p>
               </div>
             </div>
           </div>
@@ -407,10 +396,9 @@ export default function Home() {
       </div>
 
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-          <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-            <div>
-              <h2 className="text-3xl font-extrabold text-gray-900">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="max-w-2xl lg:mx-auto lg:text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 Frequently asked questions
               </h2>
               <p className="mt-4 text-lg text-gray-500">
@@ -423,8 +411,8 @@ export default function Home() {
                 team.
               </p>
             </div>
-            <div className="mt-12 lg:mt-0 lg:col-span-2">
-              <dl className="space-y-12">
+            <div className="mt-20">
+          <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
                 <div>
                   <dt className="text-lg leading-6 font-medium text-gray-900">
                     How do I get my iPhone Repaired?
@@ -510,7 +498,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
 
       <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
