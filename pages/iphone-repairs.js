@@ -23,7 +23,7 @@ const features = [
   },
   {
     name: 'No inspection fees',
-    description: 'We dont charge any fees to inspect your device and proivide a quotation for a repair.',
+    description: 'We dont charge any fees to inspect your device and provide a quotation for a repair.',
     icon: CheckIcon,
   },
   {
@@ -43,12 +43,12 @@ const features = [
   },
   {
     name: 'Data recovery',
-    description: 'If your device isnt powering on, we can attempt data recovery using a number of methods.',
+    description: 'If your device isn\'t powering on, we can attempt data recovery using a number of methods.',
     icon: CheckIcon,
   },
   {
     name: 'Warranty',
-    description: 'We warranty all of our repairs against defects or workmanship for 90 days.',
+    description: 'All of our parts and repairs are covered by a 90 day warranty (excluding accidental damage).',
     icon: CheckIcon,
   },
 ]
@@ -270,20 +270,20 @@ export default function Home() {
                 Our Process
               </h3>
               <p className="mt-8 text-lg text-gray-500">
-                We've been repairing iPhone's in Leeds for over 13 years now, and during that time we've learnt a lot about how the device's work, 
+                We've been repairing iPhones in Leeds for over 13 years now, and during that time we've learnt a lot about how the devices work, 
                 the common issues each model have and the best repair methods.
               </p>
               <div className="mt-5 prose prose-blue text-gray-500">
                 <p>
                 Starting with the most common type of iPhone repair. Screen replacements make up the majority of our repairs, to date we've completed well over 30k. 
-                We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the best available quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.
+                We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the original quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.
                 </p>
                 <p>
                 Next up is battery replacements, again we've completed well over 50k of these. As such we've learnt how to read iPhone battery data and analytics to determine if a battery does require a replacement 
-                or if there is another issue causing excessive drain. As with our screen replacements, we only use the best available battery cells to ensure your replacement performs perfectly.
+                or if there is another issue causing excessive drain. As with our screen replacements, we only use the original battery cells to ensure your replacement performs perfectly.
                 </p>
                 <p>
-                Through or many years of experience we've been able to extend our offering of iPhone repair services to include the following:
+                Through our many years of experience we've been able to extend our offering of iPhone repair services to include the following:
                 </p>
                 <ul>
                   <li>Liquid damage repairs, include full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing.</li>
@@ -295,12 +295,12 @@ export default function Home() {
                 </p>
                 <h3>How we’re different</h3>
                 <p>
-                As mentioned earlier, we've now been repairing iPhones for quite some time. During this we've always been committed to using the very best available components paired with the best workmanship. 
-                This means we aren't always the cheapest option available, but we feel we do offer the best available third party repair option for Apple products.
+                As mentioned earlier, we've now been repairing iPhones for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
+                This means we aren't always the cheapest option available, but we feel we do offer the best available independant repair option for Apple products.
                 </p>
                 <p>
-                We don't offer different tiers or grades of parts, only the best available quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance.
-                We also ensure device's are disassembled and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
+                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance.
+                We also ensure devices are disassembled and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
                 We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance.
                 </p>
               </div>
@@ -386,7 +386,7 @@ export default function Home() {
                 We ensure your new display is a quality part which supports these features and means no loss of functionality. 
                 </p>
                 <p>
-                  We aim to offer the best available third party repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault, 
+                  We aim to offer the best available independant repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault, 
                   we're sure we'll have a solution that you'll be happy with.
                   </p>
               </div>
