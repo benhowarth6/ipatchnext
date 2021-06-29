@@ -4,11 +4,55 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { ChevronRightIcon } from "@heroicons/react/solid";
+import { CheckIcon } from "@heroicons/react/outline";
 
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 
 import imacModels from "../../../data/mac/imacModels.json";
+
+const features = [
+  {
+    name: 'Quality parts',
+    description: 'We only use the best available parts, to ensure maximum compatibility and no issues.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Fast repairs',
+    description: 'The majority of our iMac repairs are completed in the same day, most are even quicker.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'No inspection fees',
+    description: 'We dont charge any fees to inspect your device and provide a quotation for a repair.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Experience',
+    description: 'We have a combined 40 years experience in the repair of Mac\'s.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Drive replacements',
+    description: 'We offer a variety of iMac drive upgrades, should your Mac need a speed boost.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Screen replacements',
+    description: 'If your iMac has a damaged display, we offer quick replacements to reduce downtime.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Data recovery',
+    description: 'If your device isn\'t powering on, we can attempt data recovery using a number of methods.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Warranty',
+    description: 'All of our parts and repairs are covered by a 90 day warranty (excluding accidental damage).',
+    icon: CheckIcon,
+  },
+]
 
 export default function Home() {
   return (
@@ -389,6 +433,32 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Gradient Feature Section */}
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-gray-800 tracking-tight">Everything needed for a great iMac repair</h2>
+          <p className="mt-4 max-w-3xl text-lg text-gray-800">
+            Our aim is to repair your device to the highest standard, using the best available parts and retaining all of your devices original features.
+          </p>
+          <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+            {features.map((feature) => (
+              <div key={feature.name}>
+                <div>
+                  <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-400 bg-opacity-10">
+                    <feature.icon className="h-6 w-6 text-gray-800" aria-hidden="true" />
+                  </span>
+                </div>
+                <div className="mt-6">
+                  <h3 className="text-lg font-medium text-gray-800">{feature.name}</h3>
+                  <p className="mt-2 text-base text-gray-800">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );

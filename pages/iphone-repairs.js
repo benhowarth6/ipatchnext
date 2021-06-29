@@ -296,7 +296,7 @@ export default function Home() {
                 <h3>How we’re different</h3>
                 <p>
                 As mentioned earlier, we've now been repairing iPhones for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
-                This means we aren't always the cheapest option available, but we feel we do offer the best available independant repair option for Apple products.
+                This means we aren't always the cheapest option available, but we feel we do offer the best available independent repair option for Apple products.
                 </p>
                 <p>
                 We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance.
@@ -386,7 +386,7 @@ export default function Home() {
                 We ensure your new display is a quality part which supports these features and means no loss of functionality. 
                 </p>
                 <p>
-                  We aim to offer the best available independant repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault, 
+                  We aim to offer the best available independent repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault, 
                   we're sure we'll have a solution that you'll be happy with.
                   </p>
               </div>
