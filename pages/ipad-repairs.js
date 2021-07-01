@@ -5,7 +5,6 @@ import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 import { CheckIcon } from "@heroicons/react/outline";
-import { Menu, Transition } from "@headlessui/react";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";

@@ -22,7 +22,7 @@ module.exports = {
       gray: colors.coolGray,
       blue: colors.blue,
       green: colors.green,
-      lightBlue: colors.lightBlue,
+      lightBlue: colors.sky,
       yellow: colors.yellow,
     }
   },
