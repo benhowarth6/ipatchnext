@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import kwesforms from "kwesforms";
 import { useRouter } from "next/router";
 
@@ -14,6 +14,7 @@ export default function Home() {
   const { model } = router.query;
   const { repair } = router.query;
   const { price } = router.query;
+  const [startDate, setStartDate] = useState(new Date());
 
   useEffect(() => {
     kwesforms.init();
@@ -355,7 +356,7 @@ export default function Home() {
                             </option>
                           </select>
                         </div>
-
+                        
                         <div className="col-span-6 sm:col-span-3">
                           <label
                             htmlFor="country"
