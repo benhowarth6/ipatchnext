@@ -15,7 +15,7 @@ export default function Home() {
       />
       <Header />
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Book a repair</p>
@@ -111,25 +111,25 @@ export default function Home() {
               <Image
                 src="/icons/macbook.jpg"
                 className="inline-block h-14 w-14 rounded-md"
-                alt="Book a MacBook Repair"
+                alt="Book a Mac Repair"
                 width={56}
                 height={56}
               />
               <div className="mt-8">
                 <h3 className="text-lg font-medium">
-                  <Link href="mac/book-macbook-repair/booking-type">
+                  <Link href="mac/book-repair/booking-type">
                     <a className="focus:outline-none">
                       {/* Extend touch target to entire panel */}
                       <span
                         className="absolute inset-0"
                         aria-hidden="true"
                       ></span>
-                      MacBook Repair
+                      Mac Repair
                     </a>
                   </Link>
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
-                  Click here to book your MacBook in for repair with us.
+                  Click here to book your Mac in for repair with us.
                 </p>
               </div>
               <span
@@ -147,47 +147,7 @@ export default function Home() {
               </span>
             </div>
 
-            <div className="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500">
-              <Image
-                src="/icons/imac.jpg"
-                className="inline-block h-14 w-14 rounded-md"
-                alt="Book a iMac Repair"
-                width={56}
-                height={56}
-              />
-              <div className="mt-8">
-                <h3 className="text-lg font-medium">
-                  <Link href="mac/book-imac-repair/booking-type">
-                    <a className="focus:outline-none">
-                      {/* Extend touch target to entire panel */}
-                      <span
-                        className="absolute inset-0"
-                        aria-hidden="true"
-                      ></span>
-                      iMac Repair
-                    </a>
-                  </Link>
-                </h3>
-                <p className="mt-2 text-sm text-gray-500">
-                  Click here to book your iMac in for repair with us.
-                </p>
-              </div>
-              <span
-                className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
-                aria-hidden="true"
-              >
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"></path>
-                </svg>
-              </span>
-            </div>
-
-            <div className="sm:rounded-bl-lg  relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500">
+            <div className="    relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500">
               <Image
                 src="/icons/watch.jpg"
                 className="inline-block h-14 w-14 rounded-md"
@@ -227,7 +187,7 @@ export default function Home() {
               </span>
             </div>
 
-            <div className="rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500">
+            <div className="sm:rounded-bl-lg  relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500">
               <Image
                 src="/icons/ipod.jpg"
                 className="inline-block h-14 w-14 rounded-md"
@@ -250,6 +210,46 @@ export default function Home() {
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
                   Click here to book your iPod in for repair with us.
+                </p>
+              </div>
+              <span
+                className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
+                aria-hidden="true"
+              >
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"></path>
+                </svg>
+              </span>
+            </div>
+
+            <div className="   rounded-bl-lg rounded-br-lg sm:rounded-bl-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500">
+              <Image
+                src="/icons/other.jpg"
+                className="inline-block h-14 w-14 rounded-md"
+                alt="Book something else in for repair"
+                width={56}
+                height={56}
+              />
+              <div className="mt-8">
+                <h3 className="text-lg font-medium">
+                  <Link href="other/book-repair/booking-type">
+                    <a className="focus:outline-none">
+                      {/* Extend touch target to entire panel */}
+                      <span
+                        className="absolute inset-0"
+                        aria-hidden="true"
+                      ></span>
+                      Other
+                    </a>
+                  </Link>
+                </h3>
+                <p className="mt-2 text-sm text-gray-500">
+                  Click here to book your something else in for repair with us.
                 </p>
               </div>
               <span

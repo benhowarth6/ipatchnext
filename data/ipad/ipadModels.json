@@ -1,0 +1,59 @@
+[
+    {
+        "id": "1",
+        "model": "iPad 8",
+        "image": "/ipad/ipad-8.jpg",
+        "mobileimage": "/ipad/ipad-8-256.png",
+        "link": "/ipad/ipad-8",
+        "alt": "iPad 8 Repairs"
+       },
+       {
+        "id": "2",
+        "model": "iPad 7",
+        "image": "/ipad/ipad-7.jpg",
+        "mobileimage": "/ipad/ipad-7-256.png",
+        "link": "/ipad/ipad-7",
+        "alt": "iPad 7 Repairs"
+       },
+       {
+        "id": "3",
+        "model": "iPad 6",
+        "image": "/ipad/ipad-6.jpg",
+        "mobileimage": "/ipad/ipad-6-256.png",
+        "link": "/ipad/ipad-6",
+        "alt": "iPad 6 Repairs"
+       },
+       {
+        "id": "4",
+        "model": "iPad 5",
+        "image": "/ipad/ipad-5.jpg",
+        "mobileimage": "/ipad/ipad-5-256.png",
+        "link": "/ipad/ipad-5",
+        "alt": "iPad 5 Repairs"
+       },
+       {
+        "id": "5",
+        "model": "iPad 4",
+        "image": "/ipad/ipad-4.jpg",
+        "mobileimage": "/ipad/ipad-4-256.png",
+        "link": "/ipad/ipad-4",
+        "alt": "iPad 4 Repairs"
+       },
+       {
+        "id": "6",
+        "model": "iPad 3",
+        "image": "/ipad/ipad-3.jpg",
+        "mobileimage": "/ipad/ipad-3-256.png",
+        "link": "/ipad/ipad-3",
+        "alt": "iPad 3 Repairs"
+       },
+       {
+        "id": "7",
+        "model": "iPad 2",
+        "image": "/ipad/ipad-2.jpg",
+        "mobileimage": "/ipad/ipad-2-256.png",
+        "link": "/ipad/ipad-2",
+        "alt": "iPad 2 Repairs"
+       }
+     ]
+  

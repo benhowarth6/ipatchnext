@@ -3,10 +3,53 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import { Menu, Transition } from "@headlessui/react";
+import { CheckIcon } from "@heroicons/react/outline";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
+const features = [
+  {
+    name: 'Quality parts',
+    description: 'We only use the best available parts, to ensure maximum compatibility and no issues.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Fast repairs',
+    description: 'The majority of our repairs are completed in under 1 hour, most are even quicker.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'No inspection fees',
+    description: 'We dont charge any fees to inspect your device and proivide a quotation for a repair.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Experience',
+    description: 'We have a combined 40 years experience in the repair of iPhones.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Board repairs',
+    description: 'We offer a variety of logic board repairs, should your device have a more serious issue.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Liquid damage',
+    description: 'If your device has liquid damage, we offer a thorough cleaning service to restore your device.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Data recovery',
+    description: 'If your device isnt powering on, we can attempt data recovery using a number of methods.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Warranty',
+    description: 'We warranty all of our repairs against defects or workmanship.',
+    icon: CheckIcon,
+  },
+]
 
 export default function Home() {
   return (
@@ -17,7 +60,7 @@ export default function Home() {
       />
       <Header />
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Find a repair</p>
@@ -26,7 +69,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 hidden sm:grid">
+      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
@@ -36,6 +79,7 @@ export default function Home() {
               Click on your device model below to view repairs.
             </p>
           </div>
+
           <div className="mt-12 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-5 lg:max-w-none">
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0 bg-white">
@@ -55,7 +99,7 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="text-center">
                   <Link href={`iphone-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900 line-clamp-6">
                         iPhone Repairs
                       </a>
                     </Link>
@@ -84,9 +128,9 @@ export default function Home() {
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
-                  <div className="text-center">
+                  <div className="text-center line-clamp-3">
                     <Link href={`ipad-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900">
+                      <a className="text-xl font-semibold text-gray-900 line-clamp-6">
                         iPad Repairs
                       </a>
                     </Link>
@@ -195,7 +239,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      
       <div className="bg-gray-50 pt-16 pb-20 lg:pt-24 lg:pb-28 lg:px-8 md:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center">
@@ -425,134 +469,32 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Included as standard
-            </h2>
-            <p className="mt-4 text-lg text-gray-500">
-              We offer high quality repairs as standard, we don't do tiers
-              or low quality parts.
+        
+      {/* Gradient Feature Section */}
+      <div className="bg-gray-800">
+          <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+            <h2 className="text-3xl font-extrabold text-white tracking-tight">Everything needed for a great repair</h2>
+            <p className="mt-4 max-w-3xl text-lg text-gray-200">
+              Our aim is to repair your device to the highest standard, using the best available parts and retaining all of your devices original features. 
             </p>
+            <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+              {features.map((feature) => (
+                <div key={feature.name}>
+                  <div>
+                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
+                      <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                    </span>
+                  </div>
+                  <div className="mt-6">
+                    <h3 className="text-lg font-medium text-white">{feature.name}</h3>
+                    <p className="mt-2 text-base text-gray-200">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Original Parts
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Where possible we only use original components, this
-                  ensures your device functions as normal after repair.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Quick Turnaround
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We aim to complete nearly all repairs in the same day, however most 
-                  are much quicker usually within the hour.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Health Check
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We can check functions, features and ensure everything is
-                  running smoothly. Should we find any issues we can advise you
-                  on repair options.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Warranty
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We offer a 90 day warranty on all our repairs, this covers any
-                  issues with the replacement parts or workmanship.
-                </dd>
-              </div>
-            </div>
-          </dl>
         </div>
-      </div>
-
+        
       <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">

@@ -15,7 +15,7 @@ export default function Home() {
       />
       <Header />
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Paired Component Warnings</p>
@@ -66,7 +66,7 @@ export default function Home() {
                   display.” It starts as a persistent message on your lock
                   screen, lasting for four days. After that, the warning lodges
                   itself in the Settings for 15 days, and then in Settings >
-                  General > About after that. It’s also added to your “device
+                  General &gt; About after that. It’s also added to your “device
                   information,” so that Apple staff can see it.
                 </p>
               </div>
@@ -139,7 +139,7 @@ export default function Home() {
                   battery.” It starts as a persistent message on your lock
                   screen, lasting for four days. After that, the warning lodges
                   itself in the Settings for 15 days, and then in Settings >
-                  General > About after that. It’s also added to your “device
+                  General &gt; About after that. It’s also added to your “device
                   information,” so that Apple staff can see it.
                 </p>
               </div>
@@ -209,7 +209,7 @@ export default function Home() {
                   Camera.” It starts as a persistent message on your lock
                   screen, lasting for four days. After that, the warning lodges
                   itself in the Settings for 15 days, and then in Settings >
-                  General > About after that. It’s also added to your “device
+                  General &gt; About after that. It’s also added to your “device
                   information,” so that Apple staff can see it.
                 </p>
               </div>
@@ -225,7 +225,7 @@ export default function Home() {
               <div className="mt-5 text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
                   We’ve tested this with genuine parts on iPhone 12 models. We
-                  used batteries from the same models of iPhone 12, just days
+                  used cameras from the same models of iPhone 12, just days
                   old, but without the software verification tools available to
                   Apple-certified technicians, our units had warnings about a
                   “genuine Apple Camera.” 

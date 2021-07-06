@@ -1311,7 +1311,7 @@ export default function Home() {
                       Original Components
                     </dt>
                     <dd className="mt-2 text-base text-gray-500">
-                      We only use original iPad components where at all
+                      We only use original iPod components where at all
                       possible, this ensures your iPod works as expected after
                       any repairs and no loss of functionality.
                     </dd>

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "model": "iPod Touch 7",
+        "image": "/ipod/ipod-touch-7.jpg",
+        "mobileimage": "/ipod/ipod-touch-7-256.png",
+        "link": "touch/touch-7",
+        "alt": "iPod Touch 7th Generation Repairs"
+       },
+       {
+        "id": "2",
+        "model": "iPod Touch 6",
+        "image": "/ipod/ipod-touch-6.jpg",
+        "mobileimage": "/ipod/ipod-touch-6-256.png",
+        "link": "touch/touch-6",
+        "alt": "iPod Touch 6th Generation Repairs"
+       },
+       {
+        "id": "3",
+        "model": "iPod Touch 5",
+        "image": "/ipod/ipod-touch-5.jpg",
+        "mobileimage": "/ipod/ipod-touch-5-256.png",
+        "link": "touch/touch-5",
+        "alt": "iPod Touch 5th Generation Repairs"
+       },
+       {
+        "id": "4",
+        "model": "iPod Touch 4",
+        "image": "/ipod/ipod-touch-4.jpg",
+        "mobileimage": "/ipod/ipod-touch-4-256.png",
+        "link": "touch/touch-4",
+        "alt": "iPod Touch 4th Generation Repairs"
+       },
+       {
+        "id": "5",
+        "model": "iPod Touch 3",
+        "image": "/ipod/ipod-touch-3.jpg",
+        "mobileimage": "/ipod/ipod-touch-3-256.png",
+        "link": "touch/touch-3",
+        "alt": "iPod Touch 3rd Generation Repairs"
+       },
+       {
+        "id": "6",
+        "model": "iPod Touch 2",
+        "image": "/ipod/ipod-touch-2.jpg",
+        "mobileimage": "/ipod/ipod-touch-2-256.png",
+        "link": "touch/touch-2",
+        "alt": "iPod Touch 2nd Generation Repairs"
+        }
+     ]
+  

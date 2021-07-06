@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import kwesforms from "kwesforms";
 import { useRouter } from "next/router";
 
@@ -14,7 +14,6 @@ export default function Home() {
   const { model } = router.query;
   const { repair } = router.query;
   const { price } = router.query;
-  const [startDate, setStartDate] = useState(new Date());
 
   useEffect(() => {
     kwesforms.init();
@@ -28,7 +27,7 @@ export default function Home() {
       />
       <Header />
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Drop-off iPod Touch Repair</p>
@@ -336,7 +335,7 @@ export default function Home() {
 
                         <div className="col-span-6 sm:col-span-3">
                           <label
-                            htmlFor="appointmentdate"
+                            htmlFor="country"
                             className="block text-sm font-medium text-gray-700"
                           >
                             Appointment Date

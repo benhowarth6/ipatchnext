@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
-import kwesforms from "kwesforms";
 import { useRouter } from "next/router";
 
 import Header from "../../../components/Header";
@@ -14,11 +13,7 @@ export default function Home() {
   const { model } = router.query;
   const { repair } = router.query;
   const { price } = router.query;
-
-  useEffect(() => {
-    kwesforms.init();
-  }, []);
-
+  
   return (
     <div>
       <NextSeo
@@ -27,7 +22,7 @@ export default function Home() {
       />
       <Header />
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="pt-12 sm:pt-16 lg:pt-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -38,7 +33,7 @@ export default function Home() {
         </div>
         <div className="mt-8 pb-12 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
           <div className="relative">
-            <div className="absolute inset-0 h-3/4 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+            <div className="absolute inset-0 h-3/4 bg-gray-800"></div>
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
                 <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">

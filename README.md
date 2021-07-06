@@ -1,4 +1,4 @@
-iPatch NextJS Build 1 - TailWind UI 
+iPatch NextJS Build - TailWind UI 
 
 ## Getting Started
 

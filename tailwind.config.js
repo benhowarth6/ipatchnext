@@ -21,7 +21,8 @@ module.exports = {
       white: colors.white,
       gray: colors.coolGray,
       blue: colors.blue,
-      lightBlue: colors.lightBlue,
+      green: colors.green,
+      lightBlue: colors.sky,
       yellow: colors.yellow,
     }
   },
@@ -32,5 +33,6 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/typography')
   ],
 }

@@ -2,9 +2,56 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+import { CheckIcon } from "@heroicons/react/outline";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
+import iphoneModels from '../data/iphone/iphoneModels.json';
+
+const features = [
+  {
+    name: 'Quality parts',
+    description: 'We only use the best available parts, to ensure maximum compatibility and no issues.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Fast repairs',
+    description: 'The majority of our iPhone repairs are completed in under 1 hour, most are even quicker.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'No inspection fees',
+    description: 'We dont charge any fees to inspect your device and provide a quotation for a repair.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Experience',
+    description: 'We have a combined 40 years experience in the repair of iPhones.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Board repairs',
+    description: 'We offer a variety of iPhone logic board repairs, should your device have a more serious issue.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Liquid damage',
+    description: 'If your iPhone has liquid damage, we offer a thorough cleaning service to restore your device.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Data recovery',
+    description: 'If your device isn\'t powering on, we can attempt data recovery using a number of methods.',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Warranty',
+    description: 'All of our parts and repairs are covered by a 90 day warranty (excluding accidental damage).',
+    icon: CheckIcon,
+  },
+]
 
 export default function Home() {
   return (
@@ -15,11 +62,11 @@ export default function Home() {
       />
       <Header />
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">iPhone Repairs</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of iPhone repairs including screens, batteries, charging ports and more for nearly all models. </p>
+            <h1 className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">iPhone Repairs</h1>
+            <h2 className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of iPhone repairs including screens, batteries, charging ports and more for nearly all models. </h2>
           </div>
         </div>
       </div>
@@ -35,750 +82,43 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/12-pro-max`}>
-                  <a>
-                    <Image
-                      src="/iphone/12-pro-max.jpg"
-                      alt="iPhone 12 Pro Max Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/12-pro-max`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 12 Pro Max
+
+            {iphoneModels.map(iphoneModel => {
+              const { id, model, image, alt, link } = iphoneModel;
+              return (
+                <div key={id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                  <div className="flex-shrink-0 bg-white">
+                    <Link href={link}>
+                      <a>
+                        <Image
+                          src={image}
+                          alt={alt}
+                          className="h-60 w-full object-cover"
+                          width={1000}
+                          height={750}
+                        />
                       </a>
                     </Link>
-                    <Link href="/iphone/12-pro-max">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
+                  </div>
+                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div className="flex-1">
+                      <div className="text-center">
+                        <Link href={link}>
+                          <a className="text-xl font-semibold text-gray-900">
+                            {model}
+                          </a>
+                        </Link>
+                        <Link href={link}>
+                          <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                            View Repairs
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/12-pro`}>
-                  <a>
-                    <Image
-                      src="/iphone/12-pro.jpg"
-                      alt="iPhone 12 Pro Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/12-pro`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 12 Pro
-                      </a>
-                    </Link>
-                    <Link href="/iphone/12-pro">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/12`}>
-                  <a>
-                    <Image
-                      src="/iphone/12.jpg"
-                      alt="iPhone 12 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/12`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 12
-                      </a>
-                    </Link>
-                    <Link href="/iphone/12">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/12-mini`}>
-                  <a>
-                    <Image
-                      src="/iphone/12-mini.jpg"
-                      alt="iPhone 12 Mini Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/12-mini`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 12 Mini
-                      </a>
-                    </Link>
-                    <Link href="/iphone/12-mini">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/11-pro-max`}>
-                  <a>
-                    <Image
-                      src="/iphone/11-pro-max.jpg"
-                      alt="iPhone 11 Pro Max Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/11-pro-max`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 11 Pro Max
-                      </a>
-                    </Link>
-                    <Link href="/iphone/11-pro-max">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/11-pro`}>
-                  <a>
-                    <Image
-                      src="/iphone/11-pro.jpg"
-                      alt="iPhone 11 Pro Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/11-pro`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 11 Pro
-                      </a>
-                    </Link>
-                    <Link href="/iphone/11-pro">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/11`}>
-                  <a>
-                    <Image
-                      src="/iphone/11.jpg"
-                      alt="iPhone 11 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/11`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 11
-                      </a>
-                    </Link>
-                    <Link href="/iphone/11">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/xs-max`}>
-                  <a>
-                    <Image
-                      src="/iphone/xs-max.jpg"
-                      alt="iPhone XS Max Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/xs-max`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone XS Max
-                      </a>
-                    </Link>
-                    <Link href="/iphone/xs-max">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/xs`}>
-                  <a>
-                    <Image
-                      src="/iphone/xs.jpg"
-                      alt="iPhone XS Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/xs`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone XS
-                      </a>
-                    </Link>
-                    <Link href="/iphone/xs">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/xr`}>
-                  <a>
-                    <Image
-                      src="/iphone/xr.jpg"
-                      alt="iPhone XR Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/xr`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone XR
-                      </a>
-                    </Link>
-                    <Link href="/iphone/xr">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/x`}>
-                  <a>
-                    <Image
-                      src="/iphone/x.jpg"
-                      alt="iPhone X Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/x`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone X
-                      </a>
-                    </Link>
-                    <Link href="/iphone/x">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/se-2`}>
-                  <a>
-                    <Image
-                      src="/iphone/se-2.jpg"
-                      alt="iPhone SE 2 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/se-2`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone SE 2
-                      </a>
-                    </Link>
-                    <Link href="/iphone/se-2">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/8-plus`}>
-                  <a>
-                    <Image
-                      src="/iphone/8-plus.jpg"
-                      alt="iPhone 8 Plus Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/8-plus`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 8 Plus
-                      </a>
-                    </Link>
-                    <Link href="/iphone/8-plus">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/8`}>
-                  <a>
-                    <Image
-                      src="/iphone/8.jpg"
-                      alt="iPhone 8 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/8`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 8
-                      </a>
-                    </Link>
-                    <Link href="/iphone/8">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/7-plus`}>
-                  <a>
-                    <Image
-                      src="/iphone/7-plus.jpg"
-                      alt="iPhone 7 Plus Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/7-plus`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 7 Plus
-                      </a>
-                    </Link>
-                    <Link href="/iphone/7-plus">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/7`}>
-                  <a>
-                    <Image
-                      src="/iphone/7.jpg"
-                      alt="iPhone 7 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/7`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 7
-                      </a>
-                    </Link>
-                    <Link href="/iphone/7">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/6s-plus`}>
-                  <a>
-                    <Image
-                      src="/iphone/6s-plus.jpg"
-                      alt="iPhone 6S Plus Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/6s-plus`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 6S Plus
-                      </a>
-                    </Link>
-                    <Link href="/iphone/6s-plus">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/6s`}>
-                  <a>
-                    <Image
-                      src="/iphone/6s.jpg"
-                      alt="iPhone 6S Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/6s`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 6S
-                      </a>
-                    </Link>
-                    <Link href="/iphone/6s">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/6-plus`}>
-                  <a>
-                    <Image
-                      src="/iphone/6-plus.jpg"
-                      alt="iPhone 6 Plus Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/6-plus`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 6 Plus
-                      </a>
-                    </Link>
-                    <Link href="/iphone/6-plus">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/6`}>
-                  <a>
-                    <Image
-                      src="/iphone/6.jpg"
-                      alt="iPhone 6 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/6`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 6
-                      </a>
-                    </Link>
-                    <Link href="/iphone/6">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/se-1`}>
-                  <a>
-                    <Image
-                      src="/iphone/se.jpg"
-                      alt="iPhone SE Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/se-1`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone SE
-                      </a>
-                    </Link>
-                    <Link href="/iphone/se-1">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/5s`}>
-                  <a>
-                    <Image
-                      src="/iphone/5s.jpg"
-                      alt="iPhone 5S Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/5s`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 5S
-                      </a>
-                    </Link>
-                    <Link href="/iphone/5s">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/5c`}>
-                  <a>
-                    <Image
-                      src="/iphone/5c.jpg"
-                      alt="iPhone 5C Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/5c`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 5C
-                      </a>
-                    </Link>
-                    <Link href="/iphone/5c">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/iphone/5`}>
-                  <a>
-                    <Image
-                      src="/iphone/5.jpg"
-                      alt="iPhone 5 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/iphone/5`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPhone 5
-                      </a>
-                    </Link>
-                    <Link href="/iphone/5">
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+              )
+            })}
           </div>
         </div>
 
@@ -790,8 +130,8 @@ export default function Home() {
                   <span className="block">Not sure which iPhone you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If you’re using iOS 12.2 or later, go to Settings > General >
-                  About > Model Name.
+                  If you’re using iOS 12.2 or later, go to Settings &gt; General &gt;
+                  About &gt; Model Name.
                 </p>
               </div>
             </div>
@@ -822,1037 +162,42 @@ export default function Home() {
         </div>
         <div className="max-w-2xl mx-auto sm:px-6 pt-12">
           <ul className="space-y-3" data-todo-x-max="1">
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/12-pro-max`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/12-pro-max-256.png"
-                          alt="iPhone 12 Pro Max Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg truncate">
-                            iPhone 12 Pro Max
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/12-pro`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/12-pro-256.png"
-                          alt="iPhone 12 Pro Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg truncate">
-                            iPhone 12 Pro
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+            {iphoneModels.map(iphoneModel => {
+              const { id, model, mobileimage, alt, link } = iphoneModel;
+              return (
 
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/12`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/12-256.png"
-                          alt="iPhone 12 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                <li key={id} className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
+                  <Link href={link}>
+                    <a className="block ">
+                      <div className="flex items-center sm:px-6">
+                        <div className="min-w-0 flex-1 flex items-center">
+                          <div className="flex-shrink-0">
+                            <Image
+                              src={mobileimage}
+                              alt={alt}
+                              className="h-32 w-full object-cover"
+                              width={96}
+                              height={96}
+                            />
+                          </div>
+                          <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                            <div>
+                              <p className="font-medium text-base sm:text-lg truncate">
+                                {model}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                         <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 12
-                          </p>
+                          <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                         </div>
                       </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/12-mini`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/12-mini-256.png"
-                          alt="iPhone 12 Mini Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 12 Mini
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/11-pro-max`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/11-pro-max-256.png"
-                          alt="iPhone 11 Pro Max Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 11 Pro Max
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/11-pro`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/11-pro-256.png"
-                          alt="iPhone 11 Pro Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 11 Pro
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/11`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/11-256.png"
-                          alt="iPhone 11 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 11
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/xs-max`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/xs-max-256.png"
-                          alt="iPhone XS Max Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone XS Max
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/xs`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/xs-256.png"
-                          alt="iPhone XS Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone XS
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/xr`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/xr-256.png"
-                          alt="iPhone XR Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone XR
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/x`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/x-256.png"
-                          alt="iPhone X Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone X
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/se-2`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/se-2-256.png"
-                          alt="iPhone SE 2 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone SE 2
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/8-plus`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/8-plus-256.png"
-                          alt="iPhone 8 Plus Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 8 Plus
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/8`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/8-256.png"
-                          alt="iPhone 8 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 8
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/7-plus`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/7-plus-256.png"
-                          alt="iPhone 7 Plus Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 7 Plus
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/7`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/7-256.png"
-                          alt="iPhone 7 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 7
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/6s-plus`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/6s-plus-256.png"
-                          alt="iPhone 6S Plus Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 6S Plus
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/6s`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/6s-256.png"
-                          alt="iPhone 6S Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 6S
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/6-plus`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/6-plus-256.png"
-                          alt="iPhone 6 Plus Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 6 Plus
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/6`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/6-256.png"
-                          alt="iPhone 6 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 6
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/se`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/se-256.png"
-                          alt="iPhone SE Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone SE
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/5s`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/5s-256.png"
-                          alt="iPhone 5S Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 5S
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/5c`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/5c-256.png"
-                          alt="iPhone 5C Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 5C
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/iphone/5`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/iphone/5-256.png"
-                          alt="iPhone 5 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-md xs:text-lg">
-                            iPhone 5
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+                    </a>
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
         <div className="max-w-7xl mx-auto pt-16">
@@ -1863,8 +208,8 @@ export default function Home() {
                   <span className="block">Not sure which iPhone you have?</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-800">
-                  If you’re using iOS 12.2 or later, go to Settings > General >
-                  About > Model Name.
+                  If you’re using iOS 12.2 or later, go to Settings &gt; General &gt;
+                  About &gt; Model Name.
                 </p>
               </div>
             </div>
@@ -1882,139 +227,178 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Included as standard
-            </h2>
-            <p className="mt-4 text-lg text-gray-500">
-              We offer high quality iPhone repairs as standard, we don't do
-              tiers or low quality parts.
-            </p>
+      {/* Gradient Feature Section */}
+      <div className="bg-gray-800">
+        <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white tracking-tight">Everything needed for a great iPhone repair</h2>
+          <p className="mt-4 max-w-3xl text-lg text-gray-200">
+            Our aim is to repair your device to the highest standard, using the best available parts and retaining all of your devices original features.
+          </p>
+          <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+            {features.map((feature) => (
+              <div key={feature.name}>
+                <div>
+                  <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
+                    <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                  </span>
+                </div>
+                <div className="mt-6">
+                  <h3 className="text-lg font-medium text-white">{feature.name}</h3>
+                  <p className="mt-2 text-base text-gray-200">{feature.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
-          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Original Parts
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Where possible we only use original iPhone components, this
-                  ensures your device functions as normal after repair.
-                </dd>
-              </div>
-            </div>
+        </div>
+      </div>
 
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Seals
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Should your iPhone require a replacement frame seal, we’ll
-                  replace this anytime we open your device.
-                </dd>
+      <div className="relative bg-white">
+        <div className="lg:absolute lg:inset-0">
+          <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
+            <img
+              className="h-56 w-full object-cover lg:absolute lg:h-full"
+              src="/iphone/feature-1.jpg"
+              alt="iPhone Repairs"
+            />
+          </div>
+        </div>
+        <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
+          <div className="lg:col-start-2 lg:pl-8">
+            <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
+              <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase">Repair with us</h2>
+              <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Our Process
+              </h3>
+              <p className="mt-8 text-lg text-gray-500">
+                We've been repairing iPhones in Leeds for over 13 years now, during that time we've learnt a lot about how the devices work, 
+                the common issues each model have and the best repair methods.
+              </p>
+              <div className="mt-5 prose prose-blue text-gray-500">
+                <p>
+                Starting with the most common type of iPhone repair. Screen replacements make up the majority of our repairs, to date we've completed well over 30k. 
+                We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the original quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.
+                </p>
+                <p>
+                Next up is battery replacements, again we've completed well over 50k of these. As such we've learnt how to read iPhone battery data and analytics to determine if a battery does require a replacement 
+                or if there is another issue causing excessive drain. As with our screen replacements, we only use the original battery cells to ensure your replacement performs perfectly.
+                </p>
+                <p>
+                Through our many years of experience we've been able to extend our offering of iPhone repair services to include the following:
+                </p>
+                <ul>
+                  <li>Liquid damage repairs, including full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing.</li>
+                  <li>Logic board repairs, including free diagnosis and quotations and a quick turnaround.</li>
+                  <li>Data recovery for damaged beyond repair devices and software issues.</li>
+                </ul>
+                <p>
+                  These services have allowed us to offer a far wider range of repairs, so no matter your issue we’re able to offer a solution.
+                </p>
+                <h3>How we’re different</h3>
+                <p>
+                As mentioned previously, we've now been repairing iPhones for quite some time. During this we've always been committed to using original components wherever possible, paired with the best workmanship. 
+                This means we aren't always the cheapest option available, however we feel we do offer the best available independent repair option for Apple products.
+                </p>
+                <p>
+                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs as Apple originally intended with no loss of functionality or performance.
+                We also ensure devices are disassembled and reassembled according to manufacturers specification. We don't leave parts out, any small components missing from a previous poor repair will be changed as part of your repair with us. 
+                We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance.
+                </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Health Check
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We can check functions, features and ensure everything is
-                  running smoothly. Should we find any issues we can advise you
-                  on repair options.
-                </dd>
-              </div>
-            </div>
 
-            <div className="flex">
+      <div className="bg-white overflow-hidden">
+        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
+          <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+            <div>
+              <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">A Deeper Dive</h2>
+              <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Our Parts
+              </h3>
+            </div>
+          </div>
+          <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+            <div className="relative lg:row-start-1 lg:col-start-2">
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
+                className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                width={404}
+                height={384}
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                viewBox="0 0 404 384"
                 aria-hidden="true"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
+                <defs>
+                  <pattern
+                    id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                  </pattern>
+                </defs>
+                <rect width={404} height={384} fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
               </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Warranty
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We offer a 90 day warranty on all our repairs, this covers any
-                  issues with the replacement parts or workmanship.
-                </dd>
+              <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+                <figure>
+                  <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                    <img
+                      className="rounded-lg shadow-lg object-cover object-center"
+                      src="/iphone/feature-2.jpg"
+                      alt="iPhone being restored"
+                      width={1184}
+                      height={1376}
+                    />
+                  </div>
+                </figure>
               </div>
             </div>
-          </dl>
+            <div className="mt-8 lg:mt-0">
+              <div className="text-base max-w-prose mx-auto lg:max-w-none">
+                <p className="text-lg text-gray-500">
+                  You wouldn’t want any old cheap bits and bobs used to fix a device that was expensive to purchase in the first place would you?
+                  It would be like putting recycled tyres on a sports car…yes you can get away with it but they won’t last very long and can often have disastrous consequences!
+                </p>
+              </div>
+              <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                <p>
+                  That’s why iPatch only uses original components in our repairs, you can be sure your device will operate as it is meant to,
+                  the components will be much more reliable and be of no risk to further damaging your device.
+                </p>
+                <p>
+                  A prime example would be with repairing smashed glass on the rear of iPhone’s. A lot of repair shops will try and melt off the existing glass to then bond another piece on to the existing frame.
+                  The problem here is that the new glass doesn’t sit under the camera lens as it is supposed to (it goes over for ease of installation).
+                </p>
+                <p>
+                  The wireless charging coil can easily be damaged which, as it is connected to your volume buttons, can cause them to fail. Resulting in a poor fit meaning the iPhone is much less water resistant against any future mishaps.
+                </p>
+                <p>
+                  Here at iPatch we choose to replace not only the rear glass but the entire frame as well. Yes it is a bit more time consuming and certainly more of an expensive option but the results leave you with an iPhone looking like it did fresh out the box.
+                </p>
+                <p>
+                Another example is cheaper screen repairs which often don't use original IC's and LCD's. This means you typically loose the features which are coded to the screen such as True-Tone and auto-brightness. 
+                We ensure your new display is a quality part which supports these features and means no loss of functionality. 
+                </p>
+                <p>
+                  We aim to offer the best available independent repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault, 
+                  we're sure we'll have a solution that you'll be happy with.
+                  </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-          <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-            <div>
-              <h2 className="text-3xl font-extrabold text-gray-900">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="max-w-2xl lg:mx-auto lg:text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 Frequently asked questions
               </h2>
               <p className="mt-4 text-lg text-gray-500">
@@ -2027,8 +411,8 @@ export default function Home() {
                 team.
               </p>
             </div>
-            <div className="mt-12 lg:mt-0 lg:col-span-2">
-              <dl className="space-y-12">
+            <div className="mt-20">
+          <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
                 <div>
                   <dt className="text-lg leading-6 font-medium text-gray-900">
                     How do I get my iPhone Repaired?
@@ -2114,7 +498,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
 
       <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -2145,7 +528,7 @@ export default function Home() {
                     </div>
 
                     <svg
-                      className="hidden md:block mx-1 h-5 w-5 text-indigo-600"
+                      className="hidden md:block mx-1 h-5 w-5 text-blue-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -2163,7 +546,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             <span className="block">Ready to fix your iPhone?</span>
@@ -2175,7 +558,7 @@ export default function Home() {
           </p>
           <a
             href="book-repair"
-            className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
+            className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 sm:w-auto"
           >
             Book a Repair
           </a>

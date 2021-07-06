@@ -131,7 +131,7 @@ const Footer = () => {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="">
+                    <Link href="/liquid-damage">
                       <a className="text-base text-gray-300 hover:text-white">
                         Liquid Damage
                       </a>
@@ -139,7 +139,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="">
+                    <Link href="/logic-board">
                       <a className="text-base text-gray-300 hover:text-white">
                         Logic Board Repairs
                       </a>
@@ -147,7 +147,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="">
+                    <Link href="/data-recovery">
                       <a className="text-base text-gray-300 hover:text-white">
                         Data Recovery
                       </a>
@@ -155,9 +155,9 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="">
+                    <Link href="/insurance-reports">
                       <a className="text-base text-gray-300 hover:text-white">
-                        Insurance Repairs
+                        Insurance Reports
                       </a>
                     </Link>
                   </li>

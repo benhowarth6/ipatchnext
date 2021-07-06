@@ -3,10 +3,64 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import { Menu, Transition } from "@headlessui/react";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+import { CheckIcon } from "@heroicons/react/outline";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
+import watchModels from "../data/watch/watchModels.json";
+
+const features = [
+  {
+    name: "Quality parts",
+    description:
+      "We only use the best available parts, to ensure maximum compatibility and no issues.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Fast repairs",
+    description:
+      "The majority of our Watch repairs are completed in under 1 hour, most are even quicker.",
+    icon: CheckIcon,
+  },
+  {
+    name: "No inspection fees",
+    description:
+      "We dont charge any fees to inspect your device and provide a quotation for a repair.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Experience",
+    description:
+      "We have a combined 40 years experience in the repair of iPhones.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Board repairs",
+    description:
+      "We offer a variety of Watch logic board repairs, should your device have a more serious issue.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Liquid damage",
+    description:
+      "If your Watch has liquid damage, we offer a thorough cleaning service to restore your device.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Data recovery",
+    description:
+      "If your device isn't powering on, we can attempt data recovery using a number of methods.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Warranty",
+    description:
+      "All of our parts and repairs are covered by a 90 day warranty (excluding accidental damage).",
+    icon: CheckIcon,
+  },
+];
 
 export default function Home() {
   return (
@@ -17,11 +71,16 @@ export default function Home() {
       />
       <Header />
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Apple Watch Repairs</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a screen and battery replacements for all Series of Apple Watch. </p>
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+              Apple Watch Repairs
+            </p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">
+              We offer a screen and battery replacements for all Series of Apple
+              Watch.{" "}
+            </p>
           </div>
         </div>
       </div>
@@ -36,257 +95,50 @@ export default function Home() {
               Click on your Watch model below to view repairs.
             </p>
           </div>
+
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-6`}>
-                  <a>
-                    <Image
-                      src="/watch/series-6.jpg"
-                      alt="Watch Series 6 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-6`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 6
+            {watchModels.map((watchModels) => {
+              const { id, model, image, alt, link } = watchModels;
+              return (
+                <div
+                  key={id}
+                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                >
+                  <div className="flex-shrink-0 bg-white">
+                    <Link href={link}>
+                      <a>
+                        <Image
+                          src={image}
+                          alt={alt}
+                          className="h-60 w-full object-cover"
+                          width={1000}
+                          height={750}
+                        />
                       </a>
                     </Link>
-                    <Link href={`/watch/series-6`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
+                  </div>
+                  <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div className="flex-1">
+                      <div className="text-center">
+                        <Link href={link}>
+                          <a className="text-xl font-semibold text-gray-900">
+                            {model}
+                          </a>
+                        </Link>
+                        <Link href={link}>
+                          <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
+                            View Repairs
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-se`}>
-                  <a>
-                    <Image
-                      src="/watch/series-se.jpg"
-                      alt="Watch SE Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-se`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch SE
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-se`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-5`}>
-                  <a>
-                    <Image
-                      src="/watch/series-5.jpg"
-                      alt="Watch Series 5 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-5`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 5
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-5`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-4`}>
-                  <a>
-                    <Image
-                      src="/watch/series-4.jpg"
-                      alt="Watch Series 4 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-4`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 4
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-4`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-3`}>
-                  <a>
-                    <Image
-                      src="/watch/series-3.jpg"
-                      alt="Watch Series 3 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-3`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 3
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-3`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-2`}>
-                  <a>
-                    <Image
-                      src="/watch/series-2.jpg"
-                      alt="Watch Series 2 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-2`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 2
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-2`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-1`}>
-                  <a>
-                    <Image
-                      src="/watch/series-1.jpg"
-                      alt="Watch Series 1 Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-1`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Series 1
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-1`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`/watch/series-0`}>
-                  <a>
-                    <Image
-                      src="/watch/series-0.jpg"
-                      alt="Watch 1st Generation Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                    <Link href={`/watch/series-0`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch 1st Generation
-                      </a>
-                    </Link>
-                    <Link href={`/watch/series-0`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Repairs
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
+
         <div className="max-w-7xl mx-auto pt-16">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
@@ -327,349 +179,43 @@ export default function Home() {
         </div>
         <div className="max-w-2xl mx-auto sm:px-6 pt-12">
           <ul className="space-y-3" data-todo-x-max="1">
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-6`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-6-256.png"
-                          alt="Apple Watch Series 6 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+            {watchModels.map((watchModels) => {
+              const { id, model, mobileimage, alt, link } = watchModels;
+              return (
+                <li
+                  key={id}
+                  className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md"
+                >
+                  <Link href={link}>
+                    <a className="block ">
+                      <div className="flex items-center sm:px-6">
+                        <div className="min-w-0 flex-1 flex items-center">
+                          <div className="flex-shrink-0">
+                            <Image
+                              src={mobileimage}
+                              alt={alt}
+                              className="h-32 w-full object-cover"
+                              width={96}
+                              height={96}
+                            />
+                          </div>
+                          <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
+                            <div>
+                              <p className="font-medium text-base sm:text-lg truncate">
+                                {model}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                         <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 6
-                          </p>
+                          <ChevronRightIcon className="h-5 w-5 text-grey-400"></ChevronRightIcon>
                         </div>
                       </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-se`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-se-256.png"
-                          alt="Apple Watch SE Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch SE
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-5`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-5-256.png"
-                          alt="Apple Watch Series 5 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 5
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-4`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-4-256.png"
-                          alt="Apple Watch Series 4 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 4
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-3`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-3-256.png"
-                          alt="Apple Watch Series 3 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 3
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-2`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-2-256.png"
-                          alt="Apple Watch Series 2 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 2
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-1`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-1-256.png"
-                          alt="Apple Watch Series 1 Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Series 1
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`/watch/series-0`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/watch/watch-series-0-256.png"
-                          alt="Apple Watch 1st Generation Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch 1st Generation
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
+                    </a>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="max-w-7xl mx-auto pt-16">
@@ -698,240 +244,295 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Included as standard
-            </h2>
-            <p className="mt-4 text-lg text-gray-500">
-              We offer high quality Watch Repairs as standard, we don't do tiers
-              or low quality parts.
-            </p>
+
+      {/* Gradient Feature Section */}
+      <div className="bg-gray-800">
+        <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white tracking-tight">
+            Everything needed for a great Apple Watch repair
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg text-gray-200">
+            Our aim is to repair your device to the highest standard, using the
+            best available parts and retaining all of your devices original
+            features.
+          </p>
+          <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+            {features.map((feature) => (
+              <div key={feature.name}>
+                <div>
+                  <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
+                    <feature.icon
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </div>
+                <div className="mt-6">
+                  <h3 className="text-lg font-medium text-white">
+                    {feature.name}
+                  </h3>
+                  <p className="mt-2 text-base text-gray-200">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Original Parts
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Where possible we only use original Watch components, this
-                  ensures your device functions as normal after repair.
-                </dd>
-              </div>
-            </div>
+        </div>
+      </div>
 
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Seals
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We'll reseal your Apple Watch each time we open the device up.
-                  This maintains water resistance and keeps dust out.
-                </dd>
-              </div>
-            </div>
+      <div className="relative bg-white">
+        <div className="lg:absolute lg:inset-0">
+          <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
+            <img
+              className="h-56 w-full object-cover lg:absolute lg:h-full"
+              src="/watch/feature-1.jpg"
+              alt="Apple Watch in repair"
+            />
+          </div>
+        </div>
+        <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
+          <div className="lg:col-start-2 lg:pl-8">
+            <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
+              <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase">
+                Repair with us
+              </h2>
+              <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Our Process
+              </h3>
+              <p className="mt-8 text-lg text-gray-500">
+              We’ve offered repairs for Apple Watch at our Trinity Leeds store since the introduction in 2015. 
+              During that time we’ve learnt a lot about how these small devices work and the best methods to repair. 
+              Due to the tight tolerances and construction of the Apple Watch the repairs can be labour intensive and intricate. 
+              However using all of our experience we’ve developed our techniques to offer a range of repairs for these devices 
+              while still offering a same day turnaround. 
 
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Health Check
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We can check functions, features and ensure everything is
-                  running smoothly. Should we find any issues we can advise you
-                  on repair options.
-                </dd>
+              </p>
+              <div className="mt-5 prose prose-blue text-gray-500">
+                <p>
+                  The OLED display assemblies are the most common repairs for Apple Watch. Due to the materials used, display 
+                  replacements can be quite costly on these device’s. Especially the newer models with always on displays. 
+                  We’re able to replace these displays while retaining full NFC functionality, meaning you don’t loose the Apple Pay function.
+                </p>
+                <p>
+                If you have noticed your Watch is no longer lasting a full day of use, we can offer a battery replacement to restore your Watch’s 
+                run time and give you back a full days use. Some older models have issues with battery swelling, which can even push out the display 
+                from the watch body. If this happens, try to keep the screen secured loosely to the watch to prevent damage to any of the ribbon cables. 
+                That way you’ll just require a new battery and seal appose to an expensive display! 
+                </p>
+                <p>
+                While we do re seal all Watch’s using new original seals and gaskets, we unfortunately cannot guarantee factory waterproofing will be retained. 
+                Because of this we don’t recommend you submerge a repaired Apple Watch into water. The Watch will still be resistant to water, so day to day use isn’t impacted. 
+                </p>
+                <h3>How we’re different</h3>
+                <p>
+                As mentioned previously, we've now been repairing Apple Watch’s for a number of years. During this we've always been committed to using original 
+                components paired with the best workmanship. This means we aren't always the cheapest option available, but we feel we do offer the best available 
+                independent repair option for Apple Watch. Especially since Apple themselves won’t offer repairs to individual components, only a full replacement Watch.
+                </p>
+                <p>
+                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the 
+                repair with no loss of functionality or performance. We also ensure devices are disassembled and reassembled according to manufacturers specification. We don't leave parts out, 
+                and any small components missing from a previous poor repair will be changed as part of your repair with us. We also replace any seals which have to be 
+                broken to complete your repair, to ensure water and dust resistance. You wouldn’t even notice your cherished Watch had even been opened up as the tools 
+                and techniques we use leave no mark on the casing.
+                </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div className="flex">
+      <div className="bg-white overflow-hidden">
+        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
+          <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+            <div>
+              <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">
+                A Deeper Dive
+              </h2>
+              <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Our Parts
+              </h3>
+            </div>
+          </div>
+          <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+            <div className="relative lg:row-start-1 lg:col-start-2">
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
+                className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                width={404}
+                height={384}
                 fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                viewBox="0 0 404 384"
                 aria-hidden="true"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
+                <defs>
+                  <pattern
+                    id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                    x={0}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x={0}
+                      y={0}
+                      width={4}
+                      height={4}
+                      className="text-gray-200"
+                      fill="currentColor"
+                    />
+                  </pattern>
+                </defs>
+                <rect
+                  width={404}
+                  height={384}
+                  fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+                />
               </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Warranty
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We offer a 90 day warranty on all our repairs, this covers any
-                  issues with the replacement parts or workmanship.
-                </dd>
+              <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+                <figure>
+                  <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                    <img
+                      className="rounded-lg shadow-lg object-cover object-center"
+                      src="/watch/feature-2.jpg"
+                      alt="Apple Watch in repair"
+                      width={1184}
+                      height={1376}
+                    />
+                  </div>
+                </figure>
               </div>
             </div>
-          </dl>
+            <div className="mt-8 lg:mt-0">
+              <div className="text-base max-w-prose mx-auto lg:max-w-none">
+                <p className="text-lg text-gray-500">
+                You wouldn’t want any old cheap bits and bobs used to fix a device that was expensive to purchase in the first place would you? It would be like 
+                putting recycled tyres on a sports car…yes you can get away with it but they won’t last very long and can often have disastrous consequences! 
+                </p>
+              </div>
+              <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                <p>
+                All the components we use to repair Apple Watch are original OEM quality parts. For some of the almost antique models, 
+                we do have to use refurbished components as the bits simply aren’t produced any more. This doesn’t mean though that 
+                they aren’t thoroughly inspected and tested before fitting and our warranty covers any unexpected issues that may arise. 
+                For the newer models of Watch and all the replacement batteries we fit, the parts are supplied straight from the factory.
+                </p>
+                <p>
+                We aim to offer the best available independent repairs, from our Leeds based stores. We only use the best parts available 
+                and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any 
+                other fault, we're sure we'll have a solution that you'll be happy with.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-          <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-            <div>
-              <h2 className="text-3xl font-extrabold text-gray-900">
-                Frequently asked questions
-              </h2>
-              <p className="mt-4 text-lg text-gray-500">
-                Can’t find the answer you’re looking for? Reach out to our{" "}
-                <Link href="contact">
-                  <a className="font-medium text-blue-600 hover:text-blue-500">
-                    customer support
-                  </a>
-                </Link>{" "}
-                team.
-              </p>
-            </div>
-            <div className="mt-12 lg:mt-0 lg:col-span-2">
-              <dl className="space-y-12">
-                <div>
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
-                    How do I get my Watch repaired?
-                  </dt>
-                  <dd className="mt-2 text-base text-gray-500">
-                    Choose the repair your device requires and the best booking
-                    option for you. We accept both drop off and mail in repairs,
-                    so wether your local or not we can still offer you our
-                    services. If you aren’t sure which repair your Apple Watch
-                    requires, please get in touch and we’ll do our best to help.
-                  </dd>
-                </div>
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="max-w-2xl lg:mx-auto lg:text-center">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Frequently asked questions
+            </h2>
+            <p className="mt-4 text-lg text-gray-500">
+              Can’t find the answer you’re looking for? Reach out to our{" "}
+              <Link href="contact">
+                <a className="font-medium text-blue-600 hover:text-blue-500">
+                  customer support
+                </a>
+              </Link>{" "}
+              team.
+            </p>
+          </div>
+          <div className="mt-20">
+            <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
+              <div>
+                <dt className="text-lg leading-6 font-medium text-gray-900">
+                  How do I get my Watch repaired?
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">
+                  Choose the repair your device requires and the best booking
+                  option for you. We accept both drop off and mail in repairs,
+                  so wether your local or not we can still offer you our
+                  services. If you aren’t sure which repair your Apple Watch
+                  requires, please get in touch and we’ll do our best to help.
+                </dd>
+              </div>
 
-                <div>
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
-                    How much does it cost?
-                  </dt>
-                  <dd className="mt-2 text-base text-gray-500">
-                    The cost for your repair will depend on the type of repair
-                    and the series of Watch. We list nearly all repair costs for
-                    the the Watch’s we offer service on. Should you not be able
-                    to find your repair listed, please get in touch and we’ll be
-                    able to advise further. For liquid damage devices, or no
-                    power devices we wouldn’t be able to provide a repair quote
-                    until after an inspection.
-                  </dd>
-                </div>
+              <div>
+                <dt className="text-lg leading-6 font-medium text-gray-900">
+                  How much does it cost?
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">
+                  The cost for your repair will depend on the type of repair and
+                  the series of Watch. We list nearly all repair costs for the
+                  the Watch’s we offer service on. Should you not be able to
+                  find your repair listed, please get in touch and we’ll be able
+                  to advise further. For liquid damage devices, or no power
+                  devices we wouldn’t be able to provide a repair quote until
+                  after an inspection.
+                </dd>
+              </div>
 
-                <div>
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
-                    How long will it take?
-                  </dt>
-                  <dd className="mt-2 text-base text-gray-500">
-                    We understand how important Apple Watch’s have become, so we
-                    aim to complete all repairs in the same day. A drop off
-                    repair for your Watch is the quickest way to get your device
-                    repaired, and we usually complete most Watch repairs in
-                    under 2 hours. Should you want to mail in instead, we aim to
-                    repair and dispatch the device back to you within the same
-                    day.
-                  </dd>
-                </div>
+              <div>
+                <dt className="text-lg leading-6 font-medium text-gray-900">
+                  How long will it take?
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">
+                  We understand how important Apple Watch’s have become, so we
+                  aim to complete all repairs in the same day. A drop off repair
+                  for your Watch is the quickest way to get your device
+                  repaired, and we usually complete most Watch repairs in under
+                  2 hours. Should you want to mail in instead, we aim to repair
+                  and dispatch the device back to you within the same day.
+                </dd>
+              </div>
 
-                <div>
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
-                    What to expect?
-                  </dt>
-                  <dd className="mt-2 text-base text-gray-500">
-                    We offer a wide range of repairs for all Watch series,
-                    however should a repair not be possible on your device you
-                    can collect your Watch with no fee or just the return
-                    postage fee if you’ve mailed in. Although we don’t routinely
-                    erase any device during repair, we do recommend you take a
-                    backup of your data before having your device repaired.
-                  </dd>
-                </div>
+              <div>
+                <dt className="text-lg leading-6 font-medium text-gray-900">
+                  What to expect?
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">
+                  We offer a wide range of repairs for all Watch series, however
+                  should a repair not be possible on your device you can collect
+                  your Watch with no fee or just the return postage fee if
+                  you’ve mailed in. Although we don’t routinely erase any device
+                  during repair, we do recommend you take a backup of your data
+                  before having your device repaired.
+                </dd>
+              </div>
 
-                <div>
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
-                    Screen Replacements
-                  </dt>
-                  <dd className="mt-2 text-base text-gray-500">
-                    If you’ve managed to break your Watch screen, don’t worry
-                    this is one of the most common repairs we carry out. We keep
-                    a number of displays in stock however we’d recommend booking
-                    your Watch in before hand to ensure part availability.
-                    Should we not have a part in stock we can usually still
-                    turnaround your repair within 24 hours.
-                  </dd>
-                </div>
+              <div>
+                <dt className="text-lg leading-6 font-medium text-gray-900">
+                  Screen Replacements
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">
+                  If you’ve managed to break your Watch screen, don’t worry this
+                  is one of the most common repairs we carry out. We keep a
+                  number of displays in stock however we’d recommend booking
+                  your Watch in before hand to ensure part availability. Should
+                  we not have a part in stock we can usually still turnaround
+                  your repair within 24 hours.
+                </dd>
+              </div>
 
-                <div>
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
-                    Battery Replacements
-                  </dt>
-                  <dd className="mt-2 text-base text-gray-500">
-                    Watch batteries have a limited life span, this is usually
-                    around 1000 full charges. If your battery no longer gets you
-                    through the day we can offer a quick replacement, usually
-                    within 1-2 hours. We keep a number of batteries in stock
-                    however we’d recommend booking your Watch in before hand to
-                    ensure part availability. Should we not have a part in stock
-                    we can usually still turnaround your repair within 24 hours.
-                  </dd>
-                </div>
-              </dl>
-            </div>
+              <div>
+                <dt className="text-lg leading-6 font-medium text-gray-900">
+                  Battery Replacements
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">
+                  Watch batteries have a limited life span, this is usually
+                  around 1000 full charges. If your battery no longer gets you
+                  through the day we can offer a quick replacement, usually
+                  within 1-2 hours. We keep a number of batteries in stock
+                  however we’d recommend booking your Watch in before hand to
+                  ensure part availability. Should we not have a part in stock
+                  we can usually still turnaround your repair within 24 hours.
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
@@ -980,7 +581,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600">
+      <div className="bg-gray-800">
         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             <span className="block">Ready to fix your Watch?</span>
