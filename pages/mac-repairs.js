@@ -258,8 +258,8 @@ export default function Home() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <img
               className="h-56 w-full object-cover lg:absolute lg:h-full"
-              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2807&q=80"
-              alt=""
+              src="/mac/feature-1.jpg"
+              alt="Mac Repairs"
             />
           </div>
         </div>
@@ -283,15 +283,15 @@ export default function Home() {
                 And we only use the original parts to ensure no loss of functionality or performance. 
                 </p>
                 <p>
-                Next up is battery replacements, we’ve completed a number of these over the years. As such we've learnt how to read MacBook battery data and analytics to determine if a battery does require a replacement or 
+                Next up is battery replacements, we’ve completed a large number of these over the years. As such we've learnt how to read MacBook battery data and analytics to determine if a battery does require a replacement or 
                 if there is another issue causing excessive drain. As with our screen replacements, we only use the original battery cells to ensure your replacement performs perfectly.
                 </p>
                 <p>
                 Through our many years of experience we've been able to extend our offering of MacBook repair services to include the following:
                 </p>
                 <ul>
-                  <li>Liquid damage repairs, include full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing.</li>
-                  <li>Logic board repairs, including free diagnosis and quotations and a quick turnaround.</li>
+                  <li>Liquid damage repairs, including full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing.</li>
+                  <li>Logic board repairs, including free diagnosis, quotations and a quick turnaround.</li>
                   <li>Data recovery for damaged beyond repair devices and software issues.</li>
                 </ul>
                 <p>
@@ -302,16 +302,6 @@ export default function Home() {
                 Retina displays have to be changed as a full assembly due to the thin design and construction, whereas some older models allow us to change display components individually to significantly 
                 reduce the repair cost. Some Mac models use standard form factor drives which allow us to offer cheaper upgrades, whereas some models use proprietary standards which can significantly increase 
                 the cost of storage upgrades. 
-                </p>
-                <h3>How we’re different</h3>
-                <p>
-                As mentioned earlier, we've now been repairing Mac's for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
-                This means we aren't always the cheapest option available, but we feel we do offer the best available independent repair option for Apple products.
-                </p>
-                <p>
-                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance.
-                We also ensure devices are disassembled and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
-                We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance.
                 </p>
               </div>
             </div>
@@ -360,8 +350,8 @@ export default function Home() {
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
                       className="rounded-lg shadow-lg object-cover object-center"
-                      src="https://images.unsplash.com/photo-1526570207772-784d36084510?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3456&q=80"
-                      alt="Whitney leaning against a railing on a downtown street"
+                      src="/mac/feature-2.jpg"
+                      alt="MacBook in repair"
                       width={1184}
                       height={1376}
                     />
@@ -372,14 +362,14 @@ export default function Home() {
             <div className="mt-8 lg:mt-0">
               <div className="text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
-                As mentioned earlier, we've now been repairing Mac's for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
-                This means we aren't always the cheapest option available, but we feel we do offer the best available independent repair option for Apple products.
+                As mentioned previously, we've now been repairing Mac's for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
+                This means we aren't always the cheapest option available, however we feel we do offer the best available independent repair option for Apple products.
                 </p>
               </div>
               <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
-                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance. 
-                We also ensure devices are disassembled and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
+                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs as Apple originally intended with no loss of functionality or performance. 
+                We also ensure devices are disassembled and reassembled according to manufacturers specification. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
                 This means you won’t even notice your Mac has been 
                 </p>
                 <h3>Our Parts</h3>

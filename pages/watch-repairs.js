@@ -286,8 +286,8 @@ export default function Home() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <img
               className="h-56 w-full object-cover lg:absolute lg:h-full"
-              src="https://images.unsplash.com/photo-1551480634-4263800a3868?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2646&q=80"
-              alt=""
+              src="/watch/feature-1.jpg"
+              alt="Apple Watch in repair"
             />
           </div>
         </div>
@@ -310,14 +310,14 @@ export default function Home() {
               </p>
               <div className="mt-5 prose prose-blue text-gray-500">
                 <p>
-                  The OLED display assemblies are the most common repairs for Apple Watch. Due to the costly material costs, display 
+                  The OLED display assemblies are the most common repairs for Apple Watch. Due to the materials used, display 
                   replacements can be quite costly on these device’s. Especially the newer models with always on displays. 
                   We’re able to replace these displays while retaining full NFC functionality, meaning you don’t loose the Apple Pay function.
                 </p>
                 <p>
                 If you have noticed your Watch is no longer lasting a full day of use, we can offer a battery replacement to restore your Watch’s 
                 run time and give you back a full days use. Some older models have issues with battery swelling, which can even push out the display 
-                from the watch body. If this happens, try to keep the screen secured loosely to the watch to prevent damage to any of the cables. 
+                from the watch body. If this happens, try to keep the screen secured loosely to the watch to prevent damage to any of the ribbon cables. 
                 That way you’ll just require a new battery and seal appose to an expensive display! 
                 </p>
                 <p>
@@ -326,13 +326,13 @@ export default function Home() {
                 </p>
                 <h3>How we’re different</h3>
                 <p>
-                As mentioned earlier, we've now been repairing Apple Watch’s for a number of years. During this we've always been committed to using original 
+                As mentioned previously, we've now been repairing Apple Watch’s for a number of years. During this we've always been committed to using original 
                 components paired with the best workmanship. This means we aren't always the cheapest option available, but we feel we do offer the best available 
                 independent repair option for Apple Watch. Especially since Apple themselves won’t offer repairs to individual components, only a full replacement Watch.
                 </p>
                 <p>
                 We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the 
-                repair with no loss of functionality or performance. We also ensure devices are disassembled and reassembled according to spec. We don't leave parts out, 
+                repair with no loss of functionality or performance. We also ensure devices are disassembled and reassembled according to manufacturers specification. We don't leave parts out, 
                 and any small components missing from a previous poor repair will be changed as part of your repair with us. We also replace any seals which have to be 
                 broken to complete your repair, to ensure water and dust resistance. You wouldn’t even notice your cherished Watch had even been opened up as the tools 
                 and techniques we use leave no mark on the casing.
@@ -396,8 +396,8 @@ export default function Home() {
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
                       className="rounded-lg shadow-lg object-cover object-center"
-                      src="https://images.unsplash.com/photo-1602174528421-6c3e5b00e565?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2854&q=80"
-                      alt="Whitney leaning against a railing on a downtown street"
+                      src="/watch/feature-2.jpg"
+                      alt="Apple Watch in repair"
                       width={1184}
                       height={1376}
                     />

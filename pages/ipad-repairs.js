@@ -259,8 +259,8 @@ export default function Home() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <img
               className="h-56 w-full object-cover lg:absolute lg:h-full"
-              src="https://images.unsplash.com/photo-1544244015-9c72fd9c866d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3376&q=80"
-              alt=""
+              src="/ipad/feature-1.jpg"
+              alt="iPad Repairs"
             />
           </div>
         </div>
@@ -272,13 +272,13 @@ export default function Home() {
                 Our Process
               </h3>
               <p className="mt-8 text-lg text-gray-500">
-                We've been repairing iPads at our Trinity Leeds store since the iPad was released in 2010, and during that time we've learnt a lot about how the devices work, the common issues each model have and the best repair methods.
+                We've been repairing iPads at our Trinity Leeds store since the iPad was first released in 2010, and during that time we've learnt a lot about how the devices work, the common issues each model have and the best repair methods.
               </p>
               <div className="mt-5 prose prose-blue text-gray-500">
                 <p>
                 So what can we do. After nearly two decades worth of experience, exclusively working with Apple products, we have extensive knowledge on the ins and outs of all the Apple product line, especially the iPads. 
-                Most commonly seen repairs are smashed screens and worn out batteries, both of which can be replaced usually within the hour on every model and generation. The tools and techniques we use mean that we can confidently
-                 open up an iPad to get to the battery or dock without marking the case or damaging the display in the process.
+                Most commonly seen repairs are smashed screens and worn out batteries, both of which can be replaced usually within a couple of hours on every model and generation. The tools and techniques we use mean that we can confidently
+                 open up an iPad to get to the battery or dock without either marking the case or damaging the display in the process.
                 </p>
                 <p>
                 You may notice a bit of a price variation across the iPad models. This is because some iPads have combined touch screen and LCD displays. Whilst it makes for an easier screen replacement, it does push the cost up because the glass, 
@@ -286,10 +286,10 @@ export default function Home() {
                 </p>
                 <p>
                 If you notice your iPad battery life is waning and you don’t get the usual hours of usage then here at iPatch, we can certainly fit your iPad with a brand new, official OEM battery. This would take the battery life of your Apple iPad 
-                back up to what it was when you first bought it. A whole new lease of life can be brought to your raging iPad this way and you wouldn’t be able to tell anyone had even been inside.
+                back up to what it was when you first bought it. A whole new lease of life can be brought to your aging iPad this way and you wouldn’t be able to tell anyone had even been inside.
                 </p>
                 <p>
-                Have the kids jammed in their power buttons, volume switch or home button? Never fear, all of those well used clickers can be repaired or replaced. We carefully remove the iPad display from its sealed housing and keep it dust 
+                Have the kids bent in their power button, snapped a headphone jack, or jammed a home button? Never fear, all of those well used components can be repaired or replaced. We carefully remove the iPad display from its sealed housing and keep it dust 
                 free whilst we work on the internals. Our warranty covers you for 90 days too in the unlikely event the same issue occurs.
                 </p>
                 <p>
@@ -347,8 +347,8 @@ export default function Home() {
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
                       className="rounded-lg shadow-lg object-cover object-center"
-                      src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4480&q=80"
-                      alt="Whitney leaning against a railing on a downtown street"
+                      src="/ipad/feature-2.jpg"
+                      alt="iPad in Repair"
                       width={1184}
                       height={1376}
                     />
@@ -359,13 +359,13 @@ export default function Home() {
             <div className="mt-8 lg:mt-0">
               <div className="text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
-                As mentioned earlier, we've now been repairing iPads for quite some time. During this we've always been committed to using original components paired with the best workmanship. This means we aren't always the cheapest option available,
+                As mentioned previously, we've now been repairing iPads for quite some time. During this we've always been committed to using original components paired with the best workmanship. This means we aren't always the cheapest option available,
                  but we feel we do offer the best available independent repair option for Apple products.
                 </p>
               </div>
               <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
-                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance. We also ensure devices are disassembled 
+                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs as Apple originally intended with no loss of functionality or performance. We also ensure devices are disassembled 
                 and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. We also replace any seals which have to be broken to complete your 
                 repair, to ensure water and dust resistance. You wouldn’t even notice your cherished iPad had even been opened up as the tools and techniques we use leave no mark on the casing.
                 </p>
@@ -448,7 +448,7 @@ export default function Home() {
                     complete all repairs in the same day, usually the same hour.
                     A drop off repair for your iPad is the quickest way to get
                     your device repaired, and we usually complete nearly all
-                    iPad repairs in under 30 minutes. Should you want to mail in
+                    iPad repairs in a couple of hours. Should you want to mail in
                     instead, we aim to repair and dispatch the device back to
                     you within the same day.
                   </dd>
@@ -474,7 +474,7 @@ export default function Home() {
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
                     iPad screen replacements are our most common repair, we can
-                    repair most screens within around 1-2 hours. We aim to keep
+                    repair most screens within a couple of hours. We aim to keep
                     all models of display in stock so you can pop into our Leeds
                     store for a quick replacement without an appointment.
                   </dd>
@@ -488,7 +488,7 @@ export default function Home() {
                     iPad batteries have a limited life span, this is usually
                     around 1000 full charges. If your battery no longer gets you
                     through the day we can offer a quick replacement, usually
-                    within 1-2 hours. We keep nearly all batteries in stock, so
+                    within a couple of hours. We keep nearly all batteries in stock, so
                     you can stop by for a quick replacement at our Leeds store.
                   </dd>
                 </div>

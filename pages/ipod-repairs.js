@@ -234,8 +234,8 @@ export default function Home() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <img
               className="h-56 w-full object-cover lg:absolute lg:h-full"
-              src="https://images.unsplash.com/photo-1548122038-f8ba35ae8420?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2688&q=80"
-              alt=""
+              src="/ipod/feature-1.jpg"
+              alt="iPod Repairs"
             />
           </div>
         </div>
@@ -399,8 +399,8 @@ export default function Home() {
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
                       className="rounded-lg shadow-lg object-cover object-center"
-                      src="https://images.unsplash.com/photo-1581825874621-9ccf3f1aa273?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80"
-                      alt="Whitney leaning against a railing on a downtown street"
+                      src="/ipod/feature-2.jpg"
+                      alt="iPod in Repair"
                       width={1184}
                       height={1376}
                     />
@@ -411,7 +411,7 @@ export default function Home() {
             <div className="mt-8 lg:mt-0">
               <div className="text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
-                  As mentioned earlier, we've now been repairing iPods for quite
+                  As mentioned previously, we've now been repairing iPods for quite
                   some time. During this we've always been committed to using
                   original components paired with the best workmanship. This
                   means we aren't always the cheapest option available, but we

@@ -257,8 +257,8 @@ export default function Home() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <img
               className="h-56 w-full object-cover lg:absolute lg:h-full"
-              src="https://images.unsplash.com/photo-1610034499386-e70758847b99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80"
-              alt=""
+              src="/iphone/feature-1.jpg"
+              alt="iPhone Repairs"
             />
           </div>
         </div>
@@ -270,7 +270,7 @@ export default function Home() {
                 Our Process
               </h3>
               <p className="mt-8 text-lg text-gray-500">
-                We've been repairing iPhones in Leeds for over 13 years now, and during that time we've learnt a lot about how the devices work, 
+                We've been repairing iPhones in Leeds for over 13 years now, during that time we've learnt a lot about how the devices work, 
                 the common issues each model have and the best repair methods.
               </p>
               <div className="mt-5 prose prose-blue text-gray-500">
@@ -295,12 +295,12 @@ export default function Home() {
                 </p>
                 <h3>How we’re different</h3>
                 <p>
-                As mentioned earlier, we've now been repairing iPhones for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
-                This means we aren't always the cheapest option available, but we feel we do offer the best available independent repair option for Apple products.
+                As mentioned previously, we've now been repairing iPhones for quite some time. During this we've always been committed to using original components wherever possible, paired with the best workmanship. 
+                This means we aren't always the cheapest option available, however we feel we do offer the best available independent repair option for Apple products.
                 </p>
                 <p>
-                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance.
-                We also ensure devices are disassembled and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
+                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs as Apple originally intended with no loss of functionality or performance.
+                We also ensure devices are disassembled and reassembled according to manufacturers specification. We don't leave parts out, any small components missing from a previous poor repair will be changed as part of your repair with us. 
                 We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance.
                 </p>
               </div>
@@ -350,8 +350,8 @@ export default function Home() {
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
                       className="rounded-lg shadow-lg object-cover object-center"
-                      src="https://images.unsplash.com/photo-1569144157591-f9a369ed0e6d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3246&q=80"
-                      alt="Whitney leaning against a railing on a downtown street"
+                      src="/iphone/feature-2.jpg"
+                      alt="iPhone being restored"
                       width={1184}
                       height={1376}
                     />
@@ -373,10 +373,10 @@ export default function Home() {
                 </p>
                 <p>
                   A prime example would be with repairing smashed glass on the rear of iPhone’s. A lot of repair shops will try and melt off the existing glass to then bond another piece on to the existing frame.
-                  The problem we see here is that firstly the new glass doesn’t sit under the camera lens as it is supposed to (it goes over for ease of install).
+                  The problem here is that the new glass doesn’t sit under the camera lens as it is supposed to (it goes over for ease of installation).
                 </p>
                 <p>
-                  The wireless charging coil can easily be punctured which, as it is connected to your volume buttons too, can cause them to fail. Lastly, the poor fit would mean the iPhone is much less water resistant against any future mishaps.
+                  The wireless charging coil can easily be damaged which, as it is connected to your volume buttons, can cause them to fail. Resulting in a poor fit meaning the iPhone is much less water resistant against any future mishaps.
                 </p>
                 <p>
                   Here at iPatch we choose to replace not only the rear glass but the entire frame as well. Yes it is a bit more time consuming and certainly more of an expensive option but the results leave you with an iPhone looking like it did fresh out the box.
