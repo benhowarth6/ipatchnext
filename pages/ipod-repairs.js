@@ -21,7 +21,7 @@ const features = [
   {
     name: "Fast repairs",
     description:
-      "The majority of our iPhone repairs are completed in under 1 hour, most are even quicker.",
+      "The majority of our iPod repairs are completed in under 1 hour, most are even quicker.",
     icon: CheckIcon,
   },
   {
@@ -39,13 +39,13 @@ const features = [
   {
     name: "Board repairs",
     description:
-      "We offer a variety of iPhone logic board repairs, should your device have a more serious issue.",
+      "We offer a variety of iPod logic board repairs, should your device have a more serious issue.",
     icon: CheckIcon,
   },
   {
     name: "Liquid damage",
     description:
-      "If your iPhone has liquid damage, we offer a thorough cleaning service to restore your device.",
+      "If your iPod has liquid damage, we offer a thorough cleaning service to restore your device.",
     icon: CheckIcon,
   },
   {

@@ -445,7 +445,7 @@ export default function Home() {
             {features.map((feature) => (
               <div key={feature.name}>
                 <div>
-                  <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-400 bg-opacity-10">
+                  <span className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 bg-opacity-10">
                     <feature.icon className="h-6 w-6 text-gray-800" aria-hidden="true" />
                   </span>
                 </div>

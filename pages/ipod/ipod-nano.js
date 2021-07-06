@@ -4,11 +4,63 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { ChevronRightIcon } from "@heroicons/react/solid";
+import { CheckIcon } from "@heroicons/react/outline";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import nanoModels from "../../data/ipod/nanoModels.json"
+
+const features = [
+  {
+    name: "Quality parts",
+    description:
+      "We only use the best available parts, to ensure maximum compatibility and no issues.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Fast repairs",
+    description:
+      "The majority of our iPod repairs are completed in under 1 hour, most are even quicker.",
+    icon: CheckIcon,
+  },
+  {
+    name: "No inspection fees",
+    description:
+      "We dont charge any fees to inspect your device and provide a quotation for a repair.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Experience",
+    description:
+      "We have a combined 40 years experience in the repair of iPhones.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Board repairs",
+    description:
+      "We offer a variety of iPod logic board repairs, should your device have a more serious issue.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Liquid damage",
+    description:
+      "If your iPod has liquid damage, we offer a thorough cleaning service to restore your device.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Data recovery",
+    description:
+      "If your device isn't powering on, we can attempt data recovery using a number of methods.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Warranty",
+    description:
+      "All of our parts and repairs are covered by a 90 day warranty (excluding accidental damage).",
+    icon: CheckIcon,
+  },
+];
 
 export default function Home() {
   return (
@@ -132,135 +184,33 @@ export default function Home() {
             })}
           </ul>
         </div>
-
       </div>
+
+      {/* Gradient Feature Section */}
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Included as standard
-            </h2>
-            <p className="mt-4 text-lg text-gray-500">
-              We offer high quality iPod repairs as standard, we don't do tiers
-              or low quality parts.
-            </p>
+        <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-gray-800 tracking-tight">Everything needed for a great iPod Nano repair</h2>
+          <p className="mt-4 max-w-3xl text-lg text-gray-800">
+            Our aim is to repair your device to the highest standard, using the best available parts and retaining all of your devices original features.
+          </p>
+          <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+            {features.map((feature) => (
+              <div key={feature.name}>
+                <div>
+                  <span className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 bg-opacity-10">
+                    <feature.icon className="h-6 w-6 text-gray-800" aria-hidden="true" />
+                  </span>
+                </div>
+                <div className="mt-6">
+                  <h3 className="text-lg font-medium text-gray-800">{feature.name}</h3>
+                  <p className="mt-2 text-base text-gray-800">{feature.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
-          <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Original Parts
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  Where possible we only use original iPod components, this
-                  ensures your device functions as normal after repair.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Data
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  For the vast majority of our iPod repairs, no data or music loss is to be expected.
-                  So you can carry on listening on your way home.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Health Check
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We can check functions, features and ensure everything is
-                  running smoothly. Should we find any issues we can advise you
-                  on repair options.
-                </dd>
-              </div>
-            </div>
-
-            <div className="flex">
-              <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-500"
-                data-todo-x-description="Heroicon name: outline/check"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <div className="ml-3">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Warranty
-                </dt>
-                <dd className="mt-2 text-base text-gray-500">
-                  We offer a 90 day warranty on all our repairs, this covers any
-                  issues with the replacement parts or workmanship.
-                </dd>
-              </div>
-            </div>
-          </dl>
         </div>
       </div>
+
 
       <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

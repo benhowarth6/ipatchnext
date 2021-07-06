@@ -19,7 +19,7 @@ const features = [
   },
   {
     name: 'Fast repairs',
-    description: 'The majority of our iPhone repairs are completed in under 1 hour, most are even quicker.',
+    description: 'The majority of our iPad repairs are completed in under 2 hours, most are even quicker.',
     icon: CheckIcon,
   },
   {
@@ -34,12 +34,12 @@ const features = [
   },
   {
     name: 'Board repairs',
-    description: 'We offer a variety of iPhone logic board repairs, should your device have a more serious issue.',
+    description: 'We offer a variety of iPad logic board repairs, should your device have a more serious issue.',
     icon: CheckIcon,
   },
   {
     name: 'Liquid damage',
-    description: 'If your iPhone has liquid damage, we offer a thorough cleaning service to restore your device.',
+    description: 'If your iPad has liquid damage, we offer a thorough cleaning service to restore your device.',
     icon: CheckIcon,
   },
   {
@@ -53,7 +53,6 @@ const features = [
     icon: CheckIcon,
   },
 ]
-
 
 export default function Home() {
   return (

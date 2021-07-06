@@ -286,7 +286,7 @@ export default function Home() {
                 Through our many years of experience we've been able to extend our offering of iPhone repair services to include the following:
                 </p>
                 <ul>
-                  <li>Liquid damage repairs, include full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing.</li>
+                  <li>Liquid damage repairs, including full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing.</li>
                   <li>Logic board repairs, including free diagnosis and quotations and a quick turnaround.</li>
                   <li>Data recovery for damaged beyond repair devices and software issues.</li>
                 </ul>
