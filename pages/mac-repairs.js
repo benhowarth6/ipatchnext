@@ -297,6 +297,12 @@ export default function Home() {
                 <p>
                   These services have allowed us to offer a far wider range of repairs, so no matter your issue we’re able to offer a solution.
                 </p>
+                <p>
+                You may notice a wide price variation between some common repairs on MacBooks such as displays, or SSD upgrades. On the display side this comes down to the technology in your model. 
+                Retina displays have to be changed as a full assembly due to the thin design and construction, whereas some older models allow us to change display components individually to significantly 
+                reduce the repair cost. Some Mac models use standard form factor drives which allow us to offer cheaper upgrades, whereas some models use proprietary standards which can significantly increase 
+                the cost of storage upgrades. 
+                </p>
                 <h3>How we’re different</h3>
                 <p>
                 As mentioned earlier, we've now been repairing Mac's for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
@@ -321,7 +327,7 @@ export default function Home() {
             <div>
               <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">A Deeper Dive</h2>
               <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Our Parts
+                How we're different
               </h3>
             </div>
           </div>
@@ -366,33 +372,30 @@ export default function Home() {
             <div className="mt-8 lg:mt-0">
               <div className="text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
-                  You wouldn’t want any old cheap bits and bobs used to fix a device that was expensive to purchase in the first place would you?
-                  It would be like putting recycled tyres on a sports car…yes you can get away with it but they won’t last very long and can often have disastrous consequences!
+                As mentioned earlier, we've now been repairing Mac's for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
+                This means we aren't always the cheapest option available, but we feel we do offer the best available independent repair option for Apple products.
                 </p>
               </div>
               <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
-                  That’s why iPatch only uses original components in our repairs, you can be sure your device will operate as it is meant to,
-                  the components will be much more reliable and be of no risk to further damaging your device.
+                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance. 
+                We also ensure devices are disassembled and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
+                This means you won’t even notice your Mac has been 
+                </p>
+                <h3>Our Parts</h3>
+                <p>
+                You wouldn’t want any old cheap bits and bobs used to fix a device that was expensive to purchase in the first place would you? It would be like putting recycled tyres on a sports car…yes 
+                you can get away with it but they won’t last very long and can often have disastrous consequences! 
                 </p>
                 <p>
-                  A prime example would be with repairing smashed glass on the rear of iPhone’s. A lot of repair shops will try and melt off the existing glass to then bond another piece on to the existing frame.
-                  The problem we see here is that firstly the new glass doesn’t sit under the camera lens as it is supposed to (it goes over for ease of install).
+                All the components we use to repair MacBook’s are original OEM quality parts. For some of the almost antique models, we do have to use refurbished components as the bits simply aren’t produced any more. 
+                This doesn’t mean though that they aren’t thoroughly inspected and tested before fitting and our warranty covers any unexpected issues that may arise. For the newer models of MacBook’s and all the replacement 
+                batteries we fit, the parts are supplied straight from the factory.
                 </p>
                 <p>
-                  The wireless charging coil can easily be punctured which, as it is connected to your volume buttons too, can cause them to fail. Lastly, the poor fit would mean the iPhone is much less water resistant against any future mishaps.
+                We aim to offer the best available independent repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, 
+                bad battery or any other fault, we're sure we'll have a solution that you'll be happy with.
                 </p>
-                <p>
-                  Here at iPatch we choose to replace not only the rear glass but the entire frame as well. Yes it is a bit more time consuming and certainly more of an expensive option but the results leave you with an iPhone looking like it did fresh out the box.
-                </p>
-                <p>
-                Another example is cheaper screen repairs which often don't use original IC's and LCD's. This means you typically loose the features which are coded to the screen such as True-Tone and auto-brightness. 
-                We ensure your new display is a quality part which supports these features and means no loss of functionality. 
-                </p>
-                <p>
-                  We aim to offer the best available independent repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault, 
-                  we're sure we'll have a solution that you'll be happy with.
-                  </p>
               </div>
             </div>
           </div>

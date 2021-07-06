@@ -273,38 +273,33 @@ export default function Home() {
                 Our Process
               </h3>
               <p className="mt-8 text-lg text-gray-500">
-                We've been repairing iPhones in Leeds for over 13 years now, and during that time we've learnt a lot about how the devices work, 
-                the common issues each model have and the best repair methods.
+                We've been repairing iPads at our Trinity Leeds store since the iPad was released in 2010, and during that time we've learnt a lot about how the devices work, the common issues each model have and the best repair methods.
               </p>
               <div className="mt-5 prose prose-blue text-gray-500">
                 <p>
-                Starting with the most common type of iPhone repair. Screen replacements make up the majority of our repairs, to date we've completed well over 30k. 
-                We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the original quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.
+                So what can we do. After nearly two decades worth of experience, exclusively working with Apple products, we have extensive knowledge on the ins and outs of all the Apple product line, especially the iPads. 
+                Most commonly seen repairs are smashed screens and worn out batteries, both of which can be replaced usually within the hour on every model and generation. The tools and techniques we use mean that we can confidently
+                 open up an iPad to get to the battery or dock without marking the case or damaging the display in the process.
                 </p>
                 <p>
-                Next up is battery replacements, again we've completed well over 50k of these. As such we've learnt how to read iPhone battery data and analytics to determine if a battery does require a replacement 
-                or if there is another issue causing excessive drain. As with our screen replacements, we only use the original battery cells to ensure your replacement performs perfectly.
+                You may notice a bit of a price variation across the iPad models. This is because some iPads have combined touch screen and LCD displays. Whilst it makes for an easier screen replacement, it does push the cost up because the glass, 
+                touchscreen and LCD all have to be changed as a single piece, rather than just the iPad’s front glass panel, which is commonly smashed.
                 </p>
                 <p>
-                Through our many years of experience we've been able to extend our offering of iPhone repair services to include the following:
-                </p>
-                <ul>
-                  <li>Liquid damage repairs, include full device disassembly, ultrasonic cleaning of affected components followed by rigorous testing.</li>
-                  <li>Logic board repairs, including free diagnosis and quotations and a quick turnaround.</li>
-                  <li>Data recovery for damaged beyond repair devices and software issues.</li>
-                </ul>
-                <p>
-                  These services have allowed us to offer a far wider range of repairs, so no matter your issue we’re able to offer a solution.
-                </p>
-                <h3>How we’re different</h3>
-                <p>
-                As mentioned earlier, we've now been repairing iPhones for quite some time. During this we've always been committed to using original components paired with the best workmanship. 
-                This means we aren't always the cheapest option available, but we feel we do offer the best available independent repair option for Apple products.
+                If you notice your iPad battery life is waning and you don’t get the usual hours of usage then here at iPatch, we can certainly fit your iPad with a brand new, official OEM battery. This would take the battery life of your Apple iPad 
+                back up to what it was when you first bought it. A whole new lease of life can be brought to your raging iPad this way and you wouldn’t be able to tell anyone had even been inside.
                 </p>
                 <p>
-                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance.
-                We also ensure devices are disassembled and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. 
-                We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance.
+                Have the kids jammed in their power buttons, volume switch or home button? Never fear, all of those well used clickers can be repaired or replaced. We carefully remove the iPad display from its sealed housing and keep it dust 
+                free whilst we work on the internals. Our warranty covers you for 90 days too in the unlikely event the same issue occurs.
+                </p>
+                <p>
+                We see a lot of the newer 11” and 12.9” iPad Pro’s with dock issues too. There seems to be a common fault where the iPad just decides to stop charging when connecting to power and by replacing the lightening charger port or newer style 
+                USB-C port, we can bring your iPad back to life at a fraction of the cost of having Apple replace the iPad under their repair programme.
+                </p>
+                <p>
+                We also work along side many education departments and industry sectors that utilise iPads for their staff, students and team members. If your business or IT department are in need of a place to get your iPads serviced quickly so 
+                they can be returned to your workforce then iPatch can offer you just that service. We are efficient, reliable and honest with our repairs and are confident you would be happy with the service we offer.
                 </p>
               </div>
             </div>
@@ -320,7 +315,7 @@ export default function Home() {
             <div>
               <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">A Deeper Dive</h2>
               <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Our Parts
+              How we’re different
               </h3>
             </div>
           </div>
@@ -365,33 +360,34 @@ export default function Home() {
             <div className="mt-8 lg:mt-0">
               <div className="text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">
-                  You wouldn’t want any old cheap bits and bobs used to fix a device that was expensive to purchase in the first place would you?
-                  It would be like putting recycled tyres on a sports car…yes you can get away with it but they won’t last very long and can often have disastrous consequences!
+                As mentioned earlier, we've now been repairing iPads for quite some time. During this we've always been committed to using original components paired with the best workmanship. This means we aren't always the cheapest option available,
+                 but we feel we do offer the best available independent repair option for Apple products.
                 </p>
               </div>
               <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
-                  That’s why iPatch only uses original components in our repairs, you can be sure your device will operate as it is meant to,
-                  the components will be much more reliable and be of no risk to further damaging your device.
+                We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance. We also ensure devices are disassembled 
+                and reassembled according to spec. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us. We also replace any seals which have to be broken to complete your 
+                repair, to ensure water and dust resistance. You wouldn’t even notice your cherished iPad had even been opened up as the tools and techniques we use leave no mark on the casing.
+                </p>
+                <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Our Parts
+              </h3>
+              <p className="text-lg text-gray-500">
+                You wouldn’t want any old cheap bits and bobs used to fix a device that was expensive to purchase in the first place would you? It would be like putting recycled tyres on a sports car…yes you can get away with it 
+                but they won’t last very long and can often have disastrous consequences!
+                </p>
+              </div>
+              <div className="mt-5 prose prose-blue text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                <p>
+                All the components we use to repair iPads are original OEM quality parts. For some of the almost antique models, we do have to use refurbished components as the bits simply aren’t produced any more. This doesn’t mean though 
+                that they aren’t thoroughly inspected and tested before fitting and our warranty covers any unexpected issues that may arise. For the newer models of iPads and all the replacement batteries we fit, the parts are supplied 
+                straight from the factory.
                 </p>
                 <p>
-                  A prime example would be with repairing smashed glass on the rear of iPhone’s. A lot of repair shops will try and melt off the existing glass to then bond another piece on to the existing frame.
-                  The problem we see here is that firstly the new glass doesn’t sit under the camera lens as it is supposed to (it goes over for ease of install).
+                We aim to offer the best available independent repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault,
+                 we're sure we'll have a solution that you'll be happy with.
                 </p>
-                <p>
-                  The wireless charging coil can easily be punctured which, as it is connected to your volume buttons too, can cause them to fail. Lastly, the poor fit would mean the iPhone is much less water resistant against any future mishaps.
-                </p>
-                <p>
-                  Here at iPatch we choose to replace not only the rear glass but the entire frame as well. Yes it is a bit more time consuming and certainly more of an expensive option but the results leave you with an iPhone looking like it did fresh out the box.
-                </p>
-                <p>
-                Another example is cheaper screen repairs which often don't use original IC's and LCD's. This means you typically loose the features which are coded to the screen such as True-Tone and auto-brightness. 
-                We ensure your new display is a quality part which supports these features and means no loss of functionality. 
-                </p>
-                <p>
-                  We aim to offer the best available independent repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. So if you have a smashed screen, bad battery or any other fault, 
-                  we're sure we'll have a solution that you'll be happy with.
-                  </p>
               </div>
             </div>
           </div>
