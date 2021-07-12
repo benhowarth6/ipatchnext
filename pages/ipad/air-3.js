@@ -22,14 +22,14 @@ export default function Home() {
         <div className="pt-12 sm:pt-16 lg:pt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
+              <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
                 iPad Air 3 Repair
-              </h2>
-              <p className="mt-4 text-xl text-gray-600">
+              </h1>
+              <h2 className="mt-4 text-xl text-gray-600">
                 We offer a comprehensive set of repairs for the third
                 generation iPad Air. Including screen replacements,
                 batteries and much more.
-              </p>
+              </h2>
             </div>
           </div>
         </div>

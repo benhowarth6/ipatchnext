@@ -7,7 +7,7 @@ import { LocationMarkerIcon, CalendarIcon, MailIcon, QrcodeIcon, BadgeCheckIcon,
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import Hero from "../components/Hero-dark";
+import Hero from "../components/Hero";
 
 function Home() {
   return (
@@ -32,10 +32,10 @@ function Home() {
       />
       <LocalBusinessJsonLd
         type="Store"
-        id="http://ipatchrepairs.com"
+        id="https://www.ipatchrepairs.co.uk"
         name="iPhone, MacBook, iPad and Watch Repairs in Leeds - iPatch"
         description="We repair iPhones, MacBooks, iPad's and More. We offer screens replacements, batteries, charging ports and even liquid damage repairs."
-        url="http://ipatchrepairs.com/contact/trinity-leeds"
+        url="https://www.ipatchrepairs.co.uk/contact"
         telephone="+4401132469388"
         address={{
           streetAddress: "iPatch, Trinity Leeds, Albion Street",

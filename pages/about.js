@@ -18,8 +18,8 @@ export default function Home() {
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">About Us</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">Learn a little bit more about iPatch, our history and our four person team with a combined 40 years experience in the repair industry. </p>
+            <h1 className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">About Us</h1>
+            <h2 className="max-w-2xl mt-5 mx-auto text-xl text-white">Learn a little bit more about iPatch, our history and our four person team with a combined 40 years experience in the repair industry. </h2>
           </div>
         </div>
       </div>

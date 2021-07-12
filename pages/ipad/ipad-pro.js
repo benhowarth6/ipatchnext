@@ -66,8 +66,8 @@ export default function Home() {
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">iPad Pro Repairs</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of iPad Pro repairs including screens, batteries, charging ports and more for all models. </p>
+            <h1 className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">iPad Pro Repairs</h1>
+            <h2 className="max-w-2xl mt-5 mx-auto text-xl text-white">We offer a large selection of iPad Pro repairs including screens, batteries, charging ports and more for all models. </h2>
           </div>
         </div>
       </div>
