@@ -13,8 +13,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPad Mini 4 Screen Replacement & Other Repairs in Leeds - iPatch"
-        description="We repair iPad Mini 4 screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPad Mini 4 Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert iPad Mini 4 repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our iPad Mini 4 repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/ipad/ipad-mini-4"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/ipad/ipad-mini-4',
+          title: 'iPad Mini 4 Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert iPad Mini 4 repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our iPad Mini 4 repairs include a 3 month warranty.',
+          mages: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/ipad-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPad Mini 4 Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

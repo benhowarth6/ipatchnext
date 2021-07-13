@@ -10,8 +10,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="About Us - iPhone, Mac, iPad Repairs in Leeds - iPatch"
-        description="Find out more about iPatch and how we work. We repair screens, batteries, charging ports and more on a range of Apple Products."
+        title="About Us - Expert Apple Repairs in Leeds"
+        description="Find out more about iPatch and how we work. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/about"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/about',
+          title: 'About Us - Expert Apple Repairs in Leeds',
+          description: 'Find out more about iPatch and how we work. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | About us"
+            }
+          ]
+        }}
       />
       <Header />
 

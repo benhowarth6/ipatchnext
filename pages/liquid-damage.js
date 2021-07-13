@@ -13,9 +13,24 @@ export default function Home() {
     return (
       <div>
         <NextSeo
-          title="Liquid Damage repair services for iPhones, MacBook's and more - iPatch"
-          description="We offer liquid damage repairs for all iPhones, MacBook's, iPad's and more. We provide free quoatations and aim to turn around most devices in the same day."
-        />
+        title="Liquid Damage Repair Services - Available for iPhones, iPad's and Mac's and more"
+        description="We offer liquid damage repair services for all iPhones, MacBook's, iPad's and more. We provide free quoatations and offer a 90 day warranty on all repairs."
+        canonical="https://www.ipatchrepairs.co.uk/liquid-damage"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/liquid-damage',
+          title: 'Liquid Damage Repair Services - Available for iPhones, iPad\'s and Mac\'s and more',
+          description: 'We offer liquid damage repair services for all iPhones, MacBook\s, iPad\'s and more. We provide free quoatations and offer a 90 day warranty on all repairs.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Liquid Damage Repair Services",
+            }
+          ]
+        }}
+      />
         <Header />
   
         <div className="bg-gray-800">

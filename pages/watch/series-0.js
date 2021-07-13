@@ -13,8 +13,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="Apple Watch (1st Generation) Screen Replacement & Battery Repairs in Leeds - iPatch"
-        description="We repair Apple Watch 1st Generation screens and batteries. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="Apple Watch 1st Generation Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple Watch 1st Generation repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our Apple Watch 1st Generation repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/watch/series-0"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/watch/series-0',
+          title: 'Apple Watch 1st Generation Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple Watch 1st Generation repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our Apple Watch 1st Generation repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/watch-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Apple Watch 1st Generation Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

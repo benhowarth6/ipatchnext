@@ -13,14 +13,28 @@ function Home() {
   return (
     <div>
       <NextSeo
-        title="iPhone Repair in Leeds | MacBook & iPad Repairs"
-        description="Expert Apple iPhone, iPad and MacBook repairs in Trinity Leeds. We offer screen replacements, new batteries and much more."
+        title="iPhone Repair in Leeds | MacBook & iPad Repairs | Screens & Batteries"
+        description="Expert Apple iPhone, iPad and MacBook repairs in Trinity Leeds. We offer screen replacements, new batteries and much more. All of our repairs include a 90 day warranty."
         canonical="https://www.ipatchrepairs.co.uk"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk',
+          title: 'iPhone Repair in Leeds | MacBook & iPad Repairs | Screens & Batteries',
+          description: 'Expert Apple iPhone, iPad and MacBook repairs in Trinity Leeds. We offer screen replacements, new batteries and much more. All of our repairs include a 90 day warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Expert Apple Device Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <LocalBusinessJsonLd
         type="Store"
         id="https://www.ipatchrepairs.co.uk"
-        name="iPhone, MacBook, iPad and Watch Repairs in Leeds - iPatch"
+        name="iPhone Repair in Leeds | MacBook & iPad Repairs | Screens & Batteries"
         description="We repair iPhones, MacBooks, iPad's and More. We offer screens replacements, batteries, charging ports and even liquid damage repairs."
         url="https://www.ipatchrepairs.co.uk/contact"
         telephone="+4401132469388"

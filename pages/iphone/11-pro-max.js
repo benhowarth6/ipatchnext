@@ -17,8 +17,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPhone 11 Pro Max Screen Replacement & Other Repairs in Leeds - iPatch"
-        description="We repair iPhone 11 Pro Max screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPhone 11 Pro Max Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple iPhone 11 Pro Max repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone 11 Pro Max repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/iphone/11-pro-max"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/iphone/11-pro-max',
+          title: 'iPhone 11 Pro Max Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple iPhone 11 Pro Max repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All our iPhone 11 Pro Max repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/iphone-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPhone 11 Pro Max Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

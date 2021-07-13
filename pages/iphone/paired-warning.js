@@ -10,8 +10,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPhone Paired Component Warnings - iPatch"
+        title="iPhone Paired Component Warnings"
         description="Learn more about the warnings that may appear after a paired component inside your iPhone has been changed. These warnings appear on iPhone XR and upwards."
+        canonical="https://www.ipatchrepairs.co.uk/iphone/paired-warning"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/iphone/paired-warning',
+          title: 'iPhone Paired Component Warnings',
+          description: 'Learn more about the warnings that may appear after a paired component inside your iPhone has been changed. These warnings appear on iPhone XR and upwards.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/iphone-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPhone Paired Component Warnings"
+            }
+          ]
+        }}
       />
       <Header />
 

@@ -10,8 +10,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="Terms & Conditions - iPhone, Mac, iPad Repairs in Leeds - iPatch"
-        description="iPatch Next.JS TailWind UI tests."
+        title="Terms & Conditions - Expert Apple Repairs in Leeds"
+        description="View our repair terms and conditions."
+        canonical="https://www.ipatchrepairs.co.uk/find-repair"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/find-repair',
+          title: 'Terms & Conditions - Expert Apple Repairs in Leeds"',
+          description: 'View our repair terms and conditions.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Terms & Conditions"
+            }
+          ]
+        }}
       />
       <Header />
 

@@ -13,8 +13,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPod Nano 5th Generation Screen Replacement & Other Repairs in Leeds - iPatch"
-        description="We repair iPod Nano 5th Generation screens and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPod Nano 5th Generation Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple iPod Nano 5th Generation repairs in Trinity Leeds. We offer replacement screens, batteries, headphone jacks and more while you wait. All of our iPod Nano 5th Generation repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/ipod/nano/nano-5"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/ipod/nano/nano-5',
+          title: 'iPod Nano 5th Generation Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple iPod Nano 5th Generation repairs in Trinity Leeds. We offer replacement screens, batteries, headphone jacks and more while you wait. All of our iPod Nano 5th Generation repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/ipod-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPod Nano 5th Generation Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

@@ -17,8 +17,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPhone SE 2020 Screen Replacement & Other Repairs in Leeds - iPatch"
-        description="We repair iPhone SE 2020 screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPhone SE 2020 Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple iPhone SE 2020 repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone SE 2020 repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/iphone/se-2"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/iphone/se-2',
+          title: 'iPhone SE 2020 Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple iPhone SE 2020 repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All our iPhone SE 2020 repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/iphone-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPhone SE 2020 Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 
@@ -27,10 +42,10 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
-                iPhone SE 2 Repair
+                iPhone SE 2020 2 Repair
               </h1>
               <h2 className="mt-4 text-xl text-gray-600">
-                We offer a comprehensive set of repairs for the iPhone SE 2.
+                We offer a comprehensive set of repairs for the iPhone SE 2020 2.
                 Including screen replacements, batteries and much more.
               </h2>
             </div>
@@ -139,7 +154,7 @@ export default function Home() {
               Other Repairs
             </h2>
             <p className="mt-4 text-xl text-gray-600 sm:text-center">
-              Here's all the repairs we offer for iPhone SE 2.
+              Here's all the repairs we offer for iPhone SE 2020 2.
             </p>
           </div>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
@@ -757,7 +772,7 @@ export default function Home() {
               A Better Way To Repair
             </h2>
             <p className="mt-4 text-xl text-gray-600 sm:text-center">
-              Why repair your iPhone SE 2 with iPatch?
+              Why repair your iPhone SE 2020 2 with iPatch?
             </p>
           </div>
 

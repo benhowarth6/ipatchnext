@@ -11,8 +11,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="Contact Us - iPatch Trinity Leeds & Kirkstall Morisons"
-        description="We repair screens, batteries, charging ports and more on a range of Apple Products. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="Contact Us - Expert Apple Repairs in Leeds"
+        description="Find out more about iPatch, our locations, opening times and our contact details. We're open 7 days a week in our Trinity Leeds store."
+        canonical="https://www.ipatchrepairs.co.uk/contact"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/contact',
+          title: 'Contact Us - Expert Apple Repairs in Leeds',
+          description: 'Find out more about iPatch, our locations, opening times and our contact details. We\'re open 7 days a week in our Trinity Leeds store.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Contact us"
+            }
+          ]
+        }}
       />
       <Header />
 

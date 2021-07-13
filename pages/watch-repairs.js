@@ -74,7 +74,7 @@ export default function Home() {
           url: 'https://www.ipatchrepairs.co.uk/watch-repairs',
           title: 'Apple Watch Repairs in Leeds | Screen Replacements, Batteries and more',
           description: 'Expert Apple Watch repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our Apple Watch repairs include a 3 month warranty.',
-          mages: [
+          images: [
             {
               url: "https://www.ipatchrepairs.co.uk/watch-social.jpg",
               width: 1200,

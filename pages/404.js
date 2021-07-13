@@ -1,8 +1,29 @@
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { NextSeo } from "next-seo";
 
 export default function Custom404() {
   return (
+    <div>
+    <NextSeo
+        title="404 - Page Not Found"
+        description="The page you requested could not be found."
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/404',
+          title: '404 - Page Not Found',
+          description: 'The page you requested could not be found.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Apple Device Repairs in Leeds"
+            }
+          ]
+        }}
+      />
     <div className="min-h-full sm:min-h-full">
       <div className="relative mt-6 z-10">
       <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
@@ -37,7 +58,7 @@ export default function Custom404() {
                     Hello, is it me you're looking for?
                     </h1>
                     <Link href="/">
-                      <a className="mt-8 inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
+                      <a className="mt-8 inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-indigo-50 sm:w-auto"
                       >
                         Go Home
                     </a>
@@ -48,6 +69,7 @@ export default function Custom404() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

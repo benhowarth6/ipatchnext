@@ -15,8 +15,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPod Classic 4th Generation Hard Drive Replacement & Other Repairs in Leeds - iPatch"
-        description="We repair iPod Classic 4th Generation hard drives, batteries, headphone jacks and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPod Classic 4th Generation Repairs in Leeds | Hard Drives, Batteries and more"
+        description="Expert Apple iPod Classic 4th Generation repairs in Trinity Leeds. We offer replacement hard drives, batteries, liquid damage services and more while you wait. All of our iPod Classic 4th Generation repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/ipod/classic/classic-4"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/ipod/classic/classic-4',
+          title: 'iPod Classic 4th Generation Repairs in Leeds | Hard Drives, Batteries and more',
+          description: 'Expert Apple iPod Classic 4th Generation repairs in Trinity Leeds. We offer replacement hard drives, batteries, liquid damage services and more while you wait. All of our iPod Classic 4th Generation repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/ipod-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPod Classic 4th Generation Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

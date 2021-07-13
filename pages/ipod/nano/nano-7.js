@@ -13,8 +13,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPod Nano 7th Generation Repairs in Leeds - iPatch"
-        description="We repair iPod Nano 7th Generations. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPod Nano 7th Generation Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple iPod Nano 7th Generation repairs in Trinity Leeds. We offer replacement screens, batteries, headphone jacks and more while you wait. All of our iPod Nano 7th Generation repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/ipod/nano/nano-7"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/ipod/nano/nano-7',
+          title: 'iPod Nano 7th Generation Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple iPod Nano 7th Generation repairs in Trinity Leeds. We offer replacement screens, batteries, headphone jacks and more while you wait. All of our iPod Nano 7th Generation repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/ipod-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPod Nano 7th Generation Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

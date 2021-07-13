@@ -15,8 +15,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPod Touch 3rd Generation Screen Replacement & Other Repairs in Leeds - iPatch"
-        description="We repair iPod Touch 3rd Generation screens, batteries, headphone jacks and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPod Touch 3rd Generation Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple iPod Touch 3rd Generation repairs in Trinity Leeds. We offer replacement screens, batteries, headphone jacks and more while you wait. All of our iPod Touch 3rd Generation repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/ipod/touch/touch-3"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/ipod/touch/touch-3',
+          title: 'iPod Touch 3rd Generation Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple iPod Touch 3rd Generation repairs in Trinity Leeds. We offer replacement screens, batteries, headphone jacks and more while you wait. All of our iPod Touch 3rd Generation repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/ipod-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPod Touch 3rd Generation Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

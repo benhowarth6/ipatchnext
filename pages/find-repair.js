@@ -55,8 +55,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="Find a Repair with us - iPatch"
-        description="Find a repair for a device you need repairing. We accept both mail in and drop off repairs."
+        title="Find a Repair - Expert Apple Repairs in Leeds"
+        description="Find a repair for your device, then book in for repair with us, we offer both mail in and drop off bookings. All of our repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/find-repair"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/find-repair',
+          title: 'Find a Repair - Expert Apple Repairs in Leeds',
+          description: 'Find a repair for your device, then book in for repair with us, we offer both mail in and drop off bookings. All of our repairs include a 3 month warranty.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Find a Repair"
+            }
+          ]
+        }}
       />
       <Header />
 

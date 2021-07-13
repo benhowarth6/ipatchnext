@@ -13,9 +13,24 @@ export default function Home() {
     return (
       <div>
         <NextSeo
-          title="Logic Board repair services for iPhones, MacBook's and more - iPatch"
-          description="We offer logic board repairs for all iPhones, MacBook's, iPad's and more. We provide free quoatations and offer a 90 day warranty on all repairs."
-        />
+        title="Logic Board Repair Services - Available for iPhones, iPad's and Mac's and more"
+        description="We offer logic board repair services for all iPhones, MacBook's, iPad's and more. We provide free quoatations and offer a 90 day warranty on all repairs."
+        canonical="https://www.ipatchrepairs.co.uk/logic-board"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/logic-board',
+          title: 'Logic Board Repair Services - Available for iPhones, iPad\'s and Mac\'s and more',
+          description: 'We offer logic board repair services for all iPhones, MacBook\'s, iPad\'s and more. We provide free quoatations and offer a 90 day warranty on all repairs.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Logic Board Repair Services",
+            }
+          ]
+        }}
+      />
         <Header />
   
         <div className="bg-gray-800">

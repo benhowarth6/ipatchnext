@@ -13,9 +13,24 @@ export default function Home() {
     return (
       <div>
         <NextSeo
-          title="Data Recovery services for iPhones, MacBook's and more - iPatch"
-          description="We offer data recovery services for all iPhones, MacBook's, iPad's and more. We provide free quoatations and offer a 90 day warranty on all repairs."
-        />
+        title="Data Recovery Services - Available for iPhones, iPad's and Mac's"
+        description="We offer data recovery services for all iPhones, MacBook's, iPad's and more. We provide free quoatations and offer a 90 day warranty on all repairs."
+        canonical="https://www.ipatchrepairs.co.uk/data-recovery"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/data-recovery',
+          title: 'Data Recovery Services - Available for iPhones, iPad\'s and Mac\'s',
+          description: 'We offer data recovery services for all iPhones, MacBook\'s, iPad\'s and more. We provide free quoatations and offer a 90 day warranty on all repairs.',
+          images: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Data Recovery Services",
+            }
+          ]
+        }}
+      />
         <Header />
   
         <div className="bg-gray-800">
