@@ -66,7 +66,7 @@ export default function Home() {
           url: 'https://www.ipatchrepairs.co.uk/ipad-repairs',
           title: 'iPad Repairs in Leeds | Screen Replacements, Batteries and more',
           description: 'Expert Apple iPad repairs in Trinity Leeds. We offer replacement screens, batteries, charging ports and more while you wait. All of our iPad repairs include a 3 month warranty.',
-          mages: [
+          images: [
             {
               url: "https://www.ipatchrepairs.co.uk/ipad-social.jpg",
               width: 1200,

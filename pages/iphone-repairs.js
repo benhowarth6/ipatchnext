@@ -65,7 +65,7 @@ export default function Home() {
           url: 'https://www.ipatchrepairs.co.uk/iphone-repairs',
           title: 'iPhone Repairs in Leeds | Screen Replacements, Batteries and more',
           description: 'Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All our iPhone repairs include a 3 month warranty.',
-          mages: [
+          images: [
             {
               url: "https://www.ipatchrepairs.co.uk/iphone-social.jpg",
               width: 1200,

@@ -66,7 +66,7 @@ export default function Home() {
           url: 'https://www.ipatchrepairs.co.uk/mac-repairs',
           title: 'Mac Repairs in Leeds | Screen Replacements, Batteries and more',
           description: 'Expert Apple Mac repairs in Trinity Leeds. We offer replacement screens, batteries, keyboards and more while you wait. All of our Mac repairs include a 3 month warranty.',
-          mages: [
+          images: [
             {
               url: "https://www.ipatchrepairs.co.uk/mac-social.jpg",
               width: 1200,
