@@ -58,8 +58,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPad Screen, Battery and Other Repairs in Leeds - iPatch"
-        description="We repair iPad screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPad Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple iPad repairs in Trinity Leeds. We offer replacement screens, batteries, charging ports and more while you wait. All of our iPad repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/ipad-repairs"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/ipad-repairs',
+          title: 'iPad Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple iPad repairs in Trinity Leeds. We offer replacement screens, batteries, charging ports and more while you wait. All of our iPad repairs include a 3 month warranty.',
+          mages: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/ipad-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPad Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

@@ -58,8 +58,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iMac Screen, SSD and Other Repairs in Leeds - iPatch"
-        description="We repair iMac screens, ssd's, power supplies and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iMac Repairs in Leeds | Screen Replacements, SSD Upgrades and more"
+        description="Expert iMac repairs in Trinity Leeds. We offer replacement screens, SSD upgrades and more while you wait. All of our iMac repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/mac/imac/imac-repairs"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/mac/imac/imac-repairs',
+          title: 'iMac Repairs in Leeds | Screen Replacements, SSD upgrades and more',
+          description: 'Expert iMac repairs in Trinity Leeds. We offer replacement screens, SSD upgrades and more while you wait. All of our iMac repairs include a 3 month warranty.',
+          mages: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/mac-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iMac Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

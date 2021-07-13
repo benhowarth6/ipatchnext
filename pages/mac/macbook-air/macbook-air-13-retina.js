@@ -15,8 +15,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="MacBook Air (Retina, 13-inch) Repairs in Leeds - iPatch"
-        description="We repair MacBook Air (Retina, 13-inch) screens, batteries, keyboards and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="MacBook Air 13-inch Retina Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert MacBook Air 13-inch Retina repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our MacBook Air 13-inch Retina repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/mac/macbook-air/macbook-air-13-retina"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/mac/macbook-air/macbook-air-13-retina',
+          title: 'MacBook Air 13-inch Retina Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert MacBook Air 13-inch Retina repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our MacBook Air 13-inch Retina repairs include a 3 month warranty.',
+          mages: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/mac-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | MacBook Air 13-inch Retina Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

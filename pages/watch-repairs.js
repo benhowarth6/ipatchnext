@@ -66,8 +66,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="Apple Watch Screen and Battery Replacements in Leeds - iPatch"
-        description="We replace Apple Watch screens and batteries. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="Apple Watch Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple Watch repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our Apple Watch repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/watch-repairs"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/watch-repairs',
+          title: 'Apple Watch Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple Watch repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our Apple Watch repairs include a 3 month warranty.',
+          mages: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/watch-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Apple Watch Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

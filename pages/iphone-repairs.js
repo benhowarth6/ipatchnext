@@ -57,8 +57,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPhone Screen, Battery and Other Repairs in Leeds - iPatch"
-        description="We repair iPhone screens, batteries, charging ports and even liquid damaged iPhones. All repairs are completed the same day and include a 90 day warranty.        "
+        title="iPhone Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/iphone-repairs"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/iphone-repairs',
+          title: 'iPhone Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All our iPhone repairs include a 3 month warranty.',
+          mages: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/iphone-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | iPhone Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

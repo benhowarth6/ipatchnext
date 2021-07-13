@@ -66,8 +66,23 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="iPod Screen, Battery and Other Repairs in Leeds - iPatch"
-        description="We repair iPod screens, batteries, charging ports, hard drvies and more. We aim to complete all repairs in the same day and include a 90 day warranty."
+        title="iPod Repairs in Leeds | Screen Replacements, Batteries and more"
+        description="Expert iPod repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our iPod repairs include a 3 month warranty."
+        canonical="https://www.ipatchrepairs.co.uk/ipod-repairs"
+        openGraph={{
+          type: 'website',
+          url: 'https://www.ipatchrepairs.co.uk/ipod-repairs',
+          title: 'iPod Repairs in Leeds | Screen Replacements, Batteries and more',
+          description: 'Expert iPod repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our iPod repairs include a 3 month warranty.',
+          mages: [
+            {
+              url: "https://www.ipatchrepairs.co.uk/ipod-social.jpg",
+              width: 1200,
+              height: 630,
+              alt: "iPatch | Apple iPod Repairs in Leeds"
+            }
+          ]
+        }}
       />
       <Header />
 

@@ -1,5 +1,7 @@
 import "tailwindcss/tailwind.css";
+import { DefaultSeo } from 'next-seo';
 
+import SEO from './../data/next-seo.config';
 import { usePanelbear } from "./../hooks/panelbear";
 
 function MyApp({ Component, pageProps }) {
@@ -11,6 +13,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </>
   );
