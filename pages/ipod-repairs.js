@@ -74,7 +74,7 @@ export default function Home() {
           url: 'https://www.ipatchrepairs.co.uk/ipod-repairs',
           title: 'iPod Repairs in Leeds | Screen Replacements, Batteries and more',
           description: 'Expert iPod repairs in Trinity Leeds. We offer replacement screens, batteries and more while you wait. All of our iPod repairs include a 3 month warranty.',
-          mages: [
+          images: [
             {
               url: "https://www.ipatchrepairs.co.uk/ipod-social.jpg",
               width: 1200,
