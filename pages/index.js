@@ -2,12 +2,13 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo, LocalBusinessJsonLd } from "next-seo";
-import { LocationMarkerIcon, CalendarIcon, MailIcon, QrcodeIcon, BadgeCheckIcon, ThumbUpIcon, CurrencyPoundIcon, ClockIcon, LockClosedIcon, ShieldCheckIcon, PhoneIcon } from "@heroicons/react/outline";
+import { LocationMarkerIcon, CalendarIcon, MailIcon, QrcodeIcon, ThumbUpIcon, CurrencyPoundIcon, ClockIcon, LockClosedIcon, ShieldCheckIcon, } from "@heroicons/react/outline";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
+
 
 function Home() {
   return (

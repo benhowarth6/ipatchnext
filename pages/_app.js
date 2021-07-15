@@ -1,8 +1,11 @@
 import "tailwindcss/tailwind.css";
 import { DefaultSeo } from 'next-seo';
+import { Script } from "next/script";
 
 import SEO from './../data/next-seo.config';
 import { usePanelbear } from "./../hooks/panelbear";
+import Chat from "../components/Chat";
+
 
 function MyApp({ Component, pageProps }) {
   // Load Panelbear only once during the app lifecycle
@@ -14,6 +17,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo {...SEO} />
+      <Chat />
       <Component {...pageProps} />
     </>
   );
