@@ -17,8 +17,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo {...SEO} />
-      <Chat />
       <Component {...pageProps} />
+      <Chat />
     </>
   );
 }
