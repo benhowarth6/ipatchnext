@@ -9,7 +9,8 @@ export default function Chat() {
 
   return (
     <>
-      <Script src="https://static.cdn-apple.com/businesschat/start-chat-button/2/index.js" />
+      <Script src="https://static.cdn-apple.com/businesschat/start-chat-button/2/index.js" 
+      strategy="afterInteractive"/>
       {/* Global notification live region, render this permanently at the end of the document */}
       <div
         aria-live="assertive"
