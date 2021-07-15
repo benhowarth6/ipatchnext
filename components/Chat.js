@@ -10,7 +10,7 @@ export default function Chat() {
   return (
     <>
       <Script src="https://static.cdn-apple.com/businesschat/start-chat-button/2/index.js" 
-      strategy="afterInteractive"/>
+      strategy="lazyOnload"/>
       {/* Global notification live region, render this permanently at the end of the document */}
       <div
         aria-live="assertive"
@@ -35,8 +35,6 @@ export default function Chat() {
                     className="apple-business-chat-banner-container"
                     data-apple-business-id="0fcea5c2-1c93-46a2-bf0c-5d896afb62f7"
                     data-apple-business-phone="+4401132469388"
-                    data-apple-business-intent-id="Customer Enquiry"
-                    data-apple-business-group-id="Technician"
                     data-apple-banner-cta="Got questions?"
                     data-apple-banner-context="Chat with a technician now."
                     data-apple-banner-scale="1"
@@ -45,7 +43,10 @@ export default function Chat() {
                     data-apple-banner-icon-background-color="rgb(239, 239, 244)"
                     data-apple-banner-icon-color="rgba(0, 122, 255)"
                     data-apple-banner-orientation="right"
-                  ></div>
+                  >
+
+                  </div>
+
                   <div className="ml-4 flex-shrink-0 flex">
                     <button
                       className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
