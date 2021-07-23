@@ -375,32 +375,21 @@ export default function Home() {
 
             <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
-                <li className="flex items-center space-x-3">
-                  <div className="min-w-0 flex-0">
-                    <h2 className="text-lg leading-6 font-medium text-gray-900">
-                      Rear Camera
-                    </h2>
-                  </div>
-                  <div className="flex-shrink-0">
-                    <Link href="paired-warning">
-                      <a className="inline-flex px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
-                        Paired
-                      </a>
-                    </Link>
-                  </div>
-                </li>
+                <h2 className="text-lg leading-6 font-medium text-gray-900">
+                  Microphone
+                </h2>
                 <p className="mt-4 text-sm text-gray-500">
-                  A new rear camera if one of yours is damaged.
+                  A new Microphone to restore sound pickup.
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
-                    £150
+                    £85
                   </span>
                 </p>
                 <Link
                   href={{
                     pathname: "book-repair/booking-type",
-                    query: { model: "12 Pro", repair: "rear-camera" },
+                    query: { model: "12 Pro", repair: "microphone" },
                   }}
                 >
                   <a className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
@@ -416,7 +405,7 @@ export default function Home() {
                   <li className="flex space-x-3">
                     <CheckIcon className="h-5 w-5 text-green-500"></CheckIcon>
                     <span className="text-sm text-gray-500">
-                      Triple-Rear Camera Module
+                      New Microphone
                     </span>
                   </li>
 
@@ -430,7 +419,7 @@ export default function Home() {
                   <li className="flex space-x-3">
                     <CheckIcon className="h-5 w-5 text-green-500"></CheckIcon>
                     <span className="text-sm text-gray-500">
-                      Repaired in under 30 minutes*
+                      Repaired in under 1 hour*
                     </span>
                   </li>
 
@@ -441,7 +430,6 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-
             <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
