@@ -30,8 +30,13 @@ export default function Home() {
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Drop-off MacBook Repair</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">Use this form to book your MacBook in with us for a drop-off repair.</p>
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+              Drop-off MacBook Repair
+            </p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">
+              Use this form to book your MacBook in with us for a drop-off
+              repair.
+            </p>
           </div>
         </div>
       </div>
@@ -172,17 +177,39 @@ export default function Home() {
                               {" "}
                               -- Select your MacBook --{" "}
                             </option>
-                            <option value="macbook-pro-16">MacBook Pro 16-inch</option>
-                            <option value="macbook-pro-15-usb-c">MacBook Pro 15-inch - USB-C</option>
-                            <option value="macbook-pro-15-retina">MacBook Pro 15-inch - Retina</option>
-                            <option value="macbook-pro-15-unibody">MacBook Pro 15-inch - Unibody</option>
-                            <option value="macbook-pro-13-usb-c">MacBook Pro 13-inch - USB-C</option>
-                            <option value="macbook-pro-13-retina">MacBook Pro 13-inch - Retina</option>
-                            <option value="macbook-pro-13-unibody">MacBook Pro 13-inch - Unibody</option>
-                            <option value="macbook-air-13-retina">MacBook Air 13-inch - Retina</option>
-                            <option value="macbook-air-13">MacBook Air 13-inch</option>
-                            <option value="macbook-air-11">MacBook Air 11-inch</option>
-                            <option value="macbook">MacBook 12-inch Retina</option>
+                            <option value="macbook-pro-16">
+                              MacBook Pro 16-inch
+                            </option>
+                            <option value="macbook-pro-15-usb-c">
+                              MacBook Pro 15-inch - USB-C
+                            </option>
+                            <option value="macbook-pro-15-retina">
+                              MacBook Pro 15-inch - Retina
+                            </option>
+                            <option value="macbook-pro-15-unibody">
+                              MacBook Pro 15-inch - Unibody
+                            </option>
+                            <option value="macbook-pro-13-usb-c">
+                              MacBook Pro 13-inch - USB-C
+                            </option>
+                            <option value="macbook-pro-13-retina">
+                              MacBook Pro 13-inch - Retina
+                            </option>
+                            <option value="macbook-pro-13-unibody">
+                              MacBook Pro 13-inch - Unibody
+                            </option>
+                            <option value="macbook-air-13-retina">
+                              MacBook Air 13-inch - Retina
+                            </option>
+                            <option value="macbook-air-13">
+                              MacBook Air 13-inch
+                            </option>
+                            <option value="macbook-air-11">
+                              MacBook Air 11-inch
+                            </option>
+                            <option value="macbook">
+                              MacBook 12-inch Retina
+                            </option>
                           </select>
                         </div>
                         <div className="col-span-6 sm:col-span-3">
@@ -205,17 +232,27 @@ export default function Home() {
                             </option>
                             <option value="screen">Screen Replacement</option>
                             <option value="battery">Battery Replacement</option>
-                            <option value="glass">Glass Replacement (Unibody Only)</option>
-                            <option value="lcd">LCD Replacement (Unibody Only)</option>
+                            <option value="glass">
+                              Glass Replacement (Unibody Only)
+                            </option>
+                            <option value="lcd">
+                              LCD Replacement (Unibody Only)
+                            </option>
                             <option value="charging-port">Charging Port</option>
                             <option value="top-case">Top Casing</option>
                             <option value="keyboard">Keyboard</option>
                             <option value="trackpad">Trackpad</option>
                             <option value="I/O">I/O Ribbon</option>
-                            <option value="sata-ribbon">Sata Ribbon (Unibody Only)</option>
+                            <option value="sata-ribbon">
+                              Sata Ribbon (Unibody Only)
+                            </option>
                             <option value="logic-board">Logic Board</option>
-                            <option value="8gb-ram">8GB RAM Upgrade (Unibody Only)</option>
-                            <option value="16gb-ram">16GB RAM Upgrade (Unibody Only)</option>
+                            <option value="8gb-ram">
+                              8GB RAM Upgrade (Unibody Only)
+                            </option>
+                            <option value="16gb-ram">
+                              16GB RAM Upgrade (Unibody Only)
+                            </option>
                             <option value="250gb-ssd">250GB SSD Upgrade</option>
                             <option value="250gb-ssd">250GB SSD Upgrade</option>
                             <option value="500gb-ssd">500GB SSD Upgrade</option>
@@ -295,8 +332,14 @@ export default function Home() {
                           Please note
                         </h3>
                         <div className="mt-2 text-sm text-yellow-700">
+                          {/*
                           <p>
                             We only offer appointments at Kirkstall Morrisons on Tuesday-Saturday. Please don't book in for a Sunday or Monday.
+                          </p>
+                          */}
+                          <p>
+                            Our Kirkstall Morrisons store is closed this week.
+                            Apologies for any inconvenience.
                           </p>
                         </div>
                       </div>
@@ -321,9 +364,6 @@ export default function Home() {
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                           >
                             <option value="trinity">Trinity Leeds</option>
-                            <option value="kirkstall">
-                              Kirkstall Morrisons
-                            </option>
                           </select>
                         </div>
 
