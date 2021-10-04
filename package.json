@@ -9,7 +9,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@headlessui/react": "^1.3.0",
+    "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.1",
     "@panelbear/panelbear-js": "^1.2.0",
     "@tailwindcss/aspect-ratio": "^0.2.1",
