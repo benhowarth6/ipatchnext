@@ -30,13 +30,8 @@ export default function Home() {
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-              Drop-off iPhone Repair
-            </p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">
-              Use this form to book your iPhone in with us for a drop-off
-              repair.
-            </p>
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Drop-off iPhone Repair</p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">Use this form to book your iPhone in with us for a drop-off repair.</p>
           </div>
         </div>
       </div>
@@ -177,18 +172,12 @@ export default function Home() {
                               {" "}
                               -- Select your iPhone --{" "}
                             </option>
-                            <option value="12 Pro Max">
-                              iPhone 12 Pro Max
-                            </option>
+                            <option value="12 Pro Max">iPhone 12 Pro Max</option>
                             <option value="12 Pro">iPhone 12 Pro</option>
                             <option value="12">iPhone 12</option>
                             <option value="12 Mini">iPhone 12 Mini</option>
-                            <option value="SE 2">
-                              iPhone SE (2nd Generation)
-                            </option>
-                            <option value="11 Pro Max">
-                              iPhone 11 Pro Max
-                            </option>
+                            <option value="SE 2">iPhone SE (2nd Generation)</option>
+                            <option value="11 Pro Max">iPhone 11 Pro Max</option>
                             <option value="11 Pro">iPhone 11 Pro</option>
                             <option value="11">iPhone 11</option>
                             <option value="XS Max">iPhone XS Max</option>
@@ -201,9 +190,7 @@ export default function Home() {
                             <option value="7">iPhone 7</option>
                             <option value="6S Plus">iPhone 6S Plus</option>
                             <option value="6S">iPhone 6S</option>
-                            <option value="SE">
-                              iPhone SE (1st Generation)
-                            </option>
+                            <option value="SE">iPhone SE (1st Generation)</option>
                             <option value="6 Plus">iPhone 6 Plus</option>
                             <option value="6">iPhone 6</option>
                             <option value="5S">iPhone 5S</option>
@@ -321,14 +308,8 @@ export default function Home() {
                           Please note
                         </h3>
                         <div className="mt-2 text-sm text-yellow-700">
-                          {/*
                           <p>
                             We only offer appointments at Kirkstall Morrisons on Tuesday-Saturday. Please don't book in for a Sunday or Monday.
-                          </p>
-                          */}
-                          <p>
-                            Our Kirkstall Morrisons store is closed this week.
-                            Apologies for any inconvenience.
                           </p>
                         </div>
                       </div>
@@ -353,6 +334,9 @@ export default function Home() {
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                           >
                             <option value="trinity">Trinity Leeds</option>
+                            <option value="kirkstall">
+                              Kirkstall Morrisons
+                            </option>
                           </select>
                         </div>
 

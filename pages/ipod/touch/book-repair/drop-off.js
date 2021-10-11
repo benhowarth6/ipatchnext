@@ -30,13 +30,8 @@ export default function Home() {
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-              Drop-off iPod Touch Repair
-            </p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">
-              Use this form to book your iPod Touch in with us for a drop-off
-              repair.
-            </p>
+            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Drop-off iPod Touch Repair</p>
+            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">Use this form to book your iPod Touch in with us for a drop-off repair.</p>
           </div>
         </div>
       </div>
@@ -216,14 +211,20 @@ export default function Home() {
                               -- Select your Repair --{" "}
                             </option>
                             <option value="screen">Screen Replacement</option>
-                            <option value="glass">Glass Replacement</option>
+                            <option value="glass">
+                              Glass Replacement
+                            </option>
                             <option value="lcd">LCD Replacement</option>
                             <option value="battery">Battery</option>
                             <option value="headphone-jack">
                               Headphone Jack
                             </option>
-                            <option value="front-camera">Front Camera</option>
-                            <option value="rear-camera">Rear Camera</option>
+                            <option value="front-camera">
+                              Front Camera
+                            </option>
+                            <option value="rear-camera">
+                              Rear Camera
+                            </option>
                             <option value="button-fault">Button Fault</option>
                             <option value="liquid-damage">Liquid Damage</option>
                             <option value="not-sure">I'm not sure</option>
@@ -300,14 +301,8 @@ export default function Home() {
                           Please note
                         </h3>
                         <div className="mt-2 text-sm text-yellow-700">
-                          {/*
                           <p>
                             We only offer appointments at Kirkstall Morrisons on Tuesday-Saturday. Please don't book in for a Sunday or Monday.
-                          </p>
-                          */}
-                          <p>
-                            Our Kirkstall Morrisons store is closed this week.
-                            Apologies for any inconvenience.
                           </p>
                         </div>
                       </div>
@@ -332,6 +327,9 @@ export default function Home() {
                             className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                           >
                             <option value="trinity">Trinity Leeds</option>
+                            <option value="kirkstall">
+                              Kirkstall Morrisons
+                            </option>
                           </select>
                         </div>
 
