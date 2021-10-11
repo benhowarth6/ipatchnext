@@ -97,31 +97,28 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
-        {iphoneModels.map(iphoneModel => {
-              const { id, name, image, alt, href } = iphoneModel;
-              return (
-            <div key={id} className="group relative">
-              <div className="w-full h-56 bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75 lg:h-72 xl:h-80">
-                <img
-                  src={image}
-                  alt={alt}
-                  className="w-full h-full object-center object-cover"
-                />
+        <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+    {iphoneModels.map(iphoneModel => {
+        const { id, name, image, alt, href } = iphoneModel;
+        return (
+            <div key={id} className="relative group">
+              <div className="aspect-w-3 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+                <img src={image} alt={alt} className="object-center object-cover" />
+                <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" aria-hidden="true">
+                  <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
+                    View Repairs
+                  </div>
+                </div>
               </div>
-              <h3 className="mt-4 font-semibold text-gray-900">
-                <a href={href}>
-                  <span className="absolute inset-0" />
-                  {name}
-                </a>
-              </h3>
-              <div className="mt-4 mb-8">
-                <a
-                  href={href}
-                  className="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200"
-                >
-                  View repairs<span className="sr-only">, {name}</span>
-                </a>
+              <div className="mt-4 flex items-center justify-between text-base font-semibold text-gray-900 space-x-8">
+                <h3>
+                  <Link href={href}>
+                  <a>
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {name}
+                  </a>
+                  </Link>
+                </h3>
               </div>
             </div>
           )})}

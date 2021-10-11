@@ -66,7 +66,7 @@
     {
       "id": "9",
       "name": "iPhone XS",
-      "image": "/iphone/b/xs.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/xs-256.png",
       "href": "/iphone/xs",
       "alt": "iPhone XS Repairs"
@@ -74,7 +74,7 @@
     {
       "id": "10",
       "name": "iPhone XR",
-      "image": "/iphone/b/xr.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/xr-256.png",
       "href": "/iphone/xr",
       "alt": "iPhone XR Repairs"
@@ -82,7 +82,7 @@
     {
       "id": "11",
       "name": "iPhone X",
-      "image": "/iphone/b/x.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/x-256.png",
       "href": "/iphone/x",
       "alt": "iPhone X Repairs"
@@ -98,7 +98,7 @@
     {
       "id": "13",
       "name": "iPhone 8 Plus",
-      "image": "/iphone/b/8-plus.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/8-plus-256.png",
       "href": "/iphone/8-plus",
       "alt": "iPhone 8 Plus Repairs"
@@ -106,7 +106,7 @@
     {
       "id": "14",
       "name": "iPhone 8",
-      "image": "/iphone/b/8.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/8-256.png",
       "href": "/iphone/8",
       "alt": "iPhone 8 Repairs"
@@ -114,7 +114,7 @@
     {
       "id": "15",
       "name": "iPhone 7 Plus",
-      "image": "/iphone/b/7-plus.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/7-plus-256.png",
       "href": "/iphone/7-plus",
       "alt": "iPhone 7 Plus Repairs"
@@ -122,7 +122,7 @@
     {
       "id": "16",
       "name": "iPhone 7",
-      "image": "/iphone/b/7.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/7-256.png",
       "href": "/iphone/7",
       "alt": "iPhone 7 Repairs"
@@ -130,7 +130,7 @@
     {
       "id": "17",
       "name": "iPhone 6S Plus",
-      "image": "/iphone/b/6s-plus.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/6s-plus-256.png",
       "href": "/iphone/6s-plus",
       "alt": "iPhone 6S Plus Repairs"
@@ -138,7 +138,7 @@
     {
       "id": "18",
       "name": "iPhone 6S",
-      "image": "/iphone/b/6s.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/6s-256.png",
       "href": "/iphone/6s",
       "alt": "iPhone 6S Repairs"
@@ -146,7 +146,7 @@
     {
       "id": "19",
       "name": "iPhone 6 Plus",
-      "image": "/iphone/b/6-plus.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/6-plus-256.png",
       "href": "/iphone/6-plus",
       "alt": "iPhone 6 Plus Repairs"
@@ -154,7 +154,7 @@
     {
       "id": "20",
       "name": "iPhone 6",
-      "image": "/iphone/b/6.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/6-256.png",
       "href": "/iphone/6",
       "alt": "iPhone 6 Repairs"
@@ -162,7 +162,7 @@
     {
       "id": "21",
       "name": "iPhone SE",
-      "image": "/iphone/b/se.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/se-256.png",
       "href": "/iphone/se-1",
       "alt": "iPhone SE Repairs"
@@ -170,7 +170,7 @@
     {
       "id": "22",
       "name": "iPhone 5S",
-      "image": "/iphone/b/5s.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/5s-256.png",
       "href": "/iphone/5s",
       "alt": "iPhone 5S Repairs"
@@ -178,7 +178,7 @@
     {
       "id": "23",
       "name": "iPhone 5C",
-      "image": "/iphone/b/5c.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/5c-256.png",
       "href": "/iphone/5c",
       "alt": "iPhone 5C Repairs"
@@ -186,7 +186,7 @@
     {
       "id": "24",
       "name": "iPhone 5",
-      "image": "/iphone/b/5.jpg",
+      "image": "/iphone/b/placeholder.jpg",
       "mobileimage": "/iphone/5-256.png",
       "href": "/iphone/5",
       "alt": "iPhone 5 Repairs"
