@@ -1,186 +1,180 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { Transition } from "@headlessui/react";
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { Fragment, useState } from 'react'
+import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const navigation = {
+  pages: [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'iPhone Repairs', href: '/iphone-repairs-b' },
+    { name: 'iPad Repairs', href: '/ipad-repairs' },
+    { name: 'Mac Repairs', href: '/mac-repairs' },
+    { name: 'Watch Repairs', href: '/watch-repairs' },
+    { name: 'iPod Repairs', href: '/ipod-repairs' },
+    { name: 'Contact', href: '/contact' },
+  ],
+}
 
-  const ActiveLink = ({ children, href, className }) => {
-    const router = useRouter();
-    return (
-      <Link href={href}>
-        <a
-          className={`${
-            router.pathname === href
-              ? "bg-gray-100 text-gray-900 rounded-md py-2 px-3 inline-flex items-center"
-              : "text-gray-900 hover:bg-gray-50 hover:text-gray-900 rounded-md py-2 px-3 inline-flex items-center"
-          } ${className} font-medium text-sm xl:text-base transition duration-150 ease-in-out`}
-        >
-          {children}
-        </a>
-      </Link>
-    );
-  };
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
+  const [open, setOpen] = useState(false)
+
+  const router = useRouter()
 
   return (
-    <div className="relative py-6 z-10">
-      <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
-        <Link href="/">
-          <a className="flex items-center">
-            <div className="flex flex-col justify-center">
-              <div className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
-                iPatch
+    <div className="bg-white">
+      {/* Mobile menu */}
+      <Transition.Root show={open} as={Fragment}>
+        <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setOpen}>
+          <Transition.Child
+            as={Fragment}
+            enter="transition-opacity ease-linear duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity ease-linear duration-300"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+
+          <Transition.Child
+            as={Fragment}
+            enter="transition ease-in-out duration-300 transform"
+            enterFrom="-translate-x-full"
+            enterTo="translate-x-0"
+            leave="transition ease-in-out duration-300 transform"
+            leaveFrom="translate-x-0"
+            leaveTo="-translate-x-full"
+          >
+            <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
+              <div className="px-4 pt-5 pb-2 flex">
+                <button
+                  type="button"
+                  className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
+                  onClick={() => setOpen(false)}
+                >
+                  <span className="sr-only">Close menu</span>
+                  <XIcon className="h-6 w-6" aria-hidden="true" />
+                </button>
               </div>
-            </div>
-          </a>
-        </Link>
 
-        <div className="hidden space-x-4 lg:py-2 lg:flex xl:space-x-8">
-          <ActiveLink href="/">
-              Home
-          </ActiveLink>
-          <ActiveLink href="/about">
-              About
-          </ActiveLink>
-          <ActiveLink href="/iphone-repairs">
-              iPhone Repair
-          </ActiveLink>
-          <ActiveLink href="/ipad-repairs">
-              iPad Repair
-          </ActiveLink>
-          <ActiveLink href="/mac-repairs">
-              Mac Repair
-          </ActiveLink>
-          <ActiveLink href="/watch-repairs">
-              Watch Repair
-          </ActiveLink>
-          <ActiveLink href="/ipod-repairs">
-              iPod Repair
-          </ActiveLink>
-          <ActiveLink href="/contact">
-              Contact
-          </ActiveLink>
-        </div>
-        <div className="justify-between">
-          <div className="-mr-2 flex items-center lg:hidden">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-              onClick={() => setMenuOpen(true)}
-            >
-              <svg
-                className="h-6 w-6"
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <title>Menu | iPatch</title>
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <Transition
-        show={menuOpen}
-        enter="duration-150 ease-out"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
-        leave="duration-100 ease-in"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
-      >
-        <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden">
-          <div className="rounded-lg shadow-md">
-            <div className="rounded-lg bg-white shadow-xs overflow-hidden">
-              <div className="px-5 pt-4 flex items-center justify-between">
-                <Link href="/">
-                  <a className="flex items-center">
-                    <div className="flex flex-col justify-center">
-                      <div className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight">
-                        iPatch
-                      </div>
-                      <div className="font-normal text-sm sm:text-lg leading-tight tracking-tight"></div>
+              {/* Links */}
+              <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                {navigation.pages.map((page) => {
+                  return (
+                    <div key={page.name} className="flow-root">
+                    <Link href={page.href}>
+                      <a
+                        className={`cursor-pointer ${router.pathname === page.href
+                            ? '-m-2 p-2 block font-medium text-blue-600'
+                            : '-m-2 p-2 block font-medium hover:text-blue-500'
+                          }`}
+                      >
+                        {page.name}
+                      </a>
+                    </Link>
                     </div>
+                  )
+                })}
+              </div>
+
+
+              <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                <div className="flow-root">
+                  <a href="#" className="-m-2 p-2 block font-medium text-gray-900">
+                    Create an account
                   </a>
-                </Link>{" "}
-                <div className="-mr-2">
-                  <button
-                    type="button"
-                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    <svg
-                      className="h-6 w-6"
-                      stroke="currentColor"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button>
+                </div>
+                <div className="flow-root">
+                  <a href="#" className="-m-2 p-2 block font-medium text-gray-900">
+                    Sign in
+                  </a>
                 </div>
               </div>
-              <div className="px-2 pt-4 pb-3">
-                <Link href="/">
-                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    Home
+            </div>
+          </Transition.Child>
+        </Dialog>
+      </Transition.Root>
+
+      <header className="relative">
+        <nav aria-label="Top">
+          {/* Secondary navigation */}
+          <div className="bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="border-b border-gray-200">
+                <div className="h-16 flex items-center justify-between">
+                  {/* Logo (lg+) */}
+                  <div className="hidden lg:flex-1 lg:flex lg:items-center">
+                    <a href="#">
+                      <span className="sr-only">Workflow</span>
+                      <img
+                        className="h-5 w-auto"
+                        src="logo.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+
+                  <div className="hidden h-full lg:flex">
+                    {/* Flyout menus */}
+                    <Popover.Group className="px-4 bottom-0 inset-x-0">
+                      <div className="h-full flex justify-center space-x-8">
+                      {navigation.pages.map((page) => {
+                        return (
+                          <Link key={page.name} href={page.href}>
+                          <a
+                        className={`cursor-pointer ${router.pathname === page.href
+                            ? 'text-blue-600 border-blue-600 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
+                            : 'border-transparent text-gray-700 hover:text-gray-900 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
+                          }`}
+                      >
+                        {page.name}
+                      </a>
+                      </Link>
+                        )
+                      })}
+                      </div>
+                    </Popover.Group>
+                  </div>
+
+
+                  {/* Mobile menu and search (lg-) */}
+                  <div className="flex-1 flex items-center lg:hidden">
+                    <button
+                      type="button"
+                      className="-ml-2 bg-white p-2 rounded-md text-gray-400"
+                      onClick={() => setOpen(true)}
+                    >
+                      <span className="sr-only">Open menu</span>
+                      <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                    </button>
+                  </div>
+
+                  {/* Logo (lg-) */}
+                  <a href="#" className="lg:hidden">
+                    <span className="sr-only">Workflow</span>
+                    <img
+                      src="logo.svg"
+                      alt=""
+                      className="h-5 w-auto"
+                    />
                   </a>
-                </Link>
-                <Link href="/about">
-                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    About
-                  </a>
-                </Link>
-                <Link href="/iphone-repairs">
-                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    iPhone Repair
-                  </a>
-                </Link>
-                <Link href="/ipad-repairs">
-                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    iPad Repair
-                  </a>
-                </Link>
-                <Link href="/mac-repairs">
-                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    Mac Repair
-                  </a>
-                </Link>
-                <Link href="/watch-repairs">
-                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    Watch Repair
-                  </a>
-                </Link>
-                <Link href="/ipod-repairs">
-                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    iPod Repair
-                  </a>
-                </Link>
-                <Link href="/contact">
-                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
-                    Contact
-                  </a>
-                </Link>
+
+                  <div className="flex-1 flex items-center justify-end">
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </Transition>
+        </nav>
+      </header>
     </div>
-  );
-};
-
-export default Header;
+  )
+}
