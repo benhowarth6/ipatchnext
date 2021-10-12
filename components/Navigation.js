@@ -8,7 +8,7 @@ const navigation = {
   pages: [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'iPhone Repairs', href: '/iphone-repairs-b' },
+    { name: 'iPhone Repairs', href: '/iphone-repairs' },
     { name: 'iPad Repairs', href: '/ipad-repairs' },
     { name: 'Mac Repairs', href: '/mac-repairs' },
     { name: 'Watch Repairs', href: '/watch-repairs' },
