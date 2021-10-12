@@ -115,7 +115,7 @@ export default function Example() {
                       <span className="sr-only">Workflow</span>
                       <img
                         className="h-5 w-auto"
-                        src="logo.svg"
+                        src="/logo.svg"
                         alt=""
                       />
                     </a>
@@ -160,7 +160,7 @@ export default function Example() {
                   <a href="#" className="lg:hidden">
                     <span className="sr-only">Workflow</span>
                     <img
-                      src="logo.svg"
+                      src="/logo.svg"
                       alt=""
                       className="h-5 w-auto"
                     />
