@@ -9,6 +9,7 @@ import Footer from "../../components/Footer";
 
 const product = {
   name: 'iPhone 12 Repairs',
+  model: 'iPhone 12',
   href: '#',
   description:
     "We offer a comprehensive set of repairs for the iPhone 12. Including screen replacements, batteries and much more.",
@@ -19,15 +20,15 @@ const product = {
     { id: 2, name: 'iPhone 12', href: '#' },
   ],
   sizes: [
-    { id: 1, name: 'Display Assembly', description: 'A new OLED display assembly to repair a damaged screen.', price: '£299', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=screen' },
-    { id: 2, name: 'Battery', description: 'A new battery to restore your device to 100%.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=battery' },
-    { id: 3, name: 'Rear Housing', description: 'A new housing and frame to replace a cracked back.', price: '£299', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=rear-case' },
-    { id: 4, name: 'Charging Port', description: 'A new charging port to restore device charging.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=charging-port' },
-    { id: 5, name: 'Microphone', description: 'A new Microphone to restore sound pickup.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=microphone' },
-    { id: 6, name: 'Rear Camera Lens', description: 'A new replacement camera lens if one of yours is damaged.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=camera-lens' },
-    { id: 7, name: 'Earpiece Speaker', description: 'A replacement speaker if you cannot hear on phone calls.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=earpiece' },
-    { id: 8, name: 'Loudspeaker', description: 'A replacement loudspeaker if you cannot hear any audio.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=loudspeaker' },
-    { id: 9, name: 'Button Fault', description: 'A replacement button flex if one of yours isn\'t working.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12&repair=button-fault' },
+    { id: 1, name: 'Display Assembly', description: 'A new OLED display assembly to repair a damaged screen.', price: 299, pathname: 'book-repair/booking-type', query: 'Screen+Replacement' },
+    { id: 2, name: 'Battery', description: 'A new battery to restore your device to 100%.', price: 85, pathname: 'book-repair/booking-type', query: 'Battery' },
+    { id: 3, name: 'Rear Housing', description: 'A new housing and frame to replace a cracked back.', price: 299, pathname: 'book-repair/booking-type', query: 'Rear+Casing' },
+    { id: 4, name: 'Charging Port', description: 'A new charging port to restore device charging.', price: 85, pathname: 'book-repair/booking-type', query: 'Charging+Port' },
+    { id: 5, name: 'Microphone', description: 'A new Microphone to restore sound pickup.', price: 85, pathname: 'book-repair/booking-type', query: 'Microphone' },
+    { id: 6, name: 'Rear Camera Lens', description: 'A new replacement camera lens if one of yours is damaged.', price: 85, pathname: 'book-repair/booking-type', query: 'Camera+Lens' },
+    { id: 7, name: 'Earpiece Speaker', description: 'A replacement speaker if you cannot hear on phone calls.', price: 85, pathname: 'book-repair/booking-type', query: 'Earpiece+Speaker' },
+    { id: 8, name: 'Loudspeaker', description: 'A replacement loudspeaker if you cannot hear any audio.', price: 85, pathname: 'book-repair/booking-type', query: 'Loudspeaker' },
+    { id: 9, name: 'Button Fault', description: 'A replacement button flex if one of yours isn\'t working.', price: 85, pathname: 'book-repair/booking-type', query: 'Button+Fault' },
   ],
   highlights: [
     'Most repairs are completed within the hour',
@@ -201,7 +202,7 @@ export default function Example() {
               <Link
                         href={{
                           pathname: (selectedSize.pathname),
-                          query: (selectedSize.query),
+                          query: { model: product.model, repair: selectedSize.query, img: product.imageSrc, price: selectedSize.price },
                         }}
                       >
                         <a className="w-full bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">

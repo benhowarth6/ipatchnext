@@ -9,6 +9,7 @@ import Footer from "../../components/Footer";
 
 const product = {
   name: 'iPhone 12 Pro Max Repairs',
+  model: 'iPhone 12 Pro Max',
   href: '#',
   description:
     "We offer a comprehensive set of repairs for the iPhone 12 Pro Max. Including screen replacements, batteries and much more.",
@@ -19,15 +20,16 @@ const product = {
     { id: 2, name: 'iPhone 12 Pro Max', href: '#' },
   ],
   sizes: [
-    { id: 1, name: 'Display Assembly', description: 'A new OLED display assembly to repair a damaged screen.', price: '£309', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=screen' },
-    { id: 2, name: 'Battery', description: 'A new battery to restore your device to 100%.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=battery' },
-    { id: 3, name: 'Rear Housing', description: 'A new housing and frame to replace a cracked back.', price: '£399', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=rear-case' },
-    { id: 4, name: 'Charging Port', description: 'A new charging port to restore device charging.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=charging-port' },
-    { id: 5, name: 'Microphone', description: 'A new Microphone to restore sound pickup.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=microphone' },
-    { id: 6, name: 'Rear Camera Lens', description: 'A new replacement camera lens if one of yours is damaged.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=camera-lens' },
-    { id: 7, name: 'Earpiece Speaker', description: 'A replacement speaker if you cannot hear on phone calls.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=earpiece' },
-    { id: 8, name: 'Loudspeaker', description: 'A replacement loudspeaker if you cannot hear any audio.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=loudspeaker' },
-    { id: 9, name: 'Button Fault', description: 'A replacement button flex if one of yours isn\'t working.', price: '£85', pathname: '../iphone/book-repair/booking-type', query: 'model=12+Pro+Max&repair=button-fault' },
+    { id: 1, name: 'Display Assembly', description: 'A new OLED display assembly to repair a damaged screen.', price: 309, pathname: 'book-repair/booking-type', query: 'Screen+Replacement' },
+    { id: 2, name: 'Battery', description: 'A new battery to restore your device to 100%.', price: 85, pathname: 'book-repair/booking-type', query: 'Battery' },
+    { id: 3, name: 'Rear Housing', description: 'A new housing and frame to replace a cracked back.', price: 399, pathname: 'book-repair/booking-type', query: 'Rear+Casing' },
+    { id: 4, name: 'Charging Port', description: 'A new charging port to restore device charging.', price: 85, pathname: 'book-repair/booking-type', query: 'Charging+Port' },
+    { id: 5, name: 'Microphone', description: 'A new Microphone to restore sound pickup.', price: 85, pathname: 'book-repair/booking-type', query: 'Microphone' },
+    { id: 6, name: 'Rear Camera Lens', description: 'A new replacement camera lens if one of yours is damaged.', price: 85, pathname: 'book-repair/booking-type', query: 'Camera+Lens' },
+    { id: 7, name: 'Earpiece Speaker', description: 'A replacement speaker if you cannot hear on phone calls.', price: 85, pathname: 'book-repair/booking-type', query: 'Earpiece+Speaker' },
+    { id: 8, name: 'Loudspeaker', description: 'A replacement loudspeaker if you cannot hear any audio.', price: 85, pathname: 'book-repair/booking-type', query: 'Loudspeaker' },
+    { id: 9, name: 'Button Fault', description: 'A replacement button flex if one of yours isn\'t working.', price: 85, pathname: 'book-repair/booking-type', query: 'Button+Fault' },
+    { id: 10, name: 'Unsure', description: 'Book your device in with us diagnosis if you aren\'t sure.', price: 0, pathname: 'book-repair/booking-type', query: 'Not+Sure' },
   ],
   highlights: [
     'Most repairs are completed within the hour',
@@ -108,9 +110,8 @@ export default function Example() {
             </h2>
 
             <div className="flex items-center">
-            <p className="text-lg text-gray-900 sm:text-xl">{selectedSize.price}</p>
+            <p className="text-lg text-gray-900 sm:text-xl">£{selectedSize.price}</p>
               <div className="ml-4 pl-4 border-l border-gray-300">
-                <h2 className="sr-only">Reviews</h2>
                 <div className="flex items-center">
                   <p className="ml-2 text-sm text-gray-500">{repairs.totalCount} repairs available</p>
                 </div>
@@ -167,7 +168,7 @@ export default function Example() {
                             </RadioGroup.Label>
                             <div className="md:hidden">
                             <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
-                              {size.price}
+                              £{size.price}
                             </RadioGroup.Label>
                             </div>
                             <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
@@ -201,7 +202,7 @@ export default function Example() {
               <Link
                         href={{
                           pathname: (selectedSize.pathname),
-                          query: (selectedSize.query),
+                          query: { model: product.model, repair: selectedSize.query, img: product.imageSrc, price: selectedSize.price },
                         }}
                       >
                         <a className="w-full bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
