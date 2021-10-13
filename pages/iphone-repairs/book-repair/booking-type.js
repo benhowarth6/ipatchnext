@@ -79,7 +79,7 @@ export default function Home() {
                     Select this option if you'd like to post your device to us for a repair. We aim to return your device 
                     within 24 hours of us receiving it using fully insured postage. We accept card, bank transfer or PayPal payments for mail in repairs.
                 </p>
-                <Link href={`mail-in?model=${model}&repair=${repair}`}>
+                <Link href={`mail-in?model=${model}&repair=${repair}&price=${price}&img=${img}`}>
                 <a
                   className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                 >

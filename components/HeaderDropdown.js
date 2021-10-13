@@ -88,10 +88,10 @@ export default function Example() {
             <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
-                  <span className="sr-only">Workflow</span>
+                  <span className="sr-only">iPatch</span>
                   <img
                     className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    src="https://tailwindui.com/img/logos/iPatch-mark-indigo-600.svg"
                     alt=""
                   />
                 </a>
@@ -292,8 +292,8 @@ export default function Example() {
                     <div>
                       <img
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt="Workflow"
+                        src="https://tailwindui.com/img/logos/iPatch-mark-indigo-600.svg"
+                        alt="iPatch"
                       />
                     </div>
                     <div className="-mr-2">

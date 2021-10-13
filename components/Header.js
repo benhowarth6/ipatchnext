@@ -98,7 +98,7 @@ export default function Example() {
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex-1 lg:flex lg:items-center">
                     <a href="#">
-                      <span className="sr-only">Workflow</span>
+                      <span className="sr-only">iPatch</span>
                       <img
                         className="h-5 w-auto"
                         src="/logo.svg"
@@ -144,7 +144,7 @@ export default function Example() {
 
                   {/* Logo (lg-) */}
                   <a href="#" className="lg:hidden">
-                    <span className="sr-only">Workflow</span>
+                    <span className="sr-only">iPatch</span>
                     <img
                       src="/logo.svg"
                       alt=""
