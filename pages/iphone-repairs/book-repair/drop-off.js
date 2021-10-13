@@ -5,6 +5,7 @@ import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
 import DatePicker from 'react-datepicker'
+import subDays from "date-fns/subDays";
 
 import Footer from '../../../components/Footer'
 
@@ -346,6 +347,7 @@ export default function Example() {
                                                         selectsStart
                                                         startDate={startDate}
                                                         calendarStartDay={1}
+                                                        minDate={subDays(new Date(), 0)}
                                                         onFocus={e => e.target.blur()}
                                                         nextMonthButtonLabel=">"
                                                         previousMonthButtonLabel="<"
@@ -357,6 +359,7 @@ export default function Example() {
                                                         onChange={(date) => setStartDate(date)}
                                                         selectsStart
                                                         calendarStartDay={1}
+                                                        minDate={subDays(new Date(), 0)}
                                                         onFocus={e => e.target.blur()}
                                                         startDate={startDate}
                                                         nextMonthButtonLabel=">"
