@@ -1,363 +1,381 @@
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 import { NextSeo } from "next-seo";
-import React, { useEffect, useState, setState } from "react";
-import kwesforms from 'kwesforms';
+import { Fragment, useState } from 'react'
+import { Dialog, Popover, RadioGroup, Tab, Transition } from '@headlessui/react'
+import { MenuIcon, QuestionMarkCircleIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
+import { CheckCircleIcon, TrashIcon, ChevronRightIcon, ChevronUpIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
-import { Fragment } from 'react'
-import { ChevronRightIcon, ChevronUpIcon } from '@heroicons/react/solid'
-import { Popover, Transition } from '@headlessui/react'
+import DatePicker from 'react-datepicker'
 
-import Header from "../../../components/Header";
-import Footer from "../../../components/Footer";
-
-export default function Home() {
-  const router = useRouter();
-  const { model } = router.query;
-  const { repair } = router.query;
-  const { price } = router.query;
-  const { img } = router.query;
-  const [startDate, setStartDate] = useState(new Date());
-
-  useEffect(() => {
-    kwesforms.init();
-  }, []);
-
-  const steps = [
+const steps = [
     { name: 'Booking Type', status: 'complete' },
     { name: 'Device Information', status: 'current' },
     { name: 'Confirmation', status: 'upcoming' },
-  ]
+]
 
-  return (
-    <div>
-      <NextSeo
-        title="Book a Drop-Off iPhone Repair in Leeds - iPatch"
-        description="Book your iPhone in with us for a drop-off repair at one of our Leeds stores using this form."
-      />
+const deliveryMethods = [
+    { id: 1, title: 'Trinity Leeds', turnaround: 'Open 7 days a week' },
+    { id: 2, title: 'Kirkstall Morrisons', turnaround: 'Open Tuesday - Saturday' },
+]
 
-      <div className="bg-white">
-      {/* Background color split screen for large screens */}
-      <div className="hidden lg:block fixed top-0 left-0 w-1/2 h-full bg-white" aria-hidden="true" />
-      <div className="hidden lg:block fixed top-0 right-0 w-1/2 h-full bg-gray-50" aria-hidden="true" />
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+}
 
-      <header className="relative bg-white border-b border-gray-200 text-sm font-medium text-gray-700">
-        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-          <div className="relative flex justify-end sm:justify-center">
-            <a href="/" className="absolute left-0 top-1/2 -mt-2">
-              <span className="sr-only">Workflow</span>
-              <img
-                src="/logo.svg"
-                alt=""
-                className="h-5 w-auto"
-              />
-            </a>
-            <nav aria-label="Progress" className="hidden sm:block">
-              <ol role="list" className="flex space-x-4">
-                {steps.map((step, stepIdx) => (
-                  <li key={step.name} className="flex items-center">
-                    {step.status === 'current' ? (
-                      <a href={`drop-off?model=${model}&repair=${repair}&price=${price}&img=${img}`} aria-current="page" className="text-blue-600">
-                        {step.name}
-                      </a>
-                    ) : step.status === 'complete' ? (
-                      <a href={`booking-type?model=${model}&repair=${repair}&price=${price}&img=${img}`}>{step.name}</a>
-                      ) : (
-                        <a href={`drop-off?model=${model}&repair=${repair}&price=${price}&img=${img}`}>{step.name}</a>
-                      )}
+export default function Example() {
+    const [open, setOpen] = useState(false)
+    const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(deliveryMethods[0])
 
-                    {stepIdx !== steps.length - 1 ? (
-                      <ChevronRightIcon className="w-5 h-5 text-gray-300 ml-4" aria-hidden="true" />
-                    ) : null}
-                  </li>
-                ))}
-              </ol>
-            </nav>
-            <p className="sm:hidden">Step 2 of 3</p>
-          </div>
-        </div>
-      </header>
+    const router = useRouter();
+    const { model } = router.query;
+    const { repair } = router.query;
+    const { price } = router.query;
+    const { img } = router.query;
 
-      <main className="relative grid grid-cols-1 gap-x-16 max-w-7xl mx-auto lg:px-8 lg:grid-cols-2 xl:gap-x-48">
-        <h1 className="sr-only">Order information</h1>
+    const [startDate, setStartDate] = useState(new Date())
+    const isWeekday = date => {
+        const day = date.getDay();
+        return day !== 1 && day !== 0;
+    }
 
-        <section
-          aria-labelledby="summary-heading"
-          className="bg-gray-50 pt-16 pb-10 px-4 sm:px-6 lg:px-0 lg:pb-16 lg:bg-transparent lg:row-start-1 lg:col-start-2"
-        >
-          <div className="max-w-lg mx-auto lg:max-w-none">
-            <h2 id="summary-heading" className="text-lg font-medium text-gray-900">
-              Booking summary
-            </h2>
+    return (
+        <div>
+            <NextSeo
+                title="Book a Drop-Off iPhone Repair in Leeds - iPatch"
+                description="Book your iPhone in with us for a drop-off repair at one of our Leeds stores using this form."
+            />
+            <div className="bg-gray-50">
+                {/* Mobile menu */}
 
-            <ul role="list" className="text-sm font-medium text-gray-900 divide-y divide-gray-200">
-                <li className="flex items-start py-6 space-x-4">
-                  <img
-                    src={ img }
-                    alt={""}
-                    className="flex-none w-20 h-20 rounded-md object-center object-cover"
-                  />
-                  <div className="flex-auto space-y-1">
-                    <h3>{model}</h3>
-                    <p className="text-gray-500">{repair}</p>
-                    <p className="text-gray-500">£{price}</p>
-                  </div>
-                  <p className="flex-none text-base font-medium">{""}</p>
-                </li>
-            </ul>
+                <div className="bg-white">
+                    {/* Background color split screen for large screens */}
+                    <div className="hidden lg:block fixed top-0 left-0 w-1/2 h-full bg-white" aria-hidden="true" />
+                    <div className="hidden lg:block fixed top-0 right-0 w-1/2 h-full bg-gray-50" aria-hidden="true" />
 
-            <dl className="hidden text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 pt-6 lg:block">
-              <div className="flex items-center justify-between">
-                <dt className="text-gray-600">Subtotal</dt>
-                <dd>£{(parseInt(price) / (1.2) * 1).toFixed(2)}</dd>
-              </div>
+                    <header className="relative bg-white border-b border-gray-200 text-sm font-medium text-gray-700">
+                        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+                            <div className="relative flex justify-end sm:justify-center">
+                                <a href="/" className="absolute left-0 top-1/2 -mt-2">
+                                    <span className="sr-only">Workflow</span>
+                                    <img
+                                        src="/logo.svg"
+                                        alt=""
+                                        className="h-5 w-auto"
+                                    />
+                                </a>
+                                <nav aria-label="Progress" className="hidden sm:block">
+                                    <ol role="list" className="flex space-x-4">
+                                        {steps.map((step, stepIdx) => (
+                                            <li key={step.name} className="flex items-center">
+                                                {step.status === 'current' ? (
+                                                    <a href={`drop-off?model=${model}&repair=${repair}&price=${price}&img=${img}`} aria-current="page" className="text-blue-600">
+                                                        {step.name}
+                                                    </a>
+                                                ) : step.status === 'complete' ? (
+                                                    <a href={`booking-type?model=${model}&repair=${repair}&price=${price}&img=${img}`}>{step.name}</a>
+                                                ) : (
+                                                    <a href={`drop-off?model=${model}&repair=${repair}&price=${price}&img=${img}`}>{step.name}</a>
+                                                )}
 
-              <div className="flex items-center justify-between">
-                <dt className="text-gray-600">VAT</dt>
-                <dd>£{(parseInt(price) / (1.2) * 0.2).toFixed(2)}
-</dd>
-              </div>
-
-              <div className="flex items-center justify-between border-t border-gray-200 pt-6">
-                <dt className="text-base">Total</dt>
-                <dd className="text-base">£{price}</dd>
-              </div>
-            </dl>
-
-            <Popover className="fixed bottom-0 inset-x-0 flex flex-col-reverse text-sm font-medium text-gray-900 lg:hidden">
-              <div className="relative z-10 bg-white border-t border-gray-200 px-4 sm:px-6">
-                <div className="max-w-lg mx-auto">
-                  <Popover.Button className="w-full flex items-center py-6 font-medium">
-                    <span className="text-base mr-auto">Total</span>
-                    <span className="text-base mr-2">£{price}</span>
-                    <ChevronUpIcon className="w-5 h-5 text-gray-500" aria-hidden="true" />
-                  </Popover.Button>
-                </div>
-              </div>
-
-              <Transition.Root as={Fragment}>
-                <div>
-                  <Transition.Child
-                    as={Fragment}
-                    enter="transition-opacity ease-linear duration-300"
-                    enterFrom="opacity-0"
-                    enterTo="opacity-100"
-                    leave="transition-opacity ease-linear duration-300"
-                    leaveFrom="opacity-100"
-                    leaveTo="opacity-0"
-                  >
-                    <Popover.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
-                  </Transition.Child>
-
-                  <Transition.Child
-                    as={Fragment}
-                    enter="transition ease-in-out duration-300 transform"
-                    enterFrom="translate-y-full"
-                    enterTo="translate-y-0"
-                    leave="transition ease-in-out duration-300 transform"
-                    leaveFrom="translate-y-0"
-                    leaveTo="translate-y-full"
-                  >
-                    <Popover.Panel className="relative bg-white px-4 py-6 sm:px-6">
-                      <dl className="max-w-lg mx-auto space-y-6">
-                        <div className="flex items-center justify-between">
-                          <dt className="text-gray-600">Subtotal</dt>
-                          <dd>£{(parseInt(price) / (1.2)) * 1}</dd>
+                                                {stepIdx !== steps.length - 1 ? (
+                                                    <ChevronRightIcon className="w-5 h-5 text-gray-300 ml-4" aria-hidden="true" />
+                                                ) : null}
+                                            </li>
+                                        ))}
+                                    </ol>
+                                </nav>
+                                <p className="sm:hidden">Step 2 of 3</p>
+                            </div>
                         </div>
+                    </header>
 
-                        <div className="flex items-center justify-between">
-                          <dt className="text-gray-600">VAT</dt>
-                          <dd>£{(parseInt(price) / (1.2)) * 0.2}</dd>
-                        </div>
-                      </dl>
-                    </Popover.Panel>
-                  </Transition.Child>
+                    <main className="relative grid grid-cols-1 gap-x-16 max-w-7xl mx-auto lg:px-8 lg:grid-cols-2 xl:gap-x-48">
+                        <h1 className="sr-only">Order information</h1>
+
+                        <section
+                            aria-labelledby="summary-heading"
+                            className="bg-gray-50 pt-16 pb-10 px-4 sm:px-6 lg:px-0 lg:pb-16 lg:bg-transparent lg:row-start-1 lg:col-start-2"
+                        >
+                            <div className="max-w-lg mx-auto lg:max-w-none">
+                                <h2 id="summary-heading" className="text-lg font-medium text-gray-900">
+                                    Booking summary
+                                </h2>
+
+                                <ul role="list" className="text-sm font-medium text-gray-900 divide-y divide-gray-200">
+                                    <li className="flex items-start py-6 space-x-4">
+                                        <img
+                                            src={img}
+                                            alt={""}
+                                            className="flex-none w-20 h-20 rounded-md object-center object-cover"
+                                        />
+                                        <div className="flex-auto space-y-1">
+                                            <h3>{model}</h3>
+                                            <p className="text-gray-500">{repair}</p>
+                                            <p className="text-gray-500">£{price}</p>
+                                        </div>
+                                        <p className="flex-none text-base font-medium">{""}</p>
+                                    </li>
+                                </ul>
+
+                                <dl className="hidden text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 pt-6 lg:block">
+                                    <div className="flex items-center justify-between">
+                                        <dt className="text-gray-600">Subtotal</dt>
+                                        <dd>£{(parseInt(price) / (1.2) * 1).toFixed(2)}</dd>
+                                    </div>
+
+                                    <div className="flex items-center justify-between">
+                                        <dt className="text-gray-600">VAT</dt>
+                                        <dd>£{(parseInt(price) / (1.2) * 0.2).toFixed(2)}
+                                        </dd>
+                                    </div>
+
+                                    <div className="flex items-center justify-between border-t border-gray-200 pt-6">
+                                        <dt className="text-base">Total</dt>
+                                        <dd className="text-base">£{price}</dd>
+                                    </div>
+                                </dl>
+
+                                <Popover className="fixed bottom-0 inset-x-0 flex flex-col-reverse text-sm font-medium text-gray-900 lg:hidden">
+                                    <div className="relative z-10 bg-white border-t border-gray-200 px-4 sm:px-6">
+                                        <div className="max-w-lg mx-auto">
+                                            <Popover.Button className="w-full flex items-center py-6 font-medium">
+                                                <span className="text-base mr-auto">Total</span>
+                                                <span className="text-base mr-2">£{price}</span>
+                                                <ChevronUpIcon className="w-5 h-5 text-gray-500" aria-hidden="true" />
+                                            </Popover.Button>
+                                        </div>
+                                    </div>
+
+                                    <Transition.Root as={Fragment}>
+                                        <div>
+                                            <Transition.Child
+                                                as={Fragment}
+                                                enter="transition-opacity ease-linear duration-300"
+                                                enterFrom="opacity-0"
+                                                enterTo="opacity-100"
+                                                leave="transition-opacity ease-linear duration-300"
+                                                leaveFrom="opacity-100"
+                                                leaveTo="opacity-0"
+                                            >
+                                                <Popover.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
+                                            </Transition.Child>
+
+                                            <Transition.Child
+                                                as={Fragment}
+                                                enter="transition ease-in-out duration-300 transform"
+                                                enterFrom="translate-y-full"
+                                                enterTo="translate-y-0"
+                                                leave="transition ease-in-out duration-300 transform"
+                                                leaveFrom="translate-y-0"
+                                                leaveTo="translate-y-full"
+                                            >
+                                                <Popover.Panel className="relative bg-white px-4 py-6 sm:px-6">
+                                                    <dl className="max-w-lg mx-auto space-y-6">
+                                                        <div className="flex items-center justify-between">
+                                                            <dt className="text-gray-600">Subtotal</dt>
+                                                            <dd>£{(parseInt(price) / (1.2)) * 1}</dd>
+                                                        </div>
+
+                                                        <div className="flex items-center justify-between">
+                                                            <dt className="text-gray-600">VAT</dt>
+                                                            <dd>£{(parseInt(price) / (1.2)) * 0.2}</dd>
+                                                        </div>
+                                                    </dl>
+                                                </Popover.Panel>
+                                            </Transition.Child>
+                                        </div>
+                                    </Transition.Root>
+                                </Popover>
+                            </div>
+                        </section>
+
+                        <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
+                            <div className="max-w-lg mx-auto lg:max-w-none">
+                                <section aria-labelledby="contact-info-heading">
+                                    <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
+                                        Contact information
+                                    </h2>
+
+                                    <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                                        <div>
+                                            <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                                                First name
+                                            </label>
+                                            <div className="mt-1">
+                                                <input
+                                                    type="text"
+                                                    id="first-name"
+                                                    name="first-name"
+                                                    autoComplete="given-name"
+                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
+                                                Last name
+                                            </label>
+                                            <div className="mt-1">
+                                                <input
+                                                    type="text"
+                                                    id="last-name"
+                                                    name="last-name"
+                                                    autoComplete="family-name"
+                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="mt-6">
+                                        <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
+                                            Email address
+                                        </label>
+                                        <div className="mt-1">
+                                            <input
+                                                type="email"
+                                                id="email-address"
+                                                name="email-address"
+                                                autoComplete="email"
+                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="mt-6">
+                                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                                            Phone number
+                                        </label>
+                                        <div className="mt-1">
+                                            <input
+                                                type="text"
+                                                name="phone"
+                                                id="phone"
+                                                autoComplete="tel"
+                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                            />
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <div className="mt-10 border-t border-gray-200 pt-10">
+                                    <RadioGroup value={selectedDeliveryMethod} onChange={setSelectedDeliveryMethod}>
+                                        <RadioGroup.Label className="text-lg font-medium text-gray-900">Delivery method</RadioGroup.Label>
+
+                                        <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                                            {deliveryMethods.map((deliveryMethod) => (
+                                                <RadioGroup.Option
+                                                    key={deliveryMethod.id}
+                                                    value={deliveryMethod}
+                                                    className={({ checked, active }) =>
+                                                        classNames(
+                                                            checked ? 'border-transparent' : 'border-gray-300',
+                                                            active ? 'ring-2 ring-blue-500' : '',
+                                                            'relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none'
+                                                        )
+                                                    }
+                                                >
+                                                    {({ checked, active }) => (
+                                                        <>
+                                                            <div className="flex-1 flex">
+                                                                <div className="flex flex-col">
+                                                                    <RadioGroup.Label as="span" className="block text-sm font-medium text-gray-900">
+                                                                        {deliveryMethod.title}
+                                                                    </RadioGroup.Label>
+                                                                    <RadioGroup.Description
+                                                                        as="span"
+                                                                        className="mt-1 flex items-center text-sm text-gray-500"
+                                                                    >
+                                                                        {deliveryMethod.turnaround}
+                                                                    </RadioGroup.Description>
+                                                                </div>
+                                                            </div>
+                                                            {checked ? (
+                                                                <CheckCircleIcon className="h-5 w-5 text-blue-600" aria-hidden="true" />
+                                                            ) : null}
+                                                            <div
+                                                                className={classNames(
+                                                                    active ? 'border' : 'border-2',
+                                                                    checked ? 'border-blue-500' : 'border-transparent',
+                                                                    'absolute -inset-px rounded-lg pointer-events-none'
+                                                                )}
+                                                                aria-hidden="true"
+                                                            />
+                                                        </>
+                                                    )}
+                                                </RadioGroup.Option>
+                                            ))}
+                                        </div>
+                                    </RadioGroup>
+                                </div>
+
+                                <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                                    <div>
+                                        <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                                            Appointment date
+                                        </label>
+                                        <div className="mt-1">
+                                            <div className="relative">
+                                                {selectedDeliveryMethod.title === 'Kirkstall Morrisons' ? (
+                                                    <DatePicker
+                                                        dateFormat="dd/MM/yyyy"
+                                                        selected={startDate}
+                                                        onChange={(date) => setStartDate(date)}
+                                                        filterDate={isWeekday}
+                                                        selectsStart
+                                                        startDate={startDate}
+                                                        calendarStartDay={1}
+                                                        nextMonthButtonLabel=">"
+                                                        previousMonthButtonLabel="<"
+                                                    />
+                                                ) : (
+                                                    <DatePicker
+                                                        dateFormat="dd/MM/yyyy"
+                                                        selected={startDate}
+                                                        onChange={(date) => setStartDate(date)}
+                                                        selectsStart
+                                                        calendarStartDay={1}
+                                                        startDate={startDate}
+                                                        nextMonthButtonLabel=">"
+                                                        previousMonthButtonLabel="<"
+                                                    />
+                                                )}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
+                                            Appointment time
+                                        </label>
+                                        <div className="mt-1">
+                                            <input
+                                                type="text"
+                                                id="last-name"
+                                                name="last-name"
+                                                autoComplete="family-name"
+                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
+                                    <button
+                                        type="submit"
+                                        className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
+                                    >
+                                        Continue
+                                    </button>
+                                    <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
+                                        You won't be charged until you collect your device.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </form>
+                    </main>
                 </div>
-              </Transition.Root>
-            </Popover>
-          </div>
-        </section>
-
-        <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
-          <div className="max-w-lg mx-auto lg:max-w-none">
-            <section aria-labelledby="contact-info-heading">
-              <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
-                Contact information
-              </h2>
-
-              <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-                  <div>
-                    <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                      First name
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        type="text"
-                        id="first-name"
-                        name="first-name"
-                        autoComplete="given-name"
-                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
-                      Last name
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        type="text"
-                        id="last-name"
-                        name="last-name"
-                        autoComplete="family-name"
-                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                      />
-                    </div>
-                  </div>
-                  </div>
-
-              <div className="mt-6">
-                <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
-                  Email address
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="email"
-                    id="email-address"
-                    name="email-address"
-                    autoComplete="email"
-                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  />
-                </div>
-              </div>
-              <div className="mt-6">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                  Phone number
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="phone"
-                    id="phone"
-                    autoComplete="tel"
-                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                  />
-                </div>
-              </div>
-            </section>
-
-            <section aria-labelledby="shipping-heading" className="mt-10">
-              <h2 id="shipping-heading" className="text-lg font-medium text-gray-900">
-                Appointment Details
-              </h2>
-
-              <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-3">
-                <div className="sm:col-span-3">
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700">
-                    Company
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                    />
-                  </div>
-                </div>
-
-                <div className="sm:col-span-3">
-                  <label htmlFor="address" className="block text-sm font-medium text-gray-700">
-                    Address
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="address"
-                      name="address"
-                      autoComplete="street-address"
-                      className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                    />
-                  </div>
-                </div>
-
-                <div className="sm:col-span-3">
-                  <label htmlFor="apartment" className="block text-sm font-medium text-gray-700">
-                    Apartment, suite, etc.
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="apartment"
-                      name="apartment"
-                      className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="city" className="block text-sm font-medium text-gray-700">
-                    City
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="city"
-                      name="city"
-                      className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="province" className="block text-sm font-medium text-gray-700">
-                    Province
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="province"
-                      name="province"
-                      className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="postal-code" className="block text-sm font-medium text-gray-700">
-                    Postal code
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="postal-code"
-                      name="postal-code"
-                      autoComplete="postal-code"
-                      className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
-              <button
-                type="submit"
-                className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
-              >
-                Continue
-              </button>
-              <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
-                You won't be charged until you collect your device.
-              </p>
             </div>
-          </div>
-        </form>
-      </main>
-    </div>
-    <Footer />
-    </div>
-  );
+        </div>
+    )
 }
