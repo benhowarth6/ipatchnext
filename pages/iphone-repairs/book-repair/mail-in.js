@@ -158,7 +158,7 @@ export default function Example() {
 
                                     <div className="flex items-center justify-between border-t border-gray-200 pt-6">
                                         <dt className="text-base">Total</dt>
-                                        <dd className="text-base">£{(parseInt(price) + (7.5))}</dd>
+                                        <dd className="text-base">£{(parseInt(price) + 7.5).toFixed(2)}</dd>
                                     </div>
                                 </dl>
 
