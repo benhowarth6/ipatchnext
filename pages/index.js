@@ -1,564 +1,396 @@
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-import { NextSeo, LocalBusinessJsonLd } from "next-seo";
-import { LocationMarkerIcon, CalendarIcon, MailIcon, QrcodeIcon, BadgeCheckIcon, ThumbUpIcon, CurrencyPoundIcon, ClockIcon, LockClosedIcon, ShieldCheckIcon, PhoneIcon } from "@heroicons/react/outline";
+import { Component, Fragment, useState } from 'react'
+import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
+import { MenuIcon, QuestionMarkCircleIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Contact from "../components/Contact";
-import Hero from "../components/Hero-dark";
+import Navigation from "../components/Navigation"
 
-function Home() {
-  return (
-    <div>
-      <NextSeo
-        title="iPhone, MacBook, iPad and Watch Repairs in Leeds - iPatch"
-        description="We repair iPhones, MacBooks, iPad's and More. We offer screens replacements, batteries, charging ports and even liquid damage repairs. Nearly all repairs are completed the same day and include a 90 day warranty."
-        openGraph={{
-          url: 'https://www.ipatchrepairs.co.uk',
-          title: 'iPatch Repairs - Leeds',
-          description: 'iPhone, iPad, Mac, Watch and more repairs in Leeds.',
-          images: [
-            {
-              url: 'https://www.ipatchrepairs.co.uk/social.jpg',
-              width: 1200,
-              height: 630,
-              alt: 'iPatch Social Images',
-            },
-          ],
-          site_name: 'iPatch - Apple Device Repairs in Leeds',
-        }}
-      />
-      <LocalBusinessJsonLd
-        type="Store"
-        id="http://ipatchrepairs.com"
-        name="iPhone, MacBook, iPad and Watch Repairs in Leeds - iPatch"
-        description="We repair iPhones, MacBooks, iPad's and More. We offer screens replacements, batteries, charging ports and even liquid damage repairs."
-        url="http://ipatchrepairs.com/contact/trinity-leeds"
-        telephone="+4401132469388"
-        address={{
-          streetAddress: "iPatch, Trinity Leeds, Albion Street",
-          addressLocality: "Leeds",
-          addressRegion: "WY",
-          postalCode: "LS15AR",
-          addressCountry: "UK",
-        }}
-        geo={{
-          latitude: "53.79670330561009",
-          longitude: "-1.546093615066775",
-        }}
-        images={[
-          "https://trinityleeds.com/sites/trinity_leeds/files/styles/shop_logo/public/images/shops/logos/ipatch_logo.jpg?itok=2ySH6_6d",
-          "https://trinityleeds.com/sites/trinity_leeds/files/styles/whats_on_scaled_combo/public/images/content/iptach1.png?itok=pOB2SV6A",
-          "https://trinityleeds.com/sites/trinity_leeds/files/styles/shop_gallery_full/public/images/shops/gallery/ipatch_web.jpg?itok=gv7nKLuB",
-        ]}
-        openingHours={[
-          {
-            opens: "09:00",
-            closes: "17:00",
-            dayOfWeek: [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday",
-            ],
-            validFrom: "2021-01-01",
-            validThrough: "2022-01-01",
-          },
-          {
-            opens: "11:00",
-            closes: "17:00",
-            dayOfWeek: "Sunday",
-            validFrom: "2021-01-01",
-            validThrough: "2022-01-01",
-          },
-        ]}
-      />
-      <Header />
-      <Hero />
+const categories = [
+    {
+        name: 'New Arrivals',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg',
+    },
+    {
+        name: 'Productivity',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg',
+    },
+    {
+        name: 'Workspace',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg',
+    },
+    {
+        name: 'Accessories',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg',
+    },
+    { name: 'Sale', href: '#', imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg' },
+]
+const collections = [
+    {
+        name: 'Handcrafted Collection',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg',
+        imageAlt: 'Brown leather key ring with brass metal loops and rivets on wood table.',
+        description: 'Keep your phone, keys, and wallet together, so you can lose everything at once.',
+    },
+    {
+        name: 'Organized Desk Collection',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg',
+        imageAlt: 'Natural leather mouse pad on white desk next to porcelain mug and keyboard.',
+        description: 'The rest of the house will still be a mess, but your desk will look great.',
+    },
+    {
+        name: 'Focus Collection',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg',
+        imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
+        description: 'Be more productive than enterprise project managers with a single piece of paper.',
+    },
+]
+const footerNavigation = {
+    shop: [
+        { name: 'Bags', href: '#' },
+        { name: 'Tees', href: '#' },
+        { name: 'Objects', href: '#' },
+        { name: 'Home Goods', href: '#' },
+        { name: 'Accessories', href: '#' },
+    ],
+    company: [
+        { name: 'Who we are', href: '#' },
+        { name: 'Sustainability', href: '#' },
+        { name: 'Press', href: '#' },
+        { name: 'Careers', href: '#' },
+        { name: 'Terms & Conditions', href: '#' },
+        { name: 'Privacy', href: '#' },
+    ],
+    account: [
+        { name: 'Manage Account', href: '#' },
+        { name: 'Returns & Exchanges', href: '#' },
+        { name: 'Redeem a Gift Card', href: '#' },
+    ],
+    connect: [
+        { name: 'Contact Us', href: '#' },
+        { name: 'Twitter', href: '#' },
+        { name: 'Instagram', href: '#' },
+        { name: 'Pinterest', href: '#' },
+    ],
+}
+const offers = [
+    { name: 'Download the app', description: 'Get an exclusive $5 off code', href: '#' },
+    { name: "Return when you're ready", description: '60 days of free returns', href: '#' },
+    { name: 'Sign up for our newsletter', description: '15% off your first order', href: '#' },
+]
 
-      <main>
-        <div className="relative bg-white py-12">
-          <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-            <h2 className="text-base font-semibold tracking-wider text-blue-600 uppercase">
-              Our Service Options
-            </h2>
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-              A better way to repair
-            </p>
-            <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-              We’re here to help should you ever need us. We aim to make our
-              process as simple as possible, while using the best available
-              parts. No matter your option, you’ll get a quick turnaround.
-            </p>
-            <div className="mt-12">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <div className="pt-6">
-                  <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                    <div className="-mt-6">
-                      <div>
-                        <span className="inline-flex items-center justify-center p-3 text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-md shadow-lg">
-                          <LocationMarkerIcon className="h-6 w-6"></LocationMarkerIcon>
-                        </span>
-                      </div>
-                      <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        Walk-in Repair
-                      </h3>
-                      <p className="mt-5 text-base text-gray-500">
-                        We don’t require appointments at our Trinity Leeds
-                        store, so you can pop down anytime without an
-                        appointment for a quick repair.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-6">
-                  <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                    <div className="-mt-6">
-                      <div>
-                        <span className="inline-flex items-center justify-center p-3 text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-md shadow-lg">
-                          <CalendarIcon className="h-6 w-6"></CalendarIcon>
-                        </span>
-                      </div>
-                      <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        Book an Appointment
-                      </h3>
-                      <p className="mt-5 text-base text-gray-500">
-                        Feel free to book a repair ahead of time for either of
-                        our stores. This helps to ensure part availability for a
-                        quicker service turnaround.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-6">
-                  <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                    <div className="-mt-6">
-                      <div>
-                        <span className="inline-flex items-center justify-center p-3 text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-md shadow-lg">
-                          <MailIcon className="h-6 w-6"></MailIcon>
-                        </span>
-                      </div>
-                      <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                        Mail-in Repair
-                      </h3>
-                      <p className="mt-5 text-base text-gray-500">
-                        We also offer mail-in repairs for all devices, we aim to
-                        have all repairs completed and dispatched within 24
-                        hours of receiving them.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-gray-800">
-          <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                Expert advice and free diagnostics
-              </h2>
-              <p className="mt-3 text-xl text-gray-200 sm:mt-4">
-                From a team who work solely with apple products, with over 15
-                years experience.
-              </p>
-            </div>
-            <dl className="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
-              <div className="flex flex-col">
-                <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-200">
-                  Years experience
-                </dt>
-                <dd className="order-1 text-5xl font-extrabold text-white">
-                  15+
-                </dd>
-              </div>
-              <div className="flex flex-col mt-10 sm:mt-0">
-                <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-200">
-                  Average ratings
-                </dt>
-                <dd className="order-1 text-5xl font-extrabold text-white">
-                  5/5
-                </dd>
-              </div>
-              <div className="flex flex-col mt-10 sm:mt-0">
-                <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-200">
-                  Device's repaired
-                </dt>
-                <dd className="order-1 text-5xl font-extrabold text-white">
-                  300K+
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-        <div className="py-16 bg-gray-100 overflow-hidden lg:py-24">
-          <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-            <div className="lg:text-center">
-              <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">
-                What we offer
-              </h2>
-              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                A little more about us
-              </p>
-              <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                Find out about how we work and the common services we offer.
-              </p>
-            </div>
-
-            <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-              <div className="relative">
-                <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                  Screen Replacements
-                </h3>
-                <p className="mt-3 text-lg text-gray-500">
-                  We offer screen replacements on all Apple devices, including
-                  iPhone's, iPad's, Mac's and more.
-                </p>
-
-                <dl className="mt-10 space-y-10">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                        <QrcodeIcon className="h-6 w-6"></QrcodeIcon>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <dt className="text-lg leading-6 font-medium text-gray-900">
-                        Coded Screens
-                      </dt>
-                      <dd className="mt-2 text-base text-gray-500">
-                        Using original, coded displays means your device’s True
-                        Tone, auto brightness and Face ID functions are
-                        retained.
-                      </dd>
-                    </div>
-                  </div>
-
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                        <ShieldCheckIcon className="h-6 w-6"></ShieldCheckIcon>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <dt className="text-lg leading-6 font-medium text-gray-900">
-                        Genuine Components
-                      </dt>
-                      <dd className="mt-2 text-base text-gray-500">
-                        Genuine parts also mean that there won’t be any issues
-                        with the touch response and they are less likely to
-                        break after an impact than the copy versions.
-                      </dd>
-                    </div>
-                  </div>
-
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                        <ThumbUpIcon className="h-6 w-6"></ThumbUpIcon>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <dt className="text-lg leading-6 font-medium text-gray-900">
-                        Warranty
-                      </dt>
-                      <dd className="mt-2 text-base text-gray-500">
-                        And just in case you do have any issues with your
-                        device, we offer a 90-day warranty against any part
-                        defects or workmanship.
-                      </dd>
-                    </div>
-                  </div>
-                </dl>
-              </div>
-
-              <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
-                <div className="relative mx-auto">
-                  <Image
-                    src="/index/cracked-screen.jpg"
-                    alt="iPhone Screen Replacement"
-                    width={490}
-                    height={570}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="relative mt-12 sm:mt-16 lg:mt-24">
-              <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-                <div className="lg:col-start-2">
-                  <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                    Batteries
-                  </h3>
-                  <p className="mt-3 text-lg text-gray-500">
-                    Batteries are a complex technology, and a number of
-                    variables contribute to battery performance and related
-                    iPhone performance. All rechargeable batteries are
-                    consumables and have a limited lifespan – eventually their
-                    capacity and performance decline so that they need to
-                    be replaced.
-                  </p>
-
-                  <dl className="mt-10 space-y-10">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                          <CurrencyPoundIcon className="h-6 w-6"></CurrencyPoundIcon>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <dt className="text-lg leading-6 font-medium text-gray-900">
-                          Free Diagnostics
-                        </dt>
-                        <dd className="mt-2 text-base text-gray-500">
-                          We can carry out charge tests against your battery to
-                          see if it's offering peak performance or if it
-                          requires a replacement. We can do this on the spot
-                          with no appointment needed.
-                        </dd>
-                      </div>
-                    </div>
-
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                          <ClockIcon className="h-6 w-6"></ClockIcon>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <dt className="text-lg leading-6 font-medium text-gray-900">
-                          Quick Replacements
-                        </dt>
-                        <dd className="mt-2 text-base text-gray-500">
-                          We keep batteries in stock for all iPhones, most
-                          iPad's and some other devices. This means we can
-                          replace most batteries on the spot within around 15
-                          minutes.
-                        </dd>
-                      </div>
-                    </div>
-
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                          <ThumbUpIcon className="h-6 w-6"></ThumbUpIcon>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <dt className="text-lg leading-6 font-medium text-gray-900">
-                          Warranty
-                        </dt>
-                        <dd className="mt-2 text-base text-gray-500">
-                          And just in case you do have any issues with your new
-                          battery, we offer a 90-day warranty against any part
-                          defects or workmanship.
-                        </dd>
-                      </div>
-                    </div>
-                  </dl>
-                </div>
-
-                <div className="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-                  <div className="relative mx-auto">
-                    <Image
-                      src="/index/battery.jpg"
-                      alt="iPhone Battery Replacement"
-                      width={490}
-                      height={570}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-              <div className="relative">
-                <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                  Privacy
-                </h3>
-                <p className="mt-3 text-lg text-gray-500">
-                  You can leave your device with us trusting it's in safe hands.
-                  We don't even require your passcode for the vast majority of
-                  our repairs, so your data stays private.
-                </p>
-
-                <dl className="mt-10 space-y-10">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                        <LockClosedIcon className="h-6 w-6"></LockClosedIcon>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <dt className="text-lg leading-6 font-medium text-gray-900">
-                        No passcode? No problem
-                      </dt>
-                      <dd className="mt-2 text-base text-gray-500">
-                        We can carry out nearly all iPhone repairs without your
-                        passcode. Should we require it to test certain features,
-                        you are more than welcome to enter the code yourself to
-                        carry out any tests.
-                      </dd>
-                    </div>
-                  </div>
-
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-                        <ShieldCheckIcon className="h-6 w-6"></ShieldCheckIcon>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <dt className="text-lg leading-6 font-medium text-gray-900">
-                        Your data stays safe
-                      </dt>
-                      <dd className="mt-2 text-base text-gray-500">
-                        We never access, save or copy any personal information
-                        that's saved on your device, should you require data
-                        backing up for a transfer this information will be
-                        encrypted and deleted once complete.
-                      </dd>
-                    </div>
-                  </div>
-                </dl>
-              </div>
-
-              <div className="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
-                <div className="relative mx-auto">
-                  <Image
-                    src="/index/safe-secure.jpg"
-                    alt="iPatch Privacy"
-                    width={490}
-                    height={570}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-gray-800">
-          <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              <span className="block">Ready to repair?</span>
-              <span className="block">Get your device booked in today.</span>
-            </h2>
-            <p className="mt-4 text-lg leading-6 text-gray-200">
-              Book your device in with us to ensure part availability on your
-              chosen day.
-            </p>
-            <a
-              href="book-repair"
-              className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
-            >
-              Book a Repair
-            </a>
-          </div>
-        </div>
-        <div className="bg-white">
-          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-            <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-              <div>
-                <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                  Trusted by a number of companies
-                </h2>
-                <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                  We offer a number of services for businesses to help maintain
-                  your inventory of devices. We offer bulk discounts and even
-                  collection and drop off's. Contact us to find out how we can
-                  help you.
-                </p>
-                <div className="mt-8 sm:flex">
-                  <div className="rounded-md shadow">
-                    <Link href="/contact">
-                      <a
-                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
-                      >
-                        Contact us
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
-                  </div>
-                </div>
-              </div>
-              <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <div className="max-h-12">
-                    <Image
-                      src="/index/jpimedia.jpg"
-                      alt="JPI Media Logo"
-                      width={150}
-                      height={75}
-                    />
-                  </div>
-                </div>
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <div className="max-h-12">
-                    <Image
-                      src="/index/leeds-uni.jpg"
-                      alt="Leeds University Logo"
-                      width={150}
-                      height={75}
-                    />
-                  </div>
-                </div>
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <div className="max-h-12">
-                    <Image
-                      src="/index/canal-river-trust.jpg"
-                      alt="Canal River Trust Logo"
-                      width={150}
-                      height={75}
-                    />
-                  </div>
-                </div>
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <div className="max-h-12">
-                    <Image
-                      src="/index/lupton-fawcett.jpg"
-                      alt="Lupton Fawcett Logo"
-                      width={150}
-                      height={75}
-                    />
-                  </div>
-                </div>
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <div className="max-h-12">
-                    <Image
-                      src="/index/gsal.jpg"
-                      alt="Grammar School of Leeds Logo"
-                      width={150}
-                      height={75}
-                    />
-                  </div>
-                </div>
-                <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                  <div className="max-h-12">
-                    <Image
-                      src="/index/leeds-beckett.jpg"
-                      alt="Leeds Beckett University Logo"
-                      width={150}
-                      height={75}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-  );
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
 }
 
-export default Home;
+export default function Example() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+    return (
+        <div className="bg-white">
+            <Navigation />
+
+            <div className="bg-white">
+                <div className="flex flex-col border-b border-gray-200 lg:border-0">
+
+                    <div className="relative">
+                        <div aria-hidden="true" className="hidden absolute w-1/2 h-full bg-gray-100 lg:block" />
+                        <div className="relative bg-gray-100 lg:bg-transparent">
+                            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2">
+                                <div className="max-w-2xl mx-auto py-24 lg:py-64 lg:max-w-none">
+                                    <div className="lg:pr-16">
+                                        <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
+                                            Focus on what matters
+                                        </h1>
+                                        <p className="mt-4 text-xl text-gray-600">
+                                            All the charts, datepickers, and notifications in the world can't beat checking off some items on a
+                                            paper card.
+                                        </p>
+                                        <div className="mt-6">
+                                            <a
+                                                href="#"
+                                                className="inline-block bg-blue-600 border border-transparent py-3 px-8 rounded-md font-medium text-white hover:bg-blue-700"
+                                            >
+                                                Shop Productivity
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full h-48 sm:h-64 lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full">
+                            <img
+                                src="https://tailwindui.com/img/ecommerce-images/home-page-02-hero-half-width.jpg"
+                                alt=""
+                                className="w-full h-full object-center object-cover"
+                            />
+                        </div>
+                    </div>
+                    <nav aria-label="Offers" className="order-last lg:order-last">
+                        <div className="max-w-7xl mx-auto lg:px-8">
+                            <ul
+                                role="list"
+                                className="grid grid-cols-1 divide-y divide-gray-200 lg:grid-cols-3 lg:divide-y-0 lg:divide-x"
+                            >
+                                {offers.map((offer) => (
+                                    <li key={offer.name} className="flex flex-col">
+                                        <a
+                                            href={offer.href}
+                                            className="relative flex-1 flex flex-col justify-center bg-white py-6 px-4 text-center focus:z-10"
+                                        >
+                                            <p className="text-sm text-gray-500">{offer.name}</p>
+                                            <p className="font-semibold text-gray-900">{offer.description}</p>
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <main>
+                {/* Category section */}
+                <section aria-labelledby="category-heading" className="pt-24 sm:pt-32 xl:max-w-7xl xl:mx-auto xl:px-8">
+                    <div className="px-4 sm:px-6 sm:flex sm:items-center sm:justify-between lg:px-8 xl:px-0">
+                        <h2 id="category-heading" className="text-2xl font-extrabold tracking-tight text-gray-900">
+                            Shop by Category
+                        </h2>
+                        <a href="#" className="hidden text-sm font-semibold text-blue-600 hover:text-blue-500 sm:block">
+                            Browse all categories<span aria-hidden="true"> &rarr;</span>
+                        </a>
+                    </div>
+
+                    <div className="mt-4 flow-root">
+                        <div className="-my-2">
+                            <div className="box-content py-2 relative h-80 overflow-x-auto xl:overflow-visible">
+                                <div className="absolute min-w-screen-xl px-4 flex space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-5 xl:gap-x-8">
+                                    {categories.map((category) => (
+                                        <a
+                                            key={category.name}
+                                            href={category.href}
+                                            className="relative w-56 h-80 rounded-lg p-6 flex flex-col overflow-hidden hover:opacity-75 xl:w-auto"
+                                        >
+                                            <span aria-hidden="true" className="absolute inset-0">
+                                                <img src={category.imageSrc} alt="" className="w-full h-full object-center object-cover" />
+                                            </span>
+                                            <span
+                                                aria-hidden="true"
+                                                className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
+                                            />
+                                            <span className="relative mt-auto text-center text-xl font-bold text-white">{category.name}</span>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-6 px-4 sm:hidden">
+                        <a href="#" className="block text-sm font-semibold text-blue-600 hover:text-blue-500">
+                            Browse all categories<span aria-hidden="true"> &rarr;</span>
+                        </a>
+                    </div>
+                </section>
+
+                {/* Featured section */}
+                <section
+                    aria-labelledby="social-impact-heading"
+                    className="max-w-7xl mx-auto pt-24 px-4 sm:pt-32 sm:px-6 lg:px-8"
+                >
+                    <div className="relative rounded-lg overflow-hidden">
+                        <div className="absolute inset-0">
+                            <img
+                                src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-01.jpg"
+                                alt=""
+                                className="w-full h-full object-center object-cover"
+                            />
+                        </div>
+                        <div className="relative bg-gray-900 bg-opacity-75 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
+                            <div className="relative max-w-3xl mx-auto flex flex-col items-center text-center">
+                                <h2
+                                    id="social-impact-heading"
+                                    className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
+                                >
+                                    <span className="block sm:inline">Level up</span>
+                                    <span className="block sm:inline">your desk</span>
+                                </h2>
+                                <p className="mt-3 text-xl text-white">
+                                    Make your desk beautiful and organized. Post a picture to social media and watch it get more likes
+                                    than life-changing announcements. Reflect on the shallow nature of existence. At least you have a
+                                    really nice desk setup.
+                                </p>
+                                <a
+                                    href="#"
+                                    className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
+                                >
+                                    Shop Workspace
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Collection section */}
+                <section
+                    aria-labelledby="collection-heading"
+                    className="max-w-xl mx-auto pt-24 px-4 sm:pt-32 sm:px-6 lg:max-w-7xl lg:px-8"
+                >
+                    <h2 id="collection-heading" className="text-2xl font-extrabold tracking-tight text-gray-900">
+                        Shop by Collection
+                    </h2>
+                    <p className="mt-4 text-base text-gray-500">
+                        Each season, we collaborate with world-class designers to create a collection inspired by the natural world.
+                    </p>
+
+                    <div className="mt-10 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
+                        {collections.map((collection) => (
+                            <a key={collection.name} href={collection.href} className="group block">
+                                <div
+                                    aria-hidden="true"
+                                    className="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6"
+                                >
+                                    <img
+                                        src={collection.imageSrc}
+                                        alt={collection.imageAlt}
+                                        className="w-full h-full object-center object-cover"
+                                    />
+                                </div>
+                                <h3 className="mt-4 text-base font-semibold text-gray-900">{collection.name}</h3>
+                                <p className="mt-2 text-sm text-gray-500">{collection.description}</p>
+                            </a>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Featured section */}
+                <section aria-labelledby="comfort-heading" className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+                    <div className="relative rounded-lg overflow-hidden">
+                        <div className="absolute inset-0">
+                            <img
+                                src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-02.jpg"
+                                alt=""
+                                className="w-full h-full object-center object-cover"
+                            />
+                        </div>
+                        <div className="relative bg-gray-900 bg-opacity-75 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
+                            <div className="relative max-w-3xl mx-auto flex flex-col items-center text-center">
+                                <h2 id="comfort-heading" className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                                    Simple productivity
+                                </h2>
+                                <p className="mt-3 text-xl text-white">
+                                    Endless tasks, limited hours, a single piece of paper. Not really a haiku, but we're doing our best
+                                    here. No kanban boards, burndown charts, or tangled flowcharts with our Focus system. Just the
+                                    undeniable urge to fill empty circles.
+                                </p>
+                                <a
+                                    href="#"
+                                    className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
+                                >
+                                    Shop Focus
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer aria-labelledby="footer-heading" className="bg-gray-900">
+                <h2 id="footer-heading" className="sr-only">
+                    Footer
+                </h2>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="py-20 xl:grid xl:grid-cols-3 xl:gap-8">
+                        <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+                            <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+                                <div>
+                                    <h3 className="text-sm font-medium text-white">Shop</h3>
+                                    <ul role="list" className="mt-6 space-y-6">
+                                        {footerNavigation.shop.map((item) => (
+                                            <li key={item.name} className="text-sm">
+                                                <a href={item.href} className="text-gray-300 hover:text-white">
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 className="text-sm font-medium text-white">Company</h3>
+                                    <ul role="list" className="mt-6 space-y-6">
+                                        {footerNavigation.company.map((item) => (
+                                            <li key={item.name} className="text-sm">
+                                                <a href={item.href} className="text-gray-300 hover:text-white">
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+                                <div>
+                                    <h3 className="text-sm font-medium text-white">Account</h3>
+                                    <ul role="list" className="mt-6 space-y-6">
+                                        {footerNavigation.account.map((item) => (
+                                            <li key={item.name} className="text-sm">
+                                                <a href={item.href} className="text-gray-300 hover:text-white">
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 className="text-sm font-medium text-white">Connect</h3>
+                                    <ul role="list" className="mt-6 space-y-6">
+                                        {footerNavigation.connect.map((item) => (
+                                            <li key={item.name} className="text-sm">
+                                                <a href={item.href} className="text-gray-300 hover:text-white">
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mt-12 md:mt-16 xl:mt-0">
+                            <h3 className="text-sm font-medium text-white">Sign up for our newsletter</h3>
+                            <p className="mt-6 text-sm text-gray-300">The latest deals and savings, sent to your inbox weekly.</p>
+                            <form className="mt-2 flex sm:max-w-md">
+                                <label htmlFor="email-address" className="sr-only">
+                                    Email address
+                                </label>
+                                <input
+                                    id="email-address"
+                                    type="text"
+                                    autoComplete="email"
+                                    required
+                                    className="appearance-none min-w-0 w-full bg-white border border-white rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:border-white focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white"
+                                />
+                                <div className="ml-4 flex-shrink-0">
+                                    <button
+                                        type="submit"
+                                        className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500"
+                                    >
+                                        Sign up
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div className="border-t border-gray-800 py-10">
+                        <p className="text-sm text-gray-400">Copyright &copy; 2021 Clothing Company Inc.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    )
+}
