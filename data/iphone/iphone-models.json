@@ -5,6 +5,7 @@
       "image": "/iphone/b/12-pro-max.jpg",
       "mobileimage": "/iphone/12-pro-max-256.png",
       "href": "/iphone-repairs/iphone-12-pro-max-repairs",
+      "type": "iphone-12-pro-max",
       "alt": "iPhone 12 Pro Max Repairs"
     },
     {
@@ -13,6 +14,7 @@
       "image": "/iphone/b/12-pro.jpg",
       "mobileimage": "/iphone/12-pro-256.png",
       "href": "/iphone-repairs/iphone-12-pro-repairs",
+      "slug": "iphone-12-pro-repairs",
       "alt": "iPhone 12 Pro Repairs"
     },
     {
