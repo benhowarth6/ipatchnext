@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { CheckIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/outline'
@@ -199,7 +199,7 @@ export default function Example() {
                 </a>
               </div>
               <div className="mt-10">
-              <Link
+              <Link as="book-repair/booking-type"
                         href={{
                           pathname: (selectedSize.pathname),
                           query: { model: product.model, repair: selectedSize.query, img: product.imageSrc, price: selectedSize.price },
