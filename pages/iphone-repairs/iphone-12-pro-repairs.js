@@ -10,25 +10,25 @@ import Footer from "../../components/Footer";
 const product = {
   name: 'iPhone 12 Pro Repairs',
   model: 'iPhone 12 Pro',
-  href: '#',
   description:
     "We offer a comprehensive set of repairs for the iPhone 12 Pro. Including screen replacements, batteries and much more.",
   imageSrc: '/iphone/b/12-pro.jpg',
-  imageAlt: 'Model wearing light green backpack with black canvas straps and front zipper pouch.',
+  imageAlt: 'Image of an iPhone 12 Pro.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },
     { id: 2, name: 'iPhone 12 Pro', href: '#' },
   ],
-  sizes: [
-    { id: 1, name: 'Display Assembly', description: 'A new OLED display assembly to repair a damaged screen.', price: 299, pathname: 'book-repair/booking-type', query: 'Screen+Replacement' },
-    { id: 2, name: 'Battery', description: 'A new battery to restore your device to 100%.', price: 85, pathname: 'book-repair/booking-type', query: 'Battery' },
-    { id: 3, name: 'Rear Housing', description: 'A new housing and frame to replace a cracked back.', price: 399, pathname: 'book-repair/booking-type', query: 'Rear+Casing' },
-    { id: 4, name: 'Charging Port', description: 'A new charging port to restore device charging.', price: 85, pathname: 'book-repair/booking-type', query: 'Charging+Port' },
-    { id: 5, name: 'Microphone', description: 'A new Microphone to restore sound pickup.', price: 85, pathname: 'book-repair/booking-type', query: 'Microphone' },
-    { id: 6, name: 'Rear Camera Lens', description: 'A new replacement camera lens if one of yours is damaged.', price: 85, pathname: 'book-repair/booking-type', query: 'Camera+Lens' },
-    { id: 7, name: 'Earpiece Speaker', description: 'A replacement speaker if you cannot hear on phone calls.', price: 85, pathname: 'book-repair/booking-type', query: 'Earpiece+Speaker' },
-    { id: 8, name: 'Loudspeaker', description: 'A replacement loudspeaker if you cannot hear any audio.', price: 85, pathname: 'book-repair/booking-type', query: 'Loudspeaker' },
-    { id: 9, name: 'Button Fault', description: 'A replacement button flex if one of yours isn\'t working.', price: 85, pathname: 'book-repair/booking-type', query: 'Button+Fault' },
+  repairs: [
+    { id: 1, name: 'Display Assembly', description: 'A new OLED display assembly to repair a damaged screen.', price: 299, query: 'Screen+Replacement' },
+    { id: 2, name: 'Battery', description: 'A new battery to restore your device to 100%.', price: 85, query: 'Battery' },
+    { id: 3, name: 'Rear Housing', description: 'A new housing and frame to replace a cracked back.', price: 399, query: 'Rear+Casing' },
+    { id: 4, name: 'Charging Port', description: 'A new charging port to restore device charging.', price: 85, query: 'Charging+Port' },
+    { id: 5, name: 'Microphone', description: 'A new Microphone to restore sound pickup.', price: 85, query: 'Microphone' },
+    { id: 6, name: 'Rear Camera Lens', description: 'A new replacement camera lens if one of yours is damaged.', price: 85, query: 'Camera+Lens' },
+    { id: 7, name: 'Earpiece Speaker', description: 'A replacement speaker if you cannot hear on phone calls.', price: 85, query: 'Earpiece+Speaker' },
+    { id: 8, name: 'Loudspeaker', description: 'A replacement loudspeaker if you cannot hear any audio.', price: 85, query: 'Loudspeaker' },
+    { id: 9, name: 'Button Fault', description: 'A replacement button flex if one of yours isn\'t working.', price: 85, query: 'Button+Fault' },
+    { id: 10, name: 'Unsure', description: 'Book your device in with us diagnosis if you aren\'t sure.', price: 0, query: 'Not+Sure' },
   ],
   highlights: [
     'Most repairs are completed within the hour',
@@ -53,19 +53,19 @@ const features = [
         'Lastly your iPhone display also includes calibratin data for touch. We pair the correct manufacture of display with your original and then pair this code to ensure correct and accurate touch response.',
     },
 ]
-const license = {
+const warnings = {
   href: '#',
   summary:
     'This iPhone has paired components, you may recieve warnings post repair.',
 }
-const repairs = { totalCount: 9 }
+const repairCount = { totalCount: 10 }
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
-  const [selectedSize, setSelectedSize] = useState(product.sizes[0])
+  const [selectedRepair, setSelectedRepair] = useState(product.repairs[0])
 
   return (
       <>
@@ -109,11 +109,10 @@ export default function Example() {
             </h2>
 
             <div className="flex items-center">
-            <p className="text-lg text-gray-900 sm:text-xl">{selectedSize.price}</p>
+            <p className="text-lg text-gray-900 sm:text-xl">£{selectedRepair.price}</p>
               <div className="ml-4 pl-4 border-l border-gray-300">
-                <h2 className="sr-only">Reviews</h2>
                 <div className="flex items-center">
-                  <p className="ml-2 text-sm text-gray-500">{repairs.totalCount} repairs available</p>
+                  <p className="ml-2 text-sm text-gray-500">{repairCount.totalCount} repairs available</p>
                 </div>
               </div>
             </div>
@@ -146,14 +145,14 @@ export default function Example() {
             <form>
               <div className="sm:flex sm:justify-between">
                 {/* Size selector */}
-                <RadioGroup value={selectedSize} onChange={setSelectedSize}>
+                <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                   <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                   <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    {product.sizes.map((size) => (
+                    {product.repairs.map((repair) => (
                       <RadioGroup.Option
                         as="div"
-                        key={size.name}
-                        value={size}
+                        key={repair.name}
+                        value={repair}
                         className={({ active }) =>
                           classNames(
                             active ? 'ring-2 ring-blue-500' : '',
@@ -164,15 +163,15 @@ export default function Example() {
                         {({ active, checked }) => (
                           <>
                             <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
-                              {size.name}
+                              {repair.name}
                             </RadioGroup.Label>
                             <div className="md:hidden">
                             <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
-                              {size.price}
+                              £{repair.price}
                             </RadioGroup.Label>
                             </div>
                             <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
-                              {size.description}
+                              {repair.description}
                             </RadioGroup.Description>
                             <div
                               className={classNames(
@@ -201,8 +200,8 @@ export default function Example() {
               <div className="mt-10">
               <Link
                         href={{
-                          pathname: (selectedSize.pathname),
-                          query: { model: product.model, repair: selectedSize.query, img: product.imageSrc, price: selectedSize.price },
+                          pathname: 'book-repair/booking-type',
+                          query: { model: product.model, repair: selectedRepair.query, img: product.imageSrc, price: selectedRepair.price },
                         }}
                       >
                         <a className="w-full bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
@@ -234,8 +233,8 @@ export default function Example() {
             <div className="border-t border-gray-200 mt-10 pt-10">
               <h3 className="text-sm font-medium text-gray-900">Paired Components</h3>
               <p className="mt-4 text-sm text-gray-500">
-                {license.summary}{' '}
-                <a href={license.href} className="font-medium text-blue-600 hover:text-blue-500">
+                {warnings.summary}{' '}
+                <a href={warnings.href} className="font-medium text-blue-600 hover:text-blue-500">
                   Read full details
                 </a>
               </p>
