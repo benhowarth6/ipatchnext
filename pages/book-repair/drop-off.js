@@ -6,6 +6,7 @@ import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIc
 import { useRouter } from "next/router";
 import DatePicker, { ReactDatePicker } from 'react-datepicker'
 import subDays from "date-fns/subDays";
+import moment from "moment";
 
 import repairs from '../../data/iphone/iphone-repairs.json';
 
@@ -51,7 +52,7 @@ export default function Example() {
     const router = useRouter();
     const { id } = router.query;
 
-    const [startDate, setStartDate, selectedDate] = useState(new Date())
+    const [startDate, setStartDate] = useState(new Date())
     const handleChangeRaw = (value) => {
     }
     const isWeekday = date => {
@@ -445,7 +446,7 @@ export default function Example() {
                                     <Link
                                         href={{
                                             pathname: 'drop-off-confirmation',
-                                            query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate },
+                                            query: { id: id, location: selectedAppointmentLocation.title, time: selected.name}
                                         }}
                                     >
                                         <a
