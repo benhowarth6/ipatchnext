@@ -351,7 +351,6 @@ export default function Example() {
                                             <div className="relative">
                                                 {selectedAppointmentLocation.title === 'Kirkstall Morrisons' ? (
                                                     <DatePicker
-                                                        value={value}
                                                         dateFormat="dd/MM/yyyy"
                                                         selected={startDate}
                                                         onChange={(date) => setStartDate(date)}
