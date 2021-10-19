@@ -9,10 +9,7 @@ import Footer from "../../../components/Footer";
 
 export default function Home() {
   const router = useRouter();
-  const { model } = router.query;
-  const { repair } = router.query;
-  const { price } = router.query;
-  const { img } = router.query;
+  const { id } = router.query;
 
   return (
     <div>
@@ -52,7 +49,7 @@ export default function Home() {
                     offer same day repairs on most devices and no inspection fees. We take card, cash or PayPal payments
                     for drop off repairs.
                 </p>
-                <Link href={`drop-off?model=${model}&repair=${repair}&price=${price}&img=${img}`}>
+                <Link href={`drop-off?id=${id}`}>
                   <a
                   className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                 >
@@ -79,8 +76,8 @@ export default function Home() {
                     Select this option if you'd like to post your device to us for a repair. We aim to return your device 
                     within 24 hours of us receiving it using fully insured postage. We accept card, bank transfer or PayPal payments for mail in repairs.
                 </p>
-                <Link href={`mail-in?model=${model}&repair=${repair}&price=${price}&img=${img}`}>
-                <a
+                <Link href={`drop-off?id=${id}`}>
+                  <a
                   className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                 >
                   Continue Booking

@@ -2,9 +2,10 @@
     {
         "id": "12-pro-max-display",
         "name": "Display Assembly",
-        "model": "12-pro-max",
+        "model": "iPhone 12 Pro Max",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "price": "309"
+        "image": "/iphone/b/12-pro.jpg",
+        "price": 309
     },
     {
         "id": "12-pro-max-battery",
