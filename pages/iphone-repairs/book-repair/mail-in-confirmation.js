@@ -76,7 +76,7 @@ export default function Example() {
                                         ))}
                                     </ol>
                                 </nav>
-                                <p className="sm:hidden">Step 2 of 3</p>
+                                <p className="sm:hidden">Step 3 of 3</p>
                             </div>
                         </div>
                     </header>

@@ -9,19 +9,7 @@ const steps = [
     { name: 'Confirmation', status: 'current' },
 ]
 
-const products = [
-    {
-      id: 1,
-      name: 'Cold Brew Bottle',
-      description:
-        'This glass bottle comes with a mesh insert for steeping tea or cold-brewing coffee. Pour from any angle and remove the top for easy cleaning.',
-      href: '#',
-      quantity: 1,
-      price: '$32.00',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/confirmation-page-05-product-01.jpg',
-      imageAlt: 'Glass bottle with black plastic pour top and mesh insert.',
-    },
-  ]
+import repairs from '../../../data/iphone/12-pro-max.json';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -31,15 +19,15 @@ export default function Example() {
     const [open, setOpen] = useState(false)
 
     const router = useRouter();
-    const { model } = router.query;
-    const { repair } = router.query;
-    const { price } = router.query;
-    const { img } = router.query;
+    const { id } = router.query;
+    const { location } = router.query;
+    const { time } = router.query;
+
 
     return (
         <div>
             <NextSeo
-                title="Mail in iPhone repair booking - iPatch"
+                title="Drop off iPhone repair booking - iPatch"
                 description="Book your iPhone in with us for a drop-off repair to post your device to us from anywhere in the world."
             />
             <div className="bg-gray-50">
@@ -62,12 +50,12 @@ export default function Example() {
                                         {steps.map((step, stepIdx) => (
                                             <li key={step.name} className="flex items-center">
                                                 {step.status === 'current' ? (
-                                                    <a href={`drop-off-confirmation?model=${model}&repair=${repair}&price=${price}&img=${img}`} aria-current="page" className="text-blue-600">
+                                                    <a href={`drop-off-confirmation?id=${id}`} aria-current="page" className="text-blue-600">
                                                         {step.name}
                                                     </a>
                                                 ) : (
                                                     <a href={`/`}>{step.name}</a>
-                                                ) }
+                                                )}
 
                                                 {stepIdx !== steps.length - 1 ? (
                                                     <ChevronRightIcon className="w-5 h-5 text-gray-300 ml-4" aria-hidden="true" />
@@ -76,97 +64,120 @@ export default function Example() {
                                         ))}
                                     </ol>
                                 </nav>
-                                <p className="sm:hidden">Step 2 of 3</p>
+                                <p className="sm:hidden">Step 3 of 3</p>
                             </div>
                         </div>
                     </header>
                     <main className="bg-white px-4 pt-16 pb-24 sm:px-6 sm:pt-24 lg:px-8 lg:py-32">
                         <div className="max-w-3xl mx-auto">
-                            <div className="max-w-xl">
-                                <h1 className="text-sm font-semibold uppercase tracking-wide text-blue-600">Thank you!</h1>
-                                <p className="mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">Your booking is confirmed!</p>
-                                <p className="mt-2 text-base text-gray-500">Your {model} repair has been booked, you'll recieve a confirmation email shortly.</p>
-                            </div>
+                            {repairs.filter(repairs => repairs.id == `${id}`).map(filteredRepairs => {
+                                const { id, name, price, model, image } = filteredRepairs;
+                                return (
+                                    <div>
+                                        <div className="max-w-xl">
+                                            <h1 className="text-sm font-semibold uppercase tracking-wide text-blue-600">Thank you!</h1>
+                                            <p className="mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">Your booking is confirmed!</p>
+                                            <p className="mt-2 text-base text-gray-500">Your {model} repair has been booked, you'll recieve a confirmation email shortly.</p>
+                                        </div>
 
-                            <section aria-labelledby="order-heading" className="mt-10 border-t border-gray-200">
-                                <h2 id="order-heading" className="sr-only">
-                                    Your order
-                                </h2>
+                                        <section aria-labelledby="order-heading" className="mt-10 border-t border-gray-200">
+                                            <h2 id="order-heading" className="sr-only">
+                                                Your order
+                                            </h2>
 
-                                <h3 className="sr-only">Items</h3>
-                                    <div className="py-10 border-b border-gray-200 flex space-x-6">
-                                        <img
-                                            src={img}
-                                            alt="Image of device"
-                                            className="flex-none w-20 h-20 object-center object-cover bg-gray-100 rounded-lg sm:w-40 sm:h-40"
-                                        />
-                                        <div className="flex-auto flex flex-col">
-                                            <div>
-                                                <h4 className="font-medium text-gray-900">
-                                                    {model}
-                                                </h4>
-                                                <p className="mt-2 text-sm text-gray-600">{repair}</p>
+                                            <h3 className="sr-only">Items</h3>
+
+                                            <div className="py-10 border-b border-gray-200 flex space-x-6">
+                                                <img
+                                                    src={image}
+                                                    alt="Image of device"
+                                                    className="flex-none w-20 h-20 object-center object-cover bg-gray-100 rounded-lg sm:w-40 sm:h-40"
+                                                />
+                                                <div className="flex-auto flex flex-col">
+                                                    <div>
+                                                        <h4 className="font-medium text-gray-900">
+                                                            {model}
+                                                        </h4>
+                                                        <p className="mt-2 text-sm text-gray-600">{name}</p>
+                                                    </div>
+                                                    <div className="mt-6 flex-1 flex items-end">
+                                                        <dl className="flex text-sm divide-x divide-gray-200 space-x-4 sm:space-x-6">
+                                                            <div className=" flex ">
+                                                                <dt className="font-medium text-gray-900">Repair Price</dt>
+                                                                <dd className="ml-2 text-gray-700">£{price}</dd>
+                                                            </div>
+                                                        </dl>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="mt-6 flex-1 flex items-end">
-                                                <dl className="flex text-sm divide-x divide-gray-200 space-x-4 sm:space-x-6">
-                                                    <div className=" flex ">
-                                                        <dt className="font-medium text-gray-900">Repair Price</dt>
-                                                        <dd className="ml-2 text-gray-700">£{price}</dd>
+
+                                            <div className="sm:ml-40 sm:pl-6">
+                                                <h3 className="sr-only">Your appointment information</h3>
+
+                                                <h4 className="sr-only">Addresses</h4>
+                                                <dl className="grid grid-cols-2 gap-x-6 text-sm py-10">
+                                                    <div>
+                                                        <dt className="font-medium text-gray-900">Appointment address</dt>
+                                                        <dd className="mt-2 text-gray-700">
+                                                            <address className="not-italic">
+                                                                {location === 'Trinity Leeds' ? (
+                                                                    <>
+                                                                    <span className="block">Trinity Leeds</span>
+                                                                    <span className="block">201 Albion Street</span>
+                                                                    <span className="block">Leeds, LS1 5AR</span>
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                    <span className="block">Kirkstall Morrisons</span>
+                                                                    <span className="block">1 Savins Mill Way</span>
+                                                                    <span className="block">Leeds, LS5 3RP</span>
+                                                                    </>
+                                                                )}
+                                                            </address>
+                                                        </dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt className="font-medium text-gray-900">Appointment details</dt>
+                                                        <dd className="mt-2 text-gray-700">
+                                                            <address className="not-italic">
+                                                            <div className=" flex ">
+                                                                <dt className="font-medium text-gray-900">Date</dt>
+                                                                <dd className="ml-2 text-gray-700">{time}</dd>
+                                                            </div>
+                                                            <div className=" flex ">
+                                                                <dt className="font-medium text-gray-900">Time</dt>
+                                                                <dd className="ml-2 text-gray-700">{time}</dd>
+                                                            </div>
+                                                            </address>
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+
+                                                <h3 className="sr-only">Summary</h3>
+
+                                                <dl className="space-y-6 border-t border-gray-200 text-sm pt-10">
+                                                    <div className="flex justify-between">
+                                                        <dt className="font-medium text-gray-900">Subtotal</dt>
+                                                        <dd className="text-gray-700">£{(parseInt(price) / (1.2) * 1).toFixed(2)}</dd>
+                                                    </div>
+                                                    <div className="flex justify-between">
+                                                        <dt className="font-medium text-gray-900">VAT</dt>
+                                                        <dd className="text-gray-700">£{(parseInt(price) / (1.2) * 0.2).toFixed(2)}</dd>
+                                                    </div>
+                                                    <div className="flex justify-between">
+                                                        <dt className="font-medium text-gray-900">Return Postage</dt>
+                                                        <dd className="text-gray-700">£7.50</dd>
+                                                    </div>
+                                                    <div className="flex justify-between">
+                                                        <dt className="font-medium text-gray-900">Total</dt>
+                                                        <dd className="text-gray-900">£{(parseInt(price) + (7.5))}</dd>
                                                     </div>
                                                 </dl>
                                             </div>
-                                        </div>
+                                        </section>
                                     </div>
-
-                                <div className="sm:ml-40 sm:pl-6">
-                                    <h3 className="sr-only">Your information</h3>
-
-                                    <h4 className="sr-only">Addresses</h4>
-                                    <dl className="grid grid-cols-2 gap-x-6 text-sm py-10">
-                                        <div>
-                                            <dt className="font-medium text-gray-900">Shipping address</dt>
-                                            <dd className="mt-2 text-gray-700">
-                                                <address className="not-italic">
-                                                    <span className="block">Kristin Watson</span>
-                                                    <span className="block">7363 Cynthia Pass</span>
-                                                    <span className="block">Toronto, ON N3Y 4H8</span>
-                                                </address>
-                                            </dd>
-                                        </div>
-                                        <div>
-                                            <dt className="font-medium text-gray-900">Billing address</dt>
-                                            <dd className="mt-2 text-gray-700">
-                                                <address className="not-italic">
-                                                    <span className="block">Kristin Watson</span>
-                                                    <span className="block">7363 Cynthia Pass</span>
-                                                    <span className="block">Toronto, ON N3Y 4H8</span>
-                                                </address>
-                                            </dd>
-                                        </div>
-                                    </dl>
-
-                                    <h3 className="sr-only">Summary</h3>
-
-                                    <dl className="space-y-6 border-t border-gray-200 text-sm pt-10">
-                                        <div className="flex justify-between">
-                                            <dt className="font-medium text-gray-900">Subtotal</dt>
-                                            <dd className="text-gray-700">£{(parseInt(price) / (1.2) * 1).toFixed(2)}</dd>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <dt className="font-medium text-gray-900">VAT</dt>
-                                            <dd className="text-gray-700">£{(parseInt(price) / (1.2) * 0.2).toFixed(2)}</dd>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <dt className="font-medium text-gray-900">Return Postage</dt>
-                                            <dd className="text-gray-700">£7.50</dd>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <dt className="font-medium text-gray-900">Total</dt>
-                                            <dd className="text-gray-900">£{(parseInt(price) + (7.5))}</dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                            </section>
+                                )
+                            })}
                         </div>
                     </main>
                 </div>

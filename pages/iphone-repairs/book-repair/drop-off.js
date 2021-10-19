@@ -4,7 +4,7 @@ import { Fragment, useState } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
-import DatePicker from 'react-datepicker'
+import DatePicker, { ReactDatePicker } from 'react-datepicker'
 import subDays from "date-fns/subDays";
 
 import Footer from '../../../components/Footer'
@@ -53,7 +53,9 @@ export default function Example() {
     const router = useRouter();
     const { id } = router.query;
 
-    const [startDate, setStartDate] = useState(new Date())
+    const [startDate, setStartDate, selectedDate] = useState(new Date())
+    const handleChangeRaw = (value) => {
+    }
     const isWeekday = date => {
         const day = date.getDay();
         return day !== 1 && day !== 0;
@@ -201,12 +203,12 @@ export default function Example() {
                                                                 <dl className="max-w-lg mx-auto space-y-6">
                                                                     <div className="flex items-center justify-between">
                                                                         <dt className="text-gray-600">Subtotal</dt>
-                                                                        <dd>£{(parseInt(price) / (1.2)) * 1}</dd>
+                                                                        <dd>£{(parseInt(price) / (1.2) * 1).toFixed(2)}</dd>
                                                                     </div>
 
                                                                     <div className="flex items-center justify-between">
                                                                         <dt className="text-gray-600">VAT</dt>
-                                                                        <dd>£{(parseInt(price) / (1.2)) * 0.2}</dd>
+                                                                        <dd>£{(parseInt(price) / (1.2) * 0.2).toFixed(2)}</dd>
                                                                     </div>
                                                                 </dl>
                                                             </Popover.Panel>
@@ -349,6 +351,7 @@ export default function Example() {
                                             <div className="relative">
                                                 {selectedAppointmentLocation.title === 'Kirkstall Morrisons' ? (
                                                     <DatePicker
+                                                        value={value}
                                                         dateFormat="dd/MM/yyyy"
                                                         selected={startDate}
                                                         onChange={(date) => setStartDate(date)}
@@ -442,12 +445,17 @@ export default function Example() {
                                 </div>
 
                                 <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
-                                    <Link href={`drop-off-confirmation?id=${id}`}>
-                                        <button
+                                    <Link
+                                        href={{
+                                            pathname: 'drop-off-confirmation',
+                                            query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate },
+                                        }}
+                                    >
+                                        <a
                                             className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
                                         >
                                             Continue
-                                        </button>
+                                        </a>
                                     </Link>
                                     <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
                                         We don't take payment until after your repair has been completed.
