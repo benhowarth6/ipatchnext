@@ -73,7 +73,7 @@ export default function Home() {
                   </div>
                   <div className="mt-4 flex items-center justify-between text-base font-semibold text-gray-900 space-x-8">
                     <h3>
-                      <Link href={`/iphone-repairs/${id}`}>
+                      <Link href={`${href}`}>
                         <a>
                           <span aria-hidden="true" className="absolute inset-0" />
                           {name}

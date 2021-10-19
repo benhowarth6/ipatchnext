@@ -4,21 +4,21 @@
         "name": "Display Assembly",
         "model": "12-pro-max",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "price": "309"
+        "price": 309
     },
     {
         "id": "12-pro-max-battery",
         "name": "Battery",
         "model": "12-pro-max",
         "description": "A new battery to restore your device to 100%.",
-        "price": "85"
+        "price": 85
     },
     {
         "id": "12-pro-max-housing",
         "name": "Rear Housing",
         "model": "12-pro-max",
         "description": "A new housing and frame to replace a cracked back.",
-        "price": "399"
+        "price": 399
     },
     {
         "id": "12-pro-max-charging-port",
