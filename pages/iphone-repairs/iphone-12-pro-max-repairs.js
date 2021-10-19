@@ -190,7 +190,7 @@ export default function Example() {
                 <div className="mt-10">
                   <Link
                     href={{
-                      pathname: 'book-repair/booking-type',
+                      pathname: '/book-repair/booking-type',
                       query: { id: selectedRepair.id },
                     }}
                   >

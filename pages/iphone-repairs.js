@@ -12,7 +12,7 @@ import About from "../components/iphone/About";
 import About2 from "../components/iphone/About2";
 import Parts from "../components/iphone/Parts";
 
-import iphoneModels from '../data/iphone/iphoneModels.json';
+import iphoneModels from '../data/iphone/iphone-models.json';
 import repairs from '../data/iphone/iphone-repairs.json';
 
 export default function Home() {

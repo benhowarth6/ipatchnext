@@ -1,0 +1,80 @@
+{
+    "id": "13-pro-display",
+    "name": "Display Assembly",
+    "model": "iPhone 13 Pro",
+    "description": "A new OLED display assembly to repair a damaged screen.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 299
+},
+{
+    "id": "13-pro-battery",
+    "name": "Battery",
+    "model": "iPhone 13 Pro",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 85
+},
+{
+    "id": "13-pro-housing",
+    "name": "Rear Housing",
+    "model": "iPhone 13 Pro",
+    "description": "A new housing and frame to replace a cracked back.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 399
+},
+{
+    "id": "13-pro-charging-port",
+    "name": "Charging Port",
+    "model": "iPhone 13 Pro",
+    "description": "A new charging port to restore device charging.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 85
+},
+{
+    "id": "13-pro-microphone",
+    "name": "Microphone",
+    "model": "iPhone 13 Pro",
+    "description": "A new Microphone to restore sound pickup.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 85
+},
+{
+    "id": "13-pro-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPhone 13 Pro",
+    "description": "A new replacement camera lens if one of yours is damaged.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 85
+},
+{
+    "id": "13-pro-earpiece",
+    "name": "Earpiece Speaker",
+    "model": "iPhone 13 Pro",
+    "description": "A replacement speaker if you cannot hear on phone calls.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 85
+},
+{
+    "id": "13-pro-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPhone 13 Pro",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 85
+},
+{
+    "id": "13-pro-button-fault",
+    "name": "Button Fault",
+    "model": "iPhone 13 Pro",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 85
+},
+{
+    "id": "13-pro-not-sure",
+    "name": "Unsure",
+    "model": "iPhone 13 Pro",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/iphone/b/13-pro.jpg",
+    "price": 0
+}

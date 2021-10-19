@@ -7,18 +7,18 @@ import { ShieldCheckIcon } from '@heroicons/react/outline'
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 
-import repairs from "../../data/iphone/12.json";
+import repairs from "../../data/iphone/13-pro.json";
 
 const product = {
-  name: 'iPhone 12 Repairs',
-  model: 'iPhone 12',
+  name: 'iPhone 13 Pro Repairs',
+  model: 'iPhone 13 Pro',
   description:
-    "We offer a comprehensive set of repairs for the iPhone 12. Including screen replacements, batteries and much more.",
-  imageSrc: '/iphone/b/12.jpg',
-  imageAlt: 'Image of an iPhone.',
+    "We offer a comprehensive set of repairs for the iPhone 13 Pro. Including screen replacements, batteries and much more.",
+  imageSrc: '/iphone/b/13-pro.jpg',
+  imageAlt: 'Image of an iPhone 13 Pro.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },
-    { id: 2, name: 'iPhone 12', href: '#' },
+    { id: 2, name: 'iPhone 13 Pro', href: '#' },
   ],
   highlights: [
     'Most repairs are completed within the hour',

@@ -7,18 +7,18 @@ import { ShieldCheckIcon } from '@heroicons/react/outline'
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 
-import repairs from "../../data/iphone/12.json";
+import repairs from "../../data/iphone/13-pro-max.json";
 
 const product = {
-  name: 'iPhone 12 Repairs',
-  model: 'iPhone 12',
+  name: 'iPhone 13 Pro Max Repairs',
+  model: 'iPhone 13 Pro Max',
   description:
-    "We offer a comprehensive set of repairs for the iPhone 12. Including screen replacements, batteries and much more.",
-  imageSrc: '/iphone/b/12.jpg',
-  imageAlt: 'Image of an iPhone.',
+    "We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.",
+  imageSrc: '/iphone/b/13-pro-max.jpg',
+  imageAlt: 'Image of an iPhone 13 Pro Max.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },
-    { id: 2, name: 'iPhone 12', href: '#' },
+    { id: 2, name: 'iPhone 13 Pro Max', href: '#' },
   ],
   highlights: [
     'Most repairs are completed within the hour',
@@ -27,21 +27,21 @@ const product = {
   ],
 }
 const features = [
-    {
-      name: 'True-Tone Pairing',
-      description:
-        'Your iPhone display includes special calibration codes for the True-Tone feature. We pair these codes with your replacement display to ensure this features works as intended.',
-    },
-    {
-      name: 'Auto-Brightness Coding',
-      description:
-        "Just like the True-Tone feature, your iPhone display inludes calibration codes for Auto-Brightness. We also pair these codes with your new display to ensure this crucial feature works correctly.",
-    },
-    {
-      name: 'Touch Calibration',
-      description:
-        'Lastly your iPhone display also includes calibratin data for touch. We pair the correct manufacture of display with your original and then pair this code to ensure correct and accurate touch response.',
-    },
+  {
+    name: 'True-Tone Pairing',
+    description:
+      'Your iPhone display includes special calibration codes for the True-Tone feature. We pair these codes with your replacement display to ensure this features works as intended.',
+  },
+  {
+    name: 'Auto-Brightness Coding',
+    description:
+      "Just like the True-Tone feature, your iPhone display inludes calibration codes for Auto-Brightness. We also pair these codes with your new display to ensure this crucial feature works correctly.",
+  },
+  {
+    name: 'Touch Calibration',
+    description:
+      'Lastly your iPhone display also includes calibratin data for touch. We pair the correct manufacture of display with your original and then pair this code to ensure correct and accurate touch response.',
+  },
 ]
 const warnings = {
   href: '#',
