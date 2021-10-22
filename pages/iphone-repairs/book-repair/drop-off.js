@@ -44,7 +44,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function DropOff() {
     const [open, setOpen] = useState(false)
     const [selectedAppointmentLocation, setselectedAppointmentLocation] = useState(appointmentLocation[0])
 

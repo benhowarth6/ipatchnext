@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import { useState } from 'react'
 import { CheckIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/outline'
 
 import Navigation from "../../components/Navigation";
+import Details from "../../components/iphone-repair/Details";
 import Features from "../../components/iphone-repair/Features";
 import Footer from "../../components/Footer";
 
@@ -13,8 +15,8 @@ import repairs from "../../data/iphone/13-pro-max.json";
 const product = {
   name: 'iPhone 13 Pro Max Repairs',
   model: 'iPhone 13 Pro Max',
-  description:
-    "We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.",
+  description: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
+  meta: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
   imageSrc: '/iphone/b/13-pro-max.jpg',
   imageAlt: 'Image of an iPhone 13 Pro Max.',
   breadcrumbs: [
@@ -38,11 +40,21 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function RepairPage() {
   const [selectedRepair, setSelectedRepair] = useState(repairs[0])
 
   return (
     <>
+      <Head>
+        <title>
+          {product.name} in Leeds - Screen Replacements & Other Repairs | iPatch
+        </title>
+        <meta
+          name="description"
+          content={product.meta}
+          key="desc"
+        />
+      </Head>
       <Navigation />
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
@@ -184,13 +196,13 @@ export default function Example() {
                   </Link>
                 </div>
                 <div className="mt-6 text-center">
-                  <a href="#" className="group inline-flex text-base font-medium">
+                  <p className="group inline-flex text-base font-medium">
                     <ShieldCheckIcon
                       className="flex-shrink-0 mr-2 h-6 w-6 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
                     />
                     <span className="text-gray-500 hover:text-gray-700">90 Day Guarantee</span>
-                  </a>
+                  </p>
                 </div>
               </form>
               <div className="border-t border-gray-200 mt-10 pt-10">
@@ -216,6 +228,7 @@ export default function Example() {
             </section>
           </div>
         </div>
+        <Details />
       </div>
       <Features />
       <Footer />
