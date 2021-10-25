@@ -2,17 +2,17 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900" aria-labelledby="footerHeading">
+    <footer className="bg-blueGray-900" aria-labelledby="footerHeading">
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <div className="font-bold text-gray-200 leading-tight text-2xl sm:text-3xl tracking-tight">
+            <div className="font-bold text-blueGray-200 leading-tight text-2xl sm:text-3xl tracking-tight">
               iPatch
             </div>
-            <p className="text-gray-200 text-base">
+            <p className="text-blueGray-200 text-base">
               iPatch is a service provided by an experienced and dedicated team,
               who will do their absolute best to solve your Apple device fault
               as quickly and cost effectively as possible.
@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a
                 href="https://www.facebook.com/ipatchrepairs"
-                className="text-gray-300 hover:text-white"
+                className="text-blueGray-300 hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -40,7 +40,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.instagram.com/Ipatch_repairs"
-                className="text-gray-300 hover:text-white"
+                className="text-blueGray-300 hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -61,7 +61,7 @@ const Footer = () => {
 
               <a
                 href="https://twitter.com/ipatch_ipods"
-                className="text-gray-300 hover:text-white"
+                className="text-blueGray-300 hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -80,13 +80,13 @@ const Footer = () => {
           <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-blueGray-200 tracking-wider uppercase">
                   Repairs
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link href="/iphone-repairs">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         iPhone Repairs
                       </a>
                     </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/ipad-repairs">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         iPad Repairs
                       </a>
                     </Link>
@@ -102,7 +102,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/mac-repairs">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Mac Repairs
                       </a>
                     </Link>
@@ -110,7 +110,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/watch-repairs">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Watch Repairs
                       </a>
                     </Link>
@@ -118,7 +118,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/ipod-repairs">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         iPod Repairs
                       </a>
                     </Link>
@@ -126,13 +126,13 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-blueGray-200 tracking-wider uppercase">
                   Services
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link href="/liquid-damage">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Liquid Damage
                       </a>
                     </Link>
@@ -140,7 +140,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/logic-board">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Logic Board Repairs
                       </a>
                     </Link>
@@ -148,7 +148,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/data-recovery">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Data Recovery
                       </a>
                     </Link>
@@ -156,7 +156,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/insurance-reports">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Insurance Reports
                       </a>
                     </Link>
@@ -166,13 +166,13 @@ const Footer = () => {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-blueGray-200 tracking-wider uppercase">
                   Company
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link href="/about">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         About us
                       </a>
                     </Link>
@@ -180,7 +180,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/contact">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Contact us
                       </a>
                     </Link>
@@ -188,7 +188,7 @@ const Footer = () => {
 
                   <li>
                     <Link href="/book-repair">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Book a repair
                       </a>
                     </Link>
@@ -196,13 +196,13 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-blueGray-200 tracking-wider uppercase">
                   Legal
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link href="/terms">
-                      <a className="text-base text-gray-300 hover:text-white">
+                      <a className="text-base text-blueGray-300 hover:text-white">
                         Terms & Conditions
                       </a>
                     </Link>
@@ -213,7 +213,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-200 xl:text-center">
+          <p className="text-base text-blueGray-200 xl:text-center">
             © 2021 iPatch, Inc. All rights reserved.
           </p>
         </div>
