@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { useState } from 'react'
-import { CheckIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/solid'
+import { CheckIcon, InboxIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/outline'
 
 import Navigation from "../../components/Navigation";
 import Details from "../../components/iphone-repair/Details";
+import Incentives from "../../components/iphone-repair/Incentives";
 import Features from "../../components/iphone-repair/Features";
 import Footer from "../../components/Footer";
 
@@ -18,6 +19,7 @@ const product = {
   description: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
   meta: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
   imageSrc: '/iphone/b/13-pro-max.jpg',
+  imageSrc2: '/iphone/b/13-pro-max-rear.jpg',
   imageAlt: 'Image of an iPhone 13 Pro Max.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },
@@ -118,6 +120,9 @@ export default function RepairPage() {
           <div className="mt-10 lg:mt-36 lg:col-start-2 lg:row-span-2 lg:self-auto">
             <div className="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
               <img src={product.imageSrc} alt={product.imageAlt} className="w-full h-full object-center object-cover" />
+            </div>
+            <div className="mt-10 hidden lg:block aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+              <img src={product.imageSrc2} alt={product.imageAlt} className="w-full h-full object-center object-cover" />
             </div>
           </div>
 
@@ -228,6 +233,7 @@ export default function RepairPage() {
             </section>
           </div>
         </div>
+        <Incentives />
         <Details />
       </div>
       <Features />
