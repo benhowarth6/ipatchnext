@@ -8,7 +8,6 @@ import { ShieldCheckIcon } from '@heroicons/react/outline'
 import Navigation from "../../components/Navigation";
 import Details from "../../components/iphone-repair/Details";
 import Incentives from "../../components/iphone-repair/Incentives";
-import Features from "../../components/iphone-repair/Features";
 import Footer from "../../components/Footer";
 
 import repairs from "../../data/iphone/13-pro-max.json";
@@ -236,7 +235,6 @@ export default function RepairPage() {
         <Incentives />
         <Details />
       </div>
-      <Features />
       <Footer />
     </>
   )

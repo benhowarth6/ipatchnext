@@ -1,19 +1,19 @@
 const incentives = [
   {
-    name: 'Free shipping',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-    description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+    name: 'Free Diagnosis',
+    imageSrc: '/icons/inspection.svg',
+    description: "We'll diagnose your device free of charge and provide a no obligation quote for a repair.",
   },
   {
     name: '90-day warranty',
     imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-    description: "If it breaks in the first 90 days we'll replace it. After that you're on your own though.",
+    description: "If you have any issues in the first 90-days we warranty against any part defects or workmanship.",
   },
   {
-    name: 'Exchanges',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+    name: 'Secure',
+    imageSrc: '/icons/secure.svg',
     description:
-      "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+      "We don't require your passcode for the vast majority of our repairs, so your data stays secure and private.",
   },
 ]
 
