@@ -4,7 +4,7 @@ import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 
-import Header from "../../components/Header";
+import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         title="Choose Your Repair Booking Type - iPatch"
         description="Choose how you'd like to get your device repaired, we accept both mail in and drop off repairs."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">

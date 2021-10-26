@@ -4,7 +4,7 @@ import Image from "next/image";
 import { NextSeo, LocalBusinessJsonLd } from "next-seo";
 import { LocationMarkerIcon, CalendarIcon, MailIcon, QrcodeIcon, BadgeCheckIcon, ThumbUpIcon, CurrencyPoundIcon, ClockIcon, LockClosedIcon, ShieldCheckIcon, PhoneIcon } from "@heroicons/react/outline";
 
-import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero-dark";
@@ -77,7 +77,7 @@ function Home() {
           },
         ]}
       />
-      <Header />
+      <Navigation />
       <Hero />
 
       <main>

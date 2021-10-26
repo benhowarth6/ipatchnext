@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 import { CheckIcon } from "@heroicons/react/outline";
 
-import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
           title="Liquid Damage repair services for iPhones, MacBook's and more - iPatch"
           description="We offer liquid damage repairs for all iPhones, MacBook's, iPad's and more. We provide free quoatations and aim to turn around most devices in the same day."
         />
-        <Header />
+        <Navigation />
   
         <div className="bg-gray-800">
           <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

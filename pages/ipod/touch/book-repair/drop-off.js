@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import kwesforms from "kwesforms";
 import { useRouter } from "next/router";
 
-import Header from "../../../../components/Header";
+import Navigation from "../../../../components/Navigation";
 import Footer from "../../../../components/Footer";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         title="Book a Drop-Off iPod Touch Repair in Leeds - iPatch"
         description="Book your iPod Touch in with us for a drop-off repair at one of our Leeds stores using this form."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

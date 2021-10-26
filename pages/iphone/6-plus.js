@@ -7,7 +7,7 @@ import React, { useRef, useState } from "react";
 import { CheckCircleIcon, CheckIcon } from "@heroicons/react/solid";
 import { SunIcon, LightBulbIcon, FingerPrintIcon, LockClosedIcon, ShieldCheckIcon } from "@heroicons/react/outline";
 
-import Header from "../../components/Header";
+import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
         title="iPhone 6 Plus Screen Replacement & Other Repairs in Leeds - iPatch"
         description="We repair iPhone 6 Plus screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-100">
         <div className="pt-12 sm:pt-16 lg:pt-20">

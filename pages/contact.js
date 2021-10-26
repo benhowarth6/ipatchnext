@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -14,7 +14,7 @@ export default function Home() {
         title="Contact Us - iPatch Trinity Leeds & Kirkstall Morisons"
         description="We repair screens, batteries, charging ports and more on a range of Apple Products. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { CheckIcon } from "@heroicons/react/outline";
 
-import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 const features = [
@@ -58,7 +58,7 @@ export default function Home() {
         title="Find a Repair with us - iPatch"
         description="Find a repair for a device you need repairing. We accept both mail in and drop off repairs."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

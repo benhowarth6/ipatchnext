@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { useState } from 'react'
-import { CheckIcon, InboxIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/solid'
+import { CheckIcon, QuestionMarkCircleIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/outline'
 
@@ -17,7 +17,8 @@ const product = {
   model: 'iPhone 12',
   description:
     "We offer a comprehensive set of repairs for the iPhone 12. Including screen replacements, batteries and much more.",
-  imageSrc: '/iphone/b/12.jpg',
+  imageSrc: '/iphone/devices/12.jpg',
+  imageSrc2: '/iphone/devices/12-rear.jpg',
   imageAlt: 'Image of an iPhone.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },

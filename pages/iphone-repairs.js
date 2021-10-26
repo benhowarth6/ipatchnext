@@ -2,18 +2,15 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import { ChevronRightIcon } from "@heroicons/react/solid";
-import { CheckIcon } from "@heroicons/react/outline";
 
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Incentive from "../components/iphone/Incentive";
 import About from "../components/iphone/About";
-import About2 from "../components/iphone/About2";
+import AboutFurther from "../components/iphone/About-Further";
 import Parts from "../components/iphone/Parts";
 
-import iphoneModels from '../data/iphone/iphone-models.json';
-import repairs from '../data/iphone/iphone-repairs.json';
+import models from '../data/iphone/iphone-models.json';
 
 export default function Home() {
   return (
@@ -60,7 +57,7 @@ export default function Home() {
         </div>
 
         <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-    {iphoneModels.map(iphoneModel => {
+    {models.map(iphoneModel => {
         const { id, name, image, alt, href } = iphoneModel;
         return (
             <div key={id} className="relative group">
@@ -96,7 +93,7 @@ export default function Home() {
 
     <Incentive />
     <About />
-    <About2 />
+    <AboutFurther />
     <Parts />
 
       <div className="bg-white">
@@ -249,26 +246,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <div className="bg-gray-800">
-        <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-            <span className="block">Ready to fix your iPhone?</span>
-            <span className="block">Get your device booked in today.</span>
-          </h2>
-          <p className="mt-4 text-lg leading-6 text-gray-200">
-            Book your device in with us to ensure part availability on your
-            chosen day.
-          </p>
-          <a
-            href="book-repair"
-            className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 sm:w-auto"
-          >
-            Book a Repair
-          </a>
-        </div>
-      </div>
-
       <Footer />
     </div>
   );

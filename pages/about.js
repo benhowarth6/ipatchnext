@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         title="About Us - iPhone, Mac, iPad Repairs in Leeds - iPatch"
         description="Find out more about iPatch and how we work. We repair screens, batteries, charging ports and more on a range of Apple Products."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

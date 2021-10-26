@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 
-import Header from "../../../../components/Header";
+import Navigation from "../../../../components/Navigation";
 import Footer from "../../../../components/Footer";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
         title="Choose Your iPod Nano Repair Booking Type - iPatch"
         description="Choose how you'd like to get your iPod Nano repaired, we accept both mail in and drop off repairs."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-800">
         <div className="pt-12 sm:pt-16 lg:pt-24">

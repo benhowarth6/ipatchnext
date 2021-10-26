@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-import Header from "../../../../components/Header";
+import Navigation from "../../../../components/Navigation";
 import Footer from "../../../../components/Footer";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         title="iPod Classic Repair Booking Confirmed - iPatch"
         description="Find out what to do once you've booked your iPod Classic in for repair with us."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

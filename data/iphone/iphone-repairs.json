@@ -4,7 +4,7 @@
         "name": "Display Assembly",
         "model": "iPhone 13 Pro Max",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 309
     },
     {
@@ -12,7 +12,7 @@
         "name": "Battery",
         "model": "iPhone 13 Pro Max",
         "description": "A new battery to restore your device to 100%.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 85
     },
     {
@@ -20,7 +20,7 @@
         "name": "Rear Housing",
         "model": "iPhone 13 Pro Max",
         "description": "A new housing and frame to replace a cracked back.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 399
     },
     {
@@ -28,7 +28,7 @@
         "name": "Charging Port",
         "model": "iPhone 13 Pro Max",
         "description": "A new charging port to restore device charging.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 85
     },
     {
@@ -36,7 +36,7 @@
         "name": "Microphone",
         "model": "iPhone 13 Pro Max",
         "description": "A new Microphone to restore sound pickup.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 85
     },
     {
@@ -44,7 +44,7 @@
         "name": "Rear Camera Lens",
         "model": "iPhone 13 Pro Max",
         "description": "A new replacement camera lens if one of yours is damaged.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 85
     },
     {
@@ -52,7 +52,7 @@
         "name": "Earpiece Speaker",
         "model": "iPhone 13 Pro Max",
         "description": "A replacement speaker if you cannot hear on phone calls.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 85
     },
     {
@@ -60,7 +60,7 @@
         "name": "Loudspeaker",
         "model": "iPhone 13 Pro Max",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 85
     },
     {
@@ -68,7 +68,7 @@
         "name": "Button Fault",
         "model": "iPhone 13 Pro Max",
         "description": "A replacement button flex if one of yours isn't working.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 85
     },
     {
@@ -76,7 +76,7 @@
         "name": "Unsure",
         "model": "iPhone 13 Pro Max",
         "description": "Book your device in with us diagnosis if you aren't sure.",
-        "image": "/iphone/b/13-pro-max.jpg",
+        "image": "/iphone/devices/13-pro-max.jpg",
         "price": 0
     },
     {
@@ -84,7 +84,7 @@
         "name": "Display Assembly",
         "model": "iPhone 13 Pro",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 299
     },
     {
@@ -92,7 +92,7 @@
         "name": "Battery",
         "model": "iPhone 13 Pro",
         "description": "A new battery to restore your device to 100%.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 85
     },
     {
@@ -100,7 +100,7 @@
         "name": "Rear Housing",
         "model": "iPhone 13 Pro",
         "description": "A new housing and frame to replace a cracked back.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 399
     },
     {
@@ -108,7 +108,7 @@
         "name": "Charging Port",
         "model": "iPhone 13 Pro",
         "description": "A new charging port to restore device charging.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 85
     },
     {
@@ -116,7 +116,7 @@
         "name": "Microphone",
         "model": "iPhone 13 Pro",
         "description": "A new Microphone to restore sound pickup.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 85
     },
     {
@@ -124,7 +124,7 @@
         "name": "Rear Camera Lens",
         "model": "iPhone 13 Pro",
         "description": "A new replacement camera lens if one of yours is damaged.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 85
     },
     {
@@ -132,7 +132,7 @@
         "name": "Earpiece Speaker",
         "model": "iPhone 13 Pro",
         "description": "A replacement speaker if you cannot hear on phone calls.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 85
     },
     {
@@ -140,7 +140,7 @@
         "name": "Loudspeaker",
         "model": "iPhone 13 Pro",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 85
     },
     {
@@ -148,7 +148,7 @@
         "name": "Button Fault",
         "model": "iPhone 13 Pro",
         "description": "A replacement button flex if one of yours isn't working.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 85
     },
     {
@@ -156,7 +156,7 @@
         "name": "Unsure",
         "model": "iPhone 13 Pro",
         "description": "Book your device in with us diagnosis if you aren't sure.",
-        "image": "/iphone/b/13-pro.jpg",
+        "image": "/iphone/devices/13-pro.jpg",
         "price": 0
     },
     {
@@ -164,7 +164,7 @@
         "name": "Display Assembly",
         "model": "iPhone 13",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 299
     },
     {
@@ -172,7 +172,7 @@
         "name": "Battery",
         "model": "iPhone 13",
         "description": "A new battery to restore your device to 100%.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 85
     },
     {
@@ -180,7 +180,7 @@
         "name": "Rear Housing",
         "model": "iPhone 13",
         "description": "A new housing and frame to replace a cracked back.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 299
     },
     {
@@ -188,7 +188,7 @@
         "name": "Charging Port",
         "model": "iPhone 13",
         "description": "A new charging port to restore device charging.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 85
     },
     {
@@ -196,7 +196,7 @@
         "name": "Microphone",
         "model": "iPhone 13",
         "description": "A new Microphone to restore sound pickup.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 85
     },
     {
@@ -204,7 +204,7 @@
         "name": "Rear Camera Lens",
         "model": "iPhone 13",
         "description": "A new replacement camera lens if one of yours is damaged.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 85
     },
     {
@@ -212,7 +212,7 @@
         "name": "Earpiece Speaker",
         "model": "iPhone 13",
         "description": "A replacement speaker if you cannot hear on phone calls.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 85
     },
     {
@@ -220,7 +220,7 @@
         "name": "Loudspeaker",
         "model": "iPhone 13",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 85
     },
     {
@@ -228,7 +228,7 @@
         "name": "Button Fault",
         "model": "iPhone 13",
         "description": "A replacement button flex if one of yours isn't working.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 85
     },
     {
@@ -236,7 +236,7 @@
         "name": "Unsure",
         "model": "iPhone 13",
         "description": "Book your device in with us diagnosis if you aren't sure.",
-        "image": "/iphone/b/13.jpg",
+        "image": "/iphone/devices/13.jpg",
         "price": 0
     },
 
@@ -245,7 +245,7 @@
         "name": "Display Assembly",
         "model": "iPhone 13 Mini",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 299
     },
     {
@@ -253,7 +253,7 @@
         "name": "Battery",
         "model": "iPhone 13 Mini",
         "description": "A new battery to restore your device to 100%.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 85
     },
     {
@@ -261,7 +261,7 @@
         "name": "Rear Housing",
         "model": "iPhone 13 Mini",
         "description": "A new housing and frame to replace a cracked back.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 299
     },
     {
@@ -269,7 +269,7 @@
         "name": "Charging Port",
         "model": "iPhone 13 Mini",
         "description": "A new charging port to restore device charging.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 85
     },
     {
@@ -277,7 +277,7 @@
         "name": "Microphone",
         "model": "iPhone 13 Mini",
         "description": "A new Microphone to restore sound pickup.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 85
     },
     {
@@ -285,7 +285,7 @@
         "name": "Rear Camera Lens",
         "model": "iPhone 13 Mini",
         "description": "A new replacement camera lens if one of yours is damaged.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 85
     },
     {
@@ -293,7 +293,7 @@
         "name": "Earpiece Speaker",
         "model": "iPhone 13 Mini",
         "description": "A replacement speaker if you cannot hear on phone calls.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 85
     },
     {
@@ -301,7 +301,7 @@
         "name": "Loudspeaker",
         "model": "iPhone 13 Mini",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 85
     },
     {
@@ -309,7 +309,7 @@
         "name": "Button Fault",
         "model": "iPhone 13 Mini",
         "description": "A replacement button flex if one of yours isn't working.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 85
     },
     {
@@ -317,7 +317,7 @@
         "name": "Unsure",
         "model": "iPhone 13 Mini",
         "description": "Book your device in with us diagnosis if you aren't sure.",
-        "image": "/iphone/b/13-mini.jpg",
+        "image": "/iphone/devices/13-mini.jpg",
         "price": 0
     },
     {
@@ -325,7 +325,7 @@
         "name": "Display Assembly",
         "model": "iPhone 12 Pro Max",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 309
     },
     {
@@ -333,7 +333,7 @@
         "name": "Battery",
         "model": "iPhone 12 Pro Max",
         "description": "A new battery to restore your device to 100%.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 85
     },
     {
@@ -341,7 +341,7 @@
         "name": "Rear Housing",
         "model": "iPhone 12 Pro Max",
         "description": "A new housing and frame to replace a cracked back.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 399
     },
     {
@@ -349,7 +349,7 @@
         "name": "Charging Port",
         "model": "iPhone 12 Pro Max",
         "description": "A new charging port to restore device charging.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 85
     },
     {
@@ -357,7 +357,7 @@
         "name": "Microphone",
         "model": "iPhone 12 Pro Max",
         "description": "A new Microphone to restore sound pickup.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 85
     },
     {
@@ -365,7 +365,7 @@
         "name": "Rear Camera Lens",
         "model": "iPhone 12 Pro Max",
         "description": "A new replacement camera lens if one of yours is damaged.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 85
     },
     {
@@ -373,7 +373,7 @@
         "name": "Earpiece Speaker",
         "model": "iPhone 12 Pro Max",
         "description": "A replacement speaker if you cannot hear on phone calls.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 85
     },
     {
@@ -381,7 +381,7 @@
         "name": "Loudspeaker",
         "model": "iPhone 12 Pro Max",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 85
     },
     {
@@ -389,7 +389,7 @@
         "name": "Button Fault",
         "model": "iPhone 12 Pro Max",
         "description": "A replacement button flex if one of yours isn't working.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 85
     },
     {
@@ -397,7 +397,7 @@
         "name": "Unsure",
         "model": "iPhone 12 Pro Max",
         "description": "Book your device in with us diagnosis if you aren't sure.",
-        "image": "/iphone/b/12-pro-max.jpg",
+        "image": "/iphone/devices/12-pro-max.jpg",
         "price": 0
     },
     {
@@ -405,7 +405,7 @@
         "name": "Display Assembly",
         "model": "iPhone 12 Pro",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 299
     },
     {
@@ -413,7 +413,7 @@
         "name": "Battery",
         "model": "iPhone 12 Pro",
         "description": "A new battery to restore your device to 100%.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 85
     },
     {
@@ -421,7 +421,7 @@
         "name": "Rear Housing",
         "model": "iPhone 12 Pro",
         "description": "A new housing and frame to replace a cracked back.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 399
     },
     {
@@ -429,7 +429,7 @@
         "name": "Charging Port",
         "model": "iPhone 12 Pro",
         "description": "A new charging port to restore device charging.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 85
     },
     {
@@ -437,7 +437,7 @@
         "name": "Microphone",
         "model": "iPhone 12 Pro",
         "description": "A new Microphone to restore sound pickup.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 85
     },
     {
@@ -445,7 +445,7 @@
         "name": "Rear Camera Lens",
         "model": "iPhone 12 Pro",
         "description": "A new replacement camera lens if one of yours is damaged.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 85
     },
     {
@@ -453,7 +453,7 @@
         "name": "Earpiece Speaker",
         "model": "iPhone 12 Pro",
         "description": "A replacement speaker if you cannot hear on phone calls.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 85
     },
     {
@@ -461,7 +461,7 @@
         "name": "Loudspeaker",
         "model": "iPhone 12 Pro",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 85
     },
     {
@@ -469,7 +469,7 @@
         "name": "Button Fault",
         "model": "iPhone 12 Pro",
         "description": "A replacement button flex if one of yours isn't working.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 85
     },
     {
@@ -477,7 +477,7 @@
         "name": "Unsure",
         "model": "iPhone 12 Pro",
         "description": "Book your device in with us diagnosis if you aren't sure.",
-        "image": "/iphone/b/12-pro.jpg",
+        "image": "/iphone/devices/12-pro.jpg",
         "price": 0
     },
     {
@@ -485,7 +485,7 @@
         "name": "Display Assembly",
         "model": "iPhone 12",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 299
     },
     {
@@ -493,7 +493,7 @@
         "name": "Battery",
         "model": "iPhone 12",
         "description": "A new battery to restore your device to 100%.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 85
     },
     {
@@ -501,7 +501,7 @@
         "name": "Rear Housing",
         "model": "iPhone 12",
         "description": "A new housing and frame to replace a cracked back.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 299
     },
     {
@@ -509,7 +509,7 @@
         "name": "Charging Port",
         "model": "iPhone 12",
         "description": "A new charging port to restore device charging.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 85
     },
     {
@@ -517,7 +517,7 @@
         "name": "Microphone",
         "model": "iPhone 12",
         "description": "A new Microphone to restore sound pickup.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 85
     },
     {
@@ -525,7 +525,7 @@
         "name": "Rear Camera Lens",
         "model": "iPhone 12",
         "description": "A new replacement camera lens if one of yours is damaged.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 85
     },
     {
@@ -533,7 +533,7 @@
         "name": "Earpiece Speaker",
         "model": "iPhone 12",
         "description": "A replacement speaker if you cannot hear on phone calls.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 85
     },
     {
@@ -541,7 +541,7 @@
         "name": "Loudspeaker",
         "model": "iPhone 12",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 85
     },
     {
@@ -549,7 +549,7 @@
         "name": "Button Fault",
         "model": "iPhone 12",
         "description": "A replacement button flex if one of yours isn't working.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 85
     },
     {
@@ -557,7 +557,7 @@
         "name": "Unsure",
         "model": "iPhone 12",
         "description": "Book your device in with us diagnosis if you aren't sure.",
-        "image": "/iphone/b/12.jpg",
+        "image": "/iphone/devices/12.jpg",
         "price": 0
     },
     {
@@ -565,7 +565,7 @@
         "name": "Display Assembly",
         "model": "iPhone 12 Mini",
         "description": "A new OLED display assembly to repair a damaged screen.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 299
     },
     {
@@ -573,7 +573,7 @@
         "name": "Battery",
         "model": "iPhone 12 Mini",
         "description": "A new battery to restore your device to 100%.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 85
     },
     {
@@ -581,7 +581,7 @@
         "name": "Rear Housing",
         "model": "iPhone 12 Mini",
         "description": "A new housing and frame to replace a cracked back.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 299
     },
     {
@@ -589,7 +589,7 @@
         "name": "Charging Port",
         "model": "iPhone 12 Mini",
         "description": "A new charging port to restore device charging.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 85
     },
     {
@@ -597,7 +597,7 @@
         "name": "Microphone",
         "model": "iPhone 12 Mini",
         "description": "A new Microphone to restore sound pickup.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 85
     },
     {
@@ -605,7 +605,7 @@
         "name": "Rear Camera Lens",
         "model": "iPhone 12 Mini",
         "description": "A new replacement camera lens if one of yours is damaged.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 85
     },
     {
@@ -613,7 +613,7 @@
         "name": "Earpiece Speaker",
         "model": "iPhone 12 Mini",
         "description": "A replacement speaker if you cannot hear on phone calls.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 85
     },
     {
@@ -621,7 +621,7 @@
         "name": "Loudspeaker",
         "model": "iPhone 12 Mini",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 85
     },
     {
@@ -629,7 +629,7 @@
         "name": "Button Fault",
         "model": "iPhone 12 Mini",
         "description": "A replacement button flex if one of yours isn't working.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 85
     },
     {
@@ -637,7 +637,7 @@
         "name": "Unsure",
         "model": "iPhone 12 Mini",
         "description": "Book your device in with us diagnosis if you aren't sure.",
-        "image": "/iphone/b/12-mini.jpg",
+        "image": "/iphone/devices/12-mini.jpg",
         "price": 0
     }
 ]

@@ -6,7 +6,7 @@ import React, { useEffect } from "react";
 import kwesforms from "kwesforms";
 import { useRouter } from "next/router";
 
-import Header from "../../../components/Header";
+import Navigation from "../../../components/Navigation";
 import Footer from "../../../components/Footer";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
         title="Book a Mail-In iMac Repair - iPatch"
         description="Book your iMac in with us for a mail-in repair to post your device to us from anywhere in the world."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-import Header from "../../../components/Header";
+import Navigation from "../../../components/Navigation";
 import Footer from "../../../components/Footer";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         title="iPod Nano 4th Generation Screen Replacement & Other Repairs in Leeds - iPatch"
         description="We repair iPod Nano 4th Generation screens and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-100">
         <div className="pt-12 sm:pt-16 lg:pt-20">

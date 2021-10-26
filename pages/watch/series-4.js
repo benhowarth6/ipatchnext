@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-import Header from "../../components/Header";
+import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         title="Apple Watch Series 4 Screen Replacement & Battery Repairs in Leeds - iPatch"
         description="We repair Apple Watch Series 4 screens and batteries. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-100">
         <div className="pt-12 sm:pt-16 lg:pt-20">

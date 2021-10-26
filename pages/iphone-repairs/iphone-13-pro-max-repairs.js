@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { useState } from 'react'
-import { CheckIcon, InboxIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/solid'
+import { CheckIcon, QuestionMarkCircleIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/outline'
 
@@ -17,8 +17,8 @@ const product = {
   model: 'iPhone 13 Pro Max',
   description: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
   meta: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
-  imageSrc: '/iphone/b/13-pro-max.jpg',
-  imageSrc2: '/iphone/b/13-pro-max-rear.jpg',
+  imageSrc: '/iphone/devices/13-pro-max.jpg',
+  imageSrc2: '/iphone/devices/13-pro-max-rear.jpg',
   imageAlt: 'Image of an iPhone 13 Pro Max.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },

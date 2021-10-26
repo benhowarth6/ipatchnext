@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 import { CheckIcon } from "@heroicons/react/outline";
 
-import Header from "../components/Header";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 import mainModels from '../data/mac/mainModels.json';
@@ -61,7 +61,7 @@ export default function Home() {
         title="Mac Screen, Battery and Other Repairs in Leeds - iPatch"
         description="We repair Mac screens, batteries, charging ports and more. We aim to complete all repairs in the same day and include a 90 day warranty."
       />
-      <Header />
+      <Navigation />
 
       <div className="bg-gray-800">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
