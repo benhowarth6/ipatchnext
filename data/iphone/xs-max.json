@@ -1,0 +1,90 @@
+[
+    {
+        "id": "xs-max-display",
+        "name": "Display Assembly",
+        "model": "iPhone XS Max",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 249
+    },
+    {
+        "id": "xs-max-battery",
+        "name": "Battery",
+        "model": "iPhone XS Max",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 65
+    },
+    {
+        "id": "xs-max-housing",
+        "name": "Rear Housing",
+        "model": "iPhone XS Max",
+        "description": "A new housing and frame to replace a cracked back.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 259
+    },
+    {
+        "id": "xs-max-charging-port",
+        "name": "Charging Port",
+        "model": "iPhone XS Max",
+        "description": "A new charging port to restore device charging.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 65
+    },
+    {
+        "id": "xs-max-microphone",
+        "name": "Microphone",
+        "model": "iPhone XS Max",
+        "description": "A new Microphone to restore sound pickup.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 65
+    },
+    {
+        "id": "xs-max-camera",
+        "name": "Rear Camera",
+        "model": "iPhone XS Max",
+        "description": "A new rear camera if one of yours is damaged.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 105
+    },
+    {
+        "id": "xs-max-camera-lens",
+        "name": "Rear Camera Lens",
+        "model": "iPhone XS Max",
+        "description": "A new replacement camera lens if one of yours is damaged.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 65
+    },
+    {
+        "id": "xs-max-earpiece",
+        "name": "Earpiece Speaker",
+        "model": "iPhone XS Max",
+        "description": "A replacement speaker if you cannot hear on phone calls.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 65
+    },
+    {
+        "id": "xs-max-loudspeaker",
+        "name": "Loudspeaker",
+        "model": "iPhone XS Max",
+        "description": "A replacement loudspeaker if you cannot hear any audio.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 65
+    },
+    {
+        "id": "xs-max-button-fault",
+        "name": "Button Fault",
+        "model": "iPhone XS Max",
+        "description": "A replacement button flex if one of yours isn't working.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 65
+    },
+    {
+        "id": "xs-max-not-sure",
+        "name": "Unsure",
+        "model": "iPhone XS Max",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/iphone/devices/xs-max.jpg",
+        "price": 0
+    }
+]

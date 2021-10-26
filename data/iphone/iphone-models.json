@@ -59,28 +59,28 @@
     "id": "9",
     "name": "iPhone 11 Pro Max",
     "image": "/iphone/devices/11-pro-max.jpg",
-    "href": "/iphone/11-pro-max",
+    "href": "/iphone-repairs/iphone-11-pro-max-repairs",
     "alt": "iPhone 11 Pro Max Repairs"
   },
   {
     "id": "10",
     "name": "iPhone 11 Pro",
     "image": "/iphone/devices/11-pro.jpg",
-    "href": "/iphone/11-pro",
+    "href": "/iphone-repairs/iphone-11-pro-repairs",
     "alt": "iPhone 11 Pro Repairs"
   },
   {
     "id": "11",
     "name": "iPhone 11",
     "image": "/iphone/devices/11.jpg",
-    "href": "/iphone/11",
+    "href": "/iphone-repairs/iphone-11-repairs",
     "alt": "iPhone 11 Repairs"
   },
   {
     "id": "12",
     "name": "iPhone XS Max",
     "image": "/iphone/devices/xs-max.jpg",
-    "href": "/iphone/xs-max",
+    "href": "/iphone-repairs/iphone-xs-max-repairs",
     "alt": "iPhone XS Max Repairs"
   },
   {
