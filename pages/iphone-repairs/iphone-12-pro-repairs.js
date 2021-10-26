@@ -1,11 +1,13 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import { useState } from 'react'
-import { CheckIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/solid'
+import { CheckIcon, InboxIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/outline'
 
 import Navigation from "../../components/Navigation";
-import Features from "../../components/iphone-repair/Features";
+import Details from "../../components/iphone-repair/Details";
+import Incentives from "../../components/iphone-repair/Incentives";
 import Footer from "../../components/Footer";
 
 import repairs from "../../data/iphone/12-pro.json";
@@ -43,6 +45,16 @@ export default function RepairPage() {
 
   return (
     <>
+      <Head>
+        <title>
+          {product.name} in Leeds - Screen Replacements & Other Repairs | iPatch
+        </title>
+        <meta
+          name="description"
+          content={product.meta}
+          key="desc"
+        />
+      </Head>
       <Navigation />
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
@@ -106,6 +118,9 @@ export default function RepairPage() {
           <div className="mt-10 lg:mt-36 lg:col-start-2 lg:row-span-2 lg:self-auto">
             <div className="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
               <img src={product.imageSrc} alt={product.imageAlt} className="w-full h-full object-center object-cover" />
+            </div>
+            <div className="mt-10 hidden lg:block aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+              <img src={product.imageSrc2} alt={product.imageAlt} className="w-full h-full object-center object-cover" />
             </div>
           </div>
 
@@ -184,13 +199,13 @@ export default function RepairPage() {
                   </Link>
                 </div>
                 <div className="mt-6 text-center">
-                  <a href="#" className="group inline-flex text-base font-medium">
+                  <p className="group inline-flex text-base font-medium">
                     <ShieldCheckIcon
                       className="flex-shrink-0 mr-2 h-6 w-6 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
                     />
                     <span className="text-gray-500 hover:text-gray-700">90 Day Guarantee</span>
-                  </a>
+                  </p>
                 </div>
               </form>
               <div className="border-t border-gray-200 mt-10 pt-10">
@@ -216,8 +231,9 @@ export default function RepairPage() {
             </section>
           </div>
         </div>
+        <Incentives />
+        <Details />
       </div>
-      <Features />
       <Footer />
     </>
   )
