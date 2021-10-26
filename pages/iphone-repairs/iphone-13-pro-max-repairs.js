@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 import { useState } from 'react'
-import { CheckIcon, QuestionMarkCircleIcon } from '@heroicons/react/solid'
+import { QuestionMarkCircleIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/outline'
 
@@ -20,6 +21,7 @@ const product = {
   imageSrc: '/iphone/devices/13-pro-max.jpg',
   imageSrc2: '/iphone/devices/13-pro-max-rear.jpg',
   imageAlt: 'Image of an iPhone 13 Pro Max.',
+  imageAlt2: 'Image of the rear of an iPhone 13 Pro Max.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },
     { id: 2, name: 'iPhone 13 Pro Max', href: '#' },
@@ -31,11 +33,10 @@ const product = {
   ],
 }
 const warnings = {
-  href: '#',
+  href: 'paired-warnings',
   summary:
     'This iPhone has paired components, you may recieve warnings post repair.',
 }
-const repairCount = { totalCount: 10 }
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -55,6 +56,15 @@ export default function RepairPage() {
           content={product.meta}
           key="desc"
         />
+        <meta property="og:title" content={product.name} />
+        <meta
+          property="og:description"
+          content={product.meta}
+        />
+        <meta
+          property="og:image"
+          content="/social/iphone-repairs.jpg"
+        />
       </Head>
       <Navigation />
       <div className="bg-white">
@@ -66,9 +76,11 @@ export default function RepairPage() {
                 {product.breadcrumbs.map((breadcrumb, breadcrumbIdx) => (
                   <li key={breadcrumb.id}>
                     <div className="flex items-center text-sm">
-                      <a href={breadcrumb.href} className="font-medium text-gray-500 hover:text-gray-900">
-                        {breadcrumb.name}
-                      </a>
+                      <Link href={breadcrumb.href}>
+                        <a className="font-medium text-gray-500 hover:text-gray-900">
+                          {breadcrumb.name}
+                        </a>
+                      </Link>
                       {breadcrumbIdx !== product.breadcrumbs.length - 1 ? (
                         <svg
                           viewBox="0 0 20 20"
@@ -92,25 +104,15 @@ export default function RepairPage() {
 
             <section aria-labelledby="information-heading" className="mt-4">
               <h2 id="information-heading" className="sr-only">
-                Product information
+                Repair information
               </h2>
 
-              <div className="flex items-center">
-                <p className="text-lg text-gray-900 sm:text-xl">£{selectedRepair.price}</p>
-                <div className="ml-4 pl-4 border-l border-gray-300">
-                  <div className="flex items-center">
-                    <p className="ml-2 text-sm text-gray-500">{repairCount.totalCount} repairs available</p>
-                  </div>
-                </div>
+              <div className="md:flex hidden items-center">
+                <p className="text-3xl text-gray-900">£{selectedRepair.price}</p>
               </div>
 
               <div className="mt-4 space-y-6">
                 <p className="text-base text-gray-500">{product.description}</p>
-              </div>
-
-              <div className="mt-6 flex items-center">
-                <CheckIcon className="flex-shrink-0 w-5 h-5 text-green-500" aria-hidden="true" />
-                <p className="ml-2 text-sm text-gray-500">In stock and ready to repair</p>
               </div>
             </section>
           </div>
@@ -118,10 +120,10 @@ export default function RepairPage() {
           {/* Product image */}
           <div className="mt-10 lg:mt-36 lg:col-start-2 lg:row-span-2 lg:self-auto">
             <div className="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
-              <img src={product.imageSrc} alt={product.imageAlt} className="w-full h-full object-center object-cover" />
+              <Image src={product.imageSrc} alt={product.imageAlt} layout="fill" className="w-full h-full object-center object-cover"></Image>
             </div>
             <div className="mt-10 hidden lg:block aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
-              <img src={product.imageSrc2} alt={product.imageAlt} className="w-full h-full object-center object-cover" />
+              <Image src={product.imageSrc2} alt={product.imageAlt2} layout="fill" className="w-full h-full object-center object-cover"></Image>
             </div>
           </div>
 
@@ -179,13 +181,15 @@ export default function RepairPage() {
                   </RadioGroup>
                 </div>
                 <div className="mt-4">
-                  <a href="#" className="group inline-flex text-sm text-gray-500 hover:text-gray-700">
-                    <span>Which repair do I need?</span>
-                    <QuestionMarkCircleIcon
-                      className="flex-shrink-0 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                      aria-hidden="true"
-                    />
-                  </a>
+                  <Link href="repair-identifier">
+                    <a className="group inline-flex text-sm text-gray-500 hover:text-gray-700">
+                      <span>Which repair do I need?</span>
+                      <QuestionMarkCircleIcon
+                        className="flex-shrink-0 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  </Link>
                 </div>
                 <div className="mt-10">
                   <Link
@@ -224,9 +228,11 @@ export default function RepairPage() {
                 <h3 className="text-sm font-medium text-gray-900">Paired Components</h3>
                 <p className="mt-4 text-sm text-gray-500">
                   {warnings.summary}{' '}
-                  <a href={warnings.href} className="font-medium text-blue-600 hover:text-blue-500">
-                    Read full details
-                  </a>
+                  <Link href={warnings.href}>
+                    <a className="font-medium text-blue-600 hover:text-blue-500">
+                      Read full details
+                    </a>
+                  </Link>
                 </p>
               </div>
             </section>
