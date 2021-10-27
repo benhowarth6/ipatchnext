@@ -14,28 +14,23 @@ import Footer from "../../components/Footer";
 import repairs from "../../data/iphone/iphone-repairs.json";
 
 const product = {
-  name: 'iPhone 13 Pro Max Repairs',
-  model: 'iPhone 13 Pro Max',
-  description: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
-  meta: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
-  imageSrc: '/iphone/devices/13-pro-max.jpg',
-  imageSrc2: '/iphone/devices/13-pro-max-rear.jpg',
-  imageAlt: 'Image of an iPhone 13 Pro Max.',
-  imageAlt2: 'Image of the rear of an iPhone 13 Pro Max.',
+  name: 'iPhone X Repairs',
+  model: 'iPhone X',
+  description: "We offer a comprehensive set of repairs for the iPhone X. Including screen replacements, batteries and much more.",
+  meta: "We offer a comprehensive set of repairs for the iPhone X. Including screen replacements, batteries and much more.",
+  imageSrc: '/iphone/devices/x.jpg',
+  imageSrc2: '/iphone/devices/x-rear.jpg',
+  imageAlt: 'Image of an iPhone X.',
+  imageAlt2: 'Image of the rear of an iPhone X.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },
-    { id: 2, name: 'iPhone 13 Pro Max', href: '#' },
+    { id: 2, name: 'iPhone X', href: '#' },
   ],
   highlights: [
     'Most repairs are completed within the hour',
     'A deep clean is included on all repairs',
     'We replace the dust and water seal on all repairs',
   ],
-}
-const warnings = {
-  href: 'paired-warnings',
-  summary:
-    'This iPhone has paired components, you may recieve warnings post repair.',
 }
 
 function classNames(...classes) {
@@ -236,18 +231,6 @@ export default function RepairPage() {
                     ))}
                   </ul>
                 </div>
-              </div>
-
-              <div className="border-t border-gray-200 mt-10 pt-10">
-                <h3 className="text-sm font-medium text-gray-900">Paired Components</h3>
-                <p className="mt-4 text-sm text-gray-500">
-                  {warnings.summary}{' '}
-                  <Link href={warnings.href}>
-                    <a className="font-medium text-blue-600 hover:text-blue-500">
-                      Read full details
-                    </a>
-                  </Link>
-                </p>
               </div>
             </section>
           </div>

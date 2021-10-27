@@ -69,16 +69,16 @@ export default function Example() {
                 {navigation.pages.map((page) => {
                   return (
                     <div key={page.name} className="flow-root">
-                    <Link href={page.href}>
-                      <a
-                        className={`cursor-pointer ${router.pathname === page.href
+                      <Link href={page.href}>
+                        <a
+                          className={`cursor-pointer ${router.pathname === page.href
                             ? '-m-2 p-2 block font-medium text-blue-600'
                             : '-m-2 p-2 block font-medium hover:text-blue-500'
-                          }`}
-                      >
-                        {page.name}
-                      </a>
-                    </Link>
+                            }`}
+                        >
+                          {page.name}
+                        </a>
+                      </Link>
                     </div>
                   )
                 })}
@@ -97,34 +97,36 @@ export default function Example() {
                 <div className="h-16 flex items-center justify-between">
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex-1 lg:flex lg:items-center">
-                    <a href="#">
-                      <span className="sr-only">iPatch</span>
-                      <img
-                        className="h-5 w-auto"
-                        src="/logo.svg"
-                        alt=""
-                      />
-                    </a>
+                    <Link href="/">
+                      <a>
+                        <span className="sr-only">iPatch</span>
+                        <img
+                          className="h-5 w-auto"
+                          src="/logo.svg"
+                          alt=""
+                        />
+                      </a>
+                    </Link>
                   </div>
 
                   <div className="hidden h-full lg:flex">
                     {/* Flyout menus */}
                     <Popover.Group className="px-4 bottom-0 inset-x-0">
                       <div className="h-full flex justify-center space-x-8">
-                      {navigation.pages.map((page) => {
-                        return (
-                          <Link key={page.name} href={page.href}>
-                          <a
-                        className={`cursor-pointer ${router.pathname === page.href
-                            ? 'text-blue-600 border-blue-600 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
-                            : 'border-transparent text-gray-700 hover:text-gray-900 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
-                          }`}
-                      >
-                        {page.name}
-                      </a>
-                      </Link>
-                        )
-                      })}
+                        {navigation.pages.map((page) => {
+                          return (
+                            <Link key={page.name} href={page.href}>
+                              <a
+                                className={`cursor-pointer ${router.pathname === page.href
+                                  ? 'text-blue-600 border-blue-600 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
+                                  : 'border-transparent text-gray-700 hover:text-gray-900 relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
+                                  }`}
+                              >
+                                {page.name}
+                              </a>
+                            </Link>
+                          )
+                        })}
                       </div>
                     </Popover.Group>
                   </div>
@@ -143,14 +145,16 @@ export default function Example() {
                   </div>
 
                   {/* Logo (lg-) */}
-                  <a href="#" className="lg:hidden">
-                    <span className="sr-only">iPatch</span>
-                    <img
-                      src="/logo.svg"
-                      alt=""
-                      className="h-5 w-auto"
-                    />
-                  </a>
+                  <Link href="/">
+                    <a className="lg:hidden">
+                      <span className="sr-only">iPatch</span>
+                      <img
+                        src="/logo.svg"
+                        alt=""
+                        className="h-5 w-auto"
+                      />
+                    </a>
+                  </Link>
 
                   <div className="flex-1 flex items-center justify-end">
 

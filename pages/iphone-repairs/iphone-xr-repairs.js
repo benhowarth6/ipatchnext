@@ -14,17 +14,17 @@ import Footer from "../../components/Footer";
 import repairs from "../../data/iphone/iphone-repairs.json";
 
 const product = {
-  name: 'iPhone 13 Pro Max Repairs',
-  model: 'iPhone 13 Pro Max',
-  description: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
-  meta: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
-  imageSrc: '/iphone/devices/13-pro-max.jpg',
-  imageSrc2: '/iphone/devices/13-pro-max-rear.jpg',
-  imageAlt: 'Image of an iPhone 13 Pro Max.',
-  imageAlt2: 'Image of the rear of an iPhone 13 Pro Max.',
+  name: 'iPhone XR Repairs',
+  model: 'iPhone XR',
+  description: "We offer a comprehensive set of repairs for the iPhone XR. Including screen replacements, batteries and much more.",
+  meta: "We offer a comprehensive set of repairs for the iPhone XR. Including screen replacements, batteries and much more.",
+  imageSrc: '/iphone/devices/xr.jpg',
+  imageSrc2: '/iphone/devices/xr-rear.jpg',
+  imageAlt: 'Image of an iPhone XR.',
+  imageAlt2: 'Image of the rear of an iPhone XR.',
   breadcrumbs: [
     { id: 1, name: 'iPhone Repairs', href: '/iphone-repairs' },
-    { id: 2, name: 'iPhone 13 Pro Max', href: '#' },
+    { id: 2, name: 'iPhone XR', href: '#' },
   ],
   highlights: [
     'Most repairs are completed within the hour',

@@ -87,112 +87,112 @@
     "id": "13",
     "name": "iPhone XS",
     "image": "/iphone/devices/xs.jpg",
-    "href": "/iphone/xs",
+    "href": "/iphone-repairs/iphone-xs-repairs",
     "alt": "iPhone XS Repairs"
   },
   {
     "id": "14",
     "name": "iPhone XR",
     "image": "/iphone/devices/xr.jpg",
-    "href": "/iphone/xr",
+    "href": "/iphone-repairs/iphone-xr-repairs",
     "alt": "iPhone XR Repairs"
   },
   {
     "id": "15",
     "name": "iPhone X",
     "image": "/iphone/devices/x.jpg",
-    "href": "/iphone/x",
+    "href": "/iphone-repairs/iphone-x-repairs",
     "alt": "iPhone X Repairs"
   },
   {
     "id": "16",
-    "name": "iPhone SE 2",
+    "name": "iPhone SE 2020",
     "image": "/iphone/devices/se-2.jpg",
-    "href": "/iphone/se-2",
+    "href": "/iphone-repairs/iphone-se-2020-repairs",
     "alt": "iPhone SE 2nd Generation Repairs"
   },
   {
     "id": "17",
     "name": "iPhone 8 Plus",
     "image": "/iphone/devices/8-plus.jpg",
-    "href": "/iphone/8-plus",
+    "href": "/iphone-repairs/iphone-8-plus-repairs",
     "alt": "iPhone 8 Plus Repairs"
   },
   {
     "id": "18",
     "name": "iPhone 8",
     "image": "/iphone/devices/8.jpg",
-    "href": "/iphone/8",
+    "href": "/iphone-repairs/iphone-8-repairs",
     "alt": "iPhone 8 Repairs"
   },
   {
     "id": "19",
     "name": "iPhone 7 Plus",
     "image": "/iphone/devices/7-plus.jpg",
-    "href": "/iphone/7-plus",
+    "href": "/iphone-repairs/iphone-7-plus-repairs",
     "alt": "iPhone 7 Plus Repairs"
   },
   {
     "id": "20",
     "name": "iPhone 7",
     "image": "/iphone/devices/7.jpg",
-    "href": "/iphone/7",
+    "href": "/iphone-repairs/iphone-7-repairs",
     "alt": "iPhone 7 Repairs"
   },
   {
     "id": "21",
     "name": "iPhone 6S Plus",
     "image": "/iphone/devices/6s-plus.jpg",
-    "href": "/iphone/6s-plus",
+    "href": "/iphone-repairs/iphone-6s-plus-repairs",
     "alt": "iPhone 6S Plus Repairs"
   },
   {
     "id": "22",
     "name": "iPhone 6S",
     "image": "/iphone/devices/6s.jpg",
-    "href": "/iphone/6s",
+    "href": "/iphone-repairs/iphone-6s-repairs",
     "alt": "iPhone 6S Repairs"
   },
   {
     "id": "23",
     "name": "iPhone 6 Plus",
     "image": "/iphone/devices/6-plus.jpg",
-    "href": "/iphone/6-plus",
+    "href": "/iphone-repairs/iphone-6-plus-repairs",
     "alt": "iPhone 6 Plus Repairs"
   },
   {
     "id": "24",
     "name": "iPhone 6",
     "image": "/iphone/devices/6.jpg",
-    "href": "/iphone/6",
+    "href": "/iphone-repairs/iphone-6-repairs",
     "alt": "iPhone 6 Repairs"
   },
   {
     "id": "25",
     "name": "iPhone SE",
     "image": "/iphone/devices/se-1.jpg",
-    "href": "/iphone/se-1",
+    "href": "/iphone-repairs/iphone-se-repairs",
     "alt": "iPhone SE Repairs"
   },
   {
     "id": "26",
     "name": "iPhone 5S",
     "image": "/iphone/devices/5s.jpg",
-    "href": "/iphone/5s",
+    "href": "/iphone-repairs/iphone-5s-repairs",
     "alt": "iPhone 5S Repairs"
   },
   {
     "id": "27",
     "name": "iPhone 5C",
     "image": "/iphone/devices/5c.jpg",
-    "href": "/iphone/5c",
+    "href": "/iphone-repairs/iphone-5c-repairs",
     "alt": "iPhone 5C Repairs"
   },
   {
     "id": "28",
     "name": "iPhone 5",
     "image": "/iphone/devices/5.jpg",
-    "href": "/iphone/5",
+    "href": "/iphone-repairs/iphone-5-repairs",
     "alt": "iPhone 5 Repairs"
   }
 ]

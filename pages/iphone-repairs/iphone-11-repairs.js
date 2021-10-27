@@ -11,7 +11,7 @@ import Details from "../../components/iphone-repair/Details";
 import Incentives from "../../components/iphone-repair/Incentives";
 import Footer from "../../components/Footer";
 
-import repairs from "../../data/iphone/11.json";
+import repairs from "../../data/iphone/iphone-repairs.json";
 
 const product = {
   name: 'iPhone 11 Repairs',
@@ -108,7 +108,11 @@ export default function RepairPage() {
               </h2>
 
               <div className="md:flex hidden items-center">
-                <p className="text-3xl text-gray-900">£{selectedRepair.price}</p>
+                {selectedRepair.price === "null" ? (
+                  <p className="text-sm py-2 text-gray-500">Select a repair option to view pricing</p>
+                ) : (
+                  <p className="text-3xl text-gray-900">£{selectedRepair.price}</p>
+                )}
               </div>
 
               <div className="mt-4 space-y-6">
@@ -140,43 +144,46 @@ export default function RepairPage() {
                   <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                     <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                     <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {repairs.map((repair) => (
-                        <RadioGroup.Option
-                          as="div"
-                          key={repair.name}
-                          value={repair}
-                          className={({ active }) =>
-                            classNames(
-                              active ? 'ring-2 ring-blue-500' : '',
-                              'relative block border border-gray-300 rounded-lg p-4 cursor-pointer focus:outline-none'
-                            )
-                          }
-                        >
-                          {({ active, checked }) => (
-                            <>
-                              <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
-                                {repair.name}
-                              </RadioGroup.Label>
-                              <div className="md:hidden">
+                      {repairs.filter(repairs => repairs.model == `${product.model}`).map(filteredRepairs => {
+                        const { id, name, price, description } = filteredRepairs;
+                        return (
+                          <RadioGroup.Option
+                            as="div"
+                            key={id}
+                            value={filteredRepairs}
+                            className={({ active }) =>
+                              classNames(
+                                active ? 'ring-2 ring-blue-500' : '',
+                                'relative block border border-gray-300 rounded-lg p-4 cursor-pointer focus:outline-none'
+                              )
+                            }
+                          >
+                            {({ active, checked }) => (
+                              <>
                                 <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
-                                  £{repair.price}
+                                  {name}
                                 </RadioGroup.Label>
-                              </div>
-                              <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
-                                {repair.description}
-                              </RadioGroup.Description>
-                              <div
-                                className={classNames(
-                                  active ? 'border' : 'border-2',
-                                  checked ? 'border-blue-500' : 'border-transparent',
-                                  'absolute -inset-px rounded-lg pointer-events-none'
-                                )}
-                                aria-hidden="true"
-                              />
-                            </>
-                          )}
-                        </RadioGroup.Option>
-                      ))}
+                                <div className="md:hidden">
+                                  <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
+                                    £{price}
+                                  </RadioGroup.Label>
+                                </div>
+                                <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
+                                  {description}
+                                </RadioGroup.Description>
+                                <div
+                                  className={classNames(
+                                    active ? 'border' : 'border-2',
+                                    checked ? 'border-blue-500' : 'border-transparent',
+                                    'absolute -inset-px rounded-lg pointer-events-none'
+                                  )}
+                                  aria-hidden="true"
+                                />
+                              </>
+                            )}
+                          </RadioGroup.Option>
+                        )
+                      })}
                     </div>
                   </RadioGroup>
                 </div>
@@ -192,16 +199,23 @@ export default function RepairPage() {
                   </Link>
                 </div>
                 <div className="mt-10">
-                  <Link
-                    href={{
-                      pathname: '/book-repair/booking-type',
-                      query: { id: selectedRepair.id },
-                    }}
-                  >
-                    <a className="w-full bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
+                  {selectedRepair.price === "null" ? (
+                    <a className="w-full opacity-50 bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500" disabled>
                       Book Repair
                     </a>
-                  </Link>
+                  ) : (
+                    <Link
+                      href={{
+                        pathname: '/book-repair/booking-type',
+                        query: { id: selectedRepair.id },
+                      }}
+                    >
+                      <a className="w-full bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
+                        Book Repair
+                      </a>
+                    </Link>
+                  )}
+
                 </div>
                 <div className="mt-6 text-center">
                   <p className="group inline-flex text-base font-medium">
