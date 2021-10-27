@@ -1344,7 +1344,7 @@
         "id": "se-2-button-fault",
         "name": "Button Fault",
         "model": "iPhone SE 2020",
-        "description": "A replacement button flese-2 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/se-2.jpg",
         "price": 65
     },
@@ -1440,7 +1440,7 @@
         "id": "8-plus-button-fault",
         "name": "Button Fault",
         "model": "iPhone 8 Plus",
-        "description": "A replacement button fle8-plus if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/8-plus.jpg",
         "price": 55
     },
@@ -1536,7 +1536,7 @@
         "id": "8-button-fault",
         "name": "Button Fault",
         "model": "iPhone 8",
-        "description": "A replacement button fle8 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/8.jpg",
         "price": 55
     },
@@ -1624,7 +1624,7 @@
         "id": "7-plus-button-fault",
         "name": "Button Fault",
         "model": "iPhone 7 Plus",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/7-plus.jpg",
         "price": 55
     },
@@ -1712,7 +1712,7 @@
         "id": "7-button-fault",
         "name": "Button Fault",
         "model": "iPhone 7",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/7.jpg",
         "price": 55
     },
@@ -1800,7 +1800,7 @@
         "id": "6s-plus-button-fault",
         "name": "Button Fault",
         "model": "iPhone 6S Plus",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/6s-plus.jpg",
         "price": 45
     },
@@ -1888,7 +1888,7 @@
         "id": "6s-button-fault",
         "name": "Button Fault",
         "model": "iPhone 6S",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/6s.jpg",
         "price": 45
     },
@@ -1976,7 +1976,7 @@
         "id": "6-plus-button-fault",
         "name": "Button Fault",
         "model": "iPhone 6 Plus",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/6-plus.jpg",
         "price": 45
     },
@@ -2064,7 +2064,7 @@
         "id": "6-button-fault",
         "name": "Button Fault",
         "model": "iPhone 6",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/6.jpg",
         "price": 45
     },
@@ -2152,7 +2152,7 @@
         "id": "se-1-button-fault",
         "name": "Button Fault",
         "model": "iPhone SE",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/se-1.jpg",
         "price": 45
     },
@@ -2240,7 +2240,7 @@
         "id": "5s-button-fault",
         "name": "Button Fault",
         "model": "iPhone 5S",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/5s.jpg",
         "price": 45
     },
@@ -2328,7 +2328,7 @@
         "id": "5c-button-fault",
         "name": "Button Fault",
         "model": "iPhone 5C",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/5c.jpg",
         "price": 45
     },
@@ -2416,7 +2416,7 @@
         "id": "5-button-fault",
         "name": "Button Fault",
         "model": "iPhone 5",
-        "description": "A replacement button fle7 if one of yours isn't working.",
+        "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/5.jpg",
         "price": 45
     },
