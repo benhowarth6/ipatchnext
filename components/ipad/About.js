@@ -2,22 +2,22 @@ const features = [
     {
       name: 'Screen Replacements',
       description:
-        'Starting with the most common type of iPhone repair. Screen replacements make up the majority of our repairs, to date we\'ve completed well over 30k. We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the original quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.',
-      imageSrc: 'https://images.unsplash.com/photo-1632633728024-e1fd4bef561a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3270&q=80',
+        'Starting with the most common type of iPad repair. Screen replacements make up the majority of our repairs, to date we\'ve completed well over 30k. We try to keep stock of all iPad displays to ensure quick turnaround. And we only use the original quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.',
+      imageSrc: 'https://images.unsplash.com/photo-1632633726419-3e5e7d74ca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
       imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
     },
     {
       name: 'Battery Replacements',
       description:
-        'Next up is battery replacements, again we\'ve completed well over 50k of these. As such we\'ve learnt how to read iPhone battery data and analytics to determine if a battery does require a replacement or if there is another issue causing excessive drain. As with our screen replacements, we only use the original battery cells to ensure your replacement performs perfectly.',
-      imageSrc: 'https://images.unsplash.com/photo-1632633726381-d26b818ffc24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3271&q=80',
+        'Next up is battery replacements, again we\'ve completed well over 50k of these. As such we\'ve learnt how to read iPad battery data and analytics to determine if a battery does require a replacement or if there is another issue causing excessive drain. As with our screen replacements, we only use the original battery cells to ensure your replacement performs perfectly.',
+      imageSrc: 'https://images.unsplash.com/photo-1632633727209-10b9334188dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3270&q=80',
       imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
     },
     {
       name: 'Additional Services',
       description:
-        'Through our many years of experience we\'ve been able to extend our offering of iPhone repair services to include liquid damage repairs, logic board repairs and data recovery. These services have allowed us to offer a far wider range of repairs, so no matter your issue we’re able to offer a solution.',
-      imageSrc: 'https://images.unsplash.com/photo-1632633173591-5d7e430f2b90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3270&q=80',
+        'Through our many years of experience we\'ve been able to extend our offering of iPad repair services to include liquid damage repairs, logic board repairs and data recovery. These services have allowed us to offer a far wider range of repairs, so no matter your issue we’re able to offer a solution.',
+      imageSrc: 'https://images.unsplash.com/photo-1545128665-449f45abf48f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3200&q=80',
       imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
     },
   ]
@@ -33,7 +33,7 @@ const features = [
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Our repair process</h2>
             <p className="mt-4 text-gray-500">
-            We've been repairing iPhones in Leeds for over 13 years now, during that time we've learnt a lot about how the devices work, the common issues each model have and the best repair methods.
+            We've been repairing iPads in Leeds for over 13 years now, during that time we've learnt a lot about how the devices work, the common issues each model have and the best repair methods.
             </p>
           </div>
   

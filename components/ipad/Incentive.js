@@ -35,7 +35,7 @@ const incentives = [
               </div>
               <div className="aspect-w-3 aspect-h-2 bg-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1632518193201-72278769704a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3270&q=80"
+                  src="https://images.unsplash.com/photo-1542965934-233f2071468e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1964&q=80"
                   alt=""
                   className="object-center object-cover"
                 />

@@ -26,3 +26,8 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 .next
+public/.DS_Store
+public/ipad/.DS_Store
+.DS_Store
+components/.DS_Store
+public/iphone/.DS_Store

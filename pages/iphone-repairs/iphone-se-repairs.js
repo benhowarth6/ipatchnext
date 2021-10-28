@@ -18,8 +18,8 @@ const product = {
   model: 'iPhone SE',
   description: "We offer a comprehensive set of repairs for the iPhone SE. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPhone SE. Including screen replacements, batteries and much more.",
-  imageSrc: '/iphone/devices/se.jpg',
-  imageSrc2: '/iphone/devices/se-rear.jpg',
+  imageSrc: '/iphone/devices/se-1.jpg',
+  imageSrc2: '/iphone/devices/se-1-rear.jpg',
   imageAlt: 'Image of an iPhone SE.',
   imageAlt2: 'Image of the rear of an iPhone SE.',
   breadcrumbs: [

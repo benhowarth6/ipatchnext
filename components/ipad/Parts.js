@@ -18,26 +18,26 @@ export default function Example() {
               <div>
                 <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1606061587005-c1c57d134082?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+                    src="https://images.unsplash.com/photo-1607452258545-943d7243463c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3936&q=80"
                     alt="Drawstring top with elastic loop closure and textured interior padding."
                     className="w-full h-full object-center object-cover"
                   />
                 </div>
                 <p className="mt-8 text-base text-gray-500">
-                A prime example would be with repairing smashed glass on the rear of iPhone’s. A lot of repair shops will try and melt off the existing glass to then bond another piece on to the existing frame. 
+                A prime example would be with repairing smashed glass on the rear of iPad’s. A lot of repair shops will try and melt off the existing glass to then bond another piece on to the existing frame. 
                 The problem here is that the new glass doesn’t sit under the camera lens as it is supposed to (it goes over for ease of installation).
                 </p>
                 <p className="mt-8 text-base text-gray-500">
-                The wireless charging coil can easily be damaged which, as it is connected to your volume buttons, can cause them to fail. Resulting in a poor fit meaning the iPhone is much less water resistant against any future mishaps.
+                The wireless charging coil can easily be damaged which, as it is connected to your volume buttons, can cause them to fail. Resulting in a poor fit meaning the iPad is much less water resistant against any future mishaps.
                 </p>
                 <p className="mt-8 text-base text-gray-500">
-                Here at iPatch we choose to replace not only the rear glass but the entire frame as well. Yes it is a bit more time consuming and certainly more of an expensive option but the results leave you with an iPhone looking like it did fresh out the box.
+                Here at iPatch we choose to replace not only the rear glass but the entire frame as well. Yes it is a bit more time consuming and certainly more of an expensive option but the results leave you with an iPad looking like it did fresh out the box.
                 </p>
               </div>
               <div>
                 <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1604160687499-0547fda285f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
+                    src="https://images.unsplash.com/photo-1622531636820-5d727319e45d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3324&q=80"
                     alt="Front zipper pouch with included key ring."
                     className="w-full h-full object-center object-cover"
                   />

@@ -1,198 +1,30 @@
 [
   {
     "id": "1",
-    "name": "iPhone 13 Pro Max",
-    "image": "/iphone/devices/13-pro-max.jpg",
-    "href": "/iphone-repairs/iphone-13-pro-max-repairs",
-    "alt": "iPhone 13 Pro Max Repairs"
+    "name": "iPad Pro",
+    "image": "/ipad/devices/ipad-pro.jpg",
+    "href": "/ipad-repairs/ipad-pro-repairs",
+    "alt": "iPad Pro Repairs"
   },
   {
     "id": "2",
-    "name": "iPhone 13 Pro",
-    "image": "/iphone/devices/13-pro.jpg",
-    "href": "/iphone-repairs/iphone-13-pro-repairs",
-    "alt": "iPhone 13 Pro Repairs"
+    "name": "iPad Air",
+    "image": "/ipad/devices/ipad-air.jpg",
+    "href": "/ipad-repairs/ipad-air-repairs",
+    "alt": "iPad Air Repairs"
   },
   {
     "id": "3",
-    "name": "iPhone 13",
-    "image": "/iphone/devices/13.jpg",
-    "href": "/iphone-repairs/iphone-13-repairs",
-    "alt": "iPhone 13 Repairs"
+    "name": "iPad",
+    "image": "/ipad/devices/ipad.jpg",
+    "href": "/ipad-repairs/ipad-repairs",
+    "alt": "iPad Repairs"
   },
   {
     "id": "4",
-    "name": "iPhone 13 Mini",
-    "image": "/iphone/devices/13-mini.jpg",
-    "href": "/iphone-repairs/iphone-13-mini-repairs",
-    "alt": "iPhone 13 Mini Repairs"
-  },
-  {
-    "id": "5",
-    "name": "iPhone 12 Pro Max",
-    "image": "/iphone/devices/12-pro-max.jpg",
-    "href": "/iphone-repairs/iphone-12-pro-max-repairs",
-    "alt": "iPhone 12 Pro Max Repairs"
-  },
-  {
-    "id": "6",
-    "name": "iPhone 12 Pro",
-    "image": "/iphone/devices/12-pro.jpg",
-    "href": "/iphone-repairs/iphone-12-pro-repairs",
-    "alt": "iPhone 12 Pro Repairs"
-  },
-  {
-    "id": "7",
-    "name": "iPhone 12",
-    "image": "/iphone/devices/12.jpg",
-    "href": "/iphone-repairs/iphone-12-repairs",
-    "alt": "iPhone 12 Repairs"
-  },
-  {
-    "id": "8",
-    "name": "iPhone 12 Mini",
-    "image": "/iphone/devices/12-mini.jpg",
-    "href": "/iphone-repairs/iphone-12-mini-repairs",
-    "alt": "iPhone 12 Mini Repairs"
-  },
-  {
-    "id": "9",
-    "name": "iPhone 11 Pro Max",
-    "image": "/iphone/devices/11-pro-max.jpg",
-    "href": "/iphone/11-pro-max",
-    "alt": "iPhone 11 Pro Max Repairs"
-  },
-  {
-    "id": "10",
-    "name": "iPhone 11 Pro",
-    "image": "/iphone/devices/11-pro.jpg",
-    "href": "/iphone/11-pro",
-    "alt": "iPhone 11 Pro Repairs"
-  },
-  {
-    "id": "11",
-    "name": "iPhone 11",
-    "image": "/iphone/devices/11.jpg",
-    "href": "/iphone/11",
-    "alt": "iPhone 11 Repairs"
-  },
-  {
-    "id": "12",
-    "name": "iPhone XS Max",
-    "image": "/iphone/devices/xs-max.jpg",
-    "href": "/iphone/xs-max",
-    "alt": "iPhone XS Max Repairs"
-  },
-  {
-    "id": "13",
-    "name": "iPhone XS",
-    "image": "/iphone/devices/xs.jpg",
-    "href": "/iphone/xs",
-    "alt": "iPhone XS Repairs"
-  },
-  {
-    "id": "14",
-    "name": "iPhone XR",
-    "image": "/iphone/devices/xr.jpg",
-    "href": "/iphone/xr",
-    "alt": "iPhone XR Repairs"
-  },
-  {
-    "id": "15",
-    "name": "iPhone X",
-    "image": "/iphone/devices/x.jpg",
-    "href": "/iphone/x",
-    "alt": "iPhone X Repairs"
-  },
-  {
-    "id": "16",
-    "name": "iPhone SE 2",
-    "image": "/iphone/devices/se-2.jpg",
-    "href": "/iphone/se-2",
-    "alt": "iPhone SE 2nd Generation Repairs"
-  },
-  {
-    "id": "17",
-    "name": "iPhone 8 Plus",
-    "image": "/iphone/devices/8-plus.jpg",
-    "href": "/iphone/8-plus",
-    "alt": "iPhone 8 Plus Repairs"
-  },
-  {
-    "id": "18",
-    "name": "iPhone 8",
-    "image": "/iphone/devices/8.jpg",
-    "href": "/iphone/8",
-    "alt": "iPhone 8 Repairs"
-  },
-  {
-    "id": "19",
-    "name": "iPhone 7 Plus",
-    "image": "/iphone/devices/7-plus.jpg",
-    "href": "/iphone/7-plus",
-    "alt": "iPhone 7 Plus Repairs"
-  },
-  {
-    "id": "20",
-    "name": "iPhone 7",
-    "image": "/iphone/devices/7.jpg",
-    "href": "/iphone/7",
-    "alt": "iPhone 7 Repairs"
-  },
-  {
-    "id": "21",
-    "name": "iPhone 6S Plus",
-    "image": "/iphone/devices/6s-plus.jpg",
-    "href": "/iphone/6s-plus",
-    "alt": "iPhone 6S Plus Repairs"
-  },
-  {
-    "id": "22",
-    "name": "iPhone 6S",
-    "image": "/iphone/devices/6s.jpg",
-    "href": "/iphone/6s",
-    "alt": "iPhone 6S Repairs"
-  },
-  {
-    "id": "23",
-    "name": "iPhone 6 Plus",
-    "image": "/iphone/devices/6-plus.jpg",
-    "href": "/iphone/6-plus",
-    "alt": "iPhone 6 Plus Repairs"
-  },
-  {
-    "id": "24",
-    "name": "iPhone 6",
-    "image": "/iphone/devices/6.jpg",
-    "href": "/iphone/6",
-    "alt": "iPhone 6 Repairs"
-  },
-  {
-    "id": "25",
-    "name": "iPhone SE",
-    "image": "/iphone/devices/se-1.jpg",
-    "href": "/iphone/se-1",
-    "alt": "iPhone SE Repairs"
-  },
-  {
-    "id": "26",
-    "name": "iPhone 5S",
-    "image": "/iphone/devices/5s.jpg",
-    "href": "/iphone/5s",
-    "alt": "iPhone 5S Repairs"
-  },
-  {
-    "id": "27",
-    "name": "iPhone 5C",
-    "image": "/iphone/devices/5c.jpg",
-    "href": "/iphone/5c",
-    "alt": "iPhone 5C Repairs"
-  },
-  {
-    "id": "28",
-    "name": "iPhone 5",
-    "image": "/iphone/devices/5.jpg",
-    "href": "/iphone/5",
-    "alt": "iPhone 5 Repairs"
+    "name": "iPad Mini",
+    "image": "/ipad/devices/ipad-mini.jpg",
+    "href": "/ipad-repairs/ipad-mini-repairs",
+    "alt": "iPad Mini Repairs"
   }
 ]
