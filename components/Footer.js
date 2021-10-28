@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const footerNavigation = {
   repairs: [
-    { name: 'iPhone Repairs', href: '#' },
-    { name: 'iPad Repairs', href: '#' },
-    { name: 'Mac Repairs', href: '#' },
-    { name: 'Watch Repairs', href: '#' },
-    { name: 'iPod Repairs', href: '#' },
+    { name: 'iPhone Repairs', href: '/iphone-repairs' },
+    { name: 'iPad Repairs', href: '/ipad-repairs' },
+    { name: 'Mac Repairs', href: '/mac-repairs' },
+    { name: 'Watch Repairs', href: '/watch-repairs' },
+    { name: 'iPod Repairs', href: '/ipod-repairs' },
   ],
   services: [
     { name: 'Recycling', href: '#' },
@@ -16,8 +16,8 @@ const footerNavigation = {
     { name: 'Insurance Reports', href: '#' },
   ],
   company: [
-    { name: 'About us', href: '#' },
-    { name: 'Contact us', href: '#' },
+    { name: 'About us', href: 'about-us' },
+    { name: 'Contact us', href: 'contact-us' },
     { name: 'Press', href: '#' },
   ],
   legal: [
@@ -56,9 +56,11 @@ const Footer = () => {
                     <ul role="list" className="mt-6 space-y-6">
                       {footerNavigation.repairs.map((item) => (
                         <li key={item.name} className="text-sm">
-                          <a href={item.href} className="text-gray-300 hover:text-white">
-                            {item.name}
-                          </a>
+                          <Link href={item.href}>
+                            <a className="text-gray-300 hover:text-white">
+                              {item.name}
+                            </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -68,9 +70,11 @@ const Footer = () => {
                     <ul role="list" className="mt-6 space-y-6">
                       {footerNavigation.services.map((item) => (
                         <li key={item.name} className="text-sm">
-                          <a href={item.href} className="text-gray-300 hover:text-white">
-                            {item.name}
-                          </a>
+                          <Link href={item.href}>
+                            <a className="text-gray-300 hover:text-white">
+                              {item.name}
+                            </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -82,9 +86,11 @@ const Footer = () => {
                     <ul role="list" className="mt-6 space-y-6">
                       {footerNavigation.company.map((item) => (
                         <li key={item.name} className="text-sm">
-                          <a href={item.href} className="text-gray-300 hover:text-white">
-                            {item.name}
-                          </a>
+                          <Link href={item.href}>
+                            <a className="text-gray-300 hover:text-white">
+                              {item.name}
+                            </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -94,9 +100,11 @@ const Footer = () => {
                     <ul role="list" className="mt-6 space-y-6">
                       {footerNavigation.legal.map((item) => (
                         <li key={item.name} className="text-sm">
-                          <a href={item.href} className="text-gray-300 hover:text-white">
-                            {item.name}
-                          </a>
+                          <Link href={item.href}>
+                            <a className="text-gray-300 hover:text-white">
+                              {item.name}
+                            </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -115,9 +123,11 @@ const Footer = () => {
           <div className="mt-4 flex items-center justify-center md:mt-0">
             <div className="flex space-x-8">
               {footerNavigation.bottomLinks.map((item) => (
-                <a key={item.name} href={item.href} className="text-sm text-gray-300 hover:text-white">
+                <Link href={item.name}>
+                <a key={item.name} className="text-sm text-gray-300 hover:text-white">
                   {item.name}
                 </a>
+                </Link>
               ))}
             </div>
           </div>

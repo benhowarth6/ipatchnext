@@ -7,7 +7,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const navigation = {
   pages: [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
+    { name: 'About', href: '/about-us' },
     { name: 'iPhone Repairs', href: '/iphone-repairs' },
     { name: 'iPad Repairs', href: '/ipad-repairs' },
     { name: 'Mac Repairs', href: '/mac-repairs' },
