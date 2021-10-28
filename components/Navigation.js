@@ -13,7 +13,7 @@ const navigation = {
     { name: 'Mac Repairs', href: '/mac-repairs' },
     { name: 'Watch Repairs', href: '/watch-repairs' },
     { name: 'iPod Repairs', href: '/ipod-repairs' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Contact', href: '/contact-us' },
   ],
 }
 

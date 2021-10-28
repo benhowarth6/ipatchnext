@@ -56,7 +56,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+          <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3">
             {models.map(ipodModel => {
               const { id, name, image, alt, href } = ipodModel;
               return (

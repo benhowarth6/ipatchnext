@@ -1,31 +1,24 @@
 [
     {
         "id": "1",
-        "name": "MacBook Air",
-        "image": "/mac/devices/mba-13.jpg",
-        "href": "mac/macbook/macbook-repairs",
-        "alt": "MacBook Air Repairs"
+        "name": "iPod Nano",
+        "image": "/ipod/devices/ipod-nano.jpg",
+        "href": "ipod-repairs/ipod-nano-repairs",
+        "alt": "iPod Nano Repairs"
        },
        {
         "id": "2",
-        "name": "MacBook Pro",
-        "image": "/mac/devices/mbp-16.jpg",
-        "href": "mac/macbook-air/macbook-air-repairs",
-        "alt": "MacBook Pro Repairs"
+        "name": "iPod Classic",
+        "image": "/ipod/devices/ipod-classic.jpg",
+        "href": "ipod-repairs/ipod-classic-repairs",
+        "alt": "iPod Classic Repairs"
        },
        {
         "id": "3",
-        "name": "iMac",
-        "image": "/mac/devices/imac-24.jpg",
-        "href": "mac/macbook-pro/macbook-pro-repairs",
-        "alt": "iMac Repairs"
-       },
-       {
-        "id": "4",
-        "name": "Mac Mini",
-        "image": "/mac/devices/mac-mini.jpg",
-        "href": "mac/imac/imac-repairs",
-        "alt": "Mac Mini Repairs"
+        "name": "iPod Touch",
+        "image": "/ipod/devices/ipod-touch.jpg",
+        "href": "ipod-repairs/ipod-touch-repairs",
+        "alt": "iPod Touch Repairs"
        }
      ]
   
