@@ -658,7 +658,7 @@
         "model": "iPhone 11 Pro Max",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/11-pro-max.jpg",
-        "price": 85
+        "price": 65
     },
     {
         "id": "11-pro-max-housing",
@@ -666,7 +666,7 @@
         "model": "iPhone 11 Pro Max",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/11-pro-max.jpg",
-        "price": 299
+        "price": 289
     },
     {
         "id": "11-pro-max-charging-port",
@@ -738,7 +738,7 @@
         "model": "iPhone 11 Pro",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/11-pro.jpg",
-        "price": 249
+        "price": 199
     },
     {
         "id": "11-pro-battery",
@@ -746,7 +746,7 @@
         "model": "iPhone 11 Pro",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/11-pro.jpg",
-        "price": 85
+        "price": 65
     },
     {
         "id": "11-pro-housing",
@@ -754,7 +754,7 @@
         "model": "iPhone 11 Pro",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/11-pro.jpg",
-        "price": 299
+        "price": 249
     },
     {
         "id": "11-pro-charging-port",
@@ -826,7 +826,7 @@
         "model": "iPhone 11",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/11.jpg",
-        "price": 179
+        "price": 149
     },
     {
         "id": "11-battery",
@@ -834,7 +834,7 @@
         "model": "iPhone 11",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/11.jpg",
-        "price": 85
+        "price": 65
     },
     {
         "id": "11-housing",
@@ -842,7 +842,7 @@
         "model": "iPhone 11",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/11.jpg",
-        "price": 199
+        "price": 189
     },
     {
         "id": "11-charging-port",
@@ -914,7 +914,7 @@
         "model": "iPhone XS Max",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/xs-max.jpg",
-        "price": 249
+        "price": 219
     },
     {
         "id": "xs-max-battery",
@@ -930,7 +930,7 @@
         "model": "iPhone XS Max",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/xs-max.jpg",
-        "price": 259
+        "price": 199
     },
     {
         "id": "xs-max-charging-port",
@@ -1002,7 +1002,7 @@
         "model": "iPhone XS",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/xs.jpg",
-        "price": 179
+        "price": 149
     },
     {
         "id": "xs-battery",
@@ -1018,7 +1018,7 @@
         "model": "iPhone XS",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/xs.jpg",
-        "price": 259
+        "price": 159
     },
     {
         "id": "xs-charging-port",
@@ -1090,7 +1090,7 @@
         "model": "iPhone XR",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 149
+        "price": 139
     },
     {
         "id": "xr-battery",
@@ -1106,7 +1106,7 @@
         "model": "iPhone XR",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 199
+        "price": 149
     },
     {
         "id": "xr-charging-port",
@@ -1114,7 +1114,7 @@
         "model": "iPhone XR",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "xr-microphone",
@@ -1122,7 +1122,7 @@
         "model": "iPhone XR",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "xr-camera",
@@ -1138,7 +1138,7 @@
         "model": "iPhone XR",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "xr-earpiece",
@@ -1146,7 +1146,7 @@
         "model": "iPhone XR",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "xr-loudspeaker",
@@ -1154,7 +1154,7 @@
         "model": "iPhone XR",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "xr-button-fault",
@@ -1162,7 +1162,7 @@
         "model": "iPhone XR",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "xr-not-sure",
@@ -1178,7 +1178,7 @@
         "model": "iPhone X",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/x.jpg",
-        "price": 179
+        "price": 139
     },
     {
         "id": "x-battery",
@@ -1194,7 +1194,7 @@
         "model": "iPhone X",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/x.jpg",
-        "price": 199
+        "price": 149
     },
     {
         "id": "x-charging-port",
@@ -1202,7 +1202,7 @@
         "model": "iPhone X",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/x.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "x-microphone",
@@ -1210,7 +1210,7 @@
         "model": "iPhone X",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/x.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "x-camera",
@@ -1226,7 +1226,7 @@
         "model": "iPhone X",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/x.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "x-earpiece",
@@ -1234,7 +1234,7 @@
         "model": "iPhone X",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/x.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "x-loudspeaker",
@@ -1242,7 +1242,7 @@
         "model": "iPhone X",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/x.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "x-button-fault",
@@ -1250,7 +1250,7 @@
         "model": "iPhone X",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/x.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "x-not-sure",
@@ -1266,7 +1266,7 @@
         "model": "iPhone SE 2020",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 119
+        "price": 99
     },
     {
         "id": "se-2-battery",
@@ -1274,7 +1274,7 @@
         "model": "iPhone SE 2020",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-housing",
@@ -1282,7 +1282,7 @@
         "model": "iPhone SE 2020",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 199
+        "price": 159
     },
     {
         "id": "se-2-charging-port",
@@ -1290,7 +1290,7 @@
         "model": "iPhone SE 2020",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-microphone",
@@ -1298,7 +1298,7 @@
         "model": "iPhone SE 2020",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-front-camera",
@@ -1306,7 +1306,7 @@
         "model": "iPhone SE 2020",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-camera",
@@ -1314,7 +1314,7 @@
         "model": "iPhone SE 2020",
         "description": "A new rear camera if yours is damaged.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-camera-lens",
@@ -1322,7 +1322,7 @@
         "model": "iPhone SE 2020",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-earpiece",
@@ -1330,7 +1330,7 @@
         "model": "iPhone SE 2020",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-loudspeaker",
@@ -1338,7 +1338,7 @@
         "model": "iPhone SE 2020",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-button-fault",
@@ -1346,7 +1346,7 @@
         "model": "iPhone SE 2020",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 65
+        "price": 55
     },
     {
         "id": "se-2-not-sure",
@@ -1362,7 +1362,7 @@
         "model": "iPhone 8 Plus",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 119
+        "price": 109
     },
     {
         "id": "8-plus-battery",
@@ -1378,7 +1378,7 @@
         "model": "iPhone 8 Plus",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 199
+        "price": 139
     },
     {
         "id": "8-plus-charging-port",
@@ -1386,7 +1386,7 @@
         "model": "iPhone 8 Plus",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-plus-microphone",
@@ -1394,7 +1394,7 @@
         "model": "iPhone 8 Plus",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-plus-front-camera",
@@ -1402,7 +1402,7 @@
         "model": "iPhone 8 Plus",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-plus-camera",
@@ -1418,7 +1418,7 @@
         "model": "iPhone 8 Plus",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-plus-earpiece",
@@ -1426,7 +1426,7 @@
         "model": "iPhone 8 Plus",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-plus-loudspeaker",
@@ -1434,7 +1434,7 @@
         "model": "iPhone 8 Plus",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-plus-button-fault",
@@ -1442,7 +1442,7 @@
         "model": "iPhone 8 Plus",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-plus-not-sure",
@@ -1458,7 +1458,7 @@
         "model": "iPhone 8",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/8.jpg",
-        "price": 109
+        "price": 99
     },
     {
         "id": "8-battery",
@@ -1474,7 +1474,7 @@
         "model": "iPhone 8",
         "description": "A new housing and frame to replace a cracked back.",
         "image": "/iphone/devices/8.jpg",
-        "price": 199
+        "price": 119
     },
     {
         "id": "8-charging-port",
@@ -1482,7 +1482,7 @@
         "model": "iPhone 8",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/8.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-microphone",
@@ -1490,7 +1490,7 @@
         "model": "iPhone 8",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/8.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-front-camera",
@@ -1498,7 +1498,7 @@
         "model": "iPhone 8",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/8.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-camera",
@@ -1514,7 +1514,7 @@
         "model": "iPhone 8",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/8.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-earpiece",
@@ -1522,7 +1522,7 @@
         "model": "iPhone 8",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/8.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-loudspeaker",
@@ -1530,7 +1530,7 @@
         "model": "iPhone 8",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/8.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-button-fault",
@@ -1538,7 +1538,7 @@
         "model": "iPhone 8",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/8.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "8-not-sure",
@@ -1554,7 +1554,7 @@
         "model": "iPhone 7 Plus",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 99
+        "price": 89
     },
     {
         "id": "7-plus-battery",
@@ -1570,7 +1570,7 @@
         "model": "iPhone 7 Plus",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-plus-microphone",
@@ -1578,7 +1578,7 @@
         "model": "iPhone 7 Plus",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-plus-front-camera",
@@ -1586,7 +1586,7 @@
         "model": "iPhone 7 Plus",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-plus-camera",
@@ -1602,7 +1602,7 @@
         "model": "iPhone 7 Plus",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-plus-earpiece",
@@ -1610,7 +1610,7 @@
         "model": "iPhone 7 Plus",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-plus-loudspeaker",
@@ -1618,7 +1618,7 @@
         "model": "iPhone 7 Plus",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-plus-button-fault",
@@ -1626,7 +1626,7 @@
         "model": "iPhone 7 Plus",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-plus-not-sure",
@@ -1642,7 +1642,7 @@
         "model": "iPhone 7",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/7.jpg",
-        "price": 89
+        "price": 79
     },
     {
         "id": "7-battery",
@@ -1658,7 +1658,7 @@
         "model": "iPhone 7",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/7.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-microphone",
@@ -1666,7 +1666,7 @@
         "model": "iPhone 7",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/7.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-front-camera",
@@ -1674,7 +1674,7 @@
         "model": "iPhone 7",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/7.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-camera",
@@ -1690,7 +1690,7 @@
         "model": "iPhone 7",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/7.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-earpiece",
@@ -1698,7 +1698,7 @@
         "model": "iPhone 7",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/7.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-loudspeaker",
@@ -1706,7 +1706,7 @@
         "model": "iPhone 7",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/7.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-button-fault",
@@ -1714,7 +1714,7 @@
         "model": "iPhone 7",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/7.jpg",
-        "price": 55
+        "price": 45
     },
     {
         "id": "7-not-sure",
@@ -1730,7 +1730,7 @@
         "model": "iPhone 6S Plus",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 79
+        "price": 69
     },
     {
         "id": "6s-plus-battery",
@@ -1738,7 +1738,7 @@
         "model": "iPhone 6S Plus",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-plus-charging-port",
@@ -1746,7 +1746,7 @@
         "model": "iPhone 6S Plus",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-plus-microphone",
@@ -1754,7 +1754,7 @@
         "model": "iPhone 6S Plus",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-plus-front-camera",
@@ -1762,7 +1762,7 @@
         "model": "iPhone 6S Plus",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-plus-camera",
@@ -1778,7 +1778,7 @@
         "model": "iPhone 6S Plus",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-plus-earpiece",
@@ -1786,7 +1786,7 @@
         "model": "iPhone 6S Plus",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-plus-loudspeaker",
@@ -1794,7 +1794,7 @@
         "model": "iPhone 6S Plus",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-plus-button-fault",
@@ -1802,7 +1802,7 @@
         "model": "iPhone 6S Plus",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/6s-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-plus-not-sure",
@@ -1818,7 +1818,7 @@
         "model": "iPhone 6S",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 79
+        "price": 69
     },
     {
         "id": "6s-battery",
@@ -1826,7 +1826,7 @@
         "model": "iPhone 6S",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-charging-port",
@@ -1834,7 +1834,7 @@
         "model": "iPhone 6S",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-microphone",
@@ -1842,7 +1842,7 @@
         "model": "iPhone 6S",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-front-camera",
@@ -1850,7 +1850,7 @@
         "model": "iPhone 6S",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-camera",
@@ -1858,7 +1858,7 @@
         "model": "iPhone 6S",
         "description": "A new rear camera if yours is damaged.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-camera-lens",
@@ -1866,7 +1866,7 @@
         "model": "iPhone 6S",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-earpiece",
@@ -1874,7 +1874,7 @@
         "model": "iPhone 6S",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-loudspeaker",
@@ -1882,7 +1882,7 @@
         "model": "iPhone 6S",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-button-fault",
@@ -1890,7 +1890,7 @@
         "model": "iPhone 6S",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/6s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6s-not-sure",
@@ -1914,7 +1914,7 @@
         "model": "iPhone 6 Plus",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-charging-port",
@@ -1922,7 +1922,7 @@
         "model": "iPhone 6 Plus",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-microphone",
@@ -1930,7 +1930,7 @@
         "model": "iPhone 6 Plus",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-front-camera",
@@ -1938,7 +1938,7 @@
         "model": "iPhone 6 Plus",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-camera",
@@ -1946,7 +1946,7 @@
         "model": "iPhone 6 Plus",
         "description": "A new rear camera if yours is damaged.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-camera-lens",
@@ -1954,7 +1954,7 @@
         "model": "iPhone 6 Plus",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-earpiece",
@@ -1962,7 +1962,7 @@
         "model": "iPhone 6 Plus",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-loudspeaker",
@@ -1970,7 +1970,7 @@
         "model": "iPhone 6 Plus",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-button-fault",
@@ -1978,7 +1978,7 @@
         "model": "iPhone 6 Plus",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/6-plus.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-plus-not-sure",
@@ -1994,7 +1994,7 @@
         "model": "iPhone 6",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/6.jpg",
-        "price": 69
+        "price": 59
     },
     {
         "id": "6-battery",
@@ -2002,7 +2002,7 @@
         "model": "iPhone 6",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-charging-port",
@@ -2010,7 +2010,7 @@
         "model": "iPhone 6",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-microphone",
@@ -2018,7 +2018,7 @@
         "model": "iPhone 6",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-front-camera",
@@ -2026,7 +2026,7 @@
         "model": "iPhone 6",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-camera",
@@ -2034,7 +2034,7 @@
         "model": "iPhone 6",
         "description": "A new rear camera if yours is damaged.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-camera-lens",
@@ -2042,7 +2042,7 @@
         "model": "iPhone 6",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-earpiece",
@@ -2050,7 +2050,7 @@
         "model": "iPhone 6",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-loudspeaker",
@@ -2058,7 +2058,7 @@
         "model": "iPhone 6",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-button-fault",
@@ -2066,7 +2066,7 @@
         "model": "iPhone 6",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/6.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "6-not-sure",
@@ -2082,7 +2082,7 @@
         "model": "iPhone SE",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 59
+        "price": 49
     },
     {
         "id": "se-1-battery",
@@ -2090,7 +2090,7 @@
         "model": "iPhone SE",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-charging-port",
@@ -2098,7 +2098,7 @@
         "model": "iPhone SE",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-microphone",
@@ -2106,7 +2106,7 @@
         "model": "iPhone SE",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-front-camera",
@@ -2114,7 +2114,7 @@
         "model": "iPhone SE",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-camera",
@@ -2122,7 +2122,7 @@
         "model": "iPhone SE",
         "description": "A new rear camera if yours is damaged.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-camera-lens",
@@ -2130,7 +2130,7 @@
         "model": "iPhone SE",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-earpiece",
@@ -2138,7 +2138,7 @@
         "model": "iPhone SE",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-loudspeaker",
@@ -2146,7 +2146,7 @@
         "model": "iPhone SE",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-button-fault",
@@ -2154,7 +2154,7 @@
         "model": "iPhone SE",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/se-1.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "se-1-not-sure",
@@ -2170,7 +2170,7 @@
         "model": "iPhone 5S",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 59
+        "price": 49
     },
     {
         "id": "5s-battery",
@@ -2178,7 +2178,7 @@
         "model": "iPhone 5S",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-charging-port",
@@ -2186,7 +2186,7 @@
         "model": "iPhone 5S",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-microphone",
@@ -2194,7 +2194,7 @@
         "model": "iPhone 5S",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-front-camera",
@@ -2202,7 +2202,7 @@
         "model": "iPhone 5S",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-camera",
@@ -2210,7 +2210,7 @@
         "model": "iPhone 5S",
         "description": "A new rear camera if yours is damaged.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-camera-lens",
@@ -2218,7 +2218,7 @@
         "model": "iPhone 5S",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-earpiece",
@@ -2226,7 +2226,7 @@
         "model": "iPhone 5S",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-loudspeaker",
@@ -2234,7 +2234,7 @@
         "model": "iPhone 5S",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-button-fault",
@@ -2242,7 +2242,7 @@
         "model": "iPhone 5S",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/5s.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5s-not-sure",
@@ -2266,7 +2266,7 @@
         "model": "iPhone 5C",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-charging-port",
@@ -2274,7 +2274,7 @@
         "model": "iPhone 5C",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-microphone",
@@ -2282,7 +2282,7 @@
         "model": "iPhone 5C",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-front-camera",
@@ -2290,7 +2290,7 @@
         "model": "iPhone 5C",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-camera",
@@ -2298,7 +2298,7 @@
         "model": "iPhone 5C",
         "description": "A new rear camera if yours is damaged.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-camera-lens",
@@ -2306,7 +2306,7 @@
         "model": "iPhone 5C",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-earpiece",
@@ -2314,7 +2314,7 @@
         "model": "iPhone 5C",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-loudspeaker",
@@ -2322,7 +2322,7 @@
         "model": "iPhone 5C",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-button-fault",
@@ -2330,7 +2330,7 @@
         "model": "iPhone 5C",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/5c.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5c-not-sure",
@@ -2354,7 +2354,7 @@
         "model": "iPhone 5",
         "description": "A new battery to restore your device to 100%.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-charging-port",
@@ -2362,7 +2362,7 @@
         "model": "iPhone 5",
         "description": "A new charging port to restore device charging.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-microphone",
@@ -2370,7 +2370,7 @@
         "model": "iPhone 5",
         "description": "A new Microphone to restore sound pickup.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-front-camera",
@@ -2378,7 +2378,7 @@
         "model": "iPhone 5",
         "description": "A new front camera if yours isn't working.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-camera",
@@ -2386,7 +2386,7 @@
         "model": "iPhone 5",
         "description": "A new rear camera if yours is damaged.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-camera-lens",
@@ -2394,7 +2394,7 @@
         "model": "iPhone 5",
         "description": "A new replacement camera lens if one of yours is damaged.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-earpiece",
@@ -2402,7 +2402,7 @@
         "model": "iPhone 5",
         "description": "A replacement speaker if you cannot hear on phone calls.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-loudspeaker",
@@ -2410,7 +2410,7 @@
         "model": "iPhone 5",
         "description": "A replacement loudspeaker if you cannot hear any audio.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-button-fault",
@@ -2418,7 +2418,7 @@
         "model": "iPhone 5",
         "description": "A replacement button flex if one of yours isn't working.",
         "image": "/iphone/devices/5.jpg",
-        "price": 45
+        "price": 35
     },
     {
         "id": "5-not-sure",

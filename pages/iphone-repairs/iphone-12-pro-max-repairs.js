@@ -56,6 +56,8 @@ export default function RepairPage() {
           content={product.meta}
           key="desc"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/iphone-repairs/iphone-12-pro-max-repairs/" />
         <meta property="og:title" content={product.name} />
         <meta
           property="og:description"
@@ -63,7 +65,7 @@ export default function RepairPage() {
         />
         <meta
           property="og:image"
-          content="/social/iphone-repairs.jpg"
+          content="https://www.ipatchrepairs.co.uk/social.jpg"
         />
       </Head>
       <Navigation />

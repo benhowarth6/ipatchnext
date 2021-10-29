@@ -56,6 +56,8 @@ export default function RepairPage() {
           content={product.meta}
           key="desc"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/iphone-repairs/iphone-13-repairs/" />
         <meta property="og:title" content={product.name} />
         <meta
           property="og:description"
@@ -63,7 +65,7 @@ export default function RepairPage() {
         />
         <meta
           property="og:image"
-          content="/social/iphone-repairs.jpg"
+          content="https://www.ipatchrepairs.co.uk/social.jpg"
         />
       </Head>
       <Navigation />
@@ -108,11 +110,7 @@ export default function RepairPage() {
               </h2>
 
               <div className="md:flex hidden items-center">
-                {selectedRepair.price === "null" ? (
-                  <p className="text-sm py-2 text-gray-500">Select a repair option to view pricing</p>
-                ) : (
-                  <p className="text-3xl text-gray-900">£{selectedRepair.price}</p>
-                )}
+                <p className="text-base py-2 text-gray-500">Please call to discuss repair options on this device.</p>
               </div>
 
               <div className="mt-4 space-y-6">
@@ -199,23 +197,9 @@ export default function RepairPage() {
                   </Link>
                 </div>
                 <div className="mt-10">
-                  {selectedRepair.price === "null" ? (
-                    <a className="w-full opacity-50 bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500" disabled>
-                      Book Repair
-                    </a>
-                  ) : (
-                    <Link
-                      href={{
-                        pathname: '/book-repair/booking-type',
-                        query: { id: selectedRepair.id },
-                      }}
-                    >
-                      <a className="w-full bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
-                        Book Repair
-                      </a>
-                    </Link>
-                  )}
-
+                  <a className="w-full opacity-50 bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500" disabled>
+                    Book Repair
+                  </a>
                 </div>
                 <div className="mt-6 text-center">
                   <p className="group inline-flex text-base font-medium">
