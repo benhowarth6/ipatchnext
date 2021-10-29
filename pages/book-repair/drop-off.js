@@ -8,7 +8,7 @@ import DatePicker, { ReactDatePicker } from 'react-datepicker'
 import subDays from "date-fns/subDays";
 import moment from "moment";
 
-import repairs from '../../data/iphone/iphone-repairs.json';
+import repairs from '../../data/all-repairs.json';
 
 const steps = [
     { name: 'Booking Type', status: 'complete' },

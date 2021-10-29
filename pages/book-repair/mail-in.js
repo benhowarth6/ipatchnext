@@ -5,7 +5,7 @@ import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
 
-import repairs from '../../data/iphone/iphone-repairs.json';
+import repairs from '../../data/all-repairs.json';
 
 const steps = [
     { name: 'Booking Type', status: 'complete' },

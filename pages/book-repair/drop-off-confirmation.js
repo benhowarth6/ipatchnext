@@ -10,7 +10,7 @@ const steps = [
     { name: 'Confirmation', status: 'current' },
 ]
 
-import repairs from '../../data/iphone/iphone-repairs.json';
+import repairs from '../../data/all-repairs.json';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
