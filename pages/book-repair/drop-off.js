@@ -1,4 +1,4 @@
-import { NextSeo } from "next-seo";
+import Head from "next/head";
 import Link from "next/link";
 import { Fragment, useState } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
@@ -62,10 +62,17 @@ export default function Example() {
 
     return (
         <div>
-            <NextSeo
-                title="Drop off repair booking in Leeds - iPatch"
-                description="Book your device in with us for a drop-off repair at one of our Leeds stores using this form."
-            />
+            <Head>
+                <title>
+                    Drop off repair booking | iPatch
+                </title>
+                <meta
+                    name="description"
+                    content="Book a device repair with us for a drop off repair."
+                    key="desc"
+                />
+                <meta name="robots" content="noindex,nofollow" />
+            </Head>
             <div className="bg-gray-50">
                 {/* Mobile menu */}
 

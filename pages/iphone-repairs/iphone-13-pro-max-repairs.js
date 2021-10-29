@@ -63,7 +63,7 @@ export default function RepairPage() {
         />
         <meta
           property="og:image"
-          content="/social/iphone-repairs.jpg"
+          content="/social.jpg"
         />
       </Head>
       <Navigation />

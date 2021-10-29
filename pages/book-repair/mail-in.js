@@ -1,5 +1,5 @@
-import { NextSeo } from "next-seo";
-import Link from "next/link"
+import Head from "next/head";
+import Link from "next/link";
 import { Fragment, useState } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
@@ -22,10 +22,17 @@ export default function Example() {
 
     return (
         <div>
-            <NextSeo
-                title="Mail in repair booking - iPatch"
-                description="Book your device in with us for a mail-in repair to post your device to us from anywhere in the world."
-            />
+            <Head>
+                <title>
+                    Mail in repair booking | iPatch
+                </title>
+                <meta
+                    name="description"
+                    content="Book a device repair with us for a mail in repair."
+                    key="desc"
+                />
+                <meta name="robots" content="noindex,nofollow" />
+            </Head>
             <div className="bg-gray-50">
                 {/* Mobile menu */}
 

@@ -8,6 +8,11 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
+const locations = [
+    { id: 1, city: 'Trinity Leeds', address: ['Trinity, Albion Street', 'Leeds, LS1 5AR'], times: ['Monday - Sat: 9am - 5pm', 'Sunday: 11am - 5pm'] },
+    { id: 2, city: 'Kirkstall Morrisons', address: ['1 Savins Mill Way', 'Kirkstall, LS5 3RP'], times: ['Monday - Sat: 9am - 5pm', 'Sunday: 11am - 5pm'] },
+]
+
 const footerNavigation = {
     repairs: [
         { name: 'iPhone Repairs', href: '/iphone-repairs' },
@@ -239,81 +244,113 @@ export default function Example() {
                         </form>
                     </main>
                 </div>
+
+                <section aria-labelledby="location-heading">
+                    <div className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 relative">
+                        <h2 id="locations-heading" className="text-3xl font-extrabold text-gray-900">
+                            Our locations
+                        </h2>
+                        <p className="mt-6 text-lg text-gray-500 max-w-3xl">
+                            We have stores located in Trinity Leeds and Kirkstall Morrisons. We don't require appointments to visit 
+                            us in Trinity, however you will need to make a booking to visit our Kirkstall store.
+                        </p>
+                        <div className="mt-10 grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                            {locations.map((location) => (
+                                <div key={location.id}>
+                                    <h3 className="text-lg font-medium text-gray-900">{location.city}</h3>
+                                    <p className="mt-2 text-base text-gray-500">
+                                        {location.address.map((line) => (
+                                            <span key={line} className="block">
+                                                {line}
+                                            </span>
+                                        ))}
+                                    </p>
+                                    <p className="mt-4 text-base text-gray-500">
+                                        {location.times.map((line) => (
+                                            <span key={line} className="block">
+                                                {line}
+                                            </span>
+                                        ))}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
                 <footer aria-labelledby="footer-heading" className="bg-gray-900 relative">
                     <h2 id="footer-heading" className="sr-only">
                         Footer
                     </h2>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="border-t border-gray-200">
-                            <div className="pt-16 pb-20">
-                                <div className="md:flex md:justify-center">
-                                    <img
-                                        src="/logo-white.svg"
-                                        alt=""
-                                        className="h-6 w-auto"
-                                    />
-                                </div>
-                                <div className="mt-16 max-w-5xl mx-auto xl:grid xl:grid-cols-2 xl:gap-8">
-                                    <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-                                        <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
-                                            <div>
-                                                <h3 className="text-sm font-medium text-white">Repairs</h3>
-                                                <ul role="list" className="mt-6 space-y-6">
-                                                    {footerNavigation.repairs.map((item) => (
-                                                        <li key={item.name} className="text-sm">
-                                                            <Link href={item.href}>
-                                                                <a className="text-gray-300 hover:text-white">
-                                                                    {item.name}
-                                                                </a>
-                                                            </Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h3 className="text-sm font-medium text-white">Services</h3>
-                                                <ul role="list" className="mt-6 space-y-6">
-                                                    {footerNavigation.services.map((item) => (
-                                                        <li key={item.name} className="text-sm">
-                                                            <Link href={item.href}>
-                                                                <a className="text-gray-300 hover:text-white">
-                                                                    {item.name}
-                                                                </a>
-                                                            </Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+                        <div className="pt-16 pb-20">
+                            <div className="md:flex md:justify-center">
+                                <img
+                                    src="/logo-white.svg"
+                                    alt=""
+                                    className="h-6 w-auto"
+                                />
+                            </div>
+                            <div className="mt-16 max-w-5xl mx-auto xl:grid xl:grid-cols-2 xl:gap-8">
+                                <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+                                    <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+                                        <div>
+                                            <h3 className="text-sm font-medium text-white">Repairs</h3>
+                                            <ul role="list" className="mt-6 space-y-6">
+                                                {footerNavigation.repairs.map((item) => (
+                                                    <li key={item.name} className="text-sm">
+                                                        <Link href={item.href}>
+                                                            <a className="text-gray-300 hover:text-white">
+                                                                {item.name}
+                                                            </a>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
-                                        <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
-                                            <div>
-                                                <h3 className="text-sm font-medium text-white">Company</h3>
-                                                <ul role="list" className="mt-6 space-y-6">
-                                                    {footerNavigation.company.map((item) => (
-                                                        <li key={item.name} className="text-sm">
-                                                            <Link href={item.href}>
-                                                                <a className="text-gray-300 hover:text-white">
-                                                                    {item.name}
-                                                                </a>
-                                                            </Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h3 className="text-sm font-medium text-white">Legal</h3>
-                                                <ul role="list" className="mt-6 space-y-6">
-                                                    {footerNavigation.legal.map((item) => (
-                                                        <li key={item.name} className="text-sm">
-                                                            <Link href={item.href}>
-                                                                <a className="text-gray-300 hover:text-white">
-                                                                    {item.name}
-                                                                </a>
-                                                            </Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+                                        <div>
+                                            <h3 className="text-sm font-medium text-white">Services</h3>
+                                            <ul role="list" className="mt-6 space-y-6">
+                                                {footerNavigation.services.map((item) => (
+                                                    <li key={item.name} className="text-sm">
+                                                        <Link href={item.href}>
+                                                            <a className="text-gray-300 hover:text-white">
+                                                                {item.name}
+                                                            </a>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+                                        <div>
+                                            <h3 className="text-sm font-medium text-white">Company</h3>
+                                            <ul role="list" className="mt-6 space-y-6">
+                                                {footerNavigation.company.map((item) => (
+                                                    <li key={item.name} className="text-sm">
+                                                        <Link href={item.href}>
+                                                            <a className="text-gray-300 hover:text-white">
+                                                                {item.name}
+                                                            </a>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 className="text-sm font-medium text-white">Legal</h3>
+                                            <ul role="list" className="mt-6 space-y-6">
+                                                {footerNavigation.legal.map((item) => (
+                                                    <li key={item.name} className="text-sm">
+                                                        <Link href={item.href}>
+                                                            <a className="text-gray-300 hover:text-white">
+                                                                {item.name}
+                                                            </a>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

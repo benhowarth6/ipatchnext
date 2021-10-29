@@ -1,4 +1,5 @@
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import Link from "next/link";
 import { useState } from 'react'
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
@@ -26,10 +27,17 @@ export default function Example() {
 
     return (
         <div>
-            <NextSeo
-                title="Drop off repair booking - iPatch"
-                description="Book your device in with us for a drop-off repair to post your device to us from anywhere in the world."
-            />
+            <Head>
+                <title>
+                    Booking Confirmation | iPatch
+                </title>
+                <meta
+                    name="description"
+                    content="Thanks for booking your device in with us for a drop off repair."
+                    key="desc"
+                />
+                <meta name="robots" content="noindex,nofollow" />
+            </Head>
             <div className="bg-gray-50">
                 {/* Mobile menu */}
 
@@ -122,15 +130,15 @@ export default function Example() {
                                                             <address className="not-italic">
                                                                 {location === 'Trinity Leeds' ? (
                                                                     <>
-                                                                    <span className="block">Trinity Leeds</span>
-                                                                    <span className="block">201 Albion Street</span>
-                                                                    <span className="block">Leeds, LS1 5AR</span>
+                                                                        <span className="block">Trinity Leeds</span>
+                                                                        <span className="block">201 Albion Street</span>
+                                                                        <span className="block">Leeds, LS1 5AR</span>
                                                                     </>
                                                                 ) : (
                                                                     <>
-                                                                    <span className="block">Kirkstall Morrisons</span>
-                                                                    <span className="block">1 Savins Mill Way</span>
-                                                                    <span className="block">Leeds, LS5 3RP</span>
+                                                                        <span className="block">Kirkstall Morrisons</span>
+                                                                        <span className="block">1 Savins Mill Way</span>
+                                                                        <span className="block">Leeds, LS5 3RP</span>
                                                                     </>
                                                                 )}
                                                             </address>
@@ -140,14 +148,14 @@ export default function Example() {
                                                         <dt className="font-medium text-gray-900">Appointment details</dt>
                                                         <dd className="mt-2 text-gray-700">
                                                             <address className="not-italic">
-                                                            <div className=" flex ">
-                                                                <dt className="font-medium text-gray-900">Date</dt>
-                                                                <dd className="ml-2 text-gray-700">{time}</dd>
-                                                            </div>
-                                                            <div className=" flex ">
-                                                                <dt className="font-medium text-gray-900">Time</dt>
-                                                                <dd className="ml-2 text-gray-700">{time}</dd>
-                                                            </div>
+                                                                <div className=" flex ">
+                                                                    <dt className="font-medium text-gray-900">Date</dt>
+                                                                    <dd className="ml-2 text-gray-700">{time}</dd>
+                                                                </div>
+                                                                <div className=" flex ">
+                                                                    <dt className="font-medium text-gray-900">Time</dt>
+                                                                    <dd className="ml-2 text-gray-700">{time}</dd>
+                                                                </div>
                                                             </address>
                                                         </dd>
                                                     </div>

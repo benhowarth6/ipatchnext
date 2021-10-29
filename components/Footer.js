@@ -22,9 +22,7 @@ const footerNavigation = {
   ],
   legal: [
     { name: 'Terms of Service', href: '#' },
-    { name: 'Return Policy', href: '#' },
     { name: 'Privacy Policy', href: '#' },
-    { name: 'Shipping Policy', href: '#' },
   ],
   bottomLinks: [
     { name: 'Privacy', href: '#' },

@@ -1,4 +1,5 @@
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import Link from "next/link";
 import { useState } from 'react'
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
@@ -26,10 +27,17 @@ export default function Example() {
 
     return (
         <div>
-            <NextSeo
-                title="Drop off repair booking - iPatch"
-                description="Book your device in with us for a drop-off repair to post your device to us from anywhere in the world."
-            />
+            <Head>
+                <title>
+                    Booking Confirmation | iPatch
+                </title>
+                <meta
+                    name="description"
+                    content="Thanks for booking your device in with us for a mail in repair."
+                    key="desc"
+                />
+                <meta name="robots" content="noindex,nofollow" />
+            </Head>
             <div className="bg-gray-50">
                 {/* Mobile menu */}
 
