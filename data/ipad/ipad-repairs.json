@@ -706,5 +706,557 @@
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 0
+  },
+  {
+    "id": "air-4-display",
+    "name": "Display Assembly",
+    "model": "iPad Air 4",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 319
+  },
+  {
+    "id": "air-4-battery",
+    "name": "Battery",
+    "model": "iPad Air 4",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "air-4-charging-port",
+    "name": "USB-C Charging Port",
+    "model": "iPad Air 4",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "air-4-front-camera",
+    "name": "Front Camera",
+    "model": "iPad Air 4",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "air-4-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Air 4",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "air-4-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Air 4",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-4-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Air 4",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "air-4-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Air 4",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "air-4-not-sure",
+    "name": "Unsure",
+    "model": "iPad Air 4",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-air-4.jpg",
+    "price": 0
+  },
+  {
+    "id": "air-3-display",
+    "name": "Display Assembly",
+    "model": "iPad Air 3",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 249
+  },
+  {
+    "id": "air-3-battery",
+    "name": "Battery",
+    "model": "iPad Air 3",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 120
+  },
+  {
+    "id": "air-3-charging-port",
+    "name": "Charging Port",
+    "model": "iPad Air 3",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 120
+  },
+  {
+    "id": "air-3-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad Air 3",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 120
+  },
+  {
+    "id": "air-3-front-camera",
+    "name": "Front Camera",
+    "model": "iPad Air 3",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 120
+  },
+  {
+    "id": "air-3-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Air 3",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 120
+  },
+  {
+    "id": "air-3-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Air 3",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-3-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Air 3",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 120
+  },
+  {
+    "id": "air-3-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Air 3",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 120
+  },
+  {
+    "id": "air-3-not-sure",
+    "name": "Unsure",
+    "model": "iPad Air 3",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-air-3.jpg",
+    "price": 0
+  },
+  {
+    "id": "air-2-display",
+    "name": "Display Assembly",
+    "model": "iPad Air 2",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 199
+  },
+  {
+    "id": "air-2-battery",
+    "name": "Battery",
+    "model": "iPad Air 2",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 85
+  },
+  {
+    "id": "air-2-charging-port",
+    "name": "Charging Port",
+    "model": "iPad Air 2",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-2-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad Air 2",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-2-front-camera",
+    "name": "Front Camera",
+    "model": "iPad Air 2",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-2-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Air 2",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-2-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Air 2",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-2-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Air 2",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-2-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Air 2",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "air-2-not-sure",
+    "name": "Unsure",
+    "model": "iPad Air 2",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-air-2.jpg",
+    "price": 0
+  },
+  {
+    "id": "air-1-glass",
+    "name": "Glass Replacement",
+    "model": "iPad Air 1",
+    "description": "A glass digitiser to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 99
+  },
+  {
+    "id": "air-1-lcd",
+    "name": "Retina LCD",
+    "model": "iPad Air 1",
+    "description": "If the display behind your glass is damaged, you'll require a new LCD.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 99
+  },
+  {
+    "id": "air-1-battery",
+    "name": "Battery",
+    "model": "iPad Air 1",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 85
+  },
+  {
+    "id": "air-1-charging-port",
+    "name": "Charging Port",
+    "model": "iPad Air 1",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 85
+  },
+  {
+    "id": "air-1-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad Air 1",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 85
+  },
+  {
+    "id": "air-1-front-camera",
+    "name": "Front Camera",
+    "model": "iPad Air 1",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 85
+  },
+  {
+    "id": "air-1-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Air 1",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 85
+  },
+  {
+    "id": "air-1-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Air 1",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 85
+  },
+  {
+    "id": "air-1-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Air 1",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 85
+  },
+  {
+    "id": "air-1-not-sure",
+    "name": "Unsure",
+    "model": "iPad Air 1",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-air-1.jpg",
+    "price": 0
+  },
+  {
+    "id": "ipad-9-glass",
+    "name": "Glass Replacement",
+    "model": "iPad 9",
+    "description": "A glass digitiser to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 169
+  },
+  {
+    "id": "ipad-9-lcd",
+    "name": "Retina LCD",
+    "model": "iPad 9",
+    "description": "If the display behind your glass is damaged, you'll require a new LCD.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 189
+  },
+  {
+    "id": "ipad-9-battery",
+    "name": "Battery",
+    "model": "iPad 9",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-9-charging-port",
+    "name": "Charging Port",
+    "model": "iPad 9",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-9-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad 9",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-9-front-camera",
+    "name": "Front Camera",
+    "model": "iPad 9",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-9-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad 9",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-9-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad 9",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-9-button-fault",
+    "name": "Button Fault",
+    "model": "iPad 9",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-9-not-sure",
+    "name": "Unsure",
+    "model": "iPad 9",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "price": 0
+  },
+  {
+    "id": "ipad-8-glass",
+    "name": "Glass Replacement",
+    "model": "iPad 8",
+    "description": "A glass digitiser to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 169
+  },
+  {
+    "id": "ipad-8-lcd",
+    "name": "Retina LCD",
+    "model": "iPad 8",
+    "description": "If the display behind your glass is damaged, you'll require a new LCD.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 189
+  },
+  {
+    "id": "ipad-8-battery",
+    "name": "Battery",
+    "model": "iPad 8",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-8-charging-port",
+    "name": "Charging Port",
+    "model": "iPad 8",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-8-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad 8",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-8-front-camera",
+    "name": "Front Camera",
+    "model": "iPad 8",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-8-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad 8",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-8-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad 8",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-8-button-fault",
+    "name": "Button Fault",
+    "model": "iPad 8",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-8-not-sure",
+    "name": "Unsure",
+    "model": "iPad 8",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "price": 0
+  },
+  {
+    "id": "ipad-7-glass",
+    "name": "Glass Replacement",
+    "model": "iPad 7",
+    "description": "A glass digitiser to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 169
+  },
+  {
+    "id": "ipad-7-lcd",
+    "name": "Retina LCD",
+    "model": "iPad 7",
+    "description": "If the display behind your glass is damaged, you'll require a new LCD.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 189
+  },
+  {
+    "id": "ipad-7-battery",
+    "name": "Battery",
+    "model": "iPad 7",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-7-charging-port",
+    "name": "Charging Port",
+    "model": "iPad 7",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-7-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad 7",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-7-front-camera",
+    "name": "Front Camera",
+    "model": "iPad 7",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-7-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad 7",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-7-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad 7",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-7-button-fault",
+    "name": "Button Fault",
+    "model": "iPad 7",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 95
+  },
+  {
+    "id": "ipad-7-not-sure",
+    "name": "Unsure",
+    "model": "iPad 7",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "price": 0
   }
 ]
