@@ -1,0 +1,31 @@
+[
+    {
+      "id": "1",
+      "name": "Air 4",
+      "image": "/ipad/devices/ipad-air-4.jpg",
+      "href": "ipad-air/ipad-air-4-repairs",
+      "alt": "iPad Air 4th Generation Repairs"
+    },
+    {
+      "id": "2",
+      "name": "Air 3",
+      "image": "/ipad/devices/ipad-air-3.jpg",
+      "href": "ipad-air/ipad-air-3-repairs",
+      "alt": "iPad Air 3rd Generation Repairs"
+    },
+    {
+      "id": "3",
+      "name": "Air 2",
+      "image": "/ipad/devices/ipad-air-2.jpg",
+      "href": "ipad-air/ipad-air-2-repairs",
+      "alt": "iPad Air 2nd Generation Repairs"
+    },
+    {
+      "id": "4",
+      "name": "Air 1",
+      "image": "/ipad/devices/ipad-air-1.jpg",
+      "href": "ipad-air/ipad-air-1-repairs",
+      "alt": "iPad Air 1st Generation Repairs"
+    }
+  ]
+  

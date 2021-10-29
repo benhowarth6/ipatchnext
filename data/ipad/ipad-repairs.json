@@ -1,0 +1,710 @@
+[
+  {
+    "id": "0",
+    "price": "null"
+  },
+  {
+    "id": "pro-12-5-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 12.9-inch 5th Generation",
+    "description": "A new Mini LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-12-5.jpg",
+    "price": 499
+  },
+  {
+    "id": "pro-12-5-battery",
+    "name": "Battery",
+    "model": "iPad Pro 12.9-inch 5th Generation",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-12-5.jpg",
+    "price": 225
+  },
+  {
+    "id": "pro-12-5-charging-port",
+    "name": "USB-C Charging Port",
+    "model": "iPad Pro 12.9-inch 5th Generation",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-12-5.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-5-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 12.9-inch 5th Generation",
+    "description": "A new rear camera if one of yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-5.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-5-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 12.9-inch 5th Generation",
+    "description": "A new replacement camera lens if one of yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-5.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-5-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 12.9-inch 5th Generation",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-12-5.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-5-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 12.9-inch 5th Generation",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-12-5.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-5-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 12.9-inch 5th Generation",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-12-5.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-12-4-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 12.9-inch 4th Generation",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-12-4.jpg",
+    "price": 519
+  },
+  {
+    "id": "pro-12-4-battery",
+    "name": "Battery",
+    "model": "iPad Pro 12.9-inch 4th Generation",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-12-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-4-charging-port",
+    "name": "USB-C Charging Port",
+    "model": "iPad Pro 12.9-inch 4th Generation",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-12-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-4-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 12.9-inch 4th Generation",
+    "description": "A new rear camera if one of yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-4-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 12.9-inch 4th Generation",
+    "description": "A new replacement camera lens if one of yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-4.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-12-4-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 12.9-inch 4th Generation",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-12-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-4-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 12.9-inch 4th Generation",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-12-4.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-4-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 12.9-inch 4th Generation",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-12-4.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-12-3-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-12-3.jpg",
+    "price": 459
+  },
+  {
+    "id": "pro-12-3-battery",
+    "name": "Battery",
+    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-12-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-3-charging-port",
+    "name": "USB-C Charging Port",
+    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-12-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-3-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-3-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-3.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-12-3-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-12-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-3-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-12-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-3-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-12-3.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-12-2-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 429
+  },
+  {
+    "id": "pro-12-2-battery",
+    "name": "Battery",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-2-charging-port",
+    "name": "Charging Port",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-2-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-2-front-camera",
+    "name": "Front Camera",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-2-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-2-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-12-2-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-2-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-12-2-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-12-2.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-12-1-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 319
+  },
+  {
+    "id": "pro-12-1-battery",
+    "name": "Battery",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-12-1-charging-port",
+    "name": "Charging Port",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-12-1-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-12-1-front-camera",
+    "name": "Front Camera",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-12-1-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-12-1-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-12-1-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-12-1-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-12-1-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 12.9-inch 1st Generation",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-12-1.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-11-3-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 11-inch 3rd Generation",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-11-3.jpg",
+    "price": 429
+  },
+  {
+    "id": "pro-11-3-battery",
+    "name": "Battery",
+    "model": "iPad Pro 11-inch 3rd Generation",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-11-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-3-charging-port",
+    "name": "USB-C Charging Port",
+    "model": "iPad Pro 11-inch 3rd Generation",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-11-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-3-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 11-inch 3rd Generation",
+    "description": "A new rear camera if one of yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-11-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-3-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 11-inch 3rd Generation",
+    "description": "A new replacement camera lens if one of yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-11-3.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-11-3-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 11-inch 3rd Generation",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-11-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-3-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 11-inch 3rd Generation",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-11-3.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-3-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 11-inch 3rd Generation",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-11-3.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-11-2-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 11-inch 2nd Generation",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-11-2.jpg",
+    "price": 389
+  },
+  {
+    "id": "pro-11-2-battery",
+    "name": "Battery",
+    "model": "iPad Pro 11-inch 2nd Generation",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-11-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-2-charging-port",
+    "name": "USB-C Charging Port",
+    "model": "iPad Pro 11-inch 2nd Generation",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-11-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-2-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 11-inch 2nd Generation",
+    "description": "A new rear camera if one of yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-11-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-2-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 11-inch 2nd Generation",
+    "description": "A new replacement camera lens if one of yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-11-2.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-11-2-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 11-inch 2nd Generation",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-11-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-2-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 11-inch 2nd Generation",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-11-2.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-2-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 11-inch 2nd Generation",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-11-2.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-11-1-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 11-inch 1st Generation",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-11-1.jpg",
+    "price": 319
+  },
+  {
+    "id": "pro-11-1-battery",
+    "name": "Battery",
+    "model": "iPad Pro 11-inch 1st Generation",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-11-1.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-1-charging-port",
+    "name": "USB-C Charging Port",
+    "model": "iPad Pro 11-inch 1st Generation",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-11-1.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-1-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 11-inch 1st Generation",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-11-1.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-1-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 11-inch 1st Generation",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-11-1.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-11-1-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 11-inch 1st Generation",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-11-1.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-1-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 11-inch 1st Generation",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-11-1.jpg",
+    "price": 175
+  },
+  {
+    "id": "pro-11-1-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 11-inch 1st Generation",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-11-1.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-10-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 289
+  },
+  {
+    "id": "pro-10-battery",
+    "name": "Battery",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-10-charging-port",
+    "name": "Charging Port",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-10-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-10-front-camera",
+    "name": "Front Camera",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-10-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-10-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-10-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-10-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 10.5-inch",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-10-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 10.5-inch",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-10.jpg",
+    "price": 0
+  },
+  {
+    "id": "pro-9-display",
+    "name": "Display Assembly",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A new LED display assembly to repair a damaged screen.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 249
+  },
+  {
+    "id": "pro-9-battery",
+    "name": "Battery",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-9-charging-port",
+    "name": "Charging Port",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A new charging port to restore device charging.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-9-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-9-front-camera",
+    "name": "Front Camera",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A new front camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-9-rear-camera",
+    "name": "Rear Camera",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A new rear camera if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-9-camera-lens",
+    "name": "Rear Camera Lens",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A new replacement camera lens if yours is damaged.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 95
+  },
+  {
+    "id": "pro-9-loudspeaker",
+    "name": "Loudspeaker",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A replacement loudspeaker if you cannot hear any audio.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-9-button-fault",
+    "name": "Button Fault",
+    "model": "iPad Pro 9.7-inch",
+    "description": "A replacement button flex if one of yours isn't working.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 150
+  },
+  {
+    "id": "pro-9-not-sure",
+    "name": "Unsure",
+    "model": "iPad Pro 9.7-inch",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/ipad/devices/ipad-pro-9.jpg",
+    "price": 0
+  }
+]

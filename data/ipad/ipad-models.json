@@ -1,30 +1,58 @@
 [
   {
     "id": "1",
-    "name": "iPad Pro",
-    "image": "/ipad/devices/ipad-pro.jpg",
-    "href": "/ipad-repairs/ipad-pro-repairs",
-    "alt": "iPad Pro Repairs"
+    "name": "9th Generation",
+    "image": "/ipad/devices/ipad-9.jpg",
+    "href": "ipad/ipad-9-repairs",
+    "alt": "iPad 9th Generation Repairs"
   },
   {
     "id": "2",
-    "name": "iPad Air",
-    "image": "/ipad/devices/ipad-air.jpg",
-    "href": "/ipad-repairs/ipad-air-repairs",
-    "alt": "iPad Air Repairs"
+    "name": "8th Generation",
+    "image": "/ipad/devices/ipad-8.jpg",
+    "href": "ipad/ipad-8-repairs",
+    "alt": "iPad 8th Generation Repairs"
   },
   {
     "id": "3",
-    "name": "iPad",
-    "image": "/ipad/devices/ipad.jpg",
-    "href": "/ipad-repairs/ipad-repairs",
-    "alt": "iPad Repairs"
+    "name": "7th Generation",
+    "image": "/ipad/devices/ipad-7.jpg",
+    "href": "ipad/ipad-7-repairs",
+    "alt": "iPad 7th Generation Repairs"
   },
   {
     "id": "4",
-    "name": "iPad Mini",
-    "image": "/ipad/devices/ipad-mini.jpg",
-    "href": "/ipad-repairs/ipad-mini-repairs",
-    "alt": "iPad Mini Repairs"
+    "name": "6th Generation",
+    "image": "/ipad/devices/ipad-6.jpg",
+    "href": "ipad/ipad-6-repairs",
+    "alt": "iPad 6th Generation Repairs"
+  },
+  {
+    "id": "5",
+    "name": "5th Generation",
+    "image": "/ipad/devices/ipad-5.jpg",
+    "href": "ipad/ipad-5-repairs",
+    "alt": "iPad 5th Generation Repairs"
+  },
+  {
+    "id": "6",
+    "name": "4th Generation",
+    "image": "/ipad/devices/ipad-4.jpg",
+    "href": "ipad/ipad-4-repairs",
+    "alt": "iPad 4th Generation Repairs"
+  },
+  {
+    "id": "7",
+    "name": "3rd Generation",
+    "image": "/ipad/devices/ipad-3.jpg",
+    "href": "ipad/ipad-3-repairs",
+    "alt": "iPad 3rd Generation Repairs"
+  },
+  {
+    "id": "8",
+    "name": "2nd Generation",
+    "image": "/ipad/devices/ipad-2.jpg",
+    "href": "ipad/ipad-2-repairs",
+    "alt": "iPad 2nd Generation Repairs"
   }
 ]

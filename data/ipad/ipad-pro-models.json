@@ -4,7 +4,7 @@
     "size": "12",
     "name": "12.9-inch 5th Generation",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-12-inch-5-repairs",
     "alt": "iPad Pro 12.9-inch 5th Generation Repairs"
   },
   {
@@ -12,7 +12,7 @@
     "size": "12",
     "name": "12.9-inch 4th Generation",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-12-inch-4-repairs",
     "alt": "iPad Pro 12.9-inch 4th Generation Repairs"
   },
   {
@@ -20,7 +20,7 @@
     "size": "12",
     "name": "12.9-inch 3rd Generation",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-12-inch-3-repairs",
     "alt": "iPad Pro 12.9-inch 3rd Generation Repairs"
   },
   {
@@ -28,7 +28,7 @@
     "size": "12",
     "name": "12.9-inch 2nd Generation",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-12-inch-2-repairs",
     "alt": "iPad Pro 12.9-inch 2nd Generation Repairs"
   },
   {
@@ -36,7 +36,7 @@
     "size": "12",
     "name": "12.9-inch 1st Generation",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-12-inch-1-repairs",
     "alt": "iPad Pro 12.9-inch 1st Generation Repairs"
   },
   {
@@ -44,7 +44,7 @@
     "size": "11",
     "name": "11-inch 3rd Generation",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-11-inch-3-repairs",
     "alt": "iPad Pro 11-inch 3rd Generation Repairs"
   },
   {
@@ -52,7 +52,7 @@
     "size": "11",
     "name": "11-inch 2nd Generation",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-11-inch-2-repairs",
     "alt": "iPad Pro 11-inch 2nd Generation Repairs"
   },
   {
@@ -60,7 +60,7 @@
     "size": "11",
     "name": "11-inch 1st Generation",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-11-inch-1-repairs",
     "alt": "iPad Pro 11-inch 1st Generation Repairs"
   },
   {
@@ -68,7 +68,7 @@
     "size": "10",
     "name": "10.5-inch",
     "image": "/ipad/devices/ipad-pro-10.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-10-inch-repairs",
     "alt": "iPad Pro 10.5-inch Generation Repairs"
   },
   {
@@ -76,7 +76,7 @@
     "size": "9",
     "name": "9.7-inch",
     "image": "/ipad/devices/ipad-pro-9.jpg",
-    "href": "/ipad-pro/ipad-pro-repairs",
+    "href": "ipad-pro/ipad-pro-9-inch-repairs",
     "alt": "iPad Pro 9.7-inch Generation Repairs"
   }
 ]

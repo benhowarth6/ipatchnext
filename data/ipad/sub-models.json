@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "iPad Pro",
+    "image": "/ipad/devices/ipad-pro.jpg",
+    "href": "/ipad-repairs/ipad-pro-repairs",
+    "alt": "iPad Pro Repairs"
+  },
+  {
+    "id": "2",
+    "name": "iPad Air",
+    "image": "/ipad/devices/ipad-air.jpg",
+    "href": "/ipad-repairs/ipad-air-repairs",
+    "alt": "iPad Air Repairs"
+  },
+  {
+    "id": "3",
+    "name": "iPad",
+    "image": "/ipad/devices/ipad.jpg",
+    "href": "/ipad-repairs/ipad-repairs",
+    "alt": "iPad Repairs"
+  },
+  {
+    "id": "4",
+    "name": "iPad Mini",
+    "image": "/ipad/devices/ipad-mini.jpg",
+    "href": "/ipad-repairs/ipad-mini-repairs",
+    "alt": "iPad Mini Repairs"
+  }
+]

@@ -9,7 +9,7 @@ import About from "../components/ipad/About";
 import AboutFurther from "../components/ipad/About-Further";
 import Parts from "../components/ipad/Parts";
 
-import models from '../data/ipad/ipad-models.json';
+import models from '../data/ipad/sub-models.json';
 
 export default function Home() {
   return (
