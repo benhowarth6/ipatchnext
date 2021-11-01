@@ -18,7 +18,7 @@ export default function Example() {
               <div>
                 <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1607452258545-943d7243463c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3936&q=80"
+                    src="https://images.unsplash.com/photo-1582056615449-5dcb2332b3b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3870&q=80"
                     alt="Drawstring top with elastic loop closure and textured interior padding."
                     className="w-full h-full object-center object-cover"
                   />
@@ -37,7 +37,7 @@ export default function Example() {
               <div>
                 <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1622531636820-5d727319e45d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3324&q=80"
+                    src="https://images.unsplash.com/photo-1619029708980-a923eb41845b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3870&q=80"
                     alt="Front zipper pouch with included key ring."
                     className="w-full h-full object-center object-cover"
                   />

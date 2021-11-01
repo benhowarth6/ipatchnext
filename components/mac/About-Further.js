@@ -4,7 +4,7 @@
         <section aria-labelledby="features-heading" className="relative">
           <div className="aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 lg:aspect-none lg:absolute lg:w-1/2 lg:h-full lg:pr-4 xl:pr-16">
             <img
-              src="https://images.unsplash.com/photo-1587056269001-dda628fec97c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1587&q=80"
+              src="https://images.unsplash.com/photo-1589711595552-8989ef1d023d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3870&q=80"
               alt="Black leather journal with silver steel disc binding resting on wooden shelf with machined steel pen."
               className="h-full w-full object-center object-cover lg:h-full lg:w-full"
             />

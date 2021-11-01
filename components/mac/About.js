@@ -3,21 +3,21 @@ const features = [
       name: 'Screen Replacements',
       description:
         'Starting with the most common type of iPad repair. Screen replacements make up the majority of our repairs, to date we\'ve completed well over 30k. We try to keep stock of all iPad displays to ensure quick turnaround. And we only use the original quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.',
-      imageSrc: 'https://images.unsplash.com/photo-1632633726419-3e5e7d74ca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
+      imageSrc: 'https://images.unsplash.com/photo-1619969101444-a10d1acc90be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3870&q=80',
       imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
     },
     {
       name: 'Battery Replacements',
       description:
         'Next up is battery replacements, again we\'ve completed well over 50k of these. As such we\'ve learnt how to read iPad battery data and analytics to determine if a battery does require a replacement or if there is another issue causing excessive drain. As with our screen replacements, we only use the original battery cells to ensure your replacement performs perfectly.',
-      imageSrc: 'https://images.unsplash.com/photo-1632633727209-10b9334188dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3270&q=80',
+      imageSrc: 'https://images.unsplash.com/photo-1581244249923-172ef5029576?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3869&q=80',
       imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
     },
     {
       name: 'Additional Services',
       description:
         'Through our many years of experience we\'ve been able to extend our offering of iPad repair services to include liquid damage repairs, logic board repairs and data recovery. These services have allowed us to offer a far wider range of repairs, so no matter your issue we’re able to offer a solution.',
-      imageSrc: 'https://images.unsplash.com/photo-1545128665-449f45abf48f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3200&q=80',
+      imageSrc: 'https://images.unsplash.com/photo-1574012716378-0ca6f4c18c08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3817&q=80',
       imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
     },
   ]
