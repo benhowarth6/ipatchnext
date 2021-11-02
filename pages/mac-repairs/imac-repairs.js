@@ -20,7 +20,7 @@ export default function Home() {
                 </title>
                 <meta
                     name="description"
-                    content="Expert Apple iMac repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iMac repairs include a 3 month warranty."
+                    content="Expert Apple iMac repairs in Trinity Leeds. We offer replacement hard drives, ram upgrades, ssd upgrades and more while you wait. All of our iPad repairs include a 3 month warranty."
                     key="desc"
                 />
                 <meta property="og:type" content="website" />
@@ -28,7 +28,7 @@ export default function Home() {
                 <meta property="og:title" content="iMac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch" />
                 <meta
                     property="og:description"
-                    content="Expert Apple iMac repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iMac repairs include a 3 month warranty."
+                    content="Expert Apple iMac repairs in Trinity Leeds. We offer replacement hard drives, ram upgrades, ssd upgrades and more while you wait. All of our iPad repairs include a 3 month warranty."
                 />
                 <meta
                     property="og:image"
@@ -42,7 +42,7 @@ export default function Home() {
                     <div className="py-24 text-center">
                         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">iMac Repairs</h1>
                         <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
-                            We offer a large selection of iMac repairs including screens, batteries, charging ports and more for nearly all models.
+                            We offer a large selection of iMac repairs including hard drives, RAM upgrades, SSD Upgrades and more for nearly all models.
                         </p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export default function Home() {
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                     <div className="md:flex md:items-center md:justify-between">
                         <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Select your iMac model</h2>
-                        <a href="https://support.apple.com/en-gb/HT201471" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
+                        <a href="https://support.apple.com/en-gb/HT201634" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
                             Need help<span aria-hidden="true"> &rarr;</span>
                         </a>
                     </div>
@@ -176,7 +176,7 @@ export default function Home() {
                                     How long will it take?
                                 </dt>
                                 <dd className="mt-2 text-base text-gray-500">
-                                    We understand how important MacBook's have become, so we aim to
+                                    We understand how important iMac's have become, so we aim to
                                     complete all repairs in the same day, usually the same hour.
                                     A drop off repair for your iMac is the quickest way to get
                                     your device repaired, and we usually complete nearly all

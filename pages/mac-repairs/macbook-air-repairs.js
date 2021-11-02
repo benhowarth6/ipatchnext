@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { NextSeo } from "next-seo";
 
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
@@ -15,25 +14,27 @@ import models from '../../data/mac/macbook-air-models.json';
 export default function Home() {
   return (
     <div>
-      <NextSeo
-        title="MacBook Air Repairs in Leeds | Screen Replacements, Batteries and more"
-        description="Expert Apple MacBook Air repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our MacBook Air repairs include a 3 month warranty."
-        canonical="https://www.ipatchrepairs.co.uk/mac-repairs"
-        openGraph={{
-          type: 'website',
-          url: 'https://www.ipatchrepairs.co.uk/mac-repairs',
-          title: 'MacBook Air Repairs in Leeds | Screen Replacements, Batteries and more',
-          description: 'Expert Apple MacBook Air repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All our MacBook Air repairs include a 3 month warranty.',
-          images: [
-            {
-              url: "https://www.ipatchrepairs.co.uk/mac-social.jpg",
-              width: 1200,
-              height: 630,
-              alt: "iPatch | MacBook Air Repairs in Leeds"
-            }
-          ]
-        }}
-      />
+      <Head>
+        <title>
+          MacBook Air Repairs in Leeds - Screen Replacements & Other Repairs | iPatch
+        </title>
+        <meta
+          name="description"
+          content="Expert Apple MacBook Air repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPad repairs include a 3 month warranty."
+          key="desc"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/mac-repairs/macbook-air-repairs" />
+        <meta property="og:title" content="MacBook Air Repairs in Leeds - Screen Replacements & Other Repairs | iPatch" />
+        <meta
+          property="og:description"
+          content="Expert Apple MacBook Air repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPad repairs include a 3 month warranty."
+        />
+        <meta
+          property="og:image"
+          content="https://www.ipatchrepairs.co.uk/social.jpg"
+        />
+      </Head>
       <Navigation />
 
       <div className="bg-gray-50">
@@ -51,7 +52,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
             <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Select your MacBook Air model</h2>
-            <a href="https://support.apple.com/en-gb/HT201471" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
+            <a href="https://support.apple.com/en-us/HT201862" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
               Need help<span aria-hidden="true"> &rarr;</span>
             </a>
           </div>
