@@ -1,0 +1,50 @@
+[
+{
+    "id": "1",
+    "size": "21",
+    "name": "iMac 21.5-inch",
+    "image": "/mac/devices/imac-21.jpg",
+    "href": "imac/imac-21-repairs",
+    "alt": "iMac 21.5-inch Repairs"
+   },
+   {
+    "id": "2",
+    "size": "21",
+    "name": "iMac 21.5-inch Slim",
+    "image": "/mac/devices/imac-21.jpg",
+    "href": "imac/imac-21-slim-repairs",
+    "alt": "iMac 21.5-inch Slim Repairs"
+   },
+   {
+    "id": "3",
+    "size": "21",
+    "name": "iMac 21.5-inch 4K",
+    "image": "/mac/devices/imac-21.jpg",
+    "href": "imac/imac-21-4k-repairs",
+    "alt": "iMac 21.5-inch 4K Repairs"
+   },
+   {
+    "id": "4",
+    "size": "27",
+    "name": "iMac 27-inch",
+    "image": "/mac/devices/imac-27.jpg",
+    "href": "imac/imac-27-repairs",
+    "alt": "iMac 27-inch Repairs"
+   },
+   {
+    "id": "5",
+    "size": "27",
+    "name": "iMac 27-inch Slim",
+    "image": "/mac/devices/imac-27.jpg",
+    "href": "imac/imac-27-slim-repairs",
+    "alt": "iMac 27-inch Slim Repairs"
+   },
+   {
+    "id": "6",
+    "size": "27",
+    "name": "iMac 27-inch 5K",
+    "image": "/mac/devices/imac-27.jpg",
+    "href": "imac/imac-27-5k-repairs",
+    "alt": "iMac 27-inch 5K Repairs"
+   }
+]

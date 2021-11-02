@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "size": "13",
+        "name": "MacBook Pro 13-inch Unibody",
+        "image": "/mac/devices/mbp-13-unibody.jpg",
+        "href": "macbook-pro/macbook-pro-13-unibody-repairs",
+        "alt": "MacBook Pro 13-inch Unibody Repairs"
+       },
+       {
+        "id": "2",
+        "size": "13",
+        "name": "MacBook Pro 13-inch Retina",
+        "image": "/mac/devices/mbp-13-retina.jpg",
+        "href": "macbook-pro/macbook-pro-13-retina-repairs",
+        "alt": "MacBook Pro 13-inch Retina Repairs"
+       },
+       {
+        "id": "3",
+        "size": "13",
+        "name": "MacBook Pro 13-inch Function Key",
+        "image": "/mac/devices/mbp-13-function.jpg",
+        "href": "macbook-pro/macbook-pro-13-function-repairs",
+        "alt": "MacBook Pro 13-inch Function Key Repairs"
+       },
+       {
+        "id": "4",
+        "size": "13",
+        "name": "MacBook Pro 13-inch Touchbar",
+        "image": "/mac/devices/mbp-13-touchbar.jpg",
+        "href": "macbook-pro/macbook-pro-13-touchbar-repairs",
+        "alt": "MacBook Pro 13-inch Touchbar Repairs"
+       },
+       {
+        "id": "5",
+        "size": "15",
+        "name": "MacBook Pro 15-inch Unibody",
+        "image": "/mac/devices/mbp-15-unibody.jpg",
+        "href": "macbook-pro/macbook-pro-15-unibody-repairs",
+        "alt": "MacBook Pro 15-inch Unibody Repairs"
+       },
+       {
+        "id": "6",
+        "size": "15",
+        "name": "MacBook Pro 15-inch Retina",
+        "image": "/mac/devices/mbp-15-retina.jpg",
+        "href": "macbook-pro/macbook-pro-15-retina-repairs",
+        "alt": "MacBook Pro 15-inch Retina Repairs"
+       },
+       {
+        "id": "7",
+        "size": "15",
+        "name": "MacBook Pro 15-inch Touchbar",
+        "image": "/mac/devices/mbp-15-touchbar.jpg",
+        "href": "macbook-pro/macbook-pro-15-touchbar-repairs",
+        "alt": "MacBook Pro 15-inch Touchbar Repairs"
+       },
+       {
+        "id": "8",
+        "size": "16",
+        "name": "MacBook Pro 16-inch 2019",
+        "image": "/mac/devices/mbp-16.jpg",
+        "href": "macbook-pro/macbook-pro-16-2019-repairs",
+        "alt": "MacBook Pro 16-inch 2019 Repairs"
+       },
+       {
+        "id": "9",
+        "size": "16",
+        "name": "MacBook Pro 14-inch M1",
+        "image": "/mac/devices/mbp-14.jpg",
+        "href": "macbook-pro/macbook-pro-14-repairs",
+        "alt": "MacBook Pro 14-inch M1 Repairs"
+       },
+       {
+        "id": "10",
+        "size": "16",
+        "name": "MacBook Pro 16-inch M1",
+        "image": "/mac/devices/mbp-16-m1.jpg",
+        "href": "macbook-pro/macbook-pro-16-m1-repairs",
+        "alt": "MacBook Pro 16-inch M1 Repairs"
+       }         
+     ]
+  
