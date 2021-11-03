@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { Fragment } from 'react'
+import { Tab } from '@headlessui/react'
 
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
@@ -10,6 +12,21 @@ import AboutFurther from "../../components/mac/About-Further";
 import Parts from "../../components/mac/Parts";
 
 import models from '../../data/mac/imac-models.json';
+
+const tabs = [
+    {
+        name: '21.5-inch',
+        size: '21',
+    },
+    {
+        name: '27-inch',
+        size: '27',
+    },
+]
+
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+}
 
 export default function Home() {
     return (
@@ -52,71 +69,65 @@ export default function Home() {
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                     <div className="md:flex md:items-center md:justify-between">
                         <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Select your iMac model</h2>
-                        <a href="https://support.apple.com/en-gb/HT201634" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
+                        <a href="https://support.apple.com/en-gb/HT201300" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
                             Need help<span aria-hidden="true"> &rarr;</span>
                         </a>
                     </div>
 
-                    <div className="flex items-center justify-between space-x-4 mt-8">
-                        <h2 className="text-lg font-medium text-gray-900">21.5-inch Models</h2>
-                    </div>
-
-                    <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-                        {models.filter(models => models.size == 21).map(filteredModel => (
-                            <div key={filteredModel.id} className="relative group">
-                                <div className="aspect-w-3 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
-                                    <img src={filteredModel.image} alt={filteredModel.alt} className="object-center object-cover" />
-                                    <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" aria-hidden="true">
-                                        <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
-                                            View Repairs
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="mt-4 flex items-center justify-between text-base font-semibold text-gray-900 space-x-8">
-                                    <h3>
-                                        <Link href={filteredModel.href}>
-                                            <a>
-                                                <span aria-hidden="true" className="absolute inset-0" />
-                                                {filteredModel.name}
-                                            </a>
-                                        </Link>
-                                    </h3>
-                                </div>
+                    <Tab.Group as="div" className="mt-4">
+                        <div className="-mx-4 flex overflow-x-auto sm:mx-0">
+                            <div className="flex-auto px-4 border-b border-gray-200 sm:px-0">
+                                <Tab.List className="-mb-px flex space-x-10">
+                                    {tabs.map((tab) => (
+                                        <Tab
+                                            key={tab.name}
+                                            className={({ selected }) =>
+                                                classNames(
+                                                    selected
+                                                        ? 'border-blue-500 text-blue-600'
+                                                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
+                                                    'whitespace-nowrap py-6 border-b-2 font-medium text-base'
+                                                )
+                                            }
+                                        >
+                                            {tab.name}
+                                        </Tab>
+                                    ))}
+                                </Tab.List>
                             </div>
-                        ))}
-                    </div>
+                        </div>
 
-                    <div className="border-t mt-16 border-gray-200"></div>
-
-                    <div className="flex items-center justify-between space-x-4 mt-8">
-                        <h2 className="text-lg font-medium text-gray-900">27-inch Models</h2>
-                    </div>
-
-                    <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-                        {models.filter(models => models.size == 27).map(filteredModel => (
-                            <div key={filteredModel.id} className="relative group">
-                                <div className="aspect-w-3 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
-                                    <img src={filteredModel.image} alt={filteredModel.alt} className="object-center object-cover" />
-                                    <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" aria-hidden="true">
-                                        <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
-                                            View Repairs
-                                        </div>
+                        <Tab.Panels as={Fragment}>
+                            {tabs.map((tab) => (
+                                <Tab.Panel key={tab.name} className="space-y-16 pt-10 lg:pt-16">
+                                    <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                                        {models.filter(models => models.size == tab.size).map(filteredModel => (
+                                            <div key={filteredModel.id} className="relative group">
+                                                <div className="aspect-w-3 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+                                                    <img src={filteredModel.image} alt={filteredModel.alt} className="object-center object-cover" />
+                                                    <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" aria-hidden="true">
+                                                        <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
+                                                            View Repairs
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="mt-4 flex items-center justify-between text-base font-semibold text-gray-900 space-x-8">
+                                                    <h3 className="breakAtHyphen">
+                                                        <Link href={filteredModel.href}>
+                                                            <a>
+                                                                <span aria-hidden="true" className="absolute inset-0" />
+                                                                {filteredModel.name}
+                                                            </a>
+                                                        </Link>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
-                                </div>
-                                <div className="mt-4 flex items-center justify-between text-base font-semibold text-gray-900 space-x-8">
-                                    <h3>
-                                        <Link href={filteredModel.href}>
-                                            <a>
-                                                <span aria-hidden="true" className="absolute inset-0" />
-                                                {filteredModel.name}
-                                            </a>
-                                        </Link>
-                                    </h3>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
+                                </Tab.Panel>
+                            ))}
+                        </Tab.Panels>
+                    </Tab.Group>
                 </div>
             </div>
 
