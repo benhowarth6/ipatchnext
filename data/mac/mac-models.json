@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "MacBook Air",
-        "image": "/mac/devices/mba-13.jpg",
+        "image": "/mac/devices/mba-13-retina.jpg",
         "href": "mac-repairs/macbook-air-repairs",
         "alt": "MacBook Air Repairs"
        },
@@ -16,7 +16,7 @@
        {
         "id": "3",
         "name": "iMac",
-        "image": "/mac/devices/imac-24.jpg",
+        "image": "/mac/devices/imac-27-5k.jpg",
         "href": "mac-repairs/imac-repairs",
         "alt": "iMac Repairs"
        },
