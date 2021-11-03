@@ -1,0 +1,22 @@
+[
+    {
+        "id": "0",
+        "price": "null"
+    },
+    {
+        "id": "13-pro-max-display",
+        "name": "Display Assembly",
+        "model": "iPhone 13 Pro Max",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/iphone/devices/13-pro-max.jpg",
+        "price": 309
+    },
+    {
+        "id": "13-pro-max-battery",
+        "name": "Battery",
+        "model": "iPhone 13 Pro Max",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/iphone/devices/13-pro-max.jpg",
+        "price": 85
+    }
+]

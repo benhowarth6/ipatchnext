@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the MacBook Pro 15-inch Retina. Including screen replacements, batteries and much more.",
   imageSrc: '/mac/devices/mbp-15-retina.jpg',
   imageAlt: 'Image of an MacBook Pro 15-inch Retina.',
-  imageAlt2: 'Image of the rear of an MacBook Pro 15-inch Retina.',
   breadcrumbs: [
     { id: 1, name: 'Mac Repairs', href: '/mac-repairs' },
     { id: 2, name: 'MacBook Pro Repairs', href: '../macbook-pro-repairs' },

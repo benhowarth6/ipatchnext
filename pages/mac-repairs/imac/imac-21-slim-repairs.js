@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the iMac 21.5-inch Slim. Including screen replacements, batteries and much more.",
   imageSrc: '/mac/devices/imac-21-slim.jpg',
   imageAlt: 'Image of an iMac 21.5-inch Slim.',
-  imageAlt2: 'Image of the rear of an iMac 21.5-inch Slim.',
   breadcrumbs: [
     { id: 1, name: 'Mac Repairs', href: '/mac-repairs' },
     { id: 2, name: 'iMac Repairs', href: '../imac-repairs' },

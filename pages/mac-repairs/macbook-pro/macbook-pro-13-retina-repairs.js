@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the MacBook Pro 13-inch Retina. Including screen replacements, batteries and much more.",
   imageSrc: '/mac/devices/mbp-13-retina.jpg',
   imageAlt: 'Image of an MacBook Pro 13-inch Retina.',
-  imageAlt2: 'Image of the rear of an MacBook Pro 13-inch Retina.',
   breadcrumbs: [
     { id: 1, name: 'Mac Repairs', href: '/mac-repairs' },
     { id: 2, name: 'MacBook Pro Repairs', href: '../macbook-pro-repairs' },

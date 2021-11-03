@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the iPad Mini 4. Including screen replacements, batteries and much more.",
   imageSrc: '/ipad/devices/ipad-mini-4.jpg',
   imageAlt: 'Image of an iPad Mini 4.',
-  imageAlt2: 'Image of the rear of an iPad Mini 4.',
   breadcrumbs: [
     { id: 1, name: 'iPad Repairs', href: '/ipad-repairs' },
     { id: 2, name: 'iPad Mini Repairs', href: '../ipad-mini-repairs' },

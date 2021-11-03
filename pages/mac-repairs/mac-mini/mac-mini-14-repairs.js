@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the Mac Mini 2014. Including screen replacements, batteries and much more.",
   imageSrc: '/mac/devices/mac-mini-14.jpg',
   imageAlt: 'Image of an Mac Mini 2014.',
-  imageAlt2: 'Image of the rear of an Mac Mini 2014.',
   breadcrumbs: [
     { id: 1, name: 'Mac Repairs', href: '/mac-repairs' },
     { id: 2, name: 'Mac Mini Repairs', href: '../mac-mini-repairs' },

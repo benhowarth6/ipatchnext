@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the iPad 2nd Generation. Including screen replacements, batteries and much more.",
   imageSrc: '/ipad/devices/ipad-2.jpg',
   imageAlt: 'Image of an iPad 2nd Generation.',
-  imageAlt2: 'Image of the rear of an iPad 2nd Generation.',
   breadcrumbs: [
     { id: 1, name: 'iPad Repairs', href: '/ipad-repairs' },
     { id: 2, name: 'iPad Repairs', href: '../ipad-repairs' },

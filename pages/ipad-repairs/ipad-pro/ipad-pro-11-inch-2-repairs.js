@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the iPad Pro 11-inch 2nd Generation. Including screen replacements, batteries and much more.",
   imageSrc: '/ipad/devices/ipad-pro-11-2.jpg',
   imageAlt: 'Image of an iPad Pro 11-inch 2nd Generation.',
-  imageAlt2: 'Image of the rear of an iPad Pro 11-inch 2nd Generation.',
   breadcrumbs: [
     { id: 1, name: 'iPad Repairs', href: '/ipad-repairs' },
     { id: 2, name: 'iPad Pro Repairs', href: '../ipad-pro-repairs' },

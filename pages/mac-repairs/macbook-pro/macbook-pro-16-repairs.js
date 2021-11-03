@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the MacBook Pro 16-inch. Including screen replacements, batteries and much more.",
   imageSrc: '/mac/devices/mbp-16.jpg',
   imageAlt: 'Image of an MacBook Pro 16-inch.',
-  imageAlt2: 'Image of the rear of an MacBook Pro 16-inch.',
   breadcrumbs: [
     { id: 1, name: 'Mac Repairs', href: '/mac-repairs' },
     { id: 2, name: 'MacBook Pro Repairs', href: '../macbook-pro-repairs' },

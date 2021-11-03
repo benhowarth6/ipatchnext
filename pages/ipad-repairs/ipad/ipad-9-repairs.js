@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the iPad 9th Generation. Including screen replacements, batteries and much more.",
   imageSrc: '/ipad/devices/ipad-9.jpg',
   imageAlt: 'Image of an iPad 9th Generation.',
-  imageAlt2: 'Image of the rear of an iPad 9th Generation.',
   breadcrumbs: [
     { id: 1, name: 'iPad Repairs', href: '/ipad-repairs' },
     { id: 2, name: 'iPad Repairs', href: '../ipad-repairs' },

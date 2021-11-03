@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the iPad Air 1. Including screen replacements, batteries and much more.",
   imageSrc: '/ipad/devices/ipad-air-1.jpg',
   imageAlt: 'Image of an iPad Air 1.',
-  imageAlt2: 'Image of the rear of an iPad Air 1.',
   breadcrumbs: [
     { id: 1, name: 'iPad Repairs', href: '/ipad-repairs' },
     { id: 2, name: 'iPad Air Repairs', href: '../ipad-air-repairs' },

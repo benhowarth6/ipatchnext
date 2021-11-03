@@ -20,7 +20,6 @@ const product = {
   meta: "We offer a comprehensive set of repairs for the iMac 27-inch 5K. Including screen replacements, batteries and much more.",
   imageSrc: '/mac/devices/imac-27-5k.jpg',
   imageAlt: 'Image of an iMac 27-inch 5K.',
-  imageAlt2: 'Image of the rear of an iMac 27-inch 5K.',
   breadcrumbs: [
     { id: 1, name: 'Mac Repairs', href: '/mac-repairs' },
     { id: 2, name: 'iMac Repairs', href: '../imac-repairs' },

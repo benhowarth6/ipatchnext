@@ -6,24 +6,23 @@ import { QuestionMarkCircleIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ShieldCheckIcon } from '@heroicons/react/outline'
 
-import Navigation from "../../../components/Navigation";
-import Details from "../../../components/ipad-repair/Details";
-import Incentives from "../../../components/ipad-repair/Incentives";
-import Footer from "../../../components/Footer";
+import Navigation from "../../components/Navigation";
+import Details from "../../components/watch-repair/Details";
+import Incentives from "../../components/watch-repair/Incentives";
+import Footer from "../../components/Footer";
 
-import repairs from "../../../data/ipad/ipad-repairs.json";
+import repairs from "../../data/watch/watch-repairs.json";
 
 const product = {
-  name: 'iPad 6th Generation Repairs',
-  model: 'iPad 6th Generation',
-  description: "We offer a comprehensive set of repairs for the iPad 6th Generation. Including screen replacements, batteries and much more.",
-  meta: "We offer a comprehensive set of repairs for the iPad 6th Generation. Including screen replacements, batteries and much more.",
-  imageSrc: '/ipad/devices/ipad-6.jpg',
-  imageAlt: 'Image of an iPad 6th Generation.',
+  name: 'Apple Watch Series 3 Repairs',
+  model: 'Apple Watch Series 3',
+  description: "We offer a comprehensive set of repairs for the Apple Watch Series 3. Including screen replacements, batteries and much more.",
+  meta: "We offer a comprehensive set of repairs for the Apple Watch Series 3. Including screen replacements, batteries and much more.",
+  imageSrc: '/watch/devices/series-3.jpg',
+  imageAlt: 'Image of an Apple Watch Series 3.',
   breadcrumbs: [
-    { id: 1, name: 'iPad Repairs', href: '/ipad-repairs' },
-    { id: 2, name: 'iPad Repairs', href: '../ipad-repairs' },
-    { id: 3, name: 'iPad 6th Generation', href: '#' },
+    { id: 1, name: 'Watch Repairs', href: '/watch-repairs' },
+    { id: 2, name: 'Apple Watch Series 3', href: '#' },
   ],
   highlights: [
     'Most repairs are completed within the hour',
@@ -51,7 +50,7 @@ export default function RepairPage() {
           key="desc"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/ipad-repairs/ipad/ipad-6-repairs/" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/watch-repairs/watch-series-3-repairs/" />
         <meta property="og:title" content={product.name} />
         <meta
           property="og:description"
