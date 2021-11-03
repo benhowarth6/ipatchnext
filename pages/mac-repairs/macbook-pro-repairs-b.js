@@ -116,7 +116,7 @@ export default function Home() {
                                                     </div>
                                                 </div>
                                                 <div className="mt-4 flex items-center justify-between text-base font-semibold text-gray-900 space-x-8">
-                                                    <h3>
+                                                    <h3 className="breakAtHyphen">
                                                         <Link href={filteredModel.href}>
                                                             <a>
                                                                 <span aria-hidden="true" className="absolute inset-0" />
