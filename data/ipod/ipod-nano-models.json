@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "name": "Nano 6",
+      "image": "/ipod/devices/ipod-nano-6.jpg",
+      "href": "ipod-nano/ipod-nano-6-repairs",
+      "alt": "iPod Nano 6th Generation Repairs"
+    },
+    {
+      "id": "2",
+      "name": "Nano 5",
+      "image": "/ipod/devices/ipod-nano-5.jpg",
+      "href": "ipod-nano/ipod-nano-5-repairs",
+      "alt": "iPod Nano 5th Generation Repairs"
+    },
+    {
+      "id": "3",
+      "name": "Nano 4",
+      "image": "/ipod/devices/ipod-nano-4.jpg",
+      "href": "ipod-nano/ipod-nano-4-repairs",
+      "alt": "iPod Nano 4th Generation Repairs"
+    },
+    {
+      "id": "4",
+      "name": "Nano 3",
+      "image": "/ipod/devices/ipod-nano-3.jpg",
+      "href": "ipod-nano/ipod-nano-3-repairs",
+      "alt": "iPod Nano 3rd Generation Repairs"
+    },
+    {
+      "id": "5",
+      "name": "Nano 2",
+      "image": "/ipod/devices/ipod-nano-2.jpg",
+      "href": "ipod-nano/ipod-nano-2-repairs",
+      "alt": "iPod Nano 2nd Generation Repairs"
+    }
+  ]
+  

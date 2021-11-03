@@ -1,0 +1,110 @@
+[
+  {
+    "id": "0",
+    "price": "null"
+  },
+  {
+    "id": "ipod-nano-6-display",
+    "name": "Screen Replacement",
+    "model": "iPod Nano 6",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/ipod/devices/ipod-nano-6.jpg",
+    "price": 35
+  },
+  {
+    "id": "ipod-nano-6-battery",
+    "name": "Battery Replacement",
+    "model": "iPod Nano 6",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipod/devices/ipod-nano-6.jpg",
+    "price": 35
+  },
+  {
+    "id": "ipod-nano-6-top-button",
+    "name": "Top Buttons",
+    "model": "iPod Nano 6",
+    "description": "New buttons if yours have stopped clicking.",
+    "image": "/ipod/devices/ipod-nano-6.jpg",
+    "price": 25
+  },
+  {
+    "id": "ipod-nano-5-glass",
+    "name": "Glass Replacement",
+    "model": "iPod Nano 5",
+    "description": "A new glass display assembly to repair a damaged screen.",
+    "image": "/ipod/devices/ipod-nano-6.jpg",
+    "price": 15
+  },
+  {
+    "id": "ipod-nano-5-lcd",
+    "name": "LCD Replacement",
+    "model": "iPod Nano 5",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/ipod/devices/ipod-nano-5.jpg",
+    "price": 35
+  },
+  {
+    "id": "ipod-nano-4-glass",
+    "name": "Glass Replacement",
+    "model": "iPod Nano 4",
+    "description": "A new glass display assembly to repair a damaged screen.",
+    "image": "/ipod/devices/ipod-nano-4.jpg",
+    "price": 15
+  },
+  {
+    "id": "ipod-nano-4-lcd",
+    "name": "LCD Replacement",
+    "model": "iPod Nano 4",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/ipod/devices/ipod-nano-4.jpg",
+    "price": 35
+  },
+  {
+    "id": "ipod-nano-3-glass",
+    "name": "Glass Replacement",
+    "model": "iPod Nano 3",
+    "description": "A new glass display assembly to repair a damaged screen.",
+    "image": "/ipod/devices/ipod-nano-3.jpg",
+    "price": 35
+  },
+  {
+    "id": "ipod-nano-3-lcd",
+    "name": "LCD Replacement",
+    "model": "iPod Nano 3",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/ipod/devices/ipod-nano-3.jpg",
+    "price": 35
+  },
+  {
+    "id": "ipod-nano-2-lcd",
+    "name": "LCD Replacement",
+    "model": "iPod Nano 2",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/ipod/devices/ipod-nano-2.jpg",
+    "price": 25
+  },
+  {
+    "id": "ipod-nano-2-battery",
+    "name": "Battery Replacement",
+    "model": "iPod Nano 2",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/ipod/devices/ipod-nano-2.jpg",
+    "price": 25
+  },
+  {
+    "id": "ipod-nano-2-click-wheel",
+    "name": "Click Wheel",
+    "model": "iPod Nano 2",
+    "description": "A new click wheel if yours isn't responding.",
+    "image": "/ipod/devices/ipod-nano-2.jpg",
+    "price": 25
+  },
+  {
+    "id": "ipod-nano-2-headphone-jack",
+    "name": "Headphone Jack",
+    "model": "iPod Nano 2",
+    "description": "A new headphone jack to restore audio output.",
+    "image": "/ipod/devices/ipod-nano-2.jpg",
+    "price": 25
+  }
+]
