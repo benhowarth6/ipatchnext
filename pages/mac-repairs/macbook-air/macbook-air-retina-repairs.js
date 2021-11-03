@@ -18,7 +18,7 @@ const product = {
   model: 'MacBook Air Retina',
   description: "We offer a comprehensive set of repairs for the MacBook Air Retina. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the MacBook Air Retina. Including screen replacements, batteries and much more.",
-  imageSrc: '/mac/devices/macbook-air-retina.jpg',
+  imageSrc: '/mac/devices/mba-13-retina.jpg',
   imageAlt: 'Image of an MacBook Air Retina.',
   breadcrumbs: [
     { id: 1, name: 'Mac Repairs', href: '/mac-repairs' },
