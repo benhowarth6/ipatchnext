@@ -62,22 +62,6 @@
         "image": "/mac/devices/mbp-16.jpg",
         "href": "macbook-pro/macbook-pro-16-2019-repairs",
         "alt": "MacBook Pro 16-inch 2019 Repairs"
-       },
-       {
-        "id": "9",
-        "size": "16",
-        "name": "MacBook Pro 14-inch M1",
-        "image": "/mac/devices/mbp-14.jpg",
-        "href": "macbook-pro/macbook-pro-14-repairs",
-        "alt": "MacBook Pro 14-inch M1 Repairs"
-       },
-       {
-        "id": "10",
-        "size": "16",
-        "name": "MacBook Pro 16-inch M1",
-        "image": "/mac/devices/mbp-16-m1.jpg",
-        "href": "macbook-pro/macbook-pro-16-m1-repairs",
-        "alt": "MacBook Pro 16-inch M1 Repairs"
-       }         
+       }       
      ]
   
