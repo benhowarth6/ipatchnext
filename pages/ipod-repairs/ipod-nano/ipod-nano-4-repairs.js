@@ -14,8 +14,8 @@ import Footer from "../../../components/Footer";
 import repairs from "../../../data/ipod/ipod-repairs.json";
 
 const product = {
-  name: 'iPod Nano 4 Repairs',
-  model: 'iPod Nano 4',
+  name: 'iPod Nano 4th Generation Repairs',
+  model: 'iPod Nano 4th Generation',
   description: "We offer a comprehensive set of repairs for the iPod Nano 4. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPod Nano 4. Including screen replacements, batteries and much more.",
   imageSrc: '/ipod/devices/ipod-nano-4.jpg',

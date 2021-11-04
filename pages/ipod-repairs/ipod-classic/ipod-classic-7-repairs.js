@@ -14,8 +14,8 @@ import Footer from "../../../components/Footer";
 import repairs from "../../../data/ipod/ipod-repairs.json";
 
 const product = {
-  name: 'iPod Classic 7 Repairs',
-  model: 'iPod Classic 7',
+  name: 'iPod Classic 7th Generation Repairs',
+  model: 'iPod Classic 7th Generation',
   description: "We offer a comprehensive set of repairs for the iPod Classic 7. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPod Classic 7. Including screen replacements, batteries and much more.",
   imageSrc: '/ipod/devices/ipod-classic-7.jpg',

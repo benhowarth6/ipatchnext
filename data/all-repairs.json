@@ -6020,5 +6020,765 @@
         "description": "Book your device in with us diagnosis if you aren't sure.",
         "image": "/watch/devices/series-1.jpg",
         "price": 0
+    },
+    {
+      "id": "ipod-nano-6-display",
+      "name": "Screen Replacement",
+      "model": "iPod Nano 6th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-nano-6.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-nano-6-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Nano 6th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-nano-6.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-nano-6-top-button",
+      "name": "Top Buttons",
+      "model": "iPod Nano 6th Generation",
+      "description": "New buttons if yours have stopped clicking.",
+      "image": "/ipod/devices/ipod-nano-6.jpg",
+      "price": 25
+    },
+    {
+      "id": "ipod-nano-6-unsure",
+      "name": "Unsure",
+      "model": "iPod Nano 6th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-nano-6.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-nano-5-glass",
+      "name": "Glass Replacement",
+      "model": "iPod Nano 5th Generation",
+      "description": "A new glass display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-nano-6.jpg",
+      "price": 15
+    },
+    {
+      "id": "ipod-nano-5-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Nano 5th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-nano-5.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-nano-5-unsure",
+      "name": "Unsure",
+      "model": "iPod Nano 5th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-nano-5.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-nano-4-glass",
+      "name": "Glass Replacement",
+      "model": "iPod Nano 4th Generation",
+      "description": "A new glass display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-nano-4.jpg",
+      "price": 15
+    },
+    {
+      "id": "ipod-nano-4-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Nano 4th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-nano-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-nano-4-unsure",
+      "name": "Unsure",
+      "model": "iPod Nano 4th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-nano-4.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-nano-3-glass",
+      "name": "Glass Replacement",
+      "model": "iPod Nano 3rd Generation",
+      "description": "A new glass display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-nano-3.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-nano-3-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Nano 3rd Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-nano-3.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-nano-3-unsure",
+      "name": "Unsure",
+      "model": "iPod Nano 3rd Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-nano-3.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-nano-2-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Nano 2nd Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-nano-2.jpg",
+      "price": 25
+    },
+    {
+      "id": "ipod-nano-2-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Nano 2nd Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-nano-2.jpg",
+      "price": 25
+    },
+    {
+      "id": "ipod-nano-2-click-wheel",
+      "name": "Click Wheel",
+      "model": "iPod Nano 2nd Generation",
+      "description": "A new click wheel if yours isn't responding.",
+      "image": "/ipod/devices/ipod-nano-2.jpg",
+      "price": 25
+    },
+    {
+      "id": "ipod-nano-2-headphone-jack",
+      "name": "Headphone Jack",
+      "model": "iPod Nano 2nd Generation",
+      "description": "A new headphone jack to restore audio output.",
+      "image": "/ipod/devices/ipod-nano-2.jpg",
+      "price": 25
+    },
+    {
+      "id": "ipod-nano-2-unsure",
+      "name": "Unsure",
+      "model": "iPod Nano 2nd Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-nano-2.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-classic-7-logic-board",
+      "name": "Logic Board",
+      "model": "iPod Classic 7th Generation",
+      "description": "If your iPod is having logic board issues, we can replace it.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 90
+    },
+    {
+      "id": "ipod-classic-7-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Classic 7th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 40
+    },
+    {
+      "id": "ipod-classic-7-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Classic 7th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 40
+    },
+    {
+      "id": "ipod-classic-7-headphone-jack",
+      "name": "Headphone Jack",
+      "model": "iPod Classic 7th Generation",
+      "description": "A new headphone jack to restore audio output.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-7-click-wheel",
+      "name": "Click Wheel",
+      "model": "iPod Classic 7th Generation",
+      "description": "A new click wheel if yours isn't responding.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-7-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Classic 7th Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-7-120gb-ssd",
+      "name": "120GB SSD",
+      "model": "iPod Classic 7th Generation",
+      "description": "A new 120GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 120
+    },
+    {
+      "id": "ipod-classic-7-240gb-ssd",
+      "name": "240GB SSD",
+      "model": "iPod Classic 7th Generation",
+      "description": "A new 240GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 160
+    },
+    {
+      "id": "ipod-classic-7-500gb-ssd",
+      "name": "500GB SSD",
+      "model": "iPod Classic 7th Generation",
+      "description": "A new 500GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 240
+    },
+    {
+      "id": "ipod-classic-7-unsure",
+      "name": "Unsure",
+      "model": "iPod Classic 7th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-classic-7.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-classic-6-logic-board",
+      "name": "Logic Board",
+      "model": "iPod Classic 6th Generation",
+      "description": "If your iPod is having logic board issues, we can replace it.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 90
+    },
+    {
+      "id": "ipod-classic-6-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Classic 6th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 40
+    },
+    {
+      "id": "ipod-classic-6-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Classic 6th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 40
+    },
+    {
+      "id": "ipod-classic-6-headphone-jack",
+      "name": "Headphone Jack",
+      "model": "iPod Classic 6th Generation",
+      "description": "A new headphone jack to restore audio output.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-6-click-wheel",
+      "name": "Click Wheel",
+      "model": "iPod Classic 6th Generation",
+      "description": "A new click wheel if yours isn't responding.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-6-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Classic 6th Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-6-120gb-ssd",
+      "name": "120GB SSD",
+      "model": "iPod Classic 6th Generation",
+      "description": "A new 120GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 120
+    },
+    {
+      "id": "ipod-classic-6-240gb-ssd",
+      "name": "240GB SSD",
+      "model": "iPod Classic 6th Generation",
+      "description": "A new 240GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 160
+    },
+    {
+      "id": "ipod-classic-6-500gb-ssd",
+      "name": "500GB SSD",
+      "model": "iPod Classic 6th Generation",
+      "description": "A new 500GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 240
+    },
+    {
+      "id": "ipod-classic-6-unsure",
+      "name": "Unsure",
+      "model": "iPod Classic 6th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-classic-6.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-classic-5-logic-board",
+      "name": "Logic Board",
+      "model": "iPod Video 5th Generation",
+      "description": "If your iPod is having logic board issues, we can replace it.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 60
+    },
+    {
+      "id": "ipod-classic-5-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Video 5th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-5-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Video 5th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-5-headphone-jack",
+      "name": "Headphone Jack",
+      "model": "iPod Video 5th Generation",
+      "description": "A new headphone jack to restore audio output.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-5-click-wheel",
+      "name": "Click Wheel",
+      "model": "iPod Video 5th Generation",
+      "description": "A new click wheel if yours isn't responding.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-5-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Video 5th Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-5-120gb-ssd",
+      "name": "120GB SSD",
+      "model": "iPod Video 5th Generation",
+      "description": "A new 120GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 120
+    },
+    {
+      "id": "ipod-classic-5-240gb-ssd",
+      "name": "240GB SSD",
+      "model": "iPod Video 5th Generation",
+      "description": "A new 240GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 160
+    },
+    {
+      "id": "ipod-classic-5-500gb-ssd",
+      "name": "500GB SSD",
+      "model": "iPod Video 5th Generation",
+      "description": "A new 500GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 240
+    },
+    {
+      "id": "ipod-classic-5-unsure",
+      "name": "Unsure",
+      "model": "iPod Video 5th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-classic-5.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-classic-4-logic-board",
+      "name": "Logic Board",
+      "model": "iPod Classic 4th Generation",
+      "description": "If your iPod is having logic board issues, we can replace it.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 60
+    },
+    {
+      "id": "ipod-classic-4-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Classic 4th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-4-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Classic 4th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-4-headphone-jack",
+      "name": "Headphone Jack",
+      "model": "iPod Classic 4th Generation",
+      "description": "A new headphone jack to restore audio output.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-4-click-wheel",
+      "name": "Click Wheel",
+      "model": "iPod Classic 4th Generation",
+      "description": "A new click wheel if yours isn't responding.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-4-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Classic 4th Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-classic-4-120gb-ssd",
+      "name": "120GB SSD",
+      "model": "iPod Classic 4th Generation",
+      "description": "A new 120GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 120
+    },
+    {
+      "id": "ipod-classic-4-240gb-ssd",
+      "name": "240GB SSD",
+      "model": "iPod Classic 4th Generation",
+      "description": "A new 240GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 160
+    },
+    {
+      "id": "ipod-classic-4-500gb-ssd",
+      "name": "500GB SSD",
+      "model": "iPod Classic 4th Generation",
+      "description": "A new 500GB SSD to replace your iPod's HDD.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 240
+    },
+    {
+      "id": "ipod-classic-4-unsure",
+      "name": "Unsure",
+      "model": "iPod Classic 4th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-classic-4.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-touch-7-display",
+      "name": "Screen Replacement",
+      "model": "iPod Touch 7th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-touch-7.jpg",
+      "price": 85
+    },
+    {
+      "id": "ipod-touch-7-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Touch 7th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-touch-7.jpg",
+      "price": 45
+    },
+    {
+      "id": "ipod-touch-7-front-camera",
+      "name": "Front Camera",
+      "model": "iPod Touch 7th Generation",
+      "description": "A new front camera if yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-7.jpg",
+      "price": 50
+    },
+    {
+      "id": "ipod-touch-7-rear-camera",
+      "name": "Rear Camera",
+      "model": "iPod Touch 7th Generation",
+      "description": "A new rear camera if yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-7.jpg",
+      "price": 50
+    },
+    {
+      "id": "ipod-touch-7-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Touch 7th Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-7.jpg",
+      "price": 45
+    },
+    {
+      "id": "ipod-touch-7-unsure",
+      "name": "Unsure",
+      "model": "iPod Touch 7th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-touch-7.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-touch-6-display",
+      "name": "Screen Replacement",
+      "model": "iPod Touch 6th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-touch-6.jpg",
+      "price": 85
+    },
+    {
+      "id": "ipod-touch-6-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Touch 6th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-touch-6.jpg",
+      "price": 45
+    },
+    {
+      "id": "ipod-touch-6-front-camera",
+      "name": "Front Camera",
+      "model": "iPod Touch 6th Generation",
+      "description": "A new front camera if yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-6.jpg",
+      "price": 50
+    },
+    {
+      "id": "ipod-touch-6-rear-camera",
+      "name": "Rear Camera",
+      "model": "iPod Touch 6th Generation",
+      "description": "A new rear camera if yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-6.jpg",
+      "price": 50
+    },
+    {
+      "id": "ipod-touch-6-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Touch 6th Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-6.jpg",
+      "price": 45
+    },
+    {
+      "id": "ipod-touch-6-unsure",
+      "name": "Unsure",
+      "model": "iPod Touch 6th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-touch-6.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-touch-5-display",
+      "name": "Screen Replacement",
+      "model": "iPod Touch 5th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-touch-5.jpg",
+      "price": 85
+    },
+    {
+      "id": "ipod-touch-5-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Touch 5th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-touch-5.jpg",
+      "price": 45
+    },
+    {
+      "id": "ipod-touch-5-front-camera",
+      "name": "Front Camera",
+      "model": "iPod Touch 5th Generation",
+      "description": "A new front camera if yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-5.jpg",
+      "price": 50
+    },
+    {
+      "id": "ipod-touch-5-rear-camera",
+      "name": "Rear Camera",
+      "model": "iPod Touch 5th Generation",
+      "description": "A new rear camera if yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-5.jpg",
+      "price": 50
+    },
+    {
+      "id": "ipod-touch-5-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Touch 5th Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-5.jpg",
+      "price": 45
+    },
+    {
+      "id": "ipod-touch-5-unsure",
+      "name": "Unsure",
+      "model": "iPod Touch 5th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-touch-5.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-touch-4-display",
+      "name": "Screen Replacement",
+      "model": "iPod Touch 4th Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-touch-4.jpg",
+      "price": 60
+    },
+    {
+      "id": "ipod-touch-4-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Touch 4th Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-touch-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-4-front-camera",
+      "name": "Front Camera",
+      "model": "iPod Touch 4th Generation",
+      "description": "A new front camera if yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-4-rear-camera",
+      "name": "Rear Camera",
+      "model": "iPod Touch 4th Generation",
+      "description": "A new rear camera if yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-4-headphone-jack",
+      "name": "Headphone Jack",
+      "model": "iPod Touch 4th Generation",
+      "description": "A new headphone jack to restore audio output.",
+      "image": "/ipod/devices/ipod-touch-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-4-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Touch 4th Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-4.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-4-unsure",
+      "name": "Unsure",
+      "model": "iPod Touch 4th Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-touch-4.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-touch-3-glass",
+      "name": "Glass Replacement",
+      "model": "iPod Touch 3rd Generation",
+      "description": "A new glass display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-touch-3.jpg",
+      "price": 40
+    },
+    {
+      "id": "ipod-touch-3-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Touch 3rd Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-touch-3.jpg",
+      "price": 40
+    },
+    {
+      "id": "ipod-touch-3-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Touch 3rd Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-touch-3.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-3-headphone-jack",
+      "name": "Headphone Jack",
+      "model": "iPod Touch 3rd Generation",
+      "description": "A new headphone jack to restore audio output.",
+      "image": "/ipod/devices/ipod-touch-3.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-3-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Touch 3rd Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-3.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-3-unsure",
+      "name": "Unsure",
+      "model": "iPod Touch 3rd Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-touch-3.jpg",
+      "price": 0
+    },
+    {
+      "id": "ipod-touch-2-glass",
+      "name": "Glass Replacement",
+      "model": "iPod Touch 2nd Generation",
+      "description": "A new glass display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-touch-2.jpg",
+      "price": 40
+    },
+    {
+      "id": "ipod-touch-2-lcd",
+      "name": "LCD Replacement",
+      "model": "iPod Touch 2nd Generation",
+      "description": "A new LCD display assembly to repair a damaged screen.",
+      "image": "/ipod/devices/ipod-touch-2.jpg",
+      "price": 40
+    },
+    {
+      "id": "ipod-touch-2-battery",
+      "name": "Battery Replacement",
+      "model": "iPod Touch 2nd Generation",
+      "description": "A new battery to restore your device to 100%.",
+      "image": "/ipod/devices/ipod-touch-2.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-2-headphone-jack",
+      "name": "Headphone Jack",
+      "model": "iPod Touch 2nd Generation",
+      "description": "A new headphone jack to restore audio output.",
+      "image": "/ipod/devices/ipod-touch-2.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-2-button-fault",
+      "name": "Button Fault",
+      "model": "iPod Touch 2nd Generation",
+      "description": "A replacement button flex if one of yours isn't working.",
+      "image": "/ipod/devices/ipod-touch-2.jpg",
+      "price": 35
+    },
+    {
+      "id": "ipod-touch-2-unsure",
+      "name": "Unsure",
+      "model": "iPod Touch 2nd Generation",
+      "description": "Book your device in with us diagnosis if you aren't sure.",
+      "image": "/ipod/devices/ipod-touch-2.jpg",
+      "price": 0
     }
 ]

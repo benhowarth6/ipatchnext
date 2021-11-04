@@ -14,8 +14,8 @@ import Footer from "../../../components/Footer";
 import repairs from "../../../data/ipod/ipod-repairs.json";
 
 const product = {
-  name: 'iPod Touch 2 Repairs',
-  model: 'iPod Touch 2',
+  name: 'iPod Touch 2nd Generation Repairs',
+  model: 'iPod Touch 2nd Generation',
   description: "We offer a comprehensive set of repairs for the iPod Touch 2. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPod Touch 2. Including screen replacements, batteries and much more.",
   imageSrc: '/ipod/devices/ipod-touch-2.jpg',

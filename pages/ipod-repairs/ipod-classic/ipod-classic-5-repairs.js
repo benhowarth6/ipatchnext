@@ -14,8 +14,8 @@ import Footer from "../../../components/Footer";
 import repairs from "../../../data/ipod/ipod-repairs.json";
 
 const product = {
-  name: 'iPod Video 5 Repairs',
-  model: 'iPod Video 5',
+  name: 'iPod Video 5th Generation Repairs',
+  model: 'iPod Video 5th Generation',
   description: "We offer a comprehensive set of repairs for the iPod Video 5. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPod Video 5. Including screen replacements, batteries and much more.",
   imageSrc: '/ipod/devices/ipod-video-6.jpg',
