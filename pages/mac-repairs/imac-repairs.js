@@ -132,9 +132,6 @@ export default function Home() {
             </div>
 
             <Incentive />
-            <About />
-            <AboutFurther />
-            <Parts />
 
             <div className="bg-white">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

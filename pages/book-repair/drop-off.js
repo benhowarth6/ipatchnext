@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Fragment, useState } from 'react'
+import { Fragment, useState, forwardRef } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
@@ -53,12 +53,21 @@ export default function Example() {
     const { id } = router.query;
 
     const [startDate, setStartDate] = useState(new Date())
-    const handleChangeRaw = (value) => {
-    }
     const isWeekday = date => {
         const day = date.getDay();
         return day !== 1 && day !== 0;
     }
+    const CustomInput = forwardRef(({ value, onClick }, ref) => (
+        <input
+                                                    type="text"
+                                                    id="date"
+                                                    name="date"
+                                                    value={value}
+                                                    onClick={onClick} ref={ref}
+                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm custom-input"
+                                                />
+
+      ));
 
     return (
         <div>
@@ -359,6 +368,7 @@ export default function Example() {
                                                     <DatePicker
                                                         dateFormat="dd/MM/yyyy"
                                                         selected={startDate}
+                                                        customInput={<CustomInput />}
                                                         onChange={(date) => setStartDate(date)}
                                                         filterDate={isWeekday}
                                                         selectsStart
@@ -374,6 +384,7 @@ export default function Example() {
                                                         dateFormat="dd/MM/yyyy"
                                                         selected={startDate}
                                                         onChange={(date) => setStartDate(date)}
+                                                        customInput={<CustomInput />}
                                                         selectsStart
                                                         calendarStartDay={1}
                                                         minDate={subDays(new Date(), 0)}
@@ -453,7 +464,7 @@ export default function Example() {
                                     <Link
                                         href={{
                                             pathname: 'drop-off-confirmation',
-                                            query: { id: id, location: selectedAppointmentLocation.title, time: selected.name}
+                                            query: { id: id, location: selectedAppointmentLocation.title, time: selected.name }
                                         }}
                                     >
                                         <a

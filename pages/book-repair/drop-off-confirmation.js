@@ -23,6 +23,7 @@ export default function Example() {
     const { id } = router.query;
     const { location } = router.query;
     const { time } = router.query;
+    const { date } = router.query;
 
 
     return (
