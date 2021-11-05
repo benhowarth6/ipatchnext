@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const incentives = [
     {
@@ -39,12 +40,13 @@ export default function Example() {
                                 help you.
                             </p>
                             <div className="mt-6">
-                                <a
-                                    href="#"
-                                    className="inline-block bg-blue-600 border border-transparent py-3 px-8 rounded-md font-medium text-white hover:bg-blue-700"
-                                >
-                                    Contact us
-                                </a>
+                                <Link href="contact-us">
+                                    <a
+                                        className="inline-block bg-blue-600 border border-transparent py-3 px-8 rounded-md font-medium text-white hover:bg-blue-700"
+                                    >
+                                        Contact us
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">

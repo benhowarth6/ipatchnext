@@ -1,548 +1,122 @@
-import Head from "next/head";
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { NextSeo } from "next-seo";
-import { CheckIcon } from "@heroicons/react/outline";
+import Head from 'next/head'
+import Link from 'next/link'
+import { useState } from 'react'
 
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Navigation from "../components/Navigation"
+import Footer from "../components/Footer"
+import Incentive from "../components/Incentive"
+import Services from "../components/Services"
+import Business from "../components/Business"
 
-const features = [
+const categories = [
   {
-    name: 'Quality parts',
-    description: 'We only use the best available parts, to ensure maximum compatibility and no issues.',
-    icon: CheckIcon,
+    name: 'iPhone Repairs',
+    href: 'iphone-repairs',
+    imageSrc: 'https://images.unsplash.com/photo-1632633728024-e1fd4bef561a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
   },
   {
-    name: 'Fast repairs',
-    description: 'The majority of our repairs are completed in under 1 hour, most are even quicker.',
-    icon: CheckIcon,
+    name: 'iPad Repairs',
+    href: 'ipad-repairs',
+    imageSrc: 'https://images.unsplash.com/photo-1632633726419-3e5e7d74ca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
   },
   {
-    name: 'No inspection fees',
-    description: 'We dont charge any fees to inspect your device and proivide a quotation for a repair.',
-    icon: CheckIcon,
+    name: 'Mac Repairs',
+    href: 'mac-repairs',
+    imageSrc: 'https://images.unsplash.com/photo-1635310568932-47fd9c961c26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
   },
   {
-    name: 'Experience',
-    description: 'We have a combined 40 years experience in the repair of iPhones.',
-    icon: CheckIcon,
+    name: 'Watch Repairs',
+    href: 'watch-repairs',
+    imageSrc: 'https://images.unsplash.com/photo-1541351991055-b55135fea4bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3029&q=80',
   },
-  {
-    name: 'Board repairs',
-    description: 'We offer a variety of logic board repairs, should your device have a more serious issue.',
-    icon: CheckIcon,
-  },
-  {
-    name: 'Liquid damage',
-    description: 'If your device has liquid damage, we offer a thorough cleaning service to restore your device.',
-    icon: CheckIcon,
-  },
-  {
-    name: 'Data recovery',
-    description: 'If your device isnt powering on, we can attempt data recovery using a number of methods.',
-    icon: CheckIcon,
-  },
-  {
-    name: 'Warranty',
-    description: 'We warranty all of our repairs against defects or workmanship.',
-    icon: CheckIcon,
-  },
+  { name: 'iPod Repairs', href: 'ipad-repairs', imageSrc: 'https://images.unsplash.com/photo-1634619256987-962389b913be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5342&q=80' },
 ]
 
-export default function Home() {
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
-    <div>
-      <NextSeo
-        title="Find a Repair with us - iPatch"
-        description="Find a repair for a device you need repairing. We accept both mail in and drop off repairs."
-      />
-      <Navigation />
+    <>
+      <Head>
+        <title>
+          iPhone, iPad & Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch
+        </title>
+        <meta
+          name="description"
+          content="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+          key="desc"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk" />
+        <meta property="og:title" content="iPhone, iPad & Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch" />
+        <meta
+          property="og:description"
+          content="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+        />
+        <meta
+          property="og:image"
+          content="https://www.ipatchrepairs.co.uk/social.jpg"
+        />
+      </Head>
+      <div className="bg-white">
+        <Navigation />
 
-      <div className="bg-gray-800">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Find a repair</p>
-            <p className="max-w-2xl mt-5 mx-auto text-xl text-white">Choose your type of device below to see our available repairs.</p>
+        <div className="bg-gray-50">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+            <div className="py-24 text-center">
+              <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">Find a repair</h1>
+              <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
+                We offer a large selection of iPhone repairs including screens, batteries, charging ports and more for nearly all models.
+              </p>
+            </div>
           </div>
         </div>
+
+        <main>
+          {/* Category section */}
+          <section aria-labelledby="category-heading" className="py-24 sm:py-32 xl:max-w-7xl xl:mx-auto xl:px-8">
+            <div className="px-4 sm:px-6 sm:flex sm:items-center sm:justify-between lg:px-8 xl:px-0">
+              <h2 id="category-heading" className="text-2xl font-extrabold tracking-tight text-gray-900">
+                Devices we repair
+              </h2>
+            </div>
+
+            <div className="mt-4 flow-root">
+              <div className="-my-2">
+                <div className="box-content py-2 relative h-80 overflow-x-auto xl:overflow-visible">
+                  <div className="absolute min-w-screen-xl px-4 flex space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-5 xl:gap-x-8">
+                    {categories.map((category) => (
+                      <Link href={category.href}>
+                      <a
+                        key={category.name}
+                        className="relative w-56 h-80 rounded-lg p-6 flex flex-col overflow-hidden hover:opacity-75 xl:w-auto"
+                      >
+                        <span aria-hidden="true" className="absolute inset-0">
+                          <img src={category.imageSrc} alt="" className="w-full h-full object-center object-cover" />
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
+                        />
+                        <span className="relative mt-auto text-center text-xl font-bold text-white">{category.name}</span>
+                      </a>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <Incentive />
+          
+        </main>
+        <Footer />
       </div>
-
-      <div className="bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-              Select your device
-            </h2>
-            <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-              Click on your device model below to view repairs.
-            </p>
-          </div>
-
-          <div className="mt-12 max-w-lg mx-auto grid gap-5 md:grid-cols-2 lg:grid-cols-5 lg:max-w-none">
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`iphone-repairs`}>
-                  <a>
-                    <Image
-                      src="/devices/iphones.jpg"
-                      alt="iPhone Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                  <Link href={`iphone-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900 line-clamp-6">
-                        iPhone Repairs
-                      </a>
-                    </Link>
-                    <Link href={`iphone-repairs`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Models
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-              <Link href={`ipad-repairs`}>
-                  <a>
-                    <Image
-                      src="/devices/ipads.jpg"
-                      alt="iPad Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center line-clamp-3">
-                    <Link href={`ipad-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900 line-clamp-6">
-                        iPad Repairs
-                      </a>
-                    </Link>
-                    <Link href={`ipad-repairs`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Models
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-              <Link href={`mac-repairs`}>
-                  <a>
-                    <Image
-                      src="/devices/macs.jpg"
-                      alt="Mac Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                  <Link href={`mac-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Mac Repairs
-                      </a>
-                    </Link>
-                    <Link href={`mac-repairs`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Models
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`watch-repairs`}>
-                  <a>
-                    <Image
-                      src="/devices/watches.jpg"
-                      alt="Apple Watch Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                  <Link href={`watch-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        Watch Repairs
-                      </a>
-                    </Link>
-                    <Link href={`watch-repairs`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Models
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-              <div className="flex-shrink-0 bg-white">
-                <Link href={`ipod-repairs`}>
-                  <a>
-                    <Image
-                      src="/devices/ipods.jpg"
-                      alt="iPod Repairs"
-                      className="h-60 w-full object-cover"
-                      width={1000}
-                      height={750}
-                    />
-                  </a>
-                </Link>
-              </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                <div className="flex-1">
-                  <div className="text-center">
-                  <Link href={`ipod-repairs`}>
-                      <a className="text-xl font-semibold text-gray-900">
-                        iPod Repairs
-                      </a>
-                    </Link>
-                    <Link href={`ipod-repairs`}>
-                      <button className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">
-                        View Models
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="bg-gray-50 pt-16 pb-20 lg:pt-24 lg:pb-28 lg:px-8 md:hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center">
-            <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-              Select your device
-            </h2>
-            <p className="py-4 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-              Click on your device below to view repairs.
-            </p>
-          </div>
-        </div>
-        <div className="max-w-2xl mx-auto sm:px-6 pt-12">
-          <ul className="space-y-3" data-todo-x-max="1">
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`iphone-repairs`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/devices/iphones-256.png"
-                          alt="iPhone Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            iPhone Repairs
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`ipad-repairs`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/devices/ipads-256.png"
-                          alt="iPad Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            iPad Repairs
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`mac-repairs`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/devices/macs-256.png"
-                          alt="Mac Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Mac Repairs
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`watch-repairs`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/devices/watches-256.png"
-                          alt="Watch Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            Watch Repairs
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-            <li className="bg-white hover:bg-gray-50 shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
-              <Link href={`ipod-repairs`}>
-                <a className="block ">
-                  <div className="flex items-center sm:px-6">
-                    <div className="min-w-0 flex-1 flex items-center">
-                      <div className="flex-shrink-0">
-                        <Image
-                          src="/devices/ipods-256.png"
-                          alt="iPod Repairs"
-                          className="h-32 w-full object-cover"
-                          width={96}
-                          height={96}
-                        />
-                      </div>
-                      <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                        <div>
-                          <p className="font-medium text-base sm:text-lg">
-                            iPod Repairs
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <svg
-                        className="h-5 w-5 text-gray-400"
-                        data-todo-x-description="Heroicon name: solid/chevron-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-        
-      {/* Gradient Feature Section */}
-      <div className="bg-gray-800">
-          <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-white tracking-tight">Everything needed for a great repair</h2>
-            <p className="mt-4 max-w-3xl text-lg text-gray-200">
-              Our aim is to repair your device to the highest standard, using the best available parts and retaining all of your devices original features. 
-            </p>
-            <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
-              {features.map((feature) => (
-                <div key={feature.name}>
-                  <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                      <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
-                    </span>
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium text-white">{feature.name}</h3>
-                    <p className="mt-2 text-base text-gray-200">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        
-      <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative">
-            <blockquote className="mt-10">
-              <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
-                <p>
-                  “Fantastic service from iPatch who repaired my iPad’s screen
-                  and then some. The repair was completed swiftly and my iPad is
-                  as good as new.”
-                </p>
-                <p className="mt-4">
-                  “Very much recommend iPatch to anyone as a more affordable
-                  alternate to Apple that delivers the same quality service.”
-                </p>
-              </div>
-              <footer className="mt-8">
-                <div className="md:flex md:items-center md:justify-center">
-                  <div className="md:flex-shrink-0">
-                    <img
-                      className="mx-auto h-10 w-10 rounded-full"
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                      alt=""
-                    />
-                  </div>
-                  <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                    <div className="text-base font-medium text-gray-900">
-                      Matty Firth
-                    </div>
-
-                    <svg
-                      className="hidden md:block mx-1 h-5 w-5 text-indigo-600"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M11 0h3L9 20H6l5-20z"></path>
-                    </svg>
-
-                    <div className="text-base font-medium text-gray-500">
-                      TrustPilot
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-      <Footer />
-    </div>
-  );
+    </>
+  )
 }
