@@ -1,32 +1,36 @@
+import Head from 'next/head'
 import { Component, Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, QuestionMarkCircleIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
 
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
+import Incentive from "../components/Incentive"
+import Services from "../components/Services"
+import Business from "../components/Business"
 
 const categories = [
     {
-        name: 'New Arrivals',
+        name: 'iPhone Repairs',
         href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg',
+        imageSrc: 'https://images.unsplash.com/photo-1632633728024-e1fd4bef561a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
     },
     {
-        name: 'Productivity',
+        name: 'iPad Repairs',
         href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg',
+        imageSrc: 'https://images.unsplash.com/photo-1632633726419-3e5e7d74ca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
     },
     {
-        name: 'Workspace',
+        name: 'Mac Repairs',
         href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg',
+        imageSrc: 'https://images.unsplash.com/photo-1635310568932-47fd9c961c26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
     },
     {
-        name: 'Accessories',
+        name: 'Watch Repairs',
         href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg',
+        imageSrc: 'https://images.unsplash.com/photo-1541351991055-b55135fea4bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3029&q=80',
     },
-    { name: 'Sale', href: '#', imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg' },
+    { name: 'iPod Repairs', href: '#', imageSrc: 'https://images.unsplash.com/photo-1634619256987-962389b913be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5342&q=80' },
 ]
 const collections = [
     {
@@ -51,38 +55,10 @@ const collections = [
         description: 'Be more productive than enterprise project managers with a single piece of paper.',
     },
 ]
-const footerNavigation = {
-    shop: [
-        { name: 'Bags', href: '#' },
-        { name: 'Tees', href: '#' },
-        { name: 'Objects', href: '#' },
-        { name: 'Home Goods', href: '#' },
-        { name: 'Accessories', href: '#' },
-    ],
-    company: [
-        { name: 'Who we are', href: '#' },
-        { name: 'Sustainability', href: '#' },
-        { name: 'Press', href: '#' },
-        { name: 'Careers', href: '#' },
-        { name: 'Terms & Conditions', href: '#' },
-        { name: 'Privacy', href: '#' },
-    ],
-    account: [
-        { name: 'Manage Account', href: '#' },
-        { name: 'Returns & Exchanges', href: '#' },
-        { name: 'Redeem a Gift Card', href: '#' },
-    ],
-    connect: [
-        { name: 'Contact Us', href: '#' },
-        { name: 'Twitter', href: '#' },
-        { name: 'Instagram', href: '#' },
-        { name: 'Pinterest', href: '#' },
-    ],
-}
 const offers = [
-    { name: 'Download the app', description: 'Get an exclusive $5 off code', href: '#' },
-    { name: "Return when you're ready", description: '60 days of free returns', href: '#' },
-    { name: 'Sign up for our newsletter', description: '15% off your first order', href: '#' },
+    { name: 'Walk in', description: 'Pop down with no booking required', href: '#' },
+    { name: "Book in", description: 'Book in to ensure part availability', href: '#' },
+    { name: 'Mail in', description: 'Mail in your device from anywhere', href: '#' },
 ]
 
 function classNames(...classes) {
@@ -93,6 +69,28 @@ export default function Example() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
+        <>
+        <Head>
+        <title>
+          iPhone, iPad & Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch
+        </title>
+        <meta
+          name="description"
+          content="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+          key="desc"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk" />
+        <meta property="og:title" content="iPhone, iPad & Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch" />
+        <meta
+          property="og:description"
+          content="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+        />
+        <meta
+          property="og:image"
+          content="https://www.ipatchrepairs.co.uk/social.jpg"
+        />
+      </Head>
         <div className="bg-white">
             <Navigation />
 
@@ -106,18 +104,17 @@ export default function Example() {
                                 <div className="max-w-2xl mx-auto py-24 lg:py-64 lg:max-w-none">
                                     <div className="lg:pr-16">
                                         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
-                                            Focus on what matters
+                                            We make repairs hassle free
                                         </h1>
                                         <p className="mt-4 text-xl text-gray-600">
-                                            All the charts, datepickers, and notifications in the world can't beat checking off some items on a
-                                            paper card.
+                                            Get a quote for your repair online and book it in at one of our stores for a quick repair.
                                         </p>
                                         <div className="mt-6">
                                             <a
                                                 href="#"
                                                 className="inline-block bg-blue-600 border border-transparent py-3 px-8 rounded-md font-medium text-white hover:bg-blue-700"
                                             >
-                                                Shop Productivity
+                                                Book a repair
                                             </a>
                                         </div>
                                     </div>
@@ -126,7 +123,7 @@ export default function Example() {
                         </div>
                         <div className="w-full h-48 sm:h-64 lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full">
                             <img
-                                src="https://tailwindui.com/img/ecommerce-images/home-page-02-hero-half-width.jpg"
+                                src="https://images.unsplash.com/photo-1634618776233-2e951832a5f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80"
                                 alt=""
                                 className="w-full h-full object-center object-cover"
                             />
@@ -157,13 +154,13 @@ export default function Example() {
 
             <main>
                 {/* Category section */}
-                <section aria-labelledby="category-heading" className="pt-24 sm:pt-32 xl:max-w-7xl xl:mx-auto xl:px-8">
+                <section aria-labelledby="category-heading" className="py-24 sm:py-32 xl:max-w-7xl xl:mx-auto xl:px-8">
                     <div className="px-4 sm:px-6 sm:flex sm:items-center sm:justify-between lg:px-8 xl:px-0">
                         <h2 id="category-heading" className="text-2xl font-extrabold tracking-tight text-gray-900">
-                            Shop by Category
+                            Devices we repair
                         </h2>
                         <a href="#" className="hidden text-sm font-semibold text-blue-600 hover:text-blue-500 sm:block">
-                            Browse all categories<span aria-hidden="true"> &rarr;</span>
+                            Browse all devices<span aria-hidden="true"> &rarr;</span>
                         </a>
                     </div>
 
@@ -194,87 +191,23 @@ export default function Example() {
 
                     <div className="mt-6 px-4 sm:hidden">
                         <a href="#" className="block text-sm font-semibold text-blue-600 hover:text-blue-500">
-                            Browse all categories<span aria-hidden="true"> &rarr;</span>
+                            Browse all devices<span aria-hidden="true"> &rarr;</span>
                         </a>
                     </div>
                 </section>
 
-                {/* Featured section */}
-                <section
-                    aria-labelledby="social-impact-heading"
-                    className="max-w-7xl mx-auto pt-24 px-4 sm:pt-32 sm:px-6 lg:px-8"
-                >
-                    <div className="relative rounded-lg overflow-hidden">
-                        <div className="absolute inset-0">
-                            <img
-                                src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-01.jpg"
-                                alt=""
-                                className="w-full h-full object-center object-cover"
-                            />
-                        </div>
-                        <div className="relative bg-gray-900 bg-opacity-75 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
-                            <div className="relative max-w-3xl mx-auto flex flex-col items-center text-center">
-                                <h2
-                                    id="social-impact-heading"
-                                    className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
-                                >
-                                    <span className="block sm:inline">Level up</span>
-                                    <span className="block sm:inline">your desk</span>
-                                </h2>
-                                <p className="mt-3 text-xl text-white">
-                                    Make your desk beautiful and organized. Post a picture to social media and watch it get more likes
-                                    than life-changing announcements. Reflect on the shallow nature of existence. At least you have a
-                                    really nice desk setup.
-                                </p>
-                                <a
-                                    href="#"
-                                    className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
-                                >
-                                    Shop Workspace
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <Incentive />
 
-                {/* Collection section */}
-                <section
-                    aria-labelledby="collection-heading"
-                    className="max-w-xl mx-auto pt-24 px-4 sm:pt-32 sm:px-6 lg:max-w-7xl lg:px-8"
-                >
-                    <h2 id="collection-heading" className="text-2xl font-extrabold tracking-tight text-gray-900">
-                        Shop by Collection
-                    </h2>
-                    <p className="mt-4 text-base text-gray-500">
-                        Each season, we collaborate with world-class designers to create a collection inspired by the natural world.
-                    </p>
+                <Services />
 
-                    <div className="mt-10 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
-                        {collections.map((collection) => (
-                            <a key={collection.name} href={collection.href} className="group block">
-                                <div
-                                    aria-hidden="true"
-                                    className="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6"
-                                >
-                                    <img
-                                        src={collection.imageSrc}
-                                        alt={collection.imageAlt}
-                                        className="w-full h-full object-center object-cover"
-                                    />
-                                </div>
-                                <h3 className="mt-4 text-base font-semibold text-gray-900">{collection.name}</h3>
-                                <p className="mt-2 text-sm text-gray-500">{collection.description}</p>
-                            </a>
-                        ))}
-                    </div>
-                </section>
+                <Business />
 
                 {/* Featured section */}
                 <section aria-labelledby="comfort-heading" className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
                     <div className="relative rounded-lg overflow-hidden">
                         <div className="absolute inset-0">
                             <img
-                                src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-02.jpg"
+                                src="https://images.unsplash.com/photo-1543510644-82353c4be12a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4032&q=80"
                                 alt=""
                                 className="w-full h-full object-center object-cover"
                             />
@@ -282,18 +215,16 @@ export default function Example() {
                         <div className="relative bg-gray-900 bg-opacity-75 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
                             <div className="relative max-w-3xl mx-auto flex flex-col items-center text-center">
                                 <h2 id="comfort-heading" className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                                    Simple productivity
+                                    Find your repair
                                 </h2>
                                 <p className="mt-3 text-xl text-white">
-                                    Endless tasks, limited hours, a single piece of paper. Not really a haiku, but we're doing our best
-                                    here. No kanban boards, burndown charts, or tangled flowcharts with our Focus system. Just the
-                                    undeniable urge to fill empty circles.
+                                    Find the right repair for your device and choose your booking method, time and date to ensure we have the parts in stock to repair your device. 
                                 </p>
                                 <a
                                     href="#"
                                     className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                                 >
-                                    Shop Focus
+                                    Find Repair
                                 </a>
                             </div>
                         </div>
@@ -302,5 +233,6 @@ export default function Example() {
             </main>
             <Footer />
         </div>
+        </>
     )
 }
