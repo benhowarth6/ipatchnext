@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Fragment, useState, forwardRef } from 'react'
+import React, { Fragment, useState, useEffect, forwardRef } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
 import { useRouter } from "next/router";
 import DatePicker, { ReactDatePicker } from 'react-datepicker'
 import subDays from "date-fns/subDays";
-import moment from "moment";
+import kwesforms from 'kwesforms';
 
 import repairs from '../../data/all-repairs.json';
 
@@ -43,6 +43,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Example() {
     const [open, setOpen] = useState(false)
     const [selectedAppointmentLocation, setselectedAppointmentLocation] = useState(appointmentLocation[0])
@@ -59,15 +60,21 @@ export default function Example() {
     }
     const CustomInput = forwardRef(({ value, onClick }, ref) => (
         <input
-                                                    type="text"
-                                                    id="date"
-                                                    name="date"
-                                                    value={value}
-                                                    onClick={onClick} ref={ref}
-                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm custom-input"
-                                                />
+            type="text"
+            id="appointmentdate"
+            name="date"
+            rules="required"
+            value={value}
+            onClick={onClick} ref={ref}
+            onChange={date => setStartDate(date)}
+            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm custom-input"
+        />
 
-      ));
+    ));
+
+    useEffect(() => {
+        kwesforms.init();
+    }, []);
 
     return (
         <div>
@@ -237,11 +244,13 @@ export default function Example() {
                             </div>
                         </section>
 
-                        <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
+                        <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
+                            action="https://kwesforms.com/api/foreign/forms/ORegQljUEMa9cjDOacHD"
+                            redirect={`drop-off-confirmation?id=${id}&location=${selectedAppointmentLocation.title}&time=${selected.name}&date=${startDate.toLocaleDateString()}`}>
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
-                                        Contact information
+                                        Contact information 
                                     </h2>
 
                                     <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
@@ -254,6 +263,7 @@ export default function Example() {
                                                     type="text"
                                                     id="first-name"
                                                     name="first-name"
+                                                    rules="required|max:255"
                                                     autoComplete="given-name"
                                                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                                 />
@@ -269,6 +279,7 @@ export default function Example() {
                                                     type="text"
                                                     id="last-name"
                                                     name="last-name"
+                                                    rules="required|max:255"
                                                     autoComplete="family-name"
                                                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                                 />
@@ -285,6 +296,7 @@ export default function Example() {
                                                 type="email"
                                                 id="email-address"
                                                 name="email-address"
+                                                rules="required|max:255"
                                                 autoComplete="email"
                                                 className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                             />
@@ -460,18 +472,37 @@ export default function Example() {
                                     </div>
                                 </div>
 
+                                <input name="appointmentLocation" type="text" value={selectedAppointmentLocation.title} className="hidden"></input>
+
+                                <input name="appointmentTime" type="text" value={selected.name} className="hidden"></input>
+
+                                <input name="appointmentDate" type="text" value={startDate.toLocaleDateString()} className="hidden"></input>
+
+                                {repairs.filter(repairs => repairs.id == `${id}`).map(filteredRepairs => {
+                                    const { model, name, price } = filteredRepairs;
+                                    return (
+                                        <>
+                                        <input key={model} name="deviceModel" type="text" disabled rules="required" defaultValue={model} className="hidden"></input>
+                                        <input key={name} name="deviceRepair" type="text" disabled rules="required" defaultValue={name} className="hidden"></input>
+                                        <input key={price} name="repairCost" type="text" disabled rules="required" defaultValue={price} className="hidden"></input>
+                                        </>
+                                    )
+                                })}
+
                                 <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
+                                    <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit">Submit</button>
                                     <Link
                                         href={{
                                             pathname: 'drop-off-confirmation',
-                                            query: { id: id, location: selectedAppointmentLocation.title, time: selected.name }
+                                            query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() }
                                         }}
                                     >
-                                        <a
+                                        <button
                                             className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
+                                            type="submit"
                                         >
                                             Continue
-                                        </a>
+                                        </button>
                                     </Link>
                                     <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
                                         We don't take payment until after your repair has been completed.

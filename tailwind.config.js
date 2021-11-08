@@ -13,6 +13,7 @@ module.exports = {
     screens: {
       'xs': '475px',
       ...defaultTheme.screens,
+      print: { 'raw': 'print' }
     },
     colors: {
       transparent: 'transparent',

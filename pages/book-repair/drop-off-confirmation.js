@@ -43,7 +43,7 @@ export default function Example() {
                 {/* Mobile menu */}
 
                 <div className="bg-white">
-                    <header className="relative bg-white border-b border-gray-200 text-sm font-medium text-gray-700">
+                    <header className="relative bg-white border-b border-gray-200 text-sm font-medium text-gray-700 print:hidden">
                         <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
                             <div className="relative flex justify-end sm:justify-center">
                                 <a href="/" className="absolute left-0 top-1/2 -mt-2">
@@ -77,7 +77,7 @@ export default function Example() {
                             </div>
                         </div>
                     </header>
-                    <main className="bg-white px-4 pt-16 pb-24 sm:px-6 sm:pt-24 lg:px-8 lg:py-32">
+                    <main className="bg-white px-4 pt-16 pb-24 print:pt-6 print:pb-0 sm:px-6 sm:pt-24 lg:px-8 lg:py-32">
                         <div className="max-w-3xl mx-auto">
                             {repairs.filter(repairs => repairs.id == `${id}`).map(filteredRepairs => {
                                 const { id, name, price, model, image } = filteredRepairs;
@@ -151,7 +151,7 @@ export default function Example() {
                                                             <address className="not-italic">
                                                                 <div className=" flex ">
                                                                     <dt className="font-medium text-gray-900">Date</dt>
-                                                                    <dd className="ml-2 text-gray-700">{time}</dd>
+                                                                    <dd className="ml-2 text-gray-700">{date}</dd>
                                                                 </div>
                                                                 <div className=" flex ">
                                                                     <dt className="font-medium text-gray-900">Time</dt>
@@ -174,16 +174,19 @@ export default function Example() {
                                                         <dd className="text-gray-700">£{(parseInt(price) / (1.2) * 0.2).toFixed(2)}</dd>
                                                     </div>
                                                     <div className="flex justify-between">
-                                                        <dt className="font-medium text-gray-900">Return Postage</dt>
-                                                        <dd className="text-gray-700">£7.50</dd>
-                                                    </div>
-                                                    <div className="flex justify-between">
                                                         <dt className="font-medium text-gray-900">Total</dt>
-                                                        <dd className="text-gray-900">£{(parseInt(price) + (7.5))}</dd>
+                                                        <dd className="text-gray-900">£{(parseInt(price).toFixed(2))}</dd>
                                                     </div>
                                                 </dl>
                                             </div>
                                         </section>
+                                        <div className="mt-8 flex md:flex-row-reverse print:hidden">
+                                            <button
+                                                className="block text-sm font-semibold text-blue-600 hover:text-blue-500"
+                                                onClick={window.print} >
+                                                Print this page
+                                            </button>
+                                        </div>
                                     </div>
                                 )
                             })}

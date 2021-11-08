@@ -42,7 +42,7 @@ export default function Example() {
                 {/* Mobile menu */}
 
                 <div className="bg-white">
-                    <header className="relative bg-white border-b border-gray-200 text-sm font-medium text-gray-700">
+                    <header className="relative bg-white border-b border-gray-200 text-sm font-medium text-gray-700 print:hidden">
                         <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
                             <div className="relative flex justify-end sm:justify-center">
                                 <a href="/" className="absolute left-0 top-1/2 -mt-2">
@@ -76,7 +76,7 @@ export default function Example() {
                             </div>
                         </div>
                     </header>
-                    <main className="bg-white px-4 pt-16 pb-24 sm:px-6 sm:pt-24 lg:px-8 lg:py-32">
+                    <main className="bg-white px-4 pt-16 pb-24 print:pt-6 print:pb-0 sm:px-6 sm:pt-24 lg:px-8 lg:py-32">
                         <div className="max-w-3xl mx-auto">
                             {repairs.filter(repairs => repairs.id == `${id}`).map(filteredRepairs => {
                                 const { id, name, price, model, image } = filteredRepairs;
@@ -125,37 +125,18 @@ export default function Example() {
                                                 <h4 className="sr-only">Addresses</h4>
                                                 <dl className="grid grid-cols-2 gap-x-6 text-sm py-10">
                                                     <div>
-                                                        <dt className="font-medium text-gray-900">Appointment address</dt>
+                                                        <dt className="font-medium text-gray-900">Postage instructions</dt>
                                                         <dd className="mt-2 text-gray-700">
-                                                            <address className="not-italic">
-                                                                {location === 'Trinity Leeds' ? (
-                                                                    <>
-                                                                    <span className="block">Trinity Leeds</span>
-                                                                    <span className="block">201 Albion Street</span>
-                                                                    <span className="block">Leeds, LS1 5AR</span>
-                                                                    </>
-                                                                ) : (
-                                                                    <>
-                                                                    <span className="block">Kirkstall Morrisons</span>
-                                                                    <span className="block">1 Savins Mill Way</span>
-                                                                    <span className="block">Leeds, LS5 3RP</span>
-                                                                    </>
-                                                                )}
-                                                            </address>
+                                                            <p className="mt-2 text-sm text-gray-600">Please package up your device and post it to our Trinity Leeds store. Include either this printed slip, or your details. We recommend using insured postage.</p>
                                                         </dd>
                                                     </div>
                                                     <div>
-                                                        <dt className="font-medium text-gray-900">Appointment details</dt>
+                                                        <dt className="font-medium text-gray-900">Postage address</dt>
                                                         <dd className="mt-2 text-gray-700">
                                                             <address className="not-italic">
-                                                            <div className=" flex ">
-                                                                <dt className="font-medium text-gray-900">Date</dt>
-                                                                <dd className="ml-2 text-gray-700">{time}</dd>
-                                                            </div>
-                                                            <div className=" flex ">
-                                                                <dt className="font-medium text-gray-900">Time</dt>
-                                                                <dd className="ml-2 text-gray-700">{time}</dd>
-                                                            </div>
+                                                                <span className="block">Trinity Leeds</span>
+                                                                <span className="block">201 Albion Street</span>
+                                                                <span className="block">Leeds, LS1 5AR</span>
                                                             </address>
                                                         </dd>
                                                     </div>
@@ -183,6 +164,13 @@ export default function Example() {
                                                 </dl>
                                             </div>
                                         </section>
+                                        <div className="mt-8 flex md:flex-row-reverse print:hidden">
+                                            <button
+                                                className="block text-sm font-semibold text-blue-600 hover:text-blue-500"
+                                                onClick={window.print} >
+                                                Print this page
+                                            </button>
+                                        </div>
                                     </div>
                                 )
                             })}
