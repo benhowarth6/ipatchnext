@@ -58,23 +58,14 @@ export default function Example() {
         const day = date.getDay();
         return day !== 1 && day !== 0;
     }
-    const CustomInput = forwardRef(({ value, onClick }, ref) => (
-        <input
-            type="text"
-            id="appointmentdate"
-            name="date"
-            rules="required"
-            value={value}
-            onClick={onClick} ref={ref}
-            onChange={date => setStartDate(date)}
-            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm custom-input"
-        />
-
-    ));
 
     useEffect(() => {
         kwesforms.init();
     }, []);
+
+
+    const selectedRepair = repairs.filter(repairs => repairs.id === `${id}`);
+    
 
     return (
         <div>
@@ -246,11 +237,18 @@ export default function Example() {
 
                         <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
                             action="https://kwesforms.com/api/foreign/forms/ORegQljUEMa9cjDOacHD"
-                            redirect={`drop-off-confirmation?id=${id}&location=${selectedAppointmentLocation.title}&time=${selected.name}&date=${startDate.toLocaleDateString()}`}>
+                            no-reload
+                            onSubmit={async e => {
+                                e.preventDefault();
+                                router.push({
+                                    pathname: 'drop-off-confirmation',
+                                    query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() },
+                                })
+                            }}>
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
-                                        Contact information 
+                                        Contact information
                                     </h2>
 
                                     <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
@@ -372,7 +370,7 @@ export default function Example() {
                                 <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
                                     <div>
                                         <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                                            Appointment date
+                                            Appointment date 
                                         </label>
                                         <div className="mt-1">
                                             <div className="relative">
@@ -380,10 +378,10 @@ export default function Example() {
                                                     <DatePicker
                                                         dateFormat="dd/MM/yyyy"
                                                         selected={startDate}
-                                                        customInput={<CustomInput />}
                                                         onChange={(date) => setStartDate(date)}
                                                         filterDate={isWeekday}
                                                         selectsStart
+                                                        name="appointment-date"
                                                         startDate={startDate}
                                                         calendarStartDay={1}
                                                         minDate={subDays(new Date(), 0)}
@@ -396,8 +394,8 @@ export default function Example() {
                                                         dateFormat="dd/MM/yyyy"
                                                         selected={startDate}
                                                         onChange={(date) => setStartDate(date)}
-                                                        customInput={<CustomInput />}
                                                         selectsStart
+                                                        name="appointment-date"
                                                         calendarStartDay={1}
                                                         minDate={subDays(new Date(), 0)}
                                                         onFocus={e => e.target.blur()}
@@ -478,16 +476,13 @@ export default function Example() {
 
                                 <input name="appointmentDate" type="text" value={startDate.toLocaleDateString()} className="hidden"></input>
 
-                                {repairs.filter(repairs => repairs.id == `${id}`).map(filteredRepairs => {
-                                    const { model, name, price } = filteredRepairs;
-                                    return (
-                                        <>
-                                        <input key={model} name="deviceModel" type="text" disabled rules="required" defaultValue={model} className="hidden"></input>
-                                        <input key={name} name="deviceRepair" type="text" disabled rules="required" defaultValue={name} className="hidden"></input>
-                                        <input key={price} name="repairCost" type="text" disabled rules="required" defaultValue={price} className="hidden"></input>
-                                        </>
-                                    )
-                                })}
+                                {selectedRepair.map((repairs) => {
+                                        return <>
+                                        <input key={repairs.model} name="deviceModel" type="text" rules="required" readOnly defaultValue={repairs.model} className="hidden"></input>
+                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" readOnly defaultValue={repairs.name} className="hidden"></input>
+                                        <input key={repairs.price} name="repairCost" type="text" rules="required" readOnly defaultValue={repairs.price} className="hidden"></input>
+                                    </>
+                                    })}
 
                                 <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
                                     <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit">Continue</button>
