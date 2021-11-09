@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Details = () => {
     return (
         <div className="bg-white">
@@ -16,11 +18,14 @@ const Details = () => {
                     <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
                         <div>
                             <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
-                                <img
-                                    src="https://d3nevzfk7ii3be.cloudfront.net/igi/jXLMdskS6BPBZ2FQ"
-                                    alt="Drawstring top with elastic loop closure and textured interior padding."
-                                    className="w-full h-full object-center object-cover"
-                                />
+                                <div className="w-full h-full object-center object-cover">
+                                    <Image
+                                        alt="iPhone frame adhesive."
+                                        src="/iphone/frame-seal.jpg"
+                                        layout="fill"
+                                        objectFit="cover"
+                                    />
+                                </div>
                             </div>
                             <p className="mt-8 text-base text-gray-500">
                                 Your iPhone has adhesive holding the display in place which offers dust and water resistance. We replace
@@ -29,11 +34,14 @@ const Details = () => {
                         </div>
                         <div>
                             <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1632633727995-e56f68fcc885?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=5340&q=80"
-                                    alt="Front zipper pouch with included key ring."
-                                    className="w-full h-full object-center object-cover"
-                                />
+                            <div className="w-full h-full object-center object-cover">
+                                    <Image
+                                        alt="iPhone on lock screen."
+                                        src="/iphone/iphone-locked.jpg"
+                                        layout="fill"
+                                        objectFit="cover"
+                                    />
+                                </div>
                             </div>
                             <p className="mt-8 text-base text-gray-500">
                                 Your iPhone display has a number of advance features such as True-Tone and Auto-Brightness. We code our replacement

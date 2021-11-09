@@ -236,7 +236,7 @@ export default function Example() {
                         </section>
 
                         <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
-                            action="https://kwesforms.com/api/foreign/forms/ORegQljUEMa9cjDOacHD"
+                            action="https://kwesforms.com/api/foreign/forms/A3AtOOGSzMrzrBVMEwUv"
                             no-reload
                             onSubmit={async e => {
                                 e.preventDefault();
