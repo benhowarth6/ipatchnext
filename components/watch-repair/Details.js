@@ -17,7 +17,7 @@ const Details = () => {
                         <div>
                             <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                                 <img
-                                    src="https://d3nevzfk7ii3be.cloudfront.net/igi/jXLMdskS6BPBZ2FQ"
+                                    src="https://guide-images.cdn.ifixit.com/igi/ecIGxkgnvyOrpSNN.full"
                                     alt="Drawstring top with elastic loop closure and textured interior padding."
                                     className="w-full h-full object-center object-cover"
                                 />
@@ -30,7 +30,7 @@ const Details = () => {
                         <div>
                             <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                                 <img
-                                    src="https://images.unsplash.com/photo-1632633727995-e56f68fcc885?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=5340&q=80"
+                                    src="https://guide-images.cdn.ifixit.com/igi/TIy5WN3b4tXex2Qa.huge"
                                     alt="Front zipper pouch with included key ring."
                                     className="w-full h-full object-center object-cover"
                                 />

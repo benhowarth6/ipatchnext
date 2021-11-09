@@ -18,7 +18,7 @@ const product = {
   model: 'iPod Video 5th Generation',
   description: "We offer a comprehensive set of repairs for the iPod Video 5. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPod Video 5. Including screen replacements, batteries and much more.",
-  imageSrc: '/ipod/devices/ipod-video-6.jpg',
+  imageSrc: '/ipod/devices/ipod-classic-5.jpg',
   imageAlt: 'Image of an iPod Video 5.',
   breadcrumbs: [
     { id: 1, name: 'iPad Repairs', href: '/ipod-repairs' },

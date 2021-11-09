@@ -17,26 +17,26 @@ const Details = () => {
                         <div>
                             <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                                 <img
-                                    src="https://d3nevzfk7ii3be.cloudfront.net/igi/jXLMdskS6BPBZ2FQ"
+                                    src="https://guide-images.cdn.ifixit.com/igi/qgETQcQY1kBYtb4k.full"
                                     alt="Drawstring top with elastic loop closure and textured interior padding."
                                     className="w-full h-full object-center object-cover"
                                 />
                             </div>
                             <p className="mt-8 text-base text-gray-500">
-                                Your iPhone has adhesive holding the display in place which offers dust and water resistance. We replace
-                                this seal on every iPhone we open to ensure you don't loose this protection.
+                                Your iPad has adhesive holding the display in place which offers dust resistance. We replace
+                                this the adhesive on every iPad we open to ensure you don't loose this protection.
                             </p>
                         </div>
                         <div>
                             <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                                 <img
-                                    src="https://images.unsplash.com/photo-1632633727995-e56f68fcc885?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=5340&q=80"
+                                    src="https://guide-images.cdn.ifixit.com/igi/BCwW1H3nmrVOpwHd.full"
                                     alt="Front zipper pouch with included key ring."
                                     className="w-full h-full object-center object-cover"
                                 />
                             </div>
                             <p className="mt-8 text-base text-gray-500">
-                                Your iPhone display has a number of advance features such as True-Tone and Auto-Brightness. We code our replacement
+                                Your iPad display has a number of advance features such as True-Tone and Auto-Brightness. We code our replacement
                                 displays to ensure you don't loose these important features.
                             </p>
                         </div>

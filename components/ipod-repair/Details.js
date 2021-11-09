@@ -17,7 +17,7 @@ const Details = () => {
                         <div>
                             <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                                 <img
-                                    src="https://d3nevzfk7ii3be.cloudfront.net/igi/jXLMdskS6BPBZ2FQ"
+                                    src="https://guide-images.cdn.ifixit.com/igi/DMo1lb6WL1hquW6v.full"
                                     alt="Drawstring top with elastic loop closure and textured interior padding."
                                     className="w-full h-full object-center object-cover"
                                 />
@@ -30,7 +30,7 @@ const Details = () => {
                         <div>
                             <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                                 <img
-                                    src="https://images.unsplash.com/photo-1632633727995-e56f68fcc885?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=5340&q=80"
+                                    src="https://i2.wp.com/www.alphr.com/wp-content/uploads/2015/08/apple-ipod-classic-ssd-upgrade-tarkan-akdam-flash-sata-board.jpg?resize=690%2C388&ssl=1"
                                     alt="Front zipper pouch with included key ring."
                                     className="w-full h-full object-center object-cover"
                                 />
