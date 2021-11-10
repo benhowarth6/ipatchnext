@@ -7,9 +7,6 @@ import { Tab } from '@headlessui/react'
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import Incentive from "../../components/ipad/Incentive";
-import About from "../../components/ipad/About";
-import AboutFurther from "../../components/ipad/About-Further";
-import Parts from "../../components/ipad/Parts";
 
 import models from '../../data/ipad/ipad-pro-models.json';
 
@@ -63,7 +60,7 @@ export default function Home() {
                     <div className="py-24 text-center">
                         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">iPad Pro Repairs</h1>
                         <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
-                        We offer a large selection of iPad Pro repairs including screens, batteries, charging ports and more for nearly all models.
+                            We offer a large selection of iPad Pro repairs including screens, batteries, charging ports and more for nearly all models.
                         </p>
                     </div>
                 </div>
@@ -108,7 +105,13 @@ export default function Home() {
                                         {models.filter(models => models.size == tab.size).map(filteredModel => (
                                             <div key={filteredModel.id} className="relative group">
                                                 <div className="aspect-w-3 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
-                                                    <img src={filteredModel.image} alt={filteredModel.alt} className="object-center object-cover" />
+                                                    <div className="object-center object-cover">
+                                                        <Image src={filteredModel.image}
+                                                            alt={filteredModel.alt}
+                                                            layout="fill"
+                                                            objectFit="cover"
+                                                        />
+                                                    </div>
                                                     <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" aria-hidden="true">
                                                         <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
                                                             View Repairs
