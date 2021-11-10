@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { NextSeo } from "next-seo";
 
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
@@ -52,10 +51,27 @@ const people = [
 export default function Home() {
   return (
     <div>
-      <NextSeo
-        title="About Us - iPhone, Mac, iPad Repairs in Leeds - iPatch"
-        description="Find out more about iPatch and how we work. We repair screens, batteries, charging ports and more on a range of Apple Products."
-      />
+      <Head>
+        <title>
+          About Us - iPhone, iPad & Mac Repairs in Leeds | iPatch
+        </title>
+        <meta
+          name="description"
+          content="Find out more about iPatch and how we work. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
+          key="desc"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/about-us" />
+        <meta property="og:title" content="About Us - iPhone, iPad & Mac Repairs in Leeds | iPatch" />
+        <meta
+          property="og:description"
+          content="Find out more about iPatch and how we work. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
+        />
+        <meta
+          property="og:image"
+          content="https://www.ipatchrepairs.co.uk/social.jpg"
+        />
+      </Head>
       <Navigation />
 
       <div className="bg-gray-50">

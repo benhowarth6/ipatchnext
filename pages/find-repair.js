@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 import Navigation from "../components/Navigation"
@@ -43,19 +44,19 @@ export default function Example() {
     <>
       <Head>
         <title>
-          iPhone, iPad & Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch
+          Find a repair - iPhone, iPad & Mac Repairs in Leeds | iPatch
         </title>
         <meta
           name="description"
-          content="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+          content="Find a device repair Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
           key="desc"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.ipatchrepairs.co.uk" />
-        <meta property="og:title" content="iPhone, iPad & Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/find-repair" />
+        <meta property="og:title" content="Find a repair - iPhone, iPad & Mac Repairs in Leeds | iPatch" />
         <meta
           property="og:description"
-          content="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+          content="Find a device repair Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
         />
         <meta
           property="og:image"
@@ -87,23 +88,22 @@ export default function Example() {
               <div className="mt-8 grid grid-cols-2 gap-y-12 px-6 gap-x-6 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-5 xl:gap-x-8">
                 {categories.map((category) => (
                   <Link href={category.href}>
-                  <a key={category.name} className="rounded-lg overflow-hidden hover:opacity-75">
-                    <div className="relative">
-                      <div className="relative w-full h-80 rounded-lg overflow-hidden ">
-                        <img
-                          src={category.imageSrc}
-                          className="w-full h-full object-center object-cover"
-                        />
+                    <a key={category.name} className="rounded-lg overflow-hidden hover:opacity-75">
+                      <div className="relative">
+                        <div className="relative w-full h-80 rounded-lg overflow-hidden ">
+                          <div className="w-full h-full object-center object-cover">
+                            <Image src={category.imageSrc} layout="fill" objectFit="cover" />
+                          </div>
+                        </div>
+                        <div className="absolute top-0 inset-x-0 h-80 rounded-lg p-4 items-end grid justify-items-center text-center overflow-hidden">
+                          <div
+                            aria-hidden="true"
+                            className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
+                          />
+                          <p className="relative text-xl font-bold text-white">{category.name}</p>
+                        </div>
                       </div>
-                      <div className="absolute top-0 inset-x-0 h-80 rounded-lg p-4 items-end grid justify-items-center text-center overflow-hidden">
-                        <div
-                          aria-hidden="true"
-                          className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
-                        />
-                        <p className="relative text-xl font-bold text-white">{category.name}</p>
-                      </div>
-                    </div>
-                  </a>
+                    </a>
                   </Link>
                 ))}
               </div>

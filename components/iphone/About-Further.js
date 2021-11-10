@@ -9,9 +9,10 @@ export default function Example() {
             <Image
               alt="Black leather journal with silver steel disc binding resting on wooden shelf with machined steel pen."
               src="/iphone/about-further.jpg"
-              layout="fill"
-              objectFit="cover"
-            />
+              layout="responsive"
+              height="2048"
+              width="2048"
+              objectFit="cover" />
           </div>
         </div>
 
