@@ -150,12 +150,12 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="mt-20">
-                        <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
+                        <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-10">
                             <div>
                                 <dt className="text-lg leading-6 font-medium text-gray-900">
                                     How do I get my iMac Repaired?
                                 </dt>
-                                <dd className="mt-2 text-base text-gray-500">
+                                <dd className="mt-2 text-sm text-gray-500">
                                     Choose the repair your device requires and the best booking
                                     option for you. We accept both drop off and mail in repairs,
                                     so wether your local or not we can still offer you our
@@ -168,7 +168,7 @@ export default function Home() {
                                 <dt className="text-lg leading-6 font-medium text-gray-900">
                                     How much does it cost?
                                 </dt>
-                                <dd className="mt-2 text-base text-gray-500">
+                                <dd className="mt-2 text-sm text-gray-500">
                                     The cost for your repair will depend on the type of repair
                                     and the model of iMac. We list nearly all repair costs for
                                     the the iMac's we offer service on. Should you not be able
@@ -183,7 +183,7 @@ export default function Home() {
                                 <dt className="text-lg leading-6 font-medium text-gray-900">
                                     How long will it take?
                                 </dt>
-                                <dd className="mt-2 text-base text-gray-500">
+                                <dd className="mt-2 text-sm text-gray-500">
                                     We understand how important iMac's have become, so we aim to
                                     complete all repairs in the same day, usually the same hour.
                                     A drop off repair for your iMac is the quickest way to get
@@ -198,7 +198,7 @@ export default function Home() {
                                 <dt className="text-lg leading-6 font-medium text-gray-900">
                                     What to expect?
                                 </dt>
-                                <dd className="mt-2 text-base text-gray-500">
+                                <dd className="mt-2 text-sm text-gray-500">
                                     We offer a wide range of repairs for all iMac models,
                                     however should a repair not be possible on your device you
                                     can collect your iMac with no fee or just the return postage
@@ -212,7 +212,7 @@ export default function Home() {
                                 <dt className="text-lg leading-6 font-medium text-gray-900">
                                     Screen Replacements
                                 </dt>
-                                <dd className="mt-2 text-base text-gray-500">
+                                <dd className="mt-2 text-sm text-gray-500">
                                     iMac screen replacements are our most common repair, we can
                                     repair most screens within a couple of hours. We aim to keep
                                     all models of display in stock so you can pop into our Leeds
@@ -224,7 +224,7 @@ export default function Home() {
                                 <dt className="text-lg leading-6 font-medium text-gray-900">
                                     Battery Replacements
                                 </dt>
-                                <dd className="mt-2 text-base text-gray-500">
+                                <dd className="mt-2 text-sm text-gray-500">
                                     iMac batteries have a limited life span, this is usually
                                     around 1000 full charges. If your battery no longer gets you
                                     through the day we can offer a quick replacement, usually
