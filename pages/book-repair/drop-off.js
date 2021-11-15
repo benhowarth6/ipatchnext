@@ -59,13 +59,15 @@ export default function Example() {
         return day !== 1 && day !== 0;
     }
 
+    function handleChange(event) {
+    console.log(event.target.value);
+  }
+
     useEffect(() => {
         kwesforms.init();
     }, []);
 
-
     const selectedRepair = repairs.filter(repairs => repairs.id === `${id}`);
-    
 
     return (
         <div>
@@ -238,13 +240,7 @@ export default function Example() {
                         <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
                             action="https://kwesforms.com/api/foreign/forms/A3AtOOGSzMrzrBVMEwUv"
                             no-reload
-                            onSubmit={async e => {
-                                e.preventDefault();
-                                router.push({
-                                    pathname: 'drop-off-confirmation',
-                                    query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() },
-                                })
-                            }}>
+                            redirect={`/drop-off-confirmation?id=${id}&location=${selectedAppointmentLocation}&time=${selected.name}&date=${startDate.toLocaleDateString()}`}>
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
@@ -478,9 +474,9 @@ export default function Example() {
 
                                 {selectedRepair.map((repairs) => {
                                         return <>
-                                        <input key={repairs.model} name="deviceModel" type="text" rules="required" readOnly defaultValue={repairs.model} className="hidden"></input>
-                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" readOnly defaultValue={repairs.name} className="hidden"></input>
-                                        <input key={repairs.price} name="repairCost" type="text" rules="required" readOnly defaultValue={repairs.price} className="hidden"></input>
+                                        <input key={repairs.model} name="deviceModel" type="text" rules="required" readOnly defaultValue={repairs.model} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
+                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" readOnly defaultValue={repairs.name} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
+                                        <input key={repairs.price} name="repairCost" type="text" rules="required" readOnly defaultValue={repairs.price} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
                                     </>
                                     })}
 

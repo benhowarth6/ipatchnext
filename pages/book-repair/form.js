@@ -1,64 +1,80 @@
-import React, { useState } from "react";
-    import axios from "axios";
-    import { Formik, Form, Field, ErrorMessage } from "formik";
-    import * as Yup from "yup";
-    
-    const formSchema = Yup.object().shape({
-      email: Yup.string()
-        .email("Invalid email")
-        .required("Required"),
-      message: Yup.string().required("Required")
+import React, { useState, useEffect } from "react";
+import kwesforms from 'kwesforms';
+
+export default function App() {
+
+    useEffect(() => {
+        kwesforms.init();
+    }, []);
+
+    const [query, setQuery] = useState({
+        name: "",
+        email: ""
     });
-    
-    export default () => {
-      /* Server State Handling */
-      const [serverState, setServerState] = useState();
-      const handleServerResponse = (ok, msg) => {
-        setServerState({ok, msg});
-      };
-      const handleOnSubmit = (values, actions) => {
-        axios({
-          method: "POST",
-          url: "http://formspree.io/YOUR_FORM_ID",
-          data: values
-        })
-          .then(response => {
-            actions.setSubmitting(false);
-            actions.resetForm();
-            handleServerResponse(true, "Thanks!");
-          })
-          .catch(error => {
-            actions.setSubmitting(false);
-            handleServerResponse(false, error.response.data.error);
-          });
-      };
-      return (
-        <div>
-          <h1>Contact Us</h1>
-          <Formik
-            initialValues={{ email: "", message: "" }}
-            onSubmit={handleOnSubmit}
-            validationSchema={formSchema}
-          >
-            {({ isSubmitting }) => (
-              <Form id="kwes-form" noValidate>
-                <label htmlFor="email">Email:</label>
-                <Field id="email" type="email" name="email" />
-                <ErrorMessage name="email" className="errorMsg" component="p" />
-                <label htmlFor="message">Message:</label>
-                <Field id="message" name="message" component="textarea" />
-                <ErrorMessage name="message" className="errorMsg" component="p" />
-                <button type="submit" disabled={isSubmitting}>
-                  Submit
-                </button>
-                {serverState && (
-                  <p className={!serverState.ok ? "errorMsg" : ""}>
-                    {serverState.msg}
-                  </p>
-                )}
-              </Form>
-            )}
-          </Formik>
-        </div>
-      );
+
+    // Update inputs value
+    const handleParam = () => (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setQuery((prevState) => ({
+            ...prevState,
+            [name]: value
+        }));
     };
+    // Form Submit function
+    const formSubmit = (e) => {
+        e.preventDefault();
+        const formData = new FormData();
+        Object.entries(query).forEach(([key, value]) => {
+            formData.append(key, value);
+        });
+        fetch("https://kwesforms.com/api/foreign/forms/UBrUMLIonlQuMkH0PSjp", {
+            method: "POST",
+            body: formData
+        }).then(() => setQuery({ name: "", email: "", message: "" }));
+    };
+    return (
+        <div className="App">
+            <h1>NextJS form using Getform.io</h1>
+            <form className="kwes-form" action="https://kwesforms.com/api/foreign/forms/UBrUMLIonlQuMkH0PSjp" onSubmit={formSubmit}>
+                <div>
+                    <label>Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        placeholder="Name"
+                        className="form-control"
+                        value={query.name}
+                        onChange={handleParam()}
+                    />
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="Email"
+                        className="form-control"
+                        value={query.email}
+                        onChange={handleParam()}
+                    />
+                </div>
+                <div>
+                    <label>Message</label>
+                    <input
+                        type="text"
+                        name="message"
+                        required
+                        placeholder="Message"
+                        className="form-control"
+                        value={query.message}
+                        onChange={handleParam()}
+                    />
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    );
+}
