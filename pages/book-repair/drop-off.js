@@ -1,9 +1,8 @@
 import Head from "next/head";
-import Link from "next/link";
+import { useRouter } from 'next/router'
 import React, { Fragment, useState, useEffect, forwardRef } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
-import { useRouter } from "next/router";
 import DatePicker, { ReactDatePicker } from 'react-datepicker'
 import subDays from "date-fns/subDays";
 import kwesforms from 'kwesforms';
@@ -240,7 +239,13 @@ export default function Example() {
                         <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
                             action="https://kwesforms.com/api/foreign/forms/A3AtOOGSzMrzrBVMEwUv"
                             no-reload
-                            redirect={`drop-off-confirmation?id=${ id }&location=${selectedAppointmentLocation.title}&time=${selected.name}&date=${startDate.toLocaleDateString()}`}>
+                            onSubmit={async e => {
+                                e.preventDefault();
+                                router.push({
+                                    pathname: 'drop-off-confirmation',
+                                    query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() },
+                                })
+                            }}>
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
@@ -466,17 +471,17 @@ export default function Example() {
                                     </div>
                                 </div>
 
-                                <input name="appointmentLocation" type="text" value={selectedAppointmentLocation.title} className="hidden"></input>
+                                <input name="appointmentLocation" type="text" defaultValue={selectedAppointmentLocation.title} className="hidden"></input>
 
-                                <input name="appointmentTime" type="text" value={selected.name} className="hidden"></input>
+                                <input name="appointmentTime" type="text" defaultValue={selected.name} className="hidden"></input>
 
-                                <input name="appointmentDate" type="text" value={startDate.toLocaleDateString()} className="hidden"></input>
+                                <input name="appointmentDate" type="text" defaultValue={startDate.toLocaleDateString()} className="hidden"></input>
 
                                 {selectedRepair.map((repairs) => {
                                         return <>
-                                        <input key={repairs.model} name="deviceModel" type="text" rules="required" readOnly defaultValue={repairs.model} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
-                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" readOnly defaultValue={repairs.name} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
-                                        <input key={repairs.price} name="repairCost" type="text" rules="required" readOnly defaultValue={repairs.price} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
+                                        <input key={repairs.model} name="deviceModel" type="text" rules="required" defaultValue={repairs.model} className="hidden"></input>
+                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" defaultValue={repairs.name} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
+                                        <input key={repairs.price} name="repairCost" type="text" rules="required" defaultValue={repairs.price} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
                                     </>
                                     })}
 
