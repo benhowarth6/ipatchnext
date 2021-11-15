@@ -240,7 +240,7 @@ export default function Example() {
                         <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
                             action="https://kwesforms.com/api/foreign/forms/A3AtOOGSzMrzrBVMEwUv"
                             no-reload
-                            redirect={`drop-off-confirmation?id=${id}&location=${selectedAppointmentLocation}&time=${selected.name}&date=${startDate.toLocaleDateString()}`}>
+                            redirect={`drop-off-confirmation?id=${ id }&location=${selectedAppointmentLocation.title}&time=${selected.name}&date=${startDate.toLocaleDateString()}`}>
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
