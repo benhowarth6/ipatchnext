@@ -1,13 +1,16 @@
 import Head from "next/head";
 import { useRouter } from 'next/router'
-import React, { Fragment, useState, useEffect, forwardRef } from 'react'
+import React, { Fragment, useState, useEffect, useCallback } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
 import DatePicker, { ReactDatePicker } from 'react-datepicker'
 import subDays from "date-fns/subDays";
 import kwesforms from 'kwesforms';
 
+
 import repairs from '../../data/all-repairs.json';
+
+const queryString = require('query-string');
 
 const steps = [
     { name: 'Booking Type', status: 'complete' },
@@ -42,6 +45,10 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
+const preventDefault = f => e => {
+    e.preventDefault()
+    f(e)
+}
 
 export default function Example() {
     const [open, setOpen] = useState(false)
@@ -59,14 +66,17 @@ export default function Example() {
     }
 
     function handleChange(event) {
-    console.log(event.target.value);
-  }
+        console.log(event.target.value);
+    }
 
     useEffect(() => {
         kwesforms.init();
     }, []);
 
     const selectedRepair = repairs.filter(repairs => repairs.id === `${id}`);
+
+    const confirmationRedirect = queryString.stringifyUrl({ url: 'drop-off-confirmation', query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() } });
+
 
     return (
         <div>
@@ -239,17 +249,14 @@ export default function Example() {
                         <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
                             action="https://kwesforms.com/api/foreign/forms/A3AtOOGSzMrzrBVMEwUv"
                             no-reload
-                            onSubmit={async e => {
-                                e.preventDefault();
-                                router.push({
-                                    pathname: 'drop-off-confirmation',
-                                    query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() },
-                                })
-                            }}>
+                            redirect={confirmationRedirect}>
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
                                         Contact information
+                                    </h2>
+                                    <h2 id="contact-info-heading" className="text-lg font-medium text-blue-500">
+                                        Debug - {confirmationRedirect}
                                     </h2>
 
                                     <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
@@ -371,7 +378,7 @@ export default function Example() {
                                 <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
                                     <div>
                                         <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                                            Appointment date 
+                                            Appointment date
                                         </label>
                                         <div className="mt-1">
                                             <div className="relative">
@@ -478,12 +485,12 @@ export default function Example() {
                                 <input name="appointmentDate" type="text" defaultValue={startDate.toLocaleDateString()} className="hidden"></input>
 
                                 {selectedRepair.map((repairs) => {
-                                        return <>
+                                    return <>
                                         <input key={repairs.model} name="deviceModel" type="text" rules="required" defaultValue={repairs.model} className="hidden"></input>
-                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" defaultValue={repairs.name} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
-                                        <input key={repairs.price} name="repairCost" type="text" rules="required" defaultValue={repairs.price} onChange={(event)=>this.inputChangedHandler(event)} className="hidden"></input>
+                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" defaultValue={repairs.name} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
+                                        <input key={repairs.price} name="repairCost" type="text" rules="required" defaultValue={repairs.price} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
                                     </>
-                                    })}
+                                })}
 
                                 <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
                                     <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit">Continue</button>
