@@ -70,7 +70,7 @@ export default function Example() {
 
     const selectedRepair = repairs.filter(repairs => repairs.id === `${id}`);
 
-    const confirmationRedirect = queryString.stringifyUrl({ url: 'drop-off-confirmation', query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() } }, { sort: false, parseNumbers: true });
+    const confirmationRedirect = queryString.stringifyUrl({ url: 'drop-off-confirmation', query: {id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString()}}, { sort: false, parseNumbers: true });
 
     return (
         <div>
@@ -149,7 +149,7 @@ export default function Example() {
 
                                             <ul role="list" className="text-sm font-medium text-gray-900 divide-y divide-gray-200">
 
-                                                <li className="flex items-start py-6 space-x-4">
+                                                <li key={id} className="flex items-start py-6 space-x-4">
                                                     <img
                                                         src={image}
                                                         alt={""}
