@@ -51,7 +51,6 @@ const preventDefault = f => e => {
 }
 
 export default function Example() {
-    const [open, setOpen] = useState(false)
     const [selectedAppointmentLocation, setselectedAppointmentLocation] = useState(appointmentLocation[0])
 
     const [selected, setSelected] = useState(times[0])
@@ -65,18 +64,13 @@ export default function Example() {
         return day !== 1 && day !== 0;
     }
 
-    function handleChange(event) {
-        console.log(event.target.value);
-    }
-
     useEffect(() => {
         kwesforms.init();
     }, []);
 
     const selectedRepair = repairs.filter(repairs => repairs.id === `${id}`);
 
-    const confirmationRedirect = queryString.stringifyUrl({ url: 'drop-off-confirmation', query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() } });
-
+    const confirmationRedirect = queryString.stringifyUrl({ url: 'drop-off-confirmation', query: {id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString()} }, {sort: false, parseNumbers: true});
 
     return (
         <div>

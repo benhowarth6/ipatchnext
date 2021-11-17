@@ -17,7 +17,6 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-    const [open, setOpen] = useState(false)
 
     const router = useRouter();
     const { id } = router.query;
