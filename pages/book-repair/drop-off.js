@@ -70,7 +70,7 @@ export default function Example() {
 
     const selectedRepair = repairs.filter(repairs => repairs.id === `${id}`);
 
-    const confirmationRedirect = queryString.stringifyUrl({ url: 'drop-off-confirmation', query: {id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString()} }, {sort: false, parseNumbers: true});
+    const confirmationRedirect = queryString.stringifyUrl({ url: 'drop-off-confirmation', query: { id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString() } }, { sort: false, parseNumbers: true });
 
     return (
         <div>
@@ -183,6 +183,46 @@ export default function Example() {
                                                 </div>
                                             </dl>
 
+                                            <h2 id="summary-heading" className="mt-12 border-t border-gray-200 pt-6 text-lg font-medium text-red-500">
+                                                DEBUG
+                                            </h2>
+
+                                            <dl className="hidden mt-6 text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 pt-6 lg:block">
+                                                <h3>{confirmationRedirect}</h3>
+                                                <div className="flex items-center justify-between">
+                                                    <dt className="text-red-600">Selected Location</dt>
+                                                    <dd>{selectedAppointmentLocation.title}</dd>
+                                                </div>
+
+                                                <div className="flex items-center justify-between">
+                                                    <dt className="text-red-600">Selected Date</dt>
+                                                    <dd>{selected.name}</dd>
+                                                </div>
+
+                                                <div className="flex items-center justify-between">
+                                                    <dt className="text-red-600">Selected Time</dt>
+                                                    <dd>{startDate.toLocaleDateString()}</dd>
+                                                </div>
+
+                                                {selectedRepair.map((repairs) => {
+                                                    return <>
+                                                        <div className="flex items-center justify-between">
+                                                            <dt className="text-red-600">Selected Device</dt>
+                                                            <dd>{repairs.model}</dd>
+                                                        </div>
+                                                        <div className="flex items-center justify-between">
+                                                            <dt className="text-red-600">Selected Repair</dt>
+                                                            <dd>{repairs.name}</dd>
+                                                        </div>
+                                                        <div className="flex items-center justify-between">
+                                                            <dt className="text-red-600">Repair Price</dt>
+                                                            <dd>{repairs.price}</dd>
+                                                        </div>
+                                                    </>
+                                                })}
+
+                                            </dl>
+
                                             <Popover className="fixed bottom-0 z-50 inset-x-0 flex flex-col-reverse text-sm font-medium text-gray-900 lg:hidden">
                                                 <div className="relative z-10 bg-white border-t border-gray-200 px-4 sm:px-6">
                                                     <div className="max-w-lg mx-auto">
@@ -248,9 +288,6 @@ export default function Example() {
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
                                         Contact information
-                                    </h2>
-                                    <h2 id="contact-info-heading" className="text-lg font-medium text-blue-500">
-                                        Debug - {confirmationRedirect}
                                     </h2>
 
                                     <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
@@ -472,11 +509,14 @@ export default function Example() {
                                     </div>
                                 </div>
 
-                                <input name="appointmentLocation" type="text" defaultValue={selectedAppointmentLocation.title} className="hidden"></input>
 
-                                <input name="appointmentTime" type="text" defaultValue={selected.name} className="hidden"></input>
+                                <input name="appointmentLocation" type="text" defaultValue={selectedAppointmentLocation.title} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
 
-                                <input name="appointmentDate" type="text" defaultValue={startDate.toLocaleDateString()} className="hidden"></input>
+                                <input name="appointmentTime" type="text" defaultValue={selected.name} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
+
+                                <input name="appointmentDate" type="text" defaultValue={startDate.toLocaleDateString()} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
+
+
 
                                 {selectedRepair.map((repairs) => {
                                     return <>
