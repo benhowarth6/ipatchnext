@@ -45,15 +45,16 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const preventDefault = f => e => {
-    e.preventDefault()
-    f(e)
-}
-
 export default function Example() {
     const [selectedAppointmentLocation, setselectedAppointmentLocation] = useState(appointmentLocation[0])
 
     const [selected, setSelected] = useState(times[0])
+
+    const [deviceModel, setDeviceModel] = useState('');
+
+    const [deviceName, setDeviceName] = useState('');
+
+    const [repairCost, setRepairCost] = useState('');
 
     const router = useRouter();
     const { id } = router.query;
@@ -183,12 +184,16 @@ export default function Example() {
                                                 </div>
                                             </dl>
 
-                                            <h2 id="summary-heading" className="mt-12 border-t border-gray-200 pt-6 text-lg font-medium text-red-500">
+                                            <h2 id="summary-heading" className="hidden lg:block mt-12 border-t border-gray-200 pt-6 text-lg font-medium text-red-500">
                                                 DEBUG
                                             </h2>
 
                                             <dl className="hidden mt-6 text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 pt-6 lg:block">
                                                 <h3>{confirmationRedirect}</h3>
+                                                <div className="flex items-center justify-between">
+                                                    <dt className="text-red-600">ID</dt>
+                                                    <dd>{id}</dd>
+                                                </div>
                                                 <div className="flex items-center justify-between">
                                                     <dt className="text-red-600">Selected Location</dt>
                                                     <dd>{selectedAppointmentLocation.title}</dd>
@@ -281,7 +286,7 @@ export default function Example() {
                         </section>
 
                         <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
-                            action="https://kwesforms.com/api/foreign/forms/A3AtOOGSzMrzrBVMEwUv"
+                            action="https://kwesforms.com/api/foreign/forms/01hQibepBbY6UXF0b4bL"
                             no-reload="true"
                             redirect={confirmationRedirect}>
                             <div className="max-w-lg mx-auto lg:max-w-none">
@@ -520,9 +525,9 @@ export default function Example() {
 
                                 {selectedRepair.map((repairs) => {
                                     return <>
-                                        <input key={repairs.model} name="deviceModel" type="text" rules="required" defaultValue={repairs.model} className="hidden"></input>
-                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" defaultValue={repairs.name} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
-                                        <input key={repairs.price} name="repairCost" type="text" rules="required" defaultValue={repairs.price} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
+                                        <input key={repairs.model} name="deviceModel" type="text" rules="required" defaultValue={repairs.model} onChange={e => setDeviceModel(e.target.value)} className="hidden"></input>
+                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" defaultValue={repairs.name} onChange={e => setDeviceName(e.target.value)} className="hidden"></input>
+                                        <input key={repairs.price} name="repairCost" type="text" rules="required" defaultValue={repairs.price} onChange={e => setRepairCost(e.target.value)} className="hidden"></input>
                                     </>
                                 })}
 
