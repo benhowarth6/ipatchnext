@@ -521,15 +521,13 @@ export default function Example() {
 
                                 <input name="appointmentDate" type="text" defaultValue={startDate.toLocaleDateString()} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
 
-
-
-                                {selectedRepair.map((repairs) => {
-                                    return <>
+                                {selectedRepair.map((repairs) => (
+                                    <>
                                         <input key={repairs.model} name="deviceModel" type="text" rules="required" defaultValue={repairs.model} onChange={e => setDeviceModel(e.target.value)} className="hidden"></input>
                                         <input key={repairs.name} name="deviceRepair" type="text" rules="required" defaultValue={repairs.name} onChange={e => setDeviceName(e.target.value)} className="hidden"></input>
                                         <input key={repairs.price} name="repairCost" type="text" rules="required" defaultValue={repairs.price} onChange={e => setRepairCost(e.target.value)} className="hidden"></input>
-                                    </>
-                                })}
+                                        </>
+                                        ))}
 
                                 <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
                                     <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit">Continue</button>
