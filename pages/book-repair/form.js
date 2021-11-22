@@ -1,18 +1,12 @@
 import Head from "next/head";
 import { useRouter } from 'next/router'
-import React, { Fragment, useState, useEffect, useCallback } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
-import DatePicker, { ReactDatePicker } from 'react-datepicker'
-import subDays from "date-fns/subDays";
-import kwesforms from 'kwesforms';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-
 import repairs from '../../data/all-repairs.json';
-
-const queryString = require('query-string');
 
 const steps = [
     { name: 'Booking Type', status: 'complete' },
@@ -25,56 +19,39 @@ const appointmentLocation = [
     { id: 2, title: 'Kirkstall Morrisons', turnaround: 'Open Tuesday - Saturday' },
 ]
 
-const times = [
-    { id: 1, name: '09:30' },
-    { id: 2, name: '10:00' },
-    { id: 3, name: '10:30' },
-    { id: 4, name: '11:00' },
-    { id: 5, name: '11:30' },
-    { id: 6, name: '12:00' },
-    { id: 7, name: '12:30' },
-    { id: 8, name: '13:00' },
-    { id: 9, name: '13:30' },
-    { id: 10, name: '14:00' },
-    { id: 11, name: '14:30' },
-    { id: 12, name: '15:00' },
-    { id: 13, name: '15:30' },
-    { id: 14, name: '16:00' },
-    { id: 15, name: '16:30' },
-]
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
-
 export default function Example() {
-    const [selectedAppointmentLocation, setselectedAppointmentLocation] = useState(appointmentLocation[0])
-
-    const [selected, setSelected] = useState(times[0])
-
-    const [deviceModel, setDeviceModel] = useState('');
-
-    const [deviceName, setDeviceName] = useState('');
-
-    const [repairCost, setRepairCost] = useState('');
 
     const router = useRouter();
     const { id } = router.query;
 
-    const [startDate, setStartDate] = useState(new Date())
-    const isWeekday = date => {
-        const day = date.getDay();
-        return day !== 1 && day !== 0;
+    const [selectedAppointmentLocation, setselectedAppointmentLocation] = useState(appointmentLocation[0])
+
+    const formik = useFormik({
+        initialValues: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            appointmentLocation: '',
+        },
+        validationSchema: Yup.object({
+            firstName: Yup.string()
+                .max(15, 'Must be 15 characters or less')
+                .required('Your first name is required.'),
+            lastName: Yup.string()
+                .max(20, 'Must be 20 characters or less')
+                .required('Required'),
+            email: Yup.string().email('Invalid email address').required('Required'),
+        }),
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+
+    function classNames(...classes) {
+        return classes.filter(Boolean).join(' ')
     }
 
-    useEffect(() => {
-        kwesforms.init();
-    }, []);
-
-    const selectedRepair = repairs.filter(repairs => repairs.id === `${id}`);
-
-    const confirmationRedirect = queryString.stringifyUrl({ url: 'drop-off-confirmation', query: {id: id, location: selectedAppointmentLocation.title, time: selected.name, date: startDate.toLocaleDateString()}}, { sort: false, parseNumbers: true });
-    
     return (
         <div>
             <Head>
@@ -286,11 +263,7 @@ export default function Example() {
                                 })}
                             </div>
                         </section>
-
-                        <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1 kwes-form"
-                            action="https://kwesforms.com/api/foreign/forms/01hQibepBbY6UXF0b4bL"
-                            no-reload="true"
-                            redirect={confirmationRedirect}>
+                        <form onSubmit={formik.handleSubmit} className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
@@ -298,68 +271,82 @@ export default function Example() {
                                     </h2>
 
                                     <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+
                                         <div>
-                                            <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                                                First name
-                                            </label>
+                                            <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
                                             <div className="mt-1">
                                                 <input
+                                                    id="firstName"
+                                                    name="firstName"
                                                     type="text"
-                                                    id="first-name"
-                                                    name="first-name"
-                                                    rules="required|max:255"
-                                                    autoComplete="given-name"
+                                                    onChange={formik.handleChange}
+                                                    onBlur={formik.handleBlur}
+                                                    value={formik.values.firstName}
                                                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                                 />
+                                                {formik.touched.firstName && formik.errors.firstName ? (
+                                                    <div>{formik.errors.firstName}</div>
+                                                ) : null}
                                             </div>
                                         </div>
 
                                         <div>
-                                            <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
-                                                Last name
-                                            </label>
+                                            <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
                                             <div className="mt-1">
                                                 <input
+                                                    id="lastName"
+                                                    name="lastName"
                                                     type="text"
-                                                    id="last-name"
-                                                    name="last-name"
-                                                    rules="required|max:255"
-                                                    autoComplete="family-name"
+                                                    onChange={formik.handleChange}
+                                                    onBlur={formik.handleBlur}
+                                                    value={formik.values.lastName}
                                                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                                 />
+                                                {formik.touched.lastName && formik.errors.lastName ? (
+                                                    <div>{formik.errors.lastName}</div>
+                                                ) : null}
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className="mt-6">
-                                        <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
-                                            Email address
-                                        </label>
+
+                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
                                         <div className="mt-1">
                                             <input
+                                                id="email"
+                                                name="email"
                                                 type="email"
-                                                id="email-address"
-                                                name="email-address"
-                                                rules="required|max:255"
-                                                autoComplete="email"
+                                                onChange={formik.handleChange}
+                                                onBlur={formik.handleBlur}
+                                                value={formik.values.email}
                                                 className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                             />
+                                            {formik.touched.email && formik.errors.email ? (
+                                                <div>{formik.errors.email}</div>
+                                            ) : null}
                                         </div>
                                     </div>
+
                                     <div className="mt-6">
-                                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                                            Phone number
-                                        </label>
+
+                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Phone</label>
                                         <div className="mt-1">
                                             <input
-                                                type="text"
-                                                name="phone"
                                                 id="phone"
-                                                autoComplete="tel"
+                                                name="phone"
+                                                type="text"
+                                                onChange={formik.handleChange}
+                                                onBlur={formik.handleBlur}
+                                                value={formik.values.phone}
                                                 className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                             />
+                                            {formik.touched.phone && formik.errors.phone ? (
+                                                <div>{formik.errors.phone}</div>
+                                            ) : null}
                                         </div>
                                     </div>
+
                                 </section>
 
                                 <div className="mt-10 border-t border-gray-200 pt-10">
@@ -411,138 +398,29 @@ export default function Example() {
                                             ))}
                                         </div>
                                     </RadioGroup>
+                                    <input
+                                        id="appointmentLocation"
+                                        name="appointmentLocation"
+                                        type="text"
+                                        onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
+                                        value={selectedAppointmentLocation.title}
+                                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                    />
+                                    {formik.touched.appointmentLocation && formik.errors.appointmentLocation ? (
+                                        <div>{formik.errors.appointmentLocation}</div>
+                                    ) : null}
                                 </div>
 
-                                <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-                                    <div>
-                                        <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                                            Appointment date
-                                        </label>
-                                        <div className="mt-1">
-                                            <div className="relative">
-                                                {selectedAppointmentLocation.title === 'Kirkstall Morrisons' ? (
-                                                    <DatePicker
-                                                        dateFormat="dd/MM/yyyy"
-                                                        selected={startDate}
-                                                        onChange={(date) => setStartDate(date)}
-                                                        filterDate={isWeekday}
-                                                        selectsStart
-                                                        name="appointment-date"
-                                                        startDate={startDate}
-                                                        calendarStartDay={1}
-                                                        minDate={subDays(new Date(), 0)}
-                                                        onFocus={e => e.target.blur()}
-                                                        nextMonthButtonLabel=">"
-                                                        previousMonthButtonLabel="<"
-                                                    />
-                                                ) : (
-                                                    <DatePicker
-                                                        dateFormat="dd/MM/yyyy"
-                                                        selected={startDate}
-                                                        onChange={(date) => setStartDate(date)}
-                                                        selectsStart
-                                                        name="appointment-date"
-                                                        calendarStartDay={1}
-                                                        minDate={subDays(new Date(), 0)}
-                                                        onFocus={e => e.target.blur()}
-                                                        startDate={startDate}
-                                                        nextMonthButtonLabel=">"
-                                                        previousMonthButtonLabel="<"
-                                                    />
-                                                )}
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div>
-
-                                        <Listbox value={selected} onChange={setSelected}>
-                                            {({ open }) => (
-                                                <>
-                                                    <Listbox.Label className="block text-sm font-medium text-gray-700">Appointment time</Listbox.Label>
-                                                    <div className="mt-1 relative">
-                                                        <Listbox.Button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                                                            <span className="block truncate">{selected.name}</span>
-                                                            <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-                                                                <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                                                            </span>
-                                                        </Listbox.Button>
-
-                                                        <Transition
-                                                            show={open}
-                                                            as={Fragment}
-                                                            leave="transition ease-in duration-100"
-                                                            leaveFrom="opacity-100"
-                                                            leaveTo="opacity-0"
-                                                        >
-                                                            <Listbox.Options className="absolute z-50 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
-                                                                {times.map((time) => (
-                                                                    <Listbox.Option
-                                                                        key={time.id}
-                                                                        className={({ active }) =>
-                                                                            classNames(
-                                                                                active ? 'text-white bg-blue-600' : 'text-gray-900',
-                                                                                'cursor-default select-none relative py-2 pl-8 pr-4'
-                                                                            )
-                                                                        }
-                                                                        value={time}
-                                                                    >
-                                                                        {({ selected, active }) => (
-                                                                            <>
-                                                                                <span className={classNames(selected ? 'font-semibold' : 'font-normal', 'block truncate')}>
-                                                                                    {time.name}
-                                                                                </span>
-
-                                                                                {selected ? (
-                                                                                    <span
-                                                                                        className={classNames(
-                                                                                            active ? 'text-white' : 'text-blue-600',
-                                                                                            'absolute inset-y-0 left-0 flex items-center pl-1.5'
-                                                                                        )}
-                                                                                    >
-                                                                                        <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                                                                                    </span>
-                                                                                ) : null}
-                                                                            </>
-                                                                        )}
-                                                                    </Listbox.Option>
-                                                                ))}
-                                                            </Listbox.Options>
-                                                        </Transition>
-                                                    </div>
-                                                </>
-                                            )}
-                                        </Listbox>
-                                    </div>
-                                </div>
-
-
-                                <input name="appointmentLocation" type="text" defaultValue={selectedAppointmentLocation.title} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
-
-                                <input name="appointmentTime" type="text" defaultValue={selected.name} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
-
-                                <input name="appointmentDate" type="text" defaultValue={startDate.toLocaleDateString()} onChange={(event) => this.inputChangedHandler(event)} className="hidden"></input>
-
-                                {selectedRepair.map((repairs) => (
-                                    <>
-                                        <input key={repairs.model} name="deviceModel" type="text" rules="required" defaultValue={repairs.model} onChange={e => setDeviceModel(e.target.value)} className="hidden"></input>
-                                        <input key={repairs.name} name="deviceRepair" type="text" rules="required" defaultValue={repairs.name} onChange={e => setDeviceName(e.target.value)} className="hidden"></input>
-                                        <input key={repairs.price} name="repairCost" type="text" rules="required" defaultValue={repairs.price} onChange={e => setRepairCost(e.target.value)} className="hidden"></input>
-                                        </>
-                                        ))}
 
                                 <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
-                                    <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit">Continue</button>
-                                    <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
-                                        We don't take payment until after your repair has been completed.
-                                    </p>
+                                    <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit">Submit</button>
                                 </div>
-
                             </div>
                         </form>
                     </main>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
