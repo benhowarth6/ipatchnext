@@ -398,6 +398,7 @@ export default function Example() {
                                             ))}
                                         </div>
                                     </RadioGroup>
+                                    <div className="mt-6">
                                     <input
                                         id="appointmentLocation"
                                         name="appointmentLocation"
@@ -410,6 +411,7 @@ export default function Example() {
                                     {formik.touched.appointmentLocation && formik.errors.appointmentLocation ? (
                                         <div>{formik.errors.appointmentLocation}</div>
                                     ) : null}
+                                </div>
                                 </div>
 
 
