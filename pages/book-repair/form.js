@@ -33,12 +33,12 @@ export default function Example() {
     const watchAppointmentLocation = watch("appointmentLocation", false);
     const onSubmit = (data) => {
         alert(JSON.stringify(data));
-      };
+    };
 
-      function handleInputChange() {
+    function handleInputChange() {
         setselectedAppointmentLocation(appointmentLocation[0]);
         setValue("appointmentLocation", selectedAppointmentLocation.title);
-      };
+    };
 
     console.log(watch("example")); // watch input value by passing the name of it
 
@@ -153,50 +153,6 @@ export default function Example() {
                                                 </div>
                                             </dl>
 
-                                            <h2 id="summary-heading" className="hidden lg:block mt-12 border-t border-gray-200 pt-6 text-lg font-medium text-red-500">
-                                                DEBUG
-                                            </h2>
-
-                                            <dl className="hidden mt-6 text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 pt-6 lg:block">
-                                                <h3>{confirmationRedirect}</h3>
-                                                <div className="flex items-center justify-between">
-                                                    <dt className="text-red-600">ID</dt>
-                                                    <dd>{id}</dd>
-                                                </div>
-                                                <div className="flex items-center justify-between">
-                                                    <dt className="text-red-600">Selected Location</dt>
-                                                    <dd>{selectedAppointmentLocation.title}</dd>
-                                                </div>
-
-                                                <div className="flex items-center justify-between">
-                                                    <dt className="text-red-600">Selected Date</dt>
-                                                    <dd>{selected.name}</dd>
-                                                </div>
-
-                                                <div className="flex items-center justify-between">
-                                                    <dt className="text-red-600">Selected Time</dt>
-                                                    <dd>{startDate.toLocaleDateString()}</dd>
-                                                </div>
-
-                                                {selectedRepair.map((repairs) => {
-                                                    return <>
-                                                        <div className="flex items-center justify-between">
-                                                            <dt className="text-red-600">Selected Device</dt>
-                                                            <dd>{repairs.model}</dd>
-                                                        </div>
-                                                        <div className="flex items-center justify-between">
-                                                            <dt className="text-red-600">Selected Repair</dt>
-                                                            <dd>{repairs.name}</dd>
-                                                        </div>
-                                                        <div className="flex items-center justify-between">
-                                                            <dt className="text-red-600">Repair Price</dt>
-                                                            <dd>{repairs.price}</dd>
-                                                        </div>
-                                                    </>
-                                                })}
-
-                                            </dl>
-
                                             <Popover className="fixed bottom-0 z-50 inset-x-0 flex flex-col-reverse text-sm font-medium text-gray-900 lg:hidden">
                                                 <div className="relative z-10 bg-white border-t border-gray-200 px-4 sm:px-6">
                                                     <div className="max-w-lg mx-auto">
@@ -253,7 +209,9 @@ export default function Example() {
                                 })}
                             </div>
                         </section>
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <form
+                            className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1"
+                            onSubmit={handleSubmit(onSubmit)}>
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
@@ -266,8 +224,9 @@ export default function Example() {
                                             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
                                             <div className="mt-1">
                                                 <input
+                                                    type="text"
                                                     name="firstName"
-                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                    className="form-input block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                                     {...register("firstName", { required: true })} />
                                             </div>
                                         </div>
@@ -275,7 +234,9 @@ export default function Example() {
                                         <div>
                                             <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
                                             <div className="mt-1">
-                                                <input name="lastName"
+                                                <input
+                                                    type="text"
+                                                    name="lastName"
                                                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                                     {...register("lastName", { required: true })} />
 
@@ -288,10 +249,12 @@ export default function Example() {
 
                                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
                                         <div className="mt-1">
-                                            <input name="email" 
-                                            defaultValue="test" 
-                                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                            {...register("email", { required: true })} />
+                                            <input
+                                                name="email"
+                                                type="email"
+                                                defaultValue="test"
+                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                {...register("email", { required: true })} />
                                         </div>
                                     </div>
 
@@ -299,10 +262,12 @@ export default function Example() {
 
                                         <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone</label>
                                         <div className="mt-1">
-                                            <input name="phone" 
-                                            defaultValue="test" 
-                                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                            {...register("phone")} />
+                                            <input
+                                                name="phone"
+                                                type="tel"
+                                                defaultValue="test"
+                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                {...register("phone")} />
                                         </div>
                                     </div>
 
@@ -359,9 +324,11 @@ export default function Example() {
                                         </div>
                                     </RadioGroup>
                                     <div className="mt-6">
-                                        <input name="appointmentLocation" 
-                                        {...register("appointmentLocation")}
-                                         />
+                                        <input
+                                            type="text"
+                                            name="appointmentLocation"
+                                            {...register("appointmentLocation")}
+                                        />
                                     </div>
                                 </div>
 
