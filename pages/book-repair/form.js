@@ -3,7 +3,8 @@ import { useRouter } from 'next/router'
 import React, { Fragment, useState, useEffect } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
-import { useForm } from "react-hook-form";
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 import repairs from '../../data/all-repairs.json';
 
@@ -25,22 +26,32 @@ export default function Example() {
 
     const [selectedAppointmentLocation, setselectedAppointmentLocation] = useState(appointmentLocation[0])
 
+    const formik = useFormik({
+        initialValues: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            appointmentLocation: '',
+        },
+        validationSchema: Yup.object({
+            firstName: Yup.string()
+                .max(15, 'Must be 15 characters or less')
+                .required('Your first name is required.'),
+            lastName: Yup.string()
+                .max(20, 'Must be 20 characters or less')
+                .required('Required'),
+            email: Yup.string().email('Invalid email address').required('Required'),
+        }),
+        onSubmit: values => {
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+    
+
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
     }
-
-    const { register, handleSubmit, watch, setValue, formState: { errors } } = useForm();
-    const watchAppointmentLocation = watch("appointmentLocation", false);
-    const onSubmit = (data) => {
-        alert(JSON.stringify(data));
-    };
-
-    function handleInputChange() {
-        setselectedAppointmentLocation(appointmentLocation[0]);
-        setValue("appointmentLocation", selectedAppointmentLocation.title);
-    };
-
-    console.log(watch("example")); // watch input value by passing the name of it
 
     return (
         <div>
@@ -209,9 +220,7 @@ export default function Example() {
                                 })}
                             </div>
                         </section>
-                        <form
-                            className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1"
-                            onSubmit={handleSubmit(onSubmit)}>
+                        <form onSubmit={formik.handleSubmit} className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <section aria-labelledby="contact-info-heading">
                                     <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
@@ -224,10 +233,17 @@ export default function Example() {
                                             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
                                             <div className="mt-1">
                                                 <input
-                                                    type="text"
+                                                    id="firstName"
                                                     name="firstName"
-                                                    className="form-input block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                    {...register("firstName", { required: true })} />
+                                                    type="text"
+                                                    onChange={formik.handleChange}
+                                                    onBlur={formik.handleBlur}
+                                                    value={formik.values.firstName}
+                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                />
+                                                {formik.touched.firstName && formik.errors.firstName ? (
+                                                    <div>{formik.errors.firstName}</div>
+                                                ) : null}
                                             </div>
                                         </div>
 
@@ -235,12 +251,17 @@ export default function Example() {
                                             <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
                                             <div className="mt-1">
                                                 <input
-                                                    type="text"
+                                                    id="lastName"
                                                     name="lastName"
+                                                    type="text"
+                                                    onChange={formik.handleChange}
+                                                    onBlur={formik.handleBlur}
+                                                    value={formik.values.lastName}
                                                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                    {...register("lastName", { required: true })} />
-
-                                                {errors.exampleRequired && <span>This field is required</span>}
+                                                />
+                                                {formik.touched.lastName && formik.errors.lastName ? (
+                                                    <div>{formik.errors.lastName}</div>
+                                                ) : null}
                                             </div>
                                         </div>
                                     </div>
@@ -250,32 +271,43 @@ export default function Example() {
                                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
                                         <div className="mt-1">
                                             <input
+                                                id="email"
                                                 name="email"
                                                 type="email"
-                                                defaultValue="test"
+                                                onChange={formik.handleChange}
+                                                onBlur={formik.handleBlur}
+                                                value={formik.values.email}
                                                 className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                {...register("email", { required: true })} />
+                                            />
+                                            {formik.touched.email && formik.errors.email ? (
+                                                <div>{formik.errors.email}</div>
+                                            ) : null}
                                         </div>
                                     </div>
 
                                     <div className="mt-6">
 
-                                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone</label>
+                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Phone</label>
                                         <div className="mt-1">
                                             <input
+                                                id="phone"
                                                 name="phone"
-                                                type="tel"
-                                                defaultValue="test"
+                                                type="text"
+                                                onChange={formik.handleChange}
+                                                onBlur={formik.handleBlur}
+                                                value={formik.values.phone}
                                                 className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                {...register("phone")} />
+                                            />
+                                            {formik.touched.phone && formik.errors.phone ? (
+                                                <div>{formik.errors.phone}</div>
+                                            ) : null}
                                         </div>
                                     </div>
 
                                 </section>
 
                                 <div className="mt-10 border-t border-gray-200 pt-10">
-
-                                    <RadioGroup value={selectedAppointmentLocation} onChange={handleInputChange}>
+                                    <RadioGroup value={selectedAppointmentLocation} onChange={setselectedAppointmentLocation}>
                                         <RadioGroup.Label className="text-lg font-medium text-gray-900">Appointment details</RadioGroup.Label>
 
                                         <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
@@ -324,17 +356,24 @@ export default function Example() {
                                         </div>
                                     </RadioGroup>
                                     <div className="mt-6">
-                                        <input
-                                            type="text"
-                                            name="appointmentLocation"
-                                            {...register("appointmentLocation")}
-                                        />
-                                    </div>
+                                    <input
+                                        id="appointmentLocation"
+                                        name="appointmentLocation"
+                                        type="text"
+                                        onChange={formik.handleChange}
+                                        onBlur={formik.handleBlur}
+                                        value={selectedAppointmentLocation.title}
+                                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                    />
+                                    {formik.touched.appointmentLocation && formik.errors.appointmentLocation ? (
+                                        <div>{formik.errors.appointmentLocation}</div>
+                                    ) : null}
+                                </div>
                                 </div>
 
 
                                 <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
-                                    <input className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit" />
+                                    <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
