@@ -5,6 +5,7 @@ import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
 import DatePicker, { ReactDatePicker } from 'react-datepicker'
 import subDays from "date-fns/subDays";
+import Axios from 'axios';
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 
@@ -57,6 +58,8 @@ const BookingSchema = Yup.object().shape({
 });
 
 export default function Example() {
+
+    const key = process.env.NEXT_PUBLIC_AIRTABLE_API_KEY;
 
     const router = useRouter();
     const { id } = router.query;
@@ -260,14 +263,44 @@ export default function Example() {
                             }}
                             validationSchema={BookingSchema}
                             onSubmit={async (values) => {
-                                await new Promise((r) => setTimeout(r, 500));
-                                alert(JSON.stringify(values, null, 2));
-                                router.push({
-                                    pathname: 'drop-off-confirmation',
-                                    query: { id: id, location: values.appointmentLocation, time: values.appointmentTime, date: values.appointmentDate.toLocaleDateString() },
-                                })
-                            }}
+                                const data = {
+                                    records: [
+                                        {
+                                            fields: {
+                                                firstName: values.firstName,
+                                                lastName: values.lastName,
+                                                email: values.email,
+                                                appointmentLocation: values.appointmentLocation,
+                                                appointmentDate: values.appointmentDate,
+                                                appointmentTime: values.appointmentTime,
+                                                deviceModel: values.deviceModel,
+                                                deviceRepair: values.deviceRepair,
+                                                repairCost: values.repairCost,
+                                            },
+                                        },
+                                    ],
+                                };
 
+                                const axiosConfig = {
+                                    headers: {
+                                        Authorization: `Bearer ${key}`,
+                                        'Content-type': 'application/json',
+                                    },
+                                };
+
+                                await Axios.post(
+                                    'https://api.airtable.com/v0/apptENX9O16U7Ynmi/Drop%20Off%20Repairs?api_key=keyIyLxPkNnEqvEbZ',
+                                    data,
+                                    axiosConfig
+                                )
+                                .then((response) => {
+                                    router.push({
+                                        pathname: 'drop-off-confirmation',
+                                        query: { id: id, location: values.appointmentLocation, time: values.appointmentTime, date: values.appointmentDate.toLocaleDateString() },
+                                    })
+                                });
+                            }
+                            }
                         >
                             {({ errors, values, touched, field, setFieldValue }) => (
                                 <Form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
