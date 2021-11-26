@@ -3,7 +3,9 @@ import { useRouter } from 'next/router'
 import React, { Fragment, useState, useEffect } from 'react'
 import { Listbox, Popover, RadioGroup, Transition } from '@headlessui/react'
 import { CheckCircleIcon, CheckIcon, ChevronRightIcon, ChevronUpIcon, SelectorIcon } from '@heroicons/react/solid'
-import { useFormik } from 'formik';
+import DatePicker, { ReactDatePicker } from 'react-datepicker'
+import subDays from "date-fns/subDays";
+import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 
 import repairs from '../../data/all-repairs.json';
@@ -19,39 +21,61 @@ const appointmentLocation = [
     { id: 2, title: 'Kirkstall Morrisons', turnaround: 'Open Tuesday - Saturday' },
 ]
 
+const times = [
+    { id: 1, name: '09:30' },
+    { id: 2, name: '10:00' },
+    { id: 3, name: '10:30' },
+    { id: 4, name: '11:00' },
+    { id: 5, name: '11:30' },
+    { id: 6, name: '12:00' },
+    { id: 7, name: '12:30' },
+    { id: 8, name: '13:00' },
+    { id: 9, name: '13:30' },
+    { id: 10, name: '14:00' },
+    { id: 11, name: '14:30' },
+    { id: 12, name: '15:00' },
+    { id: 13, name: '15:30' },
+    { id: 14, name: '16:00' },
+    { id: 15, name: '16:30' },
+]
+
+const BookingSchema = Yup.object().shape({
+    firstName: Yup.string()
+        .min(2, 'Your first name is too short!')
+        .max(50, 'Your first name is too Long!')
+        .required('Your first name is required.'),
+    lastName: Yup.string()
+        .min(2, 'Your last name is too short!')
+        .max(50, 'Your last name is too Long!')
+        .required('Your last name is required.'),
+    email: Yup.string().email('Invalid email').required('Your email address is required.'),
+    phone: Yup.string()
+        .min(5, 'Your phone number is too short!')
+        .max(13, 'Your phone number is too long!!'),
+    appointmentDate: Yup.string()
+        .required('An appointment date is required.'),
+});
+
 export default function Example() {
 
     const router = useRouter();
     const { id } = router.query;
 
-    const [selectedAppointmentLocation, setselectedAppointmentLocation] = useState(appointmentLocation[0])
-
-    const formik = useFormik({
-        initialValues: {
-            firstName: '',
-            lastName: '',
-            email: '',
-            phone: '',
-            appointmentLocation: '',
-        },
-        validationSchema: Yup.object({
-            firstName: Yup.string()
-                .max(15, 'Must be 15 characters or less')
-                .required('Your first name is required.'),
-            lastName: Yup.string()
-                .max(20, 'Must be 20 characters or less')
-                .required('Required'),
-            email: Yup.string().email('Invalid email address').required('Required'),
-        }),
-        onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
-        },
-    });
-    
+    const [selected, setSelected] = useState(times[0])
 
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
     }
+
+    const [startDate, setStartDate] = useState(new Date())
+    const isWeekday = date => {
+        const day = date.getDay();
+        return day !== 1 && day !== 0;
+    }
+
+    const selectedRepair = repairs.filter(repairs => repairs.id === `${id}`);
+
+    const repairModel = repairs.filter(repairs => repairs.id === `${id}`)
 
     return (
         <div>
@@ -220,166 +244,327 @@ export default function Example() {
                                 })}
                             </div>
                         </section>
-                        <form onSubmit={formik.handleSubmit} className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
-                            <div className="max-w-lg mx-auto lg:max-w-none">
-                                <section aria-labelledby="contact-info-heading">
-                                    <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
-                                        Contact information
-                                    </h2>
+                        <Formik
+                            enableReinitialize
+                            initialValues={{
+                                firstName: '',
+                                lastName: '',
+                                email: '',
+                                phone: '',
+                                appointmentLocation: 'Trinity Leeds',
+                                appointmentDate: '',
+                                appointmentTime: '09:30',
+                                deviceModel: '',
+                                deviceRepair: '',
+                                repairCost: '',
+                            }}
+                            validationSchema={BookingSchema}
+                            onSubmit={async (values) => {
+                                await new Promise((r) => setTimeout(r, 500));
+                                alert(JSON.stringify(values, null, 2));
+                            }}
 
-                                    <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                        >
+                            {({ errors, values, touched, field, setFieldValue }) => (
+                                <Form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
+                                    <div className="max-w-lg mx-auto lg:max-w-none">
+                                        <section aria-labelledby="contact-info-heading">
+                                            <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
+                                                Contact information
+                                            </h2>
 
-                                        <div>
-                                            <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
-                                            <div className="mt-1">
-                                                <input
-                                                    id="firstName"
-                                                    name="firstName"
-                                                    type="text"
-                                                    onChange={formik.handleChange}
-                                                    onBlur={formik.handleBlur}
-                                                    value={formik.values.firstName}
-                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                />
-                                                {formik.touched.firstName && formik.errors.firstName ? (
-                                                    <div>{formik.errors.firstName}</div>
-                                                ) : null}
+                                            <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                                                <div>
+                                                    <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                                                        First name
+                                                    </label>
+                                                    <div className="mt-1">
+                                                        <Field
+                                                            type="text"
+                                                            id="firstName"
+                                                            name="firstName"
+                                                            autoComplete="given-name"
+                                                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                        />
+                                                        {errors.firstName && touched.firstName ? (
+                                                            <p class="mt-2 text-sm text-red-600" id="firstName-error">{errors.firstName}</p>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
+                                                        Last name
+                                                    </label>
+                                                    <div className="mt-1">
+                                                        <Field
+                                                            type="text"
+                                                            id="lastName"
+                                                            name="lastName"
+                                                            autoComplete="family-name"
+                                                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                        />
+                                                        {errors.lastName && touched.lastName ? (
+                                                            <p class="mt-2 text-sm text-red-600" id="lastName-error">{errors.lastName}</p>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div>
-                                            <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
-                                            <div className="mt-1">
-                                                <input
-                                                    id="lastName"
-                                                    name="lastName"
-                                                    type="text"
-                                                    onChange={formik.handleChange}
-                                                    onBlur={formik.handleBlur}
-                                                    value={formik.values.lastName}
-                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                />
-                                                {formik.touched.lastName && formik.errors.lastName ? (
-                                                    <div>{formik.errors.lastName}</div>
-                                                ) : null}
+                                            <div className="mt-6">
+                                                <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
+                                                    Email address
+                                                </label>
+                                                <div className="mt-1">
+                                                    <Field
+                                                        type="email"
+                                                        id="email"
+                                                        name="email"
+                                                        autoComplete="email"
+                                                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                    />
+                                                    {errors.email && touched.email ? <p class="mt-2 text-sm text-red-600" id="email-error">{errors.email}</p> : null}
+                                                </div>
                                             </div>
+
+                                            <div className="mt-6">
+                                                <label htmlFor="contact-number" className="block text-sm font-medium text-gray-700">
+                                                    Contact Number
+                                                </label>
+                                                <div className="mt-1">
+                                                    <Field
+                                                        type="tel"
+                                                        id="phone"
+                                                        name="phone"
+                                                        autoComplete="tel"
+                                                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                    />
+                                                    {errors.phone && touched.phone ? <p class="mt-2 text-sm text-red-600" id="phone-error">{errors.phone}</p> : null}
+                                                </div>
+                                            </div>
+
+                                        </section>
+
+                                        <div className="mt-10 border-t border-gray-200 pt-10">
+                                            <RadioGroup value={values.appointmentLocation} onChange={e => setFieldValue('appointmentLocation', e)}>
+                                                <RadioGroup.Label className="text-lg font-medium text-gray-900">Appointment details</RadioGroup.Label>
+
+                                                <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                                                    <RadioGroup.Option
+                                                        value="Trinity Leeds"
+                                                        className={({ checked, active }) =>
+                                                            classNames(
+                                                                checked ? 'border-transparent' : 'border-gray-300',
+                                                                active ? 'ring-2 ring-blue-500' : '',
+                                                                'relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none'
+                                                            )
+                                                        }
+                                                    >
+                                                        {({ checked, active }) => (
+                                                            <>
+                                                                <div className="flex-1 flex">
+                                                                    <div className="flex flex-col">
+                                                                        <RadioGroup.Label as="span" className="block text-sm font-medium text-gray-900">
+                                                                            Trinity Leeds
+                                                                        </RadioGroup.Label>
+                                                                        <RadioGroup.Description
+                                                                            as="span"
+                                                                            className="mt-1 flex items-center text-sm text-gray-500"
+                                                                        >
+                                                                            Open 7 days a week
+                                                                        </RadioGroup.Description>
+                                                                    </div>
+                                                                </div>
+                                                                {checked ? (
+                                                                    <CheckCircleIcon className="h-5 w-5 text-blue-600" aria-hidden="true" />
+                                                                ) : null}
+                                                                <div
+                                                                    className={classNames(
+                                                                        active ? 'border' : 'border-2',
+                                                                        checked ? 'border-blue-500' : 'border-transparent',
+                                                                        'absolute -inset-px rounded-lg pointer-events-none'
+                                                                    )}
+                                                                    aria-hidden="true"
+                                                                />
+                                                            </>
+                                                        )}
+                                                    </RadioGroup.Option>
+                                                    <RadioGroup.Option
+                                                        value="Kirkstall Morrisons"
+                                                        className={({ checked, active }) =>
+                                                            classNames(
+                                                                checked ? 'border-transparent' : 'border-gray-300',
+                                                                active ? 'ring-2 ring-blue-500' : '',
+                                                                'relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none'
+                                                            )
+                                                        }
+                                                    >
+                                                        {({ checked, active }) => (
+                                                            <>
+                                                                <div className="flex-1 flex">
+                                                                    <div className="flex flex-col">
+                                                                        <RadioGroup.Label as="span" className="block text-sm font-medium text-gray-900">
+                                                                            Kirkstall Morrisons
+                                                                        </RadioGroup.Label>
+                                                                        <RadioGroup.Description
+                                                                            as="span"
+                                                                            className="mt-1 flex items-center text-sm text-gray-500"
+                                                                        >
+                                                                            Open Tuesday - Saturday
+                                                                        </RadioGroup.Description>
+                                                                    </div>
+                                                                </div>
+                                                                {checked ? (
+                                                                    <CheckCircleIcon className="h-5 w-5 text-blue-600" aria-hidden="true" />
+                                                                ) : null}
+                                                                <div
+                                                                    className={classNames(
+                                                                        active ? 'border' : 'border-2',
+                                                                        checked ? 'border-blue-500' : 'border-transparent',
+                                                                        'absolute -inset-px rounded-lg pointer-events-none'
+                                                                    )}
+                                                                    aria-hidden="true"
+                                                                />
+                                                            </>
+                                                        )}
+                                                    </RadioGroup.Option>
+                                                </div>
+                                            </RadioGroup>
                                         </div>
-                                    </div>
-
-                                    <div className="mt-6">
-
-                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
-                                        <div className="mt-1">
-                                            <input
-                                                id="email"
-                                                name="email"
-                                                type="email"
-                                                onChange={formik.handleChange}
-                                                onBlur={formik.handleBlur}
-                                                value={formik.values.email}
-                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                            />
-                                            {formik.touched.email && formik.errors.email ? (
-                                                <div>{formik.errors.email}</div>
-                                            ) : null}
-                                        </div>
-                                    </div>
-
-                                    <div className="mt-6">
-
-                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">Phone</label>
-                                        <div className="mt-1">
-                                            <input
-                                                id="phone"
-                                                name="phone"
-                                                type="text"
-                                                onChange={formik.handleChange}
-                                                onBlur={formik.handleBlur}
-                                                value={formik.values.phone}
-                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                            />
-                                            {formik.touched.phone && formik.errors.phone ? (
-                                                <div>{formik.errors.phone}</div>
-                                            ) : null}
-                                        </div>
-                                    </div>
-
-                                </section>
-
-                                <div className="mt-10 border-t border-gray-200 pt-10">
-                                    <RadioGroup value={selectedAppointmentLocation} onChange={setselectedAppointmentLocation}>
-                                        <RadioGroup.Label className="text-lg font-medium text-gray-900">Appointment details</RadioGroup.Label>
 
                                         <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-                                            {appointmentLocation.map((appointmentLocation) => (
-                                                <RadioGroup.Option
-                                                    key={appointmentLocation.id}
-                                                    value={appointmentLocation}
-                                                    className={({ checked, active }) =>
-                                                        classNames(
-                                                            checked ? 'border-transparent' : 'border-gray-300',
-                                                            active ? 'ring-2 ring-blue-500' : '',
-                                                            'relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none'
-                                                        )
-                                                    }
-                                                >
-                                                    {({ checked, active }) => (
-                                                        <>
-                                                            <div className="flex-1 flex">
-                                                                <div className="flex flex-col">
-                                                                    <RadioGroup.Label as="span" className="block text-sm font-medium text-gray-900">
-                                                                        {appointmentLocation.title}
-                                                                    </RadioGroup.Label>
-                                                                    <RadioGroup.Description
-                                                                        as="span"
-                                                                        className="mt-1 flex items-center text-sm text-gray-500"
-                                                                    >
-                                                                        {appointmentLocation.turnaround}
-                                                                    </RadioGroup.Description>
-                                                                </div>
-                                                            </div>
-                                                            {checked ? (
-                                                                <CheckCircleIcon className="h-5 w-5 text-blue-600" aria-hidden="true" />
-                                                            ) : null}
-                                                            <div
-                                                                className={classNames(
-                                                                    active ? 'border' : 'border-2',
-                                                                    checked ? 'border-blue-500' : 'border-transparent',
-                                                                    'absolute -inset-px rounded-lg pointer-events-none'
-                                                                )}
-                                                                aria-hidden="true"
+                                            <div>
+                                                <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                                                    Appointment date
+                                                </label>
+                                                <div className="mt-1">
+                                                    <div className="relative">
+                                                        {values.appointmentLocation === 'Kirkstall Morrisons' ? (
+                                                            <DatePicker
+                                                                dateFormat="dd/MM/yyyy"
+                                                                selected={values.appointmentDate}
+                                                                onChange={e => setFieldValue('appointmentDate', e)}
+                                                                filterDate={isWeekday}
+                                                                selectsStart
+                                                                name="appointment-date"
+                                                                startDate={startDate}
+                                                                calendarStartDay={1}
+                                                                minDate={subDays(new Date(), 0)}
+                                                                onFocus={e => e.target.blur()}
+                                                                nextMonthButtonLabel=">"
+                                                                previousMonthButtonLabel="<"
                                                             />
+                                                        ) : (
+                                                            <DatePicker
+                                                                dateFormat="dd/MM/yyyy"
+                                                                selected={values.appointmentDate}
+                                                                onChange={e => setFieldValue('appointmentDate', e)}
+                                                                selectsStart
+                                                                name="appointment-date"
+                                                                calendarStartDay={1}
+                                                                minDate={subDays(new Date(), 0)}
+                                                                onFocus={e => e.target.blur()}
+                                                                startDate={startDate}
+                                                                nextMonthButtonLabel=">"
+                                                                previousMonthButtonLabel="<"
+                                                            />
+                                                        )}
+                                                        {errors.appointmentDate && touched.appointmentDate ? (
+                                                            <p class="mt-2 text-sm text-red-600" id="firstName-error">{errors.appointmentDate}</p>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+
+
+                                                <Listbox value={values.appointmentTime} onChange={e => setFieldValue('appointmentTime', e)}>
+                                                    {({ open }) => (
+                                                        <>
+                                                            <Listbox.Label className="block text-sm font-medium text-gray-700">Appointment time</Listbox.Label>
+                                                            <div className="mt-1 relative">
+                                                                <Listbox.Button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                                                    <span className="block truncate">{values.appointmentTime}</span>
+                                                                    <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                                                                        <SelectorIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                                                                    </span>
+                                                                </Listbox.Button>
+
+                                                                <Transition
+                                                                    show={open}
+                                                                    as={Fragment}
+                                                                    leave="transition ease-in duration-100"
+                                                                    leaveFrom="opacity-100"
+                                                                    leaveTo="opacity-0"
+                                                                >
+                                                                    <Listbox.Options className="absolute z-50 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
+                                                                        {times.map((time) => (
+                                                                            <Listbox.Option
+                                                                                key={time.id}
+                                                                                className={({ active }) =>
+                                                                                    classNames(
+                                                                                        active ? 'text-white bg-blue-600' : 'text-gray-900',
+                                                                                        'cursor-default select-none relative py-2 pl-8 pr-4'
+                                                                                    )
+                                                                                }
+                                                                                value={time.name}
+                                                                                onChange={setSelected}
+                                                                            >
+                                                                                {({ selected, active }) => (
+                                                                                    <>
+                                                                                        <span className={classNames(selected ? 'font-semibold' : 'font-normal', 'block truncate')}>
+                                                                                            {time.name}
+                                                                                        </span>
+
+                                                                                        {selected ? (
+                                                                                            <span
+                                                                                                className={classNames(
+                                                                                                    active ? 'text-white' : 'text-blue-600',
+                                                                                                    'absolute inset-y-0 left-0 flex items-center pl-1.5'
+                                                                                                )}
+                                                                                            >
+                                                                                                <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                                                            </span>
+                                                                                        ) : null}
+                                                                                    </>
+                                                                                )}
+                                                                            </Listbox.Option>
+                                                                        ))}
+                                                                    </Listbox.Options>
+                                                                </Transition>
+                                                            </div>
                                                         </>
                                                     )}
-                                                </RadioGroup.Option>
-                                            ))}
+                                                </Listbox>
+                                            </div>
                                         </div>
-                                    </RadioGroup>
-                                    <div className="mt-6">
-                                    <input
-                                        id="appointmentLocation"
-                                        name="appointmentLocation"
-                                        type="text"
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        value={selectedAppointmentLocation.title}
-                                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                    />
-                                    {formik.touched.appointmentLocation && formik.errors.appointmentLocation ? (
-                                        <div>{formik.errors.appointmentLocation}</div>
-                                    ) : null}
-                                </div>
-                                </div>
-
-
-                                <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
-                                    <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" type="submit">Submit</button>
-                                </div>
-                            </div>
-                        </form>
+                                        {selectedRepair.map((repairs) => (
+                                        <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
+                                            <button className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto" 
+                                            type="submit"
+                                            onClick={async () => {
+                                                setFieldValue('deviceModel', repairs.model)
+                                                setFieldValue('deviceRepair', repairs.name)
+                                                setFieldValue('repairCost', repairs.price)
+                                                // Hack to wait for new value to be applied
+                                                // Pending https://github.com/jaredpalmer/formik/issues/529
+                                                await Promise.resolve()
+                                              }}
+                                            >Continue</button>
+                                            <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
+                                                We don't take payment until after your repair has been completed.
+                                            </p>
+                                        </div>
+                                        ))}
+                                    </div>
+                                </Form>
+                            )}
+                        </Formik>
                     </main>
                 </div>
             </div>
+            );
         </div>
-    );
-};
+    )
+}
