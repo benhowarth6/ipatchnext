@@ -262,6 +262,10 @@ export default function Example() {
                             onSubmit={async (values) => {
                                 await new Promise((r) => setTimeout(r, 500));
                                 alert(JSON.stringify(values, null, 2));
+                                router.push({
+                                    pathname: 'drop-off-confirmation',
+                                    query: { id: id, location: values.appointmentLocation, time: values.appointmentTime, date: values.appointmentDate.toLocaleDateString() },
+                                })
                             }}
 
                         >
