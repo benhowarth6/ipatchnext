@@ -171,7 +171,7 @@ export default function Recycling() {
           </div>
 
           <div className="mt-6 prose prose-blue prose-lg text-gray-500 mx-auto">
-            <h2 className="py-6">What we do</h2>
+            <h2 className="pt-4">What we do</h2>
             <p>
               The first step is to ascertain what your device has been exposed
               to and how long prior to visiting us. Different fluids have
@@ -218,7 +218,7 @@ export default function Recycling() {
               our work comes with a 90 day, full money back guarantee in the
               event your device fails completely beyond repair.
             </p>
-            <h2 className="py-6">With time comes experience</h2>
+            <h2>With time comes experience</h2>
             <p>
               As our team have been working solely with Apple devices for well
               over 10 years, we have amassed a wealth of knowledge between us
@@ -245,19 +245,19 @@ export default function Recycling() {
               insurance report, data recovery or a logic board repair. Take a
               look at some of the other services we offer.
             </p>
-            <Link href="">
+            <Link href="/data-recovery">
               <a className="text-base font-semibold text-blue-600 hover:text-blue-500 block">
                 Learn about our data recovery services
                 <span aria-hidden="true"> &rarr;</span>
               </a>
             </Link>
-            <Link href="">
+            <Link href="/logic-board-repairs">
               <a className="mt-4 text-base font-semibold text-blue-600 hover:text-blue-500 block">
                 Learn about our logic board repair services
                 <span aria-hidden="true"> &rarr;</span>
               </a>
             </Link>
-            <Link href="">
+            <Link href="/insurance-reports">
               <a className="mt-4 text-base font-semibold text-blue-600 hover:text-blue-500 block">
                 Learn about our insurance reports
                 <span aria-hidden="true"> &rarr;</span>

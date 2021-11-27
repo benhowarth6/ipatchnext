@@ -220,13 +220,13 @@ export default function Recycling() {
                 <span aria-hidden="true"> &rarr;</span>
               </a>
             </Link>
-            <Link href="">
+            <Link href="/logic-board-repairs">
               <a className="mt-4 text-base font-semibold text-blue-600 hover:text-blue-500 block">
                 Learn about our logic board repair services
                 <span aria-hidden="true"> &rarr;</span>
               </a>
             </Link>
-            <Link href="">
+            <Link href="/insurance-reports">
               <a className="mt-4 text-base font-semibold text-blue-600 hover:text-blue-500 block">
                 Learn about our insurance reports
                 <span aria-hidden="true"> &rarr;</span>

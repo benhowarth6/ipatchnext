@@ -10,25 +10,25 @@ export default function Recycling() {
     <div>
       <Head>
         <title>
-          Data Recovery - iPhone, iPad & Mac Repairs in Leeds | iPatch
+          Logic Board Repairs - iPhone, iPad & Mac Repairs in Leeds | iPatch
         </title>
         <meta
           name="description"
-          content="Find out more about our Data Recovery services. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
+          content="Find out more about our Logic Board Repair services. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
           key="desc"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://www.ipatchrepairs.co.uk/data-recovery"
+          content="https://www.ipatchrepairs.co.uk/logic-board-repairs"
         />
         <meta
           property="og:title"
-          content="Data Recovery - iPhone, iPad & Mac Repairs in Leeds | iPatch"
+          content="Logic Board Repairs - iPhone, iPad & Mac Repairs in Leeds | iPatch"
         />
         <meta
           property="og:description"
-          content="Find out more about our Data Recovery services. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
+          content="Find out more about our Logic Board Repair services. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
         />
         <meta
           property="og:image"
@@ -148,66 +148,55 @@ export default function Recycling() {
                 Additional Services
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Data Recovery
+                Logic Board Repairs
               </span>
             </h1>
             <p className="mt-8 text-lg text-gray-500 leading-8">
-              When your iPhone, iPad, iPod or Mac develops a fault, having it
-              repaired is often only part of the immediate stress. The prospect
-              of loosing your valuable data stored on your Apple device can
-              often be far more upsetting than any of the time lost and costs
-              involved in getting your device up and running again.
+              iPatch has the ability to perform minute repairs on iPhone, iPad
+              and MacBook logic boards. We have a range of specialist equipment
+              along with a wealth of expertise which means we can replace
+              individual chips, some as small as a quarter of a grain of rice.
+              What this means is that instead of having to pay for an entire
+              logic board replacement, which can be an expensive option, we can
+              instead get your original one working again in most cases and cut
+              the cost by up to half. It also makes for a more environmentally
+              friendly impact!
             </p>
           </div>
           <div className="mt-6 prose prose-blue prose-lg text-gray-500 mx-auto">
             <p>
-              Fortunately at iPatch, we not only offer a quick repair service at
-              a competitive price but we can also do our best to help retrieve
-              lost data. Our many years of experience repairing exclusively
-              apple products means that we are well versed in their workings and
-              have lots of tricks up our sleeves to revive data from seemingly
-              dead devices. Whilst we have a very high data recovery rate, sadly
-              it is not always possible and, if this was the case, you would
-              have our assurance that everything possible had been tried and we
-              wouldn’t charge you a penny.
+              The most common causes for logic boards to fail is either due to
+              liquid damage, physical damage or overloading of power from
+              aftermarket chargers. At iPatch, we run diagnostic testing to
+              pinpoint the fault and would always offer the option to get you up
+              and running by replacing individual components rather than an
+              entire part if possible. Not only does that help you with the
+              repair cost, but we also feel better about having less electronic
+              waste going to landfill.
             </p>
             <p>
-              If you have an iPhone or iPad that has seemingly died (not
-              charging, loss of power or repeating apple boot logo) then please
-              avoid trying to restart or restore your device. We frequently see
-              customers who have tried to get their device going again by
-              connecting to a computer or letting an inexperienced party have a
-              go, only to permanently wipe any data off their logic board. If
-              you pop in to see us at iPatch we will diagnose the fault for free
-              and let you know what can be done, usually within the hour. You
-              can also choose to fully repair the device, or if its not
-              economically viable to you, then we can temporarily install the
-              necessary parts to pull your data off to a memory stick or
-              iPhone/iCloud back-up file. We have managed to restore data from
-              iPhones that have suffered software corruption, water damage and
-              massive physical trauma.
+              Commonly seen on iPhones and MacBooks, a board repair would often
+              fix a faulty screen backlight, audio issues, signal and wifi
+              failures as well as complete loss of power or charging ability. On
+              iPads, we can restore the loss of touch screen functionality or
+              the inability to restore the device via a computer. Our steady
+              hands mean we can also restore life to treasured and almost
+              antique Apple products, especially the original iPod and MacBook
+              range who’s life may have looked to have come to an end.
             </p>
             <p>
-              For MacBooks and iMacs, data recovery of a dead device is usually
-              just a case of opening up your machine and physically removing its
-              hard drive. We can then either install it in a caddy for you to
-              connect to another computer or we can duplicate the drive contents
-              to a memory stick, a vital service for students working on tight
-              deadlines! Again, we can also offer the service of repairing the
-              MacBook or iMac, taking great care of your data in the process. If
-              your hard drive itself has sadly failed or is on its way out then
-              we can, in most cases, pull off chunks of data using specialist
-              software and an external drive caddy. The drive failure would have
-              to be pretty catastrophic for us to be unable to do anything! Our
-              Trinity Leeds repair centre is fully equipped with all the latest
-              tools and parts to get you reunited with your data as quickly as
-              possible, you don’t need to make an appointment to visit and all
-              work is covered by a 90 day warranty.
+              The tools we use include high powered microscopes, micro-soldering
+              equipment, chemical and ultrasonic baths, combined with a steady
+              hand and all operated in a specially ventilated workshop at our
+              Trinity Leeds branch. Since we don’t charge at all for diagnosis,
+              make sure you think of us before you give up and dispose/replace
+              your Apple device completely. You may be surprised at what we can
+              do!
             </p>
             <figure>
               <img
                 className="w-full rounded-lg"
-                src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80"
+                src="https://images.unsplash.com/photo-1527097779402-4a4b213307fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5146&q=80"
                 alt=""
                 width={1310}
                 height={873}
@@ -215,9 +204,9 @@ export default function Recycling() {
             </figure>
             <h2>Everything you need for your devices</h2>
             <p>
-              It's not just data recovery services we offer however. If you
-              require an insurance report, logic board repairs or a liquid
-              damage repair. Take a look at some of the other services we offer.
+              It's not just logic board services we offer however. If you
+              require an insurance report, data recovery or a liquid damage
+              repair. Take a look at some of the other services we offer.
             </p>
             <Link href="/liquid-damage-repairs">
               <a className="text-base font-semibold text-blue-600 hover:text-blue-500 block">

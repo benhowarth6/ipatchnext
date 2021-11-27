@@ -11,14 +11,14 @@ const footerNavigation = {
   services: [
     { name: "Recycling", href: "/device-recycling" },
     { name: "Liquid Damage Repairs", href: "/liquid-damage-repairs" },
-    { name: "Logic Board Repairs", href: "#" },
-    { name: "Data Recovery", href: "#" },
-    { name: "Insurance Reports", href: "#" },
+    { name: "Logic Board Repairs", href: "/logic-board-repairs" },
+    { name: "Data Recovery", href: "/data-recovery" },
+    { name: "Insurance Reports", href: "/insurance-reports" },
   ],
   company: [
-    { name: "About us", href: "about-us" },
-    { name: "Contact us", href: "contact-us" },
-    { name: "Press", href: "#" },
+    { name: "About us", href: "/about-us" },
+    { name: "Contact us", href: "/contact-us" },
+    { name: "Press", href: "/press" },
   ],
   legal: [
     { name: "Terms of Service", href: "#" },
