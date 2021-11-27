@@ -115,7 +115,6 @@ export default function Example() {
                                     {offers.map((offer) => (
                                         <li key={offer.name} className="flex flex-col">
                                             <a
-                                                href={offer.href}
                                                 className="relative flex-1 flex flex-col justify-center bg-white py-6 px-4 text-center focus:z-10"
                                             >
                                                 <p className="text-sm text-gray-500">{offer.name}</p>
