@@ -10,7 +10,7 @@ import {
   ChevronUpIcon,
   SelectorIcon,
 } from "@heroicons/react/solid";
-import DatePicker, { ReactDatePicker } from "react-datepicker";
+import DatePicker from "react-datepicker";
 import subDays from "date-fns/subDays";
 import Axios from "axios";
 import { Formik, Field, Form } from "formik";
@@ -60,7 +60,7 @@ const BookingSchema = Yup.object().shape({
   appointmentDate: Yup.string().required("An appointment date is required."),
 });
 
-export default function Example() {
+export default function DropOff() {
   const key = process.env.NEXT_PUBLIC_AIRTABLE_API_KEY;
 
   const router = useRouter();
@@ -328,7 +328,7 @@ export default function Example() {
                 };
 
                 await Axios.post(
-                  "https://api.airtable.com/v0/apptENX9O16U7Ynmi/Drop%20Off%20Repairs?api_key=keyIyLxPkNnEqvEbZ",
+                  "https://api.airtable.com/v0/apptENX9O16U7Ynmi/Drop%20Off%20Repairs",
                   data,
                   axiosConfig
                 ).then((response) => {
