@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Details = () => {
     return (
         <div className="bg-white">
