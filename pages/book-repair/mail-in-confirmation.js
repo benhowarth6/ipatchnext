@@ -76,7 +76,7 @@ export default function Example() {
                             </div>
                         </div>
                     </header>
-                    <main className="bg-white px-4 pt-16 pb-24 print:pt-6 print:pb-0 sm:px-6 sm:pt-24 lg:px-8 lg:py-32">
+                    <main className="bg-white px-4 pt-16 pb-12 print:pt-6 print:pb-0 sm:px-6 sm:pt-24 lg:px-8 lg:pt-16 lg:pb-12">
                         <div className="max-w-3xl mx-auto">
                             {repairs.filter(repairs => repairs.id == `${id}`).map(filteredRepairs => {
                                 const { id, name, price, model, image } = filteredRepairs;
@@ -176,6 +176,37 @@ export default function Example() {
                             })}
                         </div>
                     </main>
+                    <div className="max-w-3xl mx-auto px-4 pt-12 pb-16 sm:px-6 sm:pt-24 sm:pb-32 lg:px-8">
+                        <h1 className="text-lg font-medium text-gray-900">
+                            What happens next
+                        </h1>
+
+                        <p className="mt-2 text-sm text-gray-700">
+                            Once you've received your order confirmation email, we'll send you
+                            another email or a text message to confirm part availability for
+                            your chosen appointment date.
+                        </p>
+                        <div className="mt-12 sm:mt-16">
+                            <h1 className="text-lg font-medium text-gray-900">
+                                What you need to do
+                            </h1>
+
+                            <ol className="list-decimal list-inside mt-2 text-sm text-gray-700">
+                                <li>
+                                    As you have booked a mail in repair you'll need to package up your device and post it to us. Our delivery details are: iPatch, Trinity Leeds, 201 Albion Street, Leeds, LS1 5AR.
+                                </li>
+                                <li className="mt-2">
+                                    We don't require any accessories, power cables, chargers or cases to complete your repair, and we recommend you don't send these with your device.
+                                </li>
+                                <li className="mt-2">
+                                    Please make sure you include your contact details and return postage details.
+                                </li>
+                                <li className="mt-2">
+                                    Although not required, we recommend you make a backup of your device prior to your repair.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
