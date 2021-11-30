@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 import Navigation from "../components/Navigation"
@@ -99,11 +100,12 @@ export default function Example() {
                                 </div>
                             </div>
                             <div className="w-full h-48 sm:h-64 lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full">
-                                <img
-                                    src="https://images.unsplash.com/photo-1634618776233-2e951832a5f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80"
-                                    alt=""
-                                    className="w-full h-full object-center object-cover"
-                                />
+                                <div className="w-full h-full object-center object-cover relative">
+                                    <Image src="/index/hero.jpg"
+                                        layout="fill"
+                                        objectFit="cover"
+                                        alt="Hero Photo of iPhone" />
+                                </div>
                             </div>
                         </div>
                         <nav aria-label="Offers" className="order-last lg:order-last">
@@ -147,13 +149,17 @@ export default function Example() {
                                 <div className="box-content py-2 relative h-80 overflow-x-auto xl:overflow-visible">
                                     <div className="absolute min-w-screen-xl px-4 flex space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-5 xl:gap-x-8">
                                         {categories.map((category) => (
-                                            <Link href={category.href}>
+                                            <Link key={category.name} href={category.href}>
                                                 <a
-                                                    key={category.name}
                                                     className="relative w-56 h-80 rounded-lg p-6 flex flex-col overflow-hidden hover:opacity-75 xl:w-auto"
                                                 >
                                                     <span aria-hidden="true" className="absolute inset-0">
-                                                        <img src={category.imageSrc} alt="" className="w-full h-full object-center object-cover" />
+                                                        <div className="w-full h-full object-center object-cover">
+                                                            <Image src={category.imageSrc}
+                                                                alt=""
+                                                                layout="fill"
+                                                                objectFit="cover" />
+                                                        </div>
                                                     </span>
                                                     <span
                                                         aria-hidden="true"
@@ -187,11 +193,13 @@ export default function Example() {
                     <section aria-labelledby="comfort-heading" className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
                         <div className="relative rounded-lg overflow-hidden">
                             <div className="absolute inset-0">
-                                <img
-                                    src="https://images.unsplash.com/photo-1543510644-82353c4be12a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4032&q=80"
-                                    alt=""
-                                    className="w-full h-full object-center object-cover"
-                                />
+                                <div className="w-full h-full object-center object-cover">
+                                    <Image src="https://images.unsplash.com/photo-1543510644-82353c4be12a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4032&q=80"
+                                        alt=""
+                                        layout="fill"
+                                        objectFit="cover" />
+                                </div>
+
                             </div>
                             <div className="relative bg-gray-900 bg-opacity-75 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
                                 <div className="relative max-w-3xl mx-auto flex flex-col items-center text-center">

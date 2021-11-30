@@ -22,7 +22,7 @@ export default function Example() {
             </h2>
             <p className="mt-4 text-4xl font-extrabold text-gray-900 tracking-tight">All in the Details</p>
             <p className="mt-4 text-gray-500">
-              As mentioned previously, we've now been repairing iPads for quite some time. During this we've always been committed to using original components wherever possible, paired with the best workmanship.
+              As mentioned previously, we've now been repairing iPods for quite some time. During this we've always been committed to using original components wherever possible, paired with the best workmanship.
               This means we aren't always the cheapest option available, however we feel we do offer the best available independent repair option for Apple products.
             </p>
             <p className="mt-8 text-gray-500">

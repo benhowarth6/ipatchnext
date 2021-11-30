@@ -160,7 +160,7 @@ export default function DropOff() {
                   .map((filteredRepairs) => {
                     const { id, name, price, model, image } = filteredRepairs;
                     return (
-                      <div>
+                      <div key={id}>
                         <h2
                           id="summary-heading"
                           className="text-lg font-medium text-gray-900"
@@ -173,7 +173,6 @@ export default function DropOff() {
                           className="text-sm font-medium text-gray-900 divide-y divide-gray-200"
                         >
                           <li
-                            key={id}
                             className="flex items-start py-6 space-x-4"
                           >
                             <img
@@ -720,7 +719,7 @@ export default function DropOff() {
                       </div>
                     </div>
                     {selectedRepair.map((repairs) => (
-                      <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
+                      <div key={repairs.name} className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
                         <button
                           className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
                           type="submit"

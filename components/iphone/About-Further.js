@@ -7,7 +7,7 @@ export default function Example() {
         <div className="aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 lg:aspect-none lg:absolute lg:w-1/2 lg:h-full lg:pr-4 xl:pr-16">
           <div className="h-full w-full object-center object-cover lg:h-full lg:w-full">
             <Image
-              alt="Black leather journal with silver steel disc binding resting on wooden shelf with machined steel pen."
+              alt="iPhone with charging cable."
               src="/iphone/about-further.jpg"
               layout="responsive"
               height="2048"

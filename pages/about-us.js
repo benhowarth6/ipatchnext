@@ -125,7 +125,7 @@ export default function Home() {
                     <img
                       className="rounded-lg shadow-lg object-cover object-center"
                       src="/people/shop.jpeg"
-                      alt="Whitney leaning against a railing on a downtown street"
+                      alt="iPatch Storefront Trinity Leeds"
                       width={1184}
                       height={1376}
                     />

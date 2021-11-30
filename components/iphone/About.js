@@ -6,21 +6,21 @@ const features = [
     description:
       'Starting with the most common type of iPhone repair. Screen replacements make up the majority of our repairs, to date we\'ve completed well over 30k. We try to keep stock of all iPhone displays to ensure quick turnaround. And we only use the original quality parts to ensure no loss of functionality such as True-Tone and auto-brightness.',
     imageSrc: '/iphone/screen-replacements.jpg',
-    imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
+    imageAlt: 'iPhone on home screen.',
   },
   {
     name: 'Battery Replacements',
     description:
       'Next up is battery replacements, again we\'ve completed well over 50k of these. As such we\'ve learnt how to read iPhone battery data and analytics to determine if a battery does require a replacement or if there is another issue causing excessive drain. As with our screen replacements, we only use the original battery cells to ensure your replacement performs perfectly.',
     imageSrc: '/iphone/battery-replacements.jpg',
-    imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
+    imageAlt: 'Rear of an iPhone.',
   },
   {
     name: 'Additional Services',
     description:
       'Through our many years of experience we\'ve been able to extend our offering of iPhone repair services to include liquid damage repairs, logic board repairs and data recovery. These services have allowed us to offer a far wider range of repairs, so no matter your issue we’re able to offer a solution.',
     imageSrc: '/iphone/additional-services.jpg',
-    imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
+    imageAlt: 'Closeup of an iPhone rear camera.',
   },
 ]
 

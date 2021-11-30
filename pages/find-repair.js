@@ -6,8 +6,6 @@ import { useState } from 'react'
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
 import Incentive from "../components/Incentive"
-import Services from "../components/Services"
-import Business from "../components/Business"
 
 const categories = [
   {
@@ -38,7 +36,6 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <>
@@ -87,8 +84,8 @@ export default function Example() {
 
               <div className="mt-8 grid grid-cols-2 gap-y-12 px-6 gap-x-6 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-5 xl:gap-x-8">
                 {categories.map((category) => (
-                  <Link href={category.href}>
-                    <a key={category.name} className="rounded-lg overflow-hidden hover:opacity-75">
+                  <Link key={category.name} href={category.href}>
+                    <a className="rounded-lg overflow-hidden hover:opacity-75">
                       <div className="relative">
                         <div className="relative w-full h-80 rounded-lg overflow-hidden ">
                           <div className="w-full h-full object-center object-cover">

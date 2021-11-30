@@ -1,16 +1,18 @@
+import Image from 'next/image';
+
 const features = [
   {
     name: 'Screen Replacements',
     description:
       'We offer screen replacements on all Apple devices, including iPhone\'s, iPad\'s, Mac\'s and more. We code all of our displays to ensure you don\t loose important features such as True Tone, Auto Brightness.',
-    imageSrc: 'https://guide-images.cdn.ifixit.com/igi/DZvmn2sv2BmqeCID.full',
+    imageSrc: '/index/screen-replacements.jpg',
     imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
   },
   {
     name: 'New Batteries',
     description:
       'Batteries are a complex technology, and a number of variables contribute to battery performance and related iPhone performance. All rechargeable batteries are consumables and have a limited lifespan – eventually their capacity and performance decline so that they need to be replaced.',
-    imageSrc: 'https://guide-images.cdn.ifixit.com/igi/Hi1pL2DgCu4hZyrP.full',
+    imageSrc: '/index/battery-replacements.jpg',
     imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
   },
 ]
@@ -52,7 +54,12 @@ export default function Example() {
                 )}
               >
                 <div className="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden">
-                  <img src={feature.imageSrc} alt={feature.imageAlt} className="object-center object-cover" />
+                  <div className="object-center object-cover">
+                    <Image src={feature.imageSrc}
+                      alt={feature.imageAlt}
+                      layout="fill"
+                      objectFit="cover" />
+                  </div>
                 </div>
               </div>
             </div>

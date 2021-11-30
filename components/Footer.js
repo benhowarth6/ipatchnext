@@ -117,9 +117,8 @@ const Footer = () => {
           <div className="mt-4 flex items-center justify-center md:mt-0">
             <div className="flex space-x-8">
               {footerNavigation.bottomLinks.map((item) => (
-                <Link href={item.name}>
+                <Link key={item.name} href={item.name}>
                   <a
-                    key={item.name}
                     className="text-sm text-gray-300 hover:text-white"
                   >
                     {item.name}

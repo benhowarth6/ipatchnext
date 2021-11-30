@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const features = [
     {
       name: 'Screen Replacements',
@@ -59,7 +61,12 @@ const features = [
                   )}
                 >
                   <div className="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden">
-                    <img src={feature.imageSrc} alt={feature.imageAlt} className="object-center object-cover" />
+                  <div className="object-center object-cover">
+                    <Image src={feature.imageSrc}
+                      alt={feature.imageAlt}
+                      layout="fill"
+                      objectFit="cover" />
+                  </div>
                   </div>
                 </div>
               </div>
