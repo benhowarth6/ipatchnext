@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 
 import Navigation from "../components/Navigation";
@@ -122,13 +121,14 @@ export default function Home() {
               <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                    <img
-                      className="rounded-lg shadow-lg object-cover object-center"
-                      src="/people/shop.jpeg"
-                      alt="iPatch Storefront Trinity Leeds"
-                      width={1184}
-                      height={1376}
-                    />
+                    <div className="rounded-lg object-cover object-center">
+                      <Image src="/people/shop.jpeg"
+                        alt="iPatch Storefront Trinity Leeds"
+                        width={1184}
+                        height={1376}
+                        className="rounded-lg"
+                      />
+                    </div>
                   </div>
                 </figure>
               </div>
@@ -184,7 +184,14 @@ export default function Home() {
                   <li key={person.name} className="sm:py-8">
                     <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
                       <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                        <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                        <div className="object-cover shadow-lg rounded-lg">
+                          <Image src={person.imageUrl}
+                            alt={person.role}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-lg"
+                          />
+                        </div>
                       </div>
                       <div className="sm:col-span-2">
                         <div className="space-y-4">
