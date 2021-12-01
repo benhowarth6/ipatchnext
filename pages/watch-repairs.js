@@ -15,25 +15,27 @@ import models from '../data/watch/watch-models.json';
 export default function Home() {
   return (
     <div>
-      <NextSeo
-        title="Watch Repairs in Leeds | Screen Replacements, Batteries and more"
-        description="Expert Apple Watch repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our Watch repairs include a 3 month warranty."
-        canonical="https://www.ipatchrepairs.co.uk/watch-repairs"
-        openGraph={{
-          type: 'website',
-          url: 'https://www.ipatchrepairs.co.uk/watch-repairs',
-          title: 'Watch Repairs in Leeds | Screen Replacements, Batteries and more',
-          description: 'Expert Apple Watch repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All our Watch repairs include a 3 month warranty.',
-          images: [
-            {
-              url: "https://www.ipatchrepairs.co.uk/watch-social.jpg",
-              width: 1200,
-              height: 630,
-              alt: "iPatch | Watch Repairs in Leeds"
-            }
-          ]
-        }}
-      />
+      <Head>
+        <title>
+          Apple Watch Repairs in Leeds - Screen Replacements & Other Repairs | iPatch
+        </title>
+        <meta
+          name="description"
+          content="Expert Apple Apple Watch repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our Apple Watch repairs include a 3 month warranty."
+          key="desc"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/watch-repairs" />
+        <meta property="og:title" content="Apple Watch Repairs in Leeds - Screen Replacements & Other Repairs | iPatch" />
+        <meta
+          property="og:description"
+          content="Expert Apple Apple Watch repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our Apple Watch repairs include a 3 month warranty."
+        />
+        <meta
+          property="og:image"
+          content="https://www.ipatchrepairs.co.uk/social.jpg"
+        />
+      </Head>
       <Navigation />
 
       <div className="bg-gray-50">

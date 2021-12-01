@@ -15,25 +15,27 @@ import models from '../data/mac/mac-models.json';
 export default function Home() {
   return (
     <div>
-      <NextSeo
-        title="Mac Repairs in Leeds | Screen Replacements, Batteries and more"
-        description="Expert Apple Mac repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our Mac repairs include a 3 month warranty."
-        canonical="https://www.ipatchrepairs.co.uk/mac-repairs"
-        openGraph={{
-          type: 'website',
-          url: 'https://www.ipatchrepairs.co.uk/mac-repairs',
-          title: 'Mac Repairs in Leeds | Screen Replacements, Batteries and more',
-          description: 'Expert Apple Mac repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All our Mac repairs include a 3 month warranty.',
-          images: [
-            {
-              url: "https://www.ipatchrepairs.co.uk/mac-social.jpg",
-              width: 1200,
-              height: 630,
-              alt: "iPatch | Mac Repairs in Leeds"
-            }
-          ]
-        }}
-      />
+      <Head>
+        <title>
+          Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch
+        </title>
+        <meta
+          name="description"
+          content="Expert Apple Mac repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our Mac repairs include a 3 month warranty."
+          key="desc"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ipatchrepairs.co.uk/mac-repairs" />
+        <meta property="og:title" content="Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch" />
+        <meta
+          property="og:description"
+          content="Expert Apple Mac repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our Mac repairs include a 3 month warranty."
+        />
+        <meta
+          property="og:image"
+          content="https://www.ipatchrepairs.co.uk/social.jpg"
+        />
+      </Head>
       <Navigation />
 
       <div className="bg-gray-50">

@@ -21,12 +21,7 @@ const footerNavigation = {
     { name: "Press", href: "/press" },
   ],
   legal: [
-    { name: "Terms of Service", href: "#" },
-    { name: "Privacy Policy", href: "#" },
-  ],
-  bottomLinks: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "Terms of Service", href: "/terms" },
   ],
 };
 
@@ -107,25 +102,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="py-10 md:flex md:items-center md:justify-between">
-          <div className="text-center md:text-left">
+        <div className="py-10 flex items-center justify-between">
+          <div className="text-center mx-auto">
             <p className="text-sm text-white">
               &copy; 2021 All Rights Reserved
             </p>
-          </div>
-
-          <div className="mt-4 flex items-center justify-center md:mt-0">
-            <div className="flex space-x-8">
-              {footerNavigation.bottomLinks.map((item) => (
-                <Link key={item.name} href={item.name}>
-                  <a
-                    className="text-sm text-gray-300 hover:text-white"
-                  >
-                    {item.name}
-                  </a>
-                </Link>
-              ))}
-            </div>
           </div>
         </div>
       </div>

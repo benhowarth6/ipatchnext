@@ -1,6 +1,6 @@
-import { NextSeo } from "next-seo";
+import Head from 'next/head';
 import Link from "next/link";
-import { MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
 import Navigation from '../components/Navigation';
 
@@ -15,44 +15,54 @@ const locations = [
 
 const footerNavigation = {
     repairs: [
-        { name: 'iPhone Repairs', href: '/iphone-repairs' },
-        { name: 'iPad Repairs', href: '/ipad-repairs' },
-        { name: 'Mac Repairs', href: '/mac-repairs' },
-        { name: 'Watch Repairs', href: '/watch-repairs' },
-        { name: 'iPod Repairs', href: '/ipod-repairs' },
+        { name: "iPhone Repairs", href: "/iphone-repairs" },
+        { name: "iPad Repairs", href: "/ipad-repairs" },
+        { name: "Mac Repairs", href: "/mac-repairs" },
+        { name: "Watch Repairs", href: "/watch-repairs" },
+        { name: "iPod Repairs", href: "/ipod-repairs" },
     ],
     services: [
-        { name: 'Recycling', href: '#' },
-        { name: 'Liquid Damage', href: '#' },
-        { name: 'Logic Board Repairs', href: '#' },
-        { name: 'Data Recovery', href: '#' },
-        { name: 'Insurance Reports', href: '#' },
+        { name: "Recycling", href: "/device-recycling" },
+        { name: "Liquid Damage Repairs", href: "/liquid-damage-repairs" },
+        { name: "Logic Board Repairs", href: "/logic-board-repairs" },
+        { name: "Data Recovery", href: "/data-recovery" },
+        { name: "Insurance Reports", href: "/insurance-reports" },
     ],
     company: [
-        { name: 'About us', href: 'about-us' },
-        { name: 'Contact us', href: 'contact-us' },
-        { name: 'Press', href: '#' },
+        { name: "About us", href: "/about-us" },
+        { name: "Contact us", href: "/contact-us" },
+        { name: "Press", href: "/press" },
     ],
     legal: [
-        { name: 'Terms of Service', href: '#' },
-        { name: 'Return Policy', href: '#' },
-        { name: 'Privacy Policy', href: '#' },
-        { name: 'Shipping Policy', href: '#' },
+        { name: "Terms of Service", href: "/terms" },
     ],
-    bottomLinks: [
-        { name: 'Privacy', href: '#' },
-        { name: 'Terms', href: '#' },
-    ],
-}
+};
 
 export default function Example() {
 
     return (
         <div>
-            <NextSeo
-                title="Drop off repair booking in Leeds - iPatch"
-                description="Book your device in with us for a drop-off repair at one of our Leeds stores using this form."
-            />
+            <Head>
+                <title>
+                    Contact Us - iPhone, iPad & Mac Repairs in Leeds | iPatch
+                </title>
+                <meta
+                    name="description"
+                    content="Find out how you can get in touch with us. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
+                    key="desc"
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.ipatchrepairs.co.uk/contact-us" />
+                <meta property="og:title" content="Contact Us - iPhone, iPad & Mac Repairs in Leeds | iPatch" />
+                <meta
+                    property="og:description"
+                    content="Find out how you can get in touch with us. We repair screens, batteries, charging ports and more on a range of Apple Products. All of our repairs include a 3 month warranty."
+                />
+                <meta
+                    property="og:image"
+                    content="https://www.ipatchrepairs.co.uk/social.jpg"
+                />
+            </Head>
             <div className="bg-gray-50">
                 {/* Mobile menu */}
 
@@ -251,7 +261,7 @@ export default function Example() {
                             Our locations
                         </h2>
                         <p className="mt-6 text-lg text-gray-500 max-w-3xl">
-                            We have stores located in Trinity Leeds and Kirkstall Morrisons. We don't require appointments to visit 
+                            We have stores located in Trinity Leeds and Kirkstall Morrisons. We don't require appointments to visit
                             us in Trinity, however you will need to make a booking to visit our Kirkstall store.
                         </p>
                         <div className="mt-10 grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -285,11 +295,7 @@ export default function Example() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="pt-16 pb-20">
                             <div className="md:flex md:justify-center">
-                                <img
-                                    src="/logo-white.svg"
-                                    alt=""
-                                    className="h-6 w-auto"
-                                />
+                                <img src="/logo-white.svg" alt="" className="h-6 w-auto" />
                             </div>
                             <div className="mt-16 max-w-5xl mx-auto xl:grid xl:grid-cols-2 xl:gap-8">
                                 <div className="grid grid-cols-2 gap-8 xl:col-span-2">
@@ -357,21 +363,11 @@ export default function Example() {
                             </div>
                         </div>
 
-                        <div className="py-10 md:flex md:items-center md:justify-between">
-                            <div className="text-center md:text-left">
-                                <p className="text-sm text-white">&copy; 2021 All Rights Reserved</p>
-                            </div>
-
-                            <div className="mt-4 flex items-center justify-center md:mt-0">
-                                <div className="flex space-x-8">
-                                    {footerNavigation.bottomLinks.map((item) => (
-                                        <Link href={item.name}>
-                                            <a key={item.name} className="text-sm text-gray-300 hover:text-white">
-                                                {item.name}
-                                            </a>
-                                        </Link>
-                                    ))}
-                                </div>
+                        <div className="py-10 flex items-center justify-between">
+                            <div className="text-center mx-auto">
+                                <p className="text-sm text-white">
+                                    &copy; 2021 All Rights Reserved
+                                </p>
                             </div>
                         </div>
                     </div>
