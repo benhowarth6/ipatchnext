@@ -30,9 +30,9 @@ export default function Example() {
                 We built our business on great customer service
               </h2>
               <p className="mt-4 text-gray-500">
-                Let’s be honest. When it comes to device repair there’s a number of options out there. In today’s world people rely on their iPad's more than ever. For people who want high quality, swift repairs, iPatch are here to help. Our focussed experience in the repair of Apple Devices mean we’re able to repair just about anything.
+                Let’s be honest. When it comes to device repair there’s a number of options out there. In today’s world people rely on their Apple Watch's more than ever. For people who want high quality, swift repairs, iPatch are here to help. Our focussed experience in the repair of Apple Devices mean we’re able to repair just about anything.
               </p>
-              <p className="mt-4 text-gray-500">We focus heavily on the quality of our repairs and parts to ensure you have a seamless experience with us. We don’t use cheap components, ensuring your iPad retains its original quality and features.</p>
+              <p className="mt-4 text-gray-500">We focus heavily on the quality of our repairs and parts to ensure you have a seamless experience with us. We don’t use cheap components, ensuring your Apple Watch retains its original quality and features.</p>
             </div>
             <div className="aspect-w-3 aspect-h-2 bg-gray-100 rounded-lg overflow-hidden">
               <div className="w-full h-full object-center object-cover">
