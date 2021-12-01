@@ -18,10 +18,7 @@ export default function Example() {
 
         <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:pb-32 sm:px-6 lg:max-w-7xl lg:pt-32 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
           <div className="lg:col-start-2">
-            <h2 id="features-heading" className="font-medium text-gray-500">
-              How we're different
-            </h2>
-            <p className="mt-4 text-4xl font-extrabold text-gray-900 tracking-tight">All in the Details</p>
+            <h2 className="mt-4 text-4xl font-extrabold text-gray-900 tracking-tight">All in the Details</h2>
             <p className="mt-4 text-gray-500">
               As mentioned previously, we've now been repairing Macs for quite some time. During this we've always been committed to using original components wherever possible, paired with the best workmanship.
               This means we aren't always the cheapest option available, however we feel we do offer the best available independent repair option for Apple products.

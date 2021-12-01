@@ -18,18 +18,16 @@ export default function Example() {
 
         <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:pb-32 sm:px-6 lg:max-w-7xl lg:pt-32 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
           <div className="lg:col-start-2">
-            <h2 id="features-heading" className="font-medium text-gray-500">
-              How we're different
-            </h2>
-            <p className="mt-4 text-4xl font-extrabold text-gray-900 tracking-tight">All in the Details</p>
+            <h2 className="mt-4 text-4xl font-extrabold text-gray-900 tracking-tight">All in the Details</h2>
             <p className="mt-4 text-gray-500">
-              As mentioned previously, we've now been repairing Apple Watchs for quite some time. During this we've always been committed to using original components wherever possible, paired with the best workmanship.
-              This means we aren't always the cheapest option available, however we feel we do offer the best available independent repair option for Apple products.
+              As mentioned previously, we've now been repairing Apple Watch’s for a number of years. During this we've always been committed to using original components paired with the best workmanship.
+              This means we aren't always the cheapest option available, but we feel we do offer the best available independent repair option for Apple Watch.
+              Especially since Apple themselves won’t offer repairs to individual components, only a full replacement Watch.
             </p>
             <p className="mt-8 text-gray-500">
-              We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs as Apple originally intended with no loss of functionality or performance.
-              We also ensure devices are disassembled and reassembled according to manufacturers specification. We don't leave parts out, any small components missing from a previous poor repair will be changed
-              as part of your repair with us. We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance.
+              We don't offer different tiers or grades of parts, only original quality, every time. This ensures your device performs just as it did before the repair with no loss of functionality or performance.
+              We also ensure devices are disassembled and reassembled according to manufacturers specification. We don't leave parts out, and any small components missing from a previous poor repair will be changed as part of your repair with us.
+              We also replace any seals which have to be broken to complete your repair, to ensure water and dust resistance. You wouldn’t even notice your cherished Watch had even been opened up as the tools and techniques we use leave no mark on the casing.
             </p>
           </div>
         </div>

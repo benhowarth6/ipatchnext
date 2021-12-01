@@ -33,7 +33,7 @@ export default function Example() {
     <div className="bg-white">
       <div className="max-w-2xl mx-auto py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Our repair process</h2>
+          <h2 className="text-4xl font-extrabold tracking-tight text-gray-900">Our repair process</h2>
           <p className="mt-4 text-gray-500">
             We've been repairing iPhones in Leeds for over 13 years now, during that time we've learnt a lot about how the devices work, the common issues each model have and the best repair methods.
           </p>

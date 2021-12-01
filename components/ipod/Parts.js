@@ -9,7 +9,7 @@ export default function Example() {
           <div className="flex flex-col items-center text-center">
             <h2
               id="details-heading"
-              className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+              className="text-4xl font-extrabold tracking-tight text-gray-900"
             >
               The Fine Details
             </h2>
@@ -27,59 +27,33 @@ export default function Example() {
               <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                 <div className="w-full h-full object-center object-cover">
                   <Image
-                    alt="Photo of the rear of an iPhone 12 Pro."
-                    src="https://images.unsplash.com/photo-1607452258545-943d7243463c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3936&q=80"
+                    alt="iPod Classic playing on a dock."
+                    src="https://images.unsplash.com/photo-1592761735611-d5a73996982e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80"
                     layout="fill"
                     objectFit="cover"
                   />
                 </div>
               </div>
               <p className="mt-8 text-base text-gray-500">
-                A prime example would be with repairing smashed glass on the
-                rear of iPad’s. A lot of repair shops will try and melt off the
-                existing glass to then bond another piece on to the existing
-                frame. The problem here is that the new glass doesn’t sit under
-                the camera lens as it is supposed to (it goes over for ease of
-                installation).
-              </p>
-              <p className="mt-8 text-base text-gray-500">
-                The wireless charging coil can easily be damaged which, as it is
-                connected to your volume buttons, can cause them to fail.
-                Resulting in a poor fit meaning the iPad is much less water
-                resistant against any future mishaps.
-              </p>
-              <p className="mt-8 text-base text-gray-500">
-                Here at iPatch we choose to replace not only the rear glass but
-                the entire frame as well. Yes it is a bit more time consuming
-                and certainly more of an expensive option but the results leave
-                you with an iPad looking like it did fresh out the box.
+                All the components we use to repair iPods are original OEM quality parts. For some of the almost antique models, we do have to use refurbished components as the bits simply aren’t produced any more.
+                This doesn’t mean though that they aren’t thoroughly inspected and tested before fitting and our warranty covers any unexpected issues that may arise.
+                For the newer models of iPods and all the replacement batteries we fit, the parts are supplied straight from the factory.
               </p>
             </div>
             <div>
               <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                 <div className="w-full h-full object-center object-cover">
                   <Image
-                    alt="Photo of the rear of an iPhone 12 Pro."
-                    src="https://images.unsplash.com/photo-1622531636820-5d727319e45d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3324&q=80"
+                    alt="iPod Classic on a bag."
+                    src="https://images.unsplash.com/photo-1581825874621-9ccf3f1aa273?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
                     layout="fill"
                     objectFit="cover"
                   />
                 </div>
               </div>
               <p className="mt-8 text-base text-gray-500">
-                Another example is cheaper screen repairs which often don't use
-                original IC's and LCD's. This means you typically loose the
-                features which are coded to the screen such as True-Tone and
-                auto-brightness. We ensure your new display is a quality part
-                which supports these features and means no loss of
-                functionality.
-              </p>
-              <p className="mt-8 text-base text-gray-500">
-                We aim to offer the best available independent repairs, from our
-                Leeds based stores. We only use the best parts available and our
-                repairs are often much cheaper than going to the Apple Store. So
-                if you have a smashed screen, bad battery or any other fault,
-                we're sure we'll have a solution that you'll be happy with.
+                We aim to offer the best available independent repairs, from our Leeds based stores. We only use the best parts available and our repairs are often much cheaper than going to the Apple Store. 
+                So if you have a smashed screen, bad battery or any other fault, we're sure we'll have a solution that you'll be happy with.
               </p>
             </div>
           </div>

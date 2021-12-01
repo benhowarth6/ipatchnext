@@ -7,12 +7,12 @@ const incentives = [
     description: "We'll diagnose your device free of charge and provide a no obligation quote for a repair.",
   },
   {
-    name: '90-day warranty',
+    name: '90-day Warranty',
     imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
     description: "If you have any issues in the first 90-days we warranty against any part defects or workmanship.",
   },
   {
-    name: 'Secure',
+    name: 'Secure Service',
     imageSrc: '/icons/secure.svg',
     description:
       "We don't require your passcode for the vast majority of our repairs, so your data stays secure and private.",
@@ -45,13 +45,13 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="mt-16 max-w-sm mx-auto grid grid-cols-1 gap-y-10 gap-x-8 sm:max-w-none lg:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
             {incentives.map((incentive) => (
-              <div key={incentive.name} className="text-center sm:flex sm:text-left lg:block lg:text-center">
+              <div key={incentive.name} className="sm:flex lg:block">
                 <div className="sm:flex-shrink-0">
-                  <img className="w-16 h-16 mx-auto" src={incentive.imageSrc} alt="" />
+                  <img className="w-16 h-16" src={incentive.imageSrc} alt="" />
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+                <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
                   <h3 className="text-sm font-medium text-gray-900">{incentive.name}</h3>
                   <p className="mt-2 text-sm text-gray-500">{incentive.description}</p>
                 </div>
