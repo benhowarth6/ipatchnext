@@ -1,6 +1,6 @@
 {
-  "name": "nextv2",
-  "version": "0.1.0",
+  "name": "ipatch",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
