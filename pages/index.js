@@ -8,6 +8,7 @@ import Footer from "../components/Footer"
 import Incentive from "../components/Incentive"
 import Services from "../components/Services"
 import Business from "../components/Business"
+import Chat from "../components/Chat"
 
 const categories = [
     {
@@ -84,7 +85,7 @@ export default function Example() {
                                                 We make repairs hassle free
                                             </h1>
                                             <p className="mt-4 text-xl text-gray-600">
-                                                Get a quote for your repair online and book it in at one of our stores for a quick repair.
+                                                Our focus on Apple device repair allows us to offer services for nearly every product. Get a quote for your repair online and book it in at one of our stores for a swift repair.
                                             </p>
                                             <div className="mt-6">
                                                 <Link href="find-repair">
@@ -113,17 +114,27 @@ export default function Example() {
                                 <ul
                                     role="list"
                                     className="grid grid-cols-1 divide-y divide-gray-200 lg:grid-cols-3 lg:divide-y-0 lg:divide-x"
+
                                 >
-                                    {offers.map((offer) => (
-                                        <li key={offer.name} className="flex flex-col">
-                                            <a
-                                                className="relative flex-1 flex flex-col justify-center bg-white py-6 px-4 text-center focus:z-10"
-                                            >
-                                                <p className="text-sm text-gray-500">{offer.name}</p>
-                                                <p className="font-semibold text-gray-900">{offer.description}</p>
-                                            </a>
-                                        </li>
-                                    ))}
+                                    <li className="flex flex-col pt-4">
+                                        <a
+                                            className="relative flex-1 flex flex-col bg-white py-6 px-4 focus:z-10"
+                                        >
+                                            <p className="text-sm text-gray-500">Repair Options</p>
+                                            <p className="font-semibold text-gray-900">Book in, walk in or mail in your repair.</p>
+                                        </a>
+                                    </li>
+                                    <li className="flex flex-col">
+                                        <Chat />
+                                    </li>
+                                    <li className="flex flex-col pt-4">
+                                        <a
+                                            className="relative flex-1 flex flex-col bg-white py-6 px-4 focus:z-10"
+                                        >
+                                            <p className="text-sm text-gray-500">Always Available</p>
+                                            <p className="font-semibold text-gray-900">Our Trinity Leeds store is open 7 days.</p>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>

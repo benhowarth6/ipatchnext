@@ -26,14 +26,15 @@ export default function Example() {
         <div className="max-w-2xl mx-auto px-4 lg:max-w-none">
           <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
             <div>
-              <h2 className="text-4xl font-extrabold tracking-tight text-gray-900">
-                We built our business on great customer service
+              <h2 id="features-heading" className="uppercase text-opacity-75 tracking-wider font-medium text-gray-500">
+                Overview
               </h2>
+              <p className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900">We built our business on great customer service</p>
+
               <p className="mt-4 text-gray-500">
-                At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                caring about that. Our new strategy is to write a bunch of things that look really good in the
-                headlines, then clarify in the small print but hope people don't actually read it.
+                Let’s be honest. When it comes to device repair there’s a number of options out there. In today’s world people rely on their mobile devices more than ever. For people who want high quality, swift repairs, iPatch are here to help. Our focussed experience in the repair of Apple Devices mean we’re able to repair just about anything.
               </p>
+              <p className="mt-4 text-gray-500">We focus heavily on the quality of our repairs and parts to ensure you have a seamless experience with us. We don’t use cheap components, ensuring your device retains its original quality and features.</p>
             </div>
             <div className="aspect-w-3 aspect-h-2 bg-gray-100 rounded-lg overflow-hidden">
               <div className="object-center object-cover">

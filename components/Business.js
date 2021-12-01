@@ -27,13 +27,12 @@ export default function Example() {
                 <div className="max-w-2xl mx-auto px-4 lg:max-w-none">
                     <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
                         <div>
-                            <h2 className="text-4xl font-extrabold tracking-tight text-gray-900">
-                                Trusted by a number of companies
+                            <h2 id="features-heading" className="uppercase text-opacity-75 tracking-wider font-medium text-gray-500">
+                                Business Solutions
                             </h2>
+                            <p className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900">Device Care</p>
                             <p className="mt-4 text-gray-500">
-                                We offer a number of services for businesses to help maintain
-                                your inventory of devices. We offer bulk discounts and even
-                                collection and drop off's.
+                                For our business customers we offer a number of services to help care for your devices. We offer the same swift turnaround on your device repairs as well as other options such as device protection. We also offer bulk discounts depending on the number of devices, invoicing and collection and drop off.
                             </p>
                             <p className="mt-4 text-gray-500">
                                 Contact us to find out how we can
