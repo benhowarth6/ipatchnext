@@ -57,6 +57,7 @@ const BookingSchema = Yup.object().shape({
   phone: Yup.string()
     .min(5, "Your phone number is too short!")
     .max(13, "Your phone number is too long!!"),
+  terms: Yup.boolean().oneOf([true], "You must agree to the repair terms and conditions to continue."),
   appointmentDate: Yup.string().required("An appointment date is required."),
 });
 
@@ -297,6 +298,7 @@ export default function DropOff() {
                 deviceModel: "",
                 deviceRepair: "",
                 repairCost: "",
+                terms: false,
               }}
               validationSchema={BookingSchema}
               onSubmit={async (values) => {
@@ -586,7 +588,7 @@ export default function DropOff() {
                         <div className="mt-1">
                           <div className="relative">
                             {values.appointmentLocation ===
-                            "Kirkstall Morrisons" ? (
+                              "Kirkstall Morrisons" ? (
                               <DatePicker
                                 dateFormat="dd/MM/yyyy"
                                 selected={values.appointmentDate}
@@ -621,7 +623,7 @@ export default function DropOff() {
                               />
                             )}
                             {errors.appointmentDate &&
-                            touched.appointmentDate ? (
+                              touched.appointmentDate ? (
                               <p
                                 class="mt-2 text-sm text-red-600"
                                 id="firstName-error"
@@ -718,6 +720,35 @@ export default function DropOff() {
                         </Listbox>
                       </div>
                     </div>
+                    <div className="mt-10 border-t border-gray-200 pt-10">
+                      <h2
+                        id="contact-info-heading"
+                        className="text-lg font-medium text-gray-900"
+                      >
+                        Terms
+                      </h2>
+                      <div className="mt-6 flex items-center">
+                        <Field
+                          type="checkbox"
+                          id="terms"
+                          name="terms"
+                          className="h-4 w-4 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        />
+                        <div className="ml-2">
+                          <label htmlFor="terms" className="text-sm font-medium text-gray-900">
+                            I agree to the repair <Link href="/terms"><a className="font-semibold text-blue-600 hover:text-blue-500">terms and condtions.</a></Link>
+                          </label>
+                        </div>
+                      </div>
+                      {errors.terms && touched.terms ? (
+                        <p
+                          class="mt-2 text-sm text-red-600"
+                          id="terms-error"
+                        >
+                          {errors.terms}
+                        </p>
+                      ) : null}
+                    </div>
                     {selectedRepair.map((repairs) => (
                       <div key={repairs.name} className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
                         <button
@@ -735,8 +766,7 @@ export default function DropOff() {
                           Continue
                         </button>
                         <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
-                          We don't take payment until after your repair has been
-                          completed.
+                          We take payment on collection of your device.
                         </p>
                       </div>
                     ))}

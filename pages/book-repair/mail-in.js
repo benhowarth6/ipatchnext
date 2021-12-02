@@ -42,6 +42,7 @@ const BookingSchema = Yup.object().shape({
   address: Yup.string().required("Your address is required."),
   city: Yup.string().required("Your city is required."),
   postcode: Yup.string().required("Your postcode is required."),
+  terms: Yup.boolean().oneOf([true], "You must agree to the repair terms and conditions to continue."),
 });
 
 export default function DropOff() {
@@ -285,6 +286,7 @@ export default function DropOff() {
                 deviceModel: "",
                 deviceRepair: "",
                 repairCost: "",
+                terms: false,
               }}
               validationSchema={BookingSchema}
               onSubmit={async (values) => {
@@ -558,7 +560,35 @@ export default function DropOff() {
                         </div>
                       </div>
                     </div>
-
+                    <div className="mt-10 border-t border-gray-200 pt-10">
+                      <h2
+                        id="contact-info-heading"
+                        className="text-lg font-medium text-gray-900"
+                      >
+                        Terms
+                      </h2>
+                      <div className="mt-6 flex items-center">
+                        <Field
+                          type="checkbox"
+                          id="terms"
+                          name="terms"
+                          className="h-4 w-4 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+                        />
+                        <div className="ml-2">
+                          <label htmlFor="terms" className="text-sm font-medium text-gray-900">
+                            I agree to the repair <Link href="/terms"><a className="font-semibold text-blue-600 hover:text-blue-500">terms and condtions.</a></Link>
+                          </label>
+                        </div>
+                      </div>
+                      {errors.terms && touched.terms ? (
+                        <p
+                          class="mt-2 text-sm text-red-600"
+                          id="terms-error"
+                        >
+                          {errors.terms}
+                        </p>
+                      ) : null}
+                    </div>
                     {selectedRepair.map((repairs) => (
                       <div key={repairs.name} className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
                         <button
