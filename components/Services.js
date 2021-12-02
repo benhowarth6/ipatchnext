@@ -19,8 +19,10 @@ export default function Example() {
                         <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                             <div className="w-full h-full object-center object-cover">
                                 <Image src="/index/screen-replacements.jpg"
-                                    alt="alt"
+                                    alt="Screen replacements"
                                     layout="fill"
+                                    width={1720}
+                                    height={960}
                                     objectFit="cover" />
                             </div>
                         </div>
@@ -32,8 +34,11 @@ export default function Example() {
                         <div className="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
                             <div className="w-full h-full object-center object-cover">
                                 <Image src="/index/battery-replacements.jpg"
-                                    alt="alt"
+                                    alt="Battery replacements"
                                     layout="fill"
+                                    layout="fill"
+                                    width={1720}
+                                    height={960}
                                     objectFit="cover" />
                             </div>
                         </div>

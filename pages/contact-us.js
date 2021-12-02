@@ -1,8 +1,14 @@
 import Head from 'next/head';
 import Link from "next/link";
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import { useState } from 'react';
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
+import Axios from "axios";
+import { Formik, Field, Form } from "formik";
+import * as Yup from "yup";
 
 import Navigation from '../components/Navigation';
+import SuccessModal from '../components/contact/successModal';
+import ErrorModal from '../components/contact/errorModal';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -38,7 +44,32 @@ const footerNavigation = {
     ],
 };
 
-export default function Example() {
+const ContactSchema = Yup.object().shape({
+    firstName: Yup.string()
+        .min(2, "Your first name is too short!")
+        .max(50, "Your first name is too Long!")
+        .required("Your first name is required."),
+    lastName: Yup.string()
+        .min(2, "Your last name is too short!")
+        .max(50, "Your last name is too Long!")
+        .required("Your last name is required."),
+    email: Yup.string()
+        .email("Invalid email")
+        .required("Your email address is required."),
+    phone: Yup.string()
+        .min(5, "Your phone number is too short!")
+        .max(13, "Your phone number is too long!!"),
+    message: Yup.string()
+        .min(5, "Your message is too short!")
+        .max(500, "Your message is too Long!")
+        .required("Your message is required."),
+});
+
+export default function Contact() {
+    const [modal, setModal] = useState(undefined);
+    const [errorModal, setErrorModal] = useState(undefined);
+
+    const key = process.env.NEXT_PUBLIC_AIRTABLE_API_KEY;
 
     return (
         <div>
@@ -141,117 +172,206 @@ export default function Example() {
                             </div>
                         </section>
 
-                        <form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
-                            <div className="max-w-lg mx-auto lg:max-w-none">
-                                <section aria-labelledby="contact-info-heading">
-                                    <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
-                                        Send us a message
-                                    </h2>
+                        <Formik
+                            enableReinitialize
+                            initialValues={{
+                                firstName: "",
+                                lastName: "",
+                                email: "",
+                                phone: "",
+                                message: "",
+                            }}
+                            validationSchema={ContactSchema}
+                            onSubmit={async (values, actions) => {
+                                const data = {
+                                    records: [
+                                        {
+                                            fields: {
+                                                firstName: values.firstName,
+                                                lastName: values.lastName,
+                                                email: values.email,
+                                                phone: values.phone,
+                                                message: values.message,
+                                            },
+                                        },
+                                    ],
+                                };
 
-                                    <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-                                        <div>
-                                            <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
-                                                First name
-                                            </label>
-                                            <div className="mt-1">
-                                                <input
-                                                    type="text"
-                                                    id="first-name"
-                                                    name="first-name"
-                                                    autoComplete="given-name"
-                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                />
+                                actions.resetForm();
+
+
+                                const axiosConfig = {
+                                    headers: {
+                                        Authorization: `Bearer ${key}`,
+                                        "Content-type": "application/json",
+                                    },
+                                };
+
+                                await Axios.post(
+                                    "https://api.airtable.com/v0/appr7woMNPpfpx35U/Table%201",
+                                    data,
+                                    axiosConfig
+                                ).then((response) => {
+                                    setModal(true)
+                                })
+                                    .catch((e) => {
+                                        setErrorModal(true)
+                                    });
+                            }}
+                        >
+                            {({ errors, values, touched, field, setFieldValue, handleReset }) => (
+                                <Form className className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
+                                    {errorModal && <ErrorModal />}
+                                    {modal && <SuccessModal />}
+                                    <div className="max-w-lg mx-auto lg:max-w-none">
+                                        <section aria-labelledby="contact-info-heading">
+                                            <h2 id="contact-info-heading" className="text-lg font-medium text-gray-900">
+                                                Send us a message
+                                            </h2>
+
+                                            <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                                                <div>
+                                                    <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
+                                                        First name
+                                                    </label>
+                                                    <div className="mt-1">
+                                                        <Field
+                                                            type="text"
+                                                            id="firstName"
+                                                            name="firstName"
+                                                            autoComplete="given-name"
+                                                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                        />
+                                                        {errors.firstName && touched.firstName ? (
+                                                            <p
+                                                                className="mt-2 text-sm text-red-600"
+                                                                id="firstName-error"
+                                                            >
+                                                                {errors.firstName}
+                                                            </p>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label htmlFor="last-name" className="block text-sm font-medium text-gray-900">
+                                                        Last name
+                                                    </label>
+                                                    <div className="mt-1">
+                                                        <Field
+                                                            type="text"
+                                                            id="lastName"
+                                                            name="lastName"
+                                                            autoComplete="family-name"
+                                                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                        />
+                                                        {errors.lastName && touched.lastName ? (
+                                                            <p
+                                                                className="mt-2 text-sm text-red-600"
+                                                                id="lastName-error"
+                                                            >
+                                                                {errors.lastName}
+                                                            </p>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div>
-                                            <label htmlFor="last-name" className="block text-sm font-medium text-gray-900">
-                                                Last name
-                                            </label>
-                                            <div className="mt-1">
-                                                <input
-                                                    type="text"
-                                                    id="last-name"
-                                                    name="last-name"
-                                                    autoComplete="family-name"
-                                                    className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                />
+                                            <div className="mt-6">
+                                                <label htmlFor="email-address" className="block text-sm font-medium text-gray-900">
+                                                    Email address
+                                                </label>
+                                                <div className="mt-1">
+                                                    <Field
+                                                        type="email"
+                                                        id="email"
+                                                        name="email"
+                                                        autoComplete="email"
+                                                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                    />
+                                                    {errors.email && touched.email ? (
+                                                        <p
+                                                            className="mt-2 text-sm text-red-600"
+                                                            id="email-error"
+                                                        >
+                                                            {errors.email}
+                                                        </p>
+                                                    ) : null}
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                            <div className="mt-6">
+                                                <div className="flex justify-between">
+                                                    <label htmlFor="phone" className="block text-sm font-medium text-gray-900">
+                                                        Phone number
+                                                    </label>
+                                                    <span id="phone-optional" className="text-sm text-gray-500">
+                                                        Optional
+                                                    </span>
+                                                </div>
+                                                <div className="mt-1">
+                                                    <Field
+                                                        type="tel"
+                                                        id="phone"
+                                                        name="phone"
+                                                        autoComplete="tel"
+                                                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                    />
+                                                    {errors.phone && touched.phone ? (
+                                                        <p
+                                                            className="mt-2 text-sm text-red-600"
+                                                            id="phone-error"
+                                                        >
+                                                            {errors.phone}
+                                                        </p>
+                                                    ) : null}
+                                                </div>
+                                            </div>
+                                            <div className="sm:col-span-2 mt-6">
+                                                <div className="flex justify-between">
+                                                    <label htmlFor="message" className="block text-sm font-medium text-gray-900">
+                                                        Message
+                                                    </label>
+                                                    <span id="message-max" className="text-sm text-gray-500">
+                                                        Max. 500 characters
+                                                    </span>
+                                                </div>
+                                                <div className="mt-1">
+                                                    <Field
+                                                        as="textarea"
+                                                        id="message"
+                                                        name="message"
+                                                        rows={4}
+                                                        className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                                        aria-describedby="message-max"
+                                                    />
+                                                    {errors.message && touched.message ? (
+                                                        <p
+                                                            className="mt-2 text-sm text-red-600"
+                                                            id="phone-error"
+                                                        >
+                                                            {errors.message}
+                                                        </p>
+                                                    ) : null}
+                                                </div>
+                                            </div>
+                                        </section>
 
-                                    <div className="mt-6">
-                                        <label htmlFor="email-address" className="block text-sm font-medium text-gray-900">
-                                            Email address
-                                        </label>
-                                        <div className="mt-1">
-                                            <input
-                                                type="email"
-                                                id="email-address"
-                                                name="email-address"
-                                                autoComplete="email"
-                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                            />
+                                        <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
+                                            <button
+                                                type="submit"
+                                                className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
+                                            >
+                                                Submit
+                                            </button>
+                                            <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
+                                                We aim to respond to all queries within 24 hours.
+                                            </p>
                                         </div>
-                                    </div>
-                                    <div className="mt-6">
-                                        <div className="flex justify-between">
-                                            <label htmlFor="phone" className="block text-sm font-medium text-gray-900">
-                                                Phone number
-                                            </label>
-                                            <span id="phone-optional" className="text-sm text-gray-500">
-                                                Optional
-                                            </span>
-                                        </div>
-                                        <div className="mt-1">
-                                            <input
-                                                type="text"
-                                                name="phone"
-                                                id="phone"
-                                                autoComplete="tel"
-                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="sm:col-span-2 mt-6">
-                                        <div className="flex justify-between">
-                                            <label htmlFor="message" className="block text-sm font-medium text-gray-900">
-                                                Message
-                                            </label>
-                                            <span id="message-max" className="text-sm text-gray-500">
-                                                Max. 500 characters
-                                            </span>
-                                        </div>
-                                        <div className="mt-1">
-                                            <textarea
-                                                id="message"
-                                                name="message"
-                                                rows={4}
-                                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                                                aria-describedby="message-max"
-                                                defaultValue={''}
-                                            />
-                                        </div>
-                                    </div>
-                                </section>
 
-                                <div className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
-                                    <Link
-                                        href="#"
-                                    >
-                                        <a
-                                            className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
-                                        >
-                                            Submit
-                                        </a>
-                                    </Link>
-                                    <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
-                                        We aim to respond to all queries within 24 hours.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </form>
+                                    </div>
+                                </Form>
+                            )}
+                        </Formik>
                     </main>
                 </div>
 

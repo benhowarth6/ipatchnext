@@ -374,7 +374,7 @@ export default function DropOff() {
                             />
                             {errors.firstName && touched.firstName ? (
                               <p
-                                class="mt-2 text-sm text-red-600"
+                                className="mt-2 text-sm text-red-600"
                                 id="firstName-error"
                               >
                                 {errors.firstName}
@@ -400,7 +400,7 @@ export default function DropOff() {
                             />
                             {errors.lastName && touched.lastName ? (
                               <p
-                                class="mt-2 text-sm text-red-600"
+                                className="mt-2 text-sm text-red-600"
                                 id="lastName-error"
                               >
                                 {errors.lastName}
@@ -427,7 +427,7 @@ export default function DropOff() {
                           />
                           {errors.email && touched.email ? (
                             <p
-                              class="mt-2 text-sm text-red-600"
+                              className="mt-2 text-sm text-red-600"
                               id="email-error"
                             >
                               {errors.email}
@@ -453,7 +453,7 @@ export default function DropOff() {
                           />
                           {errors.phone && touched.phone ? (
                             <p
-                              class="mt-2 text-sm text-red-600"
+                              className="mt-2 text-sm text-red-600"
                               id="phone-error"
                             >
                               {errors.phone}
@@ -625,7 +625,7 @@ export default function DropOff() {
                             {errors.appointmentDate &&
                               touched.appointmentDate ? (
                               <p
-                                class="mt-2 text-sm text-red-600"
+                                className="mt-2 text-sm text-red-600"
                                 id="firstName-error"
                               >
                                 {errors.appointmentDate}
@@ -736,13 +736,13 @@ export default function DropOff() {
                         />
                         <div className="ml-2">
                           <label htmlFor="terms" className="text-sm font-medium text-gray-900">
-                            I agree to the repair <Link href="/terms"><a className="font-semibold text-blue-600 hover:text-blue-500">terms and condtions.</a></Link>
+                            I agree to the repair <Link href="/terms"><a target="_blank" className="font-semibold text-blue-600 hover:text-blue-500">terms and condtions.</a></Link>
                           </label>
                         </div>
                       </div>
                       {errors.terms && touched.terms ? (
                         <p
-                          class="mt-2 text-sm text-red-600"
+                          className="mt-2 text-sm text-red-600"
                           id="terms-error"
                         >
                           {errors.terms}

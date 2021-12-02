@@ -205,7 +205,7 @@ export default function Example() {
                         <div className="relative rounded-lg overflow-hidden">
                             <div className="absolute inset-0">
                                 <div className="w-full h-full object-center object-cover">
-                                    <Image src="https://images.unsplash.com/photo-1543510644-82353c4be12a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4032&q=80"
+                                    <Image src="/index/find-repair.jpg"
                                         alt=""
                                         layout="fill"
                                         objectFit="cover" />

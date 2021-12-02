@@ -9,10 +9,9 @@ export default function Example() {
             <Image
               alt="iPhone with charging cable."
               src="/iphone/about-further.jpg"
-              layout="responsive"
-              height="2048"
-              width="2048"
-              objectFit="cover" />
+              layout="intrinsic"
+              height={2048}
+              width={2048} />
           </div>
         </div>
 

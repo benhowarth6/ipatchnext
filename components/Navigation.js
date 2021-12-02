@@ -101,7 +101,7 @@ export default function Example() {
                       <a>
                         <span className="sr-only">iPatch</span>
                         <img
-                          className="h-5 w-auto"
+                          className="h-4 md:h-4 pr-0 md:pr-4 lg:h-5 w-auto"
                           src="/logo.svg"
                           alt=""
                         />

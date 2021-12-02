@@ -185,17 +185,6 @@ export default function RepairPage() {
                     </div>
                   </RadioGroup>
                 </div>
-                <div className="mt-4">
-                  <Link href="repair-identifier">
-                    <a className="group inline-flex text-sm text-gray-500 hover:text-gray-700">
-                      <span>Which repair do I need?</span>
-                      <QuestionMarkCircleIcon
-                        className="flex-shrink-0 ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                        aria-hidden="true"
-                      />
-                    </a>
-                  </Link>
-                </div>
                 <div className="mt-10">
                   <a className="w-full opacity-50 bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500" disabled>
                     Book Repair

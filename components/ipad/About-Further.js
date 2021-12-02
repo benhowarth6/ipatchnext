@@ -8,10 +8,10 @@ export default function Example() {
           <div className="h-full w-full object-center object-cover lg:h-full lg:w-full">
             <Image src="/ipad/about-further.jpg"
               alt="Photo of the rear of an iPad Pro"
-              layout="responsive"
-              height="2048"
-              width="2048"
-              objectFit="cover" />
+              layout="intrinsic"
+              height={2048}
+              width={2048}
+              />
           </div>
         </div>
 

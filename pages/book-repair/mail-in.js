@@ -1,17 +1,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import React, { Fragment, useState } from "react";
-import { Listbox, Popover, RadioGroup, Transition } from "@headlessui/react";
-import {
-  CheckCircleIcon,
-  CheckIcon,
-  ChevronRightIcon,
-  ChevronUpIcon,
-  SelectorIcon,
-} from "@heroicons/react/solid";
-import DatePicker from "react-datepicker";
-import subDays from "date-fns/subDays";
+import React, { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { ChevronRightIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import Axios from "axios";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
@@ -576,7 +568,7 @@ export default function DropOff() {
                         />
                         <div className="ml-2">
                           <label htmlFor="terms" className="text-sm font-medium text-gray-900">
-                            I agree to the repair <Link href="/terms"><a className="font-semibold text-blue-600 hover:text-blue-500">terms and condtions.</a></Link>
+                            I agree to the repair <Link href="/terms"><a target="_blank" className="font-semibold text-blue-600 hover:text-blue-500">terms and condtions.</a></Link>
                           </label>
                         </div>
                       </div>
