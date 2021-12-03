@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.ipatchrepairs.co.uk
-
-# Sitemaps
-Sitemap: https://www.ipatchrepairs.co.uk/sitemap.xml
