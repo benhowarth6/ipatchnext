@@ -19,7 +19,7 @@ export default function Chat() {
                     data-apple-banner-scale="1"
                     data-apple-banner-text-color="rgb(17, 24, 39)"
                     data-apple-banner-icon-background-color="rgb(239, 239, 244)"
-                    data-apple-banner-icon-color="rgba(0, 122, 255)"
+                    data-apple-banner-icon-color="rgb(0, 122, 255)"
                     data-apple-banner-orientation="horizontal"
                     data-apple-banner-font-family="Inter var"
                 >

@@ -13,25 +13,25 @@ import Chat from "../components/Chat"
 const categories = [
     {
         name: 'iPhone Repairs',
-        href: 'iphone-repairs',
+        href: '/iphone-repairs',
         imageSrc: 'https://images.unsplash.com/photo-1632633728024-e1fd4bef561a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
     },
     {
         name: 'iPad Repairs',
-        href: 'ipad-repairs',
+        href: '/ipad-repairs',
         imageSrc: 'https://images.unsplash.com/photo-1632633726419-3e5e7d74ca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
     },
     {
         name: 'Mac Repairs',
-        href: 'mac-repairs',
+        href: '/mac-repairs',
         imageSrc: 'https://images.unsplash.com/photo-1635310568932-47fd9c961c26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
     },
     {
         name: 'Watch Repairs',
-        href: 'watch-repairs',
+        href: '/watch-repairs',
         imageSrc: 'https://images.unsplash.com/photo-1541351991055-b55135fea4bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3029&q=80',
     },
-    { name: 'iPod Repairs', href: 'ipad-repairs', imageSrc: 'https://images.unsplash.com/photo-1634619256987-962389b913be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5342&q=80' },
+    { name: 'iPod Repairs', href: '/ipod-repairs', imageSrc: 'https://images.unsplash.com/photo-1634619256987-962389b913be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5342&q=80' },
 ]
 const offers = [
     { name: 'Walk in', description: 'Pop down with no booking required', href: '#' },
@@ -43,7 +43,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Index() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
@@ -88,7 +88,7 @@ export default function Example() {
                                                 Our focus on Apple device repair allows us to offer services for nearly every product. Get a quote for your repair online and book it in at one of our stores for a swift repair.
                                             </p>
                                             <div className="mt-6">
-                                                <Link href="find-repair">
+                                                <Link href="/find-repair">
                                                     <a
                                                         className="inline-block bg-blue-600 border border-transparent py-3 px-8 rounded-md font-medium text-white hover:bg-blue-700"
                                                     >
@@ -148,7 +148,7 @@ export default function Example() {
                             <h2 id="category-heading" className="text-2xl font-extrabold tracking-tight text-gray-900">
                                 Devices we repair
                             </h2>
-                            <Link href="find-repair">
+                            <Link href="/find-repair">
                                 <a className="hidden text-sm font-semibold text-blue-600 hover:text-blue-500 sm:block">
                                     Browse all devices<span aria-hidden="true"> &rarr;</span>
                                 </a>
@@ -186,7 +186,7 @@ export default function Example() {
                         </div>
 
                         <div className="mt-6 px-4 sm:hidden">
-                            <Link href="find-repair">
+                            <Link href="/find-repair">
                                 <a className="block text-sm font-semibold text-blue-600 hover:text-blue-500">
                                     Browse all devices<span aria-hidden="true"> &rarr;</span>
                                 </a>
@@ -220,7 +220,7 @@ export default function Example() {
                                     <p className="mt-3 text-xl text-white">
                                         Find the right repair for your device and choose your booking method, time and date to ensure we have the parts in stock to repair your device.
                                     </p>
-                                    <Link href="find-repair">
+                                    <Link href="/find-repair">
                                         <a
                                             className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                                         >

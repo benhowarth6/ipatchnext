@@ -21,8 +21,6 @@ export default function Example() {
                                 <Image src="/index/screen-replacements.jpg"
                                     alt="Screen replacements"
                                     layout="fill"
-                                    width={1720}
-                                    height={960}
                                     objectFit="cover" />
                             </div>
                         </div>
@@ -36,9 +34,6 @@ export default function Example() {
                                 <Image src="/index/battery-replacements.jpg"
                                     alt="Battery replacements"
                                     layout="fill"
-                                    layout="fill"
-                                    width={1720}
-                                    height={960}
                                     objectFit="cover" />
                             </div>
                         </div>

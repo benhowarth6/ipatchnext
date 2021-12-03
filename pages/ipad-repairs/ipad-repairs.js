@@ -103,7 +103,7 @@ export default function Home() {
                         </h2>
                         <p className="mt-4 text-lg text-gray-500">
                             Can’t find the answer you’re looking for? Reach out to our{" "}
-                            <Link href="contact">
+                            <Link href="/./contact-us">
                                 <a className="font-medium text-blue-600 hover:text-blue-500">
                                     customer support
                                 </a>

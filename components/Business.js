@@ -20,7 +20,7 @@ const incentives = [
     },
 ]
 
-export default function Example() {
+export default function Business() {
     return (
         <div className="bg-gray-50">
             <div className="max-w-7xl mx-auto py-24 sm:px-2 sm:py-32 lg:px-4">
@@ -39,7 +39,7 @@ export default function Example() {
                                 help you.
                             </p>
                             <div className="mt-6">
-                                <Link href="contact-us">
+                                <Link href="/contact-us">
                                     <a
                                         className="inline-block bg-blue-600 border border-transparent py-3 px-8 rounded-md font-medium text-white hover:bg-blue-700"
                                     >
