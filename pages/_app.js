@@ -1,6 +1,6 @@
+import 'tailwindcss/tailwind.css'
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import '../styles/tailwind.css'
 import * as Fathom from 'fathom-client';
 
 function App({ Component, pageProps }) {
