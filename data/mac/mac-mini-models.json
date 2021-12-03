@@ -1,0 +1,24 @@
+[
+    {
+        "id": "1",
+        "name": "Mac Mini 2012",
+        "image": "/mac/devices/mac-mini-12.jpg",
+        "href": "mac-mini/mac-mini-12-repairs",
+        "alt": "Mac Mini 2012 Repairs"
+       },
+       {
+        "id": "2",
+        "name": "Mac Mini 2014",
+        "image": "/mac/devices/mac-mini-14.jpg",
+        "href": "mac-mini/mac-mini-14-repairs",
+        "alt": "Mac Mini 2014 Repairs"
+       },
+       {
+        "id": "3",
+        "name": "Mac Mini 2018",
+        "image": "/mac/devices/mac-mini-18.jpg",
+        "href": "mac-mini/mac-mini-18-repairs",
+        "alt": "Mac Mini 2018 Repairs"
+       }
+     ]
+  

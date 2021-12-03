@@ -1,0 +1,66 @@
+[
+    {
+        "id": "1",
+        "model": "21.5-inch",
+        "size": "21",
+        "image": "/mac/imac-21.jpg",
+        "mobileimage": "/mac/imac-21-256.png",
+        "link": "imac-21",
+        "alt": "iMac 21.5-inch Repairs"
+       },
+       {
+        "id": "2",
+        "model": "21.5-inch Slim",
+        "size": "21",
+        "image": "/mac/imac-21-thin.jpg",
+        "mobileimage": "/mac/imac-21-thin-256.png",
+        "link": "imac-21-thin",
+        "alt": "iMac 21.5-inch Slim Repairs"
+       },
+       {
+        "id": "3",
+        "model": "21.5-inch 4K",
+        "size": "21",
+        "image": "/mac/imac-21-4k.jpg",
+        "mobileimage": "/mac/imac-21-4k-256.png",
+        "link": "imac-21-4k",
+        "alt": "iMac 21.5-inch 4K Repairs"
+       },
+       {
+        "id": "4",
+        "model": "27-inch",
+        "size": "27",
+        "image": "/mac/imac-27.jpg",
+        "mobileimage": "/mac/imac-27-256.png",
+        "link": "imac-27",
+        "alt": "iMac 27-inch Repairs"
+       },
+       {
+        "id": "5",
+        "model": "27-inch Slim",
+        "size": "27",
+        "image": "/mac/imac-27-thin.jpg",
+        "mobileimage": "/mac/imac-27-thin-256.png",
+        "link": "imac-27-thin",
+        "alt": "iMac 27-inch Slim Repairs"
+       },
+       {
+        "id": "6",
+        "model": "27-inch 5K",
+        "size": "27",
+        "image": "/mac/imac-27-5k.jpg",
+        "mobileimage": "/mac/imac-27-5k-256.png",
+        "link": "imac-27-5k",
+        "alt": "iMac 27-inch 4K Repairs"
+       },
+       {
+        "id": "7",
+        "model": "iMac Pro",
+        "size": "pro",
+        "image": "/mac/imac-pro.jpg",
+        "mobileimage": "/mac/imac-pro-256.png",
+        "link": "imac-pro",
+        "alt": "iMac Pro Repairs"
+       }
+     ]
+  

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "1",
+        "name": "iPod Nano",
+        "image": "/ipod/devices/ipod-nano.jpg",
+        "href": "ipod-repairs/ipod-nano-repairs",
+        "alt": "iPod Nano Repairs"
+       },
+       {
+        "id": "2",
+        "name": "iPod Classic",
+        "image": "/ipod/devices/ipod-classic.jpg",
+        "href": "ipod-repairs/ipod-classic-repairs",
+        "alt": "iPod Classic Repairs"
+       },
+       {
+        "id": "3",
+        "name": "iPod Touch",
+        "image": "/ipod/devices/ipod-touch.jpg",
+        "href": "ipod-repairs/ipod-touch-repairs",
+        "alt": "iPod Touch Repairs"
+       }
+     ]
+  

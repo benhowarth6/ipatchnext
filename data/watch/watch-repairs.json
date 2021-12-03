@@ -1,0 +1,267 @@
+[
+    {
+        "id": "0",
+        "price": "null"
+    },
+    {
+        "id": "series-7-45mm-display",
+        "name": "45mm Display Assembly",
+        "model": "Apple Watch Series 7",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-7.jpg",
+        "price": 309
+    },
+    {
+        "id": "series-7-41mm-display",
+        "name": "41mm Display Assembly",
+        "model": "Apple Watch Series 7",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-7.jpg",
+        "price": 309
+    },
+    {
+        "id": "series-7-battery",
+        "name": "Battery",
+        "model": "Apple Watch Series 7",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/watch/devices/series-7.jpg",
+        "price": 85
+    },
+    {
+        "id": "series-7-unsure",
+        "name": "Unsure",
+        "model": "Apple Watch Series 7",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/watch/devices/series-7.jpg",
+        "price": 0
+    },
+    {
+        "id": "series-6-44mm-display",
+        "name": "44mm Display Assembly",
+        "model": "Apple Watch Series 6",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-6.jpg",
+        "price": 229
+    },
+    {
+        "id": "series-6-40mm-display",
+        "name": "40mm Display Assembly",
+        "model": "Apple Watch Series 6",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-6.jpg",
+        "price": 209
+    },
+    {
+        "id": "series-6-battery",
+        "name": "Battery",
+        "model": "Apple Watch Series 6",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/watch/devices/series-6.jpg",
+        "price": 75
+    },
+    {
+        "id": "series-6-unsure",
+        "name": "Unsure",
+        "model": "Apple Watch Series 6",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/watch/devices/series-6.jpg",
+        "price": 0
+    },
+    {
+        "id": "series-se-44mm-display",
+        "name": "44mm Display Assembly",
+        "model": "Apple Watch Series SE",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-se.jpg",
+        "price": 199
+    },
+    {
+        "id": "series-se-40mm-display",
+        "name": "40mm Display Assembly",
+        "model": "Apple Watch Series SE",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-se.jpg",
+        "price": 179
+    },
+    {
+        "id": "series-se-battery",
+        "name": "Battery",
+        "model": "Apple Watch Series SE",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/watch/devices/series-se.jpg",
+        "price": 75
+    },
+    {
+        "id": "series-se-unsure",
+        "name": "Unsure",
+        "model": "Apple Watch Series SE",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/watch/devices/series-se.jpg",
+        "price": 0
+    },
+
+    {
+        "id": "series-5-44mm-display",
+        "name": "44mm Display Assembly",
+        "model": "Apple Watch Series 5",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-5.jpg",
+        "price": 199
+    },
+    {
+        "id": "series-5-40mm-display",
+        "name": "40mm Display Assembly",
+        "model": "Apple Watch Series 5",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-5.jpg",
+        "price": 179
+    },
+    {
+        "id": "series-5-battery",
+        "name": "Battery",
+        "model": "Apple Watch Series 5",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/watch/devices/series-5.jpg",
+        "price": 75
+    },
+    {
+        "id": "series-5-unsure",
+        "name": "Unsure",
+        "model": "Apple Watch Series 5",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/watch/devices/series-5.jpg",
+        "price": 0
+    },
+
+    {
+        "id": "series-4-44mm-display",
+        "name": "44mm Display Assembly",
+        "model": "Apple Watch Series 4",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-4.jpg",
+        "price": 199
+    },
+    {
+        "id": "series-4-40mm-display",
+        "name": "40mm Display Assembly",
+        "model": "Apple Watch Series 4",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-4.jpg",
+        "price": 179
+    },
+    {
+        "id": "series-4-battery",
+        "name": "Battery",
+        "model": "Apple Watch Series 4",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/watch/devices/series-4.jpg",
+        "price": 75
+    },
+    {
+        "id": "series-4-unsure",
+        "name": "Unsure",
+        "model": "Apple Watch Series 4",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/watch/devices/series-4.jpg",
+        "price": 0
+    },
+
+    {
+        "id": "series-3-42mm-display",
+        "name": "42mm Display Assembly",
+        "model": "Apple Watch Series 3",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-3.jpg",
+        "price": 189
+    },
+    {
+        "id": "series-3-38mm-display",
+        "name": "38mm Display Assembly",
+        "model": "Apple Watch Series 3",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-3.jpg",
+        "price": 189
+    },
+    {
+        "id": "series-3-battery",
+        "name": "Battery",
+        "model": "Apple Watch Series 3",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/watch/devices/series-3.jpg",
+        "price": 75
+    },
+    {
+        "id": "series-3-unsure",
+        "name": "Unsure",
+        "model": "Apple Watch Series 3",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/watch/devices/series-3.jpg",
+        "price": 0
+    },
+
+    {
+        "id": "series-2-42mm-display",
+        "name": "42mm Display Assembly",
+        "model": "Apple Watch Series 2",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-2.jpg",
+        "price": 169
+    },
+    {
+        "id": "series-2-38mm-display",
+        "name": "38mm Display Assembly",
+        "model": "Apple Watch Series 2",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-2.jpg",
+        "price": 169
+    },
+    {
+        "id": "series-2-battery",
+        "name": "Battery",
+        "model": "Apple Watch Series 2",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/watch/devices/series-2.jpg",
+        "price": 75
+    },
+    {
+        "id": "series-2-unsure",
+        "name": "Unsure",
+        "model": "Apple Watch Series 2",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/watch/devices/series-2.jpg",
+        "price": 0
+    },
+
+    {
+        "id": "series-1-42mm-display",
+        "name": "42mm Display Assembly",
+        "model": "Apple Watch Series 1",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-1.jpg",
+        "price": 119
+    },
+    {
+        "id": "series-1-38mm-display",
+        "name": "38mm Display Assembly",
+        "model": "Apple Watch Series 1",
+        "description": "A new OLED display assembly to repair a damaged screen.",
+        "image": "/watch/devices/series-1.jpg",
+        "price": 119
+    },
+    {
+        "id": "series-1-battery",
+        "name": "Battery",
+        "model": "Apple Watch Series 1",
+        "description": "A new battery to restore your device to 100%.",
+        "image": "/watch/devices/series-1.jpg",
+        "price": 50
+    },
+    {
+        "id": "series-1-unsure",
+        "name": "Unsure",
+        "model": "Apple Watch Series 1",
+        "description": "Book your device in with us diagnosis if you aren't sure.",
+        "image": "/watch/devices/series-1.jpg",
+        "price": 0
+    }
+]

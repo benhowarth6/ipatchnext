@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "0",
+    "price": "null"
+  },
+  {
+    "id": "macbook-air-11-display",
+    "name": "Display Assembly",
+    "model": "MacBook Air 11-inch",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 350
+  },
+  {
+    "id": "macbook-air-11-battery",
+    "name": "Battery",
+    "model": "MacBook Air 11-inch",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-air-11-magsafe",
+    "name": "MagSafe Charging Board",
+    "model": "MacBook Air 11-inch",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-air-11-keyboard",
+    "name": "Keyboard",
+    "model": "MacBook Air 11-inch",
+    "description": "A keyboard if yours is damaged or not responding.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-air-11-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Air 11-inch",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-air-11-i/o",
+    "name": "I/O Ribbon",
+    "model": "MacBook Air 11-inch",
+    "description": "A new I/O ribbon if yours is damaged.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 85
+  },
+  {
+    "id": "macbook-air-11-128-ssd",
+    "name": "120GB SSD",
+    "model": "MacBook Air 11-inch",
+    "description": "A 120GB SSD if your drive has failed.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-air-11-256-ssd",
+    "name": "250GB SSD",
+    "model": "MacBook Air 11-inch",
+    "description": "A 250GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-air-11-512-ssd",
+    "name": "500GB SSD",
+    "model": "MacBook Air 11-inch",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 275
+  },
+  {
+    "id": "macbook-air-11-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Air 11-inch",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mba-11.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-air-13-display",
+    "name": "Display Assembly",
+    "model": "MacBook Air 13-inch",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 375
+  },
+  {
+    "id": "macbook-air-13-battery",
+    "name": "Battery",
+    "model": "MacBook Air 13-inch",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-air-13-magsafe",
+    "name": "MagSafe Charging Board",
+    "model": "MacBook Air 13-inch",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-air-13-keyboard",
+    "name": "Keyboard",
+    "model": "MacBook Air 13-inch",
+    "description": "A keyboard if yours is damaged or not responding.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-air-13-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Air 13-inch",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-air-13-i/o",
+    "name": "I/O Ribbon",
+    "model": "MacBook Air 13-inch",
+    "description": "A new I/O ribbon if yours is damaged.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 85
+  },
+  {
+    "id": "macbook-air-13-128-ssd",
+    "name": "120GB SSD",
+    "model": "MacBook Air 13-inch",
+    "description": "A 120GB SSD if your drive has failed.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-air-13-256-ssd",
+    "name": "250GB SSD",
+    "model": "MacBook Air 13-inch",
+    "description": "A 250GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-air-13-512-ssd",
+    "name": "500GB SSD",
+    "model": "MacBook Air 13-inch",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 275
+  },
+  {
+    "id": "macbook-air-13-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Air 13-inch",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mba-13.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-air-retina-display",
+    "name": "Display Assembly",
+    "model": "MacBook Air Retina",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mba-13-retina.jpg",
+    "price": 475
+  },
+  {
+    "id": "macbook-air-retina-battery",
+    "name": "Battery",
+    "model": "MacBook Air Retina",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mba-13-retina.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-air-retina-usb-ports",
+    "name": "USB-C Charging Ports",
+    "model": "MacBook Air Retina",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mba-13-retina.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-air-retina-top-case",
+    "name": "Top Casing (Keyboard)",
+    "model": "MacBook Air Retina",
+    "description": "A new top casing including keyboard if yours is damaged.",
+    "image": "/mac/devices/mba-13-retina.jpg",
+    "price": 375
+  },
+  {
+    "id": "macbook-air-retina-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Air Retina",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mba-13-retina.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-air-retina-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Air Retina",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mba-13-retina.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-pro-13-unibody-glass",
+    "name": "Glass Replacement",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A new glass display to repair a cracked screen.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-13-unibody-lcd",
+    "name": "LCD Replacement",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A new LCD display to repair a cracked screen.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-13-unibody-battery",
+    "name": "Battery",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-13-unibody-magsafe",
+    "name": "MagSafe Charging Board",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-13-unibody-keyboard",
+    "name": "Keyboard",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A keyboard if yours is damaged or not responding.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-13-unibody-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-13-unibody-sata",
+    "name": "Sata Ribbon",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A new sata ribbon if your Mac can't detect a boot drive.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 85
+  },
+  {
+    "id": "macbook-pro-13-unibody-8gb-ram",
+    "name": "8GB RAM Upgrade",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A 8GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-13-unibody-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 160
+  },
+  {
+    "id": "macbook-pro-13-unibody-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 125
+  },
+  {
+    "id": "macbook-pro-13-unibody-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-13-unibody-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Pro 13-inch Unibody",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mbp-13-unibody.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-pro-13-retina-display",
+    "name": "Screen Replacement",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 450
+  },
+  {
+    "id": "macbook-pro-13-retina-battery",
+    "name": "Battery",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-13-retina-magsafe",
+    "name": "MagSafe Charging Board",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-13-retina-keyboard",
+    "name": "Keyboard",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A keyboard if yours is damaged or not responding.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-13-retina-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-13-retina-250gb-ssd",
+    "name": "250GB SSD",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-13-retina-500gb-ssd",
+    "name": "500GB SSD",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 275
+  },
+  {
+    "id": "macbook-pro-13-retina-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 375
+  },
+  {
+    "id": "macbook-pro-13-retina-2tb-ssd",
+    "name": "2TB SSD",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "A 2TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 550
+  },
+  {
+    "id": "macbook-pro-13-retina-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Pro 13-inch Retina",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mbp-13-retina.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-pro-13-function-display",
+    "name": "Screen Replacement",
+    "model": "MacBook Pro 13-inch Function Key",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mbp-13-function.jpg",
+    "price": 475
+  },
+  {
+    "id": "macbook-pro-13-function-battery",
+    "name": "Battery",
+    "model": "MacBook Pro 13-inch Function Key",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mbp-13-function.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-13-function-charging-port",
+    "name": "USB-C Charging Board",
+    "model": "MacBook Pro 13-inch Function Key",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mbp-13-function.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-13-function-top-case",
+    "name": "Top Casing (Keyboard)",
+    "model": "MacBook Pro 13-inch Function Key",
+    "description": "A new top casing including keyboard if yours is damaged.",
+    "image": "/mac/devices/mbp-13-function.jpg",
+    "price": 375
+  },
+  {
+    "id": "macbook-pro-13-function-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Pro 13-inch Function Key",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mbp-13-function.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-13-function-250gb-ssd",
+    "name": "250GB SSD",
+    "model": "MacBook Pro 13-inch Function Key",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-13-function.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-13-function-500gb-ssd",
+    "name": "500GB SSD",
+    "model": "MacBook Pro 13-inch Function Key",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-13-function.jpg",
+    "price": 275
+  },
+  {
+    "id": "macbook-pro-13-function-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Pro 13-inch Function Key",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mbp-13-function.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-pro-13-touchbar-display",
+    "name": "Screen Replacement",
+    "model": "MacBook Pro 13-inch Touchbar",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mbp-13-touchbar.jpg",
+    "price": 475
+  },
+  {
+    "id": "macbook-pro-13-touchbar-battery",
+    "name": "Battery",
+    "model": "MacBook Pro 13-inch Touchbar",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mbp-13-touchbar.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-13-touchbar-charging-port",
+    "name": "USB-C Charging Board",
+    "model": "MacBook Pro 13-inch Touchbar",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mbp-13-touchbar.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-13-touchbar-top-case",
+    "name": "Top Casing (Keyboard)",
+    "model": "MacBook Pro 13-inch Touchbar",
+    "description": "A new top casing including keyboard if yours is damaged.",
+    "image": "/mac/devices/mbp-13-touchbar.jpg",
+    "price": 375
+  },
+  {
+    "id": "macbook-pro-13-touchbar-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Pro 13-inch Touchbar",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mbp-13-touchbar.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-13-touchbar-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Pro 13-inch Touchbar",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mbp-13-touchbar.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-pro-15-unibody-glass",
+    "name": "Glass Replacement",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A new glass display to repair a cracked screen.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-15-unibody-lcd",
+    "name": "LCD Replacement",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A new LCD display to repair a cracked screen.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-15-unibody-battery",
+    "name": "Battery",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-15-unibody-magsafe",
+    "name": "MagSafe Charging Board",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-15-unibody-keyboard",
+    "name": "Keyboard",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A keyboard if yours is damaged or not responding.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-15-unibody-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-15-unibody-sata",
+    "name": "Sata Ribbon",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A new sata ribbon if your Mac can't detect a boot drive.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 85
+  },
+  {
+    "id": "macbook-pro-15-unibody-8gb-ram",
+    "name": "8GB RAM Upgrade",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A 8GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-15-unibody-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 160
+  },
+  {
+    "id": "macbook-pro-15-unibody-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 125
+  },
+  {
+    "id": "macbook-pro-15-unibody-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-15-unibody-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Pro 15-inch Unibody",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mbp-15-unibody.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-pro-15-retina-display",
+    "name": "Screen Replacement",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 550
+  },
+  {
+    "id": "macbook-pro-15-retina-battery",
+    "name": "Battery",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-15-retina-magsafe",
+    "name": "MagSafe Charging Board",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 120
+  },
+  {
+    "id": "macbook-pro-15-retina-keyboard",
+    "name": "Keyboard",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A keyboard if yours is damaged or not responding.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-15-retina-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-15-retina-250gb-ssd",
+    "name": "250GB SSD",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-15-retina-500gb-ssd",
+    "name": "500GB SSD",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 275
+  },
+  {
+    "id": "macbook-pro-15-retina-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 375
+  },
+  {
+    "id": "macbook-pro-15-retina-2tb-ssd",
+    "name": "2TB SSD",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "A 2TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 550
+  },
+  {
+    "id": "macbook-pro-15-retina-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Pro 15-inch Retina",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mbp-15-retina.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-pro-15-touchbar-display",
+    "name": "Screen Replacement",
+    "model": "MacBook Pro 15-inch Touchbar",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mbp-15-touchbar.jpg",
+    "price": 650
+  },
+  {
+    "id": "macbook-pro-15-touchbar-battery",
+    "name": "Battery",
+    "model": "MacBook Pro 15-inch Touchbar",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mbp-15-touchbar.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-15-touchbar-charging-port",
+    "name": "USB-C Charging Board",
+    "model": "MacBook Pro 15-inch Touchbar",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mbp-15-touchbar.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-15-touchbar-top-case",
+    "name": "Top Casing (Keyboard)",
+    "model": "MacBook Pro 15-inch Touchbar",
+    "description": "A new top casing including keyboard if yours is damaged.",
+    "image": "/mac/devices/mbp-15-touchbar.jpg",
+    "price": 425
+  },
+  {
+    "id": "macbook-pro-15-touchbar-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Pro 15-inch Touchbar",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mbp-15-touchbar.jpg",
+    "price": 175
+  },
+  {
+    "id": "macbook-pro-15-touchbar-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Pro 15-inch Touchbar",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mbp-15-touchbar.jpg",
+    "price": 0
+  },
+  {
+    "id": "macbook-pro-16-display",
+    "name": "Screen Replacement",
+    "model": "MacBook Pro 16-inch",
+    "description": "A new LCD display assembly to repair a damaged screen.",
+    "image": "/mac/devices/mbp-16.jpg",
+    "price": 850
+  },
+  {
+    "id": "macbook-pro-16-battery",
+    "name": "Battery",
+    "model": "MacBook Pro 16-inch",
+    "description": "A new battery to restore your device to 100%.",
+    "image": "/mac/devices/mbp-16.jpg",
+    "price": 250
+  },
+  {
+    "id": "macbook-pro-16-charging-port",
+    "name": "USB-C Charging Board",
+    "model": "MacBook Pro 16-inch",
+    "description": "A new charging board to restore device charging.",
+    "image": "/mac/devices/mbp-16.jpg",
+    "price": 150
+  },
+  {
+    "id": "macbook-pro-16-top-case",
+    "name": "Top Casing (Keyboard)",
+    "model": "MacBook Pro 16-inch",
+    "description": "A new top casing including keyboard if yours is damaged.",
+    "image": "/mac/devices/mbp-16.jpg",
+    "price": 450
+  },
+  {
+    "id": "macbook-pro-16-trackpad",
+    "name": "Trackpad",
+    "model": "MacBook Pro 16-inch",
+    "description": "A new trackpad if yours isn't responding.",
+    "image": "/mac/devices/mbp-16.jpg",
+    "price": 225
+  },
+  {
+    "id": "macbook-pro-16-not-sure",
+    "name": "Unsure",
+    "model": "MacBook Pro 16-inch",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mbp-16.jpg",
+    "price": 0
+  },
+  {
+    "id": "imac-21-glass",
+    "name": "Glass Replacement",
+    "model": "iMac 21.5-inch",
+    "description": "A new glass display to repair a cracked screen.",
+    "image": "/mac/devices/imac-21.jpg",
+    "price": 150
+  },
+  {
+    "id": "imac-21-lcd",
+    "name": "LCD Replacement",
+    "model": "iMac 21.5-inch",
+    "description": "A new LCD display to repair a cracked screen.",
+    "image": "/mac/devices/imac-21.jpg",
+    "price": 175
+  },
+  {
+    "id": "imac-21-8gb-ram",
+    "name": "8GB RAM Upgrade",
+    "model": "iMac 21.5-inch",
+    "description": "A 8GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/imac-21.jpg",
+    "price": 120
+  },
+  {
+    "id": "imac-21-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "iMac 21.5-inch",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-21.jpg",
+    "price": 160
+  },
+  {
+    "id": "imac-21-32gb-ram",
+    "name": "32GB RAM Upgrade",
+    "model": "iMac 21.5-inch",
+    "description": "A 32GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-21.jpg",
+    "price": 250
+  },
+  {
+    "id": "imac-21-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "iMac 21.5-inch",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-21.jpg",
+    "price": 175
+  },
+  {
+    "id": "imac-21-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "iMac 21.5-inch",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-21.jpg",
+    "price": 225
+  },
+  {
+    "id": "imac-21-not-sure",
+    "name": "Unsure",
+    "model": "iMac 21.5-inch",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/imac-21.jpg",
+    "price": 0
+  },
+  {
+    "id": "imac-21-slim-display",
+    "name": "Display Replacement",
+    "model": "iMac 21.5-inch Slim",
+    "description": "A new LCD display assembly to repair a cracked screen.",
+    "image": "/mac/devices/imac-21-slim.jpg",
+    "price": 475
+  },
+  {
+    "id": "imac-21-slim-8gb-ram",
+    "name": "8GB RAM Upgrade",
+    "model": "iMac 21.5-inch Slim",
+    "description": "A 8GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/imac-21-slim.jpg",
+    "price": 120
+  },
+  {
+    "id": "imac-21-slim-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "iMac 21.5-inch Slim",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-21-slim.jpg",
+    "price": 160
+  },
+  {
+    "id": "imac-21-slim-32gb-ram",
+    "name": "32GB RAM Upgrade",
+    "model": "iMac 21.5-inch Slim",
+    "description": "A 32GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-21-slim.jpg",
+    "price": 250
+  },
+  {
+    "id": "imac-21-slim-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "iMac 21.5-inch Slim",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-21-slim.jpg",
+    "price": 175
+  },
+  {
+    "id": "imac-21-slim-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "iMac 21.5-inch Slim",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-21-slim.jpg",
+    "price": 225
+  },
+  {
+    "id": "imac-21-slim-not-sure",
+    "name": "Unsure",
+    "model": "iMac 21.5-inch Slim",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/imac-21-slim.jpg",
+    "price": 0
+  },
+  {
+    "id": "imac-21-4k-display",
+    "name": "Display Replacement",
+    "model": "iMac 21.5-inch 4K",
+    "description": "A new LCD display assembly to repair a cracked screen.",
+    "image": "/mac/devices/imac-21-4k.jpg",
+    "price": 495
+  },
+  {
+    "id": "imac-21-4k-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "iMac 21.5-inch 4K",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-21-4k.jpg",
+    "price": 160
+  },
+  {
+    "id": "imac-21-4k-32gb-ram",
+    "name": "32GB RAM Upgrade",
+    "model": "iMac 21.5-inch 4K",
+    "description": "A 32GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-21-4k.jpg",
+    "price": 250
+  },
+  {
+    "id": "imac-21-4k-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "iMac 21.5-inch 4K",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-21-4k.jpg",
+    "price": 175
+  },
+  {
+    "id": "imac-21-4k-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "iMac 21.5-inch 4K",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-21-4k.jpg",
+    "price": 225
+  },
+  {
+    "id": "imac-21-4k-not-sure",
+    "name": "Unsure",
+    "model": "iMac 21.5-inch 4K",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/imac-21-4k.jpg",
+    "price": 0
+  },
+  {
+    "id": "imac-27-glass",
+    "name": "Glass Replacement",
+    "model": "iMac 27-inch",
+    "description": "A new glass display to repair a cracked screen.",
+    "image": "/mac/devices/imac-27.jpg",
+    "price": 150
+  },
+  {
+    "id": "imac-27-lcd",
+    "name": "LCD Replacement",
+    "model": "iMac 27-inch",
+    "description": "A new LCD display to repair a cracked screen.",
+    "image": "/mac/devices/imac-27.jpg",
+    "price": 175
+  },
+  {
+    "id": "imac-27-8gb-ram",
+    "name": "8GB RAM Upgrade",
+    "model": "iMac 27-inch",
+    "description": "A 8GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/imac-27.jpg",
+    "price": 120
+  },
+  {
+    "id": "imac-27-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "iMac 27-inch",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-27.jpg",
+    "price": 160
+  },
+  {
+    "id": "imac-27-32gb-ram",
+    "name": "32GB RAM Upgrade",
+    "model": "iMac 27-inch",
+    "description": "A 32GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-27.jpg",
+    "price": 250
+  },
+  {
+    "id": "imac-27-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "iMac 27-inch",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-27.jpg",
+    "price": 175
+  },
+  {
+    "id": "imac-27-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "iMac 27-inch",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-27.jpg",
+    "price": 225
+  },
+  {
+    "id": "imac-27-not-sure",
+    "name": "Unsure",
+    "model": "iMac 27-inch",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/imac-27.jpg",
+    "price": 0
+  },
+  {
+    "id": "imac-27-slim-display",
+    "name": "Display Replacement",
+    "model": "iMac 27-inch Slim",
+    "description": "A new LCD display assembly to repair a cracked screen.",
+    "image": "/mac/devices/imac-27-slim.jpg",
+    "price": 475
+  },
+  {
+    "id": "imac-27-slim-8gb-ram",
+    "name": "8GB RAM Upgrade",
+    "model": "iMac 27-inch Slim",
+    "description": "A 8GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/imac-27-slim.jpg",
+    "price": 120
+  },
+  {
+    "id": "imac-27-slim-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "iMac 27-inch Slim",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-27-slim.jpg",
+    "price": 160
+  },
+  {
+    "id": "imac-27-slim-32gb-ram",
+    "name": "32GB RAM Upgrade",
+    "model": "iMac 27-inch Slim",
+    "description": "A 32GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-27-slim.jpg",
+    "price": 250
+  },
+  {
+    "id": "imac-27-slim-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "iMac 27-inch Slim",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-27-slim.jpg",
+    "price": 175
+  },
+  {
+    "id": "imac-27-slim-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "iMac 27-inch Slim",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-27-slim.jpg",
+    "price": 225
+  },
+  {
+    "id": "imac-27-slim-not-sure",
+    "name": "Unsure",
+    "model": "iMac 27-inch Slim",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/imac-27-slim.jpg",
+    "price": 0
+  },
+  {
+    "id": "imac-27-5k-display",
+    "name": "Display Replacement",
+    "model": "iMac 27-inch 5K",
+    "description": "A new LCD display assembly to repair a cracked screen.",
+    "image": "/mac/devices/imac-27-5k.jpg",
+    "price": 580
+  },
+  {
+    "id": "imac-27-5k-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "iMac 27-inch 5K",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-27-5k.jpg",
+    "price": 160
+  },
+  {
+    "id": "imac-27-5k-32gb-ram",
+    "name": "32GB RAM Upgrade",
+    "model": "iMac 27-inch 5K",
+    "description": "A 32GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/imac-27-5k.jpg",
+    "price": 250
+  },
+  {
+    "id": "imac-27-5k-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "iMac 27-inch 5K",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-27-5k.jpg",
+    "price": 175
+  },
+  {
+    "id": "imac-27-5k-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "iMac 27-inch 5K",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/imac-27-5k.jpg",
+    "price": 225
+  },
+  {
+    "id": "imac-27-5k-not-sure",
+    "name": "Unsure",
+    "model": "iMac 27-inch 5K",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/imac-27-5k.jpg",
+    "price": 0
+  },
+  {
+    "id": "mac-mini-12-8gb-ram",
+    "name": "8GB RAM Upgrade",
+    "model": "Mac Mini 2012",
+    "description": "A 8GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/mac-mini-12.jpg",
+    "price": 120
+  },
+  {
+    "id": "mac-mini-12-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "Mac Mini 2012",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/mac-mini-12.jpg",
+    "price": 160
+  },
+  {
+    "id": "mac-mini-12-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "Mac Mini 2012",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mac-mini-12.jpg",
+    "price": 175
+  },
+  {
+    "id": "mac-mini-12-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "Mac Mini 2012",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mac-mini-12.jpg",
+    "price": 225
+  },
+  {
+    "id": "mac-mini-12-not-sure",
+    "name": "Unsure",
+    "model": "Mac Mini 2012",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mac-mini-12.jpg",
+    "price": 0
+  },
+  {
+    "id": "mac-mini-14-8gb-ram",
+    "name": "8GB RAM Upgrade",
+    "model": "Mac Mini 2014",
+    "description": "A 8GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/mac-mini-14.jpg",
+    "price": 120
+  },
+  {
+    "id": "mac-mini-14-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "Mac Mini 2014",
+    "description": "A 16GB RAM upgrade if you need even more multitasking capabilities.",
+    "image": "/mac/devices/mac-mini-14.jpg",
+    "price": 160
+  },
+  {
+    "id": "mac-mini-14-512gb-ssd",
+    "name": "500GB SSD",
+    "model": "Mac Mini 2014",
+    "description": "A 500GB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mac-mini-14.jpg",
+    "price": 175
+  },
+  {
+    "id": "mac-mini-14-1tb-ssd",
+    "name": "1TB SSD",
+    "model": "Mac Mini 2014",
+    "description": "A 1TB SSD upgrade if you've run out of space.",
+    "image": "/mac/devices/mac-mini-14.jpg",
+    "price": 225
+  },
+  {
+    "id": "mac-mini-14-not-sure",
+    "name": "Unsure",
+    "model": "Mac Mini 2014",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mac-mini-14.jpg",
+    "price": 0
+  },
+  {
+    "id": "mac-mini-18-16gb-ram",
+    "name": "16GB RAM Upgrade",
+    "model": "Mac Mini 2018",
+    "description": "A 16GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/mac-mini-18.jpg",
+    "price": 160
+  },
+  {
+    "id": "mac-mini-18-32gb-ram",
+    "name": "32GB RAM Upgrade",
+    "model": "Mac Mini 2018",
+    "description": "A 32GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/mac-mini-18.jpg",
+    "price": 260
+  },
+  {
+    "id": "mac-mini-18-64gb-ram",
+    "name": "64GB RAM Upgrade",
+    "model": "Mac Mini 2018",
+    "description": "A 64GB RAM upgrade if you need more multitasking capabilities.",
+    "image": "/mac/devices/mac-mini-18.jpg",
+    "price": 380
+  },
+  {
+    "id": "mac-mini-18-not-sure",
+    "name": "Unsure",
+    "model": "Mac Mini 2018",
+    "description": "Book your device in with us diagnosis if you aren't sure.",
+    "image": "/mac/devices/mac-mini-18.jpg",
+    "price": 0
+  }
+]

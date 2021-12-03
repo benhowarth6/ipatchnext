@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Classic 7th Generation",
+    "image": "/ipod/devices/ipod-classic-7.jpg",
+    "href": "ipod-classic/ipod-classic-7-repairs",
+    "alt": "iPod Classic 7th Generation Repairs"
+  },
+  {
+    "id": "2",
+    "name": "Classic 6th Generation",
+    "image": "/ipod/devices/ipod-classic-6.jpg",
+    "href": "ipod-classic/ipod-classic-6-repairs",
+    "alt": "iPod Classic 6th Generation Repairs"
+  },
+  {
+    "id": "3",
+    "name": "Video 5th Generation",
+    "image": "/ipod/devices/ipod-classic-5.jpg",
+    "href": "ipod-classic/ipod-classic-5-repairs",
+    "alt": "iPod Video 5th Generation Repairs"
+  },
+  {
+    "id": "4",
+    "name": "Classic 4th Generation",
+    "image": "/ipod/devices/ipod-classic-4.jpg",
+    "href": "ipod-classic/ipod-classic-4-repairs",
+    "alt": "iPod Classic 4th Generation Repairs"
+  }
+]

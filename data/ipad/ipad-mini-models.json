@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Mini 6",
+    "image": "/ipad/devices/ipad-mini-6.jpg",
+    "href": "ipad-mini/ipad-mini-6-repairs",
+    "alt": "iPad Mini 6th Generation Repairs"
+  },
+  {
+    "id": "2",
+    "name": "Mini 5",
+    "image": "/ipad/devices/ipad-mini-5.jpg",
+    "href": "ipad-mini/ipad-mini-5-repairs",
+    "alt": "iPad Mini 5th Generation Repairs"
+  },
+  {
+    "id": "3",
+    "name": "Mini 4",
+    "image": "/ipad/devices/ipad-mini-4.jpg",
+    "href": "ipad-mini/ipad-mini-4-repairs",
+    "alt": "iPad Mini 4th Generation Repairs"
+  },
+  {
+    "id": "4",
+    "name": "Mini 3",
+    "image": "/ipad/devices/ipad-mini-3.jpg",
+    "href": "ipad-mini/ipad-mini-3-repairs",
+    "alt": "iPad Mini 3rd Generation Repairs"
+  },
+  {
+    "id": "5",
+    "name": "Mini 2",
+    "image": "/ipad/devices/ipad-mini-2.jpg",
+    "href": "ipad-mini/ipad-mini-2-repairs",
+    "alt": "iPad Mini 2nd Generation Repairs"
+  },
+  {
+    "id": "6",
+    "name": "Mini 1",
+    "image": "/ipad/devices/ipad-mini-1.jpg",
+    "href": "ipad-mini/ipad-mini-1-repairs",
+    "alt": "iPad Mini 1st Generation Repairs"
+  }
+]
