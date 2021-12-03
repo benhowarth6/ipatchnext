@@ -1,22 +1,30 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import * as Fathom from 'fathom-client';
+
 import '../styles/tailwind.css'
 
-import { usePanelbear } from "./../hooks/panelbear";
+function App({ Component, pageProps }) {
+  const router = useRouter();
 
-import Footer from "../components/Footer";
-import Banner from "../components/Banner";
+  useEffect(() => {
+    Fathom.load('MKCBTILL', {
+      includedDomains: ['www.ipatchrepairs.co.uk'],
+    });
 
-function MyApp({ Component, pageProps }) {
-  // Load Panelbear only once during the app lifecycle
-  usePanelbear("3laG9VhxihD", {
-    // Uncomment to allow sending events on localhost, and log to console too.
-    // debug: true
-  });
+    function onRouteChangeComplete() {
+      Fathom.trackPageview();
+    }
+    // Record a pageview when route changes
+    router.events.on('routeChangeComplete', onRouteChangeComplete);
 
-  return (
-    <>
-      <Component {...pageProps} />
-    </>
-  );
+    // Unassign event listener
+    return () => {
+      router.events.off('routeChangeComplete', onRouteChangeComplete);
+    };
+  }, []);
+
+  return <Component {...pageProps} />;
 }
 
-export default MyApp;
+export default App;
