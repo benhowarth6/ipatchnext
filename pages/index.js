@@ -54,7 +54,7 @@ export default function Index() {
                 </title>
                 <meta
                     name="description"
-                    content="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+                    content="Expert Apple iPhone, iPad & Mac repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
                     key="desc"
                 />
                 <meta property="og:type" content="website" />
@@ -62,7 +62,7 @@ export default function Index() {
                 <meta property="og:title" content="iPhone, iPad & Mac Repairs in Leeds - Screen Replacements & Other Repairs | iPatch" />
                 <meta
                     property="og:description"
-                    content="Expert Apple iPhone repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
+                    content="Expert Apple iPhone, iPad & Mac repairs in Trinity Leeds. We offer replacement screens, batteries, liquid damage services and more while you wait. All of our iPhone repairs include a 3 month warranty."
                 />
                 <meta
                     property="og:image"
