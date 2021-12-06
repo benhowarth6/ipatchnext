@@ -40,9 +40,9 @@ export default function Home() {
       <div className="bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="py-24 text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">Watch Repairs</h1>
+            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">Apple Watch Repairs</h1>
             <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
-              We offer a large selection of Watch repairs including screens, batteries, charging ports and more for nearly all models.
+              We offer a large selection of Apple Watch repairs including screens, batteries, charging ports and more for nearly all models.
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function Home() {
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
-            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Select your Watch model</h2>
+            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Select your Apple Watch model</h2>
             <a href="https://support.apple.com/en-gb/HT204507" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
               Need help<span aria-hidden="true"> &rarr;</span>
             </a>

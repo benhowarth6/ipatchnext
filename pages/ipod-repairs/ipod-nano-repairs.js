@@ -51,7 +51,7 @@ export default function Home() {
             <div className="bg-white">
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                     <div className="md:flex md:items-center md:justify-between">
-                        <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Select your iPod model</h2>
+                        <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Select your iPod Nano model</h2>
                         <a href="https://support.apple.com/en-gb/HT204217" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
                             Need help<span aria-hidden="true"> &rarr;</span>
                         </a>
