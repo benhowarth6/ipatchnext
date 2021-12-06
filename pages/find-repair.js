@@ -12,31 +12,31 @@ const categories = [
     name: 'iPhone Repairs',
     href: 'iphone-repairs',
     imageSrc: 'https://images.unsplash.com/photo-1632633728024-e1fd4bef561a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
-    alt: 'Photo of an iPhone 13',
+    imageAlt: 'Photo of an iPhone 13',
   },
   {
     name: 'iPad Repairs',
     href: 'ipad-repairs',
     imageSrc: 'https://images.unsplash.com/photo-1632633726419-3e5e7d74ca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
-    alt: 'Photo of an iPad Mini 5',
+    imageAlt: 'Photo of an iPad Mini 5',
   },
   {
     name: 'Mac Repairs',
     href: 'mac-repairs',
     imageSrc: 'https://images.unsplash.com/photo-1635310568932-47fd9c961c26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5340&q=80',
-    alt: 'Photo of a MacBook Pro',
+    imageAlt: 'Photo of a MacBook Pro',
   },
   {
     name: 'Watch Repairs',
     href: 'watch-repairs',
     imageSrc: 'https://images.unsplash.com/photo-1541351991055-b55135fea4bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3029&q=80',
-    alt: 'Photo of an Apple Watch',
+    imageAlt: 'Photo of an Apple Watch',
   },
   {
     name: 'iPod Repairs',
     href: 'ipod-repairs',
     imageSrc: 'https://images.unsplash.com/photo-1634619256987-962389b913be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=5342&q=80',
-    alt: 'Photo of an iPod',
+    imageAlt: 'Photo of an iPod',
   },
 ]
 
@@ -98,7 +98,7 @@ export default function Example() {
                       <div className="relative">
                         <div className="relative w-full h-80 rounded-lg overflow-hidden ">
                           <div className="w-full h-full object-center object-cover">
-                            <Image src={category.imageSrc} alt={alt} layout="fill" objectFit="cover" />
+                            <Image src={category.imageSrc} alt={category.imageAlt} layout="fill" objectFit="cover" />
                           </div>
                         </div>
                         <div className="absolute top-0 inset-x-0 h-80 rounded-lg p-4 items-end grid justify-items-center text-center overflow-hidden">
