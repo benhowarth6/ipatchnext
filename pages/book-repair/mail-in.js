@@ -12,7 +12,7 @@ import repairs from "../../data/all-repairs.json";
 
 const steps = [
   { name: "Booking Type", status: "complete" },
-  { name: "Device Information", status: "current" },
+  { name: "Booking Information", status: "current" },
   { name: "Confirmation", status: "upcoming" },
 ];
 

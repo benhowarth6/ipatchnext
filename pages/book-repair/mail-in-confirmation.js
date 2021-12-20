@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 const steps = [
     { name: 'Booking Type', status: 'initial' },
-    { name: 'Device Information', status: 'complete' },
+    { name: "Booking Information", status: "current" },
     { name: 'Confirmation', status: 'current' },
 ]
 

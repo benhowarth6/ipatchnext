@@ -102,14 +102,6 @@ export default function RepairPage() {
                 Repair information
               </h2>
 
-              <div className="md:flex hidden items-center">
-                {selectedRepair.price === "null" ? (
-                  <p className="text-sm py-2 text-gray-500">Select a repair option to view pricing</p>
-                ) : (
-                  <p className="text-3xl text-gray-900">£{selectedRepair.price}</p>
-                )}
-              </div>
-
               <div className="mt-4 space-y-6">
                 <p className="text-base text-gray-500">{product.description}</p>
               </div>
@@ -155,13 +147,11 @@ export default function RepairPage() {
                                 <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
                                   {name}
                                 </RadioGroup.Label>
-                                <div className="md:hidden">
-                                  <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
-                                    £{price}
-                                  </RadioGroup.Label>
-                                </div>
                                 <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
                                   {description}
+                                </RadioGroup.Description>
+                                <RadioGroup.Description as="p" className="mt-2 text-sm font-medium text-gray-900">
+                                  £{price}
                                 </RadioGroup.Description>
                                 <div
                                   className={classNames(
