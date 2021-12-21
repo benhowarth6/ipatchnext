@@ -56,7 +56,7 @@ export default function Home() {
               Trinity Leeds
             </h3>
             <p className="mt-1 max-w-2xl text-sm text-gray-500">
-              23rd December - 2nd January
+              23rd December - 3rd January
             </p>
           </div>
           <div className="border-t border-gray-200">
@@ -167,7 +167,7 @@ export default function Home() {
               Kirkstall Morrisons
             </h3>
             <p className="mt-1 max-w-2xl text-sm text-gray-500">
-              23rd December - 2nd January
+              23rd December - 3rd January
             </p>
           </div>
           <div className="border-t border-gray-200">
