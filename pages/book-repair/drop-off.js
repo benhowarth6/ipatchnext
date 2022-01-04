@@ -524,9 +524,9 @@ export default function DropOff() {
                               </>
                             )}
                           </RadioGroup.Option>
-                          {/* Kirkstall Closed 
                           <RadioGroup.Option
                             value="Kirkstall Morrisons"
+                            disabled
                             className={({ checked, active }) =>
                               classNames(
                                 checked
@@ -574,7 +574,6 @@ export default function DropOff() {
                               </>
                             )}
                           </RadioGroup.Option>
-                          */}
                         </div>
                       </RadioGroup>
                     </div>
