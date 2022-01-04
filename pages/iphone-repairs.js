@@ -37,21 +37,21 @@ export default function Home() {
       </Head>
       <Navigation />
 
-      <div className="bg-gray-50">
+      <div className="bg-gray-50 dark:bg-gray-900">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="py-24 text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">iPhone Repairs</h1>
-            <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
+            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-200">iPhone Repairs</h1>
+            <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500 dark:text-gray-400">
               We offer a large selection of iPhone repairs including screens, batteries, charging ports and more for nearly all models.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="bg-white">
+      <div className="bg-white dark:bg-gray-800">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
-            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Select your iPhone model</h2>
+            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-200">Select your iPhone model</h2>
             <a href="https://support.apple.com/en-gb/HT201296" target="_blank" rel="noopener noreferrer" className="hidden text-sm font-medium text-blue-600 hover:text-blue-500 md:block">
               Need help<span aria-hidden="true"> &rarr;</span>
             </a>
@@ -71,12 +71,12 @@ export default function Home() {
                       />
                     </div>
                     <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" aria-hidden="true">
-                      <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
+                      <div className="w-full bg-white dark:bg-gray-700 bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium dark:text-gray-200 text-gray-900 text-center">
                         View Repairs
                       </div>
                     </div>
                   </div>
-                  <div className="mt-4 flex items-center justify-between text-base font-semibold text-gray-900 space-x-8">
+                  <div className="mt-4 flex items-center justify-between text-base font-semibold text-gray-900 dark:text-gray-200 space-x-8">
                     <h3>
                       <Link href={href}>
                         <a>
