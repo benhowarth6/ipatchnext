@@ -26,7 +26,6 @@ function App({ Component, pageProps }) {
 
   return (
     <>
-      <Banner />
       <Component {...pageProps} />
     </>
   );

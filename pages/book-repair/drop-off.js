@@ -526,7 +526,6 @@ export default function DropOff() {
                           </RadioGroup.Option>
                           <RadioGroup.Option
                             value="Kirkstall Morrisons"
-                            disabled
                             className={({ checked, active }) =>
                               classNames(
                                 checked
