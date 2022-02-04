@@ -109,10 +109,6 @@ export default function RepairPage() {
                 Repair information
               </h2>
 
-              <div className="md:flex hidden items-center">
-                <p className="text-base py-2 text-gray-500">Please call to discuss repair options on this device.</p>
-              </div>
-
               <div className="mt-4 space-y-6">
                 <p className="text-base text-gray-500">{product.description}</p>
               </div>
@@ -161,13 +157,11 @@ export default function RepairPage() {
                                 <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
                                   {name}
                                 </RadioGroup.Label>
-                                <div className="md:hidden">
-                                  <RadioGroup.Label as="p" className="text-base font-medium text-gray-900">
-                                    £{price}
-                                  </RadioGroup.Label>
-                                </div>
                                 <RadioGroup.Description as="p" className="mt-1 text-sm text-gray-500">
                                   {description}
+                                </RadioGroup.Description>
+                                <RadioGroup.Description as="p" className="mt-2 text-sm font-medium text-gray-900">
+                                  £{price}
                                 </RadioGroup.Description>
                                 <div
                                   className={classNames(
@@ -186,9 +180,23 @@ export default function RepairPage() {
                   </RadioGroup>
                 </div>
                 <div className="mt-10">
-                  <a className="w-full opacity-50 bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500" disabled>
-                    Book Repair
-                  </a>
+                  {selectedRepair.price === "null" ? (
+                    <a className="w-full opacity-50 bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500" disabled>
+                      Book Repair
+                    </a>
+                  ) : (
+                    <Link
+                      href={{
+                        pathname: '/book-repair/booking-type',
+                        query: { id: selectedRepair.id },
+                      }}
+                    >
+                      <a className="w-full bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
+                        Book Repair
+                      </a>
+                    </Link>
+                  )}
+
                 </div>
                 <div className="mt-6 text-center">
                   <p className="group inline-flex text-base font-medium">
