@@ -7,7 +7,7 @@ const links = [
   { title: 'iPhone Repairs', href: '/iphone-repairs', description: 'Find and view the repairs we offer on all models of iPhone', icon: DeviceMobileIcon },
   { title: 'iPad Repairs', href: '/ipad-repairs', description: 'Find and view the repairs we offer on all models of iPad', icon: DeviceTabletIcon },
   { title: 'Mac Repairs', href: '/mac-repairs', description: 'Find and view the repairs we offer on various Mac\'s', icon: DesktopComputerIcon },
-  { title: 'Contact', href: '/contact', description: 'Find out how you can get in touch with us', icon: PhoneIcon },
+  { title: 'Contact', href: '/contact-us', description: 'Find out how you can get in touch with us', icon: PhoneIcon },
 ]
 const social = [
   {

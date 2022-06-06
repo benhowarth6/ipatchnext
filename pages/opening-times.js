@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Head>
         <title>
-          Christmas opening times - iPhone, iPad & Mac Repairs in Leeds | iPatch
+          Bank holiday opening times - iPhone, iPad & Mac Repairs in Leeds | iPatch
         </title>
         <meta
           name="description"
@@ -40,10 +40,10 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="py-24 text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
-              Christmas opening times
+              Bank holiday opening times
             </h1>
             <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
-              Find out more about our Christmas opening times.
+              Find out more about our Bank holiday opening times.
             </p>
           </div>
         </div>
@@ -56,14 +56,14 @@ export default function Home() {
               Trinity Leeds
             </h3>
             <p className="mt-1 max-w-2xl text-sm text-gray-500">
-              23rd December - 3rd January
+              30th May - 6th June
             </p>
           </div>
           <div className="border-t border-gray-200">
             <dl>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Thursday 23rd December
+                  Monday 30th May
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   9am - 5pm
@@ -71,15 +71,23 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Friday 24th December
+                  Tuesday 31st May
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  9am - 12pm
+                  9am - 5pm
                 </dd>
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Saturday 25th December
+                  Wednesday 1st June
+                </dt>
+                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
+                  9am - 5pm
+                </dd>
+              </div>
+              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
+                <dt className="text-sm font-medium text-gray-500">
+                  Thursday 2nd June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   Closed
@@ -87,7 +95,7 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Sunday 26th December
+                  Friday 3rd June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   Closed
@@ -95,47 +103,7 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Monday 27th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  9am - 5pm
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Tuesday 28th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  9am - 5pm
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Wednesday 29th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  9am - 5pm
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Thursday 30th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  9am - 5pm
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Friday 31st December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  9am - 5pm
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Saturday 1st January
+                  Saturday 3rd June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   Closed
@@ -143,15 +111,23 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Sunday 2nd January
+                  Sunday 4th June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  11am - 5pm
+                  Closed
                 </dd>
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Monday 3rd December
+                  Monday 5th June
+                </dt>
+                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
+                  9am - 5pm
+                </dd>
+              </div>
+              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
+                <dt className="text-sm font-medium text-gray-500">
+                  Tuesday 5th June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   9am - 5pm
@@ -167,14 +143,22 @@ export default function Home() {
               Kirkstall Morrisons
             </h3>
             <p className="mt-1 max-w-2xl text-sm text-gray-500">
-              23rd December - 3rd January
+              30th May - 6th June
             </p>
           </div>
           <div className="border-t border-gray-200">
             <dl>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Thursday 23rd December
+                  Monday 30th May
+                </dt>
+                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
+                  Closed
+                </dd>
+              </div>
+              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
+                <dt className="text-sm font-medium text-gray-500">
+                  Tuesday 31st May
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   Appointment only
@@ -182,39 +166,7 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Friday 24th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  Closed
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Saturday 25th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  Closed
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Sunday 26th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  Closed
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Monday 27th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  Closed
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Tuesday 28th December
+                  Wednesday 1st June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   Appointment only
@@ -222,31 +174,7 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Wednesday 29th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  Appointment only
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Thursday 30th December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  Appointment only
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Friday 31st December
-                </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
-                  Appointment only
-                </dd>
-              </div>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
-                  Saturday 1st January
+                  Thursday 2nd June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   Closed
@@ -254,7 +182,7 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Sunday 2nd January
+                  Friday 3rd June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   Closed
@@ -262,10 +190,34 @@ export default function Home() {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
-                  Monday 3rd December
+                  Saturday 3rd June
                 </dt>
                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
                   Closed
+                </dd>
+              </div>
+              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
+                <dt className="text-sm font-medium text-gray-500">
+                  Sunday 4th June
+                </dt>
+                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
+                  Closed
+                </dd>
+              </div>
+              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
+                <dt className="text-sm font-medium text-gray-500">
+                  Monday 5th June
+                </dt>
+                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
+                  Closed
+                </dd>
+              </div>
+              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-6">
+                <dt className="text-sm font-medium text-gray-500">
+                  Tuesday 5th June
+                </dt>
+                <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-1">
+                  Appointment only
                 </dd>
               </div>
             </dl>

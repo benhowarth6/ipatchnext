@@ -2,6 +2,7 @@ import "/./styles/tailwind.css";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import * as Fathom from "fathom-client";
+import Banner from "../components/Banner";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
@@ -24,7 +25,10 @@ function App({ Component, pageProps }) {
   }, []);
 
   return (
+    <>
+    <Banner />
       <Component {...pageProps} />
+    </>
   );
 }
 

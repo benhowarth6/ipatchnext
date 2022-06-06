@@ -9,7 +9,7 @@
         "model": "iPhone 13 Pro Max",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/13-pro-max.jpg",
-        "price": 309
+        "price": 399
     },
     {
         "id": "13-pro-max-battery",
@@ -89,7 +89,7 @@
         "model": "iPhone 13 Pro",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/13-pro.jpg",
-        "price": 299
+        "price": 319
     },
     {
         "id": "13-pro-battery",
@@ -169,7 +169,7 @@
         "model": "iPhone 13",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/13.jpg",
-        "price": 299
+        "price": 319
     },
     {
         "id": "13-battery",
@@ -250,7 +250,7 @@
         "model": "iPhone 13 Mini",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/13-mini.jpg",
-        "price": 299
+        "price": 319
     },
     {
         "id": "13-mini-battery",
@@ -1178,7 +1178,7 @@
         "model": "iPhone X",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/x.jpg",
-        "price": 139
+        "price": 149
     },
     {
         "id": "x-battery",
