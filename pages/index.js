@@ -78,22 +78,22 @@ export default function Index() {
                     content="https://www.ipatchrepairs.co.uk/social.jpg"
                 />
             </Head>
-            <div className="bg-white dark:bg-gray-900">
+            <div className="bg-white">
                 <Navigation />
 
                 <div className="bg-white">
                     <div className="flex flex-col border-b border-gray-200 lg:border-0">
 
                         <div className="relative">
-                            <div aria-hidden="true" className="hidden absolute w-1/2 h-full bg-gray-50 dark:bg-gray-900 lg:block" />
-                            <div className="relative bg-gray-100 dark:bg-gray-900 lg:bg-transparent">
+                            <div aria-hidden="true" className="hidden absolute w-1/2 h-full bg-gray-50 lg:block" />
+                            <div className="relative bg-gray-100 lg:bg-transparent">
                                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2">
                                     <div className="max-w-2xl mx-auto py-24 lg:py-64 lg:max-w-none">
                                         <div className="lg:pr-16">
-                                            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-200 sm:text-5xl xl:text-6xl">
+                                            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
                                                 We make repairs hassle free
                                             </h1>
-                                            <p className="mt-4 text-xl text-gray-600 dark:text-gray-400">
+                                            <p className="mt-4 text-xl text-gray-600">
                                                 Our focus on Apple device repair allows us to offer services for nearly every product. Get a quote for your repair online and book it in at one of our stores for a swift repair.
                                             </p>
                                             <div className="mt-6">
@@ -118,19 +118,19 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <nav aria-label="Offers" className="order-last lg:order-last bg-white dark:bg-gray-900">
+                        <nav aria-label="Offers" className="order-last lg:order-last">
                             <div className="max-w-7xl mx-auto lg:px-8">
                                 <ul
                                     role="list"
-                                    className="grid grid-cols-1 divide-y divide-gray-200 dark:divide-gray-200/5 lg:grid-cols-3 lg:divide-y-0 lg:divide-x"
+                                    className="grid grid-cols-1 divide-y divide-gray-200 lg:grid-cols-3 lg:divide-y-0 lg:divide-x"
 
                                 >
                                     <li className="flex flex-col pt-4">
                                         <a
-                                            className="relative flex-1 flex flex-col bg-white dark:bg-gray-900 py-6 px-4 focus:z-10"
+                                            className="relative flex-1 flex flex-col bg-white py-6 px-4 focus:z-10"
                                         >
-                                            <p className="text-sm text-gray-500 dark:text-gray-200">Repair Options</p>
-                                            <p className="font-semibold text-gray-900 dark:text-gray-400">Book in, walk in or mail in your repair.</p>
+                                            <p className="text-sm text-gray-500">Repair Options</p>
+                                            <p className="font-semibold text-gray-900">Book in, walk in or mail in your repair.</p>
                                         </a>
                                     </li>
                                     <li className="flex flex-col">
@@ -138,10 +138,10 @@ export default function Index() {
                                     </li>
                                     <li className="flex flex-col pt-4">
                                         <a
-                                            className="relative flex-1 flex flex-col bg-white dark:bg-gray-900 py-6 px-4 focus:z-10"
+                                            className="relative flex-1 flex flex-col bg-white py-6 px-4 focus:z-10"
                                         >
-                                            <p className="text-sm text-gray-500 dark:text-gray-200">Always Available</p>
-                                            <p className="font-semibold text-gray-900 dark:text-gray-400">Our Trinity Leeds store is open 7 days.</p>
+                                            <p className="text-sm text-gray-500">Always Available</p>
+                                            <p className="font-semibold text-gray-900">Our Trinity Leeds store is open 7 days.</p>
                                         </a>
                                     </li>
                                 </ul>

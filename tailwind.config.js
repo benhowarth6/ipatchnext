@@ -2,7 +2,9 @@ const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -19,14 +21,17 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      gray: colors.slate,
+      gray: colors.coolGray,
+      blueGray: colors.blueGray,
       blue: colors.blue,
       green: colors.green,
       lightBlue: colors.sky,
       yellow: colors.amber,
       red: colors.red,
-      sky: colors.sky
     }
+  },
+  variants: {
+    extend: {},
   },
   plugins: [
     require('@tailwindcss/forms'),
