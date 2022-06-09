@@ -24,8 +24,6 @@ const steps = [
   { name: "Confirmation", status: "upcoming" },
 ];
 
-
-
 const times = [
   { id: 1, name: "09:30" },
   { id: 2, name: "10:00" },
@@ -641,7 +639,7 @@ export default function DropOff() {
                               "Kirkstall Morrisons" ? (
                               <DatePicker
                                 value=""
-                                onChange={e => console.log(e.detail.value)}
+                                onChange={e => setFieldValue("appointment_date", e.detail.value)}
                               />
                             ) : (
                               <TrinityDatePicker
