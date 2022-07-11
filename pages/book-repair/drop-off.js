@@ -643,7 +643,7 @@ export default function DropOff() {
                               />
                             ) : (
                               <TrinityDatePicker
-                              value=""
+                                value=""
                                 onChange={e => setFieldValue("appointment_date", e.detail.value)}
                               />
                             )}
