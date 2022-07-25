@@ -524,7 +524,6 @@ export default function DropOff() {
                               </>
                             )}
                           </RadioGroup.Option>
-                          {/* Kirkstall closed
                           <RadioGroup.Option
                             value="Kirkstall Morrisons"
                             className={({ checked, active }) =>
@@ -574,10 +573,8 @@ export default function DropOff() {
                               </>
                             )}
                           </RadioGroup.Option>
-                          */}
                         </div>
                       </RadioGroup>
-
                     </div>
 
                     <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
