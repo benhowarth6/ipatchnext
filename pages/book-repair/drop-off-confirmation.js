@@ -152,7 +152,6 @@ export default function Example() {
                               </dt>
                               <dd className="mt-2 text-gray-700">
                                 <address className="not-italic">
-                                  {location === "Trinity Leeds" ? (
                                     <>
                                       <span className="block">
                                         Trinity Leeds
@@ -164,19 +163,6 @@ export default function Example() {
                                         Leeds, LS1 5AR
                                       </span>
                                     </>
-                                  ) : (
-                                    <>
-                                      <span className="block">
-                                        Kirkstall Morrisons
-                                      </span>
-                                      <span className="block">
-                                        1 Savins Mill Way
-                                      </span>
-                                      <span className="block">
-                                        Leeds, LS5 3RP
-                                      </span>
-                                    </>
-                                  )}
                                 </address>
                               </dd>
                             </div>

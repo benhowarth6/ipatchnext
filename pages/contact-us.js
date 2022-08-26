@@ -16,7 +16,6 @@ function classNames(...classes) {
 
 const locations = [
     { id: 1, city: 'Trinity Leeds', address: ['Trinity, Albion Street', 'Leeds, LS1 5AR'], times: ['Monday - Sat: 9am - 5pm', 'Sunday: 11am - 5pm'] },
-    { id: 2, city: 'Kirkstall Morrisons', address: ['1 Savins Mill Way', 'Kirkstall, LS5 3RP'], times: ['Monday - Sat: 9am - 5pm', 'Sunday: 11am - 5pm'] },
 ]
 
 const footerNavigation = {
@@ -220,7 +219,7 @@ export default function Contact() {
                             }}
                         >
                             {({ errors, values, touched, field, setFieldValue, handleReset }) => (
-                                <Form className className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
+                                <Form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
                                     {errorModal && <ErrorModal />}
                                     {modal && <SuccessModal />}
                                     <div className="max-w-lg mx-auto lg:max-w-none">
@@ -381,8 +380,8 @@ export default function Contact() {
                             Our locations
                         </h2>
                         <p className="mt-6 text-lg text-gray-500 max-w-3xl">
-                            We have stores located in Trinity Leeds and Kirkstall Morrisons. We don't require appointments to visit
-                            us in Trinity, however you will need to make a booking to visit our Kirkstall store.
+                            We are located in the Trinity Leeds shopping centre. We don't require appointments to visit
+                            us in Trinity, however you may want to book in to ensure part availability.
                         </p>
                         <div className="mt-10 grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4">
                             {locations.map((location) => (

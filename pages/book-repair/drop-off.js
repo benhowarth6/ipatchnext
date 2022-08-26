@@ -57,7 +57,10 @@ const BookingSchema = Yup.object().shape({
   phone: Yup.string()
     .min(5, "Your phone number is too short!")
     .max(13, "Your phone number is too long!!"),
-  terms: Yup.boolean().oneOf([true], "You must agree to the repair terms and conditions to continue."),
+  terms: Yup.boolean().oneOf(
+    [true],
+    "You must agree to the repair terms and conditions to continue."
+  ),
   appointmentDate: Yup.string().required("An appointment date is required."),
 });
 
@@ -173,9 +176,7 @@ export default function DropOff() {
                           role="list"
                           className="text-sm font-medium text-gray-900 divide-y divide-gray-200"
                         >
-                          <li
-                            className="flex items-start py-6 space-x-4"
-                          >
+                          <li className="flex items-start py-6 space-x-4">
                             <img
                               src={image}
                               alt={""}
@@ -191,6 +192,13 @@ export default function DropOff() {
                             </p>
                           </li>
                         </ul>
+
+                        <dl className="hidden text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 py-6 lg:block">
+                          <div className="flex items-center justify-between">
+                            <dt className="text-gray-600">Location</dt>
+                            <dd>Trinity Leeds</dd>
+                          </div>
+                        </dl>
 
                         <dl className="hidden text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 pt-6 lg:block">
                           <div className="flex items-center justify-between">
@@ -463,120 +471,6 @@ export default function DropOff() {
                       </div>
                     </section>
 
-                    <div className="mt-10 border-t border-gray-200 pt-10">
-                      <RadioGroup
-                        value={values.appointmentLocation}
-                        onChange={(e) =>
-                          setFieldValue("appointmentLocation", e)
-                        }
-                      >
-                        <RadioGroup.Label className="text-lg font-medium text-gray-900">
-                          Appointment details
-                        </RadioGroup.Label>
-
-                        <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-                          <RadioGroup.Option
-                            value="Trinity Leeds"
-                            className={({ checked, active }) =>
-                              classNames(
-                                checked
-                                  ? "border-transparent"
-                                  : "border-gray-300",
-                                active ? "ring-2 ring-blue-500" : "",
-                                "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
-                              )
-                            }
-                          >
-                            {({ checked, active }) => (
-                              <>
-                                <div className="flex-1 flex">
-                                  <div className="flex flex-col">
-                                    <RadioGroup.Label
-                                      as="span"
-                                      className="block text-sm font-medium text-gray-900"
-                                    >
-                                      Trinity Leeds
-                                    </RadioGroup.Label>
-                                    <RadioGroup.Description
-                                      as="span"
-                                      className="mt-1 flex items-center text-sm text-gray-500"
-                                    >
-                                      Open 7 days a week
-                                    </RadioGroup.Description>
-                                  </div>
-                                </div>
-                                {checked ? (
-                                  <CheckCircleIcon
-                                    className="h-5 w-5 text-blue-600"
-                                    aria-hidden="true"
-                                  />
-                                ) : null}
-                                <div
-                                  className={classNames(
-                                    active ? "border" : "border-2",
-                                    checked
-                                      ? "border-blue-500"
-                                      : "border-transparent",
-                                    "absolute -inset-px rounded-lg pointer-events-none"
-                                  )}
-                                  aria-hidden="true"
-                                />
-                              </>
-                            )}
-                          </RadioGroup.Option>
-                          <RadioGroup.Option
-                            value="Kirkstall Morrisons"
-                            className={({ checked, active }) =>
-                              classNames(
-                                checked
-                                  ? "border-transparent"
-                                  : "border-gray-300",
-                                active ? "ring-2 ring-blue-500" : "",
-                                "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
-                              )
-                            }
-                          >
-                            {({ checked, active }) => (
-                              <>
-                                <div className="flex-1 flex">
-                                  <div className="flex flex-col">
-                                    <RadioGroup.Label
-                                      as="span"
-                                      className="block text-sm font-medium text-gray-900"
-                                    >
-                                      Kirkstall Morrisons
-                                    </RadioGroup.Label>
-                                    <RadioGroup.Description
-                                      as="span"
-                                      className="mt-1 flex items-center text-sm text-gray-500"
-                                    >
-                                      Open Tuesday - Saturday
-                                    </RadioGroup.Description>
-                                  </div>
-                                </div>
-                                {checked ? (
-                                  <CheckCircleIcon
-                                    className="h-5 w-5 text-blue-600"
-                                    aria-hidden="true"
-                                  />
-                                ) : null}
-                                <div
-                                  className={classNames(
-                                    active ? "border" : "border-2",
-                                    checked
-                                      ? "border-blue-500"
-                                      : "border-transparent",
-                                    "absolute -inset-px rounded-lg pointer-events-none"
-                                  )}
-                                  aria-hidden="true"
-                                />
-                              </>
-                            )}
-                          </RadioGroup.Option>
-                        </div>
-                      </RadioGroup>
-                    </div>
-
                     <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
                       <div>
                         <label
@@ -587,43 +481,23 @@ export default function DropOff() {
                         </label>
                         <div className="mt-1">
                           <div className="relative">
-                            {values.appointmentLocation ===
-                              "Kirkstall Morrisons" ? (
-                              <DatePicker
-                                dateFormat="dd/MM/yyyy"
-                                selected={values.appointmentDate}
-                                onChange={(e) =>
-                                  setFieldValue("appointmentDate", e)
-                                }
-                                filterDate={isWeekday}
-                                selectsStart
-                                name="appointment-date"
-                                startDate={startDate}
-                                calendarStartDay={1}
-                                minDate={subDays(new Date(), 0)}
-                                onFocus={(e) => e.target.blur()}
-                                nextMonthButtonLabel=">"
-                                previousMonthButtonLabel="<"
-                              />
-                            ) : (
-                              <DatePicker
-                                dateFormat="dd/MM/yyyy"
-                                selected={values.appointmentDate}
-                                onChange={(e) =>
-                                  setFieldValue("appointmentDate", e)
-                                }
-                                selectsStart
-                                name="appointment-date"
-                                calendarStartDay={1}
-                                minDate={subDays(new Date(), 0)}
-                                onFocus={(e) => e.target.blur()}
-                                startDate={startDate}
-                                nextMonthButtonLabel=">"
-                                previousMonthButtonLabel="<"
-                              />
-                            )}
+                            <DatePicker
+                              dateFormat="dd/MM/yyyy"
+                              selected={values.appointmentDate}
+                              onChange={(e) =>
+                                setFieldValue("appointmentDate", e)
+                              }
+                              selectsStart
+                              name="appointment-date"
+                              calendarStartDay={1}
+                              minDate={subDays(new Date(), 0)}
+                              onFocus={(e) => e.target.blur()}
+                              startDate={startDate}
+                              nextMonthButtonLabel=">"
+                              previousMonthButtonLabel="<"
+                            />
                             {errors.appointmentDate &&
-                              touched.appointmentDate ? (
+                            touched.appointmentDate ? (
                               <p
                                 className="mt-2 text-sm text-red-600"
                                 id="firstName-error"
@@ -735,8 +609,19 @@ export default function DropOff() {
                           className="h-4 w-4 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
                         />
                         <div className="ml-2">
-                          <label htmlFor="terms" className="text-sm font-medium text-gray-900">
-                            I agree to the repair <Link href="/terms"><a target="_blank" className="font-semibold text-blue-600 hover:text-blue-500">terms and condtions.</a></Link>
+                          <label
+                            htmlFor="terms"
+                            className="text-sm font-medium text-gray-900"
+                          >
+                            I agree to the repair{" "}
+                            <Link href="/terms">
+                              <a
+                                target="_blank"
+                                className="font-semibold text-blue-600 hover:text-blue-500"
+                              >
+                                terms and condtions.
+                              </a>
+                            </Link>
                           </label>
                         </div>
                       </div>
@@ -750,7 +635,10 @@ export default function DropOff() {
                       ) : null}
                     </div>
                     {selectedRepair.map((repairs) => (
-                      <div key={repairs.name} className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
+                      <div
+                        key={repairs.name}
+                        className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between"
+                      >
                         <button
                           className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
                           type="submit"
