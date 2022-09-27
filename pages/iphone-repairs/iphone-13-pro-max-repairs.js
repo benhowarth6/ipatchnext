@@ -15,7 +15,7 @@ import repairs from "../../data/iphone/iphone-repairs.json";
 
 const product = {
   name: 'iPhone 13 Pro Max Repairs',
-  model: 'iPhone 13 Pro Max',
+  device_model: '13 Pro Max',
   description: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
   meta: 'We offer a comprehensive set of repairs for the iPhone 13 Pro Max. Including screen replacements, batteries and much more.',
   imageSrc: '/iphone/devices/13-pro-max.jpg',
@@ -138,7 +138,7 @@ export default function RepairPage() {
                   <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                     <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                     <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {repairs.filter(repairs => repairs.model == `${product.model}`).map(filteredRepairs => {
+                      {repairs.filter(repairs => repairs.device_model == `${product.device_model}`).map(filteredRepairs => {
                         const { id, name, price, description } = filteredRepairs;
                         return (
                           <RadioGroup.Option
@@ -181,7 +181,7 @@ export default function RepairPage() {
                 </div>
                 <div className="mt-10">
                   {selectedRepair.price === "null" ? (
-                    <a className="w-full opacity-50 bg-blue-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500" disabled>
+                    <a className="w-full bg-blue-600 opacity-50 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500" disabled>
                       Book Repair
                     </a>
                   ) : (

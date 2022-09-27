@@ -15,7 +15,7 @@ import repairs from "../../data/iphone/iphone-repairs.json";
 
 const product = {
   name: 'iPhone 5C Repairs',
-  model: 'iPhone 5C',
+  device_model: '5C',
   description: "We offer a comprehensive set of repairs for the iPhone 5C. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPhone 5C. Including screen replacements, batteries and much more.",
   imageSrc: '/iphone/devices/5c.jpg',
@@ -133,7 +133,7 @@ export default function RepairPage() {
                   <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                     <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                     <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {repairs.filter(repairs => repairs.model == `${product.model}`).map(filteredRepairs => {
+                      {repairs.filter(repairs => repairs.device_model == `${product.device_model}`).map(filteredRepairs => {
                         const { id, name, price, description } = filteredRepairs;
                         return (
                           <RadioGroup.Option

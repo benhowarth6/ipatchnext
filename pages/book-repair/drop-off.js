@@ -11,11 +11,7 @@ import {
   SelectorIcon,
 } from "@heroicons/react/solid";
 import subDays from "date-fns/subDays";
-<<<<<<< Updated upstream
-import { supabase } from '/utils/supabase-client'
-=======
 import { supabase } from "/utils/supabase-client";
->>>>>>> Stashed changes
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 import { defineCustomElements } from "@duetds/date-picker/dist/loader";
@@ -61,14 +57,10 @@ const BookingSchema = Yup.object().shape({
   contact_number: Yup.string()
     .min(5, "Your phone number is too short!")
     .max(13, "Your phone number is too long!!"),
-<<<<<<< Updated upstream
-  terms: Yup.boolean().oneOf([true], "You must agree to the repair terms and conditions to continue."),
-=======
   terms: Yup.boolean().oneOf(
     [true],
     "You must agree to the repair terms and conditions to continue."
   ),
->>>>>>> Stashed changes
   appointment_date: Yup.string().required("An appointment date is required."),
 });
 
@@ -76,17 +68,10 @@ function useListener(ref, eventName, handler) {
   useEffect(() => {
     if (ref.current) {
       const element = ref.current;
-<<<<<<< Updated upstream
-      element.addEventListener(eventName, handler)
-      return () => element.removeEventListener(eventName, handler)
-    }
-  }, [eventName, handler, ref])
-=======
       element.addEventListener(eventName, handler);
       return () => element.removeEventListener(eventName, handler);
     }
   }, [eventName, handler, ref]);
->>>>>>> Stashed changes
 }
 
 export function DatePicker({
@@ -99,56 +84,6 @@ export function DatePicker({
   localization,
   ...props
 }) {
-<<<<<<< Updated upstream
-  const ref = useRef(null)
-
-  useListener(ref, "duetChange", onChange)
-  useListener(ref, "duetFocus", onFocus)
-  useListener(ref, "duetBlur", onBlur)
-  useListener(ref, "duetOpen", onOpen)
-  useListener(ref, "duetClose", onClose)
-
-  useEffect(() => {
-    ref.current.localization = localization
-    ref.current.dateAdapter = dateAdapter
-  }, [localization, dateAdapter])
-
-  return <duet-date-picker ref={ref} {...props}></duet-date-picker>
-}
-
-export function TrinityDatePicker({
-  onChange,
-  onFocus,
-  onBlur,
-  onOpen,
-  onClose,
-  dateAdapter,
-  localization,
-  ...props
-}) {
-  const ref = useRef(null)
-
-  useListener(ref, "duetChange", onChange)
-  useListener(ref, "duetFocus", onFocus)
-  useListener(ref, "duetBlur", onBlur)
-  useListener(ref, "duetOpen", onOpen)
-  useListener(ref, "duetClose", onClose)
-
-  useEffect(() => {
-    ref.current.localization = localization
-    ref.current.dateAdapter = dateAdapter
-  }, [localization, dateAdapter])
-
-  return <duet-date-picker ref={ref} {...props}></duet-date-picker>
-}
-
-export default function DropOff() {
-
-  useEffect(() => {
-    defineCustomElements(
-      window
-    );
-=======
   const ref = useRef(null);
 
   useListener(ref, "duetChange", onChange);
@@ -168,10 +103,7 @@ export default function DropOff() {
 export default function DropOff() {
   useEffect(() => {
     defineCustomElements(window);
->>>>>>> Stashed changes
   }, []);
-
-  const key = process.env.NEXT_PUBLIC_AIRTABLE_API_KEY;
 
   const router = useRouter();
   const { id } = router.query;
@@ -276,9 +208,7 @@ export default function DropOff() {
                           role="list"
                           className="text-sm font-medium text-gray-900 divide-y divide-gray-200"
                         >
-                          <li
-                            className="flex items-start py-6 space-x-4"
-                          >
+                          <li className="flex items-start py-6 space-x-4">
                             <img
                               src={image}
                               alt={""}
@@ -391,25 +321,6 @@ export default function DropOff() {
             <Formik
               enableReinitialize
               initialValues={{
-<<<<<<< Updated upstream
-                first_name: '',
-                last_name: '',
-                email: '',
-                contact_number: '',
-                appointment_location: 'Trinity Leeds',
-                appointment_date: '',
-                appointment_time: '09:30',
-                device_type: '',
-                device_model: '',
-                repair_type: '',
-                repair_cost: '',
-                status: 'Pending',
-                notes: '',
-              }}
-              validationSchema={BookingSchema}
-              onSubmit={async (values) => {
-                await supabase.from('bookings').insert({
-=======
                 first_name: "",
                 last_name: "",
                 email: "",
@@ -427,7 +338,6 @@ export default function DropOff() {
               validationSchema={BookingSchema}
               onSubmit={async (values) => {
                 await supabase.from("bookings").insert({
->>>>>>> Stashed changes
                   first_name: values.first_name,
                   last_name: values.last_name,
                   email: values.email,
@@ -571,120 +481,6 @@ export default function DropOff() {
                       </div>
                     </section>
 
-                    <div className="mt-10 border-t border-gray-200 pt-10">
-                      <RadioGroup
-                        value={values.appointment_location}
-                        onChange={(e) =>
-                          setFieldValue("appointment_location", e)
-                        }
-                      >
-                        <RadioGroup.Label className="text-lg font-medium text-gray-900">
-                          Appointment details
-                        </RadioGroup.Label>
-
-                        <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
-                          <RadioGroup.Option
-                            value="Trinity Leeds"
-                            className={({ checked, active }) =>
-                              classNames(
-                                checked
-                                  ? "border-transparent"
-                                  : "border-gray-300",
-                                active ? "ring-2 ring-blue-500" : "",
-                                "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
-                              )
-                            }
-                          >
-                            {({ checked, active }) => (
-                              <>
-                                <div className="flex-1 flex">
-                                  <div className="flex flex-col">
-                                    <RadioGroup.Label
-                                      as="span"
-                                      className="block text-sm font-medium text-gray-900"
-                                    >
-                                      Trinity Leeds
-                                    </RadioGroup.Label>
-                                    <RadioGroup.Description
-                                      as="span"
-                                      className="mt-1 flex items-center text-sm text-gray-500"
-                                    >
-                                      Open 7 days a week
-                                    </RadioGroup.Description>
-                                  </div>
-                                </div>
-                                {checked ? (
-                                  <CheckCircleIcon
-                                    className="h-5 w-5 text-blue-600"
-                                    aria-hidden="true"
-                                  />
-                                ) : null}
-                                <div
-                                  className={classNames(
-                                    active ? "border" : "border-2",
-                                    checked
-                                      ? "border-blue-500"
-                                      : "border-transparent",
-                                    "absolute -inset-px rounded-lg pointer-events-none"
-                                  )}
-                                  aria-hidden="true"
-                                />
-                              </>
-                            )}
-                          </RadioGroup.Option>
-                          <RadioGroup.Option
-                            value="Kirkstall Morrisons"
-                            className={({ checked, active }) =>
-                              classNames(
-                                checked
-                                  ? "border-transparent"
-                                  : "border-gray-300",
-                                active ? "ring-2 ring-blue-500" : "",
-                                "relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none"
-                              )
-                            }
-                          >
-                            {({ checked, active }) => (
-                              <>
-                                <div className="flex-1 flex">
-                                  <div className="flex flex-col">
-                                    <RadioGroup.Label
-                                      as="span"
-                                      className="block text-sm font-medium text-gray-900"
-                                    >
-                                      Kirkstall Morrisons
-                                    </RadioGroup.Label>
-                                    <RadioGroup.Description
-                                      as="span"
-                                      className="mt-1 flex items-center text-sm text-gray-500"
-                                    >
-                                      Open Tuesday - Saturday
-                                    </RadioGroup.Description>
-                                  </div>
-                                </div>
-                                {checked ? (
-                                  <CheckCircleIcon
-                                    className="h-5 w-5 text-blue-600"
-                                    aria-hidden="true"
-                                  />
-                                ) : null}
-                                <div
-                                  className={classNames(
-                                    active ? "border" : "border-2",
-                                    checked
-                                      ? "border-blue-500"
-                                      : "border-transparent",
-                                    "absolute -inset-px rounded-lg pointer-events-none"
-                                  )}
-                                  aria-hidden="true"
-                                />
-                              </>
-                            )}
-                          </RadioGroup.Option>
-                        </div>
-                      </RadioGroup>
-                    </div>
-
                     <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
                       <div>
                         <label
@@ -695,22 +491,6 @@ export default function DropOff() {
                         </label>
                         <div className="mt-1">
                           <div className="relative">
-<<<<<<< Updated upstream
-                            {values.appointment_location ===
-                              "Kirkstall Morrisons" ? (
-                              <DatePicker
-                                value=""
-                                onChange={e => setFieldValue("appointment_date", e.detail.value)}
-                              />
-                            ) : (
-                              <TrinityDatePicker
-                                value=""
-                                onChange={e => setFieldValue("appointment_date", e.detail.value)}
-                              />
-                            )}
-                            {errors.appointment_date &&
-                              touched.appointment_date ? (
-=======
                             <DatePicker
                               value=""
                               onChange={(e) =>
@@ -722,7 +502,6 @@ export default function DropOff() {
                             />
                             {errors.appointment_date &&
                             touched.appointment_date ? (
->>>>>>> Stashed changes
                               <p
                                 className="mt-2 text-sm text-red-600"
                                 id="appointment_date-error"
@@ -745,11 +524,7 @@ export default function DropOff() {
                                 Appointment time
                               </Listbox.Label>
                               <div className="mt-1 relative">
-<<<<<<< Updated upstream
-                                <Listbox.Button className="relative w-full py-3 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-=======
                                 <Listbox.Button className="relative w-full py-3 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
->>>>>>> Stashed changes
                                   <span className="block truncate">
                                     {values.appointment_time}
                                   </span>
@@ -838,8 +613,19 @@ export default function DropOff() {
                           className="h-4 w-4 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
                         />
                         <div className="ml-2">
-                          <label htmlFor="terms" className="text-sm font-medium text-gray-900">
-                            I agree to the repair <Link href="/terms"><a target="_blank" className="font-semibold text-blue-600 hover:text-blue-500">terms and condtions.</a></Link>
+                          <label
+                            htmlFor="terms"
+                            className="text-sm font-medium text-gray-900"
+                          >
+                            I agree to the repair{" "}
+                            <Link href="/terms">
+                              <a
+                                target="_blank"
+                                className="font-semibold text-blue-600 hover:text-blue-500"
+                              >
+                                terms and condtions.
+                              </a>
+                            </Link>
                           </label>
                         </div>
                       </div>
@@ -853,7 +639,10 @@ export default function DropOff() {
                       ) : null}
                     </div>
                     {selectedRepair.map((repairs) => (
-                      <div key={repairs.name} className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between">
+                      <div
+                        key={repairs.name}
+                        className="mt-10 pt-6 border-t border-gray-200 sm:flex sm:items-center sm:justify-between"
+                      >
                         <button
                           className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
                           type="submit"
