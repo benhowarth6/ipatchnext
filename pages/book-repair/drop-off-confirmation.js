@@ -82,7 +82,7 @@ export default function Example() {
               {repairs
                 .filter((repairs) => repairs.id == `${id}`)
                 .map((filteredRepairs) => {
-                  const { id, name, price, model, image } = filteredRepairs;
+                  const { id, name, price, device_type, device_model, image } = filteredRepairs;
                   return (
                     <div>
                       <div className="max-w-3xl">
@@ -93,7 +93,7 @@ export default function Example() {
                           Your booking is confirmed!
                         </p>
                         <p className="mt-2 text-base text-gray-500">
-                          Your {model} repair has been booked. We’ll send a
+                          Your {device_type} {device_model} repair has been booked. We’ll send a
                           confirmation email shortly. Please also check your
                           spam folder.
                         </p>
@@ -118,7 +118,7 @@ export default function Example() {
                           <div className="flex-auto flex flex-col">
                             <div>
                               <h4 className="font-medium text-gray-900">
-                                {model}
+                                {device_type} {device_model}
                               </h4>
                               <p className="mt-2 text-sm text-gray-600">
                                 {name}

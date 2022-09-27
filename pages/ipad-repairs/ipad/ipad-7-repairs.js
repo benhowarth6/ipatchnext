@@ -15,7 +15,7 @@ import repairs from "../../../data/ipad/ipad-repairs.json";
 
 const product = {
   name: 'iPad 7th Generation Repairs',
-  model: 'iPad 7th Generation',
+  device_model: '7th Generation',
   description: "We offer a comprehensive set of repairs for the iPad 7th Generation. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPad 7th Generation. Including screen replacements, batteries and much more.",
   imageSrc: '/ipad/devices/ipad-7.jpg',
@@ -129,7 +129,7 @@ export default function RepairPage() {
                   <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                     <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                     <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {repairs.filter(repairs => repairs.model == `${product.model}`).map(filteredRepairs => {
+                      {repairs.filter(repairs => repairs.device_model == `${product.device_model}`).map(filteredRepairs => {
                         const { id, name, price, description } = filteredRepairs;
                         return (
                           <RadioGroup.Option

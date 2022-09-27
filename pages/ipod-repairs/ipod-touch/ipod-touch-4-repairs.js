@@ -15,7 +15,7 @@ import repairs from "../../../data/ipod/ipod-repairs.json";
 
 const product = {
   name: 'iPod Touch 4th Generation Repairs',
-  model: 'iPod Touch 4th Generation',
+  device_model: 'Touch 4th Generation',
   description: "We offer a comprehensive set of repairs for the iPod Touch 4. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPod Touch 4. Including screen replacements, batteries and much more.",
   imageSrc: '/ipod/devices/ipod-touch-4.jpg',
@@ -129,7 +129,7 @@ export default function RepairPage() {
                   <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                     <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                     <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {repairs.filter(repairs => repairs.model == `${product.model}`).map(filteredRepairs => {
+                      {repairs.filter(repairs => repairs.device_model == `${product.device_model}`).map(filteredRepairs => {
                         const { id, name, price, description } = filteredRepairs;
                         return (
                           <RadioGroup.Option

@@ -94,7 +94,7 @@ export default function Index() {
                                                 We make repairs hassle free
                                             </h1>
                                             <p className="mt-4 text-xl text-gray-600">
-                                                Our focus on Apple device repair allows us to offer services for nearly every product. Get a quote for your repair online and book it in at one of our stores for a swift repair.
+                                                Our focus on Apple device repair allows us to offer services for nearly every product. Get a quote for your repair online and book it in for a swift repair.
                                             </p>
                                             <div className="mt-6">
                                                 <Link href="/find-repair">

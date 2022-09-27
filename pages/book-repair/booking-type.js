@@ -12,7 +12,7 @@ const pricing = {
     {
       title: "Drop off Repair",
       description:
-        "Make an appointment to visit one of our stores to have your device repaired.",
+        "Make an appointment for our Trinity Leeds store to have your device repaired.",
       features: [
         "Same day repairs",
         "No additional fees",

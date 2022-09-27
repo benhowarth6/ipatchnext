@@ -16,7 +16,6 @@ function classNames(...classes) {
 
 const locations = [
     { id: 1, city: 'Trinity Leeds', address: ['Trinity, Albion Street', 'Leeds, LS1 5AR'], times: ['Monday - Sat: 9am - 5pm', 'Sunday: 11am - 5pm'] },
-    { id: 2, city: 'Kirkstall Morrisons', address: ['1 Savins Mill Way', 'Kirkstall, LS5 3RP'], times: ['Monday - Sat: 9am - 5pm', 'Sunday: 11am - 5pm'] },
 ]
 
 const footerNavigation = {
@@ -115,28 +114,28 @@ export default function Contact() {
                             <div className="max-w-lg mx-auto lg:max-w-none">
                                 <div>
                                     <h3 className="text-lg font-medium">Contact information</h3>
-                                    <p className="mt-6 text-base text-teal-50 max-w-3xl">
+                                    <p className="mt-6 text-base text-grey-900 max-w-3xl">
                                         Contact us for general enquiries, repair options or to discuss a business account.
                                     </p>
                                     <dl className="mt-8 space-y-6">
                                         <dt>
                                             <span className="sr-only">Phone number</span>
                                         </dt>
-                                        <dd className="flex text-base text-teal-50">
-                                            <PhoneIcon className="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
+                                        <dd className="flex text-base text-grey-900">
+                                            <PhoneIcon className="flex-shrink-0 w-6 h-6 text-grey-900" aria-hidden="true" />
                                             <span className="ml-3">0113 246 9388</span>
                                         </dd>
                                         <dt>
                                             <span className="sr-only">Email</span>
                                         </dt>
-                                        <dd className="flex text-base text-teal-50">
-                                            <MailIcon className="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
+                                        <dd className="flex text-base text-grey-900">
+                                            <MailIcon className="flex-shrink-0 w-6 h-6 text-grey-900" aria-hidden="true" />
                                             <span className="ml-3">info@ipatchrepairs.co.uk</span>
                                         </dd>
                                     </dl>
                                     <ul role="list" className="mt-8 flex space-x-12">
                                         <li>
-                                            <a className="text-teal-200 hover:text-teal-100" href="#">
+                                            <a className="text-grey-900" href="#">
                                                 <span className="sr-only">Facebook</span>
                                                 <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                                                     <path
@@ -148,7 +147,7 @@ export default function Contact() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="text-teal-200 hover:text-teal-100" href="#">
+                                            <a className="text-grey-900" href="#">
                                                 <span className="sr-only">GitHub</span>
                                                 <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                                                     <path
@@ -160,7 +159,7 @@ export default function Contact() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="text-teal-200 hover:text-teal-100" href="#">
+                                            <a className="text-grey-900" href="#">
                                                 <span className="sr-only">Twitter</span>
                                                 <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                                                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -220,7 +219,7 @@ export default function Contact() {
                             }}
                         >
                             {({ errors, values, touched, field, setFieldValue, handleReset }) => (
-                                <Form className className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
+                                <Form className="pt-16 pb-36 px-4 sm:px-6 lg:pb-16 lg:px-0 lg:row-start-1 lg:col-start-1">
                                     {errorModal && <ErrorModal />}
                                     {modal && <SuccessModal />}
                                     <div className="max-w-lg mx-auto lg:max-w-none">
@@ -381,8 +380,8 @@ export default function Contact() {
                             Our locations
                         </h2>
                         <p className="mt-6 text-lg text-gray-500 max-w-3xl">
-                            We have stores located in Trinity Leeds and Kirkstall Morrisons. We don't require appointments to visit
-                            us in Trinity, however you will need to make a booking to visit our Kirkstall store.
+                            We are located in the Trinity Leeds shopping centre. We don't require appointments to visit
+                            us in Trinity, however you may want to book in to ensure part availability.
                         </p>
                         <div className="mt-10 grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4">
                             {locations.map((location) => (

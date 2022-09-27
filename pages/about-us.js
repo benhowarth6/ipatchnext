@@ -35,16 +35,6 @@ const people = [
     twitterUrl: '#',
     linkedinUrl: '#',
   },
-  {
-    name: 'James Brinkley',
-    role: 'Technician',
-    imageUrl:
-      '/people/james.jpg',
-    bio:
-      'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
 ]
 
 export default function Home() {

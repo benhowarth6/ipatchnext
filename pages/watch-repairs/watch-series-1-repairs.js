@@ -15,7 +15,7 @@ import repairs from "../../data/watch/watch-repairs.json";
 
 const product = {
   name: 'Apple Watch Series 1 Repairs',
-  model: 'Apple Watch Series 1',
+  device_model: 'Series 1',
   description: "We offer a comprehensive set of repairs for the Apple Watch Series 1. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the Apple Watch Series 1. Including screen replacements, batteries and much more.",
   imageSrc: '/watch/devices/series-1.jpg',
@@ -128,7 +128,7 @@ export default function RepairPage() {
                   <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                     <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                     <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {repairs.filter(repairs => repairs.model == `${product.model}`).map(filteredRepairs => {
+                      {repairs.filter(repairs => repairs.device_model == `${product.device_model}`).map(filteredRepairs => {
                         const { id, name, price, description } = filteredRepairs;
                         return (
                           <RadioGroup.Option

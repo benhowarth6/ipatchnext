@@ -194,7 +194,7 @@ export default function DropOff() {
                 {repairs
                   .filter((repairs) => repairs.id == `${id}`)
                   .map((filteredRepairs) => {
-                    const { id, name, price, model, image } = filteredRepairs;
+                    const { id, name, price, device_model, device_type, image } = filteredRepairs;
                     return (
                       <div key={id}>
                         <h2
@@ -215,7 +215,7 @@ export default function DropOff() {
                               className="flex-none w-24 h-24 rounded-md object-center object-cover"
                             />
                             <div className="flex-auto space-y-1">
-                              <h3>{model}</h3>
+                              <h3>{device_type} {device_model}</h3>
                               <p className="text-gray-500">{name}</p>
                               <p className="text-gray-500">£{price}</p>
                             </div>
@@ -647,7 +647,8 @@ export default function DropOff() {
                           className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
                           type="submit"
                           onClick={async () => {
-                            setFieldValue("device_model", repairs.model);
+                            setFieldValue("device_model", repairs.device_model);
+                            setFieldValue("device_type", repairs.device_type);
                             setFieldValue("repair_type", repairs.name);
                             setFieldValue("repair_cost", repairs.price);
                             // Hack to wait for new value to be applied
