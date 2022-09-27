@@ -11,7 +11,11 @@ import {
   SelectorIcon,
 } from "@heroicons/react/solid";
 import subDays from "date-fns/subDays";
+<<<<<<< Updated upstream
 import { supabase } from '/utils/supabase-client'
+=======
+import { supabase } from "/utils/supabase-client";
+>>>>>>> Stashed changes
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 import { defineCustomElements } from "@duetds/date-picker/dist/loader";
@@ -57,7 +61,14 @@ const BookingSchema = Yup.object().shape({
   contact_number: Yup.string()
     .min(5, "Your phone number is too short!")
     .max(13, "Your phone number is too long!!"),
+<<<<<<< Updated upstream
   terms: Yup.boolean().oneOf([true], "You must agree to the repair terms and conditions to continue."),
+=======
+  terms: Yup.boolean().oneOf(
+    [true],
+    "You must agree to the repair terms and conditions to continue."
+  ),
+>>>>>>> Stashed changes
   appointment_date: Yup.string().required("An appointment date is required."),
 });
 
@@ -65,10 +76,17 @@ function useListener(ref, eventName, handler) {
   useEffect(() => {
     if (ref.current) {
       const element = ref.current;
+<<<<<<< Updated upstream
       element.addEventListener(eventName, handler)
       return () => element.removeEventListener(eventName, handler)
     }
   }, [eventName, handler, ref])
+=======
+      element.addEventListener(eventName, handler);
+      return () => element.removeEventListener(eventName, handler);
+    }
+  }, [eventName, handler, ref]);
+>>>>>>> Stashed changes
 }
 
 export function DatePicker({
@@ -81,6 +99,7 @@ export function DatePicker({
   localization,
   ...props
 }) {
+<<<<<<< Updated upstream
   const ref = useRef(null)
 
   useListener(ref, "duetChange", onChange)
@@ -129,6 +148,27 @@ export default function DropOff() {
     defineCustomElements(
       window
     );
+=======
+  const ref = useRef(null);
+
+  useListener(ref, "duetChange", onChange);
+  useListener(ref, "duetFocus", onFocus);
+  useListener(ref, "duetBlur", onBlur);
+  useListener(ref, "duetOpen", onOpen);
+  useListener(ref, "duetClose", onClose);
+
+  useEffect(() => {
+    ref.current.localization = localization;
+    ref.current.dateAdapter = dateAdapter;
+  }, [localization, dateAdapter]);
+
+  return <duet-date-picker ref={ref} {...props}></duet-date-picker>;
+}
+
+export default function DropOff() {
+  useEffect(() => {
+    defineCustomElements(window);
+>>>>>>> Stashed changes
   }, []);
 
   const key = process.env.NEXT_PUBLIC_AIRTABLE_API_KEY;
@@ -212,7 +252,7 @@ export default function DropOff() {
           </header>
 
           <main className="relative grid grid-cols-1 gap-x-16 max-w-7xl mx-auto lg:px-8 lg:grid-cols-2 xl:gap-x-48">
-            <h1 className="sr-only">Order information</h1>
+            <h1 className="sr-only">Booking information</h1>
 
             <section
               aria-labelledby="summary-heading"
@@ -351,6 +391,7 @@ export default function DropOff() {
             <Formik
               enableReinitialize
               initialValues={{
+<<<<<<< Updated upstream
                 first_name: '',
                 last_name: '',
                 email: '',
@@ -368,6 +409,25 @@ export default function DropOff() {
               validationSchema={BookingSchema}
               onSubmit={async (values) => {
                 await supabase.from('bookings').insert({
+=======
+                first_name: "",
+                last_name: "",
+                email: "",
+                contact_number: "",
+                appointment_location: "Trinity Leeds",
+                appointment_date: "",
+                appointment_time: "09:30",
+                device_type: "",
+                device_model: "",
+                repair_type: "",
+                repair_cost: "",
+                status: "Pending",
+                notes: "",
+              }}
+              validationSchema={BookingSchema}
+              onSubmit={async (values) => {
+                await supabase.from("bookings").insert({
+>>>>>>> Stashed changes
                   first_name: values.first_name,
                   last_name: values.last_name,
                   email: values.email,
@@ -635,6 +695,7 @@ export default function DropOff() {
                         </label>
                         <div className="mt-1">
                           <div className="relative">
+<<<<<<< Updated upstream
                             {values.appointment_location ===
                               "Kirkstall Morrisons" ? (
                               <DatePicker
@@ -649,6 +710,19 @@ export default function DropOff() {
                             )}
                             {errors.appointment_date &&
                               touched.appointment_date ? (
+=======
+                            <DatePicker
+                              value=""
+                              onChange={(e) =>
+                                setFieldValue(
+                                  "appointment_date",
+                                  e.detail.value
+                                )
+                              }
+                            />
+                            {errors.appointment_date &&
+                            touched.appointment_date ? (
+>>>>>>> Stashed changes
                               <p
                                 className="mt-2 text-sm text-red-600"
                                 id="appointment_date-error"
@@ -671,7 +745,11 @@ export default function DropOff() {
                                 Appointment time
                               </Listbox.Label>
                               <div className="mt-1 relative">
+<<<<<<< Updated upstream
                                 <Listbox.Button className="relative w-full py-3 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+=======
+                                <Listbox.Button className="relative w-full py-3 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+>>>>>>> Stashed changes
                                   <span className="block truncate">
                                     {values.appointment_time}
                                   </span>
@@ -802,7 +880,6 @@ export default function DropOff() {
           </main>
         </div>
       </div>
-      );
     </div>
   );
 }
