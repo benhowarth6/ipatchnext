@@ -182,7 +182,7 @@ export default function RepairPage() {
                   ) : (
                     <Link
                       href={{
-                        pathname: '/book-repair/booking-type',
+                        pathname: '/book-repair/drop-off',
                         query: { id: selectedRepair.id },
                       }}
                     >

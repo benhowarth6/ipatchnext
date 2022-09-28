@@ -1,26 +1,24 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import React, { Fragment, useState, useEffect, useRef } from "react";
-import { Listbox, Popover, RadioGroup, Transition } from "@headlessui/react";
+import React, { Fragment, useState } from "react";
+import { Listbox, Popover, Transition } from "@headlessui/react";
 import {
-  CheckCircleIcon,
   CheckIcon,
   ChevronRightIcon,
   ChevronUpIcon,
   SelectorIcon,
 } from "@heroicons/react/solid";
-import subDays from "date-fns/subDays";
 import { supabase } from "/utils/supabase-client";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
-import { defineCustomElements } from "@duetds/date-picker/dist/loader";
+import DatePicker, { TimePicker } from "sassy-datepicker";
 
 import repairs from "../../data/all-repairs.json";
 
 const steps = [
-  { name: "Booking Type", status: "complete" },
-  { name: "Booking Information", status: "current" },
+  { name: "Repair Type", status: "complete" },
+  { name: "Appointment Information", status: "current" },
   { name: "Confirmation", status: "upcoming" },
 ];
 
@@ -61,57 +59,38 @@ const BookingSchema = Yup.object().shape({
     [true],
     "You must agree to the repair terms and conditions to continue."
   ),
-  appointment_date: Yup.string().required("An appointment date is required."),
 });
 
-function useListener(ref, eventName, handler) {
-  useEffect(() => {
-    if (ref.current) {
-      const element = ref.current;
-      element.addEventListener(eventName, handler);
-      return () => element.removeEventListener(eventName, handler);
-    }
-  }, [eventName, handler, ref]);
-}
-
-export function DatePicker({
-  onChange,
-  onFocus,
-  onBlur,
-  onOpen,
-  onClose,
-  dateAdapter,
-  localization,
-  ...props
-}) {
-  const ref = useRef(null);
-
-  useListener(ref, "duetChange", onChange);
-  useListener(ref, "duetFocus", onFocus);
-  useListener(ref, "duetBlur", onBlur);
-  useListener(ref, "duetOpen", onOpen);
-  useListener(ref, "duetClose", onClose);
-
-  useEffect(() => {
-    ref.current.localization = localization;
-    ref.current.dateAdapter = dateAdapter;
-  }, [localization, dateAdapter]);
-
-  return <duet-date-picker ref={ref} {...props}></duet-date-picker>;
-}
+const today = new Date();
 
 export default function DropOff() {
-  useEffect(() => {
-    defineCustomElements(window);
-  }, []);
-
   const router = useRouter();
   const { id } = router.query;
 
+  const [visible, setVisible] = useState(false);
+  const [date, setDate] = useState(today);
   const [selected, setSelected] = useState(times[0]);
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
+  }
+
+  const togglePicker = () => setVisible((v) => !v);
+
+  const handleDateSelect = (newDate) => {
+    setDate(newDate);
+    setVisible(false);
+  };
+
+  function TimeInput() {
+    const [time, setTime] = useState({ hours: 15, minutes: 30 });
+
+    const onChange = (newTime) => {
+      console.log(`New time selected - ${newTime}`);
+      setTime(newTime);
+    };
+
+    return <TimePicker onChange={onChange} value={time} />;
   }
 
   const selectedRepair = repairs.filter((repairs) => repairs.id === `${id}`);
@@ -161,9 +140,7 @@ export default function DropOff() {
                             </a>
                           </Link>
                         ) : step.status === "complete" ? (
-                          <Link href={`booking-type?id=${id}`}>
-                            {step.name}
-                          </Link>
+                          <Link href={`drop-off?id=${id}`}>{step.name}</Link>
                         ) : (
                           <Link href={`drop-off?id=${id}`}>{step.name}</Link>
                         )}
@@ -194,7 +171,14 @@ export default function DropOff() {
                 {repairs
                   .filter((repairs) => repairs.id == `${id}`)
                   .map((filteredRepairs) => {
-                    const { id, name, price, device_model, device_type, image } = filteredRepairs;
+                    const {
+                      id,
+                      name,
+                      price,
+                      device_model,
+                      device_type,
+                      image,
+                    } = filteredRepairs;
                     return (
                       <div key={id}>
                         <h2
@@ -215,7 +199,9 @@ export default function DropOff() {
                               className="flex-none w-24 h-24 rounded-md object-center object-cover"
                             />
                             <div className="flex-auto space-y-1">
-                              <h3>{device_type} {device_model}</h3>
+                              <h3>
+                                {device_type} {device_model}
+                              </h3>
                               <p className="text-gray-500">{name}</p>
                               <p className="text-gray-500">£{price}</p>
                             </div>
@@ -224,6 +210,13 @@ export default function DropOff() {
                             </p>
                           </li>
                         </ul>
+
+                        <dl className="hidden text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 py-6 lg:block">
+                          <div className="flex items-center justify-between">
+                            <dt className="text-gray-600">Location</dt>
+                            <dd>Trinity Leeds</dd>
+                          </div>
+                        </dl>
 
                         <dl className="hidden text-sm font-medium text-gray-900 space-y-6 border-t border-gray-200 pt-6 lg:block">
                           <div className="flex items-center justify-between">
@@ -490,24 +483,23 @@ export default function DropOff() {
                           Appointment date
                         </label>
                         <div className="mt-1">
+                          <Field
+                            type="text"
+                            id="appointment_date"
+                            name="appointment_date"
+                            value={date.toDateString()}
+                            onClick={setVisible}
+                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          />
                           <div className="relative">
-                            <DatePicker
-                              value=""
-                              onChange={(e) =>
-                                setFieldValue(
-                                  "appointment_date",
-                                  e.detail.value
-                                )
-                              }
-                            />
-                            {errors.appointment_date &&
-                            touched.appointment_date ? (
-                              <p
-                                className="mt-2 text-sm text-red-600"
-                                id="appointment_date-error"
-                              >
-                                {errors.appointment_date}
-                              </p>
+                            {visible ? (
+                              <DatePicker
+                                value={date}
+                                onChange={handleDateSelect}
+                                minDate={today}
+                                weekStartsFrom="Monday"
+                                className="absolute mt-2 z-50"
+                              />
                             ) : null}
                           </div>
                         </div>
@@ -524,7 +516,7 @@ export default function DropOff() {
                                 Appointment time
                               </Listbox.Label>
                               <div className="mt-1 relative">
-                                <Listbox.Button className="relative w-full py-3 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                <Listbox.Button className="relative w-full py-2 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                                   <span className="block truncate">
                                     {values.appointment_time}
                                   </span>
