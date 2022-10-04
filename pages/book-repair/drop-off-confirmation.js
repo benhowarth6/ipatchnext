@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 
 const steps = [
   { name: "Booking Type", status: "initial" },
-  { name: "Booking Information", status: "current" },
+  { name: "Booking Information", status: "" },
   { name: "Confirmation", status: "current" },
 ];
 
@@ -82,7 +82,7 @@ export default function Example() {
               {repairs
                 .filter((repairs) => repairs.id == `${id}`)
                 .map((filteredRepairs) => {
-                  const { id, name, price, model, image } = filteredRepairs;
+                  const { id, name, price, device_type, device_model, image } = filteredRepairs;
                   return (
                     <div>
                       <div className="max-w-3xl">
@@ -93,9 +93,7 @@ export default function Example() {
                           Your booking is confirmed!
                         </p>
                         <p className="mt-2 text-base text-gray-500">
-                          Your {model} repair has been booked. We’ll send a
-                          confirmation email shortly. Please also check your
-                          spam folder.
+                          Your {device_type} {device_model} repair has been booked. We’ll send an email if we require any more details prior to your repair.
                         </p>
                       </div>
 
@@ -118,7 +116,7 @@ export default function Example() {
                           <div className="flex-auto flex flex-col">
                             <div>
                               <h4 className="font-medium text-gray-900">
-                                {model}
+                                {device_type} {device_model}
                               </h4>
                               <p className="mt-2 text-sm text-gray-600">
                                 {name}
@@ -170,7 +168,7 @@ export default function Example() {
                               <dt className="font-medium text-gray-900">
                                 Appointment details
                               </dt>
-                              <dd className="mt-2 text-gray-700">
+                              <div className="mt-2 text-gray-700">
                                 <address className="not-italic">
                                   <div className=" flex ">
                                     <dt className="font-medium text-gray-900">
@@ -189,7 +187,7 @@ export default function Example() {
                                     </dd>
                                   </div>
                                 </address>
-                              </dd>
+                              </div>
                             </div>
                           </dl>
 
@@ -240,9 +238,7 @@ export default function Example() {
             </h1>
 
             <p className="mt-2 text-sm text-gray-700">
-              Once you've received your order confirmation email, we'll send you
-              another email or a text message to confirm part availability for
-              your chosen appointment date.
+              We'll check our availability to ensure we have the correct parts in stock for your repair. If we need to order any parts in we'll contact you to let you know an available alternative.
             </p>
             <div className="mt-12 sm:mt-16">
               <h1 className="text-lg font-medium text-gray-900">
@@ -251,8 +247,7 @@ export default function Example() {
 
               <ol className="list-decimal list-inside mt-2 text-sm text-gray-700">
                 <li>
-                  Drop off your device that requires repair at your selected
-                  store. We don't require any accessories, chargers or power
+                  Drop off your device that requires repair at our Trinity Leeds store. We don't require any accessories, chargers or power
                   cables.
                 </li>
                 <li className="mt-2">

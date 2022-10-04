@@ -6,7 +6,8 @@
   {
     "id": "pro-12-5-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 12.9-inch 5th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 5th Generation",
     "description": "A new Mini LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
     "price": 499
@@ -14,7 +15,8 @@
   {
     "id": "pro-12-5-battery",
     "name": "Battery",
-    "model": "iPad Pro 12.9-inch 5th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 5th Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
     "price": 225
@@ -22,7 +24,8 @@
   {
     "id": "pro-12-5-charging-port",
     "name": "USB-C Charging Port",
-    "model": "iPad Pro 12.9-inch 5th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 5th Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
     "price": 175
@@ -30,7 +33,8 @@
   {
     "id": "pro-12-5-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 12.9-inch 5th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 5th Generation",
     "description": "A new rear camera if one of yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
     "price": 175
@@ -38,7 +42,8 @@
   {
     "id": "pro-12-5-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 12.9-inch 5th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 5th Generation",
     "description": "A new replacement camera lens if one of yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
     "price": 175
@@ -46,7 +51,8 @@
   {
     "id": "pro-12-5-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 12.9-inch 5th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 5th Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
     "price": 175
@@ -54,7 +60,8 @@
   {
     "id": "pro-12-5-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 12.9-inch 5th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 5th Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
     "price": 175
@@ -62,7 +69,8 @@
   {
     "id": "pro-12-5-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 12.9-inch 5th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 5th Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-12-5.jpg",
     "price": 0
@@ -70,7 +78,8 @@
   {
     "id": "pro-12-4-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 12.9-inch 4th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 4th Generation",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
     "price": 519
@@ -78,7 +87,8 @@
   {
     "id": "pro-12-4-battery",
     "name": "Battery",
-    "model": "iPad Pro 12.9-inch 4th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 4th Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
     "price": 175
@@ -86,7 +96,8 @@
   {
     "id": "pro-12-4-charging-port",
     "name": "USB-C Charging Port",
-    "model": "iPad Pro 12.9-inch 4th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 4th Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
     "price": 175
@@ -94,7 +105,8 @@
   {
     "id": "pro-12-4-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 12.9-inch 4th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 4th Generation",
     "description": "A new rear camera if one of yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
     "price": 175
@@ -102,7 +114,8 @@
   {
     "id": "pro-12-4-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 12.9-inch 4th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 4th Generation",
     "description": "A new replacement camera lens if one of yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
     "price": 95
@@ -110,7 +123,8 @@
   {
     "id": "pro-12-4-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 12.9-inch 4th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 4th Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
     "price": 175
@@ -118,7 +132,8 @@
   {
     "id": "pro-12-4-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 12.9-inch 4th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 4th Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
     "price": 175
@@ -126,7 +141,8 @@
   {
     "id": "pro-12-4-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 12.9-inch 4th Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 4th Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-12-4.jpg",
     "price": 0
@@ -134,7 +150,8 @@
   {
     "id": "pro-12-3-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 3rd Generation",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
     "price": 459
@@ -142,7 +159,8 @@
   {
     "id": "pro-12-3-battery",
     "name": "Battery",
-    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 3rd Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
     "price": 175
@@ -150,7 +168,8 @@
   {
     "id": "pro-12-3-charging-port",
     "name": "USB-C Charging Port",
-    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 3rd Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
     "price": 175
@@ -158,7 +177,8 @@
   {
     "id": "pro-12-3-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 3rd Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
     "price": 175
@@ -166,7 +186,8 @@
   {
     "id": "pro-12-3-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 3rd Generation",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
     "price": 95
@@ -174,7 +195,8 @@
   {
     "id": "pro-12-3-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 3rd Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
     "price": 175
@@ -182,7 +204,8 @@
   {
     "id": "pro-12-3-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 3rd Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
     "price": 175
@@ -190,7 +213,8 @@
   {
     "id": "pro-12-3-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 12.9-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 3rd Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-12-3.jpg",
     "price": 0
@@ -198,7 +222,8 @@
   {
     "id": "pro-12-2-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 499
@@ -206,7 +231,8 @@
   {
     "id": "pro-12-2-battery",
     "name": "Battery",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 175
@@ -214,7 +240,8 @@
   {
     "id": "pro-12-2-charging-port",
     "name": "Charging Port",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 175
@@ -222,7 +249,8 @@
   {
     "id": "pro-12-2-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 175
@@ -230,7 +258,8 @@
   {
     "id": "pro-12-2-front-camera",
     "name": "Front Camera",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 175
@@ -238,7 +267,8 @@
   {
     "id": "pro-12-2-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 175
@@ -246,7 +276,8 @@
   {
     "id": "pro-12-2-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 95
@@ -254,7 +285,8 @@
   {
     "id": "pro-12-2-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 175
@@ -262,7 +294,8 @@
   {
     "id": "pro-12-2-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 175
@@ -270,7 +303,8 @@
   {
     "id": "pro-12-2-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 12.9-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 2nd Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-12-2.jpg",
     "price": 0
@@ -278,7 +312,8 @@
   {
     "id": "pro-12-1-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 319
@@ -286,7 +321,8 @@
   {
     "id": "pro-12-1-battery",
     "name": "Battery",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 150
@@ -294,7 +330,8 @@
   {
     "id": "pro-12-1-charging-port",
     "name": "Charging Port",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 150
@@ -302,7 +339,8 @@
   {
     "id": "pro-12-1-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 150
@@ -310,7 +348,8 @@
   {
     "id": "pro-12-1-front-camera",
     "name": "Front Camera",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 150
@@ -318,7 +357,8 @@
   {
     "id": "pro-12-1-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 150
@@ -326,7 +366,8 @@
   {
     "id": "pro-12-1-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 95
@@ -334,7 +375,8 @@
   {
     "id": "pro-12-1-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 150
@@ -342,7 +384,8 @@
   {
     "id": "pro-12-1-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 150
@@ -350,7 +393,8 @@
   {
     "id": "pro-12-1-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 12.9-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 12.9-inch 1st Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-12-1.jpg",
     "price": 0
@@ -358,7 +402,8 @@
   {
     "id": "pro-11-3-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 11-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 3rd Generation",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
     "price": 429
@@ -366,7 +411,8 @@
   {
     "id": "pro-11-3-battery",
     "name": "Battery",
-    "model": "iPad Pro 11-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 3rd Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
     "price": 175
@@ -374,7 +420,8 @@
   {
     "id": "pro-11-3-charging-port",
     "name": "USB-C Charging Port",
-    "model": "iPad Pro 11-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 3rd Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
     "price": 175
@@ -382,7 +429,8 @@
   {
     "id": "pro-11-3-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 11-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 3rd Generation",
     "description": "A new rear camera if one of yours is damaged.",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
     "price": 175
@@ -390,7 +438,8 @@
   {
     "id": "pro-11-3-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 11-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 3rd Generation",
     "description": "A new replacement camera lens if one of yours is damaged.",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
     "price": 95
@@ -398,7 +447,8 @@
   {
     "id": "pro-11-3-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 11-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 3rd Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
     "price": 175
@@ -406,7 +456,8 @@
   {
     "id": "pro-11-3-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 11-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 3rd Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
     "price": 175
@@ -414,7 +465,8 @@
   {
     "id": "pro-11-3-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 11-inch 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 3rd Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-11-3.jpg",
     "price": 0
@@ -422,7 +474,8 @@
   {
     "id": "pro-11-2-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 11-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 2nd Generation",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
     "price": 389
@@ -430,7 +483,8 @@
   {
     "id": "pro-11-2-battery",
     "name": "Battery",
-    "model": "iPad Pro 11-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 2nd Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
     "price": 175
@@ -438,7 +492,8 @@
   {
     "id": "pro-11-2-charging-port",
     "name": "USB-C Charging Port",
-    "model": "iPad Pro 11-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 2nd Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
     "price": 175
@@ -446,7 +501,8 @@
   {
     "id": "pro-11-2-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 11-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 2nd Generation",
     "description": "A new rear camera if one of yours is damaged.",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
     "price": 175
@@ -454,7 +510,8 @@
   {
     "id": "pro-11-2-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 11-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 2nd Generation",
     "description": "A new replacement camera lens if one of yours is damaged.",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
     "price": 95
@@ -462,7 +519,8 @@
   {
     "id": "pro-11-2-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 11-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 2nd Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
     "price": 175
@@ -470,7 +528,8 @@
   {
     "id": "pro-11-2-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 11-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 2nd Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
     "price": 175
@@ -478,7 +537,8 @@
   {
     "id": "pro-11-2-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 11-inch 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 2nd Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-11-2.jpg",
     "price": 0
@@ -486,7 +546,8 @@
   {
     "id": "pro-11-1-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 11-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 1st Generation",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
     "price": 319
@@ -494,7 +555,8 @@
   {
     "id": "pro-11-1-battery",
     "name": "Battery",
-    "model": "iPad Pro 11-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 1st Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
     "price": 175
@@ -502,7 +564,8 @@
   {
     "id": "pro-11-1-charging-port",
     "name": "USB-C Charging Port",
-    "model": "iPad Pro 11-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 1st Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
     "price": 175
@@ -510,7 +573,8 @@
   {
     "id": "pro-11-1-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 11-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 1st Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
     "price": 175
@@ -518,7 +582,8 @@
   {
     "id": "pro-11-1-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 11-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 1st Generation",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
     "price": 95
@@ -526,7 +591,8 @@
   {
     "id": "pro-11-1-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 11-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 1st Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
     "price": 175
@@ -534,7 +600,8 @@
   {
     "id": "pro-11-1-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 11-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 1st Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
     "price": 175
@@ -542,7 +609,8 @@
   {
     "id": "pro-11-1-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 11-inch 1st Generation",
+    "device_type": "iPad",
+    "device_model": "Pro 11-inch 1st Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-11-1.jpg",
     "price": 0
@@ -550,7 +618,8 @@
   {
     "id": "pro-10-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 289
@@ -558,7 +627,8 @@
   {
     "id": "pro-10-battery",
     "name": "Battery",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 150
@@ -566,7 +636,8 @@
   {
     "id": "pro-10-charging-port",
     "name": "Charging Port",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 150
@@ -574,7 +645,8 @@
   {
     "id": "pro-10-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 150
@@ -582,7 +654,8 @@
   {
     "id": "pro-10-front-camera",
     "name": "Front Camera",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 150
@@ -590,7 +663,8 @@
   {
     "id": "pro-10-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 150
@@ -598,7 +672,8 @@
   {
     "id": "pro-10-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 95
@@ -606,7 +681,8 @@
   {
     "id": "pro-10-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 150
@@ -614,7 +690,8 @@
   {
     "id": "pro-10-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 150
@@ -622,7 +699,8 @@
   {
     "id": "pro-10-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 10.5-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 10.5-inch",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-10.jpg",
     "price": 0
@@ -630,7 +708,8 @@
   {
     "id": "pro-9-display",
     "name": "Display Assembly",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 249
@@ -638,7 +717,8 @@
   {
     "id": "pro-9-battery",
     "name": "Battery",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 150
@@ -646,7 +726,8 @@
   {
     "id": "pro-9-charging-port",
     "name": "Charging Port",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 150
@@ -654,7 +735,8 @@
   {
     "id": "pro-9-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 150
@@ -662,7 +744,8 @@
   {
     "id": "pro-9-front-camera",
     "name": "Front Camera",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 150
@@ -670,7 +753,8 @@
   {
     "id": "pro-9-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 150
@@ -678,7 +762,8 @@
   {
     "id": "pro-9-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 95
@@ -686,7 +771,8 @@
   {
     "id": "pro-9-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 150
@@ -694,7 +780,8 @@
   {
     "id": "pro-9-button-fault",
     "name": "Button Fault",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 150
@@ -702,7 +789,8 @@
   {
     "id": "pro-9-not-sure",
     "name": "Unsure",
-    "model": "iPad Pro 9.7-inch",
+    "device_type": "iPad",
+    "device_model": "Pro 9.7-inch",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-pro-9.jpg",
     "price": 0
@@ -710,7 +798,8 @@
   {
     "id": "air-4-display",
     "name": "Display Assembly",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 319
@@ -718,7 +807,8 @@
   {
     "id": "air-4-battery",
     "name": "Battery",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 175
@@ -726,7 +816,8 @@
   {
     "id": "air-4-charging-port",
     "name": "USB-C Charging Port",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 175
@@ -734,7 +825,8 @@
   {
     "id": "air-4-front-camera",
     "name": "Front Camera",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 175
@@ -742,7 +834,8 @@
   {
     "id": "air-4-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 175
@@ -750,7 +843,8 @@
   {
     "id": "air-4-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 95
@@ -758,7 +852,8 @@
   {
     "id": "air-4-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 175
@@ -766,7 +861,8 @@
   {
     "id": "air-4-button-fault",
     "name": "Button Fault",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 175
@@ -774,7 +870,8 @@
   {
     "id": "air-4-not-sure",
     "name": "Unsure",
-    "model": "iPad Air 4",
+    "device_type": "iPad",
+    "device_model": "Air 4",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-air-4.jpg",
     "price": 0
@@ -782,7 +879,8 @@
   {
     "id": "air-3-display",
     "name": "Display Assembly",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 249
@@ -790,7 +888,8 @@
   {
     "id": "air-3-battery",
     "name": "Battery",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 120
@@ -798,7 +897,8 @@
   {
     "id": "air-3-charging-port",
     "name": "Charging Port",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 120
@@ -806,7 +906,8 @@
   {
     "id": "air-3-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 120
@@ -814,7 +915,8 @@
   {
     "id": "air-3-front-camera",
     "name": "Front Camera",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 120
@@ -822,7 +924,8 @@
   {
     "id": "air-3-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 120
@@ -830,7 +933,8 @@
   {
     "id": "air-3-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 95
@@ -838,7 +942,8 @@
   {
     "id": "air-3-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 120
@@ -846,7 +951,8 @@
   {
     "id": "air-3-button-fault",
     "name": "Button Fault",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 120
@@ -854,7 +960,8 @@
   {
     "id": "air-3-not-sure",
     "name": "Unsure",
-    "model": "iPad Air 3",
+    "device_type": "iPad",
+    "device_model": "Air 3",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-air-3.jpg",
     "price": 0
@@ -862,7 +969,8 @@
   {
     "id": "air-2-display",
     "name": "Display Assembly",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A new LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 199
@@ -870,7 +978,8 @@
   {
     "id": "air-2-battery",
     "name": "Battery",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 85
@@ -878,7 +987,8 @@
   {
     "id": "air-2-charging-port",
     "name": "Charging Port",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 95
@@ -886,7 +996,8 @@
   {
     "id": "air-2-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 95
@@ -894,7 +1005,8 @@
   {
     "id": "air-2-front-camera",
     "name": "Front Camera",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 95
@@ -902,7 +1014,8 @@
   {
     "id": "air-2-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 95
@@ -910,7 +1023,8 @@
   {
     "id": "air-2-camera-lens",
     "name": "Rear Camera Lens",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A new replacement camera lens if yours is damaged.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 95
@@ -918,7 +1032,8 @@
   {
     "id": "air-2-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 95
@@ -926,7 +1041,8 @@
   {
     "id": "air-2-button-fault",
     "name": "Button Fault",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 95
@@ -934,7 +1050,8 @@
   {
     "id": "air-2-not-sure",
     "name": "Unsure",
-    "model": "iPad Air 2",
+    "device_type": "iPad",
+    "device_model": "Air 2",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-air-2.jpg",
     "price": 0
@@ -942,7 +1059,8 @@
   {
     "id": "air-1-glass",
     "name": "Glass Replacement",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 99
@@ -950,7 +1068,8 @@
   {
     "id": "air-1-lcd",
     "name": "Retina LCD",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 99
@@ -958,7 +1077,8 @@
   {
     "id": "air-1-battery",
     "name": "Battery",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 85
@@ -966,7 +1086,8 @@
   {
     "id": "air-1-charging-port",
     "name": "Charging Port",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 85
@@ -974,7 +1095,8 @@
   {
     "id": "air-1-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 85
@@ -982,7 +1104,8 @@
   {
     "id": "air-1-front-camera",
     "name": "Front Camera",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 85
@@ -990,7 +1113,8 @@
   {
     "id": "air-1-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 85
@@ -998,7 +1122,8 @@
   {
     "id": "air-1-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 85
@@ -1006,7 +1131,8 @@
   {
     "id": "air-1-button-fault",
     "name": "Button Fault",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 85
@@ -1014,7 +1140,8 @@
   {
     "id": "air-1-not-sure",
     "name": "Unsure",
-    "model": "iPad Air 1",
+    "device_type": "iPad",
+    "device_model": "Air 1",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-air-1.jpg",
     "price": 0
@@ -1022,7 +1149,8 @@
   {
     "id": "ipad-9-glass",
     "name": "Glass Replacement",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 169
@@ -1030,7 +1158,8 @@
   {
     "id": "ipad-9-lcd",
     "name": "Retina LCD",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 189
@@ -1038,7 +1167,8 @@
   {
     "id": "ipad-9-battery",
     "name": "Battery",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 95
@@ -1046,7 +1176,8 @@
   {
     "id": "ipad-9-charging-port",
     "name": "Charging Port",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 95
@@ -1054,7 +1185,8 @@
   {
     "id": "ipad-9-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 95
@@ -1062,7 +1194,8 @@
   {
     "id": "ipad-9-front-camera",
     "name": "Front Camera",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 95
@@ -1070,7 +1203,8 @@
   {
     "id": "ipad-9-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 95
@@ -1078,7 +1212,8 @@
   {
     "id": "ipad-9-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 95
@@ -1086,7 +1221,8 @@
   {
     "id": "ipad-9-button-fault",
     "name": "Button Fault",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 95
@@ -1094,7 +1230,8 @@
   {
     "id": "ipad-9-not-sure",
     "name": "Unsure",
-    "model": "iPad 9th Generation",
+    "device_type": "iPad",
+    "device_model": "9th Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-9.jpg",
     "price": 0
@@ -1102,7 +1239,8 @@
   {
     "id": "ipad-8-glass",
     "name": "Glass Replacement",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 169
@@ -1110,7 +1248,8 @@
   {
     "id": "ipad-8-lcd",
     "name": "Retina LCD",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 189
@@ -1118,7 +1257,8 @@
   {
     "id": "ipad-8-battery",
     "name": "Battery",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 95
@@ -1126,7 +1266,8 @@
   {
     "id": "ipad-8-charging-port",
     "name": "Charging Port",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 95
@@ -1134,7 +1275,8 @@
   {
     "id": "ipad-8-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 95
@@ -1142,7 +1284,8 @@
   {
     "id": "ipad-8-front-camera",
     "name": "Front Camera",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 95
@@ -1150,7 +1293,8 @@
   {
     "id": "ipad-8-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 95
@@ -1158,7 +1302,8 @@
   {
     "id": "ipad-8-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 95
@@ -1166,7 +1311,8 @@
   {
     "id": "ipad-8-button-fault",
     "name": "Button Fault",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 95
@@ -1174,7 +1320,8 @@
   {
     "id": "ipad-8-not-sure",
     "name": "Unsure",
-    "model": "iPad 8th Generation",
+    "device_type": "iPad",
+    "device_model": "8th Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-8.jpg",
     "price": 0
@@ -1182,7 +1329,8 @@
   {
     "id": "ipad-7-glass",
     "name": "Glass Replacement",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 169
@@ -1190,7 +1338,8 @@
   {
     "id": "ipad-7-lcd",
     "name": "Retina LCD",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 189
@@ -1198,7 +1347,8 @@
   {
     "id": "ipad-7-battery",
     "name": "Battery",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 95
@@ -1206,7 +1356,8 @@
   {
     "id": "ipad-7-charging-port",
     "name": "Charging Port",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 95
@@ -1214,7 +1365,8 @@
   {
     "id": "ipad-7-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 95
@@ -1222,7 +1374,8 @@
   {
     "id": "ipad-7-front-camera",
     "name": "Front Camera",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 95
@@ -1230,7 +1383,8 @@
   {
     "id": "ipad-7-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 95
@@ -1238,7 +1392,8 @@
   {
     "id": "ipad-7-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 95
@@ -1246,7 +1401,8 @@
   {
     "id": "ipad-7-button-fault",
     "name": "Button Fault",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 95
@@ -1254,7 +1410,8 @@
   {
     "id": "ipad-7-not-sure",
     "name": "Unsure",
-    "model": "iPad 7th Generation",
+    "device_type": "iPad",
+    "device_model": "7th Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-7.jpg",
     "price": 0
@@ -1262,7 +1419,8 @@
   {
     "id": "ipad-6-glass",
     "name": "Glass Replacement",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 149
@@ -1270,7 +1428,8 @@
   {
     "id": "ipad-6-lcd",
     "name": "Retina LCD",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 149
@@ -1278,7 +1437,8 @@
   {
     "id": "ipad-6-battery",
     "name": "Battery",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 95
@@ -1286,7 +1446,8 @@
   {
     "id": "ipad-6-charging-port",
     "name": "Charging Port",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 95
@@ -1294,7 +1455,8 @@
   {
     "id": "ipad-6-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 95
@@ -1302,7 +1464,8 @@
   {
     "id": "ipad-6-front-camera",
     "name": "Front Camera",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 95
@@ -1310,7 +1473,8 @@
   {
     "id": "ipad-6-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 95
@@ -1318,7 +1482,8 @@
   {
     "id": "ipad-6-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 95
@@ -1326,7 +1491,8 @@
   {
     "id": "ipad-6-button-fault",
     "name": "Button Fault",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 95
@@ -1334,7 +1500,8 @@
   {
     "id": "ipad-6-not-sure",
     "name": "Unsure",
-    "model": "iPad 6th Generation",
+    "device_type": "iPad",
+    "device_model": "6th Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-6.jpg",
     "price": 0
@@ -1342,7 +1509,8 @@
   {
     "id": "ipad-5-glass",
     "name": "Glass Replacement",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 139
@@ -1350,7 +1518,8 @@
   {
     "id": "ipad-5-lcd",
     "name": "Retina LCD",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 139
@@ -1358,7 +1527,8 @@
   {
     "id": "ipad-5-battery",
     "name": "Battery",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 95
@@ -1366,7 +1536,8 @@
   {
     "id": "ipad-5-charging-port",
     "name": "Charging Port",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 95
@@ -1374,7 +1545,8 @@
   {
     "id": "ipad-5-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 95
@@ -1382,7 +1554,8 @@
   {
     "id": "ipad-5-front-camera",
     "name": "Front Camera",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 95
@@ -1390,7 +1563,8 @@
   {
     "id": "ipad-5-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 95
@@ -1398,7 +1572,8 @@
   {
     "id": "ipad-5-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 95
@@ -1406,7 +1581,8 @@
   {
     "id": "ipad-5-button-fault",
     "name": "Button Fault",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 95
@@ -1414,7 +1590,8 @@
   {
     "id": "ipad-5-not-sure",
     "name": "Unsure",
-    "model": "iPad 5th Generation",
+    "device_type": "iPad",
+    "device_model": "5th Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-5.jpg",
     "price": 0
@@ -1422,7 +1599,8 @@
   {
     "id": "ipad-4-glass",
     "name": "Glass Replacement",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 89
@@ -1430,7 +1608,8 @@
   {
     "id": "ipad-4-lcd",
     "name": "Retina LCD",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 89
@@ -1438,7 +1617,8 @@
   {
     "id": "ipad-4-battery",
     "name": "Battery",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 65
@@ -1446,7 +1626,8 @@
   {
     "id": "ipad-4-charging-port",
     "name": "Charging Port",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 65
@@ -1454,7 +1635,8 @@
   {
     "id": "ipad-4-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 65
@@ -1462,7 +1644,8 @@
   {
     "id": "ipad-4-front-camera",
     "name": "Front Camera",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 65
@@ -1470,7 +1653,8 @@
   {
     "id": "ipad-4-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 65
@@ -1478,7 +1662,8 @@
   {
     "id": "ipad-4-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 65
@@ -1486,7 +1671,8 @@
   {
     "id": "ipad-4-button-fault",
     "name": "Button Fault",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 65
@@ -1494,7 +1680,8 @@
   {
     "id": "ipad-4-not-sure",
     "name": "Unsure",
-    "model": "iPad 4th Generation",
+    "device_type": "iPad",
+    "device_model": "4th Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-4.jpg",
     "price": 0
@@ -1502,7 +1689,8 @@
   {
     "id": "ipad-3-glass",
     "name": "Glass Replacement",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 69
@@ -1510,7 +1698,8 @@
   {
     "id": "ipad-3-lcd",
     "name": "Retina LCD",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 89
@@ -1518,7 +1707,8 @@
   {
     "id": "ipad-3-battery",
     "name": "Battery",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 65
@@ -1526,7 +1716,8 @@
   {
     "id": "ipad-3-charging-port",
     "name": "Charging Port",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 65
@@ -1534,7 +1725,8 @@
   {
     "id": "ipad-3-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 65
@@ -1542,7 +1734,8 @@
   {
     "id": "ipad-3-front-camera",
     "name": "Front Camera",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 65
@@ -1550,7 +1743,8 @@
   {
     "id": "ipad-3-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 65
@@ -1558,7 +1752,8 @@
   {
     "id": "ipad-3-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 65
@@ -1566,7 +1761,8 @@
   {
     "id": "ipad-3-button-fault",
     "name": "Button Fault",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 65
@@ -1574,7 +1770,8 @@
   {
     "id": "ipad-3-not-sure",
     "name": "Unsure",
-    "model": "iPad 3rd Generation",
+    "device_type": "iPad",
+    "device_model": "3rd Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-3.jpg",
     "price": 0
@@ -1582,7 +1779,8 @@
   {
     "id": "ipad-2-glass",
     "name": "Glass Replacement",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 59
@@ -1590,7 +1788,8 @@
   {
     "id": "ipad-2-lcd",
     "name": "LCD Replacement",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 59
@@ -1598,7 +1797,8 @@
   {
     "id": "ipad-2-battery",
     "name": "Battery",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 65
@@ -1606,7 +1806,8 @@
   {
     "id": "ipad-2-charging-port",
     "name": "Charging Port",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 65
@@ -1614,7 +1815,8 @@
   {
     "id": "ipad-2-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 65
@@ -1622,7 +1824,8 @@
   {
     "id": "ipad-2-front-camera",
     "name": "Front Camera",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 65
@@ -1630,7 +1833,8 @@
   {
     "id": "ipad-2-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 65
@@ -1638,7 +1842,8 @@
   {
     "id": "ipad-2-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 65
@@ -1646,7 +1851,8 @@
   {
     "id": "ipad-2-button-fault",
     "name": "Button Fault",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 65
@@ -1654,7 +1860,8 @@
   {
     "id": "ipad-2-not-sure",
     "name": "Unsure",
-    "model": "iPad 2nd Generation",
+    "device_type": "iPad",
+    "device_model": "2nd Generation",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-2.jpg",
     "price": 0
@@ -1662,7 +1869,8 @@
   {
     "id": "ipad-mini-6-display",
     "name": "Display Assembly",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "A new Mini LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 299
@@ -1670,7 +1878,8 @@
   {
     "id": "ipad-mini-6-battery",
     "name": "Battery",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 120
@@ -1678,7 +1887,8 @@
   {
     "id": "ipad-mini-6-charging-port",
     "name": "Charging Port",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 120
@@ -1686,7 +1896,8 @@
   {
     "id": "ipad-mini-6-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 120
@@ -1694,7 +1905,8 @@
   {
     "id": "ipad-mini-6-front-camera",
     "name": "Front Camera",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 120
@@ -1702,7 +1914,8 @@
   {
     "id": "ipad-mini-6-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 120
@@ -1710,7 +1923,8 @@
   {
     "id": "ipad-mini-6-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 120
@@ -1718,7 +1932,8 @@
   {
     "id": "ipad-mini-6-button-fault",
     "name": "Button Fault",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 120
@@ -1726,7 +1941,8 @@
   {
     "id": "ipad-mini-6-not-sure",
     "name": "Unsure",
-    "model": "iPad Mini 6",
+    "device_type": "iPad",
+    "device_model": "Mini 6",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-mini-6.jpg",
     "price": 0
@@ -1734,7 +1950,8 @@
   {
     "id": "ipad-mini-5-display",
     "name": "Display Assembly",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "A new Mini LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 199
@@ -1742,7 +1959,8 @@
   {
     "id": "ipad-mini-5-battery",
     "name": "Battery",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 95
@@ -1750,7 +1968,8 @@
   {
     "id": "ipad-mini-5-charging-port",
     "name": "Charging Port",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 95
@@ -1758,7 +1977,8 @@
   {
     "id": "ipad-mini-5-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 95
@@ -1766,7 +1986,8 @@
   {
     "id": "ipad-mini-5-front-camera",
     "name": "Front Camera",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 95
@@ -1774,7 +1995,8 @@
   {
     "id": "ipad-mini-5-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 95
@@ -1782,7 +2004,8 @@
   {
     "id": "ipad-mini-5-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 95
@@ -1790,7 +2013,8 @@
   {
     "id": "ipad-mini-5-button-fault",
     "name": "Button Fault",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 95
@@ -1798,7 +2022,8 @@
   {
     "id": "ipad-mini-5-not-sure",
     "name": "Unsure",
-    "model": "iPad Mini 5",
+    "device_type": "iPad",
+    "device_model": "Mini 5",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-mini-5.jpg",
     "price": 0
@@ -1806,7 +2031,8 @@
   {
     "id": "ipad-mini-4-display",
     "name": "Display Assembly",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "A new Mini LED display assembly to repair a damaged screen.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 199
@@ -1814,7 +2040,8 @@
   {
     "id": "ipad-mini-4-battery",
     "name": "Battery",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 95
@@ -1822,7 +2049,8 @@
   {
     "id": "ipad-mini-4-charging-port",
     "name": "Charging Port",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 95
@@ -1830,7 +2058,8 @@
   {
     "id": "ipad-mini-4-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 95
@@ -1838,7 +2067,8 @@
   {
     "id": "ipad-mini-4-front-camera",
     "name": "Front Camera",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 95
@@ -1846,7 +2076,8 @@
   {
     "id": "ipad-mini-4-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 95
@@ -1854,7 +2085,8 @@
   {
     "id": "ipad-mini-4-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 95
@@ -1862,7 +2094,8 @@
   {
     "id": "ipad-mini-4-button-fault",
     "name": "Button Fault",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 95
@@ -1870,7 +2103,8 @@
   {
     "id": "ipad-mini-4-not-sure",
     "name": "Unsure",
-    "model": "iPad Mini 4",
+    "device_type": "iPad",
+    "device_model": "Mini 4",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-mini-4.jpg",
     "price": 0
@@ -1878,7 +2112,8 @@
   {
     "id": "ipad-mini-3-glass",
     "name": "Glass Replacement",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 99
@@ -1886,7 +2121,8 @@
   {
     "id": "ipad-mini-3-lcd",
     "name": "Retina LCD",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 99
@@ -1894,7 +2130,8 @@
   {
     "id": "ipad-mini-3-battery",
     "name": "Battery",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 85
@@ -1902,7 +2139,8 @@
   {
     "id": "ipad-mini-3-charging-port",
     "name": "Charging Port",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 85
@@ -1910,7 +2148,8 @@
   {
     "id": "ipad-mini-3-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 85
@@ -1918,7 +2157,8 @@
   {
     "id": "ipad-mini-3-front-camera",
     "name": "Front Camera",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 85
@@ -1926,7 +2166,8 @@
   {
     "id": "ipad-mini-3-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 85
@@ -1934,7 +2175,8 @@
   {
     "id": "ipad-mini-3-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 85
@@ -1942,7 +2184,8 @@
   {
     "id": "ipad-mini-3-button-fault",
     "name": "Button Fault",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 85
@@ -1950,7 +2193,8 @@
   {
     "id": "ipad-mini-3-not-sure",
     "name": "Unsure",
-    "model": "iPad Mini 3",
+    "device_type": "iPad",
+    "device_model": "Mini 3",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-mini-3.jpg",
     "price": 0
@@ -1958,7 +2202,8 @@
   {
     "id": "ipad-mini-2-glass",
     "name": "Glass Replacement",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 59
@@ -1966,7 +2211,8 @@
   {
     "id": "ipad-mini-2-lcd",
     "name": "Retina LCD",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 99
@@ -1974,7 +2220,8 @@
   {
     "id": "ipad-mini-2-battery",
     "name": "Battery",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 65
@@ -1982,7 +2229,8 @@
   {
     "id": "ipad-mini-2-charging-port",
     "name": "Charging Port",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 65
@@ -1990,7 +2238,8 @@
   {
     "id": "ipad-mini-2-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 65
@@ -1998,7 +2247,8 @@
   {
     "id": "ipad-mini-2-front-camera",
     "name": "Front Camera",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 65
@@ -2006,7 +2256,8 @@
   {
     "id": "ipad-mini-2-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 65
@@ -2014,7 +2265,8 @@
   {
     "id": "ipad-mini-2-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 65
@@ -2022,7 +2274,8 @@
   {
     "id": "ipad-mini-2-button-fault",
     "name": "Button Fault",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 65
@@ -2030,7 +2283,8 @@
   {
     "id": "ipad-mini-2-not-sure",
     "name": "Unsure",
-    "model": "iPad Mini 2",
+    "device_type": "iPad",
+    "device_model": "Mini 2",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-mini-2.jpg",
     "price": 0
@@ -2038,7 +2292,8 @@
   {
     "id": "ipad-mini-1-glass",
     "name": "Glass Replacement",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 59
@@ -2046,7 +2301,8 @@
   {
     "id": "ipad-mini-1-lcd",
     "name": "LCD Replacement",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "If the display behind your glass is damaged, you'll require a new LCD.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 59
@@ -2054,7 +2310,8 @@
   {
     "id": "ipad-mini-1-battery",
     "name": "Battery",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "A new battery to restore your device to 100%.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 65
@@ -2062,7 +2319,8 @@
   {
     "id": "ipad-mini-1-charging-port",
     "name": "Charging Port",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "A new charging port to restore device charging.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 65
@@ -2070,7 +2328,8 @@
   {
     "id": "ipad-mini-1-headphone-jack",
     "name": "Headphone Jack",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "A new headphone jack to restore audio output.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 65
@@ -2078,7 +2337,8 @@
   {
     "id": "ipad-mini-1-front-camera",
     "name": "Front Camera",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "A new front camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 65
@@ -2086,7 +2346,8 @@
   {
     "id": "ipad-mini-1-rear-camera",
     "name": "Rear Camera",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "A new rear camera if yours is damaged.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 65
@@ -2094,7 +2355,8 @@
   {
     "id": "ipad-mini-1-loudspeaker",
     "name": "Loudspeaker",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "A replacement loudspeaker if you cannot hear any audio.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 65
@@ -2102,7 +2364,8 @@
   {
     "id": "ipad-mini-1-button-fault",
     "name": "Button Fault",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "A replacement button flex if one of yours isn't working.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 65
@@ -2110,7 +2373,8 @@
   {
     "id": "ipad-mini-1-not-sure",
     "name": "Unsure",
-    "model": "iPad Mini 1",
+    "device_type": "iPad",
+    "device_model": "Mini 1",
     "description": "Book your device in with us diagnosis if you aren't sure.",
     "image": "/ipad/devices/ipad-mini-1.jpg",
     "price": 0

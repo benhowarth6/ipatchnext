@@ -15,7 +15,7 @@ import repairs from "../../../data/ipad/ipad-repairs.json";
 
 const product = {
   name: 'iPad Mini 3 Repairs',
-  model: 'iPad Mini 3',
+  device_model: 'Mini 3',
   description: "We offer a comprehensive set of repairs for the iPad Mini 3. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iPad Mini 3. Including screen replacements, batteries and much more.",
   imageSrc: '/ipad/devices/ipad-mini-3.jpg',
@@ -129,7 +129,7 @@ export default function RepairPage() {
                   <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                     <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                     <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {repairs.filter(repairs => repairs.model == `${product.model}`).map(filteredRepairs => {
+                      {repairs.filter(repairs => repairs.device_model == `${product.device_model}`).map(filteredRepairs => {
                         const { id, name, price, description } = filteredRepairs;
                         return (
                           <RadioGroup.Option
@@ -178,7 +178,7 @@ export default function RepairPage() {
                   ) : (
                     <Link
                       href={{
-                        pathname: '/book-repair/booking-type',
+                        pathname: '/book-repair/drop-off',
                         query: { id: selectedRepair.id },
                       }}
                     >

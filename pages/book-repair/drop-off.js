@@ -2,25 +2,23 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import React, { Fragment, useState } from "react";
-import { Listbox, Popover, RadioGroup, Transition } from "@headlessui/react";
+import { Listbox, Popover, Transition } from "@headlessui/react";
 import {
-  CheckCircleIcon,
   CheckIcon,
   ChevronRightIcon,
   ChevronUpIcon,
   SelectorIcon,
 } from "@heroicons/react/solid";
-import DatePicker from "react-datepicker";
-import subDays from "date-fns/subDays";
-import Axios from "axios";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
+import DatePicker, { TimePicker } from "sassy-datepicker";
+import { useSessionContext } from '@supabase/auth-helpers-react'
 
 import repairs from "../../data/all-repairs.json";
 
 const steps = [
-  { name: "Booking Type", status: "complete" },
-  { name: "Booking Information", status: "current" },
+  { name: "Repair Type", status: "complete" },
+  { name: "Appointment Information", status: "current" },
   { name: "Confirmation", status: "upcoming" },
 ];
 
@@ -43,44 +41,58 @@ const times = [
 ];
 
 const BookingSchema = Yup.object().shape({
-  firstName: Yup.string()
+  first_name: Yup.string()
     .min(2, "Your first name is too short!")
     .max(50, "Your first name is too Long!")
     .required("Your first name is required."),
-  lastName: Yup.string()
+  last_name: Yup.string()
     .min(2, "Your last name is too short!")
     .max(50, "Your last name is too Long!")
     .required("Your last name is required."),
   email: Yup.string()
     .email("Invalid email")
     .required("Your email address is required."),
-  phone: Yup.string()
+  contact_number: Yup.string()
     .min(5, "Your phone number is too short!")
     .max(13, "Your phone number is too long!!"),
   terms: Yup.boolean().oneOf(
     [true],
     "You must agree to the repair terms and conditions to continue."
   ),
-  appointmentDate: Yup.string().required("An appointment date is required."),
 });
 
-export default function DropOff() {
-  const key = process.env.NEXT_PUBLIC_AIRTABLE_API_KEY;
+const today = new Date();
 
+export default function DropOff() {
+  const { supabaseClient } = useSessionContext()
   const router = useRouter();
   const { id } = router.query;
 
+  const [visible, setVisible] = useState(false);
+  const [date, setDate] = useState(today);
   const [selected, setSelected] = useState(times[0]);
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
 
-  const [startDate, setStartDate] = useState(new Date());
-  const isWeekday = (date) => {
-    const day = date.getDay();
-    return day !== 1 && day !== 0;
+  const togglePicker = () => setVisible((v) => !v);
+
+  const handleDateSelect = (newDate) => {
+    setDate(newDate);
+    setVisible(false);
   };
+
+  function TimeInput() {
+    const [time, setTime] = useState({ hours: 15, minutes: 30 });
+
+    const onChange = (newTime) => {
+      console.log(`New time selected - ${newTime}`);
+      setTime(newTime);
+    };
+
+    return <TimePicker onChange={onChange} value={time} />;
+  }
 
   const selectedRepair = repairs.filter((repairs) => repairs.id === `${id}`);
 
@@ -129,9 +141,7 @@ export default function DropOff() {
                             </a>
                           </Link>
                         ) : step.status === "complete" ? (
-                          <Link href={`booking-type?id=${id}`}>
-                            {step.name}
-                          </Link>
+                          <Link href={`drop-off?id=${id}`}>{step.name}</Link>
                         ) : (
                           <Link href={`drop-off?id=${id}`}>{step.name}</Link>
                         )}
@@ -152,7 +162,7 @@ export default function DropOff() {
           </header>
 
           <main className="relative grid grid-cols-1 gap-x-16 max-w-7xl mx-auto lg:px-8 lg:grid-cols-2 xl:gap-x-48">
-            <h1 className="sr-only">Order information</h1>
+            <h1 className="sr-only">Booking information</h1>
 
             <section
               aria-labelledby="summary-heading"
@@ -162,7 +172,14 @@ export default function DropOff() {
                 {repairs
                   .filter((repairs) => repairs.id == `${id}`)
                   .map((filteredRepairs) => {
-                    const { id, name, price, model, image } = filteredRepairs;
+                    const {
+                      id,
+                      name,
+                      price,
+                      device_model,
+                      device_type,
+                      image,
+                    } = filteredRepairs;
                     return (
                       <div key={id}>
                         <h2
@@ -176,14 +193,16 @@ export default function DropOff() {
                           role="list"
                           className="text-sm font-medium text-gray-900 divide-y divide-gray-200"
                         >
-                          <li className="flex items-start py-6 space-x-4">
+                          <li key={image} className="flex items-start py-6 space-x-4">
                             <img
                               src={image}
                               alt={""}
                               className="flex-none w-24 h-24 rounded-md object-center object-cover"
                             />
                             <div className="flex-auto space-y-1">
-                              <h3>{model}</h3>
+                              <h3>
+                                {device_type} {device_model}
+                              </h3>
                               <p className="text-gray-500">{name}</p>
                               <p className="text-gray-500">£{price}</p>
                             </div>
@@ -296,60 +315,40 @@ export default function DropOff() {
             <Formik
               enableReinitialize
               initialValues={{
-                firstName: "",
-                lastName: "",
+                first_name: "",
+                last_name: "",
                 email: "",
-                phone: "",
-                appointmentLocation: "Trinity Leeds",
-                appointmentDate: "",
-                appointmentTime: "09:30",
-                deviceModel: "",
-                deviceRepair: "",
-                repairCost: "",
-                terms: false,
+                contact_number: "",
+                appointment_date: "",
+                appointment_time: "09:30",
+                device_type: "",
+                device_model: "",
+                repair_type: "",
+                repair_cost: "",
+                notes: "",
               }}
               validationSchema={BookingSchema}
               onSubmit={async (values) => {
-                const data = {
-                  records: [
-                    {
-                      fields: {
-                        firstName: values.firstName,
-                        lastName: values.lastName,
-                        email: values.email,
-                        phone: values.phone,
-                        appointmentLocation: values.appointmentLocation,
-                        appointmentDate: values.appointmentDate,
-                        appointmentTime: values.appointmentTime,
-                        deviceModel: values.deviceModel,
-                        deviceRepair: values.deviceRepair,
-                        repairCost: values.repairCost,
-                      },
-                    },
-                  ],
-                };
-
-                const axiosConfig = {
-                  headers: {
-                    Authorization: `Bearer ${key}`,
-                    "Content-type": "application/json",
+                await supabaseClient.from("bookings").insert({
+                  first_name: values.first_name,
+                  last_name: values.last_name,
+                  email: values.email,
+                  contact_number: values.contact_number,
+                  appointment_date: date.toDateString(),
+                  appointment_time: values.appointment_time,
+                  device_type: values.device_type,
+                  device_model: values.device_model,
+                  repair_type: values.repair_type,
+                  repair_cost: values.repair_cost,
+                  notes: values.notes,
+                });
+                router.push({
+                  pathname: "drop-off-confirmation",
+                  query: {
+                    id: id,
+                    time: values.appointment_time,
+                    date: date.toDateString(),
                   },
-                };
-
-                await Axios.post(
-                  "https://api.airtable.com/v0/apptENX9O16U7Ynmi/Drop%20Off%20Repairs",
-                  data,
-                  axiosConfig
-                ).then((response) => {
-                  router.push({
-                    pathname: "drop-off-confirmation",
-                    query: {
-                      id: id,
-                      location: values.appointmentLocation,
-                      time: values.appointmentTime,
-                      date: values.appointmentDate.toLocaleDateString(),
-                    },
-                  });
                 });
               }}
             >
@@ -375,17 +374,17 @@ export default function DropOff() {
                           <div className="mt-1">
                             <Field
                               type="text"
-                              id="firstName"
-                              name="firstName"
+                              id="first_name"
+                              name="first_name"
                               autoComplete="given-name"
                               className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             />
-                            {errors.firstName && touched.firstName ? (
+                            {errors.first_name && touched.first_name ? (
                               <p
                                 className="mt-2 text-sm text-red-600"
-                                id="firstName-error"
+                                id="first_name-error"
                               >
-                                {errors.firstName}
+                                {errors.first_name}
                               </p>
                             ) : null}
                           </div>
@@ -401,17 +400,17 @@ export default function DropOff() {
                           <div className="mt-1">
                             <Field
                               type="text"
-                              id="lastName"
-                              name="lastName"
+                              id="last_name"
+                              name="last_name"
                               autoComplete="family-name"
                               className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                             />
-                            {errors.lastName && touched.lastName ? (
+                            {errors.last_name && touched.last_name ? (
                               <p
                                 className="mt-2 text-sm text-red-600"
-                                id="lastName-error"
+                                id="last_name-error"
                               >
-                                {errors.lastName}
+                                {errors.last_name}
                               </p>
                             ) : null}
                           </div>
@@ -454,17 +453,17 @@ export default function DropOff() {
                         <div className="mt-1">
                           <Field
                             type="tel"
-                            id="phone"
-                            name="phone"
+                            id="contact_number"
+                            name="contact_number"
                             autoComplete="tel"
                             className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                           />
-                          {errors.phone && touched.phone ? (
+                          {errors.contact_number && touched.contact_number ? (
                             <p
                               className="mt-2 text-sm text-red-600"
-                              id="phone-error"
+                              id="contact_number-error"
                             >
-                              {errors.phone}
+                              {errors.contact_number}
                             </p>
                           ) : null}
                         </div>
@@ -480,30 +479,23 @@ export default function DropOff() {
                           Appointment date
                         </label>
                         <div className="mt-1">
+                          <Field
+                            type="text"
+                            id="appointment_date"
+                            name="appointment_date"
+                            value={date.toDateString()}
+                            onClick={setVisible}
+                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          />
                           <div className="relative">
-                            <DatePicker
-                              dateFormat="dd/MM/yyyy"
-                              selected={values.appointmentDate}
-                              onChange={(e) =>
-                                setFieldValue("appointmentDate", e)
-                              }
-                              selectsStart
-                              name="appointment-date"
-                              calendarStartDay={1}
-                              minDate={subDays(new Date(), 0)}
-                              onFocus={(e) => e.target.blur()}
-                              startDate={startDate}
-                              nextMonthButtonLabel=">"
-                              previousMonthButtonLabel="<"
-                            />
-                            {errors.appointmentDate &&
-                            touched.appointmentDate ? (
-                              <p
-                                className="mt-2 text-sm text-red-600"
-                                id="firstName-error"
-                              >
-                                {errors.appointmentDate}
-                              </p>
+                            {visible ? (
+                              <DatePicker
+                                value={date}
+                                onChange={handleDateSelect}
+                                minDate={today}
+                                weekStartsFrom="Monday"
+                                className="absolute mt-2 z-50"
+                              />
                             ) : null}
                           </div>
                         </div>
@@ -511,8 +503,8 @@ export default function DropOff() {
 
                       <div>
                         <Listbox
-                          value={values.appointmentTime}
-                          onChange={(e) => setFieldValue("appointmentTime", e)}
+                          value={values.appointment_time}
+                          onChange={(e) => setFieldValue("appointment_time", e)}
                         >
                           {({ open }) => (
                             <>
@@ -520,9 +512,9 @@ export default function DropOff() {
                                 Appointment time
                               </Listbox.Label>
                               <div className="mt-1 relative">
-                                <Listbox.Button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                <Listbox.Button className="relative w-full py-2 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                                   <span className="block truncate">
-                                    {values.appointmentTime}
+                                    {values.appointment_time}
                                   </span>
                                   <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                                     <SelectorIcon
@@ -643,9 +635,10 @@ export default function DropOff() {
                           className="w-full bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500 sm:ml-6 sm:order-last sm:w-auto"
                           type="submit"
                           onClick={async () => {
-                            setFieldValue("deviceModel", repairs.model);
-                            setFieldValue("deviceRepair", repairs.name);
-                            setFieldValue("repairCost", repairs.price);
+                            setFieldValue("device_model", repairs.device_model);
+                            setFieldValue("device_type", repairs.device_type);
+                            setFieldValue("repair_type", repairs.name);
+                            setFieldValue("repair_cost", repairs.price);
                             // Hack to wait for new value to be applied
                             // Pending https://github.com/jaredpalmer/formik/issues/529
                             await Promise.resolve();
@@ -665,7 +658,6 @@ export default function DropOff() {
           </main>
         </div>
       </div>
-      );
     </div>
   );
 }

@@ -1,4 +1,4 @@
 module.exports = {
-    siteUrl: 'https://www.ipatchrepairs.co.uk',
-    generateRobotsTxt: true,
-  }
+  siteUrl: 'https://www.ipatchrepairs.co.uk',
+  generateRobotsTxt: true,
+}

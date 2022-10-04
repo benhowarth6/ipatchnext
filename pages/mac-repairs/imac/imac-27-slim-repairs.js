@@ -15,7 +15,7 @@ import repairs from "../../../data/mac/mac-repairs.json";
 
 const product = {
   name: 'iMac 27-inch Slim Repairs',
-  model: 'iMac 27-inch Slim',
+  device_model: '27-inch Slim',
   description: "We offer a comprehensive set of repairs for the iMac 27-inch Slim. Including screen replacements, batteries and much more.",
   meta: "We offer a comprehensive set of repairs for the iMac 27-inch Slim. Including screen replacements, batteries and much more.",
   imageSrc: '/mac/devices/imac-27-slim.jpg',
@@ -129,7 +129,7 @@ export default function RepairPage() {
                   <RadioGroup value={selectedRepair} onChange={setSelectedRepair}>
                     <RadioGroup.Label className="block text-sm font-medium text-gray-700">Repair Options</RadioGroup.Label>
                     <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {repairs.filter(repairs => repairs.model == `${product.model}`).map(filteredRepairs => {
+                      {repairs.filter(repairs => repairs.device_model == `${product.device_model}`).map(filteredRepairs => {
                         const { id, name, price, description } = filteredRepairs;
                         return (
                           <RadioGroup.Option
@@ -178,7 +178,7 @@ export default function RepairPage() {
                   ) : (
                     <Link
                       href={{
-                        pathname: '/book-repair/booking-type',
+                        pathname: '/book-repair/drop-off',
                         query: { id: selectedRepair.id },
                       }}
                     >
