@@ -1,11 +1,14 @@
 import "/./styles/tailwind.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import * as Fathom from "fathom-client";
 import Banner from "../components/Banner";
+import { createBrowserSupabaseClient } from "@supabase/auth-helpers-nextjs";
+import { SessionContextProvider } from "@supabase/auth-helpers-react";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
+  const [supabaseClient] = useState(() => createBrowserSupabaseClient());
 
   useEffect(() => {
     Fathom.load("MKCBTILL", {
@@ -26,7 +29,12 @@ function App({ Component, pageProps }) {
 
   return (
     <>
-      <Component {...pageProps} />
+      <SessionContextProvider
+        supabaseClient={supabaseClient}
+        initialSession={pageProps.initialSession}
+      >
+        <Component {...pageProps} />
+      </SessionContextProvider>
     </>
   );
 }

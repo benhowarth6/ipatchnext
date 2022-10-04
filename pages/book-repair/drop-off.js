@@ -9,10 +9,10 @@ import {
   ChevronUpIcon,
   SelectorIcon,
 } from "@heroicons/react/solid";
-import { supabase } from "/utils/supabase-client";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 import DatePicker, { TimePicker } from "sassy-datepicker";
+import { useSessionContext } from '@supabase/auth-helpers-react'
 
 import repairs from "../../data/all-repairs.json";
 
@@ -64,6 +64,7 @@ const BookingSchema = Yup.object().shape({
 const today = new Date();
 
 export default function DropOff() {
+  const { supabaseClient } = useSessionContext()
   const router = useRouter();
   const { id } = router.query;
 
@@ -192,7 +193,7 @@ export default function DropOff() {
                           role="list"
                           className="text-sm font-medium text-gray-900 divide-y divide-gray-200"
                         >
-                          <li className="flex items-start py-6 space-x-4">
+                          <li key={image} className="flex items-start py-6 space-x-4">
                             <img
                               src={image}
                               alt={""}
@@ -318,40 +319,35 @@ export default function DropOff() {
                 last_name: "",
                 email: "",
                 contact_number: "",
-                appointment_location: "Trinity Leeds",
                 appointment_date: "",
                 appointment_time: "09:30",
                 device_type: "",
                 device_model: "",
                 repair_type: "",
                 repair_cost: "",
-                status: "Pending",
                 notes: "",
               }}
               validationSchema={BookingSchema}
               onSubmit={async (values) => {
-                await supabase.from("bookings").insert({
+                await supabaseClient.from("bookings").insert({
                   first_name: values.first_name,
                   last_name: values.last_name,
                   email: values.email,
                   contact_number: values.contact_number,
-                  appointment_location: values.appointment_location,
-                  appointment_date: values.appointment_date,
+                  appointment_date: date.toDateString(),
                   appointment_time: values.appointment_time,
                   device_type: values.device_type,
                   device_model: values.device_model,
                   repair_type: values.repair_type,
                   repair_cost: values.repair_cost,
-                  status: values.status,
                   notes: values.notes,
                 });
                 router.push({
                   pathname: "drop-off-confirmation",
                   query: {
                     id: id,
-                    location: values.appointment_location,
                     time: values.appointment_time,
-                    date: values.appointment_date,
+                    date: date.toDateString(),
                   },
                 });
               }}
