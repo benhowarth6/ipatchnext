@@ -371,7 +371,7 @@
       "device_type": "iPhone",
       "description": "A new OLED display assembly to repair a damaged screen.",
       "image": "/iphone/devices/12-pro-max.jpg",
-      "price": 309
+      "price": 289
   },
   {
       "id": "12-pro-max-battery",
@@ -380,7 +380,7 @@
       "device_type": "iPhone",
       "description": "A new battery to restore your device to 100%.",
       "image": "/iphone/devices/12-pro-max.jpg",
-      "price": 85
+      "price": 65
   },
   {
       "id": "12-pro-max-housing",
@@ -389,7 +389,7 @@
       "device_type": "iPhone",
       "description": "A new housing and frame to replace a cracked back.",
       "image": "/iphone/devices/12-pro-max.jpg",
-      "price": 399
+      "price": 299
   },
   {
       "id": "12-pro-max-charging-port",
@@ -461,7 +461,7 @@
       "device_type": "iPhone",
       "description": "A new OLED display assembly to repair a damaged screen.",
       "image": "/iphone/devices/12-pro.jpg",
-      "price": 299
+      "price": 249
   },
   {
       "id": "12-pro-battery",
@@ -470,7 +470,7 @@
       "device_type": "iPhone",
       "description": "A new battery to restore your device to 100%.",
       "image": "/iphone/devices/12-pro.jpg",
-      "price": 85
+      "price": 65
   },
   {
       "id": "12-pro-housing",
@@ -479,7 +479,7 @@
       "device_type": "iPhone",
       "description": "A new housing and frame to replace a cracked back.",
       "image": "/iphone/devices/12-pro.jpg",
-      "price": 399
+      "price": 299
   },
   {
       "id": "12-pro-charging-port",
@@ -551,7 +551,7 @@
       "device_type": "iPhone",
       "description": "A new OLED display assembly to repair a damaged screen.",
       "image": "/iphone/devices/12.jpg",
-      "price": 299
+      "price": 239
   },
   {
       "id": "12-battery",
@@ -560,7 +560,7 @@
       "device_type": "iPhone",
       "description": "A new battery to restore your device to 100%.",
       "image": "/iphone/devices/12.jpg",
-      "price": 85
+      "price": 65
   },
   {
       "id": "12-housing",
@@ -569,7 +569,7 @@
       "device_type": "iPhone",
       "description": "A new housing and frame to replace a cracked back.",
       "image": "/iphone/devices/12.jpg",
-      "price": 299
+      "price": 249
   },
   {
       "id": "12-charging-port",
@@ -641,7 +641,7 @@
       "device_type": "iPhone",
       "description": "A new OLED display assembly to repair a damaged screen.",
       "image": "/iphone/devices/12-mini.jpg",
-      "price": 299
+      "price": 249
   },
   {
       "id": "12-mini-battery",
@@ -650,7 +650,7 @@
       "device_type": "iPhone",
       "description": "A new battery to restore your device to 100%.",
       "image": "/iphone/devices/12-mini.jpg",
-      "price": 85
+      "price": 65
   },
   {
       "id": "12-mini-housing",
@@ -659,7 +659,7 @@
       "device_type": "iPhone",
       "description": "A new housing and frame to replace a cracked back.",
       "image": "/iphone/devices/12-mini.jpg",
-      "price": 299
+      "price": 249
   },
   {
       "id": "12-mini-charging-port",
