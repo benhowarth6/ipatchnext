@@ -1063,7 +1063,7 @@
     "device_model": "Air 1",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-air-1.jpg",
-    "price": 99
+    "price": 79
   },
   {
     "id": "air-1-lcd",
@@ -1153,7 +1153,7 @@
     "device_model": "9th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-9.jpg",
-    "price": 169
+    "price": 159
   },
   {
     "id": "ipad-9-lcd",
@@ -1243,7 +1243,7 @@
     "device_model": "8th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-8.jpg",
-    "price": 169
+    "price": 129
   },
   {
     "id": "ipad-8-lcd",
@@ -1333,7 +1333,7 @@
     "device_model": "7th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-7.jpg",
-    "price": 169
+    "price": 129
   },
   {
     "id": "ipad-7-lcd",
@@ -1423,7 +1423,7 @@
     "device_model": "6th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-6.jpg",
-    "price": 149
+    "price": 109
   },
   {
     "id": "ipad-6-lcd",
@@ -1513,7 +1513,7 @@
     "device_model": "5th Generation",
     "description": "A glass digitiser to repair a damaged screen.",
     "image": "/ipad/devices/ipad-5.jpg",
-    "price": 139
+    "price": 109
   },
   {
     "id": "ipad-5-lcd",

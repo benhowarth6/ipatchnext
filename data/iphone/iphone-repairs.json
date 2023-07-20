@@ -461,7 +461,7 @@
         "device_type": "iPhone",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/12-pro.jpg",
-        "price": 249
+        "price": 199
     },
     {
         "id": "12-pro-battery",
@@ -551,7 +551,7 @@
         "device_type": "iPhone",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/12.jpg",
-        "price": 239
+        "price": 189
     },
     {
         "id": "12-battery",
@@ -929,7 +929,7 @@
         "device_type": "iPhone",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/11.jpg",
-        "price": 149
+        "price": 119
     },
     {
         "id": "11-battery",
@@ -1226,7 +1226,7 @@
         "device_type": "iPhone",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/xr.jpg",
-        "price": 139
+        "price": 109
     },
     {
         "id": "xr-battery",
@@ -1325,7 +1325,7 @@
         "device_type": "iPhone",
         "description": "A new OLED display assembly to repair a damaged screen.",
         "image": "/iphone/devices/x.jpg",
-        "price": 149
+        "price": 129
     },
     {
         "id": "x-battery",
@@ -1424,7 +1424,7 @@
         "device_type": "iPhone",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/se-2.jpg",
-        "price": 99
+        "price": 79
     },
     {
         "id": "se-2-battery",
@@ -1532,7 +1532,7 @@
         "device_type": "iPhone",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/8-plus.jpg",
-        "price": 109
+        "price": 89
     },
     {
         "id": "8-plus-battery",
@@ -1640,7 +1640,7 @@
         "device_type": "iPhone",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/8.jpg",
-        "price": 99
+        "price": 79
     },
     {
         "id": "8-battery",
@@ -1748,7 +1748,7 @@
         "device_type": "iPhone",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/7-plus.jpg",
-        "price": 89
+        "price": 79
     },
     {
         "id": "7-plus-battery",
@@ -1847,7 +1847,7 @@
         "device_type": "iPhone",
         "description": "A new LCD display assembly to repair a damaged screen.",
         "image": "/iphone/devices/7.jpg",
-        "price": 79
+        "price": 69
     },
     {
         "id": "7-battery",
