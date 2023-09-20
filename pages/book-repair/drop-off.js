@@ -323,7 +323,7 @@ export default function DropOff() {
                 appointment_time: "09:30",
                 device_type: "",
                 device_model: "",
-                repair_type: "",
+                repairs: [],
                 repair_cost: "",
                 notes: "",
               }}
@@ -338,7 +338,7 @@ export default function DropOff() {
                   appointment_time: values.appointment_time,
                   device_type: values.device_type,
                   device_model: values.device_model,
-                  repair_type: values.repair_type,
+                  repairs: `{${values.repair_type}}`,
                   repair_cost: values.repair_cost,
                   notes: values.notes,
                 });
